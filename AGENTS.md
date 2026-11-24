@@ -7,3 +7,28 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Current authorization and project direction
+
+- The current repository is the sole active workspace. M0 implementation and consolidation are accepted; the owner authorized the local M0 checkpoint after a final staged-file audit. Do not start M1, integrate C1/C2, request credentials, add dependencies, deploy, publish or push without separate explicit authorization.
+- Read the document map in README.md. REQUIREMENTS.md owns official/internal acceptance criteria; ARCHITECTURE.md owns architecture; ROADMAP.md owns priorities/concerns; RESEARCH.md owns candidate and reference status; TESTING.md owns evidence; AI_DISCLOSURE.md owns model evidence; THIRD_PARTY_NOTICES.md owns attribution and license gaps. Update those authorities instead of duplicating entire sections.
+- Keep facts, historical/user-provided evidence, actual implementation, approved direction, provisional decisions, research candidates and deferred enhancements distinct. A planned milestone is not permission to execute it.
+- Follow milestone discipline: acceptance criteria → scoped work → appropriate checks and result inspection → code/organization review → docs and evidence → owner-approved Git checkpoint → separately authorized next milestone. Passing layout checks does not establish artistic quality.
+
+## Engineering standards
+
+- Preserve the pipeline: input interpretation → creative strategy/art direction → bounded validated DesignSpec → deterministic HTML/CSS → platform adaptation → quality checks → preview/export. Future independent fallback must feed the same contract. Never execute unrestricted model-authored HTML, CSS or JavaScript; an image-generation API must not replace the HTML engine.
+- Keep provider integration, planning, content/tastes/composition, validation, rendering, export, quality checks and UI concerns distinct without premature abstractions. No unnecessary auth, database or payments.
+- Preserve the selected canvas sizes in `src/lib/design.ts`; aspect ratios are official, exact pixels are internal choices. Preview scaling must not change export dimensions.
+- Reuse localhost:3000 if running. Do not start duplicate servers or change Windows security policies. Read bundled Next.js guides before code changes. Preserve the managed block above.
+- After relevant renderer/export changes, run lint, typecheck, build and applicable browser/export checks. Separate exact PNG dimensions, DOM bounds and same-machine HTML raster comparison; none establishes universal PNG fidelity, readability, aesthetic quality or cross-device typography. Preserve actual dates, test thresholds and unperformed-check limits.
+- Prevent invented names, dates, prices, offers, locations and unsupported product facts. Escape user text, validate bounded parameters and label actual fixture/manual/AI/fallback provenance. Structural validation alone is insufficient for semantic accuracy, contrast and creative quality.
+- Prefer one structured provider request per campaign unless measured benefit justifies more. Model identifiers/quotas remain provisional or user-provided until independently checked. Keep secrets server-side and outside Git; add placeholder-only `.env.example` when configuration is actually needed. Paid billing requires explicit approval. Do not depend on Meta credits; see AI_DISCLOSURE.md.
+
+## Reuse, scope and organization
+
+- Actively reuse proven, appropriately licensed components where useful. Before adoption: verify license/permissions, understand the implementation, assess security/compatibility and advantage, adapt, test and preserve attribution/notices. Do not copy entire apps and claim originality. Follow THIRD_PARTY_NOTICES.md, including transitive/bundled distribution review.
+- Preserve existing enhancement priorities and conditions. Record genuinely new ideas under **Deferred Ideas and Future Enhancements** in ROADMAP.md; briefly evaluate and keep them outside active work until approved. Acceptance bug fixes are permitted within their existing scope.
+- C1 is a received mocked frontend reference; its interface palette is not approved. C2 is a received untested poster reference. Both remain pending review; neither authorizes integration or replacement of the verified renderer. See RESEARCH.md for the exact evidence boundary.
+- Keep code/tests/docs/licensed assets here; no duplicate active repositories, unnecessary downloads, snapshots, caches, secrets or final branding decisions. Purposeful backups belong only in the owner's established development-backup location. Preserve the owner's existing fellowship archive; its layout and archival policy are in ROADMAP.md. Obtain machine-specific locations from the owner when an archival task is authorized rather than publishing personal paths. Do not modify external files or unrelated projects.
+- Collaboration roles: ChatGPT—mentorship/architecture/requirements/research/management/quality; Codex—repository work/implementation/testing/integration/checkpoints; Claude—independent research/design/critical review; Gemini API—future product intelligence. Do not assume unprovided Claude findings, integrate without review or let agents edit the same files without coordination.
