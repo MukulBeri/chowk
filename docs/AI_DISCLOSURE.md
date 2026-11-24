@@ -1,5 +1,9 @@
 # AI and API disclosure
 
+M3 was formally owner-accepted on 25 November 2026; closure is quota-free archival and a normal Git checkpoint only. No fresh AI measurement, new asset/code adoption or M4/M5 implementation is implied.
+
+M3 frontend verification made **zero live Gemini calls**. It used actual local planning, unchanged deterministic fixtures, clearly labelled retained-plan replays and mocked provider/UI responses. Successful mocked AI labels are interaction evidence, not new AI quality or reliability measurements. Draft changes, local copy/composition/palette refinements and inspection make no provider request. Explicit local planning is labelled separately from AI-failure fallback; manual provenance retains the original source. Model, budgets, one-repair/fact guards and all prior failed measurements remain unchanged.
+
 M2 was formally owner-accepted on 24 November 2026 within documented limits. Its original three provider calls, accepted culture result and fact-sensitive two-attempt failure/fallback remain unchanged. Revised repair has quota-free mocked evidence only; fresh live verification belongs to separately authorized M4/M5 work. Closure made no provider request or billing/model change.
 
 ## Quota-free M2 validation follow-up — 24 November 2026

@@ -24,7 +24,7 @@ for (const taste of TASTES) test(`${taste}: actual glyph fonts, embedded offline
   const remote:string[]=[]; await page.route("https://**",route=>{remote.push(route.request().url());return route.abort();});
   await page.goto("/"); await page.getByLabel("What are we creating for?").fill("Café Noël — Łódź ₹150.");
   await page.getByLabel("Optional details").fill("0123456789. No tickets are required.");
-  await page.getByRole("button",{name:new RegExp(PRESETS[taste].name)}).click();
+  await page.getByRole("radio",{name:new RegExp(PRESETS[taste].name)}).click();
   await page.getByRole("button",{name:"Use local planner"}).click();
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4); await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   // CDP reports glyphs actually painted; an off-screen poster can have no
@@ -64,7 +64,7 @@ test("font integrity failure refuses v3 exports without silent font substitution
 
 test("unsupported-script text stays visible with an explicit system-font warning",async({page,context},info)=>{
   await page.goto("/");await page.getByLabel("What are we creating for?").fill("Campus reading — नमस्ते 東京.");
-  await page.getByRole("button",{name:/Minimal Swiss/}).click();await page.getByRole("button",{name:"Use local planner"}).click();
+  await page.getByRole("radio",{name:/Minimal Swiss/}).click();await page.getByRole("button",{name:"Use local planner"}).click();
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   await expect(page.getByRole("note").first()).toContainText("system-font fallback");
   const poster=page.locator('[data-poster="instagram-square"]');await poster.scrollIntoViewIfNeeded();await poster.screenshot({path:info.outputPath("unsupported-script-native.png")});

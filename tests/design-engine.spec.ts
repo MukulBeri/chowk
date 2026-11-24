@@ -19,7 +19,7 @@ async function ready(page: Page) {
 }
 async function actualLocal(page: Page, taste: Taste, topic = common.topic, details = common.details) {
   await page.goto("/"); await page.getByLabel("What are we creating for?").fill(topic);
-  await page.getByLabel("Optional details").fill(details); await page.getByRole("button", { name: new RegExp(PRESETS[taste].name) }).click();
+  await page.getByLabel("Optional details").fill(details); await page.getByRole("radio", { name: new RegExp(PRESETS[taste].name) }).click();
   const response = page.waitForResponse((item) => item.url().endsWith("/api/generate"));
   await page.getByRole("button", { name: "Use local planner" }).click();
   const result = await (await response).json();
@@ -71,7 +71,7 @@ async function exportsAndEvidence(page: Page, info: TestInfo, prefix: string, fi
   const jsonEvent=page.waitForEvent("download"); await page.getByRole("button",{name:"Download JSON"}).click();
   const specPath=info.outputPath(`${prefix}-spec.json`); await (await jsonEvent).saveAs(specPath);
   const downloadedSpec=JSON.parse(readFileSync(specPath,"utf8")); expect(downloadedSpec.rationale).toContain(downloadedSpec.artDirection.variant.replaceAll("-"," "));
-  await page.getByRole("button",{name:"Hide spec"}).click();
+  await page.getByRole("button",{name:"Close inspection"}).click();
   await page.screenshot({path:info.outputPath(`${prefix}-studio.png`),fullPage:true});
   return outputs;
 }
@@ -173,7 +173,7 @@ for(const id of ["cultural-evening","technical-workshop","fact-sensitive"]) {
     expect(spec.campaign).toEqual(original.campaign);
     await page.route("**/api/generate",(route)=>route.fulfill({json:{...record.result,spec}}));
     await page.goto("/"); await page.getByLabel("What are we creating for?").fill(record.request.topic);
-    await page.getByRole("button",{name:new RegExp(PRESETS[spec.taste].name)}).click(); await page.getByRole("button",{name:"Generate campaign"}).click(); await ready(page);
+    await page.getByRole("radio",{name:new RegExp(PRESETS[spec.taste].name)}).click(); await page.getByRole("button",{name:"Generate campaign"}).click(); await ready(page);
     await page.screenshot({path:info.outputPath(`replayed-m1-${id}-studio.png`),fullPage:true});
     for(const format of FORMATS) { const event=page.waitForEvent("download"); await page.getByRole("button",{name:`Export ${format.name} PNG`,exact:true}).click(); const download=await event; await download.saveAs(info.outputPath(`replayed-m1-${id}-${format.id}.png`)); const png=readFileSync(info.outputPath(`replayed-m1-${id}-${format.id}.png`)); expect([png.readUInt32BE(16),png.readUInt32BE(20)]).toEqual([format.width,format.height]); }
     writeFileSync(info.outputPath("replay-provenance.json"),JSON.stringify({kind:"Retained M1 AI copy, new deterministic M2 art direction; browser response supplied from saved JSON; zero new provider calls",id,original,spec},null,2));
@@ -185,7 +185,7 @@ test("historical v2 actual AI specification still renders and exports through th
   expect(result.spec.version).toBe(2);
   await page.route("**/api/generate",(route)=>route.fulfill({json:result}));
   await page.goto("/"); await page.getByLabel("What are we creating for?").fill(result.spec.campaign.topic);
-  await page.getByRole("button",{name:new RegExp(PRESETS[result.spec.taste as Taste].name)}).click();
+  await page.getByRole("radio",{name:new RegExp(PRESETS[result.spec.taste as Taste].name)}).click();
   await page.getByRole("button",{name:"Generate campaign"}).click(); await ready(page);
   await expect(page.locator('[data-poster][data-version="3"]')).toHaveCount(0);
   for(const format of FORMATS) {

@@ -1,0 +1,760 @@
+{
+  "date": "2026-11-25",
+  "base": "e6d968ff35d081f524495c8f4fd26efac24b604b",
+  "scope": "Owner-accepted M3 frontend with quota-free final closure; previous candidate checks and scopeChecks remain historical snapshots",
+  "referenceFiles": [
+    {
+      "name": "YARC_M3_Hybrid_Refinement_02.html",
+      "bytes": 878707,
+      "sha256": "7282f9d1f36327215ceb42d9b0980c0ee118046b94e6d55ac14e942966c37486"
+    },
+    {
+      "name": "YARC_M3_Hybrid_02_Desktop.png",
+      "bytes": 404704,
+      "sha256": "6c53279a00981d9b3aefba604bf66cf8d7d4d25e852a9736e247c5ab66ad4553"
+    },
+    {
+      "name": "YARC_M3_Hybrid_02_Mobile.png",
+      "bytes": 202273,
+      "sha256": "259cfadb9d44df38707ce3e85728b5a4e69e47e47dc4f2e4c22e7f0aeb758b41"
+    }
+  ],
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run build",
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --output=test-results/m3-final-08",
+      "exit": 0,
+      "passed": 62,
+      "elapsedAsReported": "1.2m",
+      "retainedM2EquivalentCases": 52,
+      "newFrontendCases": 10
+    },
+    {
+      "command": "npx --no-install playwright test tests/studio-workspace.spec.ts --output=test-results/m3-state-final-09",
+      "exit": 0,
+      "passed": 10,
+      "elapsedSeconds": 15.4,
+      "note": "After final whitespace normalization of draft comparison only; lint/typecheck/build also passed again. Full 62-case run precedes that isolated UI comparison change."
+    }
+  ],
+  "earlierRuns": [
+    {
+      "output": "test-results/m3-core-01",
+      "passed": 19,
+      "seconds": 23.7
+    },
+    {
+      "output": "test-results/m3-workspace-02",
+      "passed": 7,
+      "failed": 3,
+      "findings": [
+        "Broad alert selector also matched Next route announcer (test harness)",
+        "Font gate originally intercepted initial CSS face loading and blocked navigation (test harness)",
+        "Native modal Tab could leave the document; explicit wrapping was needed (actual corrected UI defect)"
+      ]
+    },
+    {
+      "output": "test-results/m3-workspace-03",
+      "passed": 10,
+      "seconds": 14.5
+    },
+    {
+      "output": "test-results/m3-full-04",
+      "passed": 62,
+      "elapsedAsReported": "1.1m"
+    },
+    {
+      "output": "test-results/m3-accessibility-final-05",
+      "passed": 10,
+      "seconds": 14.6
+    },
+    {
+      "output": "test-results/m3-final-06",
+      "passed": 62,
+      "elapsedAsReported": "1.1m",
+      "finding": "Axe had zero violations but one incomplete aria-prohibited-attr check per taste: labelled palette div needed role=group; corrected and incomplete checks now also asserted empty."
+    }
+  ],
+  "matrix": [
+    {
+      "taste": "bold-street",
+      "variant": "street-editorial",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 138812
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 119319
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 104607
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 157241
+        }
+      ]
+    },
+    {
+      "taste": "festive-pop",
+      "variant": "pop-stage",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 161251
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 155488
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 118860,
+          "actualPngVsNativeDom": {
+            "ratio": 0.011363932291666667,
+            "changed": 10473
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 183628
+        }
+      ]
+    },
+    {
+      "taste": "festive-pop",
+      "variant": "pop-offset",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 159255
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 139287
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 113403
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 183588
+        }
+      ]
+    },
+    {
+      "taste": "minimal-swiss",
+      "variant": "swiss-column",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 149832
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 129349
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 113026
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 167435
+        }
+      ]
+    },
+    {
+      "taste": "minimal-swiss",
+      "variant": "swiss-grid",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 151733
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 137411
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 112220,
+          "actualPngVsNativeDom": {
+            "ratio": 0.011355251736111112,
+            "changed": 10465
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 168728
+        }
+      ]
+    },
+    {
+      "taste": "bold-street",
+      "variant": "street-stack",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 153922
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 134675
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 106419,
+          "actualPngVsNativeDom": {
+            "ratio": 0.01157009548611111,
+            "changed": 10663
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 158073
+        }
+      ]
+    }
+  ],
+  "fidelity": {
+    "environment": {
+      "platform": "Windows",
+      "chrome": "158.0.8127.88",
+      "headless": true,
+      "deviceScaleFactor": 1
+    },
+    "actualDownloadedPngVsNativeDom": {
+      "format": "youtube-thumbnail",
+      "maximumChangedRatio": 0.015,
+      "anyRgbaChannelDeltaGreaterThan": 20
+    },
+    "offlineHtmlScreenshotParity": {
+      "maximumChangedRatio": 0.001,
+      "anyRgbaChannelDeltaGreaterThan": 8,
+      "scope": "Legacy v1 full matrix plus representative v3 glyph cases, distinct from actual PNG comparisons"
+    },
+    "limitation": "Local representative comparisons, not universal browser/device/glyph fidelity"
+  },
+  "responsive": {
+    "kind": "Actual local artwork; viewport reflow plus 200% CSS magnification, not an OS/browser zoom certification",
+    "measurements": [
+      {
+        "width": 1440,
+        "height": 900,
+        "boxes": [
+          {
+            "width": 533,
+            "height": 666.25
+          },
+          {
+            "width": 533,
+            "height": 533
+          },
+          {
+            "width": 533,
+            "height": 299.8125
+          },
+          {
+            "width": 533,
+            "height": 279.046875
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "boxes": [
+          {
+            "width": 496,
+            "height": 620
+          },
+          {
+            "width": 496,
+            "height": 496
+          },
+          {
+            "width": 496,
+            "height": 279
+          },
+          {
+            "width": 496,
+            "height": 259.671875
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "boxes": [
+          {
+            "width": 453,
+            "height": 566.25
+          },
+          {
+            "width": 453,
+            "height": 453
+          },
+          {
+            "width": 453,
+            "height": 254.8125
+          },
+          {
+            "width": 453,
+            "height": 237.171875
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "boxes": [
+          {
+            "width": 353,
+            "height": 441.25
+          },
+          {
+            "width": 353,
+            "height": 353
+          },
+          {
+            "width": 353,
+            "height": 198.5625
+          },
+          {
+            "width": 353,
+            "height": 184.8125
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "boxes": [
+          {
+            "width": 355,
+            "height": 443.75
+          },
+          {
+            "width": 355,
+            "height": 355
+          },
+          {
+            "width": 355,
+            "height": 199.6875
+          },
+          {
+            "width": 355,
+            "height": 185.859375
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "boxes": [
+          {
+            "width": 358,
+            "height": 447.5
+          },
+          {
+            "width": 358,
+            "height": 358
+          },
+          {
+            "width": 358,
+            "height": 201.375
+          },
+          {
+            "width": 358,
+            "height": 187.421875
+          }
+        ],
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "height": 844,
+        "boxes": [
+          {
+            "width": 296,
+            "height": 370
+          },
+          {
+            "width": 296,
+            "height": 296
+          },
+          {
+            "width": 296,
+            "height": 166.5
+          },
+          {
+            "width": 296,
+            "height": 154.96875
+          }
+        ],
+        "noHorizontalOverflow": true
+      }
+    ]
+  },
+  "accessibility": [
+    {
+      "file": "test-results/m3-final-08/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0,
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "scope": "Already installed development-only axe, actual desktop state, WCAG 2/2.1/2.2 A/AA tags; not certification"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0,
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "scope": "Already installed development-only axe, actual desktop state, WCAG 2/2.1/2.2 A/AA tags; not certification"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0,
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "scope": "Already installed development-only axe, actual desktop state, WCAG 2/2.1/2.2 A/AA tags; not certification"
+    }
+  ],
+  "inspectionIsolation": {
+    "kind": "Actual local generation and actual PNG downloads; not a mock",
+    "canonicalRefs": 4,
+    "rendererInstancesAdded": 0,
+    "canonicalMarkupUnchanged": true,
+    "pngBytesIdentical": true
+  },
+  "scopeChecks": {
+    "protectedFiles": 51,
+    "protectedChanges": [],
+    "newLiveProviderCalls": 0,
+    "engineSchemasProviderFontsExportUnchanged": true,
+    "newExternalAssets": false,
+    "newDependencies": false,
+    "staged": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "externalArchiveWrites": false
+  },
+  "limits": [
+    "Windows headless Chrome only; not Safari/Firefox/cross-OS testing or production deployment",
+    "200% CSS magnification and viewport reflow are not an interactive browser/OS zoom certification",
+    "Axe scope is three desktop taste states; keyboard checks complement it, not a complete assistive-technology/accessibility audit",
+    "M2 artistic/factual/provider reliability and target-distribution licensing concerns remain for separately authorized M4/M5",
+    "No persistence across page reload; mobile controls retain state only within the current session",
+    "Enlargement is a fitted inert snapshot, not an editor; spec inspection is explicitly a snapshot if generation finishes while open"
+  ],
+  "finalFollowup": {
+    "scope": "Leading/trailing draft whitespace compares against API-trimmed input, avoiding false changed-draft notice",
+    "nativeImplementationUnchanged": true,
+    "artifacts": [
+      {
+        "file": "test-results/m3-state-final-09/.last-run.json",
+        "bytes": 45,
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "kind": "Actual local/refinement regression, no provider calls"
+      },
+      {
+        "file": "test-results/m3-state-final-09/studio-workspace-draft-cha-85d6b-ong-to-the-current-campaign/manually-refined-spec.json",
+        "bytes": 1132,
+        "sha256": "3a1fdaf0a81848245d623d2b46e00942b2ed0a967a3c7a0b569742df53138241",
+        "kind": "Actual local/refinement regression, no provider calls"
+      }
+    ]
+  },
+  "readOnlyReview": {
+    "scope": "Read-only M3 candidate/source/client review, not a staged audit, target-distribution clearance or penetration-test certification",
+    "head": "e6d968ff35d081f524495c8f4fd26efac24b604b",
+    "branch": "main",
+    "modifiedCount": 19,
+    "newCount": 7,
+    "candidateCount": 26,
+    "stagedCount": 0,
+    "compiledClientFiles": 123,
+    "configuredValuesCompared": 1,
+    "secretMatches": [],
+    "credentialShapeMatches": [],
+    "privacyMatches": [],
+    "prohibited": [],
+    "invalidJson": [],
+    "whitespace": [],
+    "brokenLinks": [],
+    "protectedFileCount": 51,
+    "protectedChanges": [],
+    "files": [
+      {
+        "file": "AGENTS.md",
+        "status": "modified"
+      },
+      {
+        "file": "README.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/AI_DISCLOSURE.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/ARCHITECTURE.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/M3_REPORT.md",
+        "status": "new"
+      },
+      {
+        "file": "docs/REQUIREMENTS.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/RESEARCH.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/ROADMAP.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/TESTING.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/evidence/m3/artifact-manifest.json",
+        "status": "new"
+      },
+      {
+        "file": "docs/evidence/m3/verification.json",
+        "status": "new"
+      },
+      {
+        "file": "next.config.ts",
+        "status": "modified"
+      },
+      {
+        "file": "playwright.config.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/app/globals.css",
+        "status": "modified"
+      },
+      {
+        "file": "src/app/layout.tsx",
+        "status": "modified"
+      },
+      {
+        "file": "src/components/studio-artboard.tsx",
+        "status": "new"
+      },
+      {
+        "file": "src/components/studio-dialog.tsx",
+        "status": "new"
+      },
+      {
+        "file": "src/components/studio.tsx",
+        "status": "modified"
+      },
+      {
+        "file": "src/components/taste-picker.tsx",
+        "status": "new"
+      },
+      {
+        "file": "tests/design-engine.spec.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/fallback-correction.spec.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/generation.spec.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/studio-workspace.spec.ts",
+        "status": "new"
+      },
+      {
+        "file": "tests/studio.spec.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/typography.spec.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/validation-investigation.spec.ts",
+        "status": "modified"
+      }
+    ],
+    "passed": true
+  },
+  "closure": {
+    "date": "2026-11-25",
+    "ownerAccepted": true,
+    "sourceChanges": "Acceptance documentation/evidence only; runtime/test source unchanged from final accepted candidate",
+    "commands": [
+      {
+        "command": "npm run lint",
+        "exit": 0
+      },
+      {
+        "command": "npm run typecheck",
+        "exit": 0
+      },
+      {
+        "command": "npm run build",
+        "exit": 0
+      },
+      {
+        "command": "npx --no-install playwright test --output=test-results/m3-closure-10/artifacts",
+        "exit": 0
+      }
+    ],
+    "passed": 62,
+    "regressionSummary": "62 passed (1.1m)",
+    "accessibility": [
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+        "violations": 0,
+        "incomplete": 0
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+        "violations": 0,
+        "incomplete": 0
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+        "violations": 0,
+        "incomplete": 0
+      }
+    ],
+    "inspection": {
+      "kind": "Actual local generation and actual PNG downloads; not a mock",
+      "canonicalRefs": 4,
+      "rendererInstancesAdded": 0,
+      "canonicalMarkupUnchanged": true,
+      "pngBytesIdentical": true
+    },
+    "remainingLimitations": [
+      "Windows headless Chrome only; not Safari/Firefox/cross-OS testing or production deployment",
+      "200% CSS magnification and viewport reflow are not an interactive browser/OS zoom certification",
+      "Axe scope is three desktop taste states; keyboard checks complement it, not a complete assistive-technology/accessibility audit",
+      "M2 artistic/factual/provider reliability and target-distribution licensing concerns remain for separately authorized M4/M5",
+      "No persistence across page reload; mobile controls retain state only within the current session",
+      "Enlargement is a fitted inert snapshot, not an editor; spec inspection is explicitly a snapshot if generation finishes while open"
+    ],
+    "archiveRoots": [
+      "04_Project-Evidence/M3",
+      "05_Development-History/M3"
+    ],
+    "archiveIntegrity": "Source/destination byte counts and SHA-256 checked by the private milestone inventory; OneDrive cloud synchronization unverified",
+    "research": {
+      "revisedC7": "Already archived in Claude-Research, retained in place with original hash",
+      "M4Preparation": "Owner reports preparation complete; no standalone source located in checked workspace, Downloads, attachments or archive"
+    },
+    "prohibitedActions": {
+      "liveCalls": 0,
+      "newDependencies": false,
+      "newAssets": false,
+      "implementationChanges": false,
+      "deployed": false,
+      "M4M5Implemented": false
+    }
+  },
+  "closureAudit": {
+    "candidateCount": 26,
+    "protectedFileCount": 51,
+    "protectedChanges": [],
+    "artifactFilesVerified": 340,
+    "artifactFailures": [],
+    "configuredSecretMatches": 0,
+    "privatePathsOrUnrelatedFiles": 0,
+    "environmentExamplePlaceholdersOnly": true,
+    "dependenciesFontsNoticesHistoricalMeasurementsUnchanged": true,
+    "passed": true,
+    "scope": "Exact reviewed manifest, configured-secret and compiled-client scan, valid JSON/docs links and protected-byte check; not a complete security or distribution-license audit"
+  }
+}

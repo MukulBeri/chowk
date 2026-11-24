@@ -1,5 +1,9 @@
 # Research, reuse and reference register
 
+M3 was formally owner-accepted on 25 November 2026; closure is quota-free archival and a normal Git checkpoint only. No fresh AI measurement, new asset/code adoption or M4/M5 implementation is implied.
+
+M3 reference decision (25 November 2026): the owner approved YARC_M3_Hybrid_Refinement_02.html plus desktop/mobile PNGs as the initial-release visual direction. They were read and hashed, not executed as product logic or copied as artwork/code. The application uses original CSS/type taste miniatures, existing local resources and neutral Arial/Helvetica UI typography. No Recraft font was identified/fetched, no dependency/asset/code was adopted, and no new research sweep occurred. This approval is specific to Hybrid 02, not a blanket change to earlier C1/C2/C7 statuses.
+
 M2 was owner-accepted on 24 November 2026 within its documented scope. Carry-forward M4/M5 research remains conditional: fresh separately authorized live validation/repair, broader semantic/factual reliability, topic-aware art/composition and landscape readability, cross-browser/device/unsupported scripts, production reliability and actual target-distribution licensing. Existing library/asset/font/C7 and enhancement gates remain; no new research/adoption is authorized by closure.
 
 Status vocabulary: **Adopted** = integrated with evidence; **Pending evaluation** = investigate before selecting; **Rejected** = a specific unsuitable approach is excluded with a reason; **Deferred** = conditional/later priority. A public page, README claim or received reference is not an independently tested implementation.

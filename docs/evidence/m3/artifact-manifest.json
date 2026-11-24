@@ -1,0 +1,2057 @@
+{
+  "date": "2026-11-25",
+  "sourceRoot": "test-results/m3-final-08",
+  "scope": "Actual M3 running-app/native download evidence; mocks, retained replays and explicit v1 examples labelled separately. Generated artifacts remain ignored and no archived directory is modified.",
+  "count": 170,
+  "bytes": 26880389,
+  "files": [
+    {
+      "file": "test-results/m3-final-08/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "kind": "Quota-free regression/fixture evidence; source tests specify mock/replay scope"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-24da9-incomplete-input-without-AI/actual-local-topic-cases.json",
+      "bytes": 25777,
+      "sha256": "cfbddcb63779de4f4fe13f9f9a5e7694c6ea9b3b7275cdfc5db7a8586aa89f7a",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-portrait.png",
+      "bytes": 138812,
+      "sha256": "6a9f6a5a69bbcb7b12b9673f00b52a1b11cfe484941b423503ffc3f329e247d4",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-square.png",
+      "bytes": 119319,
+      "sha256": "78ae280a543ac6a004bae9241c929fff4e4794e8e4fc8a910f032ee90aac9bea",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-linkedin-landscape.png",
+      "bytes": 157241,
+      "sha256": "226fc71fc214556b570a615078411c2abcc01d8a0f11b404010026270e19bc8c",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-spec.json",
+      "bytes": 1119,
+      "sha256": "55bda3377d7973f7f6a3cd117bfd7cf24693e31eea5907a83149073a41c24400",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-studio.png",
+      "bytes": 223884,
+      "sha256": "b85437066729c491f83a29825c2749860a766cf8241d68408df479d1d76b9788",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-youtube-thumbnail.png",
+      "bytes": 104607,
+      "sha256": "44c14303d954c7a1efa48b1d45099b293e8c7d0204bd98e8edc5378c20e8b95c",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial.html",
+      "bytes": 600960,
+      "sha256": "699f8074d24147d83ecbd217c7c543bb0541ed40cc4e97c8cf7f2803e3d25276",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7a31a-mparison-and-layout-quality/evidence.json",
+      "bytes": 3268,
+      "sha256": "026af8ca5e41af34b9345bfd1e114babf0a9ff65bd81468289278d08fe3054b0",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/evidence.json",
+      "bytes": 3350,
+      "sha256": "b6e5e96f79f6b2775f4004c5e33ea3d566ed10f5b80e55433a34ca32204a8ff2",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-portrait.png",
+      "bytes": 161251,
+      "sha256": "753706631591a3f3ad9539bd6bee338f9ab46b64e949e5ef4436663c91f3d7aa",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-square.png",
+      "bytes": 155488,
+      "sha256": "42ce44dca362ac2a8d0d6a15bef6eaab214e98faf3844ec9090aedb1869df029",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-linkedin-landscape.png",
+      "bytes": 183628,
+      "sha256": "5e994d6324d37d535fa6059e31688e8c34ad683b207a80f7ad3f9fea5dacc1c3",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-native-dom.png",
+      "bytes": 80896,
+      "sha256": "0f7ff2bfb1f896028bc9d435546557855b0d7193a342ea51a85bec5cd8ff9523",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-spec.json",
+      "bytes": 1101,
+      "sha256": "f66280493cf9a90910dfde16492646894e8d47de0e9f18f7b5488040d22e833f",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-studio.png",
+      "bytes": 248890,
+      "sha256": "575ae15d13fafd4c52b8d33ccb4349be9a813cf575ee8da3318505a8693a5552",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-youtube-thumbnail.png",
+      "bytes": 118860,
+      "sha256": "e441b69a08fca0d18a62e060bd257586853d872cb8e7e80b492a84136f32ec61",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage.html",
+      "bytes": 596839,
+      "sha256": "9d0c62b99d3d94d6fc55f437c188d007daa35bff10c660fdb9f63ce5913b274c",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-social-size.png",
+      "bytes": 192187,
+      "sha256": "c4c8a5aa461a7137b98817db60f6e36af31550b9a5ff72275cd8de5db17f5bbf",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/evidence.json",
+      "bytes": 3246,
+      "sha256": "24455b158e59b38752d952a96a7d7564fb53baab90029b00b837c501dd929a9e",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-portrait.png",
+      "bytes": 159255,
+      "sha256": "ad13a4d748218ad815a05b2ac8506b88571c6720185c0b161df5b6985b4b5707",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-square.png",
+      "bytes": 139287,
+      "sha256": "bb82c7d4dab87eccfb060800b754323941559cf57b41f43d4094f7936cd90152",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-linkedin-landscape.png",
+      "bytes": 183588,
+      "sha256": "2b833ffe2f0de2010e0c9310a4e58603e0913035188c9b66eca17e6d5c8dfcfb",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-spec.json",
+      "bytes": 1103,
+      "sha256": "c2e587e3791e8a5ff10a6d9c307a0700b588936f37b80f2ff5bc4b8cc41e3cc8",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-studio.png",
+      "bytes": 243919,
+      "sha256": "af529255e06b821f9dcc2af7784cf0b3ddd9da89d9e4187d1a6f0367874a41fa",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-youtube-thumbnail.png",
+      "bytes": 113403,
+      "sha256": "c9f169256d4735aebc15f43555bf04a820737081ba0e541302eaf54dcdd5da72",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset.html",
+      "bytes": 596821,
+      "sha256": "67662e5a1b1c69ba3e7d8a2fc84d99ef50c44eeba8c0f9ab5afc4ba929dab81c",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/evidence.json",
+      "bytes": 3248,
+      "sha256": "bd24ebc1ecef3a544529b41a1aec9cc153d4f1e2875d2715eb596eaf1de1f4a9",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-portrait.png",
+      "bytes": 149832,
+      "sha256": "6381bebaf1b552f86b220dfe374b8b6190c43f455c9c8fa3faec9162998deba6",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-square.png",
+      "bytes": 129349,
+      "sha256": "e074ff784012f3b92f98b7e8b937822f5f2ca2a13f642f5728535f20438286df",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-linkedin-landscape.png",
+      "bytes": 167435,
+      "sha256": "4257c94c4b0c67fd2ea2b3509ffbf6235d44aae5d7002c1f7ade8f1eb0f55ce2",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-spec.json",
+      "bytes": 1101,
+      "sha256": "de19aa8fc587fa54fd2c9d67fa3cdefe94a6f73897d02f371523cf1247349f6d",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-studio.png",
+      "bytes": 229306,
+      "sha256": "df94bb0e7e15742fb2198038333a88accb3758ac67782e2002b6ec1a545fd5cd",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-youtube-thumbnail.png",
+      "bytes": 113026,
+      "sha256": "2cf370417e415da6da41eb039b241cc6c395a912f74d5d5fc84a2b7f0a6d9d02",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column.html",
+      "bytes": 596920,
+      "sha256": "4d9e2be985d61750b41f83cf5ae16a59f6323a5e2b04248852aae6a7d0bb1405",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/evidence.json",
+      "bytes": 3351,
+      "sha256": "eb1d92ba27a5a0f0ed5b15c09af35e007d55655c9645bb1908bf60f23a7904a7",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-social-size.png",
+      "bytes": 182599,
+      "sha256": "5378d940758899690e170a0bb470eaf915b80b768580d8476413e49d7630e5a3",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-portrait.png",
+      "bytes": 151733,
+      "sha256": "f4d8f7243493b63b4c1130f8061ca6de5ce6ff8bf2d26d76b43dc955e606f3eb",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-square.png",
+      "bytes": 137411,
+      "sha256": "58acf7f3a674b04b462109953a8d7765057edb535671e525806921805caf62df",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-linkedin-landscape.png",
+      "bytes": 168728,
+      "sha256": "0b5d0c523375a81f32a34522ec266a7123849987feb424dc624cfed1d4f69009",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-native-dom.png",
+      "bytes": 75777,
+      "sha256": "563e00969b9e7829d37a990ca28ca9b37b270eb78053b154e0cf73706f9af63b",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-spec.json",
+      "bytes": 1097,
+      "sha256": "17765d7801418c34d16618869a3746df14e603fd7206604eb5cd1f3164864af9",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-studio.png",
+      "bytes": 219835,
+      "sha256": "243eb8863955452f83e570a912626c9bab3f574c498021cefb7a5c219d0c4b5b",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-youtube-thumbnail.png",
+      "bytes": 112220,
+      "sha256": "e34c1bed3d4f98f38d0e9e926574c9531abb423807408e51531888a77f73a998",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid.html",
+      "bytes": 596841,
+      "sha256": "51aa773198991c5b8414f14b33ed3d1360d224a33e1d7bb879bdb50a8bb2f086",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-social-size.png",
+      "bytes": 178588,
+      "sha256": "025ad86782c927da1f97e02bea1b0a07aeab7d6904620c4379fa78da10574704",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-portrait.png",
+      "bytes": 153922,
+      "sha256": "9f85f6420b6a951b69767d080a99123d85d4b80e4fdb9eafd29d2a7696fea87b",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-square.png",
+      "bytes": 134675,
+      "sha256": "a60c1cd7a2aff44d6b3a0c4303fb395a9dce1c8c461f32ea966ea1eeb22001ca",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-linkedin-landscape.png",
+      "bytes": 158073,
+      "sha256": "4cf065b661160645c00cb61443f9c3130d9a60b8055e69bb8105ccb8fa9edcc0",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-native-dom.png",
+      "bytes": 69968,
+      "sha256": "95f05ef315c1da21e9636f83d6fb28f5ec43d8243712f1ce9d6c73f4a7da4376",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-spec.json",
+      "bytes": 1111,
+      "sha256": "6d5614d122f5745f21d0f5429bb59701cf59fecb7ac170430c1f29520d96fac0",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-studio.png",
+      "bytes": 232260,
+      "sha256": "d95795d389d354c24b4a841c1f0d18bf43ec06312d5d55124cca8030a10c92d6",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-youtube-thumbnail.png",
+      "bytes": 106419,
+      "sha256": "548e4bf3f42de3c6c2e502771fc1c46851a764684e8b24aaa1cdac4ff0486954",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack.html",
+      "bytes": 600758,
+      "sha256": "514a76c2d2c5e49f4eeb39b12fc0a310c9eee07287baf8248f2f50b7420871e5",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-actual-local-e3a66-mparison-and-layout-quality/evidence.json",
+      "bytes": 3368,
+      "sha256": "b3589ed462fb5a5c8f38190b81fcef857934e5a1868f58c6de438e31a6233e80",
+      "kind": "Actual local HTTP planning and explicitly manual variants; same brief across tastes"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-portrait.png",
+      "bytes": 121290,
+      "sha256": "7707f1c53329d03cafdc9e0e3ce691f4824deac3e3e12a336816f95310ed79a1",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-square.png",
+      "bytes": 102006,
+      "sha256": "1b92323a4783253a18cbf6679827b493c35cf3412af6eaf7074c9e522cbb9de6",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-linkedin-landscape.png",
+      "bytes": 148572,
+      "sha256": "5eba0a83cbda4a77b67cf66a05cf6b8f911439d97a9c08b949bca3ddb327a995",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-spec.json",
+      "bytes": 931,
+      "sha256": "fdcfc6566215445d9f154aee6f465214be1d2e540aadb7180c7d0cb65e348af7",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-youtube-thumbnail.png",
+      "bytes": 101188,
+      "sha256": "bb5c1b8e89167af4f1214154d6aeb9c9ead3029231e42803138cd25fbf0f24e2",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2.html",
+      "bytes": 16876,
+      "sha256": "81e15373a3cf2a4d7a57c935d8e5e377100b542ea50379257416512b367fa285",
+      "kind": "Retained actual v2 specification replay through unchanged legacy renderer/export"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2507,
+      "sha256": "e13777a9813f9761449040249c70d3d6e05a3b22409a726a5c73be350b59243e",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-portrait.png",
+      "bytes": 136437,
+      "sha256": "c21dcc94135a7c62fb31aef4dcfe8c5ea4f67b7ca32c99cc055869ab918e6b54",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-square.png",
+      "bytes": 121598,
+      "sha256": "1d9fff9eb3e5f15f8e756577be734315b1c24ce55db346e854590159fe8643ee",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-linkedin-landscape.png",
+      "bytes": 165785,
+      "sha256": "602d25d7fc1d0ba2db9b1dd9a459edfdcb5b9dc4a171068af6223491fbc4bf69",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-studio.png",
+      "bytes": 222485,
+      "sha256": "3e0590877c2c569bfd22fd3c211468173c1bcb0a49f2034ca7753f0d1e00bd84",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-youtube-thumbnail.png",
+      "bytes": 101189,
+      "sha256": "6e660d2b724a3505a9ac3ca8420d62d0da7be50e466f362010452cd4e79b122a",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2669,
+      "sha256": "bc28baf6c582e6bc392511d117a62480dfcbc27c1643e9f88d1876784cc7d581",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-portrait.png",
+      "bytes": 165890,
+      "sha256": "fbd517d2beccf9b38244d8a8ebeb0312bda2e97afff13fb8357ef348530aea52",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-square.png",
+      "bytes": 150870,
+      "sha256": "2286231d3cc9b980c306571b6462650df1e6dfc1e8b6bec03c68f333e2a15e7f",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-linkedin-landscape.png",
+      "bytes": 186233,
+      "sha256": "3f596993c771ea1489c4fcc928ace85dc0802d46f301c809738ee6099bec8c19",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-studio.png",
+      "bytes": 269058,
+      "sha256": "0f399fc43f7deeb6c595998958e62fe36461ff15b1f4f4e18d8da4d23468aa35",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-youtube-thumbnail.png",
+      "bytes": 130870,
+      "sha256": "2175fcbb88436b58e1fcc9212addb57d02ea4f667b49f351a41663cd727107b0",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2919,
+      "sha256": "6d6fc46e7e27e21d06ceefac510f58db5f9d5d0a493014c37747e72ab7335053",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-portrait.png",
+      "bytes": 156823,
+      "sha256": "3fe45ea53924f983c28e3ae7b5ba457be73e6f4c4a966332bffd2f92741eeb5f",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-square.png",
+      "bytes": 150492,
+      "sha256": "7f5ccd71b3eaf67157b08c74f69b3108137a46bd716ea6c403d94450e4e02ef0",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-linkedin-landscape.png",
+      "bytes": 186952,
+      "sha256": "d0cfcaf7b5d2bd0152c5d72ddea6378d919358a2836bc7786460c4ba426d26fa",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-studio.png",
+      "bytes": 258905,
+      "sha256": "f2926d97360e8389593aa7fb3d1e56c4c782c5282954583e77c26e143893b3e6",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-youtube-thumbnail.png",
+      "bytes": 138509,
+      "sha256": "2bb95f3cb6c9c23e22bc7e280d9cdb3f3e2098c64722828cc7965c3f124d2f23",
+      "kind": "Retained M1 AI-copy replay with deterministic v3 direction; zero new provider calls"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-dense-no-art-studio.png",
+      "bytes": 235707,
+      "sha256": "3d7820a9234cfa31f57434f59085567cacfaa465f12b90d2335e90a936028459",
+      "kind": "Quota-free regression/fixture evidence; source tests specify mock/replay scope"
+    },
+    {
+      "file": "test-results/m3-final-08/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-impossible-copy-refused.png",
+      "bytes": 273788,
+      "sha256": "f3f4f720b23a0791229ff25096a9c8389003b7be5c2964239d97b5c917ca1e1f",
+      "kind": "Quota-free regression/fixture evidence; source tests specify mock/replay scope"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/actual-local-result.json",
+      "bytes": 3518,
+      "sha256": "bf74baeb62d733c32b3b0bfbf29ec632455a29961401a18ab366cb1cf12fbe02",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/corrected-local-studio.png",
+      "bytes": 212384,
+      "sha256": "1b0c771fe19ce67348de2243e72f5fa0159c5cfe33a34dc2e6bec80212f28b9f",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-campaign.html",
+      "bytes": 593948,
+      "sha256": "14b273e92f04ce103cbda6213b7ea57fd043233e75945ba749451f204cb466ad",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-portrait-1080x1350.png",
+      "bytes": 127078,
+      "sha256": "7112c4680ad16672b7fd1880610548bc9bd5d728a3bf76b1c21ff11a2cd2e580",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-square-1080x1080.png",
+      "bytes": 114204,
+      "sha256": "a0223bcdc4d969efa444af61194829cffe135c39547d9997801dc5fece64bbe6",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "bytes": 148594,
+      "sha256": "7f28ce00882d9c342a34ff565b3341e34c1aebfaa16a2b519607209f35a69294",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "bytes": 94007,
+      "sha256": "463985c9f22fcfe19a1e56f087ebf27d8510698c7b60d813a1ff58c6255d3a52",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/fallback-correction-replay-73a6d-istorical-measured-evidence/after.json",
+      "bytes": 20083,
+      "sha256": "a73acb52e3f6e761239203201266ba99312efc8b99c79e83f78ac0c091037eb2",
+      "kind": "Quota-free regression/fixture evidence; source tests specify mock/replay scope"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/actual-local-planner-studio.png",
+      "bytes": 231694,
+      "sha256": "a8626b03a0b434d6267241f3206894bf14ef09e28274e3c572b44393113960e4",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-campaign.html",
+      "bytes": 593833,
+      "sha256": "6004f2c3ebbbdccfd799fd2ea3f369c42bce44d1783967cb585082b0db19d779",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 148458,
+      "sha256": "5d24236f9f2dfc07bc5a811b62342efea07c16e5831ed103faaf778973538c90",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 131121,
+      "sha256": "d3a0483ec865578a869b8a4bb9e79b49a3e686205323ff90005ab62898ea9012",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 176682,
+      "sha256": "fc6bc990f4395f6ed1ef3c568b4486791a8b35be5dc3e3a2d40b56412b24d008",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 113964,
+      "sha256": "598964c396ceb4f5d5f7622367bdd31058ee9ffafc582454c7218a1ade13df14",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-studio.png",
+      "bytes": 176498,
+      "sha256": "78f42d809fc7e4c4558417ec166049a2b28541da1f759406ca582fa715b4c342",
+      "kind": "Mocked provider/response or mixed initial-local/mocked UI state; not new live AI"
+    },
+    {
+      "file": "test-results/m3-final-08/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-youtube.png",
+      "bytes": 80980,
+      "sha256": "64cfc755f1cebc93f12d1af444f34708b2e772b2eb5229fa219a53ca7cff6e7f",
+      "kind": "Mocked provider/response or mixed initial-local/mocked UI state; not new live AI"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-campaign.html",
+      "bytes": 16852,
+      "sha256": "18c6aa04cb30e2d2945413c02a8194710880758f7a9b77c61450cb34c3a59cc0",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-portrait-1080x1350.png",
+      "bytes": 115268,
+      "sha256": "632b5865ed4fe013eae822b21c6af1bde1dbb9f10081b49def43b5cf320d355d",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-square-1080x1080.png",
+      "bytes": 102660,
+      "sha256": "8ad566553774d5951706b6a4be06ca03ebfb2466a835272b3598c08965d128df",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-linkedin-landscape-1910x1000.png",
+      "bytes": 147457,
+      "sha256": "d628b1d6b0e58c43aa82469449e518b2d220d2b0a47dce7d1bb1ed206830c9f8",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-long-copy.png",
+      "bytes": 424652,
+      "sha256": "5237cae198d2b3d882422c32ac3a4a616317e36d88fff4e06dba4162a0796b79",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-studio.png",
+      "bytes": 165768,
+      "sha256": "53477cf9cb9a94bd7ff5a4bbc550f99a96bfb1f9e6de0c80b53c1a39d6e87bb3",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-youtube-thumbnail-1280x720.png",
+      "bytes": 97448,
+      "sha256": "3dd74f3e737f4441f8bb9ea924648a3d34c2b7084945e8a72f8c54fae0e3906c",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-campaign.html",
+      "bytes": 16734,
+      "sha256": "c4326d97a379a13d464baf943d452797bb1509416993acf209745a04476b4913",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 134311,
+      "sha256": "c014a88c58d3dd8f7b54c480cbbe6bbab8ccd3b34c89cd5b091621dd2ab0363e",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 120435,
+      "sha256": "3489737433410d670452c4ca59512c9c1124a8cef5d445f0eb560680dd8aeed4",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 157623,
+      "sha256": "3e579cc164feec962dc4123f7e4a97ea9dc491089cd2441afa64ad0c0b801748",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-long-copy.png",
+      "bytes": 513579,
+      "sha256": "cd3d084f538052141e8516d99b4ba3e8a0926fdb9d55a25187540d46048b88df",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-studio.png",
+      "bytes": 207821,
+      "sha256": "0464e68b97a37c0479eb13b1a36eddcc61a947708ada001c5ec6072d3d93843d",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 112805,
+      "sha256": "c570abc1843fee7e55ab940a9f39d0daa87a19f73c6d8ed2a328e795503fce22",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-campaign.html",
+      "bytes": 14604,
+      "sha256": "419e1a6236d8b98ddd7ea7924865bf5c78e8650b519064049fb0102f6bd2c135",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-portrait-1080x1350.png",
+      "bytes": 114534,
+      "sha256": "268d35111494da1eebfbf11da243f05b6165a7724c06baf3a9a59c56fd9ff10f",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-square-1080x1080.png",
+      "bytes": 100216,
+      "sha256": "88e56466c08c9e9502a8cbb37c6c05f2effb781149c567f1cab9d7c2abda38ea",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "bytes": 144367,
+      "sha256": "d123c5887a3d7e7431b4c6e04f5ad1929d773b3bf7a13d85b281e0eea4a763d9",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-long-copy.png",
+      "bytes": 487577,
+      "sha256": "8cf1f19300624009f6ed43455cbc4342a49e236a7900363a3698369da6aa7121",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-studio.png",
+      "bytes": 172130,
+      "sha256": "fa52017c195605f0c3f7d73ab6307b43650dffbf354e6b1e56e508d27c731fbd",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "bytes": 95359,
+      "sha256": "4d3493fd5e9382e73956108ec5df9ddf7329da8b6eddc57e695025e9d295e5e0",
+      "kind": "Explicit original v1 example/manual workflow; actual native export and portable HTML regression"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-mobile-layout-manua-2cb01--text-injection-remain-safe/mobile-studio.png",
+      "bytes": 159001,
+      "sha256": "3da8bfae2e413cf0b8cec5d9bdcb508e3bad5cab91c4806467004b03ba3ec26a",
+      "kind": "Quota-free regression/fixture evidence; source tests specify mock/replay scope"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+      "bytes": 374537,
+      "sha256": "bfeb8d226fabf4b7e3086b1aecf4e207cc53c8b129f79bbae0e3d99166988011",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-desktop-1440.png",
+      "bytes": 180112,
+      "sha256": "f0ce2b15fb2e91550fc0ffb77e433ff83a52602a129372675b8199a30ec41fce",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-mobile-gallery-390.png",
+      "bytes": 97574,
+      "sha256": "daecdf5f0fc13e4f8878fc73116e0a967d0de1d6e2f01917fd9c357e21b6545b",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/actual-artwork-enlargement.png",
+      "bytes": 190547,
+      "sha256": "80efc62f595fb64940beae02164460cc840ea99d739648ce222d16afe886b712",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/after-inspection.png",
+      "bytes": 111997,
+      "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/before-inspection.png",
+      "bytes": 111997,
+      "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/inspection-isolation.json",
+      "bytes": 194,
+      "sha256": "a01fa39ff151a848954c755fa2eb5552a9eab8c8c8ecfa21d276d809b33aa403",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-draft-cha-85d6b-ong-to-the-current-campaign/manually-refined-spec.json",
+      "bytes": 1132,
+      "sha256": "3a1fdaf0a81848245d623d2b46e00942b2ed0a967a3c7a0b569742df53138241",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-empty-wor-59278-ubjectless-input-are-honest/empty-incomplete-studio.png",
+      "bytes": 69074,
+      "sha256": "85dc9e014c18f878ef6967f76c3e8c70a019f242314d7378f55d378d7c59176a",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+      "bytes": 389449,
+      "sha256": "8b8dc8fa7920f3e6b23891cd7fd6cf02d9ee1428f49c292be971ed54471f34be",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-desktop-1440.png",
+      "bytes": 227462,
+      "sha256": "23d4b8676c8bbb7678c8c3200b5c077721eb1544a883ec447c67106e9c55bd4b",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-mobile-gallery-390.png",
+      "bytes": 126877,
+      "sha256": "c183e6d88d7ca33970820ceb0df1256fb01478083ed60a98437ccfc68aa1250e",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+      "bytes": 448370,
+      "sha256": "2cc9553e87b664ce81d8f6df1250d5c73d2670a1c071d53d095767f726d24efc",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-desktop-1440.png",
+      "bytes": 245020,
+      "sha256": "6cbab2c80d3570500d47f669e26ee8e8c54542bbf34981dda5b8dbcfcfb2d4ba",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-mobile-gallery-390.png",
+      "bytes": 134366,
+      "sha256": "26efdc21b52cfab0dd046352c80a4df51927fe32caac9e4500b484c77d885119",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-pending-f-3ae0c-I-local-fallback-provenance/mock-pending-previous-result.png",
+      "bytes": 194957,
+      "sha256": "956d000682f1ddee9b25ccb90b2710c8980bd242671b7d5db880b3ccd5a88fc6",
+      "kind": "Mocked provider/response or mixed initial-local/mocked UI state; not new live AI"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-rapid-exp-9e077-prevent-duplicate-downloads/locked-revision-youtube.png",
+      "bytes": 111997,
+      "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/css-magnification-200-percent.png",
+      "bytes": 365301,
+      "sha256": "33a68f88e496c061be927ab1639e225e78bf7481e6c7a2a88da8ef1b55ad75aa",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/mobile-creation-open-320.png",
+      "bytes": 152050,
+      "sha256": "ed17752c80e5660a492a68aed989bd98588b80f723498ab0131d6875d2179d97",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/responsive-measurements.json",
+      "bytes": 2964,
+      "sha256": "70a93d7938f179fd3ffa0a1d91246d76ed8fd7a05bf4fd8bf728158bcc9445f8",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1024x768.png",
+      "bytes": 182380,
+      "sha256": "c66f6dd7b5006bac0cfd43f0b2a4c07471c305c82f44e5b6e336b93fb6d5db81",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1280x720.png",
+      "bytes": 214759,
+      "sha256": "07fab2280c3f99a707e90820bad2503002ec9d146bcd1e5b4b6957a71e876813",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1366x768.png",
+      "bytes": 231458,
+      "sha256": "06e10059e94a7b0b67f71ea92c3dcb095e695b8dbb18668c2dc2108c4eb3aba9",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1440x900.png",
+      "bytes": 245020,
+      "sha256": "6cbab2c80d3570500d47f669e26ee8e8c54542bbf34981dda5b8dbcfcfb2d4ba",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-320x844.png",
+      "bytes": 111183,
+      "sha256": "86402c25262d14834d777cf8385d10bcaebda20c1288c2bc2f3afcb0a09a8688",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-390x844.png",
+      "bytes": 134366,
+      "sha256": "26efdc21b52cfab0dd046352c80a4df51927fe32caac9e4500b484c77d885119",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-768x1024.png",
+      "bytes": 132230,
+      "sha256": "e0a3f93ece18b08a84a536324a474dbefc0cd3650cb44bf8e0e2eb602758ae4a",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-embedded-fonts.html",
+      "bytes": 592358,
+      "sha256": "a8fd15be35506b0d413c6f279a762bd341148f2663d14448d2851df499de019f",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-glyphs.png",
+      "bytes": 86698,
+      "sha256": "1bd62e76bf9887757689b2066baadacaaacfe6f51b750f9258a96e267d0432fc",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-native-glyphs.png",
+      "bytes": 52982,
+      "sha256": "0f2f7476560c47267f6edb86a7fe84df808554023e0af4d84f6649d3eba29da7",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-offline-glyphs.png",
+      "bytes": 52979,
+      "sha256": "3a17e9deaf4db6f694a0a314f430cbef783339be341c8cc3f058f5b6ee16ff93",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-painted-before-glyph-query.png",
+      "bytes": 22536,
+      "sha256": "393551a8cb25163c0fa629a0a41bba27c0617406d861f915a3a68144569c2d26",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-bold-street-act-cd898--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 558,
+      "sha256": "35747b80ae3de7df45e084f6e474e1329da582cb53715c23fc4df71946925c48",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-embedded-fonts.html",
+      "bytes": 589604,
+      "sha256": "0c6013026713310ae6df401746bf01aadab7e6cd18b5148748f553e79994d393",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-glyphs.png",
+      "bytes": 112662,
+      "sha256": "85f3adbdc03aa1499a9bdc25e5e9f755019c416b22adaf2098acab23490e8794",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-native-glyphs.png",
+      "bytes": 77794,
+      "sha256": "960c4010f1d538d86b185b03945ff00abc051be76dedf303a52462a9d2141f40",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-offline-glyphs.png",
+      "bytes": 77795,
+      "sha256": "3e7a6ad36e777d226ce9148b0c9ad5b9fce3f53d406624017a824654462e94f4",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-painted-before-glyph-query.png",
+      "bytes": 32121,
+      "sha256": "304330c84440be0a5d31dd8e8e336c883dd5cf4193ff66ce00d5517d6b01d2e4",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-festive-pop-act-025ab--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 926,
+      "sha256": "5fc967ad85ef4e971c307270d174f599311a4fce6002a0ba1c41006daac7a332",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 604,
+      "sha256": "93ae0fa0b53ff2ee33a02cdb64ed09eda3f59291d8a8fc5b5954da244c10fca6",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-embedded-fonts.html",
+      "bytes": 589236,
+      "sha256": "01a11006c5d028bc53999a7accac80af35352ec3424caa1bbeb7f562c7f49c6c",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-glyphs.png",
+      "bytes": 103016,
+      "sha256": "0cc11b8f1bd502ca4a57092afa368d71b722c3102200ea7eac45be873e31ca35",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-native-glyphs.png",
+      "bytes": 69252,
+      "sha256": "0abb7b87bbd363b8d0bef03c4410b8c0aef18f15c1cde0d10b16aab3da539294",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-offline-glyphs.png",
+      "bytes": 69232,
+      "sha256": "31dbc92571366b6ab293bfc98cd0dd08cff43b39738f2a25dc5ef22259e2cf7f",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-painted-before-glyph-query.png",
+      "bytes": 28191,
+      "sha256": "238d319a6168df8d7b6a097a13daadf7cc19972f7d5b89744587137ffee18968",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-unsupported-scr-1af9a-xplicit-system-font-warning/system-fallback-evidence.json",
+      "bytes": 574,
+      "sha256": "42bbe8ae46a3807ac9e345e15af8a6dee45436f3ee8e77201e6a2547b58ab0a4",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-export.png",
+      "bytes": 96783,
+      "sha256": "a443a8d351de4d6ed7fcf6f9de8432c88315da32130b427b06ba0003c3eb3d84",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-native.png",
+      "bytes": 26429,
+      "sha256": "6b3fc424d3122d4e957c9f305b1d187e508e00e5580186a94e5f606527486fcb",
+      "kind": "Actual local generation plus UI/native export/font/accessibility evidence; zero provider attempts"
+    },
+    {
+      "file": "test-results/m3-final-08/validation-investigation-s-4a93d-tion-of-rejected-live-plans/after.json",
+      "bytes": 22553,
+      "sha256": "3b668dfc53d5b4b3ba4687bbfa4b6ea46085838fe6547cdbe899a41edc41545e",
+      "kind": "Mocked provider/response or mixed initial-local/mocked UI state; not new live AI"
+    },
+    {
+      "file": "test-results/m3-final-08/validation-investigation-s-56834-cal-envelopes-remain-intact/mocked-engine-evidence.json",
+      "bytes": 12242,
+      "sha256": "e57178944153cc3230e354c593913eab5bcab2e33c88d75553df437486df513b",
+      "kind": "Mocked provider/response or mixed initial-local/mocked UI state; not new live AI"
+    }
+  ],
+  "closure": {
+    "root": "test-results/m3-closure-10/artifacts",
+    "scope": "Final accepted revision, full quota-free regression. Original historical files array above is unchanged.",
+    "files": [
+      {
+        "file": "test-results/m3-closure-10/artifacts/.last-run.json",
+        "bytes": 45,
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-24da9-incomplete-input-without-AI/actual-local-topic-cases.json",
+        "bytes": 25777,
+        "sha256": "76a95a2554c8f5471addfbba0f3fedfb65c5a3c79c042d85d8561945f87ab4a7",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-portrait.png",
+        "bytes": 138825,
+        "sha256": "e57cb874de15762365cb59e9a42c2f9825618570554060cb21ad5abfbfa79c69",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-square.png",
+        "bytes": 119319,
+        "sha256": "78ae280a543ac6a004bae9241c929fff4e4794e8e4fc8a910f032ee90aac9bea",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-linkedin-landscape.png",
+        "bytes": 157311,
+        "sha256": "d331fa0a45b7fe989b19b9d9dc2928547cc46f5901d25f5605de622f3101428d",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-spec.json",
+        "bytes": 1119,
+        "sha256": "55bda3377d7973f7f6a3cd117bfd7cf24693e31eea5907a83149073a41c24400",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-studio.png",
+        "bytes": 223884,
+        "sha256": "b85437066729c491f83a29825c2749860a766cf8241d68408df479d1d76b9788",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-youtube-thumbnail.png",
+        "bytes": 104607,
+        "sha256": "44c14303d954c7a1efa48b1d45099b293e8c7d0204bd98e8edc5378c20e8b95c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial.html",
+        "bytes": 600960,
+        "sha256": "699f8074d24147d83ecbd217c7c543bb0541ed40cc4e97c8cf7f2803e3d25276",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7a31a-mparison-and-layout-quality/evidence.json",
+        "bytes": 3268,
+        "sha256": "898f42da8fbe1679abab1fa99026a117b3269e6785f7c3d233142a3ff164bf06",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/evidence.json",
+        "bytes": 3350,
+        "sha256": "9d4d7961306d6ed4eb55cf78844c41749d7ed76e78dfa063724afeb69dfca0bc",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-portrait.png",
+        "bytes": 161402,
+        "sha256": "95df040172b7894c015f9938bfa406dddb5cfa846c0db30a46bcaa4776868cec",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-square.png",
+        "bytes": 155561,
+        "sha256": "0a6ddf1fb88ef79e9a53f45b97c6a5a0079e82d2580bbd52fd6af87a7dee559b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-linkedin-landscape.png",
+        "bytes": 183626,
+        "sha256": "0bb35194b1869f1e8e9297b73bb2abc452015e87568554867ac16ee143598c83",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-native-dom.png",
+        "bytes": 80896,
+        "sha256": "0f7ff2bfb1f896028bc9d435546557855b0d7193a342ea51a85bec5cd8ff9523",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-spec.json",
+        "bytes": 1101,
+        "sha256": "f66280493cf9a90910dfde16492646894e8d47de0e9f18f7b5488040d22e833f",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-studio.png",
+        "bytes": 248890,
+        "sha256": "575ae15d13fafd4c52b8d33ccb4349be9a813cf575ee8da3318505a8693a5552",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-youtube-thumbnail.png",
+        "bytes": 118860,
+        "sha256": "e441b69a08fca0d18a62e060bd257586853d872cb8e7e80b492a84136f32ec61",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage.html",
+        "bytes": 596839,
+        "sha256": "9d0c62b99d3d94d6fc55f437c188d007daa35bff10c660fdb9f63ce5913b274c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-social-size.png",
+        "bytes": 192187,
+        "sha256": "c4c8a5aa461a7137b98817db60f6e36af31550b9a5ff72275cd8de5db17f5bbf",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/evidence.json",
+        "bytes": 3246,
+        "sha256": "c89a5c8bc66fe33ed14ba4d0600bdcdf5497d59dc346ea6351d022bdc5ce4894",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-portrait.png",
+        "bytes": 159214,
+        "sha256": "9bbfa6d0c8472ce16fffcf85a2bd91049d4f590f785f2279c0364d24ef768fb7",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-square.png",
+        "bytes": 139287,
+        "sha256": "bb82c7d4dab87eccfb060800b754323941559cf57b41f43d4094f7936cd90152",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-linkedin-landscape.png",
+        "bytes": 183610,
+        "sha256": "da1fad31d4157c8752fa585b040b546ff354da0b9d2a23ac467d341f982acd78",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-spec.json",
+        "bytes": 1103,
+        "sha256": "c2e587e3791e8a5ff10a6d9c307a0700b588936f37b80f2ff5bc4b8cc41e3cc8",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-studio.png",
+        "bytes": 243919,
+        "sha256": "af529255e06b821f9dcc2af7784cf0b3ddd9da89d9e4187d1a6f0367874a41fa",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-youtube-thumbnail.png",
+        "bytes": 113403,
+        "sha256": "c9f169256d4735aebc15f43555bf04a820737081ba0e541302eaf54dcdd5da72",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset.html",
+        "bytes": 596821,
+        "sha256": "67662e5a1b1c69ba3e7d8a2fc84d99ef50c44eeba8c0f9ab5afc4ba929dab81c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/evidence.json",
+        "bytes": 3248,
+        "sha256": "c5d2866177d622d93834f240251c398d3951b6f8817f80e4c0447fe2bfb77223",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-portrait.png",
+        "bytes": 149834,
+        "sha256": "e7f8571e6494dab2b0ca2d5c08bdeec588a8657a5d1ec024e19b48f538579492",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-square.png",
+        "bytes": 129349,
+        "sha256": "e074ff784012f3b92f98b7e8b937822f5f2ca2a13f642f5728535f20438286df",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-linkedin-landscape.png",
+        "bytes": 167453,
+        "sha256": "845bd48a0b54d9055a4fc163c6cfde08fecf53c8e6e86cfacf1dc81570410b8c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-spec.json",
+        "bytes": 1101,
+        "sha256": "de19aa8fc587fa54fd2c9d67fa3cdefe94a6f73897d02f371523cf1247349f6d",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-studio.png",
+        "bytes": 229306,
+        "sha256": "df94bb0e7e15742fb2198038333a88accb3758ac67782e2002b6ec1a545fd5cd",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-youtube-thumbnail.png",
+        "bytes": 113026,
+        "sha256": "2cf370417e415da6da41eb039b241cc6c395a912f74d5d5fc84a2b7f0a6d9d02",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column.html",
+        "bytes": 596920,
+        "sha256": "4d9e2be985d61750b41f83cf5ae16a59f6323a5e2b04248852aae6a7d0bb1405",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/evidence.json",
+        "bytes": 3351,
+        "sha256": "48b14585dfc59caf37e506d53ce0cb31855b13d9d7724c1ae087e93dce6a9443",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-social-size.png",
+        "bytes": 182599,
+        "sha256": "5378d940758899690e170a0bb470eaf915b80b768580d8476413e49d7630e5a3",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-portrait.png",
+        "bytes": 151688,
+        "sha256": "7a1db8997e67e0101112c58d3f192b6627241813159d0b3e1fc51618c6f07f7c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-square.png",
+        "bytes": 137388,
+        "sha256": "a56f28bfdf8e762cef5d678ea3caf491a7317787892eb38ffac92ecdaac1d482",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-linkedin-landscape.png",
+        "bytes": 168736,
+        "sha256": "966021dacaf7d96f16a437f90ae56bf6d4611995435014a0aef5a3cb3e57414b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-native-dom.png",
+        "bytes": 75777,
+        "sha256": "563e00969b9e7829d37a990ca28ca9b37b270eb78053b154e0cf73706f9af63b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-spec.json",
+        "bytes": 1097,
+        "sha256": "17765d7801418c34d16618869a3746df14e603fd7206604eb5cd1f3164864af9",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-studio.png",
+        "bytes": 219835,
+        "sha256": "243eb8863955452f83e570a912626c9bab3f574c498021cefb7a5c219d0c4b5b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-youtube-thumbnail.png",
+        "bytes": 112220,
+        "sha256": "e34c1bed3d4f98f38d0e9e926574c9531abb423807408e51531888a77f73a998",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid.html",
+        "bytes": 596841,
+        "sha256": "51aa773198991c5b8414f14b33ed3d1360d224a33e1d7bb879bdb50a8bb2f086",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-social-size.png",
+        "bytes": 178588,
+        "sha256": "025ad86782c927da1f97e02bea1b0a07aeab7d6904620c4379fa78da10574704",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-portrait.png",
+        "bytes": 153922,
+        "sha256": "9f85f6420b6a951b69767d080a99123d85d4b80e4fdb9eafd29d2a7696fea87b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-square.png",
+        "bytes": 134675,
+        "sha256": "a60c1cd7a2aff44d6b3a0c4303fb395a9dce1c8c461f32ea966ea1eeb22001ca",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-linkedin-landscape.png",
+        "bytes": 158073,
+        "sha256": "4cf065b661160645c00cb61443f9c3130d9a60b8055e69bb8105ccb8fa9edcc0",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-native-dom.png",
+        "bytes": 69968,
+        "sha256": "95f05ef315c1da21e9636f83d6fb28f5ec43d8243712f1ce9d6c73f4a7da4376",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-spec.json",
+        "bytes": 1111,
+        "sha256": "6d5614d122f5745f21d0f5429bb59701cf59fecb7ac170430c1f29520d96fac0",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-studio.png",
+        "bytes": 232260,
+        "sha256": "d95795d389d354c24b4a841c1f0d18bf43ec06312d5d55124cca8030a10c92d6",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-youtube-thumbnail.png",
+        "bytes": 106419,
+        "sha256": "548e4bf3f42de3c6c2e502771fc1c46851a764684e8b24aaa1cdac4ff0486954",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack.html",
+        "bytes": 600758,
+        "sha256": "514a76c2d2c5e49f4eeb39b12fc0a310c9eee07287baf8248f2f50b7420871e5",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-actual-local-e3a66-mparison-and-layout-quality/evidence.json",
+        "bytes": 3368,
+        "sha256": "47bff9737a2da29da9414b9e58d82e50b6c83f225efd2fb77e1594d32db692eb",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-portrait.png",
+        "bytes": 121316,
+        "sha256": "3fd28d0dfdb239fbaf08c149092e936bc0a478f5da0b867e4f3d68b0b481518a",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-square.png",
+        "bytes": 102045,
+        "sha256": "a62f119cdfb4054a8d8c0be13f1e98f03b2c0a65722bbda02c6090d7564e645e",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-linkedin-landscape.png",
+        "bytes": 148617,
+        "sha256": "ea5b081b4e7e9804b5954a0e041be1eee7bc490bf10853c0c6799df01a6f9190",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-spec.json",
+        "bytes": 931,
+        "sha256": "fdcfc6566215445d9f154aee6f465214be1d2e540aadb7180c7d0cb65e348af7",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-youtube-thumbnail.png",
+        "bytes": 101188,
+        "sha256": "bb5c1b8e89167af4f1214154d6aeb9c9ead3029231e42803138cd25fbf0f24e2",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2.html",
+        "bytes": 16876,
+        "sha256": "81e15373a3cf2a4d7a57c935d8e5e377100b542ea50379257416512b367fa285",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replay-provenance.json",
+        "bytes": 2507,
+        "sha256": "e13777a9813f9761449040249c70d3d6e05a3b22409a726a5c73be350b59243e",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-portrait.png",
+        "bytes": 136437,
+        "sha256": "c21dcc94135a7c62fb31aef4dcfe8c5ea4f67b7ca32c99cc055869ab918e6b54",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-square.png",
+        "bytes": 121598,
+        "sha256": "1d9fff9eb3e5f15f8e756577be734315b1c24ce55db346e854590159fe8643ee",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-linkedin-landscape.png",
+        "bytes": 165843,
+        "sha256": "7e66aeab1964202366845d91ef481245b28eedf7bbc8eebb36a40cca945040c1",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-studio.png",
+        "bytes": 222485,
+        "sha256": "3e0590877c2c569bfd22fd3c211468173c1bcb0a49f2034ca7753f0d1e00bd84",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-youtube-thumbnail.png",
+        "bytes": 101189,
+        "sha256": "6e660d2b724a3505a9ac3ca8420d62d0da7be50e466f362010452cd4e79b122a",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replay-provenance.json",
+        "bytes": 2669,
+        "sha256": "bc28baf6c582e6bc392511d117a62480dfcbc27c1643e9f88d1876784cc7d581",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-portrait.png",
+        "bytes": 165890,
+        "sha256": "fbd517d2beccf9b38244d8a8ebeb0312bda2e97afff13fb8357ef348530aea52",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-square.png",
+        "bytes": 150870,
+        "sha256": "2286231d3cc9b980c306571b6462650df1e6dfc1e8b6bec03c68f333e2a15e7f",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-linkedin-landscape.png",
+        "bytes": 186233,
+        "sha256": "3f596993c771ea1489c4fcc928ace85dc0802d46f301c809738ee6099bec8c19",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-studio.png",
+        "bytes": 269058,
+        "sha256": "8185bdc943b1e9388e1686ab810fd331c9d898396a3f63c9e103eb7b5122a3d7",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-youtube-thumbnail.png",
+        "bytes": 130870,
+        "sha256": "2175fcbb88436b58e1fcc9212addb57d02ea4f667b49f351a41663cd727107b0",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replay-provenance.json",
+        "bytes": 2919,
+        "sha256": "6d6fc46e7e27e21d06ceefac510f58db5f9d5d0a493014c37747e72ab7335053",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-portrait.png",
+        "bytes": 156823,
+        "sha256": "3fe45ea53924f983c28e3ae7b5ba457be73e6f4c4a966332bffd2f92741eeb5f",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-square.png",
+        "bytes": 150492,
+        "sha256": "7f5ccd71b3eaf67157b08c74f69b3108137a46bd716ea6c403d94450e4e02ef0",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-linkedin-landscape.png",
+        "bytes": 186952,
+        "sha256": "d0cfcaf7b5d2bd0152c5d72ddea6378d919358a2836bc7786460c4ba426d26fa",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-studio.png",
+        "bytes": 258905,
+        "sha256": "f2926d97360e8389593aa7fb3d1e56c4c782c5282954583e77c26e143893b3e6",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-youtube-thumbnail.png",
+        "bytes": 138509,
+        "sha256": "2bb95f3cb6c9c23e22bc7e280d9cdb3f3e2098c64722828cc7965c3f124d2f23",
+        "kind": "Retained AI-copy replay, no live call"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-dense-no-art-studio.png",
+        "bytes": 231555,
+        "sha256": "843bcaa9ceb54ed595820c1ae7b708c4cb8939029f346364e452b069e7f172ed",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-impossible-copy-refused.png",
+        "bytes": 268432,
+        "sha256": "89cd62a89f8cfca97b92f0a6aa771b9cd4505c9c2b325d8cc56d2d1f8d06c3f4",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/actual-local-result.json",
+        "bytes": 3518,
+        "sha256": "9a55687d6a17385f1f3c77dcf4dcbd53cdc21eba464d592eb90d7cc5df6fd302",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/corrected-local-studio.png",
+        "bytes": 212384,
+        "sha256": "1b0c771fe19ce67348de2243e72f5fa0159c5cfe33a34dc2e6bec80212f28b9f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-campaign.html",
+        "bytes": 593948,
+        "sha256": "14b273e92f04ce103cbda6213b7ea57fd043233e75945ba749451f204cb466ad",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-portrait-1080x1350.png",
+        "bytes": 127078,
+        "sha256": "7112c4680ad16672b7fd1880610548bc9bd5d728a3bf76b1c21ff11a2cd2e580",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-square-1080x1080.png",
+        "bytes": 114204,
+        "sha256": "a0223bcdc4d969efa444af61194829cffe135c39547d9997801dc5fece64bbe6",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-linkedin-landscape-1910x1000.png",
+        "bytes": 148556,
+        "sha256": "467d181e0532cfc1d92e9bc45ca885dd462b79b13790b3e8d55595000d6e014c",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-youtube-thumbnail-1280x720.png",
+        "bytes": 94007,
+        "sha256": "463985c9f22fcfe19a1e56f087ebf27d8510698c7b60d813a1ff58c6255d3a52",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/fallback-correction-replay-73a6d-istorical-measured-evidence/after.json",
+        "bytes": 20083,
+        "sha256": "96c6b20f34111ba21e6c02edc0cd16c2db6d04874004349cc61e5149b0126279",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/actual-local-planner-studio.png",
+        "bytes": 231694,
+        "sha256": "a8626b03a0b434d6267241f3206894bf14ef09e28274e3c572b44393113960e4",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-campaign.html",
+        "bytes": 593833,
+        "sha256": "6004f2c3ebbbdccfd799fd2ea3f369c42bce44d1783967cb585082b0db19d779",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-portrait-1080x1350.png",
+        "bytes": 148434,
+        "sha256": "8108b600b21de58542968130b5f3c106c29655a1e6153b1f57194253aacc044a",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-square-1080x1080.png",
+        "bytes": 131103,
+        "sha256": "a0d232e6138e2a2be7710580820fd552927d0b4c15044b646bd04974310d6203",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-linkedin-landscape-1910x1000.png",
+        "bytes": 176694,
+        "sha256": "c735d892afa128e29b17732c77c684d2312db9b7e37a0a892d52c116c0f7de93",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-youtube-thumbnail-1280x720.png",
+        "bytes": 113964,
+        "sha256": "598964c396ceb4f5d5f7622367bdd31058ee9ffafc582454c7218a1ade13df14",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-studio.png",
+        "bytes": 176498,
+        "sha256": "78f42d809fc7e4c4558417ec166049a2b28541da1f759406ca582fa715b4c342",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-youtube.png",
+        "bytes": 80980,
+        "sha256": "64cfc755f1cebc93f12d1af444f34708b2e772b2eb5229fa219a53ca7cff6e7f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-campaign.html",
+        "bytes": 16852,
+        "sha256": "18c6aa04cb30e2d2945413c02a8194710880758f7a9b77c61450cb34c3a59cc0",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-portrait-1080x1350.png",
+        "bytes": 115268,
+        "sha256": "632b5865ed4fe013eae822b21c6af1bde1dbb9f10081b49def43b5cf320d355d",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-square-1080x1080.png",
+        "bytes": 102686,
+        "sha256": "73bdd2e4c52f6e9a2917338118d94fa5493285f45bc0a3e5e9f1625437668c64",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-linkedin-landscape-1910x1000.png",
+        "bytes": 147457,
+        "sha256": "d628b1d6b0e58c43aa82469449e518b2d220d2b0a47dce7d1bb1ed206830c9f8",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-long-copy.png",
+        "bytes": 424652,
+        "sha256": "5237cae198d2b3d882422c32ac3a4a616317e36d88fff4e06dba4162a0796b79",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-studio.png",
+        "bytes": 165768,
+        "sha256": "53477cf9cb9a94bd7ff5a4bbc550f99a96bfb1f9e6de0c80b53c1a39d6e87bb3",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-youtube-thumbnail-1280x720.png",
+        "bytes": 97448,
+        "sha256": "3dd74f3e737f4441f8bb9ea924648a3d34c2b7084945e8a72f8c54fae0e3906c",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-campaign.html",
+        "bytes": 16734,
+        "sha256": "c4326d97a379a13d464baf943d452797bb1509416993acf209745a04476b4913",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-portrait-1080x1350.png",
+        "bytes": 134311,
+        "sha256": "c014a88c58d3dd8f7b54c480cbbe6bbab8ccd3b34c89cd5b091621dd2ab0363e",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-square-1080x1080.png",
+        "bytes": 120435,
+        "sha256": "3489737433410d670452c4ca59512c9c1124a8cef5d445f0eb560680dd8aeed4",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-linkedin-landscape-1910x1000.png",
+        "bytes": 157623,
+        "sha256": "3e579cc164feec962dc4123f7e4a97ea9dc491089cd2441afa64ad0c0b801748",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-long-copy.png",
+        "bytes": 513579,
+        "sha256": "cd3d084f538052141e8516d99b4ba3e8a0926fdb9d55a25187540d46048b88df",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-studio.png",
+        "bytes": 207821,
+        "sha256": "0464e68b97a37c0479eb13b1a36eddcc61a947708ada001c5ec6072d3d93843d",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-youtube-thumbnail-1280x720.png",
+        "bytes": 112805,
+        "sha256": "c570abc1843fee7e55ab940a9f39d0daa87a19f73c6d8ed2a328e795503fce22",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-campaign.html",
+        "bytes": 14604,
+        "sha256": "419e1a6236d8b98ddd7ea7924865bf5c78e8650b519064049fb0102f6bd2c135",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-portrait-1080x1350.png",
+        "bytes": 114534,
+        "sha256": "268d35111494da1eebfbf11da243f05b6165a7724c06baf3a9a59c56fd9ff10f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-square-1080x1080.png",
+        "bytes": 100216,
+        "sha256": "88e56466c08c9e9502a8cbb37c6c05f2effb781149c567f1cab9d7c2abda38ea",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-linkedin-landscape-1910x1000.png",
+        "bytes": 144367,
+        "sha256": "d123c5887a3d7e7431b4c6e04f5ad1929d773b3bf7a13d85b281e0eea4a763d9",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-long-copy.png",
+        "bytes": 487577,
+        "sha256": "8cf1f19300624009f6ed43455cbc4342a49e236a7900363a3698369da6aa7121",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-studio.png",
+        "bytes": 172130,
+        "sha256": "fa52017c195605f0c3f7d73ab6307b43650dffbf354e6b1e56e508d27c731fbd",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-youtube-thumbnail-1280x720.png",
+        "bytes": 95359,
+        "sha256": "4d3493fd5e9382e73956108ec5df9ddf7329da8b6eddc57e695025e9d295e5e0",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-mobile-layout-manua-2cb01--text-injection-remain-safe/mobile-studio.png",
+        "bytes": 159001,
+        "sha256": "3da8bfae2e413cf0b8cec5d9bdcb508e3bad5cab91c4806467004b03ba3ec26a",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+        "bytes": 374537,
+        "sha256": "491ca37291d488a2bb1d27407853e5a8af2433a7ef102f739d77075e38a9b995",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-desktop-1440.png",
+        "bytes": 180112,
+        "sha256": "f0ce2b15fb2e91550fc0ffb77e433ff83a52602a129372675b8199a30ec41fce",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-mobile-gallery-390.png",
+        "bytes": 97590,
+        "sha256": "4cd27fa338384c04ce579c9af8cfdac6627a5e2aa8e798da8e4a91cb368ab887",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/actual-artwork-enlargement.png",
+        "bytes": 190547,
+        "sha256": "80efc62f595fb64940beae02164460cc840ea99d739648ce222d16afe886b712",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/after-inspection.png",
+        "bytes": 111997,
+        "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/before-inspection.png",
+        "bytes": 111997,
+        "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/inspection-isolation.json",
+        "bytes": 194,
+        "sha256": "a01fa39ff151a848954c755fa2eb5552a9eab8c8c8ecfa21d276d809b33aa403",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-draft-cha-85d6b-ong-to-the-current-campaign/manually-refined-spec.json",
+        "bytes": 1132,
+        "sha256": "3a1fdaf0a81848245d623d2b46e00942b2ed0a967a3c7a0b569742df53138241",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-empty-wor-59278-ubjectless-input-are-honest/empty-incomplete-studio.png",
+        "bytes": 69074,
+        "sha256": "85dc9e014c18f878ef6967f76c3e8c70a019f242314d7378f55d378d7c59176a",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+        "bytes": 389449,
+        "sha256": "d914e82266e3c42b01765b314c6a30580da15c422c15be4fb415d6951b05821a",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-desktop-1440.png",
+        "bytes": 227462,
+        "sha256": "23d4b8676c8bbb7678c8c3200b5c077721eb1544a883ec447c67106e9c55bd4b",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-mobile-gallery-390.png",
+        "bytes": 126877,
+        "sha256": "c183e6d88d7ca33970820ceb0df1256fb01478083ed60a98437ccfc68aa1250e",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+        "bytes": 448370,
+        "sha256": "aa69e6839a56cd2ad9db567221385f31ed98a99488b5bdc8b4f4f0cafc20ae90",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-desktop-1440.png",
+        "bytes": 245020,
+        "sha256": "6cbab2c80d3570500d47f669e26ee8e8c54542bbf34981dda5b8dbcfcfb2d4ba",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-mobile-gallery-390.png",
+        "bytes": 134366,
+        "sha256": "26efdc21b52cfab0dd046352c80a4df51927fe32caac9e4500b484c77d885119",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-pending-f-3ae0c-I-local-fallback-provenance/mock-pending-previous-result.png",
+        "bytes": 194957,
+        "sha256": "956d000682f1ddee9b25ccb90b2710c8980bd242671b7d5db880b3ccd5a88fc6",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-rapid-exp-9e077-prevent-duplicate-downloads/locked-revision-youtube.png",
+        "bytes": 111997,
+        "sha256": "9b5c23c9c67326985d07dd46a435550436ea0f16c1cc1810be084634283dd90c",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/css-magnification-200-percent.png",
+        "bytes": 365301,
+        "sha256": "33a68f88e496c061be927ab1639e225e78bf7481e6c7a2a88da8ef1b55ad75aa",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/mobile-creation-open-320.png",
+        "bytes": 152050,
+        "sha256": "ed17752c80e5660a492a68aed989bd98588b80f723498ab0131d6875d2179d97",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/responsive-measurements.json",
+        "bytes": 2964,
+        "sha256": "70a93d7938f179fd3ffa0a1d91246d76ed8fd7a05bf4fd8bf728158bcc9445f8",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1024x768.png",
+        "bytes": 182380,
+        "sha256": "c66f6dd7b5006bac0cfd43f0b2a4c07471c305c82f44e5b6e336b93fb6d5db81",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1280x720.png",
+        "bytes": 214759,
+        "sha256": "07fab2280c3f99a707e90820bad2503002ec9d146bcd1e5b4b6957a71e876813",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1366x768.png",
+        "bytes": 231458,
+        "sha256": "06e10059e94a7b0b67f71ea92c3dcb095e695b8dbb18668c2dc2108c4eb3aba9",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1440x900.png",
+        "bytes": 245020,
+        "sha256": "6cbab2c80d3570500d47f669e26ee8e8c54542bbf34981dda5b8dbcfcfb2d4ba",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-320x844.png",
+        "bytes": 111183,
+        "sha256": "86402c25262d14834d777cf8385d10bcaebda20c1288c2bc2f3afcb0a09a8688",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-390x844.png",
+        "bytes": 134366,
+        "sha256": "26efdc21b52cfab0dd046352c80a4df51927fe32caac9e4500b484c77d885119",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-768x1024.png",
+        "bytes": 132230,
+        "sha256": "e0a3f93ece18b08a84a536324a474dbefc0cd3650cb44bf8e0e2eb602758ae4a",
+        "kind": "Actual local/manual/browser evidence; mocked provenance tests are identified in test source"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-embedded-fonts.html",
+        "bytes": 592358,
+        "sha256": "a8fd15be35506b0d413c6f279a762bd341148f2663d14448d2851df499de019f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-glyphs.png",
+        "bytes": 87308,
+        "sha256": "c9b80878695815899caed9146568af2da603e1236eb020b9bcdfce375ab11503",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-native-glyphs.png",
+        "bytes": 52992,
+        "sha256": "626601ab039a291629e3049f02f3864088b57c6a69b0626332bf82b34625466c",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-offline-glyphs.png",
+        "bytes": 52979,
+        "sha256": "655010ea91502073776df7cbe252d0d64ae908606be70a87b3f4f8604b5abd1f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-painted-before-glyph-query.png",
+        "bytes": 22536,
+        "sha256": "393551a8cb25163c0fa629a0a41bba27c0617406d861f915a3a68144569c2d26",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-bold-street-act-cd898--and-native-font-appearance/glyph-evidence.json",
+        "bytes": 558,
+        "sha256": "d5c6c065cf5a4eb3dbbcb06e34c141e30a8c29ba03f0e4889e77bdb7b86b06d1",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-embedded-fonts.html",
+        "bytes": 589604,
+        "sha256": "0c6013026713310ae6df401746bf01aadab7e6cd18b5148748f553e79994d393",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-glyphs.png",
+        "bytes": 112662,
+        "sha256": "85f3adbdc03aa1499a9bdc25e5e9f755019c416b22adaf2098acab23490e8794",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-native-glyphs.png",
+        "bytes": 77794,
+        "sha256": "960c4010f1d538d86b185b03945ff00abc051be76dedf303a52462a9d2141f40",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-offline-glyphs.png",
+        "bytes": 77798,
+        "sha256": "caeed79554036734ca63bca3e586fc5b9abb5fcd4d2ce1fcc1ba5cec5d0d7c4a",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-painted-before-glyph-query.png",
+        "bytes": 32121,
+        "sha256": "304330c84440be0a5d31dd8e8e336c883dd5cf4193ff66ce00d5517d6b01d2e4",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-festive-pop-act-025ab--and-native-font-appearance/glyph-evidence.json",
+        "bytes": 926,
+        "sha256": "5fc967ad85ef4e971c307270d174f599311a4fce6002a0ba1c41006daac7a332",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/glyph-evidence.json",
+        "bytes": 604,
+        "sha256": "1cb0e56a9b52773ee5c9efd624caee019750b324fa8366c65654335563ffc92f",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-embedded-fonts.html",
+        "bytes": 589236,
+        "sha256": "01a11006c5d028bc53999a7accac80af35352ec3424caa1bbeb7f562c7f49c6c",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-glyphs.png",
+        "bytes": 103009,
+        "sha256": "756c75ad29c2aa016f173da5c7d6c6dfc72b789de068965b6271252878b2e3b1",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-native-glyphs.png",
+        "bytes": 69240,
+        "sha256": "9c7b16333b1c8ef0fe2c027928cbcf87df60aaf5928dd36dc98541e487adeee7",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-offline-glyphs.png",
+        "bytes": 69252,
+        "sha256": "cae5fe233c1d24e0c37924e8466af0996c43665c3d22c5511ed960e6cbae20d4",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-painted-before-glyph-query.png",
+        "bytes": 28191,
+        "sha256": "238d319a6168df8d7b6a097a13daadf7cc19972f7d5b89744587137ffee18968",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-unsupported-scr-1af9a-xplicit-system-font-warning/system-fallback-evidence.json",
+        "bytes": 574,
+        "sha256": "42bbe8ae46a3807ac9e345e15af8a6dee45436f3ee8e77201e6a2547b58ab0a4",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-export.png",
+        "bytes": 96859,
+        "sha256": "c34bbd9356a86350f3f65b3f29c17597f85bbee642a63210be17b6cbb8e38f0a",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-native.png",
+        "bytes": 26429,
+        "sha256": "6b3fc424d3122d4e957c9f305b1d187e508e00e5580186a94e5f606527486fcb",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/validation-investigation-s-4a93d-tion-of-rejected-live-plans/after.json",
+        "bytes": 22553,
+        "sha256": "3b668dfc53d5b4b3ba4687bbfa4b6ea46085838fe6547cdbe899a41edc41545e",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      },
+      {
+        "file": "test-results/m3-closure-10/artifacts/validation-investigation-s-56834-cal-envelopes-remain-intact/mocked-engine-evidence.json",
+        "bytes": 12242,
+        "sha256": "7045ca215cd6c63ad75b90aeab34f4a95085e62ed317340755a81e8971fde51b",
+        "kind": "Quota-free regression/fixture or retained specification; see source test"
+      }
+    ],
+    "count": 170,
+    "bytes": 26871969
+  }
+}

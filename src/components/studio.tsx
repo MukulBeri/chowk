@@ -1,169 +1,214 @@
 "use client";
-import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
-import { createDesign, designSchema, designSchemaV2, designSchemaV3, FORMATS, PRESETS, SAMPLE_COPY, SAMPLE_TOPIC, TASTES, inputSchema, type Taste, type Format, type DesignSpec } from "@/lib/design";
-import { ENGINE_TASTES, localDirection, PALETTES, type ArtDirection } from "@/lib/design-engine/registry";
+import { createDesign, designSchema, FORMATS, PRESETS, SAMPLE_TOPIC, type Taste, type Format, type DesignSpec } from "@/lib/design";
+import { ENGINE_TASTES, PALETTES, type ArtDirection } from "@/lib/design-engine/registry";
 import { generationRequestSchema, generationResultSchema, incompleteBriefResponseSchema, type GenerationResult } from "@/lib/generation/contracts";
 import { exportHtml, exportPng, saveFile } from "@/lib/export";
-import { PosterPreview } from "./poster";
-const subscribeHydration = () => () => {};
-const clientReady = () => true;
-const serverReady = () => false;
-
+import { TastePicker } from "./taste-picker";
+import { StudioArtboard } from "./studio-artboard";
+import { StudioDialog, ArtworkSnapshot } from "./studio-dialog";
+const subscribe = () => () => { };
+type Draft = {
+    topic: string;
+    details: string;
+    taste: Taste;
+};
+type Copy = {
+    topic: string;
+    headline: string;
+    supportingText: string;
+    cta: string;
+};
+export type Campaign = {
+    spec: DesignSpec;
+    generation: GenerationResult | null;
+    input: Draft;
+    revision: number;
+};
+type Inspection = {
+    kind: "spec" | "checks" | "artwork";
+    campaign: Campaign;
+    format?: Format;
+    node?: HTMLElement;
+    measurements?: object;
+};
+const copyOf = (s: DesignSpec): Copy => ({ topic: s.campaign.topic, headline: s.campaign.headline, supportingText: s.campaign.supportingText, cta: s.campaign.cta ?? "" });
+const readable = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).replaceAll("-", " ");
 export function Studio() {
-  const interactive = useSyncExternalStore(subscribeHydration, clientReady, serverReady);
-  const [taste, setTaste] = useState<Taste>("bold-street");
-  const [copy, setCopy] = useState({ topic: SAMPLE_COPY.topic, headline: SAMPLE_COPY.headline, supportingText: SAMPLE_COPY.supportingText, cta: SAMPLE_COPY.cta });
-  const [applied, setApplied] = useState<Partial<typeof copy>>({});
-  const [showSpec, setShowSpec] = useState(false);
-  const [busy, setBusy] = useState(false);
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
-  const [incomplete, setIncomplete] = useState<ReturnType<typeof incompleteBriefResponseSchema.parse> | null>(null);
-  const [details, setDetails] = useState("");
-  const [generated, setGenerated] = useState<GenerationResult | null>(null);
-  const [manual, setManual] = useState(false);
-  const [directionEdits, setDirectionEdits] = useState<Partial<ArtDirection>>({});
-  const [generating, setGenerating] = useState(false);
-  const generationId = useRef(0);
-  const pending = useRef<AbortController | null>(null);
-  useEffect(() => () => { generationId.current++; pending.current?.abort(); }, []);
-  const gallery = useRef<HTMLDivElement>(null);
-  const spec = useMemo<DesignSpec>(() => {
-    if (!generated) return createDesign({ taste, topic: SAMPLE_TOPIC, ...applied });
-    const base = generated.spec;
-    if (!manual) return base;
-    const preset = PRESETS[taste];
-    if (base.version === 3) {
-      const direction = { ...(base.taste === taste ? base.artDirection : localDirection(taste, `${base.campaign.headline}\n${base.campaign.supportingText}`)), ...directionEdits };
-      return designSchemaV3.parse({ ...base, provenance: "manual-input", taste, artDirection: direction, palette: PALETTES[direction.palette],
-        typography: { ...base.typography, family: ENGINE_TASTES[taste].family, case: preset.typography.case }, composition: preset.composition,
-        decoration: { ...preset.decoration, illustration: direction.visual === "cup" ? "cup" : direction.visual === "none" ? "none" : "abstract" },
-        campaign: { ...base.campaign, ...applied, cta: applied.cta === "" ? undefined : applied.cta ?? base.campaign.cta },
-        rationale: `${preset.name}: ${direction.variant.replaceAll("-", " ")} with ${direction.palette.replaceAll("-", " ")} colours. Manual adjustments retain campaign copy; no new AI request.` });
+    const interactive = useSyncExternalStore(subscribe, () => true, () => false);
+    const [draft, setDraft] = useState<Draft>({ topic: "", details: "", taste: "bold-street" });
+    const [campaign, setCampaign] = useState<Campaign | null>(null), committed = useRef<Campaign | null>(null);
+    const [copy, setCopy] = useState<Copy>({ topic: "", headline: "", supportingText: "", cta: "" });
+    const [creationOpen, setCreationOpen] = useState(true), [inspection, setInspection] = useState<Inspection | null>(null);
+    const [busy, setBusy] = useState(false), exportLock = useRef(false), [generating, setGenerating] = useState(false);
+    const [message, setMessage] = useState(""), [error, setError] = useState<{
+        kind: "generation" | "input" | "copy" | "export";
+        text: string;
+    } | null>(null);
+    const [incomplete, setIncomplete] = useState<ReturnType<typeof incompleteBriefResponseSchema.parse> | null>(null);
+    const [rendered, setRendered] = useState<{
+        revision: number;
+        formats: Record<string, boolean>;
+    }>({ revision: 0, formats: {} });
+    const gallery = useRef<HTMLDivElement>(null), requestId = useRef(0), pending = useRef<AbortController | null>(null), lastMode = useRef<"auto" | "local">("auto");
+    useEffect(() => () => { requestId.current++; pending.current?.abort(); }, []);
+    const spec = campaign?.spec;
+    const copyDirty = Boolean(spec && Object.entries(copy).some(([k, v]) => v !== (spec.campaign[k as keyof Copy] ?? "")));
+    const draftChanged = Boolean(campaign && (draft.topic.trim() !== campaign.input.topic || draft.details.trim() !== campaign.input.details || draft.taste !== campaign.input.taste));
+    const allReady = Boolean(campaign && rendered.revision === campaign.revision && FORMATS.every(f => rendered.formats[f.id]));
+    function commit(s: DesignSpec, g: GenerationResult | null, input: Draft) { const next = { spec: s, generation: g, input, revision: (committed.current?.revision ?? 0) + 1 }; committed.current = next; setCampaign(next); setCopy(copyOf(s)); setRendered({ revision: next.revision, formats: {} }); }
+    function changeDraft(change: Partial<Draft>) { if (exportLock.current)
+        return; requestId.current++; pending.current?.abort(); pending.current = null; setGenerating(false); setDraft(p => ({ ...p, ...change })); setError(null); setIncomplete(null); setMessage(""); }
+    async function generate(mode: "auto" | "local" = "auto") {
+        if (!interactive || exportLock.current || pending.current)
+            return;
+        const parsed = generationRequestSchema.safeParse({ ...draft, mode });
+        if (!parsed.success) {
+            setError({ kind: "input", text: "Enter a topic. Keep topic/details within 1200 characters each and 2200 combined." });
+            return;
+        }
+        const id = ++requestId.current, controller = new AbortController();
+        pending.current = controller;
+        lastMode.current = mode;
+        setGenerating(true);
+        setError(null);
+        setMessage("");
+        setIncomplete(null);
+        const timer = setTimeout(() => controller.abort(), 45000);
+        try {
+            const response = await fetch("/api/generate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(parsed.data), signal: controller.signal });
+            if (response.status === 422) {
+                const problem = incompleteBriefResponseSchema.safeParse(await response.json());
+                if (problem.success && id === requestId.current) {
+                    setIncomplete(problem.data);
+                    setError({ kind: "input", text: problem.data.error });
+                    return;
+                }
+            }
+            if (!response.ok)
+                throw new Error("request-failed");
+            const data = generationResultSchema.parse(await response.json());
+            if (id !== requestId.current)
+                return;
+            if (data.spec.version < 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source)
+                throw new Error("invalid-response");
+            commit(data.spec, data, { topic: parsed.data.topic, details: parsed.data.details, taste: parsed.data.taste });
+            setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : data.metadata.fallbackReason === "requested-local" ? "Local planner campaign ready. No AI request." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
+        }
+        catch {
+            if (id === requestId.current)
+                setError({ kind: "generation", text: "Generation could not finish. Your previous campaign is preserved. Try again." });
+        }
+        finally {
+            clearTimeout(timer);
+            if (id === requestId.current) {
+                setGenerating(false);
+                pending.current = null;
+            }
+        }
     }
-    return designSchemaV2.parse({ ...base, version: 2, provenance: "manual-input", taste,
-      campaign: { ...base.campaign, ...applied, cta: applied.cta === "" ? undefined : applied.cta ?? base.campaign.cta },
-      ...(base.taste !== taste ? { palette: preset.palette, typography: preset.typography, composition: preset.composition,
-        decoration: { ...preset.decoration, illustration: base.version === 2 ? base.decoration.illustration : "abstract" },
-        rationale: `${preset.name} applied manually to the existing campaign. Copy preserved; no new AI request.` } : {}) });
-  }, [taste, applied, generated, manual, directionEdits]);
-  const preset = PRESETS[taste];
-  const dirty = Object.entries(copy).some(([key, value]) => value !== (spec.campaign[key as keyof typeof copy] ?? ""));
-
-  function invalidateGeneration() {
-    generationId.current++; pending.current?.abort(); pending.current = null;
-    setGenerating(false);
-  }
-  function selectTaste(id: Taste) {
-    invalidateGeneration(); setDirectionEdits({}); setTaste(id);
-    if (generated) setManual(true);
-    setMessage(generated ? "Taste applied locally. Generate again for new AI art direction." : ""); setError("");
-  }
-  async function generate(mode: "auto" | "local" = "auto") {
-    const parsed = generationRequestSchema.safeParse({ topic: copy.topic, details, taste, mode });
-    if (!parsed.success) { setError("Enter a topic. Keep topic/details within 1200 characters each and 2200 combined."); return; }
-    invalidateGeneration();
-    const id = generationId.current, controller = new AbortController(); pending.current = controller;
-    setGenerating(true); setError(""); setMessage(""); setIncomplete(null);
-    const timer = setTimeout(() => controller.abort(), 45000);
-    try {
-      const response = await fetch("/api/generate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(parsed.data), signal: controller.signal });
-      if (response.status === 422) {
-        const problem = incompleteBriefResponseSchema.safeParse(await response.json());
-        if (problem.success && id === generationId.current) { setIncomplete(problem.data); setError(problem.data.error); return; }
-      }
-      if (!response.ok) throw new Error("request-failed");
-      const data = generationResultSchema.parse(await response.json());
-      if (id !== generationId.current) return;
-      if (data.spec.version < 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source) throw new Error("invalid-response");
-      setGenerated(data); setManual(false); setDirectionEdits({}); setApplied({});
-      setCopy({ topic: data.spec.campaign.topic, headline: data.spec.campaign.headline, supportingText: data.spec.campaign.supportingText, cta: data.spec.campaign.cta ?? "" });
-      setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
-    } catch {
-      if (id === generationId.current) setError("Generation could not finish. Your previous campaign is preserved. Try again.");
-    } finally {
-      clearTimeout(timer);
-      if (id === generationId.current) { setGenerating(false); pending.current = null; }
+    function showExample() { if (exportLock.current || pending.current)
+        return; const input = { topic: SAMPLE_TOPIC, details: "", taste: draft.taste }; setDraft(input); commit(createDesign({ taste: input.taste, topic: SAMPLE_TOPIC }), null, input); setMessage("Sample campaign ready. No AI request."); setError(null); }
+    function applyCopy(e: FormEvent) { e.preventDefault(); if (!campaign || exportLock.current || pending.current)
+        return; const result = designSchema.safeParse({ ...campaign.spec, provenance: "manual-input", campaign: { ...campaign.spec.campaign, ...copy, cta: copy.cta || undefined } }); if (!result.success) {
+        setError({ kind: "copy", text: "Check copy lengths and required fields. No changes were applied." });
+        return;
+    } commit(result.data, campaign.generation, campaign.input); setMessage("Manual copy applied to all four formats. No AI used."); setError(null); }
+    function refine(change: Partial<ArtDirection>) { if (!campaign || campaign.spec.version !== 3 || exportLock.current || pending.current)
+        return; const base = campaign.spec, direction = { ...base.artDirection, ...change }; const result = designSchema.safeParse({ ...base, provenance: "manual-input", artDirection: direction, palette: PALETTES[direction.palette], rationale: `${PRESETS[base.taste].name}: ${direction.variant.replaceAll("-", " ")} with ${direction.palette.replaceAll("-", " ")} colours. Manual adjustments retain campaign copy; no new AI request.` }); if (!result.success) {
+        setError({ kind: "copy", text: "Choose a supported option for the displayed campaign's taste." });
+        return;
+    } const edits = copy; commit(result.data, campaign.generation, campaign.input); setCopy(edits); setMessage("Design adjusted locally. No AI request."); setError(null); }
+    const onReady = useCallback((format: string, revision: number, ready: boolean) => { if (committed.current?.revision !== revision)
+        return; setRendered(p => p.revision === revision && p.formats[format] === ready ? p : { revision, formats: { ...(p.revision === revision ? p.formats : {}), [format]: ready } }); }, []);
+    function nodes() { return Array.from(gallery.current?.querySelectorAll<HTMLElement>("[data-poster]") ?? []); }
+    async function download(format?: Format) { if (exportLock.current || pending.current || !committed.current)
+        return; exportLock.current = true; setBusy(true); setError(null); setMessage(""); const snapshot = committed.current; try {
+        if (copyDirty)
+            throw new Error("Apply your copy before exporting.");
+        if (gallery.current?.dataset.campaignRevision !== String(snapshot.revision))
+            throw new Error("Layout is still settling. Please try again.");
+        const posters = nodes();
+        if (posters.length !== 4 || posters.some(n => n.dataset.ready !== "true"))
+            throw new Error("Layout is still settling. Please try again.");
+        if (!format)
+            await exportHtml(posters, `${snapshot.spec.taste}-campaign.html`);
+        else {
+            const node = posters.find(n => n.dataset.poster === format.id);
+            if (!node)
+                throw new Error("Select a format to export.");
+            await exportPng(node, format, `${snapshot.spec.taste}-${format.id}-${format.width}x${format.height}.png`);
+        }
+        setMessage(format ? `${format.name} PNG downloaded at ${format.width} × ${format.height} pixels.` : "Portable HTML downloaded with all four formats.");
     }
-  }
-
-  function applyCopy(event: FormEvent) {
-    event.preventDefault();
-    const result = spec.version >= 2 ? designSchema.safeParse({ ...spec, provenance: "manual-input", campaign: { ...spec.campaign, ...copy, cta: copy.cta || undefined } })
-      : inputSchema.safeParse({ taste, topic: copy.topic, headline: copy.headline, supportingText: copy.supportingText, cta: copy.cta });
-    if (!result.success) { setError(result.error.issues.map((issue) => issue.message).join(" ")); return; }
-    setApplied(copy);
-    if (generated) setManual(true);
-    setMessage("Manual copy applied to all four formats. No AI used.");
-    setError("");
-  }
-  function nodes() { return Array.from(gallery.current?.querySelectorAll<HTMLElement>("[data-poster]") ?? []); }
-  async function download(format?: Format, html = false) {
-    setBusy(true); setError(""); setMessage("");
-    try {
-      if (dirty) throw new Error("Apply your copy before exporting.");
-      const posters = nodes();
-      if (posters.length !== 4) throw new Error("Previews are still loading. Please try again.");
-      if (html) await exportHtml(posters, `${taste}-campaign.html`);
-      else {
-        const node = posters.find((item) => item.dataset.poster === format?.id);
-        if (!node || !format) throw new Error("Select a format to export.");
-        await exportPng(node, format, `${taste}-${format.id}-${format.width}x${format.height}.png`);
-      }
-      setMessage(html ? "Portable HTML downloaded with all four formats." : `${format?.name} PNG downloaded at ${format?.width} × ${format?.height} pixels.`);
-    } catch (cause) { setError(cause instanceof Error ? cause.message : "Export failed. Try portable HTML or another browser."); }
-    finally { setBusy(false); }
-  }
-  return <div className="app-shell">
-    <header className="topbar">
-      <Link className="wordmark" href="/" aria-label="Create Lab home"><span className="brand-symbol">c<span>↗</span></span>create<span className="lab-label">/ lab</span></Link>
-      <span className="topbar-caption">A little taste goes a long way.</span>
-      <span className="milestone"><span className="status-dot" />M2 · Creative design engine</span>
-    </header>
-    <main>
-      <section className="intro"><div><p className="eyebrow">ONE IDEA. EVERY FORMAT.</p><h1>Make it feel <em>like you.</em></h1><p className="intro-description">Describe your idea. Give it a taste. Create one coordinated campaign.</p></div><div className="fixture-note"><span className="note-icon">✳</span><div><strong>{spec.provenance === "gemini" ? "AI-generated campaign" : spec.provenance === "deterministic-fallback" ? "Independent local fallback" : spec.provenance === "manual-input" ? "Manually edited campaign" : "Sample campaign · fixture"}</strong><p>{spec.provenance === "experimental-fixture" ? "Generate to create from your own brief." : "Review copy and facts before publishing."}<br />Create Lab is a working title.</p></div></div></section>
-      <div className="workspace">
-        <aside className="sidebar" aria-label="Campaign controls">
-          <form onSubmit={applyCopy} className="brief-panel">
-            <div className="section-label"><span>01 / THE BRIEF</span><span>↙</span></div>
-            <label htmlFor="topic">What are we creating for?</label>
-            <textarea id="topic" maxLength={1200} value={copy.topic} disabled={busy || !interactive} onChange={(e) => { invalidateGeneration(); setCopy({ ...copy, topic: e.target.value }); }} rows={3} required />
-            <label htmlFor="brief-details">Optional details</label><textarea id="brief-details" maxLength={1200} rows={3} disabled={busy || !interactive} value={details} placeholder="Audience, exact facts, dates, prices or creative preferences" onChange={(e) => { invalidateGeneration(); setDetails(e.target.value); }} />
-            <p className="field-note">Only include facts you want in the campaign. Missing details stay missing. Briefs are sent to Google Gemini; avoid private information.</p>
-            <button className="generate-button" type="button" disabled={busy || generating || !interactive} onClick={() => generate()}>{generating ? "Generating campaign…" : "Generate campaign ↗"}</button>
-            <button className="text-button local-planner-button" type="button" disabled={busy || generating || !interactive} onClick={() => generate("local")}>Use local planner · no AI</button>
-            <details className="copy-details"><summary>Edit campaign copy</summary>
-              <label htmlFor="headline">Headline <span>up to 240 characters</span></label><textarea id="headline" maxLength={240} rows={3} required disabled={busy || generating} value={copy.headline} onChange={(e) => setCopy({ ...copy, headline: e.target.value })} />
-              <label htmlFor="supporting">Supporting text</label><textarea id="supporting" maxLength={spec.version >= 2 ? 2400 : 180} rows={3} disabled={busy || generating} value={copy.supportingText} onChange={(e) => setCopy({ ...copy, supportingText: e.target.value })} />
-              <label htmlFor="cta">Call to action <span>optional</span></label><input id="cta" maxLength={60} disabled={busy || generating} value={copy.cta} onChange={(e) => setCopy({ ...copy, cta: e.target.value })} />
-            </details>
-            <button className="apply-button" type="submit" disabled={busy || generating || !dirty}>{dirty ? "Apply copy to campaign ↗" : "Copy is up to date ✓"}</button>
-          </form>
-          <div className="taste-panel"><div className="section-label"><span>02 / YOUR TASTE</span><span>✳</span></div><p className="taste-prompt">Same story. Different energy.</p>
-            <div className="taste-options" role="group" aria-label="Taste preset">{TASTES.map((id) => <button key={id} disabled={busy} className={`taste-option ${taste === id ? "selected" : ""}`} aria-pressed={taste === id} onClick={() => selectTaste(id)}>
-              <span className={`taste-swatch swatch-${id}`} style={{ background: PRESETS[id].palette.background, color: PRESETS[id].palette.ink }}>Aa<span>✳</span></span>
-              <span className="taste-copy"><strong>{PRESETS[id].name}</strong><small>{PRESETS[id].subtitle}</small></span><span className="taste-check">{taste === id ? "●" : "○"}</span>
-            </button>)}</div>
-          </div>
-          {spec.version === 3 && <div className="brief-panel"><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.variant} disabled={busy || generating} onChange={(e) => { invalidateGeneration(); setDirectionEdits({ ...directionEdits, variant: e.target.value as ArtDirection["variant"] }); setManual(true); setMessage("Composition applied locally. No AI request."); }}>{ENGINE_TASTES[taste].variants.map((variant) => <option key={variant} value={variant}>{variant.replaceAll("-", " ")}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={(e) => { invalidateGeneration(); setDirectionEdits({ ...directionEdits, palette: e.target.value as ArtDirection["palette"] }); setManual(true); setMessage("Palette applied locally. No AI request."); }}>{ENGINE_TASTES[taste].palettes.map((palette) => <option key={palette} value={palette}>{palette.replaceAll("-", " ")}</option>)}</select><p className="field-note">Local adjustments retain campaign copy and are labelled manual.</p></div>}
-          <div className="rationale"><span className="eyebrow">THE CREATIVE LOGIC</span><p>{spec.rationale}</p><div className="palette" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }} />)}<small>{spec.composition.layout.replaceAll("-", " ")}</small></div></div>
-          <div className="pipeline-note"><span>BRIEF</span><i>→</i><span>SPEC</span><i>→</i><span>HTML</span><i>→</i><span>PNG</span></div>
-        </aside>
-        <section className="canvas-area" aria-label="Campaign outputs">
-          <div className="canvas-toolbar"><div><span className="eyebrow">YOUR CAMPAIGN / {preset.number}</span><h2>{preset.name}<span>4 adaptive layouts</span></h2></div><div className="toolbar-actions"><button className="text-button" aria-expanded={showSpec} onClick={() => setShowSpec(!showSpec)}>{"{ }"} {showSpec ? "Hide" : "Inspect"} spec</button><button className="html-button" disabled={busy || generating || dirty} onClick={() => download(undefined, true)}>Export HTML <span>↗</span></button></div></div>
-          <div className="export-status" aria-live="polite" role="status">{generating ? "Generating a campaign from your brief…" : busy ? "Preparing your export…" : error ? <span className="error">{error} <button className="text-button" disabled={busy} onClick={() => generate()}>Retry generation</button></span> : message || (dirty ? "Unapplied copy edits. Apply copy or generate a new campaign." : "HTML-built. Format-aware. Ready to explore.")}</div>
-          {incomplete && <div className="generation-provenance" role="note" aria-label="Incomplete brief"><strong>Brief needs a subject · no new campaign generated</strong><p>{incomplete.interpretation.missingInformation.join(" ")}</p><details><summary>Brief interpretation</summary><pre>{JSON.stringify(incomplete.interpretation, null, 2)}</pre></details></div>}
-          {generated && <div className="generation-provenance"><strong>{spec.provenance === "manual-input" ? "Manual edits · no new AI request" : generated.metadata.source === "gemini" ? `AI · ${generated.metadata.model}${generated.metadata.cached ? " · reused result" : ""}` : "Fallback · independent local planner"}</strong><p>{generated.metadata.fallbackReason ? `Reason: ${generated.metadata.fallbackReason.replaceAll("-", " ")}. ` : ""}{generated.metadata.warnings.join(" ")}</p><details><summary>Creative plan and generation details</summary><pre>{JSON.stringify({ interpretation: generated.interpretation, metadata: generated.metadata }, null, 2)}</pre></details></div>}
-          {showSpec && <section className="spec-panel" aria-label="Intermediate design specification"><div><strong>Design specification · v{spec.version}</strong><button onClick={() => saveFile(new Blob([JSON.stringify(spec, null, 2)], { type: "application/json" }), `${taste}-design-spec.json`)}>Download JSON ↓</button></div><p>{spec.provenance} · Validated with Zod</p><pre>{JSON.stringify(spec, null, 2)}</pre></section>}
-          <div className="poster-grid" ref={gallery}>{FORMATS.map((format, index) => <article className={`format-card format-${format.id}`} key={`${taste}-${format.id}-${JSON.stringify(applied)}`} aria-label={format.name}>
-            <div className="format-card-heading"><span className="format-index">0{index + 1}</span><h3>{format.name}</h3><span className="ratio-label">{format.ratio}</span></div>
-            <PosterPreview spec={spec} format={format} />
-            <div className="format-card-footer"><span>{format.width} × {format.height} px</span><button disabled={busy || generating || dirty} onClick={() => download(format)} aria-label={`Export ${format.name} PNG`}>PNG <span>↓</span></button></div>
-          </article>)}</div>
-          <div className="canvas-footnote"><span className="status-dot" /><p>{spec.provenance === "experimental-fixture" ? "Sample campaign" : spec.provenance === "gemini" ? "AI planned" : spec.provenance === "deterministic-fallback" ? "Local fallback" : "Manual copy"} · Deterministic HTML/CSS · Local exports</p><span>No external assets</span></div>
-        </section>
-      </div>
-    </main><footer className="footer"><span>YARC BUILDER FELLOWSHIP / CREATE TRACK</span><span>Engineering foundation · M0 / 2026</span></footer>
-  </div>;
+    catch (cause) {
+        setError({ kind: "export", text: cause instanceof Error ? cause.message : "Export failed. Try portable HTML or another browser." });
+    }
+    finally {
+        exportLock.current = false;
+        setBusy(false);
+    } }
+    function inspect(kind: Inspection["kind"], format?: Format) {
+        if (!campaign || exportLock.current)
+            return;
+        if (kind === "spec") {
+            setInspection({ kind, campaign });
+            return;
+        }
+        const node = nodes().find(n => n.dataset.poster === format?.id);
+        if (!node || node.dataset.ready !== "true")
+            return;
+        const measurements = { fits: node.dataset.overflow !== "true", issues: node.dataset.quality ? JSON.parse(node.dataset.quality) : node.dataset.overflow === "true" ? ["TEXT_OVERFLOW"] : [], corrections: JSON.parse(node.dataset.corrections ?? "[]"), fields: Array.from(node.querySelectorAll<HTMLElement>("[data-fit]")).map(f => ({ role: f.dataset.role ?? (f.tagName === "H2" ? "headline" : "text"), nativePixels: parseFloat(getComputedStyle(f).fontSize), minimum: Number(f.dataset.min), horizontalFit: f.scrollWidth <= f.clientWidth + 1, verticalFit: f.scrollHeight <= f.clientHeight + 1 })) };
+        const clone = kind === "artwork" ? node.cloneNode(true) as HTMLElement : undefined;
+        if (clone)
+            for (const el of [clone, ...Array.from(clone.querySelectorAll("*"))]) {
+                el.removeAttribute("id");
+                for (const a of Array.from(el.attributes))
+                    if (a.name.startsWith("data-"))
+                        el.removeAttribute(a.name);
+            }
+        setInspection({ kind, campaign, format, node: clone, measurements });
+    }
+    const generation = campaign?.generation;
+    const origin = !campaign ? "" : !generation ? "Example campaign · no AI" : generation.metadata.source === "gemini" ? `AI · ${generation.metadata.model}${generation.metadata.cached ? " · reused result" : ""}` : generation.metadata.fallbackReason === "requested-local" ? "Local planner · no AI request" : "Fallback · independent local planner";
+    const provenance = spec?.provenance === "manual-input" ? "Manual edits · no new AI request" : origin;
+    const status = generating ? `Generating a campaign from your brief…${campaign ? " Previous campaign remains visible." : ""}` : busy ? "Preparing your export…" : error?.text || (campaign && !allReady ? "Measuring layouts and preparing fonts…" : message || (copyDirty ? "Unapplied copy edits. Apply them before exporting." : ""));
+    return <div className="studio-shell">
+  <a className="skip-link" href="#campaign-gallery">Skip to campaign</a>
+  <header className="studio-header"><Link className="wordmark" href="/" aria-label="Create Studio home"><span className="brand-mark" aria-hidden="true">c.</span>create <span className="brand-divider">/</span> studio</Link><span className="header-caption">One idea. Four formats.</span><span className="workspace-label"><i aria-hidden="true"/><span>Campaign workspace</span></span></header>
+  <main className="studio-workspace"><aside className="creation-panel" aria-label="Campaign controls">
+   <button className="creation-toggle" aria-expanded={creationOpen} aria-controls="creation-controls" onClick={() => setCreationOpen(!creationOpen)}>Brief &amp; taste · {PRESETS[draft.taste].name}<span aria-hidden="true">{creationOpen ? "−" : "+"}</span></button>
+   <div id="creation-controls" className={`creation-body ${creationOpen ? "" : "is-collapsed"}`}><div className="creation-heading"><h1>Create a campaign</h1><p>Start with an idea and choose its visual voice.</p></div>
+    <label htmlFor="topic">What are we creating for?</label><textarea id="topic" maxLength={1200} rows={3} value={draft.topic} disabled={busy || !interactive} onChange={e => changeDraft({ topic: e.target.value })} placeholder="A campus poetry evening, a new café…" aria-describedby="brief-privacy"/>
+    <label htmlFor="brief-details">Optional details</label><textarea id="brief-details" maxLength={1200} rows={4} value={draft.details} disabled={busy || !interactive} onChange={e => changeDraft({ details: e.target.value })} placeholder="Audience, exact facts, dates, prices or preferences"/>
+    <p id="brief-privacy" className="field-note">AI briefs are sent to Google Gemini. Avoid private information. Local planning makes no AI request.</p>
+    <TastePicker value={draft.taste} disabled={busy || !interactive} onChange={taste => changeDraft({ taste })}/>
+    <button className="primary-action" disabled={busy || generating || !interactive} onClick={() => generate()}>{generating ? "Generating campaign…" : "Generate campaign ↗"}</button><button className="secondary-action local-planner-button" disabled={busy || generating || !interactive} onClick={() => generate("local")}>Use local planner · no AI request</button>
+    {campaign && <section className="refinement-panel" aria-label="Refine current result"><h2>Refine current result</h2><p className="field-note">Editing {PRESETS[campaign.spec.taste].name}. Local changes make no new AI request.</p><form onSubmit={applyCopy}><details className="copy-details"><summary>Edit campaign copy</summary>
+     <label htmlFor="campaign-topic">Campaign topic</label><textarea id="campaign-topic" maxLength={spec!.version === 1 ? 240 : 1200} rows={2} value={copy.topic} required disabled={busy || generating} onChange={e => setCopy({ ...copy, topic: e.target.value })}/>
+     <label htmlFor="headline">Headline <span>up to 240 characters</span></label><textarea id="headline" maxLength={240} rows={3} value={copy.headline} required disabled={busy || generating} onChange={e => setCopy({ ...copy, headline: e.target.value })}/>
+     <label htmlFor="supporting">Supporting text</label><textarea id="supporting" maxLength={spec!.version === 1 ? 180 : 2400} rows={4} value={copy.supportingText} disabled={busy || generating} onChange={e => setCopy({ ...copy, supportingText: e.target.value })}/>
+     <label htmlFor="cta">Call to action <span>optional</span></label><input id="cta" maxLength={60} value={copy.cta} disabled={busy || generating} onChange={e => setCopy({ ...copy, cta: e.target.value })}/>
+     <button className="secondary-action apply-button" type="submit" disabled={busy || generating || !copyDirty}>{copyDirty ? "Apply copy to campaign ↗" : "Copy is up to date ✓"}</button></details></form>
+     {spec?.version === 3 && <><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.variant} disabled={busy || generating} onChange={e => refine({ variant: e.target.value as ArtDirection["variant"] })}>{ENGINE_TASTES[spec.taste].variants.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={e => refine({ palette: e.target.value as ArtDirection["palette"] })}>{ENGINE_TASTES[spec.taste].palettes.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><div className="palette-tokens" role="group" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }}/>)}</div></>}
+    </section>}
+   </div></aside>
+   <section id="campaign-gallery" className="campaign-stage" aria-label="Campaign outputs" tabIndex={-1}>
+    {campaign ? <><div className="gallery-heading"><div className="campaign-identity"><p>Campaign{!generation ? " · example" : ""}</p><h2>{spec!.campaign.headline.replaceAll("\n", " ")}</h2><p data-applied-taste>{PRESETS[spec!.taste].name} · 4 adaptive formats</p></div><div className="gallery-actions"><button className="stage-button" aria-label="Inspect spec" onClick={() => inspect("spec")} disabled={busy}>Design &amp; spec ↗</button><button className="stage-button stage-primary" onClick={() => download()} disabled={busy || generating || copyDirty || !allReady}>Export HTML ↓</button></div></div>
+     {draftChanged && <p className="draft-note" role="note">Draft changed · Showing the previous {PRESETS[spec!.taste].name} campaign. Generate or use the local planner to apply your new brief and taste.</p>}
+     <div className="generation-provenance"><div className="provenance-line"><strong><i aria-hidden="true"/>{provenance}</strong><span>{spec!.provenance === "manual-input" ? `Originally ${origin.toLowerCase()}. ` : ""}Review copy and facts before publishing.</span></div>{generation && <details><summary>Creative plan and generation details</summary><p>{generation.metadata.fallbackReason ? `Reason: ${generation.metadata.fallbackReason.replaceAll("-", " ")}. ` : ""}{generation.metadata.warnings.join(" ")}</p><pre tabIndex={0}>{JSON.stringify({ interpretation: generation.interpretation, metadata: generation.metadata }, null, 2)}</pre></details>}</div>
+    </> : <div className="empty-state"><div className="empty-artboards" aria-hidden="true"><i /><i /><i /><i /></div><h2>One idea. A complete campaign.</h2><p>Describe what you want to share, choose a taste and create four coordinated formats.</p><p>Start with AI, or use the independent local planner.</p><button className="stage-button" onClick={showExample} disabled={busy || generating || !interactive}>View sample campaign · no AI</button></div>}
+    <div className={`export-status ${error ? "has-error" : ""}`} role="status" aria-live="polite">{error ? <span role="alert">{status}{error.kind === "generation" && <button className="stage-link" onClick={() => generate(lastMode.current)} disabled={busy || generating}>Retry generation</button>}</span> : status}</div>
+    {incomplete && <div className="incomplete-note" role="note" aria-label="Incomplete brief"><strong>Brief needs a subject · no new campaign generated</strong><p>{incomplete.interpretation.missingInformation.join(" ")}</p><details><summary>Brief interpretation</summary><pre tabIndex={0}>{JSON.stringify(incomplete.interpretation, null, 2)}</pre></details></div>}
+    {copyDirty && <p className="draft-note" role="note">Unapplied copy edits · exports use applied copy only. Apply your edits before exporting.</p>}
+    <div className="poster-grid" aria-busy={generating || busy || Boolean(campaign && !allReady)} ref={gallery} data-campaign-revision={campaign?.revision}>{campaign && FORMATS.map(format => <StudioArtboard key={`${campaign.revision}-${format.id}`} campaign={campaign} format={format} disabled={busy || generating || copyDirty} onReady={onReady} onExport={() => download(format)} onInspect={kind => inspect(kind, format)}/>)}</div>
+   </section>
+  </main>
+  {inspection && <StudioDialog title={inspection.kind === "spec" ? "Design & spec" : `${inspection.format!.name} ${inspection.kind === "checks" ? "layout checks" : "artwork"}`} onClose={() => setInspection(null)}><p className="inspection-note">Snapshot of the displayed campaign when opened.</p>
+   {inspection.kind === "artwork" && <ArtworkSnapshot node={inspection.node!} format={inspection.format!}/>}
+   {inspection.kind === "checks" && <><p>Measured geometry and font sizes help detect layout problems. They do not certify artistic quality, factual accuracy or social-size legibility.</p><pre tabIndex={0}>{JSON.stringify(inspection.measurements, null, 2)}</pre></>}
+   {inspection.kind === "spec" && <section className="spec-panel" aria-label="Intermediate design specification"><h3>Creative rationale</h3><p>{inspection.campaign.spec.rationale}</p><div className="spec-heading"><h3>Design specification · v{inspection.campaign.spec.version}</h3><button className="stage-button stage-primary" onClick={() => saveFile(new Blob([JSON.stringify(inspection.campaign.spec, null, 2)], { type: "application/json" }), `${inspection.campaign.spec.taste}-design-spec.json`)}>Download JSON ↓</button></div><pre tabIndex={0}>{JSON.stringify(inspection.campaign.spec, null, 2)}</pre></section>}
+  </StudioDialog>}
+ </div>;
 }

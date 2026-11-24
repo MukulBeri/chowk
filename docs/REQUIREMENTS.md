@@ -1,10 +1,12 @@
 # Requirements and acceptance traceability
 
+M3 was owner-accepted on 25 November 2026 over accepted synchronized M2 `e6d968f`; current authority is its archival, final verification and Git checkpoint closure. The two-region studio, responsive real previews, truthful states, native-radio taste selection, local refinement, contextual inspection and isolated enlargement are internal M3 choices, not new official challenge mandates. Native dimensions, schema/API/factual/export contracts remain preserved. OFF-15 public access and production verification remain pending; M3 acceptance does not establish deployment readiness.
+
 YARC Builder Fellowship, Founding Cohort 2027; Technology & Engineering; Track 01 — Create. The challenge checklist and deadlines below are **user-supplied**, not an independently verified event-rule transcript. Official deadline: **26 November 2026, 11:59 PM IST**; internal target: **26 November 2026, 8 PM IST**.
 
 M0 implementation and consolidation are accepted at checkpoint `0665dc2`. This is not acceptance of the complete submission. “Covered locally” below is bounded by [TESTING.md](TESTING.md), not a public/production sign-off.
 
-M0/M1 are accepted and closed at M1 checkpoint `e4a338f722680421bfff6ea88662594ecce3c234`. The owner formally accepted M2 on 24 November 2026 within the scope in M2_REPORT.md. Current authority covers documentation, curated archival and exact-manifest staging; commit, publishing/deployment, visibility/billing changes and M3 remain gated. Historical table entries below retain their measured milestone scope.
+M0/M1 are accepted and closed at M1 checkpoint `e4a338f722680421bfff6ea88662594ecce3c234`. The owner formally accepted M2 on 24 November 2026 within the scope in M2_REPORT.md. That M2 closure authority is historical. Current M3 acceptance/closure authority is stated above; deployment, visibility/billing changes and subsequent implementation remain gated. Historical table entries below retain their measured milestone scope.
 
 ## Official challenge requirements
 
@@ -42,11 +44,11 @@ These implement our quality/safety/development choices; they are **not additiona
 | ENG-06 | Honest fixture/manual/live/fallback provenance; independent fallback sharing the rendering contract | All four paths now distinguishable; fallback does not reuse unrelated chai fixture |
 | ENG-07 | Appropriate lint/type/build/browser evidence, human visual inspection, truthful scope and unresolved issues | Historical evidence retained; M1 fresh checks, repeatable mocks, real local endpoint, live matrix/browser and human semantic findings recorded separately |
 | ENG-08 | Licensed selective reuse, notices, no secrets/caches in Git, reviewed milestone checkpoints | License snapshot/notices added; distribution gaps tracked in THIRD_PARTY_NOTICES. Commit requires owner approval |
-| ENG-09 | Preserve deadlines; no unnecessary auth/database/payments; one active repository; reviewed scope changes | M2 accepted; no new dependencies/infrastructure; staging/archival authorized, commit/publishing/billing/M3 remain gated |
+| ENG-09 | Preserve deadlines; no unnecessary auth/database/payments; one active repository; reviewed scope changes | M0–M3 accepted; no new dependencies/infrastructure; M3 archival/normal Git checkpoint authorized; deployment/billing/subsequent implementation gated |
 | ENG-10 | Document POST /api/generate as the product orchestration boundary, separate from provider API and spec utility | Implemented/documented; native REST, server-only configuration, bounded budgets and sanitized errors |
 
 ## Acceptance status and priorities
 
 M0 rendering feasibility remains accepted; M1 adds actual creative planning and fallback. The fixed cup now has relevant/neutral/no-art paths, and semantic safeguards exist, but broader topic-aware visuals/meaning/readability/composition/fonts are not solved. Live reliability is imperfect (primary 4/6 matrix AI outcomes; comparison 0/6); human review found and prompted an extra timing-claim guard. See [ROADMAP.md](ROADMAP.md) and [M1_REPORT.md](M1_REPORT.md).
 
-Mandatory final-product gaps take priority over optional improvements. Complete campaign download and natural-language refinement remain enhancements, not authorization to implement them now. That M1 scope is historical; M0/M1 are now accepted and closed. M2 is formally accepted with its recorded limitations; the two live outcomes and later quota-free corrections retain their original scopes. Current authorization is checkpoint closure only. See M2_REPORT.md for results; commit, publishing, deployment, billing and M3 remain gated.
+Mandatory final-product gaps take priority over optional improvements. Complete campaign download and natural-language refinement remain enhancements, not authorization to implement them now. That M1 scope is historical; M0/M1 are now accepted and closed. M2 is formally accepted with its recorded limitations; the two live outcomes and later quota-free corrections retain their original scopes. Current authorization is M3 checkpoint closure only. See M2_REPORT.md for historical results and M3_REPORT.md for accepted frontend scope; deployment, billing and M4/M5 implementation remain gated.

@@ -1,6 +1,8 @@
-# Create Lab — M2 accepted milestone
+# Create Studio — accepted M3
 
-AI-powered HTML/CSS campaign design engine for the YARC Builder Fellowship Create track. **Create Lab is a temporary working title.** M0/M1 are accepted at M1 checkpoint `e4a338f`. M2 adds six structural variants, six palettes, topic-aware procedural SVG, grouped logistics and bounded readable fitting. The owner accepted M2 on 24 November 2026 within its documented verification scope. It remains uncommitted and is not publicly deployed; acceptance does not establish final artistic excellence, universal fidelity, live repair effectiveness or production readiness.
+[M3 report](docs/M3_REPORT.md) contains the implemented workflows, actual artwork/screenshots, verification results and remaining review limitations.
+
+An artwork-first HTML/CSS campaign studio for the YARC Builder Fellowship Create track. **Create Studio is a working identity for the initial release.** M0–M2 are accepted and synchronized at `e6d968f`. M3 adds the approved light creation panel/dark gallery, native taste radios, distinct draft/result state, local refinements and contextual inspection while preserving the M2 engine. The owner formally accepted M3 on 25 November 2026. The authorized closure records final quota-free verification, curated evidence and a normal Git checkpoint; the application is not deployed.
 
 Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
 
@@ -14,14 +16,14 @@ npm run dev
 ```
 
 1. Configure the server-only key in ignored `.env.local` using [the placeholder example](.env.example); never use `NEXT_PUBLIC_` or commit real environment files. The default explicit model is `gemini-3.5-flash-lite`. Missing credentials still allow local fallback. Restart the existing dev server only if environment configuration changed.
-2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. Initial artwork is explicitly a sample fixture until generation. Auto mode sends the brief to Google—avoid private information.
-3. Inspect AI/fallback provenance, creative interpretation/rationale and the specification. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
-4. Compare four platform previews and export each PNG. Manual copy or taste edits are labelled manual; generate again for fresh AI art direction. Failed generation preserves the previous campaign.
+2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. The initial state is empty; the optional sample button loads an explicitly labelled v1 fixture without AI. Auto mode sends the brief to Google—avoid private information.
+3. Use Design & spec for rationale, the validated JSON and download; View and Checks inspect actual artwork and measurements. Explicit local planning, automatic fallback, AI and manual provenance remain distinct. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
+4. Compare four platform previews and export each PNG. Draft taste applies to the next generation; changing it leaves the current campaign intact with a notice. Copy/composition/palette refinements apply locally to the displayed campaign and are labelled manual. Failed generation preserves the previous campaign.
 5. Export HTML/JSON. V3 HTML contains full-size inline posters, embedded approved fonts and their OFL notices, and intentionally scrolls offline. Unsupported scripts and legacy fonts can still vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
 
 The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
 
-No authentication, database, payments or image-generation dependency. Billing, staging/commits, remote publishing, deployment, additional assets/dependencies/live calls and M3 require separate authorization. M2 is owner-accepted and uncommitted. Exact-manifest staging and curated M2 archival are authorized; the commit remains separately gated.
+No authentication, database, payments or image-generation dependency. M3 closure is authorized: curated archival, final scoped checks, explicit staging, commit and normal Git push. Deployment, additional assets/dependencies/live calls and subsequent implementation remain separately gated.
 
 ## Checks
 
@@ -29,7 +31,7 @@ No authentication, database, payments or image-generation dependency. Billing, s
 npm run lint
 npm run typecheck
 npm run build
-npm test -- --output=test-results/m2-next-review
+npm test -- --output=test-results/m3-next-review
 ```
 
 Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).

@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Keep local artwork inspection unobscured; compilation errors still surface.
+  devIndicators: false,
   cacheComponents: true,
   partialPrefetching: true,
 };

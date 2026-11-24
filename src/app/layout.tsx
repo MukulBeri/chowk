@@ -3,7 +3,7 @@ import "./globals.css";
 import "./campaign-fonts.css";
 
 export const metadata: Metadata = {
-  title: "Create Lab · Campaign rendering prototype",
+  title: "Create Studio · Campaign workspace",
   description: "An AI-powered HTML campaign studio with three tastes, four adaptive formats, inspectable specifications and an independent local planner.",
 };
 

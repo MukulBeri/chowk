@@ -1,5 +1,13 @@
 # Architecture
 
+## M3 studio presentation and state
+
+The approved two-region shell uses scoped UI tokens and Arial/Helvetica, separate from native inline artwork typography/palettes. Studio owns draft topic/details/taste, pending request identity, committed campaign/spec/revision, unapplied copy and export locks separately. A draft change never relabels existing art. Refinement is validated against the displayed result taste/version, makes no AI call and remeasures a new revision. Previous valid campaigns survive pending/error/subjectless/stale responses. Explicit examples, local mode, automatic fallback, AI and manual provenance are distinct.
+
+TastePicker uses native radios and authored miniature styles. StudioArtboard presents PosterPreview unchanged and observes canonical data-ready attributes per revision. The four native roots remain under the sole gallery export ref. An immediate ref lock plus disabled controls prevents concurrent export/campaign mutations; existing export.ts receives a consistent applied revision at native size. Progress status is outside aria-busy artwork so live announcements are not deferred by that busy region.
+
+Contextual native dialogs show current spec/rationale, actual checks or a snapshot. Enlargement clones measured controlled DOM, strips IDs/canonical data attributes and mounts outside the gallery; it creates no renderer instance, callback or export registration. Modal focus is explicitly contained/restored, with Escape handling. JSON inspection captures a coherent snapshot. The gallery describes all visible artwork copy to assistive technology. No native renderer, schema/registry/provider/font/export implementation changed. Details and limits are in M3_REPORT.md.
+
 ## M2 controlled creative engine
 
 Focused validation follow-up: `diagnostics.ts` sanitizes structural/semantic failures and provides static repair guidance. `validatePlan` retains v3 field errors when artDirection is present instead of unrelated legacy-parser errors. Engine attempts retain bounded optional diagnostics; the client contract/details view preserves them, and old envelopes remain valid. No raw failed plan/value/message is logged or exposed. The prompt now permits only selected registry colours; name detection recognizes `Entry Fee:` without changing artwork copy or skipping factual checks. Renderer/export/schema versions, model, limits and infrastructure are unchanged by this follow-up.
@@ -33,7 +41,7 @@ The focused correction adds `brief.ts`: bounded English patterns separate recogn
 
 Gemini may decide concept/copy and supported palette/scale/spacing/density/illustration; it cannot emit executable markup/styles or an unsupported font/layout. The requested taste pins family, case, layout and motif to the existing registry. Interpretation/objective/audience/concept/assumptions/missing information are descriptive metadata. Palette, typography, composition, decoration and campaign copy act on rendering. No C1 redesign or M2 motif library was integrated.
 
-The studio sends actual generation requests, shows truthful loading and AI/fallback/manual provenance, exposes interpretation/rationale/spec, keeps a previous successful result on failure, and aborts/invalidates stale responses when brief or taste changes. Manual edits become `manual-input`; changing taste after generation reapplies a local preset and is not relabelled as new AI. Explicit local mode demonstrates the same independent planner without manipulating credentials.
+The studio sends actual generation requests, shows truthful loading and AI/fallback/manual provenance, exposes interpretation/rationale/spec, keeps a previous successful result on failure, and aborts/invalidates stale responses when brief or taste changes. Manual edits become `manual-input`. Historical M1/M2 taste selection reapplied a local preset; M3 now keeps draft taste separate and uses the displayed campaign taste for supported local refinement. Explicit local mode demonstrates the same independent planner without manipulating credentials.
 
 ### Version reconciliation
 

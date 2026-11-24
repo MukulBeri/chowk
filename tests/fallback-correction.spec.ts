@@ -80,13 +80,13 @@ test("replay saved pre-correction inputs separately from historical measured evi
 test("actual corrected local API, studio and four native exports preserve facts and warn about missing input", async ({ page }, testInfo) => {
   const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/"); await page.getByLabel("What are we creating for?").fill(input.topic);
-  await page.getByLabel("Optional details").fill(input.details); await page.getByRole("button", { name: /Minimal Swiss/ }).click();
+  await page.getByLabel("Optional details").fill(input.details); await page.getByRole("radio", { name: /Minimal Swiss/ }).click();
   const responseEvent = page.waitForResponse((response) => response.url().endsWith("/api/generate"));
   await page.getByRole("button", { name: "Use local planner" }).click();
   const response = await responseEvent, result = await response.json();
   expect(response.status()).toBe(200); expect(result.metadata.attempts).toEqual([]); expect(result.metadata.fallbackReason).toBe("requested-local");
   expect(result.spec.campaign.supportingText).toBe(`${input.topic}\nNo tickets are required.`);
-  await expect(page.getByText("Fallback · independent local planner", { exact: true })).toBeVisible();
+  await expect(page.getByText("Local planner · no AI request", { exact: true })).toBeVisible();
   await expect(page.locator(".generation-provenance")).toContainText("No schedule or price has been supplied.");
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4); await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   for (const poster of await page.locator("[data-poster]").all()) {

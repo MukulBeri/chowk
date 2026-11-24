@@ -152,9 +152,9 @@ test("actual local planner endpoint renders and exports every format without ext
   page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
   await page.goto("/");
   await page.getByLabel("What are we creating for?").fill("A campus poetry circle. Everyone is invited to share a poem.");
-  await page.getByRole("button", { name: /Festive Pop/ }).click();
+  await page.getByRole("radio", { name: /Festive Pop/ }).click();
   await page.getByRole("button", { name: "Use local planner" }).click();
-  await expect(page.getByText("Fallback · independent local planner", { exact: true })).toBeVisible();
+  await expect(page.getByText("Local planner · no AI request", { exact: true })).toBeVisible();
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
   await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   await expect(page.locator('[data-illustration="cup"]')).toHaveCount(0);
@@ -173,7 +173,7 @@ test("studio generation loading, neutral fallback, export, manual provenance and
   await page.route("**/api/generate", async (route) => { await new Promise((resolve) => setTimeout(resolve, 250)); await route.fulfill({ json: result }); });
   await page.goto("/");
   await page.getByLabel("What are we creating for?").fill(request.topic);
-  await page.getByRole("button", { name: /Minimal Swiss/ }).click();
+  await page.getByRole("radio", { name: /Minimal Swiss/ }).click();
   await page.getByRole("button", { name: "Generate campaign" }).click();
   await expect(page.getByRole("status")).toContainText("Generating a campaign");
   await expect(page.getByText("Fallback · independent local planner", { exact: true })).toBeVisible();
@@ -201,9 +201,10 @@ test("late generation responses cannot overwrite a newer brief/taste", async ({ 
   await page.goto("/"); await page.getByLabel("What are we creating for?").fill(request.topic);
   await page.getByRole("button", { name: "Generate campaign" }).click();
   await page.getByLabel("What are we creating for?").fill("A newer poetry event.");
-  await page.getByRole("button", { name: /Festive Pop/ }).click();
+  await page.getByRole("radio", { name: /Festive Pop/ }).click();
   await page.waitForTimeout(700);
   await expect(page.getByLabel("What are we creating for?")).toHaveValue("A newer poetry event.");
-  await expect(page.locator('[data-poster][data-taste="festive-pop"]')).toHaveCount(4);
+  await expect(page.getByRole("radio", { name: "Festive Pop" })).toBeChecked();
+  await expect(page.locator("[data-poster]")).toHaveCount(0);
   await expect(page.getByText("Fallback · independent local planner", { exact: true })).toHaveCount(0);
 });

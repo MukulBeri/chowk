@@ -1,5 +1,17 @@
 # Verification and evidence
 
+## Accepted M3 closure — 25 November 2026
+
+On the final accepted implementation, `npm run lint`, `npm run typecheck`, `npm run build` and `npx --no-install playwright test --output=test-results/m3-closure-10/artifacts` passed; **62/62** quota-free regressions, retaining all 52 M2 equivalents and 10 M3 cases. Logs and fresh actual downloads/screenshots are isolated under test-results/m3-closure-10. Historical m3-final-08 and m3-state-final-09 remain unchanged and separately identified below. Three final desktop axe scans have zero violations and zero incomplete checks; native pixel thresholds remain unchanged; inspection PNG bytes remain identical. This is Windows Chrome evidence, not universal accessibility/browser/production verification.
+
+## Historical M3 candidate verification — 25 November 2026
+
+The final isolated full suite uses test-results/m3-final-08: 62 passed (1.2 min), retaining 52 M2 equivalents plus 10 frontend cases. After a final isolated trimmed-draft comparison fix, the relevant 10 frontend tests passed again in test-results/m3-state-final-09 (15.4 s), including leading/trailing whitespace; lint/typecheck/build also passed on that final source. The full 62-case run precedes that comparison-only correction; no native rendering/export change followed it. Exact results/artifact hashes are in [M3 verification](evidence/m3/verification.json) and [manifest](evidence/m3/artifact-manifest.json). No live quota was used. Existing tests change native-radio/modal selectors, explicit sample activation, draft/result separation and explicit-local labels; schema/fact/dimension/geometry/pixel thresholds are retained.
+
+New coverage includes empty/invalid/subjectless states, arbitrary briefs/all tastes, draft/applied taste separation, copy/composition/palette and JSON-to-render correspondence, pending/error/stale retention, mocked AI/automatic fallback, slow-font readiness, exact per-revision export locking and duplicate clicks, keyboard/modal focus, snapshot isolation and identical actual PNG bytes before/after inspection. Actual screenshots cover 1440×900, 1366×768, 1280×720, 1024×768, 768×1024, 390×844 and 320 px, with no page overflow or stretched ratios. CSS magnification at 200% is also tested; this is not a claim of an OS/browser zoom or assistive-technology certification.
+
+Already installed development-only axe runs on three actual desktop taste states with WCAG 2/2.1/2.2 A/AA tags; zero violations and zero incomplete checks in the final three desktop taste scans. It is not a runtime dependency or full audit. Initial M3-focused failures are retained in m3-workspace-02: a broad alert locator matched Next's route announcer, a font test initially blocked page load, and native dialog Tab could leave the document. Selectors/loading gates were corrected and an explicit modal Tab wrap fixes the real focus issue; test-only overload typing was corrected. Later focused runs passed 10/10, then full verification followed. Earlier core 19-case run passed in 23.7 s; original M0–M2 evidence was not overwritten.
+
 M2 was formally owner-accepted on 24 November 2026 using the final 52-case quota-free verification and documented earlier measurements. Administrative closure changes documentation only; no suite/live/artistic benchmark was rerun. Acceptance does not convert the failed live campaign into success or prove revised live repair, universal fidelity or production readiness.
 
 ## M2 quota-free validation investigation — 24 November 2026
