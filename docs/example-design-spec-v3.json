@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "provenance": "manual-input",
+  "campaign": {
+    "topic": "A robotics workshop for students.",
+    "eyebrow": "An invitation to build",
+    "headline": "A robotics workshop for students.",
+    "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A.\nEntry ₹150.\nRegister at https://example.org/workshop"
+  },
+  "taste": "minimal-swiss",
+  "palette": {
+    "background": "#dcecf0",
+    "ink": "#163438",
+    "accent": "#00616b",
+    "secondary": "#bcd9dd"
+  },
+  "typography": {
+    "family": "neutral-sans",
+    "headlineScale": 0.85,
+    "case": "sentence"
+  },
+  "composition": {
+    "layout": "swiss-grid",
+    "spacing": 80
+  },
+  "decoration": {
+    "motif": "orbit",
+    "density": 1,
+    "illustration": "abstract"
+  },
+  "rationale": "Minimal Swiss: swiss grid with swiss ice colours. Manual adjustments retain campaign copy; no new AI request.",
+  "artDirection": {
+    "variant": "swiss-grid",
+    "palette": "swiss-ice",
+    "visual": "circuit",
+    "emphasis": "display",
+    "information": "auto",
+    "adaptation": "balanced"
+  }
+}

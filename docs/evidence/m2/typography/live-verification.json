@@ -1,0 +1,361 @@
+{
+  "date": "2026-11-24",
+  "kind": "Actual new UI generation; no mocked responses or retries",
+  "model": "gemini-3.5-flash-lite",
+  "maximumCampaigns": 2,
+  "maximumProviderCalls": 4,
+  "records": [
+    {
+      "id": "cultural-evening",
+      "request": {
+        "topic": "A cultural evening of music and dance for the campus community.",
+        "details": "An invitation to gather. Do not invent event logistics.",
+        "taste": "bold-street"
+      },
+      "requestOrigin": "Exact archived primary-model request; unchanged constraints",
+      "state": "actual generation and all exports preserved",
+      "httpStatus": 200,
+      "wallMs": 2710,
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "gemini",
+          "campaign": {
+            "topic": "A cultural evening of music and dance for the campus community.",
+            "eyebrow": "CAMPUS CULTURAL EVENING",
+            "headline": "MUSIC AND DANCE",
+            "supportingText": "An invitation to gather for a cultural evening of music and dance for the campus community.",
+            "cta": "JOIN THE GATHERING"
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efed50",
+            "ink": "#171d1c",
+            "accent": "#b6301a",
+            "secondary": "#fff9de"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 2,
+            "illustration": "abstract"
+          },
+          "rationale": "The bold-street taste fits the energetic cultural tone of a campus music and dance gathering. We use the street-acid palette, uppercase condensed-sans typography, and waves visual to represent music and rhythm while keeping all missing logistics uninvented.",
+          "artDirection": {
+            "variant": "street-stack",
+            "palette": "street-acid",
+            "visual": "waves",
+            "emphasis": "display",
+            "information": "auto",
+            "adaptation": "balanced"
+          }
+        },
+        "interpretation": {
+          "objective": "Invite the campus community to a cultural evening of music and dance.",
+          "audience": "Campus community members interested in music, dance, and cultural events.",
+          "concept": "A vibrant street-style cultural gathering celebrating campus music and dance traditions.",
+          "assumptions": [
+            "The event is organized for students and staff on campus."
+          ],
+          "missingInformation": [
+            "Date, time, and venue location are not provided.",
+            "Specific performers or ticket details are not provided."
+          ]
+        },
+        "metadata": {
+          "source": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": null,
+          "totalMs": 2661,
+          "attempts": [
+            {
+              "outcome": "accepted",
+              "elapsedMs": 2659,
+              "usage": {
+                "inputTokens": 906,
+                "outputTokens": 484,
+                "thinkingTokens": 0,
+                "totalTokens": 1390
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Factual safeguards are heuristics; verify copy before publication."
+          ]
+        }
+      },
+      "providerCalls": 1,
+      "initialContractAccepted": true,
+      "repairAttempted": false,
+      "factualTokens": {
+        "supplied": [],
+        "artwork": []
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/cultural-evening-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 148471
+        },
+        {
+          "format": "instagram-square",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/cultural-evening-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 131367
+        },
+        {
+          "format": "youtube-thumbnail",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/cultural-evening-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 103883
+        },
+        {
+          "format": "linkedin-landscape",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/cultural-evening-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 151191
+        }
+      ],
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "CAMPUS CULTURAL EVENINGMUSIC AND DANCEAn invitation to gather for a cultural evening of music and dance for the campus community.JOIN THE GATHERING"
+        },
+        {
+          "format": "instagram-square",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "CAMPUS CULTURAL EVENINGMUSIC AND DANCEAn invitation to gather for a cultural evening of music and dance for the campus community.JOIN THE GATHERING"
+        },
+        {
+          "format": "youtube-thumbnail",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "CAMPUS CULTURAL EVENINGMUSIC AND DANCEAn invitation to gather for a cultural evening of music and dance for the campus community.JOIN THE GATHERING"
+        },
+        {
+          "format": "linkedin-landscape",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "CAMPUS CULTURAL EVENINGMUSIC AND DANCEAn invitation to gather for a cultural evening of music and dance for the campus community.JOIN THE GATHERING"
+        }
+      ],
+      "offlineRemoteRequests": []
+    },
+    {
+      "id": "fact-sensitive",
+      "request": {
+        "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+        "details": "Venue: Lab A; registration at https://example.org/workshop",
+        "taste": "festive-pop"
+      },
+      "requestOrigin": "Exact archived primary-model request; unchanged constraints",
+      "state": "actual generation and all exports preserved",
+      "httpStatus": 200,
+      "wallMs": 5725,
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+            "eyebrow": "An invitation to build",
+            "headline": "Robotics workshop",
+            "supportingText": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST.\nEntry ₹150.\nVenue: Lab A; registration at https://example.org/workshop"
+          },
+          "taste": "festive-pop",
+          "palette": {
+            "background": "#3b2268",
+            "ink": "#fff2d2",
+            "accent": "#ffc957",
+            "secondary": "#e98dc3"
+          },
+          "typography": {
+            "family": "rounded-sans",
+            "headlineScale": 1,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "festival-frame",
+            "spacing": 64
+          },
+          "decoration": {
+            "motif": "confetti",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Festive Pop: pop offset with pop midnight colours and circuit visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+          "artDirection": {
+            "variant": "pop-offset",
+            "palette": "pop-midnight",
+            "visual": "circuit",
+            "emphasis": "display",
+            "information": "auto",
+            "adaptation": "balanced"
+          }
+        },
+        "interpretation": {
+          "objective": "Present the supplied subject without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied subject a clear Festive Pop hierarchy; preserve publishable information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": "validation-failed",
+          "totalMs": 5657,
+          "attempts": [
+            {
+              "outcome": "validation-failed",
+              "elapsedMs": 2538,
+              "usage": {
+                "inputTokens": 940,
+                "outputTokens": 486,
+                "thinkingTokens": 0,
+                "totalTokens": 1426
+              },
+              "finishReason": "STOP"
+            },
+            {
+              "outcome": "validation-failed",
+              "elapsedMs": 3118,
+              "usage": {
+                "inputTokens": 982,
+                "outputTokens": 488,
+                "thinkingTokens": 0,
+                "totalTokens": 1470
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        }
+      },
+      "providerCalls": 2,
+      "initialContractAccepted": false,
+      "repairAttempted": true,
+      "factualTokens": {
+        "supplied": [
+          "contact:https://example.org/workshop",
+          "date:2026-11-26",
+          "inr:150",
+          "measure:12:team",
+          "time:18:30",
+          "timezone:ist"
+        ],
+        "artwork": [
+          "contact:https://example.org/workshop",
+          "date:2026-11-26",
+          "inr:150",
+          "measure:12:team",
+          "time:18:30",
+          "timezone:ist"
+        ]
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/fact-sensitive-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 163799
+        },
+        {
+          "format": "instagram-square",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/fact-sensitive-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 137325
+        },
+        {
+          "format": "youtube-thumbnail",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/fact-sensitive-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 110788
+        },
+        {
+          "format": "linkedin-landscape",
+          "path": "m2-typography-live-01/m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat/fact-sensitive-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 180617
+        }
+      ],
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "An invitation to buildRobotics workshopRobotics workshop for 12 teams on 26 November 2026 at 18:30 IST.Entry ₹150.Venue: Lab A;registration at https://example.org/workshop"
+        },
+        {
+          "format": "instagram-square",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "An invitation to buildRobotics workshopRobotics workshop for 12 teams on 26 November 2026 at 18:30 IST.Entry ₹150.Venue: Lab A;registration at https://example.org/workshop"
+        },
+        {
+          "format": "youtube-thumbnail",
+          "issues": "[]",
+          "corrections": "[\"Artwork removed and text expanded to preserve readable copy.\"]",
+          "text": "An invitation to buildRobotics workshopRobotics workshop for 12 teams on 26 November 2026 at 18:30 IST.Entry ₹150.Venue: Lab A;registration at https://example.org/workshop"
+        },
+        {
+          "format": "linkedin-landscape",
+          "issues": "[]",
+          "corrections": "[]",
+          "text": "An invitation to buildRobotics workshopRobotics workshop for 12 teams on 26 November 2026 at 18:30 IST.Entry ₹150.Venue: Lab A;registration at https://example.org/workshop"
+        }
+      ],
+      "offlineRemoteRequests": []
+    }
+  ],
+  "completed": true,
+  "campaignRequests": 2,
+  "reportedProviderCalls": 3,
+  "billing": "Not independently verified; unavailable usage is not zero cost"
+}

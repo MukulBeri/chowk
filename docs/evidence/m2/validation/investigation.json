@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-24",
+  "scope": "Focused quota-free M2 validation investigation; synthetic fixtures/mocked REST only; no new artistic review, live requests, dependencies or administrative benchmark",
+  "originalCause": {
+    "recoverable": false,
+    "established": "Both historical attempts reached validatePlan after STOP and parseable JSON; exact structural versus semantic issue unknown",
+    "discarded": "Structural Zod details collapsed to invalid-structure; semantic codes sent to repair but neither stored in attempt metadata; raw failed plans not persisted",
+    "evidence": "Seventeen retained live files contain accepted culture and local fallback artifacts, not rejected plans. Available dev log/trace has no raw campaign/artDirection or validation-code markers.",
+    "limitation": "No deleted artifacts recovered or external/provider logs consulted; plausible mock failures do not identify the historical reason"
+  },
+  "exactArchivedRequest": {
+    "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+    "details": "Venue: Lab A; registration at https://example.org/workshop",
+    "taste": "festive-pop"
+  },
+  "logs": [
+    {
+      "file": ".next/dev/logs/next-development.log",
+      "rawCampaignMarkers": 0,
+      "artDirectionMarkers": 0,
+      "validationCodeMarkers": 0
+    },
+    {
+      "file": ".next/dev/trace",
+      "rawCampaignMarkers": 0,
+      "artDirectionMarkers": 0,
+      "validationCodeMarkers": 0
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "valid-concise",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [],
+      "afterIssues": [],
+      "afterDiagnostics": null
+    },
+    {
+      "id": "valid-generic-entry-fee-label",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [
+        "unsupported-named-entity"
+      ],
+      "afterIssues": [],
+      "afterDiagnostics": null
+    },
+    {
+      "id": "valid-generic-date-time-label",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [],
+      "afterIssues": [],
+      "afterDiagnostics": null
+    },
+    {
+      "id": "prompt-permitted-legacy-palette",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [
+        "palette-token-mismatch"
+      ],
+      "afterIssues": [
+        "palette-token-mismatch"
+      ],
+      "afterDiagnostics": {
+        "stage": "semantic",
+        "issues": [
+          {
+            "code": "palette-token-mismatch",
+            "path": "$"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "wrong-variant",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [
+        "unsupported-art-direction"
+      ],
+      "afterIssues": [
+        "unsupported-art-direction"
+      ],
+      "afterDiagnostics": {
+        "stage": "semantic",
+        "issues": [
+          {
+            "code": "unsupported-art-direction",
+            "path": "$"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "missing-price",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [
+        "missing-supplied-fact"
+      ],
+      "afterIssues": [
+        "missing-supplied-fact"
+      ],
+      "afterDiagnostics": {
+        "stage": "semantic",
+        "issues": [
+          {
+            "code": "missing-supplied-fact",
+            "path": "$"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "structural-long-cta",
+      "kind": "Synthetic fixture, not recovered Gemini output",
+      "beforeIssues": [
+        "invalid-structure"
+      ],
+      "afterIssues": [
+        "invalid-structure"
+      ],
+      "afterDiagnostics": {
+        "stage": "structure",
+        "issues": [
+          {
+            "code": "too-large",
+            "path": "campaign.cta",
+            "limit": 60
+          }
+        ],
+        "truncated": false
+      }
+    }
+  ],
+  "confirmedDefects": [
+    {
+      "id": "legacy-palette-prompt-conflict",
+      "before": "Prompt permitted legacy preset colours while validator/renderer require exact registry colours",
+      "correction": "Remove legacy palette permission; preserve exact palette constraints"
+    },
+    {
+      "id": "entry-fee-label-false-rejection",
+      "before": "Correct Entry Fee: INR amount label was classified as an invented named entity",
+      "correction": "Normalize only Entry Fee immediately before a colon for name detection; run all factual checks on unchanged copy"
+    },
+    {
+      "id": "discarded-validation-detail",
+      "before": "Structure field details lost and no safe plan-validation classification retained in attempts",
+      "correction": "Bounded fixed-code/known-path structural/semantic metadata, controlled schema bounds, static actionable repair guidance, optional legacy-compatible envelope field"
+    }
+  ],
+  "checks": [
+    {
+      "command": "Focused generation/fallback/investigation suite --output=test-results/m2-validation-targeted-03",
+      "passed": 24,
+      "elapsedSeconds": 9.7
+    },
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run build",
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --output=test-results/m2-validation-final-04",
+      "passed": 52,
+      "elapsedAsReported": "1.1m",
+      "priorCasesRetained": 44,
+      "newCases": 8
+    }
+  ],
+  "safety": {
+    "newLiveProviderCalls": 0,
+    "providerCallHistoryUnchanged": 3,
+    "oneRepairMaximumPreserved": true,
+    "modelRuntimeBudgetsAndRegistryUnchanged": true,
+    "structuralAndFactualConstraintsPreserved": true,
+    "diagnosticEntryLimit": 20,
+    "truncationReported": true,
+    "knownCodeAndPathAllowlist": true,
+    "noRawMessageValueUnknownKeyBriefOrProviderBodyDisclosure": true,
+    "syntheticPrivateAndUnsafeSentinelTestsPassed": true,
+    "scopedSourceFilesReviewed": [
+      "src/lib/generation/diagnostics.ts",
+      "src/lib/generation/contracts.ts",
+      "src/lib/generation/planner.ts",
+      "src/server/engine.ts",
+      "src/server/gemini.ts",
+      "tests/validation-investigation.spec.ts"
+    ],
+    "sourcePrivacyFindings": []
+  },
+  "preservation": {
+    "checkedRecords": 11,
+    "changed": [],
+    "records": [
+      {
+        "file": "docs/evidence/m1/live-models.json",
+        "sha256": "b7e3fa9a2e05c126090985731bc389923548b31a323d40ed296467d79bd191dd"
+      },
+      {
+        "file": "docs/evidence/m2/artifact-manifest.json",
+        "sha256": "4a7fb52666e587c573b197d5b716fb729422466cc3675b48f4d459060a259356"
+      },
+      {
+        "file": "docs/evidence/m2/deployment-review.json",
+        "sha256": "7fc6e8ca4bb45f927eb8a4f3189c7d22ba2dd252267f5ea7fcb3e6e419db7d8b"
+      },
+      {
+        "file": "docs/evidence/m2/source-research.json",
+        "sha256": "add246fa1fb4e7262c904f693e079ba8c5dbdb3a54e241d05b317b44e3cd30e3"
+      },
+      {
+        "file": "docs/evidence/m2/typography/artifact-manifest.json",
+        "sha256": "9e5154394b0dbe74e7c4ea253b6953b4c3a8dde1e299b631b94061d7e7000fd1"
+      },
+      {
+        "file": "docs/evidence/m2/typography/completion-verification.json",
+        "sha256": "1621e859ce271b0172cf697087547c280aa5d2b67f4abb17bdd28319ade669f7"
+      },
+      {
+        "file": "docs/evidence/m2/typography/font-verification.json",
+        "sha256": "041888102b12b966a21399ae952e1faa091d411d2829a3a33b22bce695be48fc"
+      },
+      {
+        "file": "docs/evidence/m2/typography/live-offline-geometry.json",
+        "sha256": "19f310f5a6fc297d7d5bb19e4ab32f6a04d4a8b99a0c5d5d053b9bc540efa412"
+      },
+      {
+        "file": "docs/evidence/m2/typography/live-verification.json",
+        "sha256": "055fbcecd3c58e01af35d22442324d3b0c3ad6a7bd8637ad8632a8ccb33c30c1"
+      },
+      {
+        "file": "docs/evidence/m2/typography/read-only-review.json",
+        "sha256": "af0a9bd69f68584f831911d75dfb3cb966d86ce25fca294a6b9883e4c07d67e2"
+      },
+      {
+        "file": "docs/evidence/m2/verification.json",
+        "sha256": "2e65f89a8bd7fec3b44a5ba2839731a94118d41d26d5db9a21d2d510684c0349"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "file": "test-results/m2-validation-before-02/validation-investigation-p-7f3ad-tion-of-rejected-live-plans/before.json",
+      "bytes": 19594,
+      "sha256": "3d4915f4a117cf37449caacca3666dec8918cb5cfd0cf8e99bea034009600ff8"
+    },
+    {
+      "file": "test-results/m2-validation-final-04/validation-investigation-s-4a93d-tion-of-rejected-live-plans/after.json",
+      "bytes": 22553,
+      "sha256": "3b668dfc53d5b4b3ba4687bbfa4b6ea46085838fe6547cdbe899a41edc41545e"
+    },
+    {
+      "file": "test-results/m2-validation-final-04/validation-investigation-s-56834-cal-envelopes-remain-intact/mocked-engine-evidence.json",
+      "bytes": 12242,
+      "sha256": "f63cc43b85c2575460ee19fa30aa952f41b876afbff147747bba518b777e4555"
+    },
+    {
+      "file": "test-results/m2-validation-final-04/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m2-validation-targeted-03/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m2-validation-investigation/log-inspection.json",
+      "bytes": 808,
+      "sha256": "a79669707a8e722bf733ef0b40dda31887665ed7755c787dfdf78b51f4a1d79a"
+    },
+    {
+      "file": "test-results/m2-validation-investigation/log-markers.json",
+      "bytes": 3173,
+      "sha256": "0881102d979dd4daf5de28762ae153a548af21535e287e708c9b0aa6995a1bcf"
+    },
+    {
+      "file": "test-results/m2-validation-investigation/preserved-records.json",
+      "bytes": 1659,
+      "sha256": "598d011f6ef7cd2dbc53f2543e88016ba1ba40bf4de86bc365d183d2c3560995"
+    }
+  ],
+  "limitations": [
+    "Original failed plans and precise reasons cannot be recovered",
+    "Narrow label correction is not a general semantic/entity recognition solution",
+    "Transport invalid-output remains aggregate and does not carry plan diagnostics",
+    "New repair guidance has mocked verification only; live effectiveness and reliability unmeasured",
+    "Existing artistic/font/platform/licensing/production limits remain unchanged"
+  ],
+  "acceptance": "Ready for owner M2 acceptance decision with documented historical uncertainty; no formal acceptance/commit/deployment asserted"
+}

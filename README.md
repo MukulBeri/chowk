@@ -1,6 +1,6 @@
-# Create Lab — M1 candidate
+# Create Lab — M2 accepted milestone
 
-AI-powered HTML/CSS campaign design engine for the YARC Builder Fellowship Create track. **Create Lab is a temporary working title.** M0 is accepted at checkpoint `0665dc2`; M1 adds live Gemini planning and an independent local fallback. This candidate is uncommitted and awaits owner review; it is not publicly deployed.
+AI-powered HTML/CSS campaign design engine for the YARC Builder Fellowship Create track. **Create Lab is a temporary working title.** M0/M1 are accepted at M1 checkpoint `e4a338f`. M2 adds six structural variants, six palettes, topic-aware procedural SVG, grouped logistics and bounded readable fitting. The owner accepted M2 on 24 November 2026 within its documented verification scope. It remains uncommitted and is not publicly deployed; acceptance does not establish final artistic excellence, universal fidelity, live repair effectiveness or production readiness.
 
 Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
 
@@ -17,11 +17,11 @@ npm run dev
 2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. Initial artwork is explicitly a sample fixture until generation. Auto mode sends the brief to Google—avoid private information.
 3. Inspect AI/fallback provenance, creative interpretation/rationale and the specification. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
 4. Compare four platform previews and export each PNG. Manual copy or taste edits are labelled manual; generate again for fresh AI art direction. Failed generation preserves the previous campaign.
-5. Export HTML/JSON. HTML contains full-size inline posters and intentionally scrolls offline; installed fonts can vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
+5. Export HTML/JSON. V3 HTML contains full-size inline posters, embedded approved fonts and their OFL notices, and intentionally scrolls offline. Unsupported scripts and legacy fonts can still vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
 
 The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
 
-No authentication, database, payments or image-generation dependency. Billing, commits, remote publishing, deployment and M2 work require separate authorization.
+No authentication, database, payments or image-generation dependency. Billing, staging/commits, remote publishing, deployment, additional assets/dependencies/live calls and M3 require separate authorization. M2 is owner-accepted and uncommitted. Exact-manifest staging and curated M2 archival are authorized; the commit remains separately gated.
 
 ## Checks
 
@@ -29,7 +29,7 @@ No authentication, database, payments or image-generation dependency. Billing, c
 npm run lint
 npm run typecheck
 npm run build
-npm test -- --output=test-results/m1-next-review
+npm test -- --output=test-results/m2-next-review
 ```
 
 Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).
@@ -50,7 +50,9 @@ curl.exe --fail-with-body --json "@docs/example-generation-request.json" http://
 
 Returns a validated v2 specification, interpretation and honest AI/fallback metadata. Add `"mode":"local"` to request independent planning without Gemini. [Configuration, contract, error/status behavior and curl examples](docs/API.md#m1-product-generation-endpoint). Existing `POST /api/design-spec` remains the deterministic v1 fixture/manual utility using `docs/example-request.json`; it does not call Gemini or the product generation route.
 
-## Example intermediate JSON specification
+## Historical M1 example intermediate JSON specification
+
+The current M2 engine also provides a [complete actual v3 example](docs/example-design-spec-v3.json): local generation with an explicitly manual composition selection. V3 adds registry-backed art direction while historical v1/v2 continue to render unchanged. The full [M2 report](docs/M2_REPORT.md) records actual screenshots/exports, limits, approved font integration and the two focused live outcomes (one accepted AI plan; one validation-failed local fallback).
 
 This is a **complete DesignSpec v2 from an actual live browser generation**, not a mock. The HTTP envelope separately includes interpretation and source/model/timing/usage/fallback metadata. The [machine-readable example](docs/example-design-spec.json) is validated against [designSchema](src/lib/design.ts). The [original v1 fixture example](docs/example-design-spec-v1.json) is retained for compatibility.
 
@@ -130,7 +132,7 @@ Public deployment and broader design/frontend/quality work remain pending. Model
 
 ## Current evidence and limitations
 
-M0 regression checks are retained alongside M1 unit/API/browser checks. Actual live generation and independent local planning have both produced exported campaigns. The six-brief matrix accepted four primary-model AI outputs and fell back for two; the comparison model accepted none (timeout/unavailable). These are small-sample observations, not reliability guarantees. Historical raster comparison remains app/portable-HTML screenshots on one machine, not automated downloaded-PNG pixel fidelity or cross-device/production verification. [Precise evidence](docs/TESTING.md).
+M0 regression checks are retained alongside M1 unit/API/browser checks. Actual live generation and independent local planning have both produced exported campaigns. The six-brief matrix accepted four primary-model AI outputs and fell back for two; the comparison model accepted none (timeout/unavailable). These are small-sample observations, not reliability guarantees. Historical M0 raster comparison remains same-machine app/portable-HTML screenshots. M2 separately checks actual downloaded PNGs against native DOM at the unchanged tolerance; neither establishes cross-device or production fidelity. [Precise evidence](docs/TESTING.md).
 
 The fixed cup is now restricted to relevant briefs, with neutral/no-illustration paths elsewhere. Readability, composition variety, limited semantic heuristics, in-memory quota limitations and cross-device fonts remain [roadmap concerns](docs/ROADMAP.md#existing-concern-register). Very detailed briefs may exceed a format's capacity and refuse export. Official requirements specify aspect ratios; exact pixels and local quality controls are internal choices. A build, mock or structural validator alone does not close the final checklist.
 

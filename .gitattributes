@@ -1,3 +1,8 @@
 # Keep upstream license/notice text intact, including its original trailing spaces.
 # All other files retain the normal Git whitespace checks.
 docs/licenses/NOTICES.txt whitespace=-blank-at-eol,-blank-at-eof
+# Approved upstream font bytes and notices are SHA-256 pinned; preserve bytes.
+public/fonts/*.woff2 binary
+public/fonts/OFL-anton.txt -text whitespace=-blank-at-eol
+public/fonts/OFL-fredoka.txt -text whitespace=-blank-at-eol
+public/fonts/OFL-inter.txt -text

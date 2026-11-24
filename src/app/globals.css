@@ -762,3 +762,7 @@ input:focus,textarea:focus {
 .generation-provenance summary { cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
 .generation-provenance pre { max-height:300px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; font-size:10px; }
 .local-planner-button { display:block; width:100%; margin:-8px 0 15px; font-size:10px; text-decoration:underline; text-underline-offset:3px; }
+.brief-panel select { width:100%; padding:9px; margin:0 0 15px; background:var(--paper); color:var(--ink); border:1px solid var(--line); border-radius:4px; font:inherit; font-size:12px; }
+.poster-quality { padding:10px 14px; color:var(--muted); font-size:11px; line-height:1.5; }
+.poster-quality summary { cursor:pointer; color:var(--ink); }
+.poster-quality p { margin:7px 0; }

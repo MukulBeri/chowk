@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
-import { createDesign, designSchemaV2, FORMATS, PRESETS, SAMPLE_COPY, SAMPLE_TOPIC, TASTES, inputSchema, type Taste, type Format, type DesignSpec } from "@/lib/design";
+import { createDesign, designSchema, designSchemaV2, designSchemaV3, FORMATS, PRESETS, SAMPLE_COPY, SAMPLE_TOPIC, TASTES, inputSchema, type Taste, type Format, type DesignSpec } from "@/lib/design";
+import { ENGINE_TASTES, localDirection, PALETTES, type ArtDirection } from "@/lib/design-engine/registry";
 import { generationRequestSchema, generationResultSchema, incompleteBriefResponseSchema, type GenerationResult } from "@/lib/generation/contracts";
 import { exportHtml, exportPng, saveFile } from "@/lib/export";
 import { PosterPreview } from "./poster";
@@ -22,6 +23,7 @@ export function Studio() {
   const [details, setDetails] = useState("");
   const [generated, setGenerated] = useState<GenerationResult | null>(null);
   const [manual, setManual] = useState(false);
+  const [directionEdits, setDirectionEdits] = useState<Partial<ArtDirection>>({});
   const [generating, setGenerating] = useState(false);
   const generationId = useRef(0);
   const pending = useRef<AbortController | null>(null);
@@ -32,18 +34,31 @@ export function Studio() {
     const base = generated.spec;
     if (!manual) return base;
     const preset = PRESETS[taste];
+    if (base.version === 3) {
+      const direction = { ...(base.taste === taste ? base.artDirection : localDirection(taste, `${base.campaign.headline}\n${base.campaign.supportingText}`)), ...directionEdits };
+      return designSchemaV3.parse({ ...base, provenance: "manual-input", taste, artDirection: direction, palette: PALETTES[direction.palette],
+        typography: { ...base.typography, family: ENGINE_TASTES[taste].family, case: preset.typography.case }, composition: preset.composition,
+        decoration: { ...preset.decoration, illustration: direction.visual === "cup" ? "cup" : direction.visual === "none" ? "none" : "abstract" },
+        campaign: { ...base.campaign, ...applied, cta: applied.cta === "" ? undefined : applied.cta ?? base.campaign.cta },
+        rationale: `${preset.name}: ${direction.variant.replaceAll("-", " ")} with ${direction.palette.replaceAll("-", " ")} colours. Manual adjustments retain campaign copy; no new AI request.` });
+    }
     return designSchemaV2.parse({ ...base, version: 2, provenance: "manual-input", taste,
       campaign: { ...base.campaign, ...applied, cta: applied.cta === "" ? undefined : applied.cta ?? base.campaign.cta },
       ...(base.taste !== taste ? { palette: preset.palette, typography: preset.typography, composition: preset.composition,
         decoration: { ...preset.decoration, illustration: base.version === 2 ? base.decoration.illustration : "abstract" },
         rationale: `${preset.name} applied manually to the existing campaign. Copy preserved; no new AI request.` } : {}) });
-  }, [taste, applied, generated, manual]);
+  }, [taste, applied, generated, manual, directionEdits]);
   const preset = PRESETS[taste];
   const dirty = Object.entries(copy).some(([key, value]) => value !== (spec.campaign[key as keyof typeof copy] ?? ""));
 
   function invalidateGeneration() {
     generationId.current++; pending.current?.abort(); pending.current = null;
     setGenerating(false);
+  }
+  function selectTaste(id: Taste) {
+    invalidateGeneration(); setDirectionEdits({}); setTaste(id);
+    if (generated) setManual(true);
+    setMessage(generated ? "Taste applied locally. Generate again for new AI art direction." : ""); setError("");
   }
   async function generate(mode: "auto" | "local" = "auto") {
     const parsed = generationRequestSchema.safeParse({ topic: copy.topic, details, taste, mode });
@@ -61,8 +76,8 @@ export function Studio() {
       if (!response.ok) throw new Error("request-failed");
       const data = generationResultSchema.parse(await response.json());
       if (id !== generationId.current) return;
-      if (data.spec.version !== 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source) throw new Error("invalid-response");
-      setGenerated(data); setManual(false); setApplied({});
+      if (data.spec.version < 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source) throw new Error("invalid-response");
+      setGenerated(data); setManual(false); setDirectionEdits({}); setApplied({});
       setCopy({ topic: data.spec.campaign.topic, headline: data.spec.campaign.headline, supportingText: data.spec.campaign.supportingText, cta: data.spec.campaign.cta ?? "" });
       setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
     } catch {
@@ -75,7 +90,7 @@ export function Studio() {
 
   function applyCopy(event: FormEvent) {
     event.preventDefault();
-    const result = spec.version === 2 ? designSchemaV2.safeParse({ ...spec, provenance: "manual-input", campaign: { ...spec.campaign, ...copy, cta: copy.cta || undefined } })
+    const result = spec.version >= 2 ? designSchema.safeParse({ ...spec, provenance: "manual-input", campaign: { ...spec.campaign, ...copy, cta: copy.cta || undefined } })
       : inputSchema.safeParse({ taste, topic: copy.topic, headline: copy.headline, supportingText: copy.supportingText, cta: copy.cta });
     if (!result.success) { setError(result.error.issues.map((issue) => issue.message).join(" ")); return; }
     setApplied(copy);
@@ -104,7 +119,7 @@ export function Studio() {
     <header className="topbar">
       <Link className="wordmark" href="/" aria-label="Create Lab home"><span className="brand-symbol">c<span>↗</span></span>create<span className="lab-label">/ lab</span></Link>
       <span className="topbar-caption">A little taste goes a long way.</span>
-      <span className="milestone"><span className="status-dot" />M1 · Creative intelligence</span>
+      <span className="milestone"><span className="status-dot" />M2 · Creative design engine</span>
     </header>
     <main>
       <section className="intro"><div><p className="eyebrow">ONE IDEA. EVERY FORMAT.</p><h1>Make it feel <em>like you.</em></h1><p className="intro-description">Describe your idea. Give it a taste. Create one coordinated campaign.</p></div><div className="fixture-note"><span className="note-icon">✳</span><div><strong>{spec.provenance === "gemini" ? "AI-generated campaign" : spec.provenance === "deterministic-fallback" ? "Independent local fallback" : spec.provenance === "manual-input" ? "Manually edited campaign" : "Sample campaign · fixture"}</strong><p>{spec.provenance === "experimental-fixture" ? "Generate to create from your own brief." : "Review copy and facts before publishing."}<br />Create Lab is a working title.</p></div></div></section>
@@ -120,17 +135,18 @@ export function Studio() {
             <button className="text-button local-planner-button" type="button" disabled={busy || generating || !interactive} onClick={() => generate("local")}>Use local planner · no AI</button>
             <details className="copy-details"><summary>Edit campaign copy</summary>
               <label htmlFor="headline">Headline <span>up to 240 characters</span></label><textarea id="headline" maxLength={240} rows={3} required disabled={busy || generating} value={copy.headline} onChange={(e) => setCopy({ ...copy, headline: e.target.value })} />
-              <label htmlFor="supporting">Supporting text</label><textarea id="supporting" maxLength={spec.version === 2 ? 2400 : 180} rows={3} disabled={busy || generating} value={copy.supportingText} onChange={(e) => setCopy({ ...copy, supportingText: e.target.value })} />
+              <label htmlFor="supporting">Supporting text</label><textarea id="supporting" maxLength={spec.version >= 2 ? 2400 : 180} rows={3} disabled={busy || generating} value={copy.supportingText} onChange={(e) => setCopy({ ...copy, supportingText: e.target.value })} />
               <label htmlFor="cta">Call to action <span>optional</span></label><input id="cta" maxLength={60} disabled={busy || generating} value={copy.cta} onChange={(e) => setCopy({ ...copy, cta: e.target.value })} />
             </details>
             <button className="apply-button" type="submit" disabled={busy || generating || !dirty}>{dirty ? "Apply copy to campaign ↗" : "Copy is up to date ✓"}</button>
           </form>
           <div className="taste-panel"><div className="section-label"><span>02 / YOUR TASTE</span><span>✳</span></div><p className="taste-prompt">Same story. Different energy.</p>
-            <div className="taste-options" role="group" aria-label="Taste preset">{TASTES.map((id) => <button key={id} disabled={busy} className={`taste-option ${taste === id ? "selected" : ""}`} aria-pressed={taste === id} onClick={() => { invalidateGeneration(); setTaste(id); if (generated) setManual(true); setMessage(generated ? "Taste applied locally. Generate again for new AI art direction." : ""); setError(""); }}>
+            <div className="taste-options" role="group" aria-label="Taste preset">{TASTES.map((id) => <button key={id} disabled={busy} className={`taste-option ${taste === id ? "selected" : ""}`} aria-pressed={taste === id} onClick={() => selectTaste(id)}>
               <span className={`taste-swatch swatch-${id}`} style={{ background: PRESETS[id].palette.background, color: PRESETS[id].palette.ink }}>Aa<span>✳</span></span>
               <span className="taste-copy"><strong>{PRESETS[id].name}</strong><small>{PRESETS[id].subtitle}</small></span><span className="taste-check">{taste === id ? "●" : "○"}</span>
             </button>)}</div>
           </div>
+          {spec.version === 3 && <div className="brief-panel"><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.variant} disabled={busy || generating} onChange={(e) => { invalidateGeneration(); setDirectionEdits({ ...directionEdits, variant: e.target.value as ArtDirection["variant"] }); setManual(true); setMessage("Composition applied locally. No AI request."); }}>{ENGINE_TASTES[taste].variants.map((variant) => <option key={variant} value={variant}>{variant.replaceAll("-", " ")}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={(e) => { invalidateGeneration(); setDirectionEdits({ ...directionEdits, palette: e.target.value as ArtDirection["palette"] }); setManual(true); setMessage("Palette applied locally. No AI request."); }}>{ENGINE_TASTES[taste].palettes.map((palette) => <option key={palette} value={palette}>{palette.replaceAll("-", " ")}</option>)}</select><p className="field-note">Local adjustments retain campaign copy and are labelled manual.</p></div>}
           <div className="rationale"><span className="eyebrow">THE CREATIVE LOGIC</span><p>{spec.rationale}</p><div className="palette" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }} />)}<small>{spec.composition.layout.replaceAll("-", " ")}</small></div></div>
           <div className="pipeline-note"><span>BRIEF</span><i>→</i><span>SPEC</span><i>→</i><span>HTML</span><i>→</i><span>PNG</span></div>
         </aside>

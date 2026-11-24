@@ -1,5 +1,7 @@
 import { z } from "zod";
 import { designSchema, designSchemaV1, ILLUSTRATIONS, TASTES } from "../design";
+import { artDirectionSchema } from "../design-engine/registry";
+import { validationDiagnosticsSchema, type ValidationDiagnostics } from "./diagnostics";
 
 export const generationRequestSchema = z.strictObject({
   topic: z.string().trim().min(1, "Enter a topic.").max(1200),
@@ -20,7 +22,7 @@ export const interpretationSchema = z.strictObject({
 export const incompleteBriefResponseSchema = z.strictObject({
   code: z.literal("brief-incomplete"), error: z.string().min(1).max(240), interpretation: interpretationSchema,
 });
-export const creativePlanSchema = z.strictObject({
+export const legacyCreativePlanSchema = z.strictObject({
   interpretation: interpretationSchema,
   taste: z.enum(TASTES),
   campaign: designSchemaV1.shape.campaign.omit({ topic: true }).extend({
@@ -32,14 +34,19 @@ export const creativePlanSchema = z.strictObject({
   decoration: designSchemaV1.shape.decoration.extend({ illustration: z.enum(ILLUSTRATIONS) }),
   rationale: designSchemaV1.shape.rationale,
 });
-export type CreativePlan = z.infer<typeof creativePlanSchema>;
+export const creativePlanSchema = legacyCreativePlanSchema.extend({
+  artDirection: artDirectionSchema,
+  typography: legacyCreativePlanSchema.shape.typography.extend({ family: z.enum(["condensed-sans", "neutral-sans", "editorial-serif", "rounded-sans"]) }),
+});
+export type CreativePlan = z.infer<typeof legacyCreativePlanSchema> | z.infer<typeof creativePlanSchema>;
+export type AdvancedCreativePlan = z.infer<typeof creativePlanSchema>;
 export const FALLBACK_REASONS = [
   "missing-credentials", "configuration", "disabled", "local-budget", "busy", "provider-rate-limit",
   "provider-auth", "provider-unavailable", "network", "timeout", "blocked", "invalid-output", "validation-failed", "requested-local",
 ] as const;
 export type FallbackReason = (typeof FALLBACK_REASONS)[number];
 export type Usage = { inputTokens: number; outputTokens: number; thinkingTokens: number; totalTokens: number };
-export type Attempt = { outcome: "accepted" | FallbackReason; elapsedMs: number; usage?: Usage; finishReason?: string; httpStatus?: number };
+export type Attempt = { outcome: "accepted" | FallbackReason; elapsedMs: number; usage?: Usage; finishReason?: string; httpStatus?: number; validation?: ValidationDiagnostics };
 export type GenerationResult = {
   spec: z.infer<typeof designSchema>;
   interpretation: z.infer<typeof interpretationSchema>;
@@ -62,7 +69,7 @@ export const generationResultSchema = z.object({
     fallbackReason: z.enum(FALLBACK_REASONS).nullable(), totalMs: z.number().nonnegative(),
     attempts: z.array(z.object({ outcome: z.enum(["accepted", ...FALLBACK_REASONS]), elapsedMs: z.number(), usage: z.object({
       inputTokens: z.number(), outputTokens: z.number(), thinkingTokens: z.number(), totalTokens: z.number(),
-    }).optional(), finishReason: z.string().optional(), httpStatus: z.number().int().min(100).max(599).optional() })).max(2),
+    }).optional(), finishReason: z.string().optional(), httpStatus: z.number().int().min(100).max(599).optional(), validation: validationDiagnosticsSchema.optional() })).max(2),
     cached: z.boolean(), warnings: z.array(z.string()),
   }),
 });

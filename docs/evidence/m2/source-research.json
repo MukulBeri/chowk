@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-24",
+  "status": "Research/proposal only; no font binary, new package or external source code integrated",
+  "fonts": [
+    {
+      "family": "anton",
+      "commit": "06bfe0d62a98375cb09c942fa18e68bd32cff057",
+      "metadataSource": "https://raw.githubusercontent.com/google/fonts/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/anton/METADATA.pb",
+      "metadata": "name: \"Anton\"\ndesigner: \"Vernon Adams\"\nlicense: \"OFL\"\ncategory: \"DISPLAY\"\ndate_added: \"2011-02-23\"\nfonts {\n  name: \"Anton\"\n  style: \"normal\"\n  weight: 400\n  filename: \"Anton-Regular.ttf\"\n  post_script_name: \"Anton-Regular\"\n  full_name: \"Anton Regular\"\n  copyright: \"Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)\"\n}\nsubsets: \"latin\"\nsubsets: \"latin-ext\"\nsubsets: \"menu\"\nsubsets: \"vietnamese\"\nsource {\n  repository_url: \"https://github.com/googlefonts/AntonFont\"\n  commit: \"beb92fcad87808357123bb66881b4032dc96efe7\"\n  files {\n    source_file: \"OFL.txt\"\n    dest_file: \"OFL.txt\"\n  }\n  files {\n    source_file: \"DESCRIPTION.en_us.html\"\n    dest_file: \"DESCRIPTION.en_us.html\"\n  }\n  files {\n    source_file: \"fonts/Anton-Regular.ttf\"\n    dest_file: \"Anton-Regular.ttf\"\n  }\n  branch: \"main\"\n  config_yaml: \"sources/config.yaml\"\n}\nstroke: \"SANS_SERIF\"\nclassifications: \"DISPLAY\"\n",
+      "licenseSource": "https://raw.githubusercontent.com/google/fonts/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/anton/OFL.txt",
+      "copyright": "Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)\r",
+      "reservedNameDeclaration": [],
+      "license": "SIL OFL 1.1",
+      "binaryDownloaded": false
+    },
+    {
+      "family": "fredoka",
+      "commit": "06bfe0d62a98375cb09c942fa18e68bd32cff057",
+      "metadataSource": "https://raw.githubusercontent.com/google/fonts/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/fredoka/METADATA.pb",
+      "metadata": "name: \"Fredoka\"\ndesigner: \"Milena Brandão, Hafontia\"\nlicense: \"OFL\"\ncategory: \"SANS_SERIF\"\ndate_added: \"2021-12-15\"\nfonts {\n  name: \"Fredoka\"\n  style: \"normal\"\n  weight: 400\n  filename: \"Fredoka[wdth,wght].ttf\"\n  post_script_name: \"Fredoka-Light\"\n  full_name: \"Fredoka Light\"\n  copyright: \"Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)\"\n}\nsubsets: \"hebrew\"\nsubsets: \"latin\"\nsubsets: \"latin-ext\"\nsubsets: \"menu\"\naxes {\n  tag: \"wdth\"\n  min_value: 75.0\n  max_value: 125.0\n}\naxes {\n  tag: \"wght\"\n  min_value: 300.0\n  max_value: 700.0\n}\nsource {\n  repository_url: \"https://github.com/hafontia-zz/Fredoka-One\"\n  commit: \"35c584ff23450c9bcdf8819706e12fcdeefe1712\"\n  files {\n    source_file: \"OFL.txt\"\n    dest_file: \"OFL.txt\"\n  }\n  files {\n    source_file: \"fonts/variable/Fredoka[wdth,wght].ttf\"\n    dest_file: \"Fredoka[wdth,wght].ttf\"\n  }\n  branch: \"gh-pages\"\n  config_yaml: \"sources/config.yml\"\n}\n",
+      "licenseSource": "https://raw.githubusercontent.com/google/fonts/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/fredoka/OFL.txt",
+      "copyright": "Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)",
+      "reservedNameDeclaration": [],
+      "license": "SIL OFL 1.1",
+      "binaryDownloaded": false
+    }
+  ],
+  "proposedWoff2": [
+    {
+      "subset": "latin-ext",
+      "family": "Anton",
+      "weight": "400",
+      "url": "https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3K9-C8QSw.woff2",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"
+    },
+    {
+      "subset": "latin",
+      "family": "Anton",
+      "weight": "400",
+      "url": "https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+    },
+    {
+      "subset": "latin-ext",
+      "family": "Fredoka",
+      "weight": "600",
+      "url": "https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OLyX8H-mKpNk.woff2",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"
+    },
+    {
+      "subset": "latin",
+      "family": "Fredoka",
+      "weight": "600",
+      "url": "https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OLyX8EemK.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+    }
+  ],
+  "inter": {
+    "release": "v4.1",
+    "commit": "e3a3d4c57d5ecc01453a575621882a384c1995a3",
+    "files": [
+      {
+        "name": "InterVariable.woff2",
+        "sha": "5a8d3e72ad7ffb62af3b146e1b1f54ab5813a212",
+        "size": 352240,
+        "download_url": "https://raw.githubusercontent.com/rsms/inter/e3a3d4c57d5ecc01453a575621882a384c1995a3/docs/font-files/InterVariable.woff2"
+      }
+    ],
+    "licenseSource": "https://raw.githubusercontent.com/rsms/inter/e3a3d4c57d5ecc01453a575621882a384c1995a3/LICENSE.txt",
+    "copyright": "Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)",
+    "license": "SIL OFL 1.1",
+    "reservedNameDeclaration": "No explicit RFN designation in the inspected license header; generic OFL RFN conditions still apply"
+  },
+  "fontLimitations": "Delivery revisions v27/v17 and Inter v4.1 are identified; binary name-table versions, SHA-256, glyph coverage (including ₹), file-license metadata and per-browser offline embedding remain unverified until approval to obtain actual binaries. Do not equate a width canary with complete glyph coverage.",
+  "fitty": {
+    "commit": "310295262598fc88dfc330c169cb55d20f316b6b",
+    "source": "https://github.com/rikschennink/fitty/blob/310295262598fc88dfc330c169cb55d20f316b6b/src/fitty.js",
+    "sourceSha256": "8fa512100ecefb824a515c5358f43783d285d7bb7e325cc8872aaca69208577d",
+    "functions": [
+      "calculateStyles",
+      "redraw",
+      "fit",
+      "fittyCreate"
+    ],
+    "integrated": false,
+    "licenseSource": "https://github.com/rikschennink/fitty/blob/310295262598fc88dfc330c169cb55d20f316b6b/LICENSE",
+    "licenseIdentifier": "MIT",
+    "decision": "Not adopted: source calculateStyles is primarily width-ratio fitting, with nowrap/multiLine behavior; it does not replace bounded two-axis content-region checks. No demonstrated benefit justifies new code/dependency now."
+  }
+}

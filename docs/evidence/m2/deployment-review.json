@@ -1,0 +1,937 @@
+{
+  "date": "2026-11-24",
+  "scope": "Current Windows production build trace and existing lockfile/inventory; not a Linux install, deployed artifact, legal certification or license-violation finding",
+  "buildPassed": true,
+  "traces": [
+    {
+      "file": ".next/server/app/api/design-spec/route.js.nft.json",
+      "tracedFiles": 111
+    },
+    {
+      "file": ".next/server/app/api/generate/route.js.nft.json",
+      "tracedFiles": 111
+    },
+    {
+      "file": ".next/server/app/favicon.ico/route.js.nft.json",
+      "tracedFiles": 109
+    },
+    {
+      "file": ".next/server/app/page.js.nft.json",
+      "tracedFiles": 120
+    },
+    {
+      "file": ".next/server/app/_global-error/page.js.nft.json",
+      "tracedFiles": 116
+    },
+    {
+      "file": ".next/server/app/_not-found/page.js.nft.json",
+      "tracedFiles": 118
+    }
+  ],
+  "tracedPackageNames": [
+    "@swc/helpers",
+    "next"
+  ],
+  "noticeGaps": [
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "declaredLicense": "Apache-2.0",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "@types/json5",
+      "version": "0.0.29",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "@unrs/resolver-binding-win32-x64-msvc",
+      "version": "1.13.0",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "declaredLicense": "BSD-2-Clause",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "language-subtag-registry",
+      "version": "0.3.23",
+      "declaredLicense": "CC0-1.0",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "language-tags",
+      "version": "1.0.9",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    },
+    {
+      "name": "stable-hash",
+      "version": "0.0.5",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "referencedByCurrentWindowsProductionTrace": false,
+      "noticeGapUnresolved": true
+    }
+  ],
+  "notInstalledCount": 53,
+  "potentialLinuxX64Count": 10,
+  "notInstalled": [
+    {
+      "path": "node_modules/@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": null,
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-freebsd-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": null,
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-ppc64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-riscv64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-s390x",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-ppc64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-riscv64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-s390x",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": null,
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-webcontainers-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": [
+        "wasm32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-ia32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-arm64",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-x64",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-gnu",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-musl",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-gnu",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-musl",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@next/swc-win32-arm64-msvc",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm-eabi",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-x64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-freebsd-x64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-gnueabihf",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-musleabihf",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-ppc64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-s390x-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-openharmony-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "openharmony"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-arm64-msvc",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-ia32-msvc",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false
+    }
+  ],
+  "restrictions": "No packages installed; no target deployment performed; no production environment, model, billing or visibility changed."
+}

@@ -4,7 +4,7 @@ YARC Builder Fellowship, Founding Cohort 2027; Technology & Engineering; Track 0
 
 M0 implementation and consolidation are accepted at checkpoint `0665dc2`. This is not acceptance of the complete submission. “Covered locally” below is bounded by [TESTING.md](TESTING.md), not a public/production sign-off.
 
-M1 is now authorized and implemented as an **uncommitted candidate for review**. The owner reports M0 checkpoint `0665dc2` pushed privately and archived. Current M1 evidence is separate from historical M0 acceptance; no M1 commit, public deployment, visibility change or M2 is authorized.
+M0/M1 are accepted and closed at M1 checkpoint `e4a338f722680421bfff6ea88662594ecce3c234`. The owner formally accepted M2 on 24 November 2026 within the scope in M2_REPORT.md. Current authority covers documentation, curated archival and exact-manifest staging; commit, publishing/deployment, visibility/billing changes and M3 remain gated. Historical table entries below retain their measured milestone scope.
 
 ## Official challenge requirements
 
@@ -28,6 +28,8 @@ M1 is now authorized and implemented as an **uncommitted candidate for review**.
 
 ## Internally selected engineering requirements
 
+M2 update: current generation adds strict v3 with v1/v2 compatibility. OFF-03/04/10/14 and ENG-01/03/04/05/06/07 gain owner-accepted M2 evidence for six variants, palettes/SVG capabilities, native hierarchy/corrections, grouped/negative facts, actual local exports and PNG comparisons. Official requirements are unchanged and OFF-15 public access remains pending. M2_REPORT.md owns exact results/gates; historically labelled table entries retain their original scope. ENG-03 now includes a complete actual v3 JSON alongside v1/v2 examples.
+
 These implement our quality/safety/development choices; they are **not additional official challenge mandates**.
 
 | ID | Acceptance criteria / decision | Status and evidence |
@@ -40,11 +42,11 @@ These implement our quality/safety/development choices; they are **not additiona
 | ENG-06 | Honest fixture/manual/live/fallback provenance; independent fallback sharing the rendering contract | All four paths now distinguishable; fallback does not reuse unrelated chai fixture |
 | ENG-07 | Appropriate lint/type/build/browser evidence, human visual inspection, truthful scope and unresolved issues | Historical evidence retained; M1 fresh checks, repeatable mocks, real local endpoint, live matrix/browser and human semantic findings recorded separately |
 | ENG-08 | Licensed selective reuse, notices, no secrets/caches in Git, reviewed milestone checkpoints | License snapshot/notices added; distribution gaps tracked in THIRD_PARTY_NOTICES. Commit requires owner approval |
-| ENG-09 | Preserve deadlines; no unnecessary auth/database/payments; one active repository; reviewed scope changes | M1 authorized, no new dependencies or infrastructure; M2/publishing/billing/commit remain gated |
+| ENG-09 | Preserve deadlines; no unnecessary auth/database/payments; one active repository; reviewed scope changes | M2 accepted; no new dependencies/infrastructure; staging/archival authorized, commit/publishing/billing/M3 remain gated |
 | ENG-10 | Document POST /api/generate as the product orchestration boundary, separate from provider API and spec utility | Implemented/documented; native REST, server-only configuration, bounded budgets and sanitized errors |
 
 ## Acceptance status and priorities
 
 M0 rendering feasibility remains accepted; M1 adds actual creative planning and fallback. The fixed cup now has relevant/neutral/no-art paths, and semantic safeguards exist, but broader topic-aware visuals/meaning/readability/composition/fonts are not solved. Live reliability is imperfect (primary 4/6 matrix AI outcomes; comparison 0/6); human review found and prompted an extra timing-claim guard. See [ROADMAP.md](ROADMAP.md) and [M1_REPORT.md](M1_REPORT.md).
 
-Mandatory final-product gaps take priority over optional improvements. Complete campaign download and natural-language refinement remain enhancements, not authorization to implement them now. M1 ends at an uncommitted tested candidate; no M2, C1/C2 integration, public publishing, deployment or billing change is included.
+Mandatory final-product gaps take priority over optional improvements. Complete campaign download and natural-language refinement remain enhancements, not authorization to implement them now. That M1 scope is historical; M0/M1 are now accepted and closed. M2 is formally accepted with its recorded limitations; the two live outcomes and later quota-free corrections retain their original scopes. Current authorization is checkpoint closure only. See M2_REPORT.md for results; commit, publishing, deployment, billing and M3 remain gated.

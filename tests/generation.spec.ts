@@ -49,7 +49,8 @@ test("fallback is independent, topic-relevant, fact-preserving and renderer-comp
     expect(spec.provenance).toBe("deterministic-fallback");
     expect([spec.campaign.headline, spec.campaign.supportingText].join("\n")).toContain(topic.trim());
     expect(factualTokens(`${spec.campaign.headline}\n${spec.campaign.supportingText}`)).toEqual(factualTokens(topic));
-    expect(spec.version === 2 && spec.decoration.illustration).not.toBe("cup");
+    expect(spec.version).toBe(3);
+    if (spec.version === 3) expect(spec.decoration.illustration).not.toBe("cup");
   }
 });
 

@@ -1,5 +1,19 @@
 # AI and API disclosure
 
+M2 was formally owner-accepted on 24 November 2026 within documented limits. Its original three provider calls, accepted culture result and fact-sensitive two-attempt failure/fallback remain unchanged. Revised repair has quota-free mocked evidence only; fresh live verification belongs to separately authorized M4/M5 work. Closure made no provider request or billing/model change.
+
+## Quota-free M2 validation follow-up — 24 November 2026
+
+No new live request was made. The original three-call record remains unchanged: culture accepted; fact-sensitive initial response and repair both validation-failed after JSON parsing/STOP. Neither rejected plan nor exact issue list survives in available evidence/logs, so its original precise cause is unknown.
+
+Synthetic exact-brief fixtures demonstrated a prompt/registry conflict and false `Entry Fee:` named-entity rejection. Both are corrected; neither is attributed to the historical attempts. Bounded structural/semantic codes, paths and schema bounds now survive in optional attempt metadata, with static actionable repair guidance and no raw response/brief/unknown-key disclosure. New provider/REST results are mocks, not live measurements. No live acceptance/repair/quota/cost improvement is inferred. Model, one-repair cap, runtime settings and independent fallback remain unchanged. [Findings](evidence/m2/validation/investigation.json).
+
+## M2 candidate disclosure
+
+M2 extends the same configured native Gemini REST plan with registry-backed variant/palette/visual/emphasis/information/adaptation controls and emits v3; old v1/v2 specs still parse/render unchanged. The model, environment configuration, timeouts, one-repair maximum, budgets, cache and concurrency remain unchanged. New local planning shares the advanced renderer and retains the M1 interpretation correction, negative facts and honest subjectless 422 behavior.
+
+**No additional live Gemini call or broad benchmark was performed for M2.** New contract/repair behavior is tested with injected providers; actual local HTTP generation, manual composition choices and saved M1 AI-plan rendering replays are separately labelled. None is presented as a new live v3 model result. Historical measurements below and their JSON remain byte-identical. A proposed two-campaign real verification, maximum four calls including repairs under existing budgets, requires separate owner approval. No cost/token/latency estimate for new v3 calls is invented.
+
 ## Actual M1 runtime
 
 M1 uses the **Gemini Developer REST API** with native server-side fetch; no SDK, image-generation API or second provider was added. The configured secret is consumed only by the server-only runtime and sent in `x-goog-api-key` headers to the fixed Google host. It is not part of prompts, URLs, logs, client responses or screenshots. `.env.local` is ignored; `.env.example` contains placeholders/settings only.
@@ -54,3 +68,13 @@ Semantic safeguards normalize complete dates/times/currency/units/contacts/IDs a
 The owner reports a dedicated free-tier Google AI Studio project named YARC Create, successful connectivity/model discovery and one initial structured JSON test: provisional gemini-3.5-flash-lite, **8707 ms**, **44 input / 221 output / 265 total reported tokens**, finish STOP, valid parseable JSON. This was not rerun as part of M0, is not the M1 full-campaign benchmark and is not a performance guarantee. M0 runtime itself made no AI calls (external API runtime cost 0 for that milestone).
 
 Codex assisted implementation; ChatGPT provides mentorship/architecture/requirements/research/quality; Claude references are advisory and reviewed before integration; Gemini supplies current in-product planning. Development-assistant model billing is not measured here. Existing reference receipt/status and deferred research remain in RESEARCH.md.
+
+## M2 focused v3 verification — 24 November 2026
+
+The owner separately authorized exactly two campaigns, at most four provider calls including one repair each. After quota-free typography/regression checks, the actual studio used unchanged gemini-3.5-flash-lite and server REST/runtime settings. Exact cultural-event and fact-sensitive requests were read from the archived primary-model records; no benchmark was reconstructed or rerun.
+
+**Three provider calls total:** culture accepted initially (2661 ms engine total; 906 input + 484 output = 1390 reported tokens), selecting street-stack/street-acid/waves/display/auto/balanced and the concise “MUSIC AND DANCE” headline. Fact-sensitive initial response and one repair both failed validation (2538/3118 ms attempts; 5657 ms engine total; 1426/1470 reported tokens). The returned campaign is independent local fallback, pop-offset/pop-midnight/circuit, preserving 12 teams, date/time/IST, ₹150, Lab A and the full URL. Its art direction is local, not Gemini-approved. Both results were uncached. Total reported usage is 4286 tokens (2828 input, 1458 output, thinking 0). Actual billing remains unobserved.
+
+Both campaigns produced four native PNGs, embedded-font offline HTML and downloaded JSON. A passing outcome-recording test means the authorized workflow and honest fallback/export checks completed; it does not mean two model plans passed. Product metadata preserves attempt outcomes/timings/usage, but rejected raw plans and exact validation issues are not exposed or retained, so the reason for the fact-sensitive failures cannot be diagnosed from this evidence. Do not infer schema versus semantic failure or claim that the repair fixed it. No extra requests were made to obtain a better result; the unused fourth-call allowance is not permission for a third campaign. Further live work requires authorization.
+
+[Immutable live journal](evidence/m2/typography/live-verification.json) records actual responses; [artifact manifest](evidence/m2/typography/artifact-manifest.json) separates new live AI, actual local fallback, retained M1 AI-copy replay, manual variant selections and mocks. Historical M1 and preliminary M2 JSON remain byte-identical. Negative facts/instruction separation/incomplete input are regression-verified, not new live negative-fact measurements. No additional provider, SDK, agent, dependency, model or billing change occurred.

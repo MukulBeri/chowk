@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./campaign-fonts.css";
 
 export const metadata: Metadata = {
   title: "Create Lab · Campaign rendering prototype",

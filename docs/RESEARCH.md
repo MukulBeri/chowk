@@ -1,5 +1,7 @@
 # Research, reuse and reference register
 
+M2 was owner-accepted on 24 November 2026 within its documented scope. Carry-forward M4/M5 research remains conditional: fresh separately authorized live validation/repair, broader semantic/factual reliability, topic-aware art/composition and landscape readability, cross-browser/device/unsupported scripts, production reliability and actual target-distribution licensing. Existing library/asset/font/C7 and enhancement gates remain; no new research/adoption is authorized by closure.
+
 Status vocabulary: **Adopted** = integrated with evidence; **Pending evaluation** = investigate before selecting; **Rejected** = a specific unsuitable approach is excluded with a reason; **Deferred** = conditional/later priority. A public page, README claim or received reference is not an independently tested implementation.
 
 ## Commercial references
@@ -59,3 +61,39 @@ Selective reuse of functions, algorithms, text fitting, export mechanisms, CSS/S
 Current consequential decisions: keep the validated HTML engine; retain the tested Zod/html-to-image/Playwright choices; no replacement renderer, image API, critic or C1/C2 integration. Model/provider research decisions are centralized in [AI_DISCLOSURE.md](AI_DISCLOSURE.md).
 
 M1 update: native Gemini REST (no SDK dependency) was adopted behind the server-only runtime; actual generation succeeded on the primary model, with comparison failures explicitly recorded in AI_DISCLOSURE.md. The existing renderer was extended only for v2 provenance/detailed copy and neutral/no-art fallback, not replaced. No additional library, external source code or advisory reference was integrated. The owner's C1–C6 findings remain advisory; C7 research proceeds independently and did not block M1. This does not claim unseen artifacts were supplied or reviewed by Codex.
+
+## M2 reference review and approval proposals
+
+Actual filenames verified: C1_Studio_Reference_Prototype.html, C1_Design_Handoff.md, C2_Poster_Design_Systems.html, C3_Code_Reuse_Inventory.md, C4_AI_Creative_Intelligence.md, C5_Rendering_Export_Quality.md, C5_Motifs_and_Quality_Checks.html, C6_Codex_Handoff.md. Relevant C2–C6 material was read without archive modification. C1 remains M3-only and its palette/logo/type are unapproved. C2 parameterization and C5 geometry ideas informed independent work; no reference code was copied. C4's replacement schema/SDK, C5's support-dropping ladder and C6's automatic deployment/extra gates were rejected where inconsistent with owner authority. C7 is pending, not a dependency.
+
+### Exact five-file proposal — approved and integrated
+
+The owner approved the following exact five files. All were acquired with HTTP 200, decoded/inspected using already installed Next bundled fontkit, SHA-256 pinned and copied unchanged to these local paths. No package or remote runtime font dependency was introduced; legacy stacks remain unchanged.
+
+| Local target after approval | Exact upstream candidate |
+|---|---|
+| public/fonts/anton-latin.woff2 | [Anton 400 Latin, Google delivery v27](https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2) |
+| public/fonts/anton-latin-ext.woff2 | [Anton Latin extended v27](https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3K9-C8QSw.woff2) |
+| public/fonts/inter-variable.woff2 | [Official InterVariable.woff2, v4.1, commit e3a3d4c57d5ecc01453a575621882a384c1995a3](https://raw.githubusercontent.com/rsms/inter/e3a3d4c57d5ecc01453a575621882a384c1995a3/docs/font-files/InterVariable.woff2); metadata reports 352,240 bytes |
+| public/fonts/fredoka-600-latin.woff2 | [Current Fredoka 600/100% Latin, delivery v17](https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OLyX8EemK.woff2) |
+| public/fonts/fredoka-600-latin-ext.woff2 | [Fredoka Latin extended v17](https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OLyX8H-mKpNk.woff2) |
+
+Pinned metadata and licenses: Google Fonts commit 06bfe0d62a98375cb09c942fa18e68bd32cff057 ([Anton metadata](https://github.com/google/fonts/blob/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/anton/METADATA.pb), [Anton OFL](https://github.com/google/fonts/blob/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/anton/OFL.txt), [Fredoka metadata](https://github.com/google/fonts/blob/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/fredoka/METADATA.pb), [Fredoka OFL](https://github.com/google/fonts/blob/06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/fredoka/OFL.txt)); Inter uses its [same-revision license](https://github.com/rsms/inter/blob/e3a3d4c57d5ecc01453a575621882a384c1995a3/LICENSE.txt).
+
+Inspected files specify SIL OFL 1.1. Copyright holders: Anton Project Authors (2020), Fredoka Project Authors (2016), Inter Project Authors (2016 at this release). No explicit Reserved Font Name declaration appears in these headers; generic OFL RFN conditions still apply. Preserve copyright/OFL with local distribution and offline embedding; keep upstream binaries unchanged. Conversion/subsetting requires another modification/name review. Fonts cannot be sold alone or promoted with implied author endorsement.
+
+Current Fredoka is **Fredoka[wdth,wght].ttf**, metadata added in 2021, width 75–125/weight 300–700, upstream hafontia-zz/Fredoka-One commit 35c584ff23450c9bcdf8819706e12fcdeefe1712. It is not an interchangeable assumption about the old Fredoka One binary. Anton identifies Anton-Regular.ttf/upstream beb92fcad87808357123bb66881b4032dc96efe7.
+
+Google v27/v17 are delivery revisions. Decoded binaries identify Anton 2.116, Fredoka 2.001 and Inter 4.001;git-9221beed3 despite its official v4.1 release location. Inter bytes exactly match the pinned Git blob 5a8d3e72ad7ffb62af3b146e1b1f54ab5813a212. Fredoka is static OS/2 weight 600 with no variation axes and internal preferred family “Fredoka Light”, full name “Fredoka Light SemiBold”; this upstream naming quirk is retained, not renamed or replaced with Fredoka One. Inter axes are opsz 14–32 and wght 100–900. The Google subset files were not proven byte-equivalent to a pinned source TTF; exact delivered bytes, copyright, decoded identity and linked OFL are recorded without that stronger claim.
+
+Actual cmap inspection finds ₹ in Anton extended and Inter, absent in both Fredoka subsets. Inter is the explicit Fredoka glyph fallback. Latin/extended faces are scoped by Unicode ranges; unsupported scripts warn and use installed system fonts. CDP observed actual custom glyph use in native and offline HTML, including Fredoka plus Inter for ₹. Numerals, punctuation and extended Latin were exported and visually reviewed; Hindi/Japanese additionally showed Nirmala UI/Microsoft YaHei on this machine. This is not every-glyph/cross-device proof.
+
+Five binaries total 421,368 bytes. Sources, sizes, full SHA-256, name/OS2/fvar/cmap/sample-outline inspection and three notice hashes are recorded in [font-verification.json](evidence/m2/typography/font-verification.json). V3 verifies hashes before fitting/export, embeds the approved data and full notices offline, uses real available weights with fontSynthesis:none, and preserves v1/v2. No new font approval remains pending; additional fonts/assets remain gated.
+
+### Source-level reuse decisions
+
+**Existing html-to-image 1.11.13 retained/hardened.** Installed lib/clone-node.js, cloneCSSStyle, explicitly floors/reduces computed font sizes. Its public includeStyleProperties option lets fully inline v3 nodes avoid that computation; v1/v2 retain the original options. Original PNG failures and improved unchanged-tolerance results are retained. The existing MIT dependency/notices remain; no vendored patch, new package or replacement renderer was introduced.
+
+**Fitty source-reviewed, not adopted:** [exact source](https://github.com/rikschennink/fitty/blob/310295262598fc88dfc330c169cb55d20f316b6b/src/fitty.js), [MIT license](https://github.com/rikschennink/fitty/blob/310295262598fc88dfc330c169cb55d20f316b6b/LICENSE). Relevant functions: calculateStyles, redraw, fit, fittyCreate; inspected UTF-8 source hash is recorded. It solves width fitting through DOM/rAF/observers without an evident runtime package requirement in that module. Adoption would need a client lifecycle boundary, cleanup, loaded-font handling, style-mutation/security review and preserved attribution. Its width-ratio/nowrap-multiline logic does not replace vertical-region checks. No measured runtime/quality advantage over our current bounded fitter was demonstrated, so integration is not justified now. A later approved candidate must pass two-axis/multiline/dense/unsafe/font/export comparisons and retain MIT notices.
+
+Other named repositories/libraries retain existing research status; no complete source/license/asset audit is claimed. No unapproved application code, icon asset, Culori/OpenType/Satori, server browser or Claude code was adopted. New layout/quality/SVG code is original. [Pinned research evidence](evidence/m2/source-research.json).

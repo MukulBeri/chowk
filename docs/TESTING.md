@@ -1,4 +1,49 @@
-# M0 verification
+# Verification and evidence
+
+M2 was formally owner-accepted on 24 November 2026 using the final 52-case quota-free verification and documented earlier measurements. Administrative closure changes documentation only; no suite/live/artistic benchmark was rerun. Acceptance does not convert the failed live campaign into success or prove revised live repair, universal fidelity or production readiness.
+
+## M2 quota-free validation investigation — 24 November 2026
+
+Final full suite: **52 passed (1.1 min)** in `test-results/m2-validation-final-04`: all 44 prior cases plus eight investigation cases. Earlier focused validation/generation/fallback suite: **24 passed (9.7 s)**. Lint, typecheck and production build passed. No live request, broad model benchmark or repeated artistic review occurred; unchanged renderer/export assertions ran as regression coverage with fresh isolated output.
+
+Exact archived brief fixtures cover correct plans, the corrected `Entry Fee:` false rejection, removed legacy-palette prompt conflict, legitimate registry/factual failures and structural CTA/visual/type/unknown-field failures. Tests check all supported taste/variant/palette combinations, legacy v2/envelopes, bounded safe diagnostics, field/limit guidance through mocked REST, single-repair success/failure, budgets/timeouts and fallback. A studio test displays metadata from a mocked response. Private synthetic sentinels/unsafe values/unknown names do not leak into diagnostics or guidance. Changed price/count/timezone/venue/URL, invented offers and organizations (including `Entry Fee Labs`) remain rejected; negative facts remain accepted.
+
+Pre-fix fixtures remain in `test-results/m2-validation-before-02`; after-fixtures/mocked records use the final directory. [Investigation evidence](evidence/m2/validation/investigation.json) preserves their paths/hashes. All 11 pre-investigation M1/M2 evidence records match initial hashes. Available logs/artifacts do not recover either original rejection reason. Earlier security/license/archive reviews and artistic assessments were not repeated or relabelled current.
+
+## M2 typography completion — 24 November 2026
+
+Current lint, typecheck and production build pass. Full quota-free npx --no-install playwright test --output=test-results/m2-type-quota-free-06: **43 passed (1.1 min)**, retaining 24 M0/M1 equivalents and all 14 earlier M2 cases plus five font tests. A final focused tests/typography.spec.ts --output=test-results/m2-type-final-glyphs-07: **6 passed (9.5 s)** includes one additional unsupported-script test; thus 44 current cases are verified, not a claimed single 44-case run. The earlier 43-case run in m2-type-quota-free-05 had one failed Bold Street CDP check: the off-screen node had not painted glyph runs. It is preserved; the test now scrolls/captures before querying actual font use. No font assertion or raster tolerance was weakened. Initial test-only TypeScript typing errors were corrected; final typecheck passes.
+
+All six variants × four native dimensions were re-exported after font integration, with saved M1 AI-copy replays and legacy v1/v2 coverage. Actual YouTube PNG-vs-native-DOM ratios: **Bold 1.15701%, Swiss 1.13553%, Pop 1.13639%**, within unchanged <=1.5% pixels / any RGBA delta >20. Font tests additionally compare square actual PNG and embedded offline HTML separately, inspect CDP custom font glyph runs, and verify zero remote requests, pinned bytes/notices, real weights, visible ₹/extended Latin, explicit unsupported-script warnings and corrupted-font export refusal. Original PNG failures and preliminary measurements remain untouched.
+
+Focused live runner evaluation/m2-completion.config.ts: **1 passed (13.1 s)** records two actual UI campaigns, **three provider calls**, not two AI successes. Culture: accepted initially, 2661 ms. Fact-sensitive: initial and one repair both validation-failed, 5657 ms, then independent local fallback. Eight actual native PNGs, two embedded HTML files and two downloaded JSON specs were preserved. No retries, extra campaign/model or further live calls. [Actual response journal](evidence/m2/typography/live-verification.json) and [completion evidence](evidence/m2/typography/completion-verification.json) distinguish outcomes and exact test scope.
+
+Human review covered native exports, six-variant/same-brief contact sheets, 430 px studio captures, retained-plan before/after typography and both new live outcomes. Stronger taste typography, concise local headlines and date/venue emphasis are visible; landscape body/URL readability, generic motifs, inherited long copy and limited live creative breadth remain concerns. The new [artifact manifest](evidence/m2/typography/artifact-manifest.json) points to isolated ignored files without duplicating directories. Preliminary records below remain historical; current font/live status supersedes their pending gates.
+
+
+## M2 preliminary candidate — preserved measurements, 24 November 2026
+
+Executed final commands: lint, typecheck and production build passed; `npm test -- --output=test-results/m2-final-08` passed **38 tests in 52.3 s**. This retains the 24 M0/M1 cases with only a version-aware fallback assertion change and adds 14 M2 cases. No additional live Gemini calls were made. Tests reuse the existing development server and installed headless Chrome; no browser/package install or deployment occurred.
+
+New coverage: strict v3 registry/taste/palette/visual consistency and v1/v2 parsing; no-art/full-width and format/grouping rules; actual local HTTP topics including culture/robotics/beverage/product/general/long/negative/unsafe/subjectless; dense/unsafe/impossible-copy browser checks; 3 tastes × 2 variants × 4 native exports with the same brief; portable HTML/content/no-external-request checks and downloaded JSON; manual rationale consistency; three retained-M1-plan replays with unchanged campaign copy; and original v2 browser rendering/PNG/HTML/exact JSON roundtrip. Existing provider/repair/quota/stale-response/factual and M0 geometry/escaping/export-refusal checks remain.
+
+The six-variant matrix produced **24 native PNGs, 6 portable HTML files, 6 downloaded specs, 6 studio screenshots and 3 screenshots at 430 px width**. Three saved-M1-plan adaptations add 12 PNGs; unchanged-v2 replay adds four PNGs/HTML/JSON. All four required native dimensions were checked. Actual local generation/manual choices, saved AI replays, mocks and legacy fixtures are separately labelled in [artifact-manifest.json](evidence/m2/artifact-manifest.json). Generated output remains ignored and is not copied wholesale into source.
+
+### Actual downloaded-PNG fidelity
+
+The comparison is native downloaded PNG versus an integer-origin unscaled DOM screenshot, YouTube 1280×720, Windows, Chrome 158.0.8127.88, Node 24.22.3, device scale 1/headless. **Tolerance was unchanged throughout: changed pixels <=1.5%, where any RGBA channel delta >20 counts.** Initial Bold Street/Minimal Swiss failures were 2.3039%/1.8622% and remain in `test-results/m2-engine-01` with images, traces and diagnostics. Installed html-to-image computed-style cloning reduces font sizes. The v3 fully inline export path opts out of computed-style copying; v1/v2 use original options. Targeted verification then passed without increasing tolerance or patching the dependency.
+
+Final ratios: Bold Street 0.9108%, Minimal Swiss 0.8809%, Festive Pop 0.9015%. These are measured nonzero differences, not universal pixel identity. V3 HTML is checked for preserved content, ready/no-overflow and no external requests; it is not claimed to have a complete pixel-parity matrix. The separate retained M0 HTML screenshot comparisons still pass at their original 0.1%/delta>8 tolerance and do not establish downloaded-PNG parity.
+
+### Inspection and preservation
+
+Representative native v3 exports, the three M1 archived baseline PNGs and 430 px studio captures were visually inspected. Grouped facts, stronger CTAs and topic visuals improve hierarchy; long inherited headlines, small landscape display sizes, limited motif/variant vocabulary and system fonts remain concerns. Basic contrast/geometry checks do not certify art direction, accessibility or every glyph.
+
+All **201 pre-M2 local evidence files** remain byte-identical; **93 archived M1/M0/Claude records** were hash-checked unchanged. No archive was modified, no historical evidence rerendered in place, and no lost mobile screenshot was relabelled recovered. New M2 runs have distinct named directories; Playwright's default now targets an M2 child directory instead of clearing historical parent output. Preserve original failures and use a fresh explicit `--output` for future evidence runs.
+
+Final limits, remaining font/binary/live-provider/production approvals, file inventory and source/deployment research are in [M2_REPORT.md](M2_REPORT.md), [verification.json](evidence/m2/verification.json), RESEARCH.md and THIRD_PARTY_NOTICES.md. No cross-device/OS/full-browser matrix, complete security/accessibility/load/billing audit, actual Linux install or production deployment is claimed.
+
+## Historical M0 verification
 
 This document preserves historical M0/consolidation evidence below. Current M1 checks, actual live measurements, failures and remaining limits are recorded in the final section; do not read M0's “unperformed” list as the current M1 coverage.
 

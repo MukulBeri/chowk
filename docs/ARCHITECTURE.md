@@ -1,5 +1,19 @@
 # Architecture
 
+## M2 controlled creative engine
+
+Focused validation follow-up: `diagnostics.ts` sanitizes structural/semantic failures and provides static repair guidance. `validatePlan` retains v3 field errors when artDirection is present instead of unrelated legacy-parser errors. Engine attempts retain bounded optional diagnostics; the client contract/details view preserves them, and old envelopes remain valid. No raw failed plan/value/message is logged or exposed. The prompt now permits only selected registry colours; name detection recognizes `Entry Fee:` without changing artwork copy or skipping factual checks. Renderer/export/schema versions, model, limits and infrastructure are unchanged by this follow-up.
+
+Current plans emit **DesignSpec v3**. V1/v2 schemas and the legacy renderer remain compatible and are not silently migrated; the v1 deterministic endpoint is unchanged. M2 comparison tests explicitly construct new v3 adaptations while retaining original measured records and campaign copy.
+
+`design-engine/registry.ts` owns six composition IDs, six palette tokens, seven bounded visual choices, taste membership and local selection. `design.ts` validates matching palette/type/legacy fields; the provider contract derives current capabilities from the same registry. Semantic validation rejects incompatible/irrelevant options before the existing repair/fallback flow. No per-platform model call is added.
+
+`layout.ts` resolves native rectangles by variant, ratio, copy density, CTA and adaptation. Complete supporting clauses become groups; URL rows span the grid and receive visual break opportunities without changing text. No-art/dense campaigns reclaim the art area. `advanced-poster.tsx` renders inline controlled HTML/CSS and repository-authored procedural SVG. V3 display roles use approved local Anton 400, Inter variable and Fredoka 600 respectively; supporting roles use Inter. Legacy font stacks stay unchanged. Five unchanged WOFF2 assets plus three OFL notices are bundled; fonts.ts verifies their hashes, waits for relevant faces and supplies portable embedded CSS. Unsupported code points generate system-font warnings; fontSynthesis:none prevents synthetic display weights.
+
+`quality.ts` fits both axes after font readiness and checks role floors, basic contrast, bounds and unintended content/hero overlap. At most three passes expand text/remove art and then allocate additional support space; no copy is dropped. Unresolved defects block exports. Preview details and exported attributes expose corrections/font sizes. Checks do not certify aesthetics, arbitrary glyph coverage or social-scale accessibility.
+
+The existing html-to-image path is retained. Fully inline v3 nodes opt out of computed-style copying to avoid observed library font-size changes; v1/v2 keep original options. V3 PNG explicitly embeds the verified font CSS; portable HTML includes data-font CSS and escaped full notices with no font network dependency. Actual downloaded-PNG comparisons are distinct from offline HTML screenshot parity. See M2_REPORT.md for measured scope, font/source proposals and deployment limits.
+
 ## Current M1 implementation
 
 ```text

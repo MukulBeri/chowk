@@ -1,0 +1,292 @@
+{
+  "date": "2026-11-24",
+  "kind": "Read-only uncommitted candidate review; not a staged-file audit, complete penetration test or release clearance",
+  "head": "e4a338f722680421bfff6ea88662594ecce3c234",
+  "branch": "main",
+  "modifiedCount": 23,
+  "newCount": 32,
+  "candidateCount": 55,
+  "stagedCount": 0,
+  "scannedFiles": 218,
+  "compiledClientFiles": 119,
+  "configuredSecretValuesCompared": 1,
+  "secretMatches": [],
+  "tokenShapeMatches": [],
+  "privacyMatches": [],
+  "forbidden": [],
+  "whitespace": [],
+  "badJson": [],
+  "brokenLinks": [],
+  "protectedChanges": [],
+  "historicalFiles": 740,
+  "historicalChanges": [],
+  "fontAndNoticesVerified": 8,
+  "fontIssues": [],
+  "fontExtras": [],
+  "fontAttributes": [
+    {
+      "file": "public/fonts/anton-latin-ext.woff2",
+      "attributes": "public/fonts/anton-latin-ext.woff2: text: unset"
+    },
+    {
+      "file": "public/fonts/anton-latin.woff2",
+      "attributes": "public/fonts/anton-latin.woff2: text: unset"
+    },
+    {
+      "file": "public/fonts/fredoka-600-latin-ext.woff2",
+      "attributes": "public/fonts/fredoka-600-latin-ext.woff2: text: unset"
+    },
+    {
+      "file": "public/fonts/fredoka-600-latin.woff2",
+      "attributes": "public/fonts/fredoka-600-latin.woff2: text: unset"
+    },
+    {
+      "file": "public/fonts/inter-variable.woff2",
+      "attributes": "public/fonts/inter-variable.woff2: text: unset"
+    }
+  ],
+  "notices": [
+    {
+      "file": "public/fonts/OFL-anton.txt",
+      "attributes": "public/fonts/OFL-anton.txt: text: unset"
+    },
+    {
+      "file": "public/fonts/OFL-fredoka.txt",
+      "attributes": "public/fonts/OFL-fredoka.txt: text: unset"
+    },
+    {
+      "file": "public/fonts/OFL-inter.txt",
+      "attributes": "public/fonts/OFL-inter.txt: text: unset"
+    }
+  ],
+  "examplePlaceholderOnly": true,
+  "licenseInventoryLockMatches": true,
+  "files": [
+    {
+      "status": "modified",
+      "file": ".gitattributes"
+    },
+    {
+      "status": "modified",
+      "file": "AGENTS.md"
+    },
+    {
+      "status": "modified",
+      "file": "README.md"
+    },
+    {
+      "status": "modified",
+      "file": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/AI_DISCLOSURE.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/API.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/ARCHITECTURE.md"
+    },
+    {
+      "status": "new",
+      "file": "docs/M2_REPORT.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/REQUIREMENTS.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/RESEARCH.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/ROADMAP.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/TESTING.md"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/artifact-manifest.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/deployment-review.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/source-research.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/artifact-manifest.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/completion-verification.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/font-verification.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/live-offline-geometry.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/live-verification.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/typography/read-only-review.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m2/verification.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/example-design-spec-v3.json"
+    },
+    {
+      "status": "new",
+      "file": "evaluation/m2-completion-live.spec.ts"
+    },
+    {
+      "status": "new",
+      "file": "evaluation/m2-completion.config.ts"
+    },
+    {
+      "status": "modified",
+      "file": "playwright.config.ts"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/OFL-anton.txt"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/OFL-fredoka.txt"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/OFL-inter.txt"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/anton-latin-ext.woff2"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/anton-latin.woff2"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/fredoka-600-latin-ext.woff2"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/fredoka-600-latin.woff2"
+    },
+    {
+      "status": "new",
+      "file": "public/fonts/inter-variable.woff2"
+    },
+    {
+      "status": "new",
+      "file": "src/app/campaign-fonts.css"
+    },
+    {
+      "status": "modified",
+      "file": "src/app/globals.css"
+    },
+    {
+      "status": "modified",
+      "file": "src/app/layout.tsx"
+    },
+    {
+      "status": "new",
+      "file": "src/components/advanced-poster.tsx"
+    },
+    {
+      "status": "modified",
+      "file": "src/components/poster.tsx"
+    },
+    {
+      "status": "new",
+      "file": "src/components/procedural-visual.tsx"
+    },
+    {
+      "status": "modified",
+      "file": "src/components/studio.tsx"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/design-engine/font-assets.json"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/design-engine/fonts.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/design-engine/layout.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/design-engine/quality.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/design-engine/registry.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/design.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/export.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/generation/contracts.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/generation/planner.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/server/gemini.ts"
+    },
+    {
+      "status": "new",
+      "file": "tests/design-engine.spec.ts"
+    },
+    {
+      "status": "modified",
+      "file": "tests/fallback-correction.spec.ts"
+    },
+    {
+      "status": "modified",
+      "file": "tests/generation.spec.ts"
+    },
+    {
+      "status": "new",
+      "file": "tests/typography.spec.ts"
+    }
+  ],
+  "limits": [
+    "Source/client configured-value and token-shape scans are not a full security audit",
+    "Existing target-platform license gaps remain; exact approved fonts/notices only are cleared for this integration",
+    "No stage/commit/push/deploy or model/billing/production setting change"
+  ],
+  "passed": true
+}

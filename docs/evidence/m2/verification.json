@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-24",
+  "base": "e4a338f722680421bfff6ea88662594ecce3c234",
+  "scope": "Uncommitted M2 candidate; no live Gemini calls",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run build",
+      "exit": 0
+    },
+    {
+      "command": "npm test -- --output=test-results/m2-final-08",
+      "exit": 0,
+      "passed": 38,
+      "elapsedSeconds": 52.3
+    }
+  ],
+  "retainedCases": {
+    "prior": 24,
+    "new": 14
+  },
+  "fidelity": {
+    "environment": {
+      "node": "24.22.3",
+      "chrome": "158.0.8127.88",
+      "headless": true,
+      "deviceScaleFactor": 1,
+      "platform": "Windows"
+    },
+    "comparison": "Actual downloaded PNG vs native unscaled integer-origin DOM screenshot",
+    "format": "youtube-thumbnail",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "unchangedTolerance": {
+      "channelDelta": 20,
+      "maxChangedPixelRatio": 0.015
+    },
+    "initialFailures": [
+      {
+        "variant": "street-stack",
+        "ratio": 0.02303927951388889
+      },
+      {
+        "variant": "swiss-grid",
+        "ratio": 0.018621961805555556
+      }
+    ],
+    "failureRoot": "test-results/m2-engine-01",
+    "targetedFixVerification": {
+      "output": "test-results/m2-fidelity-02",
+      "passed": 2,
+      "seconds": 6.4
+    },
+    "finalComparisons": [
+      {
+        "variant": "street-stack",
+        "ratio": 0.009108072916666666
+      },
+      {
+        "variant": "swiss-grid",
+        "ratio": 0.00880859375
+      },
+      {
+        "variant": "pop-stage",
+        "ratio": 0.009014756944444445
+      }
+    ],
+    "fix": "V3 fully inline exports opt out of html-to-image computed-style copying; legacy options preserved; no tolerance relaxation or dependency patch",
+    "limits": "Nonzero measured differences remain; not universal PNG fidelity or cross-device/glyph certification. M0 HTML screenshot parity is a separate check."
+  },
+  "preservation": {
+    "preM2LocalFiles": 201,
+    "localHashMismatches": 0,
+    "baseline": "test-results/m2-preflight/baseline-hashes.json",
+    "archivedRecordsChecked": 93,
+    "archiveHashMismatches": 0,
+    "archiveIntegritySha256": "8e8e80cb839422cb48c1ac4cd69e21da984b683d3752e32f36beb903959c9a79",
+    "archiveWrites": false,
+    "previousMobileLoss": "Historical M1 mobile original remains unrecovered; no substitute presented as original and no new loss"
+  },
+  "approvalsPending": {
+    "fontAssets": "Five exact WOFF2 candidates in RESEARCH.md; binary versions/hashes/glyphs/metadata/offline embedding remain gated",
+    "liveProvider": "Two campaign verifications on unchanged configured primary model, maximum four calls including one repair each, separate owner approval required",
+    "externalCode": "No adoption requested for Fitty without demonstrated benefit; other candidates pending C7/source review",
+    "deployment": "Not authorized; no push/commit/visibility/billing/model/production changes or M3"
+  },
+  "securityReview": {
+    "scope": "Read-only tracked/candidate/compiled-client scan; no credentials printed",
+    "scannedFiles": 194,
+    "compiledClientFiles": 115,
+    "actualSecretMatches": 0,
+    "secretShapeMatches": 0,
+    "privatePathMatches": 0,
+    "prohibitedCandidates": 0,
+    "licenseLockHashMatches": true
+  },
+  "git": {
+    "head": "e4a338f722680421bfff6ea88662594ecce3c234",
+    "branch": "main",
+    "modified": 20,
+    "untracked": 12,
+    "staged": 0,
+    "deleted": 0,
+    "candidateFiles": [
+      {
+        "file": "AGENTS.md",
+        "status": "modified"
+      },
+      {
+        "file": "README.md",
+        "status": "modified"
+      },
+      {
+        "file": "THIRD_PARTY_NOTICES.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/AI_DISCLOSURE.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/API.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/ARCHITECTURE.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/M2_REPORT.md",
+        "status": "new"
+      },
+      {
+        "file": "docs/REQUIREMENTS.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/RESEARCH.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/ROADMAP.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/TESTING.md",
+        "status": "modified"
+      },
+      {
+        "file": "docs/evidence/m2/artifact-manifest.json",
+        "status": "new"
+      },
+      {
+        "file": "docs/evidence/m2/deployment-review.json",
+        "status": "new"
+      },
+      {
+        "file": "docs/evidence/m2/source-research.json",
+        "status": "new"
+      },
+      {
+        "file": "docs/evidence/m2/verification.json",
+        "status": "new"
+      },
+      {
+        "file": "docs/example-design-spec-v3.json",
+        "status": "new"
+      },
+      {
+        "file": "playwright.config.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/app/globals.css",
+        "status": "modified"
+      },
+      {
+        "file": "src/components/advanced-poster.tsx",
+        "status": "new"
+      },
+      {
+        "file": "src/components/poster.tsx",
+        "status": "modified"
+      },
+      {
+        "file": "src/components/procedural-visual.tsx",
+        "status": "new"
+      },
+      {
+        "file": "src/components/studio.tsx",
+        "status": "modified"
+      },
+      {
+        "file": "src/lib/design-engine/layout.ts",
+        "status": "new"
+      },
+      {
+        "file": "src/lib/design-engine/quality.ts",
+        "status": "new"
+      },
+      {
+        "file": "src/lib/design-engine/registry.ts",
+        "status": "new"
+      },
+      {
+        "file": "src/lib/design.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/lib/export.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/lib/generation/contracts.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/lib/generation/planner.ts",
+        "status": "modified"
+      },
+      {
+        "file": "src/server/gemini.ts",
+        "status": "modified"
+      },
+      {
+        "file": "tests/design-engine.spec.ts",
+        "status": "new"
+      },
+      {
+        "file": "tests/generation.spec.ts",
+        "status": "modified"
+      }
+    ]
+  },
+  "documentation": {
+    "candidateFilesChecked": 32,
+    "localLinkTargetsChecked": 58,
+    "issues": 0,
+    "gitDiffCheckExit": 0,
+    "gitCachedDiffCheckExit": 0,
+    "cachedScope": "Empty index; no staged commit is claimed"
+  }
+}

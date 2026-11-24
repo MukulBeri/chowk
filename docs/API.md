@@ -1,5 +1,13 @@
 # Campaign APIs
 
+## M2 validation diagnostics (additive metadata)
+
+Failed plan-validation attempts now include optional `metadata.attempts[].validation`: `{ stage: "structure" | "semantic", issues: [{ code, path, limit? }], truncated }`. Structural examples are `too-large` at `campaign.cta`, limit 60, and `invalid-value` at `artDirection.visual`; semantic codes distinguish factual/name, registry/style and contrast failures. A strict schema permits at most 20 entries and fixed known paths/codes. Historical envelopes without this field remain compatible.
+
+Diagnostics include no rejected plan/value, unknown property name, raw Zod message, brief excerpt or provider body/secret. Unknown paths become `$`; bounds come from the controlled schema. Existing studio generation details retain/display these safe entries. Original codes plus static field-specific guidance reach the single permitted repair; no extra call or content-log infrastructure was added. Provider `invalid-output` remains a distinct aggregate transport/envelope/JSON/finish failure without plan-validation details.
+
+The quota-free follow-up removed contradictory legacy-palette permission and corrected the ordinary `Entry Fee:` label's false entity rejection. All factual and registry constraints remain. The original live failure cause is still unknown. [Investigation evidence](evidence/m2/validation/investigation.json).
+
 ## Deterministic design specification (M0, preserved)
 
 `POST http://localhost:3000/api/design-spec`
@@ -72,7 +80,7 @@ No external provider is called, so there is no provider failure/fallback behavio
 
 ## M1 product generation endpoint
 
-`POST http://localhost:3000/api/generate` interprets/plans a campaign through server-side Gemini, validates the plan and returns a renderer-compatible **v2** spec. It is distinct from the external Google API and the unchanged deterministic v1 `/api/design-spec` utility. Shared pure contracts/planners are reused; it does not make an internal HTTP request to the old endpoint.
+`POST http://localhost:3000/api/generate` interprets/plans a campaign through server-side Gemini and validates the plan. M1 introduced v2; the M2 candidate emits **v3** for current local/new provider plans while historical v2 responses remain accepted. It is distinct from the external Google API and unchanged deterministic v1 `/api/design-spec` utility. Shared pure contracts/planners are reused; it does not make an internal HTTP request to the old endpoint.
 
 ```powershell
 curl.exe --fail-with-body --json "@docs/example-generation-request.json" http://localhost:3000/api/generate
@@ -147,6 +155,14 @@ Successful fallback is **200 with explicit fallback source/reason**, never a fak
 Provider failures normally become 200 fallback: missing credentials, disabled/configuration, local-budget, busy, provider-rate-limit, provider-auth, provider-unavailable, network, timeout, blocked, invalid-output/validation-failed. A genuine 503 application error is distinct from a provider 503 that successfully falls back. Raw provider bodies, credentials and internal exceptions are not returned.
 
 ### Configuration and limits
+
+M2 retains the request/envelope, 422 behavior, model and budgets below. V3 adds required `artDirection` to the spec/current provider plan:
+
+```json
+{"variant":"swiss-column","palette":"swiss-ice","visual":"circuit","emphasis":"display","information":"auto","adaptation":"balanced"}
+```
+
+`src/lib/design-engine/registry.ts` owns exact enums and taste membership. Palette values and legacy style fields must match their selections. Geometry/corrections remain deterministic, with no executable model markup. V1/v2 are not rewritten. The focused owner-authorized live check used three provider calls across two campaigns: cultural v3 accepted initially; fact-sensitive responses failed validation initially and after one repair, so the result is labelled independent fallback. Exact rejected plans/validation reasons are not exposed by the product response. [Complete actual v3 local/manual example](example-design-spec-v3.json).
 
 Set server-only variables in ignored `.env.local`, using [.env.example](../.env.example) as a placeholder reference; do not overwrite an existing configured file or prefix keys with NEXT_PUBLIC_. Environment changes require a server restart to reset the runtime singleton. Never paste secrets into briefs or curl request bodies.
 

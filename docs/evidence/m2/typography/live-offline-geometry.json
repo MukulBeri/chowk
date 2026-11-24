@@ -1,0 +1,283 @@
+{
+  "kind": "Quota-free actual saved HTML remeasurement after embedded fonts ready; not another generation",
+  "records": [
+    {
+      "id": "cultural-evening",
+      "file": "evaluation-results\\m2-typography-live-01\\m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat\\cultural-evening.html",
+      "externalRequests": [],
+      "posters": [
+        {
+          "format": "instagram-portrait",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 39,
+              "clientHeight": 39,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 549,
+              "clientHeight": 549,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 548,
+              "clientWidth": 548,
+              "scrollHeight": 457,
+              "clientHeight": 457,
+              "fit": true
+            },
+            {
+              "role": "cta",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 88,
+              "clientHeight": 88,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 39,
+              "clientHeight": 39,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 407,
+              "clientHeight": 406,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 548,
+              "clientWidth": 548,
+              "scrollHeight": 330,
+              "clientHeight": 330,
+              "fit": true
+            },
+            {
+              "role": "cta",
+              "scrollWidth": 962,
+              "clientWidth": 962,
+              "scrollHeight": 88,
+              "clientHeight": 88,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 1200,
+              "clientWidth": 1200,
+              "scrollHeight": 39,
+              "clientHeight": 39,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 840,
+              "clientWidth": 840,
+              "scrollHeight": 274,
+              "clientHeight": 274,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 1200,
+              "clientWidth": 1200,
+              "scrollHeight": 174,
+              "clientHeight": 174,
+              "fit": true
+            },
+            {
+              "role": "cta",
+              "scrollWidth": 1200,
+              "clientWidth": 1200,
+              "scrollHeight": 78,
+              "clientHeight": 78,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 1800,
+              "clientWidth": 1800,
+              "scrollHeight": 39,
+              "clientHeight": 39,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 1260,
+              "clientWidth": 1260,
+              "scrollHeight": 419,
+              "clientHeight": 419,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 1800,
+              "clientWidth": 1800,
+              "scrollHeight": 279,
+              "clientHeight": 279,
+              "fit": true
+            },
+            {
+              "role": "cta",
+              "scrollWidth": 1800,
+              "clientWidth": 1800,
+              "scrollHeight": 78,
+              "clientHeight": 78,
+              "fit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fact-sensitive",
+      "file": "evaluation-results\\m2-typography-live-01\\m2-completion-live-two-aut-5bf0d--prevents-accidental-repeat\\fact-sensitive.html",
+      "externalRequests": [],
+      "posters": [
+        {
+          "format": "instagram-portrait",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 960,
+              "clientWidth": 960,
+              "scrollHeight": 42,
+              "clientHeight": 42,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 643,
+              "clientWidth": 643,
+              "scrollHeight": 606,
+              "clientHeight": 606,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 960,
+              "clientWidth": 960,
+              "scrollHeight": 508,
+              "clientHeight": 508,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 960,
+              "clientWidth": 960,
+              "scrollHeight": 42,
+              "clientHeight": 42,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 643,
+              "clientWidth": 643,
+              "scrollHeight": 463,
+              "clientHeight": 463,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 960,
+              "clientWidth": 960,
+              "scrollHeight": 381,
+              "clientHeight": 381,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 1198,
+              "clientWidth": 1198,
+              "scrollHeight": 42,
+              "clientHeight": 42,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 1198,
+              "clientWidth": 1198,
+              "scrollHeight": 268,
+              "clientHeight": 268,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 1198,
+              "clientWidth": 1198,
+              "scrollHeight": 278,
+              "clientHeight": 278,
+              "fit": true
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "fields": [
+            {
+              "role": "kicker",
+              "scrollWidth": 1798,
+              "clientWidth": 1798,
+              "scrollHeight": 42,
+              "clientHeight": 42,
+              "fit": true
+            },
+            {
+              "role": "headline",
+              "scrollWidth": 1187,
+              "clientWidth": 1187,
+              "scrollHeight": 476,
+              "clientHeight": 476,
+              "fit": true
+            },
+            {
+              "role": "support",
+              "scrollWidth": 1187,
+              "clientWidth": 1187,
+              "scrollHeight": 320,
+              "clientHeight": 320,
+              "fit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

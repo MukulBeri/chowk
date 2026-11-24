@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-24",
+  "base": "e4a338f722680421bfff6ea88662594ecce3c234",
+  "scope": "Uncommitted M2 owner-review candidate; current typography and focused live verification, not acceptance or deployment",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run build",
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --output=test-results/m2-type-quota-free-06",
+      "exit": 0,
+      "passed": 43,
+      "elapsedAsReported": "1.1m"
+    },
+    {
+      "command": "npx --no-install playwright test tests/typography.spec.ts --output=test-results/m2-type-final-glyphs-07",
+      "exit": 0,
+      "passed": 6,
+      "elapsedSeconds": 9.5,
+      "note": "Five earlier font cases repeated plus one new unsupported-script case; 44 distinct current cases verified, not a single full 44-case execution"
+    },
+    {
+      "command": "Authorized explicit evaluation/m2-completion.config.ts",
+      "exit": 0,
+      "passed": 1,
+      "elapsedSeconds": 13.1,
+      "note": "Outcome recording: one accepted AI campaign, one validation-failed local fallback; not two AI successes"
+    }
+  ],
+  "priorCases": 24,
+  "earlierM2Cases": 14,
+  "newFontCases": 6,
+  "failuresPreserved": [
+    {
+      "directory": "test-results/m2-engine-01",
+      "finding": "Original Bold Street/Swiss actual PNG fidelity failures; unchanged original tolerance"
+    },
+    {
+      "directory": "test-results/m2-type-quota-free-05",
+      "finding": "42 passed, one off-screen Bold Street CDP glyph-query failure; test now paints target before glyph query; no weakened font assertion"
+    }
+  ],
+  "matrix": [
+    {
+      "taste": "bold-street",
+      "variant": "street-editorial",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 138772
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 119319
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 104607
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 157167
+        }
+      ]
+    },
+    {
+      "taste": "festive-pop",
+      "variant": "pop-stage",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 161283
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 155530
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 118860,
+          "actualPngVsNativeDom": {
+            "ratio": 0.011363932291666667,
+            "changed": 10473
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 183572
+        }
+      ]
+    },
+    {
+      "taste": "festive-pop",
+      "variant": "pop-offset",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 159222
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 139287
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 113403
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 183510
+        }
+      ]
+    },
+    {
+      "taste": "minimal-swiss",
+      "variant": "swiss-column",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 149841
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 129349
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 113026
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 167435
+        }
+      ]
+    },
+    {
+      "taste": "minimal-swiss",
+      "variant": "swiss-grid",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 151700
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 137364
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 112220,
+          "actualPngVsNativeDom": {
+            "ratio": 0.011355251736111112,
+            "changed": 10465
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 168765
+        }
+      ]
+    },
+    {
+      "taste": "bold-street",
+      "variant": "street-stack",
+      "kind": "Actual local generation with manual registry variant; identical brief across tastes",
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 153877
+        },
+        {
+          "format": "instagram-square",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 134726
+        },
+        {
+          "format": "youtube-thumbnail",
+          "width": 1280,
+          "height": 720,
+          "bytes": 106419,
+          "actualPngVsNativeDom": {
+            "ratio": 0.01157009548611111,
+            "changed": 10663
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "width": 1910,
+          "height": 1000,
+          "bytes": 158108
+        }
+      ]
+    }
+  ],
+  "representativeFontGlyphs": [
+    {
+      "taste": "bold-street",
+      "kind": "Actual local generation; CDP observed native and offline font glyph use, not only FontFaceSet status",
+      "nativeFonts": [
+        {
+          "familyName": "Anton",
+          "postScriptName": "Anton-Regular",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ],
+      "offlineFonts": [
+        {
+          "familyName": "Anton",
+          "postScriptName": "Anton-Regular",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ],
+      "offlineHtmlVsDomRatio": 0,
+      "actualPngVsDomRatio": 0.011853566529492456,
+      "remoteRequests": []
+    },
+    {
+      "taste": "festive-pop",
+      "kind": "Actual local generation; CDP observed native and offline font glyph use, not only FontFaceSet status",
+      "nativeFonts": [
+        {
+          "familyName": "Fredoka Light SemiBold",
+          "postScriptName": "FredokaLight-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 20
+        },
+        {
+          "familyName": "Inter Variable",
+          "postScriptName": "InterVariable-Display-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      "offlineFonts": [
+        {
+          "familyName": "Fredoka Light SemiBold",
+          "postScriptName": "FredokaLight-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 20
+        },
+        {
+          "familyName": "Inter Variable",
+          "postScriptName": "InterVariable-Display-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      "offlineHtmlVsDomRatio": 0,
+      "actualPngVsDomRatio": 0.010262345679012345,
+      "remoteRequests": []
+    },
+    {
+      "taste": "minimal-swiss",
+      "kind": "Actual local generation; CDP observed native and offline font glyph use, not only FontFaceSet status",
+      "nativeFonts": [
+        {
+          "familyName": "Inter Variable",
+          "postScriptName": "InterVariable-Display-Bold",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ],
+      "offlineFonts": [
+        {
+          "familyName": "Inter Variable",
+          "postScriptName": "InterVariable-Display-Bold",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ],
+      "offlineHtmlVsDomRatio": 0,
+      "actualPngVsDomRatio": 0.011257716049382716,
+      "remoteRequests": []
+    }
+  ],
+  "fidelity": {
+    "environment": {
+      "platform": "Windows",
+      "chrome": "158.0.8127.88",
+      "node": "24.22.3",
+      "headless": true,
+      "deviceScaleFactor": 1
+    },
+    "actualYouTubePng": {
+      "maximumChangedRatio": 0.015,
+      "anyRgbaChannelDeltaGreaterThan": 20
+    },
+    "representativeSquareOfflineHtml": {
+      "maximumChangedRatio": 0.001,
+      "anyRgbaChannelDeltaGreaterThan": 8
+    },
+    "limitation": "Downloaded-PNG and offline-HTML comparisons are distinct; representative local environment only, not universal browser/device/every-glyph fidelity"
+  },
+  "preservation": {
+    "preCompletionFiles": 740,
+    "changed": [],
+    "originalPreM2Files": 201,
+    "preliminaryM2Records": "Four original docs/evidence/m2 JSON records plus original PNG failure artifacts remain byte-identical",
+    "externalArchive": "No archive writes; earlier M2 verified 93 archived records; this completion does not claim a new archive audit or recovery of the lost M1 mobile screenshot"
+  },
+  "fontFiles": 5,
+  "notices": 3,
+  "fontBinaryBytes": 421368,
+  "sourceBinaryModification": false,
+  "live": {
+    "campaigns": 2,
+    "providerCalls": 3,
+    "acceptedAiCampaigns": 1,
+    "fallbackCampaigns": 1,
+    "repairsAttempted": 1,
+    "repairedSuccesses": 0,
+    "reportedTokens": 4286,
+    "billingVerified": false,
+    "rejectedPlansAvailable": false
+  },
+  "deployment": {
+    "buildPassed": true,
+    "deployed": false,
+    "existingNoticeGaps": 14,
+    "uninspectedLocations": 53,
+    "potentialLinuxX64Locations": 10,
+    "note": "Existing distribution-review evidence retained; actual Linux build/installed contents/production artifact still unverified. Gaps are not automatically violations."
+  },
+  "limits": [
+    "Fact-sensitive live plan failed both validation attempts; exact rejected raw plans/reasons unavailable in product envelope",
+    "Limited motifs and two composition families per taste; landscape supporting copy/URL readability remains a human review concern",
+    "Unsupported scripts use system fonts; no broad cross-device/browser proof",
+    "Process-local provider budgets/cache; no global quota, production load or billing verification",
+    "No staged files, commit, push, deployment, dependencies, extra assets or M3 authorized"
+  ],
+  "repeatRunProtection": {
+    "passed": true,
+    "phase": "Config evaluation before Playwright output cleanup",
+    "result": "Existing persistent journal blocks a rerun before tests/provider calls; --list succeeds",
+    "artifactsRechecked": 164,
+    "artifactChanges": 0,
+    "providerCalls": 0
+  }
+}

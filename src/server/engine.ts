@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { fallbackPlan, planToSpec, validatePlan } from "../lib/generation/planner";
 import type { Attempt, FallbackReason, GenerationRequest, GenerationResult } from "../lib/generation/contracts";
 import { ProviderError, type Provider } from "./gemini";
+import { repairGuidance } from "../lib/generation/diagnostics";
 
 export type EngineConfig = { model: string; timeoutMs: number; overallMs: number; rpm: number; dailyCalls: number; tokensPerMinute: number; maxOutputTokens: number; concurrency: number; cacheTtlMs: number; cacheEntries: number };
 export const DEFAULT_CONFIG: EngineConfig = { model: "gemini-3.5-flash-lite", timeoutMs: 18000, overallMs: 38000, rpm: 8, dailyCalls: 100, tokensPerMinute: 100000, maxOutputTokens: 4096, concurrency: 2, cacheTtlMs: 120000, cacheEntries: 20 };
@@ -72,11 +73,11 @@ export class GenerationEngine {
         const timeout = new Promise<never>((_resolve, reject) => { timer = setTimeout(() => { controller.abort(); reject(new ProviderError("timeout")); }, Math.min(remaining, this.config.timeoutMs)); });
         const result = await Promise.race([this.provider!({ request, repair, signal: controller.signal }), timeout]);
         const validated = validatePlan(result.raw, request);
-        attempts.push({ outcome: validated.plan ? "accepted" : "validation-failed", elapsedMs: this.now() - attemptStart, usage: result.usage, finishReason: result.finishReason });
+        attempts.push({ outcome: validated.plan ? "accepted" : "validation-failed", elapsedMs: this.now() - attemptStart, usage: result.usage, finishReason: result.finishReason, ...(validated.diagnostics ? { validation: validated.diagnostics } : {}) });
         if (validated.plan) return { spec: planToSpec(validated.plan, request, "gemini"), interpretation: validated.plan.interpretation,
           metadata: { source: "gemini", model: this.config.model, fallbackReason: null, totalMs: this.now() - start, attempts, cached: false,
             warnings: ["Factual safeguards are heuristics; verify copy before publication."] } };
-        repair = validated.issues;
+        repair = [...validated.issues, ...(validated.diagnostics ? repairGuidance(validated.diagnostics) : [])];
       } catch (error) {
         const failure = error instanceof ProviderError ? error : new ProviderError("network");
         attempts.push({ outcome: failure.code, elapsedMs: this.now() - attemptStart, usage: failure.usage, finishReason: failure.finishReason, httpStatus: failure.httpStatus });

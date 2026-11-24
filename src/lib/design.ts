@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { artDirectionSchema, compatibleDirection, ENGINE_TASTES, PALETTES } from "./design-engine/registry";
 
 export const TASTES = ["bold-street", "minimal-swiss", "festive-pop"] as const;
 export const FORMATS = [
@@ -34,7 +35,20 @@ export const designSchemaV2 = designSchemaV1.extend({
   }),
   decoration: designSchemaV1.shape.decoration.extend({ illustration: z.enum(ILLUSTRATIONS) }),
 });
-export const designSchema = z.discriminatedUnion("version", [designSchemaV1, designSchemaV2]);
+export const designSchemaV3 = designSchemaV2.extend({
+  version: z.literal(3), artDirection: artDirectionSchema,
+  typography: designSchemaV2.shape.typography.extend({ family: z.enum(["condensed-sans", "neutral-sans", "editorial-serif", "rounded-sans"]) }),
+}).superRefine((spec, ctx) => {
+  if (!compatibleDirection(spec.taste, spec.artDirection)) ctx.addIssue({ code: "custom", message: "Art direction must belong to the selected taste.", path: ["artDirection"] });
+  if (spec.typography.family !== ENGINE_TASTES[spec.taste].family) ctx.addIssue({ code: "custom", message: "Typography must match the taste.", path: ["typography"] });
+  if (Object.entries(PALETTES[spec.artDirection.palette]).some(([key, value]) => spec.palette[key as keyof typeof spec.palette] !== value)) ctx.addIssue({ code: "custom", message: "Palette colours must match the selected registry token.", path: ["palette"] });
+  const legacy = PRESETS[spec.taste];
+  if (spec.composition.layout !== legacy.composition.layout || spec.decoration.motif !== legacy.decoration.motif || spec.typography.case !== legacy.typography.case) ctx.addIssue({ code: "custom", message: "Legacy compatibility fields must match the selected taste.", path: ["composition"] });
+  const illustration = spec.artDirection.visual === "cup" ? "cup" : spec.artDirection.visual === "none" ? "none" : "abstract";
+  if (spec.decoration.illustration !== illustration) ctx.addIssue({ code: "custom", message: "Visual compatibility fields disagree.", path: ["decoration"] });
+});
+export const designSchema = z.discriminatedUnion("version", [designSchemaV1, designSchemaV2, designSchemaV3]);
+export type DesignSpecV3 = z.infer<typeof designSchemaV3>;
 export type DesignSpec = z.infer<typeof designSchema>;
 export const SAMPLE_TOPIC = "Chai stall opening near campus.";
 export const SAMPLE_COPY = {

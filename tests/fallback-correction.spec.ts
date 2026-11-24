@@ -16,8 +16,9 @@ const input: GenerationRequest = { topic: "A campus robotics workshop for first-
 test("observed instructions stay in metadata, without topic duplication, across all tastes", () => {
   for (const taste of TASTES) for (const details of instructions) {
     const request = { ...input, taste, details }, plan = fallbackPlan(request);
-    expect(plan.campaign.headline).toBe(request.topic);
-    expect(plan.campaign.supportingText).toBe("");
+    expect(plan.campaign.headline).toBe("Campus robotics workshop");
+    expect(plan.campaign.supportingText).toBe(request.topic);
+    expect(`${plan.campaign.headline}\n${plan.campaign.supportingText}`).not.toContain(details);
     expect([...plan.interpretation.assumptions, ...plan.interpretation.missingInformation].join("\n")).toContain(details);
     expect(designSchema.safeParse(planToSpec(plan, request, "deterministic-fallback")).success).toBe(true);
   }
@@ -33,15 +34,15 @@ test("negative factual statements and specific facts remain public, including mi
   ];
   for (const fact of facts) {
     const request = { ...input, details: fact }, plan = fallbackPlan(request);
-    expect(plan.campaign.supportingText, fact).toBe(fact);
+    expect(plan.campaign.supportingText, fact).toBe(`${request.topic}\n${fact}`);
     expect(factualIssues(`${request.topic}\n${fact}`, `${plan.campaign.headline}\n${plan.campaign.supportingText}`), fact).toEqual([]);
     expect(fallbackPlan({ ...input, topic: fact, details: "" }).campaign.headline).toBe(fact);
   }
   const mixed = fallbackPlan({ ...input, details: "No schedule or price has been supplied; Entry ₹150. Venue: Lab A; registration at https://example.org/workshop" });
-  expect(mixed.campaign.supportingText).toBe("Entry ₹150.\nVenue: Lab A; registration at https://example.org/workshop");
+  expect(mixed.campaign.supportingText).toBe(`${input.topic}\nEntry ₹150.\nVenue: Lab A; registration at https://example.org/workshop`);
   expect(mixed.interpretation.missingInformation.join(" ")).toContain("No schedule or price has been supplied");
   const labelled = fallbackPlan({ ...input, details: "Public copy: Do not invent event logistics." });
-  expect(labelled.campaign.supportingText).toBe("Do not invent event logistics.");
+  expect(labelled.campaign.supportingText).toBe(`${input.topic}\nDo not invent event logistics.`);
 });
 
 test("instructions in topic and incomplete requests do not produce pretend campaigns or spend quota", async () => {
@@ -54,10 +55,10 @@ test("instructions in topic and incomplete requests do not produce pretend campa
     expect(providerCalls).toBe(0);
   }
   const plan = fallbackPlan({ ...input, topic: "Help me announce something.", details: "A campus poetry circle. No tickets are required." });
-  expect(plan.campaign.headline).toBe("A campus poetry circle."); expect(plan.campaign.supportingText).toBe("No tickets are required.");
-  expect(fallbackPlan({ ...input, topic: "Create a poster for a robotics workshop.", details: "" }).campaign.headline).toBe("a robotics workshop.");
-  expect(fallbackPlan({ ...input, details: input.topic }).campaign.supportingText).toBe("");
-  expect(fallbackPlan({ ...input, details: `${input.topic} Entry ₹150.` }).campaign.supportingText).toBe("Entry ₹150.");
+  expect(plan.campaign.headline).toBe("Campus poetry circle"); expect(plan.campaign.supportingText).toBe("A campus poetry circle.\nNo tickets are required.");
+  expect(fallbackPlan({ ...input, topic: "Create a poster for a robotics workshop.", details: "" }).campaign.headline).toBe("Robotics workshop");
+  expect(fallbackPlan({ ...input, details: input.topic }).campaign.supportingText).toBe(input.topic);
+  expect(fallbackPlan({ ...input, details: `${input.topic} Entry ₹150.` }).campaign.supportingText).toBe(`${input.topic}\nEntry ₹150.`);
 });
 
 test("replay saved pre-correction inputs separately from historical measured evidence", async ({}, testInfo) => {
@@ -84,7 +85,7 @@ test("actual corrected local API, studio and four native exports preserve facts 
   await page.getByRole("button", { name: "Use local planner" }).click();
   const response = await responseEvent, result = await response.json();
   expect(response.status()).toBe(200); expect(result.metadata.attempts).toEqual([]); expect(result.metadata.fallbackReason).toBe("requested-local");
-  expect(result.spec.campaign.supportingText).toBe("No tickets are required.");
+  expect(result.spec.campaign.supportingText).toBe(`${input.topic}\nNo tickets are required.`);
   await expect(page.getByText("Fallback · independent local planner", { exact: true })).toBeVisible();
   await expect(page.locator(".generation-provenance")).toContainText("No schedule or price has been supplied.");
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4); await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
