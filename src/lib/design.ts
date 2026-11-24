@@ -12,7 +12,7 @@ export type Taste = (typeof TASTES)[number];
 const text = (max: number) => z.string().trim().min(1).max(max);
 const hex = z.string().regex(/^#[0-9a-fA-F]{6}$/, "Use a six-digit hex colour.");
 
-export const designSchema = z.strictObject({
+export const designSchemaV1 = z.strictObject({
   version: z.literal(1),
   provenance: z.enum(["experimental-fixture", "manual-input"]),
   campaign: z.strictObject({ topic: text(240), eyebrow: text(40), headline: text(240), supportingText: z.string().trim().max(180), cta: text(60).optional() }),
@@ -23,6 +23,18 @@ export const designSchema = z.strictObject({
   decoration: z.strictObject({ motif: z.enum(["sticker", "orbit", "confetti"]), density: z.number().int().min(1).max(3) }),
   rationale: text(600),
 });
+// V1 remains unchanged for the deterministic M0 endpoint and existing examples.
+// V2 adds honest generation provenance, preserved long briefs and a neutral visual path.
+export const ILLUSTRATIONS = ["cup", "abstract", "none"] as const;
+export const designSchemaV2 = designSchemaV1.extend({
+  version: z.literal(2),
+  provenance: z.enum(["gemini", "deterministic-fallback", "manual-input"]),
+  campaign: designSchemaV1.shape.campaign.extend({
+    topic: text(1200), supportingText: z.string().trim().max(2400),
+  }),
+  decoration: designSchemaV1.shape.decoration.extend({ illustration: z.enum(ILLUSTRATIONS) }),
+});
+export const designSchema = z.discriminatedUnion("version", [designSchemaV1, designSchemaV2]);
 export type DesignSpec = z.infer<typeof designSchema>;
 export const SAMPLE_TOPIC = "Chai stall opening near campus.";
 export const SAMPLE_COPY = {
@@ -61,7 +73,7 @@ export function createDesign(input: DesignInput): DesignSpec {
   const parsed = inputSchema.parse(input);
   const preset = PRESETS[parsed.taste];
   const fixture = parsed.topic === SAMPLE_TOPIC && parsed.headline === undefined && parsed.supportingText === undefined && parsed.cta === undefined;
-  return designSchema.parse({
+  return designSchemaV1.parse({
     version: 1, provenance: fixture ? "experimental-fixture" : "manual-input",
     campaign: {
       topic: parsed.topic, eyebrow: fixture ? SAMPLE_COPY.eyebrow : "An invitation",

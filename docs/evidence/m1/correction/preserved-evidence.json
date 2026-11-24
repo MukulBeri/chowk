@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-24",
+  "scope": "Pre-correction docs/evidence/m1, test-results and evaluation-results files. Existing bytes must remain unchanged; new tests use separate output directories. The owner-created live-models - Copy.json is preserved but excluded from the proposed commit.",
+  "files": [
+    {
+      "file": "docs/evidence/m1/curl-generation.json",
+      "bytes": 1630,
+      "sha256": "8213bdb8b58b8492c168ff3079e6380383f246b8605aadfeb34bca3176f8b740"
+    },
+    {
+      "file": "docs/evidence/m1/final-review.json",
+      "bytes": 1289,
+      "sha256": "7f6838a7c3652891f27c67a14688ebc69059a94f2b3f535f591982ee91e50118"
+    },
+    {
+      "file": "docs/evidence/m1/live-browser-attempts.json",
+      "bytes": 8519,
+      "sha256": "b8e0bca74fd26f42cdc3af1ded497032d60f414526036daf858b8c15b6cd7337"
+    },
+    {
+      "file": "docs/evidence/m1/live-browser.json",
+      "bytes": 2498,
+      "sha256": "3b07f27fdd718886599a2566e24e5df5257ed3548e15d7243070a03a0c5d35b9"
+    },
+    {
+      "file": "docs/evidence/m1/live-end-to-end.json",
+      "bytes": 3032,
+      "sha256": "898b48bf65b77f8bb395fdbb00923a4dfdad4eb84259618e8ab2b02f2997edb9"
+    },
+    {
+      "file": "docs/evidence/m1/live-models - Copy.json",
+      "bytes": 36305,
+      "sha256": "b7e3fa9a2e05c126090985731bc389923548b31a323d40ed296467d79bd191dd"
+    },
+    {
+      "file": "docs/evidence/m1/live-models.json",
+      "bytes": 36305,
+      "sha256": "b7e3fa9a2e05c126090985731bc389923548b31a323d40ed296467d79bd191dd"
+    },
+    {
+      "file": "test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/mobile-studio.png",
+      "bytes": 168277,
+      "sha256": "742dd61db364a35e5c860e570f985d866fa4b480234c83d985942604eee1195d"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/actual-local-planner-studio.png",
+      "bytes": 234567,
+      "sha256": "3f0853521f6188ba51a1e54eaed5ecd8e82c9fa668b9b83fbe47ddba95450a7b"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-campaign.html",
+      "bytes": 13675,
+      "sha256": "bb8e3095800524fb43111648ab6b89aa62dde6cc08f2c2d65ca59761f5933a87"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 140814,
+      "sha256": "8138896cfed1682cf195cb863ff3b138ce3c18aa8f34c9fce4479e4b7142cc27"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 126316,
+      "sha256": "db7e094cb65ededd70f7c6c086da782abcbfca67f8ea7807b3834811a36e3a60"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 172082,
+      "sha256": "2820e5fc8d14845e5d013445a2aea0e1baf1cd570b14bfd9971c63a2da6739ae"
+    },
+    {
+      "file": "test-results/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 108776,
+      "sha256": "d33800de5e91c82c1d963ea216b794d14b45d7218993dcd34b3dc03b6a11bd95"
+    },
+    {
+      "file": "test-results/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-studio.png",
+      "bytes": 219900,
+      "sha256": "5c67e32e001b51436c0b6501fc651ff2f68dbf70d0348ab98ece277070cc7228"
+    },
+    {
+      "file": "test-results/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-youtube.png",
+      "bytes": 98262,
+      "sha256": "1cb4b68d75d8cfe843b8a6b3de540c5335de1f754cb03e15619e570809fb106d"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-campaign.html",
+      "bytes": 15768,
+      "sha256": "a8303167508eb9d977bc9db010c0b92e5998884afb769fa50aabd9a1b94986ec"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-portrait-1080x1350.png",
+      "bytes": 115290,
+      "sha256": "8e61812ce723785d461210b4325636ba07955f4de89b34f17321dc42dcd36a9c"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-square-1080x1080.png",
+      "bytes": 102686,
+      "sha256": "0b538068df372dd6c149038036abc0a9b13fad163108204302fa47a2296393da"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-linkedin-landscape-1910x1000.png",
+      "bytes": 147564,
+      "sha256": "b81578e039eff0935ddb739effe89ab4e2c80c30d38d5231eb87c4c59d553b1c"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-long-copy.png",
+      "bytes": 389503,
+      "sha256": "6bc3bfe24050ab27f5ff090f829616edfe754c1f9343212e7b05d59842cccd93"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-studio.png",
+      "bytes": 185365,
+      "sha256": "df9776d72abb26e362819fb89e2aa8bfd3191d79f65554895e5f377c4a95629d"
+    },
+    {
+      "file": "test-results/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-youtube-thumbnail-1280x720.png",
+      "bytes": 97448,
+      "sha256": "3dd74f3e737f4441f8bb9ea924648a3d34c2b7084945e8a72f8c54fae0e3906c"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-campaign.html",
+      "bytes": 16734,
+      "sha256": "c4326d97a379a13d464baf943d452797bb1509416993acf209745a04476b4913"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 134311,
+      "sha256": "c014a88c58d3dd8f7b54c480cbbe6bbab8ccd3b34c89cd5b091621dd2ab0363e"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 120435,
+      "sha256": "3489737433410d670452c4ca59512c9c1124a8cef5d445f0eb560680dd8aeed4"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 157623,
+      "sha256": "3e579cc164feec962dc4123f7e4a97ea9dc491089cd2441afa64ad0c0b801748"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-long-copy.png",
+      "bytes": 474410,
+      "sha256": "20184723e7ffa56e9cdcc0bebb9d7827f8125f1d9fd32412cd4b58a60f659c31"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-studio.png",
+      "bytes": 218656,
+      "sha256": "f5b4f58f13de20528866feb16b49179e0650057d7e921a1861a5dfe1fac62295"
+    },
+    {
+      "file": "test-results/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 112805,
+      "sha256": "c570abc1843fee7e55ab940a9f39d0daa87a19f73c6d8ed2a328e795503fce22"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-campaign.html",
+      "bytes": 14604,
+      "sha256": "419e1a6236d8b98ddd7ea7924865bf5c78e8650b519064049fb0102f6bd2c135"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-portrait-1080x1350.png",
+      "bytes": 114534,
+      "sha256": "268d35111494da1eebfbf11da243f05b6165a7724c06baf3a9a59c56fd9ff10f"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-square-1080x1080.png",
+      "bytes": 100216,
+      "sha256": "88e56466c08c9e9502a8cbb37c6c05f2effb781149c567f1cab9d7c2abda38ea"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "bytes": 144395,
+      "sha256": "c88189373dab1d7aa304a16116d9e7c0d9ffd42e5c0679637a81fd3c47da685d"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-long-copy.png",
+      "bytes": 430499,
+      "sha256": "670f3e282a09d0d1319774364b772861881c111aa01d70adf54ef8bf5a1c4ff8"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-studio.png",
+      "bytes": 192391,
+      "sha256": "433f591008aa2de8b707922c72a8170fc47f63f321d1a89e98413e5b25abb848"
+    },
+    {
+      "file": "test-results/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "bytes": 95359,
+      "sha256": "4d3493fd5e9382e73956108ec5df9ddf7329da8b6eddc57e695025e9d295e5e0"
+    },
+    {
+      "file": "evaluation-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening-instagram-portrait.png",
+      "bytes": 91527,
+      "sha256": "7265c57028179cefa8e93fb19f2664bedf8554ae1a2d251e4d69ed40e80d0f94"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening-instagram-square.png",
+      "bytes": 78087,
+      "sha256": "9b2d6a5edd1659549a20ec90bd79fff1023c2629447f801edec01b6e08e74752"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening-linkedin-landscape.png",
+      "bytes": 97538,
+      "sha256": "0635459dc80b962e3fd861f010d2d2ec80308dbde308e5a31c664f64ed903c09"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening-studio.png",
+      "bytes": 172149,
+      "sha256": "86a39d1409346d9e6ac4092eef69dbea588db1ae63b44309e231d37bdb4e33ec"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening-youtube-thumbnail.png",
+      "bytes": 61750,
+      "sha256": "86ca77427b6d50b4c4bb71a46a25b9c3ba2dce84a7f806d4f4da6af704db920c"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-cultural-evening.html",
+      "bytes": 11870,
+      "sha256": "6699eb458750330f814612869324794483d5631957d868f88f3a89964e2cf4c6"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive-instagram-portrait.png",
+      "bytes": 152385,
+      "sha256": "81ac7db6807c8a63efa702c7ef1a2b35abef0005f8106b9930061804eabd5bda"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive-instagram-square.png",
+      "bytes": 133762,
+      "sha256": "89d7592ea4388282f478f635b3930ac101f94a145d0754b223d000764c7cace7"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive-linkedin-landscape.png",
+      "bytes": 155008,
+      "sha256": "dfbce777a714dd4f4005a74190cbd4ee108a6ad0a77db6998f95a1a1d72acb62"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive-studio.png",
+      "bytes": 235498,
+      "sha256": "083d83dd181bc68df18a72d3cbf468eadd51412efcfd0621df0d1c120cb3ee5b"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive-youtube-thumbnail.png",
+      "bytes": 113147,
+      "sha256": "abbc6f93635c18e6642642b8fa07739df15dd7b680d4462f95823967156d8dc6"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-fact-sensitive.html",
+      "bytes": 13080,
+      "sha256": "5f6a95fc75e61b088e553373deb736eb60e894e1ed9048a2104e573a69fb3b42"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop-instagram-portrait.png",
+      "bytes": 173144,
+      "sha256": "bba53ec7cc7ff0d9f9823f72e2518db436e1e92f74ea80df43bad82061f3c718"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop-instagram-square.png",
+      "bytes": 149957,
+      "sha256": "50665ef486c0e6124ccbce336777cc3a9be92564525c31c34e3c206f3d820bfa"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop-linkedin-landscape.png",
+      "bytes": 196009,
+      "sha256": "4aa1f0aa45e35dd1b22f20eb1a9edc21ff4a8570a11c183fb71bd762f84928a2"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop-studio.png",
+      "bytes": 260817,
+      "sha256": "f7b53a14fb2ca0a4cbf3f586159b78e3cb7ac7f41e81d7183705c71051c3cbb2"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop-youtube-thumbnail.png",
+      "bytes": 134141,
+      "sha256": "91b1b37c8c81a94dd86ec63fa03daec954db3fcf34ed05ac8fc1e85cb4006920"
+    },
+    {
+      "file": "evaluation-results/live-models-retained-live--99cd6-ative-exports-no-API-calls-/replayed-live-technical-workshop.html",
+      "bytes": 13914,
+      "sha256": "c1cc02f249195fe346e8049998ca58b1b72aa8069d8e5d8ef4c543de86dab267"
+    }
+  ]
+}

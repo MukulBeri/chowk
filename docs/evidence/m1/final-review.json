@@ -1,0 +1,31 @@
+{
+  "kind": "Human review plus deterministic final-guard recheck of retained live outputs; no API calls",
+  "reviews": [
+    {
+      "id": "technical-workshop",
+      "acceptedAtMeasurement": true,
+      "finalGuardIssues": [],
+      "humanReview": "Relevant copy/taste and explicit facts retained in this synthetic case; modest preset-based style variation. Not an artistic-quality guarantee."
+    },
+    {
+      "id": "product-announcement",
+      "acceptedAtMeasurement": true,
+      "finalGuardIssues": [
+        "unsupported-timing-claim"
+      ],
+      "humanReview": "Relevant notebook concept/name retained, but unsupplied Coming soon availability was added. Final guard now flags it; no live repair is claimed."
+    },
+    {
+      "id": "cultural-evening",
+      "acceptedAtMeasurement": true,
+      "finalGuardIssues": [],
+      "humanReview": "Relevant copy/taste and explicit facts retained in this synthetic case; modest preset-based style variation. Not an artistic-quality guarantee."
+    },
+    {
+      "id": "fact-sensitive",
+      "acceptedAtMeasurement": true,
+      "finalGuardIssues": [],
+      "humanReview": "Relevant copy/taste and explicit facts retained in this synthetic case; modest preset-based style variation. Not an artistic-quality guarantee."
+    }
+  ]
+}

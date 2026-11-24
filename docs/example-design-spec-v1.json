@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "provenance": "experimental-fixture",
+  "campaign": {
+    "topic": "Chai stall opening near campus.",
+    "eyebrow": "A campus invitation",
+    "headline": "Chai.\nMeet campus.",
+    "supportingText": "A chai stall is opening near campus. Come say hello.",
+    "cta": "See you for chai"
+  },
+  "taste": "bold-street",
+  "palette": {
+    "background": "#efe943",
+    "ink": "#20231e",
+    "accent": "#c84225",
+    "secondary": "#fff9e9"
+  },
+  "typography": {
+    "family": "condensed-sans",
+    "headlineScale": 1.1,
+    "case": "uppercase"
+  },
+  "composition": {
+    "layout": "street-stack",
+    "spacing": 60
+  },
+  "decoration": {
+    "motif": "sticker",
+    "density": 3
+  },
+  "rationale": "Condensed uppercase typography, tight stacked hierarchy, heavy rules and an oversized cup sticker give the invitation street-poster energy. Wide formats split copy and illustration; tall formats stack them."
+}

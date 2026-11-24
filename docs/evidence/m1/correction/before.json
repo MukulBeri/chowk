@@ -1,0 +1,480 @@
+{
+  "date": "2026-11-24",
+  "kind": "Actual pre-correction independent local planner replay; no provider calls; separate from historical live measurements",
+  "records": [
+    {
+      "request": {
+        "topic": "Chai stall opening near campus.",
+        "details": "An invitation for students. No business name, date or price has been supplied.",
+        "taste": "bold-street"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied launch brief a clear Bold Street hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "bold-street",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "Chai stall opening near campus.",
+          "supportingText": "Chai stall opening near campus.\nAn invitation for students."
+        },
+        "palette": {
+          "background": "#efe943",
+          "ink": "#20231e",
+          "accent": "#c84225",
+          "secondary": "#fff9e9"
+        },
+        "typography": {
+          "family": "condensed-sans",
+          "headlineScale": 1.1,
+          "case": "uppercase"
+        },
+        "composition": {
+          "layout": "street-stack",
+          "spacing": 60
+        },
+        "decoration": {
+          "motif": "sticker",
+          "density": 3,
+          "illustration": "cup"
+        },
+        "rationale": "Bold Street: condensed sans typography and street stack composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "A campus robotics workshop for first-year engineering students.",
+        "details": "Focus on learning together. No schedule or price has been supplied.",
+        "taste": "minimal-swiss"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a technical invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied technical brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An invitation to build",
+          "headline": "A campus robotics workshop for first-year engineering students.",
+          "supportingText": "A campus robotics workshop for first-year engineering students.\nFocus on learning together."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "Announce a planning notebook called \"OrbitPad\".",
+        "details": "No price, launch date or special product characteristics have been supplied.",
+        "taste": "festive-pop"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied launch brief a clear Festive Pop hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "festive-pop",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "Announce a planning notebook called \"OrbitPad\".",
+          "supportingText": "Announce a planning notebook called \"OrbitPad\"."
+        },
+        "palette": {
+          "background": "#762c49",
+          "ink": "#fff2cf",
+          "accent": "#f2bf57",
+          "secondary": "#eaa1ae"
+        },
+        "typography": {
+          "family": "editorial-serif",
+          "headlineScale": 1,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "festival-frame",
+          "spacing": 64
+        },
+        "decoration": {
+          "motif": "confetti",
+          "density": 3,
+          "illustration": "abstract"
+        },
+        "rationale": "Festive Pop: editorial serif typography and festival frame composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "A cultural evening of music and dance for the campus community.",
+        "details": "An invitation to gather. Do not invent event logistics.",
+        "taste": "bold-street"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a cultural invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied cultural brief a clear Bold Street hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "bold-street",
+        "campaign": {
+          "eyebrow": "An invitation to gather",
+          "headline": "A cultural evening of music and dance for the campus community.",
+          "supportingText": "A cultural evening of music and dance for the campus community.\nAn invitation to gather."
+        },
+        "palette": {
+          "background": "#efe943",
+          "ink": "#20231e",
+          "accent": "#c84225",
+          "secondary": "#fff9e9"
+        },
+        "typography": {
+          "family": "condensed-sans",
+          "headlineScale": 1.1,
+          "case": "uppercase"
+        },
+        "composition": {
+          "layout": "street-stack",
+          "spacing": 60
+        },
+        "decoration": {
+          "motif": "sticker",
+          "density": 3,
+          "illustration": "abstract"
+        },
+        "rationale": "Bold Street: condensed sans typography and street stack composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "Help me announce something.",
+        "details": "I have not supplied what, when or where yet.",
+        "taste": "minimal-swiss"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied launch brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "Help me announce something.",
+          "supportingText": "Help me announce something.\nI have not supplied what, when or where yet."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+        "details": "Venue: Lab A; registration at https://example.org/workshop",
+        "taste": "festive-pop"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Create a technical invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied technical brief a clear Festive Pop hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "festive-pop",
+        "campaign": {
+          "eyebrow": "An invitation to build",
+          "headline": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST.",
+          "supportingText": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST.\nEntry ₹150.\nVenue: Lab A; registration at https://example.org/workshop"
+        },
+        "palette": {
+          "background": "#762c49",
+          "ink": "#fff2cf",
+          "accent": "#f2bf57",
+          "secondary": "#eaa1ae"
+        },
+        "typography": {
+          "family": "editorial-serif",
+          "headlineScale": 1,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "festival-frame",
+          "spacing": 64
+        },
+        "decoration": {
+          "motif": "confetti",
+          "density": 3,
+          "illustration": "abstract"
+        },
+        "rationale": "Festive Pop: editorial serif typography and festival frame composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "No business name, date or price has been supplied.",
+        "details": "",
+        "taste": "minimal-swiss",
+        "mode": "local"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Present the supplied idea without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied general brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "No business name, date or price has been supplied.",
+          "supportingText": "No business name, date or price has been supplied."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "No schedule or price has been supplied.",
+        "details": "",
+        "taste": "minimal-swiss",
+        "mode": "local"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Present the supplied idea without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied general brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "No schedule or price has been supplied.",
+          "supportingText": "No schedule or price has been supplied."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "Do not invent event logistics.",
+        "details": "",
+        "taste": "minimal-swiss",
+        "mode": "local"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Present the supplied idea without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied general brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "Do not invent event logistics.",
+          "supportingText": "Do not invent event logistics."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    },
+    {
+      "request": {
+        "topic": "I have not supplied what, when or where yet.",
+        "details": "",
+        "taste": "minimal-swiss",
+        "mode": "local"
+      },
+      "plan": {
+        "interpretation": {
+          "objective": "Present the supplied idea without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied general brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "taste": "minimal-swiss",
+        "campaign": {
+          "eyebrow": "An idea to share",
+          "headline": "I have not supplied what, when or where yet.",
+          "supportingText": "I have not supplied what, when or where yet."
+        },
+        "palette": {
+          "background": "#f2efe7",
+          "ink": "#202b28",
+          "accent": "#b83a24",
+          "secondary": "#dedbd0"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Supplied copy retained; explicit no-invention/missing-data instructions are kept out of artwork. A restrained supported visual keeps attention on the subject."
+      }
+    }
+  ]
+}

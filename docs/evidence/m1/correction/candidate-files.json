@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-24",
+  "base": "0665dc24afc641167bbb613ed1ab1c5028a5e66f",
+  "branch": "main",
+  "state": "Proposed only; no staging or commit performed",
+  "message": "feat: add validated Gemini campaign planning and independent fallback",
+  "files": [
+    {
+      "status": "new",
+      "file": ".env.example"
+    },
+    {
+      "status": "modified",
+      "file": ".gitignore"
+    },
+    {
+      "status": "modified",
+      "file": "AGENTS.md"
+    },
+    {
+      "status": "modified",
+      "file": "README.md"
+    },
+    {
+      "status": "modified",
+      "file": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/AI_DISCLOSURE.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/API.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/ARCHITECTURE.md"
+    },
+    {
+      "status": "new",
+      "file": "docs/M1_CORRECTION.md"
+    },
+    {
+      "status": "new",
+      "file": "docs/M1_REPORT.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/REQUIREMENTS.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/RESEARCH.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/ROADMAP.md"
+    },
+    {
+      "status": "modified",
+      "file": "docs/TESTING.md"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/actual-local-result.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/after.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/before.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/candidate-files.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/preserved-evidence.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/correction/verification.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/curl-generation.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/final-review.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/live-browser-attempts.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/live-browser.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/live-end-to-end.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/evidence/m1/live-models.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/example-design-spec-v1.json"
+    },
+    {
+      "status": "modified",
+      "file": "docs/example-design-spec.json"
+    },
+    {
+      "status": "new",
+      "file": "docs/example-generation-request.json"
+    },
+    {
+      "status": "new",
+      "file": "evaluation/live-models.spec.ts"
+    },
+    {
+      "status": "new",
+      "file": "evaluation/playwright.config.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/app/api/generate/route.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/app/globals.css"
+    },
+    {
+      "status": "modified",
+      "file": "src/app/layout.tsx"
+    },
+    {
+      "status": "modified",
+      "file": "src/components/poster.tsx"
+    },
+    {
+      "status": "modified",
+      "file": "src/components/studio.tsx"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/design.ts"
+    },
+    {
+      "status": "modified",
+      "file": "src/lib/export.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/generation/brief.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/generation/contracts.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/generation/facts.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/lib/generation/planner.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/server/engine.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/server/gemini.ts"
+    },
+    {
+      "status": "new",
+      "file": "src/server/runtime.ts"
+    },
+    {
+      "status": "new",
+      "file": "tests/fallback-correction.spec.ts"
+    },
+    {
+      "status": "new",
+      "file": "tests/generation.spec.ts"
+    },
+    {
+      "status": "modified",
+      "file": "tests/studio.spec.ts"
+    }
+  ],
+  "excluded": [
+    {
+      "file": "docs/evidence/m1/live-models - Copy.json",
+      "reason": "Owner-created identical duplicate; preserved, not part of proposal"
+    }
+  ],
+  "ignoredArtifacts": [
+    ".env.local",
+    "node_modules/",
+    ".next/",
+    "test-results/",
+    "evaluation-results/",
+    "playwright-report/",
+    "*.tsbuildinfo"
+  ],
+  "preserveExistingLicenses": [
+    "docs/licenses/INVENTORY.json",
+    "docs/licenses/NOTICES.txt"
+  ],
+  "note": "Exact path inventory; no claims that unchanged lockfile or existing license texts are newly modified. Re-audit actual staged contents if a commit is later authorized."
+}

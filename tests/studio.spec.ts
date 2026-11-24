@@ -136,7 +136,7 @@ for (const taste of TASTES) {
   });
 }
 
-test("mobile layout, manual topic, spec and text injection remain safe", async ({ page }) => {
+test("mobile layout, manual topic, spec and text injection remain safe", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
   await ready(page);
@@ -153,7 +153,7 @@ test("mobile layout, manual topic, spec and text injection remain safe", async (
   await expect(page.locator("[data-poster] h2").first()).toHaveText(headline);
   await page.getByRole("button", { name: "Inspect spec" }).click();
   await expect(page.getByRole("region", { name: "Intermediate design specification" })).toContainText("A campus poetry circle.");
-  await page.screenshot({ path: "test-results/mobile-studio.png", fullPage: true });
+  await page.screenshot({ path: testInfo.outputPath("mobile-studio.png"), fullPage: true });
 });
 
 test("impossible line-break copy warns and refuses PNG/HTML downloads", async ({ page }) => {

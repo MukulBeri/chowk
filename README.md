@@ -1,8 +1,8 @@
-# Create Lab — M0
+# Create Lab — M1 candidate
 
-Local HTML/CSS campaign rendering prototype for the YARC Builder Fellowship Create track. **Create Lab is a temporary working title. No live AI integration.** M0 implementation and consolidation are accepted for a local Git checkpoint; the complete fellowship submission is not finished.
+AI-powered HTML/CSS campaign design engine for the YARC Builder Fellowship Create track. **Create Lab is a temporary working title.** M0 is accepted at checkpoint `0665dc2`; M1 adds live Gemini planning and an independent local fallback. This candidate is uncommitted and awaits owner review; it is not publicly deployed.
 
-One sample topic, “Chai stall opening near campus.”, becomes three distinct taste systems and four adaptive platform layouts. Editable manual copy, validated/inspectable JSON, exact-size PNG downloads and a standalone HTML export are included.
+Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
 
 ## Review locally
 
@@ -13,13 +13,15 @@ npm ci
 npm run dev
 ```
 
-1. Switch between Bold Street, Minimal Swiss and Festive Pop.
-2. Compare all four platform previews. Each PNG button downloads that format at native resolution.
-3. Choose **Inspect spec** to review rationale/style/content/provenance and download JSON.
-4. Open **Edit campaign copy**, enter a long headline and click **Apply copy to campaign**. Topic changes alone do not rewrite your headline; M0 has no creative planner. Manual copy remains the same when switching taste.
-5. Choose **Export HTML**, then open the downloaded file offline. It contains all four posters at native dimensions and intentionally scrolls. Installed fonts can differ on another machine.
+1. Configure the server-only key in ignored `.env.local` using [the placeholder example](.env.example); never use `NEXT_PUBLIC_` or commit real environment files. The default explicit model is `gemini-3.5-flash-lite`. Missing credentials still allow local fallback. Restart the existing dev server only if environment configuration changed.
+2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. Initial artwork is explicitly a sample fixture until generation. Auto mode sends the brief to Google—avoid private information.
+3. Inspect AI/fallback provenance, creative interpretation/rationale and the specification. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
+4. Compare four platform previews and export each PNG. Manual copy or taste edits are labelled manual; generate again for fresh AI art direction. Failed generation preserves the previous campaign.
+5. Export HTML/JSON. HTML contains full-size inline posters and intentionally scrolls offline; installed fonts can vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
 
-M0 has no auth, database, payments or AI credentials. The local checkpoint is approved; remote publishing and deployment require separate authorization.
+The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
+
+No authentication, database, payments or image-generation dependency. Billing, commits, remote publishing, deployment and M2 work require separate authorization.
 
 ## Checks
 
@@ -27,33 +29,41 @@ M0 has no auth, database, payments or AI credentials. The local checkpoint is ap
 npm run lint
 npm run typecheck
 npm run build
-npm test
+npm test -- --output=test-results/m1-next-review
 ```
 
-Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).
+Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).
+
+Live evaluation is separate and opt-in; it spends configured Gemini quota:
+
+```powershell
+npx --no-install playwright test --config evaluation/playwright.config.ts
+```
+
+The completed six-brief-per-model matrix and browser measurements are in [M1 evidence](docs/evidence/m1/live-models.json); do not rerun it as a routine regression check. Evaluation artifacts go to ignored `evaluation-results/` independently of normal test output.
 
 ## HTTP API
 
 ```powershell
-curl.exe --fail-with-body --json "@docs/example-request.json" http://localhost:3000/api/design-spec
+curl.exe --fail-with-body --json "@docs/example-generation-request.json" http://localhost:3000/api/generate
 ```
 
-Returns a validated deterministic specification and format metadata, explicitly `aiUsed: false`. [Request/response contract and errors](docs/API.md). Future **POST /api/generate** is the planned product brief/planning/provider/fallback orchestration route; it does not exist yet and is distinct from both this M0 utility and the external Gemini API. [Planned relationship](docs/API.md#future-product-generation-endpoint-planned-only).
+Returns a validated v2 specification, interpretation and honest AI/fallback metadata. Add `"mode":"local"` to request independent planning without Gemini. [Configuration, contract, error/status behavior and curl examples](docs/API.md#m1-product-generation-endpoint). Existing `POST /api/design-spec` remains the deterministic v1 fixture/manual utility using `docs/example-request.json`; it does not call Gemini or the product generation route.
 
 ## Example intermediate JSON specification
 
-This is the **complete DesignSpec v1**, extracted from the current deterministic endpoint for the sample topic; it is experimental fixture data, not live AI output. The HTTP envelope additionally contains `aiUsed`, `mode` and format metadata. The [machine-readable example](docs/example-design-spec.json) is validated against [designSchema](src/lib/design.ts).
+This is a **complete DesignSpec v2 from an actual live browser generation**, not a mock. The HTTP envelope separately includes interpretation and source/model/timing/usage/fallback metadata. The [machine-readable example](docs/example-design-spec.json) is validated against [designSchema](src/lib/design.ts). The [original v1 fixture example](docs/example-design-spec-v1.json) is retained for compatibility.
 
 ```json
 {
-  "version": 1,
-  "provenance": "experimental-fixture",
+  "version": 2,
+  "provenance": "gemini",
   "campaign": {
     "topic": "Chai stall opening near campus.",
-    "eyebrow": "A campus invitation",
-    "headline": "Chai.\nMeet campus.",
-    "supportingText": "A chai stall is opening near campus. Come say hello.",
-    "cta": "See you for chai"
+    "eyebrow": "NEW NEAR CAMPUS",
+    "headline": "CHAI STALL OPENING",
+    "supportingText": "An invitation for students to grab a cup at the new campus chai stall.",
+    "cta": "VISIT US"
   },
   "taste": "bold-street",
   "palette": {
@@ -73,9 +83,10 @@ This is the **complete DesignSpec v1**, extracted from the current deterministic
   },
   "decoration": {
     "motif": "sticker",
-    "density": 3
+    "density": 3,
+    "illustration": "cup"
   },
-  "rationale": "Condensed uppercase typography, tight stacked hierarchy, heavy rules and an oversized cup sticker give the invitation street-poster energy. Wide formats split copy and illustration; tall formats stack them."
+  "rationale": "Applied the bold-street taste profile with condensed uppercase typography, heavy rules, and a cup illustration to create an energetic street poster look for the campus chai stall announcement."
 }
 ```
 
@@ -86,11 +97,16 @@ Final submission acceptance **ENG-03** requires keeping this example in the fina
 | Path | Purpose |
 |---|---|
 | src/lib/design.ts | Zod contracts, types, fixtures, presets and format registry |
+| src/lib/generation/ | Request/plan/response contracts, factual heuristics and independent planner |
+| src/server/ | Server-only runtime, injectable Gemini REST transport and bounded orchestration |
 | src/components/poster.tsx | Adaptive HTML/SVG renderer, measured text fitting, preview scaling |
 | src/components/studio.tsx | Manual brief/copy, tastes, JSON inspector and downloads |
 | src/lib/export.ts | PNG and portable HTML export |
 | src/app/api/design-spec/route.ts | Deterministic HTTP interface |
+| src/app/api/generate/route.ts | Product generation HTTP interface |
 | tests/studio.spec.ts | Schema, HTTP, browser, overflow and export checks |
+| tests/generation.spec.ts | Repeatable M1 tests, mocked transport and real no-AI endpoint |
+| evaluation/ | Explicit live-only model/browser evaluation, excluded from normal tests |
 
 ## Authoritative documentation
 
@@ -106,15 +122,16 @@ Final submission acceptance **ENG-03** requires keeping this example in the fina
 | [Roadmap](docs/ROADMAP.md) | M0–M5, priorities, existing concern register, deferred ideas and archive policy |
 | [Third-party notices](THIRD_PARTY_NOTICES.md) | Actual dependencies, licenses, preserved notices and distribution review gaps |
 | [M0 report](docs/M0_REPORT.md) | Historical delivery and changed-file inventory |
+| [M1 report](docs/M1_REPORT.md) | Current implementation, actual checks, model results and remaining limits |
 
 Runtime dependencies added: Zod for one validated/type-inferred contract and [html-to-image](https://github.com/bubkoo/html-to-image) for browser DOM rasterization. Playwright is development-only browser verification. Existing Next.js 16.4.6 / React 19.3.0 / TypeScript / custom CSS remain in place.
 
-Public deployment, live AI planning, an independent fallback engine and final API cost/performance evaluation remain future work, as required by the M0 boundary. Official submission deadline supplied by the user: **26 November 2026, 11:59 PM IST**; internal target **8 PM IST** the same day.
+Public deployment and broader design/frontend/quality work remain pending. Model evidence and unknown billing details are explicit in [AI/API disclosure](docs/AI_DISCLOSURE.md). Official submission deadline supplied by the user: **26 November 2026, 11:59 PM IST**; internal target **8 PM IST** the same day.
 
 ## Current evidence and limitations
 
-Historical M0 checks: lint, TypeScript and production build passed; seven Chrome tests passed. Twelve actual fixture PNGs had the selected exact dimensions; three portable HTML exports opened offline. The raster comparison was between same-machine app/portable-HTML screenshots—not an automated downloaded-PNG-to-preview comparison or a cross-device fidelity guarantee. Browser tests targeted the development server, not a production deployment. [Precise evidence](docs/TESTING.md).
+M0 regression checks are retained alongside M1 unit/API/browser checks. Actual live generation and independent local planning have both produced exported campaigns. The six-brief matrix accepted four primary-model AI outputs and fell back for two; the comparison model accepted none (timeout/unavailable). These are small-sample observations, not reliability guarantees. Historical raster comparison remains app/portable-HTML screenshots on one machine, not automated downloaded-PNG pixel fidelity or cross-device/production verification. [Precise evidence](docs/TESTING.md).
 
-Fixed cup motifs, supporting-text readability at real display sizes, limited composition variety, semantic validation and cross-device font consistency remain open [roadmap concerns](docs/ROADMAP.md#existing-concern-register). Official requirements specify aspect ratios; the exact pixels, library choices and local quality controls are internal engineering decisions. A build, attractive mock or structural validator alone does not close the final requirement checklist.
+The fixed cup is now restricted to relevant briefs, with neutral/no-illustration paths elsewhere. Readability, composition variety, limited semantic heuristics, in-memory quota limitations and cross-device fonts remain [roadmap concerns](docs/ROADMAP.md#existing-concern-register). Very detailed briefs may exceed a format's capacity and refuse export. Official requirements specify aspect ratios; exact pixels and local quality controls are internal choices. A build, mock or structural validator alone does not close the final checklist.
 
-Intended deployment is Vercel after authorization; no publishing, M1 or external-reference integration is authorized by consolidation. C1 is a received mocked UI reference whose palette is not approved; C2 is a received untested poster reference with recommendations pending review. The verified M0 renderer remains authoritative.
+Intended deployment is Vercel after separate authorization. C1's palette and C2's untested renderer remain unintegrated; subsequent advisory references do not authorize wholesale code reuse. The M0 renderer is preserved and narrowly extended for M1, not replaced by a reference application.

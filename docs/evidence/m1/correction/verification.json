@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-24",
+  "kind": "Focused M1 correction verification; no live provider calls",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exit": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0
+    },
+    {
+      "command": "npm run build",
+      "exit": 0
+    },
+    {
+      "command": "npm test -- --output=test-results/m1-correction-verified",
+      "exit": 0,
+      "passed": 24,
+      "elapsedSeconds": 27.1
+    },
+    {
+      "command": "npm test -- --output=test-results/m1-correction-checkpoint",
+      "exit": 0,
+      "passed": 24,
+      "elapsedSeconds": 29.6,
+      "scope": "Final source: mobile outputs isolated and incomplete-auto tests assert zero provider calls. Prior evidence directories unchanged."
+    },
+    {
+      "command": "npx --no-install playwright test tests/studio.spec.ts --grep 'mobile layout' --output=test-results/m1-correction-mobile-isolation",
+      "exit": 0,
+      "passed": 1,
+      "elapsedSeconds": 2.3
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    },
+    {
+      "command": "git diff --cached --check",
+      "exit": 0,
+      "scope": "Index empty; not an audit of a staged future commit"
+    }
+  ],
+  "earlierRun": {
+    "output": "test-results/m1-correction-final",
+    "passed": 23,
+    "failed": 1,
+    "reason": "New assertion incorrectly required intentionally hostile HTML user input to pass the AI instruction/code-leakage guard. Replaced with factual-token preservation check; production guard and escaping assertions unchanged."
+  },
+  "preservation": {
+    "baseline": "preserved-evidence.json",
+    "baselineFiles": 57,
+    "unchangedFiles": 56,
+    "exceptions": [
+      {
+        "file": "test-results/mobile-studio.png",
+        "originalSha256": "742dd61db364a35e5c860e570f985d866fa4b480234c83d985942604eee1195d",
+        "currentSha256": "723cec32df3275cd09251e88e23ed2a460db7691ac63add447dab914accc9019",
+        "originalBytes": 168277,
+        "currentBytes": 168322
+      }
+    ],
+    "explanation": "An existing hard-coded mobile screenshot path bypassed runner --output. Original mobile bytes were overwritten before the issue was detected, not recovered, and must not be represented as preserved. tests/studio.spec.ts now uses testInfo.outputPath; isolated rerun leaves the root replacement unchanged. All original live/model/fallback evidence and every other baseline file remain unchanged."
+  },
+  "actualLocalEvidence": {
+    "request": "actual-local-result.json",
+    "replayComparison": {
+      "before": "before.json",
+      "after": "after.json",
+      "inputs": 10,
+      "prepared": 5,
+      "incomplete": 5
+    },
+    "artifacts": [
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/actual-local-result.json",
+        "bytes": 3232,
+        "sha256": "1fe9e9cc9394cccce0a47762e06b1558c27c68aade92f3e0408f19c45864cd7a"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/corrected-local-studio.png",
+        "bytes": 236097,
+        "sha256": "940a86fd68025322e34ca40361df904ed176fd23828984a86853eb40ddffc208"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-campaign.html",
+        "bytes": 12090,
+        "sha256": "9527b1214f127922294b6c6793ac747d71b4d9b4263f3dcabac17187f00ffde5"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-portrait-1080x1350.png",
+        "bytes": 140625,
+        "sha256": "39a24ef8396cb231872c7089a161c1d1064f5eb033f83c3873bb607d4f1df324"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-square-1080x1080.png",
+        "bytes": 114347,
+        "sha256": "85350b10c12fef08a76c1558bb9ff67e6365c420fc733fb502675b7ad49a4a78"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-linkedin-landscape-1910x1000.png",
+        "bytes": 165114,
+        "sha256": "374381a8af4adf99c6afbdc4d43dd49ef61b6774ccb87e164fdc06d8804975dd"
+      },
+      {
+        "file": "test-results/m1-correction-verified/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-youtube-thumbnail-1280x720.png",
+        "bytes": 107299,
+        "sha256": "1167a736a5499677565c431473fa0ac852c4b40a4f5b4efd11b6a4869657af1d"
+      }
+    ],
+    "scope": "Real local HTTP/studio, requested-local, zero provider attempts, no mocked response, four PNG header dimensions/HTML text checks, no overflow, no page errors; screenshot and YouTube PNG visually inspected. No universal PNG parity claim."
+  },
+  "securityReview": {
+    "scope": "Read-only scan of 180 candidate/tracked/client files, including 113 compiled client files; no credentials printed",
+    "actualSecretMatches": 0,
+    "secretShapeMatches": 0,
+    "publicPersonalOrAbsolutePathMatches": 0,
+    "prohibitedCandidatePaths": 0,
+    "credentialValueDisclosed": false
+  },
+  "licensing": {
+    "dependenciesUnchanged": true,
+    "inventoryLockHashMatches": true,
+    "existingEvidence": [
+      {
+        "file": "docs/licenses/INVENTORY.json",
+        "bytes": 187348
+      },
+      {
+        "file": "docs/licenses/NOTICES.txt",
+        "bytes": 579856
+      }
+    ],
+    "limitations": "14 remaining local notice-file gaps and 53 uninstalled lockfile locations; refresh against actual target distribution before publishing. No new dependency, font, asset or reference code was added."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "live endpoint pilot",
+  "date": "2026-11-24",
+  "request": {
+    "topic": "Chai stall opening near campus.",
+    "details": "An invitation for students. No business name, date or price has been supplied.",
+    "taste": "bold-street"
+  },
+  "response": {
+    "spec": {
+      "version": 2,
+      "provenance": "gemini",
+      "campaign": {
+        "topic": "Chai stall opening near campus.",
+        "eyebrow": "CAMPUS CHAI DROP",
+        "headline": "NEW CHAI STALL OPENING NEAR CAMPUS",
+        "supportingText": "Fresh brews coming soon. Stop by between classes for a proper cup of chai. Built for students, fueled by tea.",
+        "cta": "SEE YOU THERE"
+      },
+      "taste": "bold-street",
+      "palette": {
+        "background": "#efe943",
+        "ink": "#20231e",
+        "accent": "#c84225",
+        "secondary": "#fff9e9"
+      },
+      "typography": {
+        "family": "condensed-sans",
+        "headlineScale": 1.1,
+        "case": "uppercase"
+      },
+      "composition": {
+        "layout": "street-stack",
+        "spacing": 60
+      },
+      "decoration": {
+        "motif": "sticker",
+        "density": 3,
+        "illustration": "cup"
+      },
+      "rationale": "Using the bold-street taste with condensed uppercase typography, heavy rules, and an oversized cup sticker to project high-energy street-poster aesthetics suitable for a student-focused chai stall opening."
+    },
+    "interpretation": {
+      "objective": "Invite students to the grand opening of a new campus-adjacent chai stall using street-poster energy.",
+      "audience": "College and university students looking for a quick, energizing campus hangout.",
+      "concept": "A high-impact street poster announcement celebrating the arrival of fresh chai near campus.",
+      "assumptions": [
+        "No specific date, time, price, or business name was provided in the brief.",
+        "The location is explicitly near a campus."
+      ],
+      "missingInformation": [
+        "Business name",
+        "Exact opening date and time",
+        "Menu pricing and specifics",
+        "Exact street address"
+      ]
+    },
+    "metadata": {
+      "source": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "fallbackReason": null,
+      "totalMs": 8696,
+      "attempts": [
+        {
+          "outcome": "accepted",
+          "elapsedMs": 8695,
+          "usage": {
+            "inputTokens": 646,
+            "outputTokens": 453,
+            "thinkingTokens": 0,
+            "totalTokens": 1099
+          },
+          "finishReason": "STOP"
+        }
+      ],
+      "cached": false,
+      "warnings": [
+        "Factual safeguards are heuristics; verify copy before publication."
+      ]
+    }
+  },
+  "review": {
+    "status": "initial pilot finding",
+    "notes": [
+      "Real AI generation and endpoint succeeded. Subsequent human review identified unsupported fresh-brews wording; product-characteristic guard and prompt were tightened before the model matrix. This pilot is not the final validated example."
+    ]
+  }
+}

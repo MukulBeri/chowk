@@ -1,5 +1,7 @@
 # M0 verification
 
+This document preserves historical M0/consolidation evidence below. Current M1 checks, actual live measurements, failures and remaining limits are recorded in the final section; do not read M0's “unperformed” list as the current M1 coverage.
+
 Test environment: Windows 11; Node 24.22.3; npm 11.19.1; Next.js 16.4.6; installed Google Chrome via Playwright. Verification date: 24 November 2026 (IST). Browser tests reuse the existing development server at localhost:3000. No duplicate server, downloaded browser or Windows policy change.
 
 ## Commands executed
@@ -78,3 +80,79 @@ These checks do not add browser, provider, production or C1/C2 validation covera
 | Git whitespace review | git diff --check passed |
 
 The inline Node checks used existing Node/TypeScript/Zod and filesystem/crypto/assert APIs; no new test framework, package or product feature was added. Public research pages/README excerpts and exact-version Next license metadata were read; no candidate source implementation, C1/C2 artifact, provider or production behavior was executed. The complete licence filename-discovery scope and unresolved gaps are in THIRD_PARTY_NOTICES.md.
+
+## M1 candidate verification (24 November 2026)
+
+Same Windows/Node/Next/installed-Chrome environment; no packages installed. Normal regression tests never spend live quota. The actual local-planner HTTP/browser test uses `mode: local` and the real endpoint; provider failure/repair tests inject repeatable mocks at the transport/engine boundary. Explicit evaluation config contains the live-only tests.
+
+| Executed command / check | Result / precise scope |
+|---|---|
+| npm run lint | Pass |
+| npm run typecheck | Pass |
+| npm run build | Pass; home, unchanged design-spec route and new generate route built; no production server/deployment started |
+| npm test | 19 passed (19.0 s): original 7 M0 tests plus 12 M1 tests |
+| npx --no-install playwright test --config evaluation/playwright.config.ts --grep "synthetic public briefs" | 2 completed evaluation tests; 6 briefs per model. Provider results were **4 AI / 2 fallback** primary and **0 AI / 6 fallback** comparison; this is not 12 successful model outputs |
+| Same config, --grep "live browser" | Final clean-input run: 1 passed (9.1 s), real Gemini endpoint/UI → all four PNG dimensions + HTML/JSON. Earlier 503/fill-race outcomes retained separately |
+| Same config, --grep "retained live" | 2 passed (6.7 s): final-guard recheck and three-taste rendering/export replay of actual saved live responses, **no new provider requests** |
+| Windows curl example for /api/generate | Exit 0, HTTP 200, valid v2 fallback with provider-unavailable / HTTP 503 in attempts; not falsely counted as AI success. Response retained as curl-generation.json |
+| Actual configured-key comparison against source/evidence/client chunks | No secret-value matches; details of final scan summarized in M1 report. Secret itself never printed |
+| Example/compatibility and documentation review | README complete v2 JSON matches successful clean browser result and current schema; original v1 example retained; M0 endpoint regression passes |
+
+Final non-live runner elapsed time is reported in M1_REPORT.md. These are recorded observed results, not a promise of future behavior. Selected output excerpts from the successful runs:
+
+```text
+✓ Compiled successfully
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/design-spec
+└ ƒ /api/generate
+
+19 passed (19.0s) [final normal regression suite]
+2 passed (4.3m)   [live matrix; outcome recording, not all-AI success]
+1 passed (9.1s)   [final clean live browser run]
+2 passed (6.7s)   [retained live review/replay, no API calls]
+HTTP 200         [Windows generation curl; honest provider-503 fallback]
+```
+
+### Meaningful M1 cases
+
+- Clean and violating factual cases: complete reordered numbers and swapped number/unit pairs, normalized English/ISO dates, AM/PM/24-hour time, INR formatting, identifiers, timezone/price/URL changes, missing facts, explicit named facts, unsupported offers/timing, placeholders, and harmless words that broad substring rules would reject.
+- Wrong taste/style combinations, unsupported enums/structure, contrast failure and irrelevant cup; normal/arbitrary technical/cultural/product/vague/long/untrusted briefs through independent fallback. Ordinary “No chairs have been supplied” is preserved rather than mistaken for missing-data instructions.
+- Valid AI mock, one repair success/failure, missing credentials, never-resolving provider timeout, network/auth/429/unavailable/blocked paths, repair budget exhaustion, minute limit, duplicate coalescing/cache and concurrent-capacity fallback. Raw credential echo is rejected by the mocked transport.
+- Actual fixed-host REST body/schema/header contract, actual response-envelope parsing, thought-part exclusion, sanitized non-2xx and malformed JSON. These contract checks are **mocks**, separate from successful real REST compatibility.
+- New HTTP invalid/body/media/unknown-field cases and real local mode; four actual local PNG header dimensions and HTML; UI loading/error/retry/manual provenance, preservation of previous campaign and invalidation of late results. The actual local browser test also asserts no console/page errors.
+- Original three presets/four native dimensions, measured fit, font readiness, 240-character/unbroken copy, mobile/manual escaping, offline v1 HTML raster parity, impossible-copy export refusal and deterministic endpoint behavior remain tested without weakening M0 assertions.
+
+### Live findings and evidence provenance
+
+Full matrix and actual token/timing/failure evidence are in AI_DISCLOSURE.md and docs/evidence/m1/. Human review found an unsupported fresh-brew claim in the initial pilot and “Coming soon” availability in the product matrix output. Guards/prompt were tightened; the latter is **post-hoc rejected by the final guard**, not retroactively counted as a successful repaired live request. Three other primary matrix plans pass final revalidation. Successful plans generally retained preset style values; creative breadth remains limited.
+
+The initial standalone runner's metadata fetches were sandbox-blocked, then the approved network run completed. Provider failures were not hidden. Comparison results include a 25-second timeout; production defaults are lower. Unknown failed-attempt usage/cost stays unknown. No tests/claims were made for the untested alternative models.
+
+A browser automation fill/hydration race duplicated the initial topic in a successful provider request. That actual request/finding is retained; inputs/generation are gated until hydration, and the final browser test asserts the exact request body before accepting clean-input evidence. A dev-only instant-navigation diagnostic also referenced a stale schema export. It cleared after verifying/restarting only this repository's existing port-3000 server; fresh console and actual local-planner checks then reported no errors. No validation was disabled, config weakened, security policy changed or duplicate server left running. The explicit runtime export rejected by Cache Components was removed per the installed docs; Node remains the framework default.
+
+### Retained local artifacts
+
+- `test-results/`: normal fixtures/long-copy/mobile screenshots, 12 M0 fixture PNGs, the actual local-planner screenshot/four PNGs/HTML, and separate mocked-fallback UI evidence. `.last-run.json` reports the latest non-live run only; it is not a substitute for the source/assertions/output.
+- `evaluation-results/`: **replayed-live-** screenshots, 12 exact-size PNGs and 3 portable HTML files for the retained technical/cultural/fact-sensitive AI plans. The filename and test explicitly identify replay; the browser route is supplied the measured real JSON and makes no new model request.
+- `docs/evidence/m1/`: small inspectable live JSON records, attempts/history, human/final-guard review and curl response. No keys or raw provider error bodies. The initial pilot is explicitly a finding, not the final schema example.
+- Evaluation output directories are cleaned on each invocation. Earlier genuine live-browser PNGs/HTML/JSON were exported and header-tested, but later commands superseded their local output files; retained representative render/export artifacts are the labelled replays. Do not mislabel these as extra successful provider calls or independent original captures.
+
+Representative live-plan and actual fallback screenshots were visually inspected, including dense fact-sensitive support/CTA. No universal visual fidelity or artistic-quality claim follows. Preserving/archiving these artifacts is a later owner action; no external archive was modified here.
+
+### Remaining verification gaps
+
+No public/production Vercel verification, distributed quota guarantee, load test, account billing audit, global free-quota verification, full security/accessibility audit, Firefox/Safari/Edge/cross-OS/font matrix, comprehensive multilingual/semantic truth evaluation or universal PNG-to-preview raster comparison. Very detailed copy may still refuse exports. Minimum native font sizes and DOM bounds do not prove social-scale readability. Missing credentials/repair/rate-limit fault paths are mocked/injected; the explicit local endpoint is real, and live unavailability/timeout outcomes are recorded separately.
+
+### Focused owner-review correction, 24 November 2026
+
+This follow-up makes no live Gemini calls. It preserves the measurements above and adds five regression tests: the four reported statements across three tastes; negative factual sentences, mixed missing-info/factual clauses and explicit public-copy labels; incomplete-topic rejection before provider dispatch, a subject supplied in details and exact-copy deduplication; ten saved-input local replays; actual local HTTP/UI generation, metadata warnings, four native PNGs/HTML and 422 preservation of prior artwork. Vague briefs are now tested as incomplete, replacing the earlier expectation of a usable generic campaign. The arbitrary-topic test verifies preserved content and factual tokens; intentional hostile HTML remains literal escaped user input rather than being required to pass the AI code-leakage guard.
+
+Executed: lint, typecheck and production build pass; `npm test -- --output=test-results/m1-correction-verified` passed **24 tests in 27.1 s** (7 M0 + 12 prior M1 + 5 correction tests). An earlier run had 23 pass/1 fail from a newly added, incorrect test assertion about the hostile HTML fixture; the assertion was corrected without weakening the production guard or escaping tests. Its diagnostics remain in `test-results/m1-correction-final`. The initial focused run passed 5 tests in 3.5 s.
+
+Pre-run SHA-256 metadata covers 57 existing evidence files. **56 remain byte-identical**, including every existing live JSON, retained model screenshot/PNG/HTML and actual/mocked fallback export. The old mobile test had a hard-coded `test-results/mobile-studio.png` path and overwrote that single historical non-model screenshot despite custom runner output. Its original hash/size are retained; original bytes were not recovered and are not falsely claimed preserved. The replacement is labelled as a current rerun in M1_CORRECTION.md. The test now uses `testInfo.outputPath`; its subsequent isolated verification passed **1 test in 2.3 s**, leaving the root replacement unchanged. No external archive was modified.
+
+Final verification after the output-path fix and stronger explicit zero-provider-call assertion: `npm test -- --output=test-results/m1-correction-checkpoint` passed **24 tests in 29.6 s**. All older output directories and the current root replacement were unchanged. The representative corrected-local evidence linked below remains from the earlier successful 27.1-second run of the same application code; this final run also captured independent current local/browser exports in its own directory.
+
+Use a fresh `--output=test-results/<new-run-name>` to preserve evidence. All normal test artifacts now honor that output location. Do not rerun the broad live config for this correction. Representative actual local captures, native dimensions, evidence hashes and exact scope are in [M1_CORRECTION.md](M1_CORRECTION.md) and [correction evidence](evidence/m1/correction/actual-local-result.json). The same-machine HTML raster comparison still says nothing about universal PNG parity or cross-device typography.

@@ -1,0 +1,104 @@
+{
+  "request": {
+    "topic": "A campus robotics workshop for first-year engineering students.",
+    "details": "No schedule or price has been supplied. No tickets are required.",
+    "taste": "minimal-swiss",
+    "mode": "local"
+  },
+  "status": 200,
+  "result": {
+    "spec": {
+      "version": 2,
+      "provenance": "deterministic-fallback",
+      "campaign": {
+        "topic": "A campus robotics workshop for first-year engineering students.",
+        "eyebrow": "An invitation to build",
+        "headline": "A campus robotics workshop for first-year engineering students.",
+        "supportingText": "No tickets are required."
+      },
+      "taste": "minimal-swiss",
+      "palette": {
+        "background": "#f2efe7",
+        "ink": "#202b28",
+        "accent": "#b83a24",
+        "secondary": "#dedbd0"
+      },
+      "typography": {
+        "family": "neutral-sans",
+        "headlineScale": 0.85,
+        "case": "sentence"
+      },
+      "composition": {
+        "layout": "swiss-grid",
+        "spacing": 80
+      },
+      "decoration": {
+        "motif": "orbit",
+        "density": 1,
+        "illustration": "abstract"
+      },
+      "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Publishable copy retained without repeating the headline; recognized brief instructions stay in interpretation metadata. A restrained supported visual keeps attention on the subject."
+    },
+    "interpretation": {
+      "objective": "Present the supplied subject without adding facts.",
+      "audience": "The campus community mentioned in the brief.",
+      "concept": "Give the supplied subject a clear Minimal Swiss hierarchy; preserve publishable information.",
+      "assumptions": [
+        "No new event, business or product facts have been inferred."
+      ],
+      "missingInformation": [
+        "No schedule or price has been supplied.",
+        "Confirm any audience, logistical or action details not supplied before publication."
+      ]
+    },
+    "metadata": {
+      "source": "deterministic-fallback",
+      "model": null,
+      "fallbackReason": "requested-local",
+      "totalMs": 2,
+      "attempts": [],
+      "cached": false,
+      "warnings": [
+        "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+        "No schedule or price has been supplied.",
+        "Confirm any audience, logistical or action details not supplied before publication."
+      ]
+    }
+  },
+  "exports": [
+    {
+      "file": "minimal-swiss-instagram-portrait-1080x1350.png",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "bytes": 140625
+    },
+    {
+      "file": "minimal-swiss-instagram-square-1080x1080.png",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes": 114347
+    },
+    {
+      "file": "minimal-swiss-youtube-thumbnail-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 107299
+    },
+    {
+      "file": "minimal-swiss-linkedin-landscape-1910x1000.png",
+      "dimensions": [
+        1910,
+        1000
+      ],
+      "bytes": 165114
+    }
+  ],
+  "html": "minimal-swiss-campaign.html",
+  "screenshot": "corrected-local-studio.png"
+}

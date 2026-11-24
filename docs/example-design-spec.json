@@ -1,12 +1,12 @@
 {
-  "version": 1,
-  "provenance": "experimental-fixture",
+  "version": 2,
+  "provenance": "gemini",
   "campaign": {
     "topic": "Chai stall opening near campus.",
-    "eyebrow": "A campus invitation",
-    "headline": "Chai.\nMeet campus.",
-    "supportingText": "A chai stall is opening near campus. Come say hello.",
-    "cta": "See you for chai"
+    "eyebrow": "NEW NEAR CAMPUS",
+    "headline": "CHAI STALL OPENING",
+    "supportingText": "An invitation for students to grab a cup at the new campus chai stall.",
+    "cta": "VISIT US"
   },
   "taste": "bold-street",
   "palette": {
@@ -26,7 +26,8 @@
   },
   "decoration": {
     "motif": "sticker",
-    "density": 3
+    "density": 3,
+    "illustration": "cup"
   },
-  "rationale": "Condensed uppercase typography, tight stacked hierarchy, heavy rules and an oversized cup sticker give the invitation street-poster energy. Wide formats split copy and illustration; tall formats stack them."
+  "rationale": "Applied the bold-street taste profile with condensed uppercase typography, heavy rules, and a cup illustration to create an energetic street poster look for the campus chai stall announcement."
 }

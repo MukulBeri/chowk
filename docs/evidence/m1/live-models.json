@@ -1,0 +1,948 @@
+{
+  "date": "2026-11-24",
+  "kind": "live REST evaluation; synthetic input facts, not real events/products",
+  "costObservation": "Owner reports free-tier project; requests returned no bill amount. Dashboard billing not inspected.",
+  "records": [
+    {
+      "id": "campus-launch",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Chai stall opening near campus.",
+        "details": "An invitation for students. No business name, date or price has been supplied.",
+        "taste": "bold-street"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Chai stall opening near campus.",
+            "eyebrow": "An idea to share",
+            "headline": "Chai stall opening near campus.",
+            "supportingText": "Chai stall opening near campus.\nAn invitation for students. No business name, date or price has been supplied."
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efe943",
+            "ink": "#20231e",
+            "accent": "#c84225",
+            "secondary": "#fff9e9"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "cup"
+          },
+          "rationale": "Bold Street: condensed sans typography and street stack composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied launch brief a clear Bold Street hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 1121,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 1117
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "technical-workshop",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "A campus robotics workshop for first-year engineering students.",
+        "details": "Focus on learning together. No schedule or price has been supplied.",
+        "taste": "minimal-swiss"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "gemini",
+          "campaign": {
+            "topic": "A campus robotics workshop for first-year engineering students.",
+            "eyebrow": "campus robotics workshop",
+            "headline": "A collaborative robotics workshop for first-year engineering students.",
+            "supportingText": "Focus on learning together. Explore fundamentals, build collaboratively, and share ideas in a supportive campus environment.",
+            "cta": "join the workshop"
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#f2efe7",
+            "ink": "#202b28",
+            "accent": "#b83a24",
+            "secondary": "#dedbd0"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Using the minimal-swiss style with a neutral-sans typeface, sentence case, and a measured swiss-grid layout to create an editorial, academic invitation. The abstract geometry and orbit motif maintain focus on learning and collaboration without introducing unsupported specific schedules or prices."
+        },
+        "interpretation": {
+          "objective": "Invite first-year engineering students to join a collaborative campus robotics workshop.",
+          "audience": "First-year engineering students on campus.",
+          "concept": "A measured, editorial invitation emphasizing peer learning and collaborative robotics exploration.",
+          "assumptions": [
+            "The event is specifically for first-year engineering students.",
+            "The primary focus is learning together."
+          ],
+          "missingInformation": [
+            "No schedule details were provided.",
+            "No pricing or registration costs were provided.",
+            "No specific location or date has been supplied."
+          ]
+        },
+        "metadata": {
+          "source": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": null,
+          "totalMs": 1980,
+          "attempts": [
+            {
+              "outcome": "accepted",
+              "elapsedMs": 1980,
+              "usage": {
+                "inputTokens": 668,
+                "outputTokens": 439,
+                "thinkingTokens": 0,
+                "totalTokens": 1107
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Factual safeguards are heuristics; verify copy before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "product-announcement",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Announce a planning notebook called \"OrbitPad\".",
+        "details": "No price, launch date or special product characteristics have been supplied.",
+        "taste": "festive-pop"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "gemini",
+          "campaign": {
+            "topic": "Announce a planning notebook called \"OrbitPad\".",
+            "eyebrow": "Coming soon",
+            "headline": "Introducing OrbitPad, your new planning notebook.",
+            "supportingText": "Stay tuned for the official arrival of OrbitPad. Designed to help you organize your days with clarity and style.",
+            "cta": "Learn more"
+          },
+          "taste": "festive-pop",
+          "palette": {
+            "background": "#762c49",
+            "ink": "#fff2cf",
+            "accent": "#f2bf57",
+            "secondary": "#eaa1ae"
+          },
+          "typography": {
+            "family": "editorial-serif",
+            "headlineScale": 1,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "festival-frame",
+            "spacing": 64
+          },
+          "decoration": {
+            "motif": "confetti",
+            "density": 3,
+            "illustration": "none"
+          },
+          "rationale": "Using festive-pop taste with an editorial-serif family and festival-frame layout to announce OrbitPad warmly. Illustration is set to none because no physical cup is applicable to a notebook, allowing ample room for supporting text while maintaining the festive celebratory aesthetic."
+        },
+        "interpretation": {
+          "objective": "Announce the planning notebook called OrbitPad with a festive and celebratory tone.",
+          "audience": "Professionals, students, and planners looking for a new notebook.",
+          "concept": "Celebrate the introduction of OrbitPad using a festive frame and warm editorial styling.",
+          "assumptions": [
+            "No specific launch date or price is available to announce yet."
+          ],
+          "missingInformation": [
+            "Launch date",
+            "Pricing",
+            "Product characteristics and features"
+          ]
+        },
+        "metadata": {
+          "source": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": null,
+          "totalMs": 2018,
+          "attempts": [
+            {
+              "outcome": "accepted",
+              "elapsedMs": 2017,
+              "usage": {
+                "inputTokens": 664,
+                "outputTokens": 421,
+                "thinkingTokens": 0,
+                "totalTokens": 1085
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Factual safeguards are heuristics; verify copy before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "cultural-evening",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "A cultural evening of music and dance for the campus community.",
+        "details": "An invitation to gather. Do not invent event logistics.",
+        "taste": "bold-street"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "gemini",
+          "campaign": {
+            "topic": "A cultural evening of music and dance for the campus community.",
+            "eyebrow": "campus community invitation",
+            "headline": "a cultural evening of music and dance",
+            "supportingText": "an invitation to gather.",
+            "cta": "gather with us"
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efe943",
+            "ink": "#20231e",
+            "accent": "#c84225",
+            "secondary": "#fff9e9"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "none"
+          },
+          "rationale": "Using bold-street taste with condensed uppercase typography, heavy rules, and a sticker motif. Illustration is set to none to give the logistical and welcoming text maximum clarity and space without inventing missing facts."
+        },
+        "interpretation": {
+          "objective": "Invite the campus community to a cultural evening of music and dance.",
+          "audience": "The campus community members interested in cultural events, music, and dance.",
+          "concept": "A street-poster style invitation focusing purely on gathering for a cultural evening without invented logistics.",
+          "assumptions": [
+            "The event is organized for the existing campus community.",
+            "No specific date, time, or location was provided so none are displayed."
+          ],
+          "missingInformation": [
+            "Event date and time",
+            "Venue location",
+            "Specific performers or ticket details"
+          ]
+        },
+        "metadata": {
+          "source": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": null,
+          "totalMs": 8786,
+          "attempts": [
+            {
+              "outcome": "accepted",
+              "elapsedMs": 8786,
+              "usage": {
+                "inputTokens": 667,
+                "outputTokens": 418,
+                "thinkingTokens": 0,
+                "totalTokens": 1085
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Factual safeguards are heuristics; verify copy before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "vague-brief",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Help me announce something.",
+        "details": "I have not supplied what, when or where yet.",
+        "taste": "minimal-swiss"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Help me announce something.",
+            "eyebrow": "An idea to share",
+            "headline": "Help me announce something.",
+            "supportingText": "Help me announce something.\nI have not supplied what, when or where yet."
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#f2efe7",
+            "ink": "#202b28",
+            "accent": "#b83a24",
+            "secondary": "#dedbd0"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied launch brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 1064,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 1064
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "fact-sensitive",
+      "availability": {
+        "model": "gemini-3.5-flash-lite",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+        "details": "Venue: Lab A; registration at https://example.org/workshop",
+        "taste": "festive-pop"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "gemini",
+          "campaign": {
+            "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+            "eyebrow": "Robotics workshop",
+            "headline": "Join us for an exciting robotics workshop for 12 teams.",
+            "supportingText": "Date: 26 November 2026 at 18:30 IST. Venue: Lab A. Entry fee: ₹150.",
+            "cta": "Register at https://example.org/workshop"
+          },
+          "taste": "festive-pop",
+          "palette": {
+            "background": "#762c49",
+            "ink": "#fff2cf",
+            "accent": "#f2bf57",
+            "secondary": "#eaa1ae"
+          },
+          "typography": {
+            "family": "editorial-serif",
+            "headlineScale": 1,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "festival-frame",
+            "spacing": 64
+          },
+          "decoration": {
+            "motif": "confetti",
+            "density": 3,
+            "illustration": "none"
+          },
+          "rationale": "Using festive-pop styling with an editorial serif font and confetti motif to create an inviting, celebratory mood for the robotics workshop while keeping dense logistical details clear through illustration none."
+        },
+        "interpretation": {
+          "objective": "Promote a robotics workshop to potential participants and secure registrations.",
+          "audience": "Students and technology enthusiasts interested in robotics.",
+          "concept": "A celebratory and inviting technical showcase highlighting the upcoming robotics workshop.",
+          "assumptions": [
+            "The event is open to all interested participants up to the team limit."
+          ],
+          "missingInformation": [
+            "Specific organizer name is not provided.",
+            "Prerequisites or required materials for the teams are not mentioned."
+          ]
+        },
+        "metadata": {
+          "source": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": null,
+          "totalMs": 8833,
+          "attempts": [
+            {
+              "outcome": "accepted",
+              "elapsedMs": 8833,
+              "usage": {
+                "inputTokens": 688,
+                "outputTokens": 424,
+                "thinkingTokens": 0,
+                "totalTokens": 1112
+              },
+              "finishReason": "STOP"
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Factual safeguards are heuristics; verify copy before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "campus-launch",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Chai stall opening near campus.",
+        "details": "An invitation for students. No business name, date or price has been supplied.",
+        "taste": "bold-street"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Chai stall opening near campus.",
+            "eyebrow": "An idea to share",
+            "headline": "Chai stall opening near campus.",
+            "supportingText": "Chai stall opening near campus.\nAn invitation for students. No business name, date or price has been supplied."
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efe943",
+            "ink": "#20231e",
+            "accent": "#c84225",
+            "secondary": "#fff9e9"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "cup"
+          },
+          "rationale": "Bold Street: condensed sans typography and street stack composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied launch brief a clear Bold Street hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "timeout",
+          "totalMs": 25001,
+          "attempts": [
+            {
+              "outcome": "timeout",
+              "elapsedMs": 25001
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "technical-workshop",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "A campus robotics workshop for first-year engineering students.",
+        "details": "Focus on learning together. No schedule or price has been supplied.",
+        "taste": "minimal-swiss"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "A campus robotics workshop for first-year engineering students.",
+            "eyebrow": "An invitation to build",
+            "headline": "A campus robotics workshop for first-year engineering students.",
+            "supportingText": "A campus robotics workshop for first-year engineering students.\nFocus on learning together. No schedule or price has been supplied."
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#f2efe7",
+            "ink": "#202b28",
+            "accent": "#b83a24",
+            "secondary": "#dedbd0"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a technical invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied technical brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 6017,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 6017
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "product-announcement",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Announce a planning notebook called \"OrbitPad\".",
+        "details": "No price, launch date or special product characteristics have been supplied.",
+        "taste": "festive-pop"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Announce a planning notebook called \"OrbitPad\".",
+            "eyebrow": "An idea to share",
+            "headline": "Announce a planning notebook called \"OrbitPad\".",
+            "supportingText": "Announce a planning notebook called \"OrbitPad\".\nNo price, launch date or special product characteristics have been supplied."
+          },
+          "taste": "festive-pop",
+          "palette": {
+            "background": "#762c49",
+            "ink": "#fff2cf",
+            "accent": "#f2bf57",
+            "secondary": "#eaa1ae"
+          },
+          "typography": {
+            "family": "editorial-serif",
+            "headlineScale": 1,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "festival-frame",
+            "spacing": 64
+          },
+          "decoration": {
+            "motif": "confetti",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Festive Pop: editorial serif typography and festival frame composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied launch brief a clear Festive Pop hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 5226,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 5226
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "cultural-evening",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "A cultural evening of music and dance for the campus community.",
+        "details": "An invitation to gather. Do not invent event logistics.",
+        "taste": "bold-street"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "A cultural evening of music and dance for the campus community.",
+            "eyebrow": "An invitation to gather",
+            "headline": "A cultural evening of music and dance for the campus community.",
+            "supportingText": "A cultural evening of music and dance for the campus community.\nAn invitation to gather. Do not invent event logistics."
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efe943",
+            "ink": "#20231e",
+            "accent": "#c84225",
+            "secondary": "#fff9e9"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Bold Street: condensed sans typography and street stack composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a cultural invitation or announcement from the supplied brief.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied cultural brief a clear Bold Street hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 2154,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 2154
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "vague-brief",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Help me announce something.",
+        "details": "I have not supplied what, when or where yet.",
+        "taste": "minimal-swiss"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Help me announce something.",
+            "eyebrow": "An idea to share",
+            "headline": "Help me announce something.",
+            "supportingText": "Help me announce something.\nI have not supplied what, when or where yet."
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#f2efe7",
+            "ink": "#202b28",
+            "accent": "#b83a24",
+            "secondary": "#dedbd0"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Minimal Swiss: neutral sans typography and swiss grid composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a launch invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied launch brief a clear Minimal Swiss hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 7174,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 7174
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    },
+    {
+      "id": "fact-sensitive",
+      "availability": {
+        "model": "gemini-3.8-flash",
+        "status": 200,
+        "supportsGenerateContent": true
+      },
+      "request": {
+        "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+        "details": "Venue: Lab A; registration at https://example.org/workshop",
+        "taste": "festive-pop"
+      },
+      "result": {
+        "spec": {
+          "version": 2,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.",
+            "eyebrow": "An invitation to build",
+            "headline": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST.",
+            "supportingText": "Robotics workshop for 12 teams on 26 November 2026 at 18:30 IST. Entry ₹150.\nVenue: Lab A; registration at https://example.org/workshop"
+          },
+          "taste": "festive-pop",
+          "palette": {
+            "background": "#762c49",
+            "ink": "#fff2cf",
+            "accent": "#f2bf57",
+            "secondary": "#eaa1ae"
+          },
+          "typography": {
+            "family": "editorial-serif",
+            "headlineScale": 1,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "festival-frame",
+            "spacing": 64
+          },
+          "decoration": {
+            "motif": "confetti",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Festive Pop: editorial serif typography and festival frame composition. Original brief preserved verbatim; a restrained supported visual keeps attention on the subject."
+        },
+        "interpretation": {
+          "objective": "Create a technical invitation or announcement from the supplied brief.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied technical brief a clear Festive Pop hierarchy; preserve the original information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.8-flash",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 6097,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 6096
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local conservative planning preserved the original brief; review copy and missing details before publication."
+          ]
+        }
+      },
+      "review": "Automated structural/semantic outcome only; human review recorded separately."
+    }
+  ]
+}

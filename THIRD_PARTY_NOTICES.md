@@ -1,5 +1,7 @@
 # Third-party software, assets and notices
 
+M1 adds **no packages, SDKs, external assets or copied reference implementations**. Native server-side fetch uses the existing Node runtime; Zod and Playwright remain the installed versions below. Next handles the `server-only` marker internally without an added package, as documented in the installed framework guides. The new neutral SVG and application logic are repository-authored. The existing lockfile hash/license inventory remains applicable to the unchanged dependency set; existing distribution gaps remain open.
+
 Verified **24 November 2026**, against this repository's unchanged package.json/package-lock.json and installed package metadata/license files. This is the attribution record for actual dependencies, not a list of desired libraries. No dependencies were installed or changed during consolidation.
 
 Full existing license/notice texts are preserved in [docs/licenses/NOTICES.txt](docs/licenses/NOTICES.txt), grouped by identical content to avoid repetition. [docs/licenses/INVENTORY.json](docs/licenses/INVENTORY.json) maps each installed package/version, declared license, source repository and local source file to its notice ID and original SHA-256. The readable notices include each source path; text line endings are normalized to LF, with original-byte hashes retained in the inventory. This preserves notices beyond ignored node_modules, including bundled compiler/tool notices. These documents do not license the project's original code.

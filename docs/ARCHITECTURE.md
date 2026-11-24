@@ -1,6 +1,39 @@
 # Architecture
 
-## M0 implementation
+## Current M1 implementation
+
+```text
+Topic + optional details + authoritative taste
+  → POST /api/generate → bounded request validation → local brief preflight
+  → per-instance budget/concurrency/cache → server-only Gemini REST
+  → CreativePlan shape + factual/taste/contrast heuristics
+  → at most one repair within the same time/request budgets
+  → DesignSpec v2 → same controlled HTML renderer → four previews/exports
+                         ↑
+  failure or explicit local mode → independent conservative local planner
+```
+
+`src/lib/generation/contracts.ts` distinguishes request, provider plan, renderer spec and response metadata. `facts.ts` canonicalizes complete facts; `planner.ts` checks plan compatibility and implements the independent fallback. `src/server/gemini.ts` is an injectable REST transport; only the `server-only` runtime supplies credentials/environment configuration. `engine.ts` owns repair, provenance and bounded process state. `api/generate/route.ts` owns HTTP input/status/error handling. React imports only shared contracts and the existing renderer, never the provider runtime.
+
+The focused correction adds `brief.ts`: bounded English patterns separate recognized brief declarations/directions from publishable segments, preserving ordinary negative facts. The planner uses public content for copy/category/illustration, removes only exact repeated segments and retains missing information/directions in bounded interpretation metadata. A request with no remaining subject raises `IncompleteBriefError` before provider quota is spent in either mode. The route returns validated-shape 422 metadata without a spec; the studio shows the missing subject and retains prior artwork. Original input remains in `campaign.topic` for editing, not rendered poster text. Successful response and v1/v2 spec schemas are unchanged. This is a deterministic heuristic, not a general semantic parser; see M1_CORRECTION.md.
+
+Gemini may decide concept/copy and supported palette/scale/spacing/density/illustration; it cannot emit executable markup/styles or an unsupported font/layout. The requested taste pins family, case, layout and motif to the existing registry. Interpretation/objective/audience/concept/assumptions/missing information are descriptive metadata. Palette, typography, composition, decoration and campaign copy act on rendering. No C1 redesign or M2 motif library was integrated.
+
+The studio sends actual generation requests, shows truthful loading and AI/fallback/manual provenance, exposes interpretation/rationale/spec, keeps a previous successful result on failure, and aborts/invalidates stale responses when brief or taste changes. Manual edits become `manual-input`; changing taste after generation reapplies a local preset and is not relabelled as new AI. Explicit local mode demonstrates the same independent planner without manipulating credentials.
+
+### Version reconciliation
+
+The original `designSchemaV1` and `/api/design-spec` retain their fixture/manual contract and limits. `designSchema` is a discriminated union accepting v1/v2; `createDesign` still emits v1 unchanged. V2 extends the same style groups, adds `gemini`/`deterministic-fallback`/manual provenance, supports topic up to 1200 and supporting copy up to 2400 characters, and requires `illustration: cup | abstract | none`. Full request bounds are 1200 topic, 1200 details, 2200 combined; no copy is silently truncated. Cup is restricted to relevant briefs; neutral geometry or no illustration handles unrelated topics. Detailed supporting text uses the freed art region; text that still cannot fit blocks export. V1 canvases/layouts and minimum font/overflow checks remain.
+
+### Reliability and privacy boundaries
+
+Defaults: 12 KiB body/2-second read, 18-second provider attempt, 38-second engine total, one repair, 4096 max output tokens, two active distinct campaigns, 20 cached successful plans for 120 seconds. Exact duplicates coalesce; local fallback is not cached. Default provider budget is 8 calls/minute, 100 calls/rolling local day, 100K conservatively reserved tokens/minute. Comparison models are capped more tightly (4 calls/minute, 12/day). Calls including repairs reserve before dispatch; 429 establishes a 60-second local cooldown without automatic retry. Estimates reserve prompt/schema overhead plus maximum output, not just returned tokens.
+
+These controls are in-memory per process, reset on restarts/HMR, and **cannot enforce a global Vercel/project quota**. Cache data includes brief-derived campaign text for a short TTL; there is no database, content log or persistent runtime history. Request input is sent to Google only in auto mode when credentials/budgets permit. Keys remain headers on fixed-host server fetches, never prompts/URLs/browser bundles; provider redirects are rejected, responses are size-bounded, and provider bodies/errors are not exposed. Transport tests use synthetic credentials; live files contain synthetic public briefs only. Detailed configuration, error/status behavior and limitations are in API.md and AI_DISCLOSURE.md.
+
+Structural/semantic heuristics do not prove truth or excellent art direction. They cover normalized dates/times/currency/units/contacts/IDs, omitted or new protected tokens, selected unsupported claims/placeholders/names, taste consistency and basic contrast. Unknown names, negation, word-number paraphrases, ambiguous dates, novel claims and semantic relevance remain imperfect. False positives may cause a repair or conservative fallback. No semantic safeguard may be described as eliminating hallucinations.
+
+## Historical M0 foundation (preserved)
 
 ```text
 Fixture or manual topic/copy + taste
@@ -10,7 +43,7 @@ Fixture or manual topic/copy + taste
   → responsive scaled previews / PNG / standalone HTML
 ```
 
-The UI uses the local pure builder without an HTTP round trip. POST `/api/design-spec` exposes the same validated builder for inspection. It is a deterministic M0 utility, not a creative planner. No credentials or external AI clients exist in this milestone. The future product orchestration boundary is provisionally POST `/api/generate`; its relationship to the current endpoint is documented in [API.md](API.md#future-product-generation-endpoint-planned-only).
+M0 used a local pure builder without HTTP. POST `/api/design-spec` still exposes that deterministic fixture/manual utility. The product orchestration route is now POST `/api/generate`; the implemented relationship is in [API.md](API.md#m1-product-generation-endpoint).
 
 ## Module boundaries
 
@@ -26,7 +59,7 @@ Version 1 includes campaign topic, eyebrow, headline, supporting copy and option
 
 Text limits: topic/headline 240, eyebrow 40, supporting copy 180, CTA 60, rationale 600 characters. These are bounds, not a guarantee that every Unicode sequence fits. Unbroken words wrap; text shrinks to a minimum of 24 px for headlines, 20 px for support and 18 px for CTA. If minimum-size text still overflows, export is blocked with an actionable message. Content is never silently ellipsized or truncated. Whitespace is trimmed during validation.
 
-The renderer uses all actionable style groups. Preset metadata (name/subtitle/number) describes the UI, while rationale is shown and inspectable. Arbitrary mixed style combinations are not exposed in the UI; validating a future model output will need semantic taste/palette consistency and contrast checks beyond the structural schema.
+The renderer uses actionable style groups. Preset metadata (name/subtitle/number) describes the UI, while rationale is shown and inspectable. Arbitrary mixed style combinations are not exposed; M1 now adds taste/palette/contrast and factual heuristics beyond this original structural schema, with the limitations documented above.
 
 ## Taste and layout choices
 
@@ -48,7 +81,7 @@ M0 references installed system font stacks; it does not bundle or redistribute f
 
 Primary references: [html-to-image options and browser constraints](https://github.com/bubkoo/html-to-image), [Zod schema API](https://zod.dev/api). Framework behavior was checked in the installed `node_modules/next/dist/docs/` guides for components, layouts, CSS, fonts, route handlers and Playwright, plus the managed instruction generator. Next.js 16.4.6 isolates development output in `.next/dev`; the production build uses `.next` without starting another server. Existing cacheComponents/partialPrefetching config is retained.
 
-## Intended later pipeline
+## Planning principles retained in M1
 
 ```text
 Topic + taste → input/brief interpretation → creative strategy + art direction
@@ -58,7 +91,7 @@ Topic + taste → input/brief interpretation → creative strategy + art directi
              independent deterministic fallback → same validation/rendering
 ```
 
-AI may propose controlled creative decisions, never executable HTML/CSS/JS. Future provenance must distinguish live AI, fallback and manual/fixture paths. The current schema intentionally permits only fixture/manual provenance until those paths exist. Validate model responses, enforce content/contrast constraints and show failures honestly; do not silently relabel fixtures as generated campaigns.
+AI may propose controlled creative decisions, never executable HTML/CSS/JS. V2 now distinguishes live AI, independent fallback and manual output while retaining v1 fixture/manual compatibility. Validate responses and show failures honestly; fixtures are never relabelled as generated campaigns.
 
 Maintain separate responsibilities for input interpretation, planning, provider calls, validation, campaign content, tastes/compositions, platform adaptation, rendering, export, quality checks and frontend state. These are boundaries, not a requirement to create a framework or a separate service for every step. Prefer one structured request per campaign until measurements demonstrate a benefit from more.
 

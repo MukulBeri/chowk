@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-24",
+  "request": {
+    "topic": "Chai stall opening near campus.",
+    "details": "An invitation for students. No business name, date or price has been supplied.",
+    "taste": "bold-street"
+  },
+  "result": {
+    "spec": {
+      "version": 2,
+      "provenance": "gemini",
+      "campaign": {
+        "topic": "Chai stall opening near campus.",
+        "eyebrow": "NEW NEAR CAMPUS",
+        "headline": "CHAI STALL OPENING",
+        "supportingText": "An invitation for students to grab a cup at the new campus chai stall.",
+        "cta": "VISIT US"
+      },
+      "taste": "bold-street",
+      "palette": {
+        "background": "#efe943",
+        "ink": "#20231e",
+        "accent": "#c84225",
+        "secondary": "#fff9e9"
+      },
+      "typography": {
+        "family": "condensed-sans",
+        "headlineScale": 1.1,
+        "case": "uppercase"
+      },
+      "composition": {
+        "layout": "street-stack",
+        "spacing": 60
+      },
+      "decoration": {
+        "motif": "sticker",
+        "density": 3,
+        "illustration": "cup"
+      },
+      "rationale": "Applied the bold-street taste profile with condensed uppercase typography, heavy rules, and a cup illustration to create an energetic street poster look for the campus chai stall announcement."
+    },
+    "interpretation": {
+      "objective": "Announce the opening of a chai stall near campus to students using an energetic street poster style.",
+      "audience": "University students looking for a new spot near campus.",
+      "concept": "High-contrast street poster energy featuring bold typography and a prominent cup illustration to signal a new student hangout.",
+      "assumptions": [
+        "The location is near campus as specified."
+      ],
+      "missingInformation": [
+        "Business name",
+        "Exact opening date",
+        "Pricing details",
+        "Operating hours"
+      ]
+    },
+    "metadata": {
+      "source": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "fallbackReason": null,
+      "totalMs": 6134,
+      "attempts": [
+        {
+          "outcome": "accepted",
+          "elapsedMs": 6134,
+          "usage": {
+            "inputTokens": 671,
+            "outputTokens": 409,
+            "thinkingTokens": 0,
+            "totalTokens": 1080
+          },
+          "finishReason": "STOP"
+        }
+      ],
+      "cached": false,
+      "warnings": [
+        "Factual safeguards are heuristics; verify copy before publication."
+      ]
+    }
+  }
+}

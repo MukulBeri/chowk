@@ -756,3 +756,9 @@ input:focus,textarea:focus {
   line-height:1.5;
   z-index:2
 }
+.generate-button { width:100%; border:1px solid var(--ink); border-radius:4px; padding:13px; margin:0 0 18px; background:var(--ink); color:var(--paper); font-size:12px; font-weight:600; }
+.generation-provenance { margin:0 0 20px; padding:14px; border:1px solid #ccd2bd; border-radius:4px; background:#e7ecd9; font-size:11px; line-height:1.6; }
+.generation-provenance p { margin:5px 0 10px; color:var(--muted); }
+.generation-provenance summary { cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+.generation-provenance pre { max-height:300px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; font-size:10px; }
+.local-planner-button { display:block; width:100%; margin:-8px 0 15px; font-size:10px; text-decoration:underline; text-underline-offset:3px; }
