@@ -2,7 +2,9 @@ import { z } from "zod";
 import type { Taste } from "../design";
 
 export const VARIANTS = ["street-stack", "street-editorial", "swiss-grid", "swiss-column", "pop-stage", "pop-offset"] as const;
-export const VISUALS = ["cup", "circuit", "waves", "spark", "burst", "abstract", "none", "robot", "network", "tiles", "botanical", "aroma", "code", "camera"] as const;
+export const RECIPES = ["manifesto", "signboard", "editorial", "dossier"] as const;
+export type Recipe = typeof RECIPES[number];
+export const VISUALS = ["cup", "circuit", "waves", "spark", "burst", "abstract", "none", "robot", "network", "tiles", "botanical", "aroma", "code", "camera", "repair", "sky"] as const;
 export const PALETTES = {
   "street-acid": { background: "#efed50", ink: "#171d1c", accent: "#b6301a", secondary: "#fff9de" },
   "street-cobalt": { background: "#1637bd", ink: "#fff8e9", accent: "#f7ed57", secondary: "#294ccc" },
@@ -22,9 +24,12 @@ export const artDirectionSchema = z.strictObject({
   emphasis: z.enum(["display", "editorial"]), information: z.enum(["auto", "stack", "grid"]),
   adaptation: z.enum(["balanced", "type-led"]),
   // Absent on historical v3 plans: preserve their exact layout/visual path.
-  treatment: z.literal("subject-led").optional(),
+  treatment: z.enum(["subject-led", "creative-led"]).optional(),
+  recipe: z.enum(RECIPES).optional(),
 }).superRefine((direction, ctx) => {
-  if (["robot", "network", "tiles", "botanical", "aroma", "code", "camera"].includes(direction.visual) && direction.treatment !== "subject-led") ctx.addIssue({ code: "custom", path: ["treatment"], message: "Subject visuals require the implemented subject-led treatment." });
+  if (["robot", "network", "tiles", "botanical", "aroma", "code", "camera"].includes(direction.visual) && !direction.treatment) ctx.addIssue({ code: "custom", path: ["treatment"], message: "Subject visuals require the implemented subject-led treatment." });
+  if ((direction.treatment === "creative-led") !== !!direction.recipe) ctx.addIssue({ code: "custom", path: ["recipe"], message: "A creative recipe requires explicit creative-led treatment and vice versa." });
+  if (["repair", "sky"].includes(direction.visual) && direction.treatment !== "creative-led") ctx.addIssue({ code: "custom", path: ["visual"], message: "Creative illustrations require explicit creative-led treatment." });
 });
 export type ArtDirection = z.infer<typeof artDirectionSchema>;
 export function compatibleDirection(taste: Taste, direction: ArtDirection) {
@@ -60,9 +65,10 @@ export function relevantVisual(visual: ArtDirection["visual"], subject: string) 
     cup: /\b(chai|tea|coffee|cafe|café)\b/i, circuit: /\b(robotics|technical|coding|hackathon|workshop|engineering)\b/i,
     waves: /\b(music|dance|poetry|cultural|concert|wave|water)\b/i, robot: /\brobotics?\b/i,
     network: /\b(AI|artificial intelligence|computing|technology|network|workshop)\b/i,
-    code: /\b(coding|programming|hackathon|software)\b/i, tiles: /\b(productivity|planning|app|notebook|focus)\b/i,
+    code: /\b(coding|programming|hackathon|software)\b/i, tiles: /\b(productivity|planning|app|notebook|focus|desk accessories|stationery|research[ -]reading|book club|reading group)\b/i,
     botanical: /\b(plastic|reusable|environment|waste|plant|nature)\b/i, aroma: /\b(perfume|fragrance|scent)\b/i,
     camera: /\b(photography|photographic|camera|photo)\b/i,
+    repair: /\b(repair|mend|fix|broken)\b/i, sky: /\b(astronomy|sky|stars|stargazing|space observation)\b/i,
   };
   return !rules[visual] || rules[visual].test(subject);
 }

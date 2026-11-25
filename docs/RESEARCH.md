@@ -1,5 +1,11 @@
 # Research, reuse and reference register
 
+## M6-A authorized adaptation — 25 November 2026
+
+Owner authorization supersedes the labs' earlier not-authorized handoff status for A1/A2 only. Both original Creative Lab ZIPs and the M5 source-review archive were inspected read-only and hashed; isolated extraction lives under ignored test-results/m6a-research. The actual checkout remains authoritative. Lab 1 contributes fact-led public-copy separation and original repair geometry; Lab 2 contributes role allocations, candidate-ranking principles, layered cup/top-view cup, robotic-arm and sky geometry. Production adaptation is original trusted JSX/TypeScript using existing measurements and exports, not copied lab document wrappers or manually authored fixture slogans. No upstream third-party implementation/dependency, remote font, photographic asset or new licensing decision is adopted.
+
+The labs' authored 48/28 browser captures, historical failed passes and original artwork remain research evidence. New actual production PNG downloads and API/offline parity checks are recorded separately in M6A_REPORT.md. Specimen, generated imagery, autonomous multi-concept evaluation and speculative provider integrations are deferred.
+
 ## M4 bounded research and adoption decision
 
 The explicit implementation approval supersedes the earlier planning-only gate for exactly five Tabler files. Inspected upstream commit: [1f4f3c94aadd87c88b32e0f65449070713c4f880](https://github.com/tabler/tabler-icons/tree/1f4f3c94aadd87c88b32e0f65449070713c4f880). All five file blobs and the MIT LICENSE blob matched the owner-reviewed IDs. Actual native-versus-trial PNGs cover three tastes × two formats × five assets. Camera is retained for a clear photography-subject improvement; music, device-laptop and recycle lost native expressiveness/specificity, and perfume suggested an unsupplied bottle. These are attributed visual judgments, not aesthetic scores. Exact paths, hashes and full notice are in src/lib/design-engine/tabler-asset.json and docs/licenses/Tabler-MIT.txt; only two static camera paths enter production. No package/runtime network asset or other icon is adopted.

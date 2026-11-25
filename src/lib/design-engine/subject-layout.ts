@@ -2,13 +2,13 @@ import type { DesignSpecV3, Format } from "../design";
 import type { Rect, ResolvedLayout } from "./layout";
 import { copyGroups } from "./layout";
 
-export function hierarchyGroups(text: string) {
+export function hierarchyGroups(text: string, limit = 8) {
   // Split on clause boundaries only. Retain every punctuation-bearing clause,
   // negation and corrected venue, including URL punctuation; never summarize.
-  const original=copyGroups(text), split=original.flatMap(group=>group.split(/(?<=;)\s+/)).filter(Boolean);
+  const original=limit === 8 ? copyGroups(text) : text.split(/(?<=[.!?;])\s+|\n/).map(s=>s.trim()).filter(Boolean), split=original.flatMap(group=>group.split(/(?<=;)\s+/)).filter(Boolean);
   // Preserve the existing eight-group bound; unusually segmented copy stays
   // complete in its original groups instead of creating hundreds of DOM nodes.
-  return split.length<=8?split:original;
+  return split.length<=limit?split:original;
 }
 
 export function resolveSubjectLayout(spec: DesignSpecV3, format: Format, correction: number): ResolvedLayout {

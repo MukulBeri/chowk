@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-25",
+  "status": "Owner-accepted bounded engineering foundation for Chowk; local checkpoint authorized",
+  "baseHead": "ca1b65736fe10fdef46bec5a2d2a62c6f5bd97a1",
+  "runtimeFingerprint": "b428c0e37b15a70dcd9543f1d5c431c9a604a8be11f0492e5252b6dc0cab3f21",
+  "fingerprintAlgorithm": "SHA-256(JSON.stringify(sourceFiles)), 104 repository-relative file/SHA-256 records in lexicographic order; full list in retained correction verification.json",
+  "acceptedCandidateFiles": 35,
+  "closureDocumentation": [
+    "docs/M6A_ACCEPTANCE.md",
+    "docs/evidence/m6a/closure/verification.json"
+  ],
+  "expectedLocalCommitFiles": 37,
+  "acceptedVerificationReusedWithoutRerunningSuite": {
+    "productionRegressionPassed": 147,
+    "originalRegressionCasesRetained": 130,
+    "focusedActualPngDownloads": 20,
+    "focusedPortableHtmlDownloads": 5,
+    "focusedJsonDownloads": 5,
+    "actualLocalApiHtmlDocuments": 4,
+    "maximumFocusedPngDifferencePercent": 0.002658,
+    "pngThreshold": { "changedPixelRatioMaximum": 0.015, "channelDelta": 20 },
+    "htmlThreshold": { "changedPixelRatioMaximum": 0.001, "channelDelta": 8 },
+    "productionBuild": "passed at accepted source fingerprint",
+    "lint": "passed with previously documented warning in untouched test",
+    "typecheck": "passed at accepted source fingerprint"
+  },
+  "boundedLiveDiagnostic": {
+    "actualProviderRequests": 4,
+    "http503Responses": 3,
+    "structuredButRejectedResponses": 1,
+    "acceptedFreshPlans": 0,
+    "dispatchedRepairs": 0,
+    "laterRetainedResponseReplay": "Quota-free local validation/rendering/export; does not retroactively change original rejection",
+    "additionalProviderRequestsDuringCorrectionAndClosure": 0
+  },
+  "independentOwnerReview": {
+    "correctedExportsInspected": 20,
+    "pngMeasurementsReproduced": true,
+    "qualitativeScore": 68,
+    "proposedTarget": 80,
+    "controlledComparisonWithEarlier64": false,
+    "provenance": "Owner-reported independent review, not an automated artistic score"
+  },
+  "archive": {
+    "projectEvidence": "04_Project-Evidence/M6-A",
+    "developmentHistory": "05_Development-History/M6-A",
+    "method": "Curated explicit relative-path mappings, exact-content reuse, byte-size and SHA-256 equality; original reports and evidence unchanged",
+    "cloudSynchronization": "Not verified or claimed",
+    "finalLocalCountsAndGitResult": "Recorded in immutable archive integrity and Git-Checkpoint records, outside this self-identifying commit"
+  },
+  "limitations": [
+    "Artistic excellence and the proposed 80/100 target are not established",
+    "Fresh AI acceptance, reliability and creative quality remain unproven",
+    "Bounded English interpretation, literal/repeated factual descriptions and finite abstract illustration coverage",
+    "Density, social-display readability, composition variety and unused space remain owner-review concerns",
+    "Same-machine compositor-dependent fidelity is not a universal cross-device guarantee",
+    "Public-release, licensing and final production readiness remain separately gated"
+  ],
+  "inferenceDisabled": true,
+  "pushAuthorized": false,
+  "deploymentAuthorized": false,
+  "subsequentMilestoneAuthorized": false,
+  "commitMessage": "feat: establish validated creative planning and adaptive rendering foundation"
+}

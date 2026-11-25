@@ -8,11 +8,13 @@ import { exportHtml, exportPng, saveFile } from "@/lib/export";
 import { TastePicker } from "./taste-picker";
 import { StudioArtboard } from "./studio-artboard";
 import { StudioDialog, ArtworkSnapshot } from "./studio-dialog";
+import { compositionCandidates } from "@/lib/design-engine/candidates";
 const subscribe = () => () => { };
 type Draft = {
     topic: string;
     details: string;
     taste: Taste;
+    treatment?: "creative-led";
 };
 type Copy = {
     topic: string;
@@ -55,7 +57,7 @@ export function Studio() {
     useEffect(() => () => { requestId.current++; pending.current?.abort(); }, []);
     const spec = campaign?.spec;
     const copyDirty = Boolean(spec && Object.entries(copy).some(([k, v]) => v !== (spec.campaign[k as keyof Copy] ?? "")));
-    const draftChanged = Boolean(campaign && (draft.topic.trim() !== campaign.input.topic || draft.details.trim() !== campaign.input.details || draft.taste !== campaign.input.taste));
+    const draftChanged = Boolean(campaign && (draft.topic.trim() !== campaign.input.topic || draft.details.trim() !== campaign.input.details || draft.taste !== campaign.input.taste || draft.treatment !== campaign.input.treatment));
     const allReady = Boolean(campaign && rendered.revision === campaign.revision && FORMATS.every(f => rendered.formats[f.id]));
     function commit(s: DesignSpec, g: GenerationResult | null, input: Draft) { const next = { spec: s, generation: g, input, revision: (committed.current?.revision ?? 0) + 1 }; committed.current = next; setCampaign(next); setCopy(copyOf(s)); setRendered({ revision: next.revision, formats: {} }); }
     function changeDraft(change: Partial<Draft>) { if (exportLock.current)
@@ -93,7 +95,9 @@ export function Studio() {
                 return;
             if (data.spec.version < 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source)
                 throw new Error("invalid-response");
-            commit(data.spec, data, { topic: parsed.data.topic, details: parsed.data.details, taste: parsed.data.taste });
+            if (Boolean(parsed.data.treatment) !== (data.spec.version === 3 && data.spec.artDirection.treatment === "creative-led"))
+                throw new Error("unexpected-treatment");
+            commit(data.spec, data, { topic: parsed.data.topic, details: parsed.data.details, taste: parsed.data.taste, ...(parsed.data.treatment ? { treatment: parsed.data.treatment } : {}) });
             setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : data.metadata.fallbackReason === "requested-local" ? "Local planner campaign ready. No AI request." : data.metadata.fallbackReason === "disabled" ? "Local planner campaign ready. Server-side AI is disabled; no provider request." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
         }
         catch {
@@ -112,7 +116,7 @@ export function Studio() {
         return; const input = { topic: SAMPLE_TOPIC, details: "", taste: draft.taste }; setDraft(input); commit(createDesign({ taste: input.taste, topic: SAMPLE_TOPIC }), null, input); setMessage("Sample campaign ready. No AI request."); setError(null); }
     function applyCopy(e: FormEvent) { e.preventDefault(); if (!campaign || exportLock.current || pending.current)
         return; const result = designSchema.safeParse({ ...campaign.spec, provenance: "manual-input", campaign: { ...campaign.spec.campaign, ...copy, cta: copy.cta || undefined } }); if (!result.success) {
-        setError({ kind: "copy", text: "Check copy lengths and required fields. No changes were applied." });
+        setError({ kind: "copy", text: "Check copy lengths and required fields. Creative-led campaigns must retain all supplied public facts verbatim. No changes were applied." });
         return;
     } commit(result.data, campaign.generation, campaign.input); setMessage("Manual copy applied to all four formats. No AI used."); setError(null); }
     function refine(change: Partial<ArtDirection>) { if (!campaign || campaign.spec.version !== 3 || exportLock.current || pending.current)
@@ -184,6 +188,8 @@ export function Studio() {
     <label htmlFor="brief-details">Optional details</label><textarea id="brief-details" maxLength={1200} rows={4} value={draft.details} disabled={busy || !interactive} onChange={e => changeDraft({ details: e.target.value })} placeholder="Audience, exact facts, dates, prices or preferences"/>
     <p id="brief-privacy" className="field-note">AI briefs are sent to Google Gemini only when server-side inference is enabled. Avoid private information. Local planning makes no AI request. <a href="/api/notices" target="_blank" rel="noopener noreferrer">Licenses and notices</a></p>
     <TastePicker value={draft.taste} disabled={busy || !interactive} onChange={taste => changeDraft({ taste })}/>
+    <label htmlFor="planning-approach">Planning approach</label><select id="planning-approach" value={draft.treatment ?? "standard"} disabled={busy || !interactive} onChange={e => changeDraft({ treatment: e.target.value === "creative-led" ? "creative-led" : undefined })}><option value="standard">Standard</option><option value="creative-led">Creative-led · fact-led recipes</option></select>
+    {draft.treatment && <p className="field-note">Separates public facts from creative instructions. Composition alternatives are derived locally from one plan.</p>}
     <button className="primary-action" disabled={busy || generating || !interactive} onClick={() => generate()}>{generating ? "Generating campaign…" : "Generate campaign ↗"}</button><button className="secondary-action local-planner-button" disabled={busy || generating || !interactive} onClick={() => generate("local")}>Use local planner · no AI request</button>
     {campaign && <section className="refinement-panel" aria-label="Refine current result"><h2>Refine current result</h2><p className="field-note">Editing {PRESETS[campaign.spec.taste].name}. Local changes make no new AI request.</p><form onSubmit={applyCopy}><details className="copy-details"><summary>Edit campaign copy</summary>
      <label htmlFor="campaign-topic">Campaign topic</label><textarea id="campaign-topic" maxLength={spec!.version === 1 ? 240 : 1200} rows={2} value={copy.topic} required disabled={busy || generating} onChange={e => setCopy({ ...copy, topic: e.target.value })}/>
@@ -191,7 +197,7 @@ export function Studio() {
      <label htmlFor="supporting">Supporting text</label><textarea id="supporting" maxLength={spec!.version === 1 ? 180 : 2400} rows={4} value={copy.supportingText} disabled={busy || generating} onChange={e => setCopy({ ...copy, supportingText: e.target.value })}/>
      <label htmlFor="cta">Call to action <span>optional</span></label><input id="cta" maxLength={60} value={copy.cta} disabled={busy || generating} onChange={e => setCopy({ ...copy, cta: e.target.value })}/>
      <button className="secondary-action apply-button" type="submit" disabled={busy || generating || !copyDirty}>{copyDirty ? "Apply copy to campaign ↗" : "Copy is up to date ✓"}</button></details></form>
-     {spec?.version === 3 && <><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.variant} disabled={busy || generating} onChange={e => refine({ variant: e.target.value as ArtDirection["variant"] })}>{ENGINE_TASTES[spec.taste].variants.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={e => refine({ palette: e.target.value as ArtDirection["palette"] })}>{ENGINE_TASTES[spec.taste].palettes.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><div className="palette-tokens" role="group" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }}/>)}</div></>}
+     {spec?.version === 3 && <><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.recipe ?? spec.artDirection.variant} disabled={busy || generating} onChange={e => refine(spec.artDirection.treatment === "creative-led" ? { recipe: e.target.value as ArtDirection["recipe"] } : { variant: e.target.value as ArtDirection["variant"] })}>{spec.artDirection.treatment === "creative-led" ? compositionCandidates(spec).map(c => <option key={c.id} value={c.recipe}>{readable(c.recipe)} · local composition</option>) : ENGINE_TASTES[spec.taste].variants.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={e => refine({ palette: e.target.value as ArtDirection["palette"] })}>{ENGINE_TASTES[spec.taste].palettes.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><div className="palette-tokens" role="group" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }}/>)}</div></>}
     </section>}
    </div></aside>
    <section id="campaign-gallery" className="campaign-stage" aria-label="Campaign outputs" tabIndex={-1}>

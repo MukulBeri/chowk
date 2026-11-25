@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { artDirectionSchema, compatibleDirection, ENGINE_TASTES, PALETTES } from "./design-engine/registry";
+import { creativeContentSchema } from "./generation/fact-ledger";
 
 export const TASTES = ["bold-street", "minimal-swiss", "festive-pop"] as const;
 export const FORMATS = [
@@ -37,8 +38,14 @@ export const designSchemaV2 = designSchemaV1.extend({
 });
 export const designSchemaV3 = designSchemaV2.extend({
   version: z.literal(3), artDirection: artDirectionSchema,
+  creativeContent: creativeContentSchema.optional(),
   typography: designSchemaV2.shape.typography.extend({ family: z.enum(["condensed-sans", "neutral-sans", "editorial-serif", "rounded-sans"]) }),
 }).superRefine((spec, ctx) => {
+  if ((spec.artDirection.treatment === "creative-led") !== !!spec.creativeContent) ctx.addIssue({ code: "custom", message: "Creative content requires explicit creative-led treatment.", path: ["creativeContent"] });
+  if (spec.creativeContent) {
+    const visible = [spec.campaign.eyebrow, spec.campaign.headline, spec.campaign.supportingText, spec.campaign.cta].filter(Boolean).join("\n").toLowerCase().replace(/\s+/g, " ");
+    if (spec.creativeContent.facts.some(f => !visible.includes(f.text.toLowerCase().replace(/\s+/g, " ")))) ctx.addIssue({ code: "custom", message: "All immutable public factual clauses must remain visible.", path: ["campaign"] });
+  }
   if (!compatibleDirection(spec.taste, spec.artDirection)) ctx.addIssue({ code: "custom", message: "Art direction must belong to the selected taste.", path: ["artDirection"] });
   if (spec.typography.family !== ENGINE_TASTES[spec.taste].family) ctx.addIssue({ code: "custom", message: "Typography must match the taste.", path: ["typography"] });
   if (Object.entries(PALETTES[spec.artDirection.palette]).some(([key, value]) => spec.palette[key as keyof typeof spec.palette] !== value)) ctx.addIssue({ code: "custom", message: "Palette colours must match the selected registry token.", path: ["palette"] });

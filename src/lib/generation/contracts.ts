@@ -8,6 +8,7 @@ export const generationRequestSchema = z.strictObject({
   details: z.string().trim().max(1200).default(""),
   taste: z.enum(TASTES),
   mode: z.enum(["auto", "local"]).optional(),
+  treatment: z.literal("creative-led").optional(),
 }).refine((value) => value.topic.length + value.details.length <= 2200, {
   message: "Keep the combined brief and details within 2200 characters.",
 });
@@ -38,7 +39,8 @@ export const creativePlanSchema = legacyCreativePlanSchema.extend({
   artDirection: artDirectionSchema,
   typography: legacyCreativePlanSchema.shape.typography.extend({ family: z.enum(["condensed-sans", "neutral-sans", "editorial-serif", "rounded-sans"]) }),
 });
-export type CreativePlan = z.infer<typeof legacyCreativePlanSchema> | z.infer<typeof creativePlanSchema>;
+export const creativeLedPlanSchema = creativePlanSchema.extend({ factIds: z.array(z.string().regex(/^f-(?:topic|details)-\d+$/)).min(1).max(40) });
+export type CreativePlan = z.infer<typeof legacyCreativePlanSchema> | z.infer<typeof creativePlanSchema> | z.infer<typeof creativeLedPlanSchema>;
 export type AdvancedCreativePlan = z.infer<typeof creativePlanSchema>;
 export const FALLBACK_REASONS = [
   "missing-credentials", "configuration", "disabled", "local-budget", "busy", "provider-rate-limit",

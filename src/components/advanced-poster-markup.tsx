@@ -5,6 +5,8 @@ import { copyGroups, informationRole, resolveLayout, type Rect } from "@/lib/des
 import { ProceduralVisual } from "./procedural-visual";
 import { SubjectVisual } from "./subject-visual";
 import { hierarchyGroups } from "@/lib/design-engine/subject-layout";
+import { CreativeVisual } from "./creative-visual";
+import { manifestoHeadline } from "@/lib/design-engine/creative-layout";
 
 const rectStyle = (r: Rect): CSSProperties => ({ position: "absolute", left: r.x, top: r.y, width: r.w, height: r.h, boxSizing: "border-box" });
 
@@ -13,26 +15,50 @@ export function AdvancedPosterMarkup({ spec, format, correction = 0, status = { 
   const layout = resolveLayout(spec, format, correction);
   const tokens = ENGINE_TASTES[spec.taste], palette = spec.palette;
   const street = spec.taste === "bold-street", pop = spec.taste === "festive-pop";
-  const panel = spec.artDirection.variant === "street-editorial";
-  const subjectLed = spec.artDirection.treatment === "subject-led";
+  const creative = spec.artDirection.treatment === "creative-led", recipe = spec.artDirection.recipe;
+  const panel = creative ? recipe === "signboard" && street : spec.artDirection.variant === "street-editorial";
+  const subjectLed = spec.artDirection.treatment === "subject-led" || creative;
   const wide = format.width > format.height;
-  const groups = subjectLed ? hierarchyGroups(spec.campaign.supportingText) : copyGroups(spec.campaign.supportingText);
+  const headline = creative && recipe === "manifesto" ? manifestoHeadline(spec.campaign.headline, wide) : spec.campaign.headline;
+  const groups = subjectLed ? hierarchyGroups(spec.campaign.supportingText, creative ? 40 : 8) : copyGroups(spec.campaign.supportingText);
+  // Contiguous, balanced columns avoid grid rows borrowing the height of an
+  // unrelated longer fact. Preserve DOM reading order and every complete clause.
+  let breaks = [0, groups.length], imbalance = Infinity;
+  if (creative && layout.columns > 1) {
+    const weights = groups.map(s => Math.ceil(s.length / Math.max(18, (layout.support.w / layout.columns - 24) / (layout.floors.support * .55))) + .5);
+    const weight = (start: number, end: number) => weights.slice(start, end).reduce((a,b)=>a+b,0);
+    for (let i = 1; i < groups.length; i++) for (let j = layout.columns === 3 ? i + 1 : groups.length; j <= (layout.columns === 3 ? groups.length - 1 : groups.length); j++) {
+      const points = layout.columns === 3 ? [0,i,j,groups.length] : [0,i,groups.length];
+      const sizes = points.slice(1).map((end,k)=>weight(points[k],end));
+      const score = Math.max(...sizes) - Math.min(...sizes);
+      if (score < imbalance) { breaks = points; imbalance = score; }
+    }
+  }
+  const columns = breaks.slice(1).map((end,i)=>groups.slice(breaks[i],end));
+  const groupMarkup = (group: string, index: number) => {
+    const role = subjectLed && (/^(?:venue|location) changed\b/i.test(group) || creative && /^The original venue\b/i.test(group)) ? "where" : informationRole(group), primary = role === "when" || role === "where";
+    return <p key={`${index}-${group}`} data-copy-group data-information-role={role} style={{ margin: 0, boxSizing: "border-box", fontWeight: primary ? 700 : role === "entry" ? 600 : 400, fontSize: subjectLed || primary ? "1em" : `max(${layout.floors.support}px, .92em)`, gridColumn: layout.columns > 1 && (role === "registration" || creative && primary && group.length > 60) ? "1 / -1" : undefined, paddingTop: groups.length > 1 ? creative ? 7 : 12 : 0, borderTop: groups.length > 1 ? `${primary ? 3 : 1}px solid ${palette.accent}` : undefined }}>{group.split(/(https?:\/\/\S+)/g).map((part, partIndex) => /^https?:\/\//.test(part) ? <span key={partIndex}>{part.split(/(?<=\/)/).map((piece, pieceIndex) => <span key={pieceIndex}>{piece}<wbr /></span>)}</span> : part)}</p>;
+  };
+  // Creative tracking uses native px: measured em tracking reproduced a
+  // portable-HTML raster difference after font-size fitting in Chromium.
+  // Historical treatment styles and all comparison tolerances stay unchanged.
   const text: CSSProperties = { margin: 0, padding: 0, color: palette.ink, fontFamily: '"YarcInter", Arial, Helvetica, sans-serif', whiteSpace: "pre-wrap", overflowWrap: "anywhere" };
   const maximumHeadline = Math.min(format.width * .20, format.height * .28, 240) * spec.typography.headlineScale * (spec.artDirection.emphasis === "editorial" ? .88 : 1);
-  return <div ref={rootRef} data-poster={format.id} data-taste={spec.taste} data-version="3" data-variant={spec.artDirection.variant}
+  return <div ref={rootRef} data-poster={format.id} data-taste={spec.taste} data-version="3" data-variant={spec.artDirection.variant} data-recipe={creative ? recipe : undefined}
     data-ready={status.ready} data-overflow={status.issues.length > 0} data-quality={JSON.stringify(status.issues)} data-corrections={JSON.stringify(layout.corrections)} data-correction-step={correction}
     role="img" aria-label={`${format.name}: ${spec.campaign.headline.replaceAll("\n", " ")}`}
-    style={{ position: "relative", width: format.width, height: format.height, flexShrink: 0, boxSizing: "border-box", overflow: "hidden", isolation: "isolate", background: palette.background, color: palette.ink, fontSynthesis: "none" }}>
+    // A creative artboard is composited as one surface. This keeps native text
+    // antialiasing consistent with its SVG-image export (without changing copy,
+    // dimensions, colours, font sizes or the tested legacy rendering path).
+    style={{ position: "relative", width: format.width, height: format.height, flexShrink: 0, boxSizing: "border-box", overflow: "hidden", isolation: "isolate", background: palette.background, color: palette.ink, fontSynthesis: "none", ...(creative ? {willChange:"transform"} : {}) }}>
     {pop && <div aria-hidden="true" style={{ position: "absolute", inset: 17, border: `${subjectLed ? 7 : 4}px solid ${palette.ink}`, borderRadius: subjectLed ? (wide ? 38 : 64) : tokens.corner }} />}
-    <p data-fit data-role="kicker" data-min={layout.floors.kicker} data-max="32" style={{ ...text, ...rectStyle(layout.kicker), fontWeight: 700, lineHeight: 1.1, letterSpacing: street ? "0.11em" : ".06em", textTransform: "uppercase", borderBottom: !pop ? `3px solid ${palette.ink}` : undefined, textAlign: layout.align }}>{spec.campaign.eyebrow}</p>
-    <h2 data-fit data-role="headline" data-min={layout.floors.headline} data-max={Math.max(layout.floors.headline, maximumHeadline)} style={{ ...text, ...rectStyle(layout.headline), fontFamily: tokens.font, fontWeight: tokens.weight, letterSpacing: tokens.tracking, lineHeight: tokens.lineHeight,
-      textTransform: street ? "uppercase" : "none", textAlign: layout.align, textWrap: "balance", ...(subjectLed ? { overflowWrap: "normal", whiteSpace: "pre-line" } : {}), ...(!spec.campaign.supportingText && !layout.art ? { alignContent: "center" } : {}), ...(panel ? { background: palette.ink, color: palette.background, padding: "12px 20px" } : {}) }}>{spec.campaign.headline}</h2>
-    {layout.art && <div data-hero data-decoration={spec.decoration.motif} data-illustration={spec.artDirection.visual} style={{ ...rectStyle(layout.art), padding: pop ? 5 : 0 }}>{subjectLed ? <SubjectVisual kind={spec.artDirection.visual} taste={spec.taste} {...palette} /> : <ProceduralVisual kind={spec.artDirection.visual} ink={palette.ink} accent={palette.accent} background={palette.background} density={spec.decoration.density} />}</div>}
-    {spec.campaign.supportingText && <div data-fit data-role="support" data-min={layout.floors.support} data-max={subjectLed ? (wide ? Math.round(format.height / 720 * 46) : 46) : pop ? 44 : 40} style={{ ...text, ...rectStyle(layout.support), fontWeight: spec.artDirection.emphasis === "display" ? 600 : 400, lineHeight: 1.24, display: "grid", gridTemplateColumns: `repeat(${layout.columns},minmax(0,1fr))`, alignContent: "start", gap: layout.columns > 1 ? "20px 32px" : 18, textAlign: layout.align === "center" ? "center" : "left" }}>
-      {groups.map((group, index) => {
-        const role = subjectLed && /^(?:venue|location) changed\b/i.test(group) ? "where" : informationRole(group), primary = role === "when" || role === "where";
-        return <p key={`${index}-${group}`} data-copy-group data-information-role={role} style={{ margin: 0, boxSizing: "border-box", fontWeight: primary ? 700 : role === "entry" ? 600 : 400, fontSize: subjectLed || primary ? "1em" : `max(${layout.floors.support}px, .92em)`, gridColumn: layout.columns > 1 && role === "registration" ? "1 / -1" : undefined, paddingTop: groups.length > 1 ? 12 : 0, borderTop: groups.length > 1 ? `${primary ? 3 : 1}px solid ${palette.accent}` : undefined }}>{group.split(/(https?:\/\/\S+)/g).map((part, partIndex) => /^https?:\/\//.test(part) ? <span key={partIndex}>{part.split(/(?<=\/)/).map((piece, pieceIndex) => <span key={pieceIndex}>{piece}<wbr /></span>)}</span> : part)}</p>;
-      })}
+    {creative && !pop && recipe === "signboard" && <div aria-hidden="true" style={{position:"absolute",inset:18,border:`2px solid ${palette.ink}`}}/>}
+    <p data-fit data-role="kicker" data-min={layout.floors.kicker} data-max="32" style={{ ...text, ...rectStyle(layout.kicker), fontWeight: 700, lineHeight: 1.1, letterSpacing: creative ? (street ? 3 : 2) : street ? "0.11em" : ".06em", textTransform: "uppercase", borderBottom: !pop ? `3px solid ${palette.ink}` : undefined, textAlign: layout.align }}>{spec.campaign.eyebrow}</p>
+    <h2 data-fit data-role="headline" data-min={layout.floors.headline} data-max={Math.max(layout.floors.headline, maximumHeadline)} style={{ ...text, ...rectStyle(layout.headline), fontFamily: tokens.font, fontWeight: tokens.weight, letterSpacing: creative ? (street ? -1 : pop ? -2 : -3) : tokens.tracking, lineHeight: tokens.lineHeight,
+      textTransform: street ? "uppercase" : "none", textAlign: layout.align, textWrap: "balance", ...(subjectLed ? { overflowWrap: "normal", whiteSpace: "pre-line" } : {}), ...(creative || !spec.campaign.supportingText && !layout.art ? { alignContent: "center" } : {}), ...(creative && recipe === "manifesto" ? {borderTop:`7px solid ${palette.ink}`,borderBottom:`7px solid ${palette.ink}`,padding:"10px 0",alignContent:"center"} : {}), ...(panel ? { background: palette.ink, color: palette.background, padding: "12px 20px" } : {}) }}>{headline}</h2>
+    {layout.art && <div data-hero data-decoration={spec.decoration.motif} data-illustration={spec.artDirection.visual} style={{ ...rectStyle(layout.art), padding: pop ? 5 : 0, ...(creative ? {border:`${street ? 4 : 2}px solid ${palette.ink}`,borderRadius:pop?28:0,overflow:"hidden"} : {}) }}>{creative ? <CreativeVisual kind={spec.artDirection.visual} taste={spec.taste} {...palette}/> : subjectLed ? <SubjectVisual kind={spec.artDirection.visual} taste={spec.taste} {...palette} /> : <ProceduralVisual kind={spec.artDirection.visual} ink={palette.ink} accent={palette.accent} background={palette.background} density={spec.decoration.density} />}</div>}
+    {spec.campaign.supportingText && <div data-fit data-role="support" data-min={layout.floors.support} data-max={subjectLed ? (wide ? Math.round(format.height / 720 * 46) : 46) : pop ? 44 : 40} style={{ ...text, ...rectStyle(layout.support), fontWeight: spec.artDirection.emphasis === "display" ? 600 : 400, lineHeight: creative ? 1.2 : 1.24, display: "grid", gridTemplateColumns: `repeat(${layout.columns},minmax(0,1fr))`, alignContent: creative ? "stretch" : "start", gap: creative ? 24 : layout.columns > 1 ? "20px 32px" : 18, textAlign: layout.align === "center" ? "center" : "left" }}>
+      {creative ? columns.map((items, index) => <div key={index} data-min={layout.floors.support} style={{ minWidth: 0, height: "100%", display: "flex", flexDirection: "column", gap: 12 }}>{items.map(groupMarkup)}</div>) : groups.map(groupMarkup)}
     </div>}
     {spec.campaign.cta && <p data-fit data-role="cta" data-min={layout.floors.cta} data-max="40" style={{ ...text, ...rectStyle(layout.cta), background: palette.ink, color: palette.background, borderRadius: pop ? 24 : 0, padding: "10px 18px", fontWeight: 700, lineHeight: 1.15 }}>{spec.campaign.cta}</p>}
     {street && spec.decoration.density > 1 && <svg aria-hidden="true" width="120" height="14" viewBox="0 0 120 14" style={{ position: "absolute", bottom: 12, right: 24 }}>{Array.from({ length: 12 }, (_, i) => <circle key={i} cx={i*10+5} cy="7" r={spec.decoration.density === 3 ? 3 : 2} fill={palette.ink} />)}</svg>}

@@ -1,5 +1,17 @@
 # Campaign APIs
 
+## Opt-in creative-led requests (M6-A candidate)
+
+Existing requests retain their default M5 behavior. Explicitly add `"treatment":"creative-led"` to the existing /api/generate or /api/render request to use fact-led planning and the four recipe registry. No new endpoint exists. /api/design-spec remains the unchanged v1 utility and does not accept this option. Example body:
+
+```json
+{"topic":"Launch campaign for a new campus chai stall called Chai Junction.","details":"Masala chai ₹15. Opening on 28 November 2026 at 4 PM near the IET entrance. Target audience: college students. Warm, youthful and affordable. Do not invent offers, discounts or additional products.","taste":"bold-street","mode":"local","treatment":"creative-led"}
+```
+
+The successful response envelope is unchanged. Only this opt-in emits v3 artDirection.treatment=creative-led, a validated recipe, and creativeContent version 1 (application-owned public facts, complete fact IDs and source-field UTF-16 offsets). Historical strict consumers should continue omitting treatment. Recipe-only or creative-content additions to legacy specifications fail validation. The provider receives fact IDs, never permission to replace factual clauses; the application binds original public text before semantic validation. Stored v1/v2/v3 without the new treatment use the historical renderer path. New opt-in specs require the updated renderer, not historical deployed clients.
+
+All output still requires browser font/fitting verification. The 1.5 MB HTML, 2 MB response and existing read/time/correction limits are unchanged. There is no server browser, new provider call per format or implicit inference activation. Ledger/linguistic checks remain bounded heuristics, not semantic truth certification. See M6A_REPORT.md for actual evidence and limitations.
+
 ## Current M5-B HTML integration
 
 `POST /api/render` accepts the same strict request as `/api/generate`: `{topic,taste,details?,mode?}`. Tastes are bold-street, minimal-swiss and festive-pop; mode is auto (default) or local. Topic/details each ≤1200 characters, combined ≤2200; JSON body ≤12288 bytes. Unknown fields, including model/configuration overrides, are rejected. It invokes the existing campaign engine once, then serializes the same pure native artwork used by the studio.

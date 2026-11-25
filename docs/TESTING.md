@@ -1,5 +1,17 @@
 # Verification and evidence
 
+## Targeted M6-A correction verification
+
+The correction uses a fresh `test-results/m6a-correction-20261125-01` directory and preserves the bounded live diagnostic unchanged. `tests/m6a-corrections.spec.ts` adds 12 generalizable interpretation/CTA/control/replay cases; `tests/m6a-correction-artwork.spec.ts` adds five actual four-format browser/export cases. The exact synthetic retained plan is pinned in `tests/fixtures/m6a-retained-provider.json`; `evaluation/m6a-correction-corpus.ts` stays outside production rules. Existing 130 regression cases and their source assertions are retained. Full commands, results and any retained intermediate failures are in [M6A_CORRECTION_REPORT.md](M6A_CORRECTION_REPORT.md).
+
+Replay means previously received structured Gemini content revalidated and rendered now with **zero fresh provider requests**. Local output, replay rendering, original failed native screenshots and actual downloads have separate labels. PNG threshold remains 0.015 at delta >20; portable/API HTML remains 0.001 at delta >8. Controlled native compositor trials isolate the reproduced raster difference without changing those thresholds, supplied facts or font floors. Geometry/export verification does not establish owner artistic acceptance.
+
+## M6-A verification candidate
+
+All new runs use fresh named directories under test-results/m6a-*; historical M0–M5 evidence is untouched. tests/m6a-intelligence.spec.ts covers public-fact interpretation, negative statements, references/relationships, source ranges, incomplete input, candidate safety and mock provider/cache paths. tests/m6a-artwork.spec.ts exercises actual studio generation, real PNG/HTML/JSON downloads and existing HTTP HTML across the separate evaluation/m6a-corpus.ts. tests/m6a-integration.spec.ts checks actual no-art/hostile/incomplete/refused output and recipe/edit/revision/refusal behavior. No live model is used.
+
+Compare actual PNG against native DOM at unchanged changed-pixel ratio <=0.015 (channel delta >20), and offline/API HTML raster against native DOM <=0.001 (delta >8). Exact native dimensions, geometry readiness and artistic quality remain distinct. Creative-led native-pixel tracking addresses a retained em-tracking portability reproduction; historical typography/fitting is unchanged. Final commands/counts, failures and evidence paths are recorded in M6A_REPORT.md. These local Windows/Chrome checks establish neither cross-device equivalence nor final owner artistic acceptance.
+
 ## M5-B release candidate — 25 November 2026
 
 **92 passed (1.6 minutes)** against the actual production build in test-results/m5-full-production-01: all original 77 cases remain byte-unchanged, plus 15 focused M5 cases. Final lint/typecheck and production build pass; a separate final development-mode focused run passes **15/15 (20.3 seconds)** in m5-dev-final-01. The final build has no whole-workspace tracing warning. All testing is quota-free; opt-in provider proof uses an injected synthetic mock, never live Gemini.

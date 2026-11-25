@@ -1,5 +1,9 @@
 # Create Studio — M5-B release candidate
 
+The subsequent [M6-A targeted correction candidate](docs/M6A_CORRECTION_REPORT.md) addresses public-copy leakage, CTA validation, density-aware composition and actual PNG fidelity. Its local [before/after review gallery](test-results/m6a-correction-20261125-01/index.html) includes a clearly labelled quota-free replay of a retained real provider response. It is not fresh Gemini success or owner artistic acceptance; local inference remains disabled.
+
+M6-A1/A2 is an uncommitted local review candidate. In the existing studio choose **Planning approach → Creative-led · fact-led recipes**, enter an actual brief, choose a taste and use the local planner. The Standard path and default HTTP contracts remain available. The new path separates public facts from planning directions and supports four locally selectable composition recipes through the same measured renderer and exports. [Implementation, actual evidence and limitations](docs/M6A_REPORT.md); [opt-in HTTP request](docs/API.md). This does not authorize or establish public release, live AI quality, final licensing clearance or owner artistic acceptance.
+
 [M4 acceptance](docs/M4_ACCEPTANCE.md) records formal owner acceptance, verified scope and remaining release gates. The original [focused correction](docs/M4_CORRECTION.md) and [live verification](docs/M4_LIVE_VERIFICATION.md) are preserved historical reports: three provider calls, zero accepted fresh Gemini plans and two fallback results; the subsequent correction made zero live calls. Acceptance includes this reliability limitation.
 
 [M4 report](docs/M4_REPORT.md) records actual before/after artwork, native exports, compatible v3 extensions, fact-guard findings, the selective asset trial and remaining limits. [Current actual M4 DesignSpec](docs/example-design-spec-m4.json) is a local-planner robotics fixture; earlier v1/v2/v3 examples remain valid.

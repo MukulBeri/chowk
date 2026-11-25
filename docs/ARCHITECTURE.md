@@ -1,5 +1,21 @@
 # Architecture
 
+## Targeted M6-A correction
+
+The correction retains the same v3 ledger, schemas, renderer, fitter and export functions. Input-field plurals and bounded style instructions stay metadata; named appositions provide concise titles while their complete source clauses remain immutable facts. Generic title-cased CTA actions are distinguished from names only in the CTA field; a separate safe semantic diagnostic rejects unsupported or contradicted registration actions. No fact guard, repair budget or renderer compatibility gate is removed.
+
+Creative spacing now affects native margins/gaps; type-led adaptation releases artwork. Moderate density no longer mandates Dossier. Taste/recipe/format rules allocate bounded square visual regions and independent, contiguous factual columns (up to three on dense wide canvases); every complete clause stays in DOM reading order. The existing tiles visual gains an original abstract arrangement/study treatment, not a verified product depiction. Portrait Manifesto titles remain stacked; wide titles use an intentional horizontal arrangement.
+
+Creative artboards use a compositor surface (`will-change: transform`) to align native text antialiasing with SVG-image PNG export in tested Chrome. There is no geometric transform, font reduction, changed comparison tolerance or replacement export target. The canonical quality fitter and legacy render branches remain unchanged. This is a measured browser-specific correction, not a cross-device fidelity guarantee. Details and retained controlled trials are in [the correction report](M6A_CORRECTION_REPORT.md).
+
+## M6-A additive creative path
+
+The explicit creative-led request reuses the existing generation engine and v3 renderer. creative-brief.ts classifies bounded English clauses and creates a frozen public fact ledger with stable source IDs. creative-planner.ts derives contextual subject/entity copy; validatePlan binds all public clauses from the ledger, checks complete fact references and rejects reconstructed numeric relationships or recognized negative reversals in addition to the existing safeguards. creativeContent is optional only at the schema boundary and mandatory for this treatment. Default and historical contracts are preserved.
+
+creative-layout.ts resolves manifesto, signboard, editorial and dossier into the existing ResolvedLayout roles. AdvancedPosterMarkup selects trusted lab-derived CreativeVisual JSX and recipe-specific hierarchy; existing fitAndInspect, three correction passes, canonical refs, readiness, PNG/HTML export and HTTP renderer remain authoritative. No second engine or v4 renderer exists. candidates.ts ranks at most three locally derived composition alternatives from one validated base, preserves public content/source, and includes the currently selected recipe. This is neither independent AI concept generation nor persistent history.
+
+The studio's opt-in Planning approach participates in draft/stale-response state. Recipe selection, palette and copy edits commit a new revision; immutable public clauses cannot be removed by the copy editor. Topic edits do not regenerate a fact ledger: regenerate for changed source facts. Exports remain locked to measured applied revisions. Further frontend work should consume these same contracts instead of mounting duplicate canonical artboards.
+
 ## M5-B shared HTML integration and release controls
 
 The accepted M4 creative engine, native dimensions, quality thresholds, SVGs, registry, fonts and export implementation remain the baseline. Pure AdvancedPosterMarkup and LegacyPosterMarkup are extracted from the existing components; measured React wrappers retain refs, lifecycle, callbacks and revision behavior. /api/render calls the existing engine once and renders those same components using installed react-dom/server.edge. It never accepts arbitrary specs/markup/scripts from the caller or implements another layout engine. Historical v1/v2 render paths remain valid.

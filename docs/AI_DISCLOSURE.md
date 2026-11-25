@@ -1,5 +1,17 @@
 # AI and API disclosure
 
+## Subsequent M6-A diagnostic and targeted correction — 25 November 2026
+
+The bounded experiment used exactly four actual `gemini-3.5-flash-lite` requests: three HTTP 503 responses and one structurally valid plan rejected semantically, zero accepted fresh plans. No repair reached the provider. The successful HTTP response reported 1,935 input / 638 output / 2,573 total tokens; thinking usage, the other responses' usage and whole-experiment cost remain unknown. Free tier/key-project association were privately owner-confirmed. Original journals, rejected plan and artwork remain unchanged under `test-results/m6a-live-evaluation-20261125-01`.
+
+The targeted correction makes **zero additional provider requests**. The exact retained plan now passes corrected CTA validation and is rendered/exported only as a clearly labelled quota-free replay. This does not retroactively change its original rejection or establish fresh model acceptance, reliability or artistic quality. Local generation remains deterministic; the reused tiles geometry is original authored abstract art, not AI imagery. No model/key/billing/dependency change occurred; inference remains disabled. See [correction findings and limits](M6A_CORRECTION_REPORT.md). The initial candidate's zero-call statements below describe the earlier pre-diagnostic implementation phase.
+
+## M6-A quota-free candidate
+
+M6-A1/A2 uses zero live provider calls. Actual local production generation, downloaded native PNGs, portable HTML and JSON are separate from injected mock provider paths and manually selected composition alternatives. Creative Lab 1/2 are manually authored research, not historical autonomous AI success or production exports. Only original lab geometry/illustration ideas and ranking principles were selectively adapted. No new provider, model, key, billing, external asset or dependency is introduced. GEMINI_ENABLED stays false in local verification; protected hosted inference was not activated or retested.
+
+The existing Gemini structured prompt/schema is prepared for an explicit creative-led treatment, contextual copy and complete application-owned fact references. Its real acceptance, quality, latency, cost and repair behavior remain unverified until separate authorized inference. Existing one-repair, timeout, request budget, cache/concurrency and truthful fallback paths remain. The cache key separates default and opt-in requests. A mock labelled gemini verifies orchestration only, never real model quality. The fact ledger strengthens evaluated preservation but cannot establish general semantic truth or eliminate hallucinations. All earlier actual live failures/measurements remain unchanged.
+
 ## Current M5-B runtime disclosure — 25 November 2026
 
 M0–M4 are accepted at cad6bfcc3fb1da985ffd804be00afd6fc910f34a. M5-B is a quota-free release candidate, not a deployed or freshly AI-verified release. **Zero new live provider calls.** Test opt-in behavior uses an injected synthetic mock, clearly labelled; actual studio, curl and returned-HTML evidence use independent local planning with inference disabled. No current Gemini acceptance, token cost or public reliability result is inferred from these tests. Historical M1/M2 live successes and M4's three calls/zero accepted fresh plans remain unchanged below. The subsequent M4 public-copy correction is accepted; the older live-section "awaits correction" wording describes that earlier observation, not the current code.

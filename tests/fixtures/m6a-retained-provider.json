@@ -1,0 +1,73 @@
+{
+  "provenance": "Exact structured plan from actual rejected Gemini response, call 4, 25 November 2026. Quota-free replay only; not fresh inference.",
+  "originalObservationSha256": "53ad20d8e235e91a20b6ebfba2ac5b2adb3e2b1281ab25d859cb2bbfa1f26c44",
+  "request": {
+    "id": "paper-to-practice",
+    "topic": "Promote Paper to Practice, an introductory research-reading workshop.",
+    "details": "15 December 2026, 10 AM to 12:30 PM IST, Seminar Room 4. Open to first-year undergraduate students. 24 seats. Registration fee ₹50. Bring a notebook. No prior research experience required. No certificates will be issued. The original venue was Seminar Room 2, but it has changed to Seminar Room 4.",
+    "taste": "minimal-swiss",
+    "treatment": "creative-led"
+  },
+  "plan": {
+    "interpretation": {
+      "objective": "Promote the introductory research-reading workshop to eligible students.",
+      "audience": "First-year undergraduate students",
+      "concept": "A structured minimalist Swiss manifesto inviting students to an introductory research-reading workshop.",
+      "assumptions": [
+        "The event targets enrolled first-year undergraduates."
+      ],
+      "missingInformation": [
+        "Contact email or registration link is not specified."
+      ]
+    },
+    "taste": "minimal-swiss",
+    "campaign": {
+      "eyebrow": "Workshop",
+      "headline": "Paper to Practice",
+      "supportingText": "15 December 2026, 10 AM to 12:30 PM IST, Seminar Room 4.\nOpen to first-year undergraduate students.\n24 seats.\nRegistration fee ₹50.\nBring a notebook.\nNo prior research experience required.\nNo certificates will be issued.\nThe original venue was Seminar Room 2, but it has changed to Seminar Room 4.",
+      "cta": "Register Now"
+    },
+    "palette": {
+      "background": "#f2efe7",
+      "ink": "#202b28",
+      "accent": "#ae321e",
+      "secondary": "#e3dfd2"
+    },
+    "typography": {
+      "family": "neutral-sans",
+      "headlineScale": 1,
+      "case": "sentence"
+    },
+    "composition": {
+      "layout": "swiss-grid",
+      "spacing": 60
+    },
+    "decoration": {
+      "motif": "orbit",
+      "density": 2,
+      "illustration": "none"
+    },
+    "rationale": "Using the minimal-swiss taste with swiss-grid layout and swiss-paper palette, this creative-led manifesto presents the workshop details cleanly without embellishment, maintaining all factual constraints including negative facts and venue updates.",
+    "artDirection": {
+      "variant": "swiss-grid",
+      "palette": "swiss-paper",
+      "visual": "none",
+      "emphasis": "display",
+      "information": "auto",
+      "adaptation": "balanced",
+      "recipe": "manifesto",
+      "treatment": "creative-led"
+    },
+    "factIds": [
+      "f-topic-0",
+      "f-details-0",
+      "f-details-57",
+      "f-details-100",
+      "f-details-110",
+      "f-details-132",
+      "f-details-150",
+      "f-details-189",
+      "f-details-221"
+    ]
+  }
+}
