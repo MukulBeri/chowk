@@ -1,0 +1,333 @@
+{
+  "date": "2026-11-25",
+  "scope": "M5-D archival/closure candidate only; no hosted rerun or deployment",
+  "acceptedCommit": "e894bc1dca1af5b4a82e2b65d4721f16556827fc",
+  "acceptedRuntimeFingerprint": "e52a30ea813e2d020cee173798797458b8802011fbef7a54496fcf0dabbaefac",
+  "ownerAuthority": "Owner consolidated M5-D closure brief; exact original archived under 05_Development-History/M5/Owner-Briefs/m5d-closure.txt",
+  "ownerReported": {
+    "project": "logic-forge1/yarc-create",
+    "successfulDeploymentId": "AWXpNUxY37mqbV7EV4Qz1pboQ278",
+    "productionUrl": "https://yarc-create.vercel.app",
+    "successfulTime": "25 November 2026, approximately 15:07 IST",
+    "repositoryPrivate": true,
+    "protectionEnabled": true,
+    "geminiDisabled": true,
+    "providerActivationAuthorized": false,
+    "publicReleaseAuthorized": false,
+    "earlierFailedAttempts": {
+      "count": 3,
+      "reportedCauses": [
+        "Node.js configuration",
+        "temporary diagnostic script problems"
+      ],
+      "attemptIds": null,
+      "exactErrorLogsAvailableLocally": false
+    },
+    "targetBuild": {
+      "node": "24.22.3",
+      "platform": "Linux",
+      "architecture": "x64",
+      "glibc": "2.34",
+      "next": "16.4.6",
+      "sharp": "0.35.5",
+      "sharpLinuxAddon": "0.35.5",
+      "sharpLibvipsPackage": "1.3.4",
+      "installedPackages": 350,
+      "compileTypecheckStaticGeneration": "Successful",
+      "discoveredNextTraceFiles": 8,
+      "relevantFontNoticeHashes": "Collected in owner-reviewed diagnostics; raw hosted trace/hash outputs not locally supplied",
+      "environmentFilesInInspectedTraces": 0
+    },
+    "deployedResources": {
+      "functions": 7,
+      "runtimeMajor": "Node.js 24.x",
+      "functionRuntimePatch": "Not independently established",
+      "region": "IAD1",
+      "staticAssets": 30,
+      "finalFunctionPackageComposition": "Unestablished"
+    },
+    "hostedChecks": [
+      "Anonymous production, branch, specific deployment and notices access blocked",
+      "Authenticated studio loads",
+      "Local generation using three tastes and four formats",
+      "Headline editing, composition and palette changes",
+      "Four downloaded native PNGs",
+      "Portable HTML opens locally with fonts/styles",
+      "V3 JSON parses",
+      "Hosted notices return license text",
+      "Basic mobile rendering at 400x642",
+      "Resources inspected"
+    ],
+    "apiRender": {
+      "httpStatus": 200,
+      "responseFields": 6,
+      "sizeRecords": 4,
+      "htmlBytes": 625979,
+      "policy": "disabled",
+      "fallbackReason": "requested-local",
+      "model": null,
+      "providerAttempts": 0,
+      "returnedHtmlChromeOpen": true,
+      "readinessPromise": "window.yarcCampaignReady",
+      "ready": true,
+      "formats": 4,
+      "issues": [],
+      "corrections": [],
+      "allExportReady": true
+    },
+    "cleanup": {
+      "removedFromFutureConfiguration": [
+        "YARC_DIAG",
+        "YARC_DIAG_V2"
+      ],
+      "savedBuildCommand": "Owner reports retained Node/inference/telemetry/API-key guard followed by npm run build; exact final command string not locally exported",
+      "deploymentAfterCleanup": false,
+      "qualification": "Already deployed environment/build is not retroactively changed"
+    },
+    "downloadsOrganization": {
+      "identifiedDownloads": 37,
+      "newArchivedFiles": 32,
+      "verifiedRedundantDownloads": 5,
+      "downloadsMovedToRecycleBin": 37,
+      "qualification": "Owner-reported completed operation; not repeated and no deleted source recovered"
+    }
+  },
+  "independentlyInspected": {
+    "repositoryIdentity": "main at accepted commit; clean starting tree/index",
+    "hostedLocalArtifacts": [
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-campaign.html",
+        "bytes": 595804,
+        "sha256": "7676e4e2eadcba27c9005efe11a957302c62e14ecf3e3e9d765e9d90270a391c",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "html": {
+          "utf8Bytes": 595804,
+          "dataFontFaces": 5,
+          "embeddedFonts": true,
+          "hasReadinessPromise": false,
+          "rawMarkupRootOccurrences": 4,
+          "activeDomRootCountIndependentlyMeasured": false
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-design-spec.json",
+        "bytes": 1282,
+        "sha256": "58fabb4dc6e815cbdc8720a50263549093989513c50b0812eec3b89304e55612",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "json": {
+          "parsed": true,
+          "version": 3,
+          "taste": "bold-street",
+          "provenance": "manual-input"
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-instagram-portrait-1080x1350.png",
+        "bytes": 184383,
+        "sha256": "cf461f0dbe87fe2641828eb9bf2e200e7f19936c9bd548c8b5f5e30a6c72b7b5",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "png": {
+          "width": 1080,
+          "height": 1350
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-instagram-square-1080x1080.png",
+        "bytes": 155640,
+        "sha256": "53d77a9e5054fcebd8885cdfd679312b6773d122b009d82318265ec5571f58ea",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "png": {
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-linkedin-landscape-1910x1000.png",
+        "bytes": 194918,
+        "sha256": "45270d4b0015099c480a23510ac64ba5e20f184d6e73c8c73120dbee39682370",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "png": {
+          "width": 1910,
+          "height": 1000
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/Campaign-Exports/bold-street-youtube-thumbnail-1280x720.png",
+        "bytes": 121802,
+        "sha256": "0bffeb4aa62958443ef52cc0df0d1192f27c58413698ae32afa97c2e7dff709a",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "png": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      {
+        "archivePath": "04_Project-Evidence/M5/M5-D-Deployment/M5-D-Hosted-API-Render.html",
+        "bytes": 625979,
+        "sha256": "c91d8957fab5e913d8d2d2084b3f82ea6d4cf6cb3d135f62695e2ba0cb3acca4",
+        "origin": "Owner-reported hosted export; local bytes inspected independently",
+        "html": {
+          "utf8Bytes": 625979,
+          "dataFontFaces": 5,
+          "embeddedFonts": true,
+          "hasReadinessPromise": true,
+          "rawMarkupRootOccurrences": 12,
+          "activeDomRootCountIndependentlyMeasured": false
+        }
+      }
+    ],
+    "sourceCopyMappingsVerified": 128,
+    "newCopiedFilesBeforeClosureControls": 121,
+    "reusedIdenticalMappings": 7,
+    "preexistingM5FilesPreserved": 25,
+    "configuredCredentialMatchesInSelectedCopySources": 0,
+    "hostedAuthenticationOrHttpsRequestsRepeated": false,
+    "browserReadinessRerun": false,
+    "strictSchemaRevalidationRerun": false,
+    "pngCheckScope": "PNG signature/IHDR dimensions, not a new hosted generation or universal raster-fidelity test"
+  },
+  "existingResearchContinuityReferences": [
+    {
+      "archivePath": "05_Development-History/Continuity/YARC_Fellowship_8_Master_Continuity_Handoff.md",
+      "bytes": 58657,
+      "sha256": "940156fff7f9f4bebdc4485772ff169666688dfcbe5cc35faa208a08d7cf1a8c",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Historical pre-deployment coordination record, not current deployment authority"
+    },
+    {
+      "archivePath": "05_Development-History/Continuity/YARC_Fellowship_8_Opening_Prompt.md",
+      "bytes": 4439,
+      "sha256": "5261964c93a0cc8c602fb690da444b7b52cfe82255b9858eff6b9b57571bc0bd",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Historical pre-deployment coordination record, not current deployment authority"
+    },
+    {
+      "archivePath": "05_Development-History/Continuity/YARC_Fellowship_8_Pending_Work_Register.md",
+      "bytes": 4481,
+      "sha256": "1a096870e469277067d79797573ea7091451ac1949978b5290f57cfdc04553fc",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Historical pre-deployment coordination record, not current deployment authority"
+    },
+    {
+      "archivePath": "05_Development-History/Continuity/YARC_Fellowship_8_Attachment_Checklist.md",
+      "bytes": 2667,
+      "sha256": "b7a84b4fa623c6963fb16d06a91c825b946b94f4c82e0b00456b8abaabc169bf",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Historical pre-deployment coordination record, not current deployment authority"
+    },
+    {
+      "archivePath": "05_Development-History/Continuity/YARC_Fellowship_8_Consolidated_Evidence.pdf",
+      "bytes": 5054004,
+      "sha256": "d02caf8b04e6d0a6ee4edc481603e302d56e42575c40aec7ded9f75240933a23",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Existing pre-deployment continuity companion; pages not independently extracted or reviewed"
+    },
+    {
+      "archivePath": "05_Development-History/ChatGPT-Creative-Research/YARC_Creative_Lab.zip",
+      "bytes": 6039191,
+      "sha256": "cc1111fc28f8f9888eb858a55d1babf1984d5864c018772c92ebe98001997382",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Received research archive; no integration or final design approval inferred"
+    },
+    {
+      "archivePath": "05_Development-History/ChatGPT-Creative-Research/YARC_Creative_Lab_2.zip",
+      "bytes": 5292218,
+      "sha256": "73e93ac00f093f0d7145271b55aa461099fa49f762149e6830b0fb18784b8be6",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Received research archive; no integration or final design approval inferred"
+    },
+    {
+      "archivePath": "05_Development-History/Claude-Research/YARC_Branding_Research_Checkpoint_1.zip",
+      "bytes": 1022921,
+      "sha256": "26794aa1f7fc3e8729b122f7ed9a7e7ae5128d45fc8d1980843e53733eebeac5",
+      "action": "Preserved in place; no duplicate copy",
+      "qualification": "Received research archive; no integration or final design approval inferred"
+    }
+  ],
+  "unavailableOrUnreproduced": [
+    "Original full standalone M5-A chat audit; condensed historical audit-baseline.json and existing continuity summary available",
+    "Raw logs, screenshots, IDs and exact errors for the three failed Vercel attempts",
+    "Raw successful Vercel diagnostic output, eight hosted trace files and hash list, resource inventory export",
+    "Hosted response headers and full six-field API JSON envelope",
+    "Screenshots of current protection/environment/cleanup/mobile states supplied only to the owner review conversation, not locally identified as separate current evidence",
+    "Final Vercel function-package composition",
+    "Existing consolidated continuity PDF pages not extracted; not used as proof of later hosted checks"
+  ],
+  "remainingConditions": [
+    "Final package-level licensing and distribution clearance",
+    "Evaluator-accessible release",
+    "Public release authorization",
+    "Final repository visibility and original-code licensing decisions",
+    "Any separately approved inference activation and verification",
+    "OneDrive cloud synchronization, unverified",
+    "Final fellowship submission, not completed by this protected baseline"
+  ],
+  "m6Concerns": {
+    "authority": "Owner-observed hosted product defects; no independent artistic review rerun",
+    "priorities": [
+      "Brief repetition as public advertising copy",
+      "Audience and style/planning instructions printed on artwork",
+      "Negative planning constraints leaking into visible copy",
+      "Insufficient composition differentiation",
+      "Weak subject-aware visuals",
+      "Branding and professional studio/frontend development"
+    ],
+    "safeguard": "Separate instructions from publishable content while preserving legitimate supplied negative facts. No broad deletion of negatives or weakening factual/export safeguards.",
+    "research": "Creative Labs and Claude branding retained as research; no code/design integration or final product-quality acceptance inferred",
+    "implementationAuthorized": false
+  },
+  "newProviderCalls": 0,
+  "newDeployment": false,
+  "applicationSourceModified": false,
+  "gitCommitOrPush": false,
+  "cloudSyncVerified": false,
+  "ownerAcceptance": {
+    "date": "2026-11-25",
+    "status": "formally accepted within protected engineering baseline scope",
+    "authority": "Explicit owner acceptance and local documentation-only checkpoint authorization in this conversation",
+    "ownerReview": [
+      "Closure report and integrity manifest",
+      "Independent report SHA-256 verification",
+      "Manifest counts and unique paths",
+      "Recorded source/destination consistency"
+    ],
+    "historicalEvidenceUnchanged": true,
+    "originalArchivedCandidates": [
+      {
+        "archivePath": "05_Development-History/M5/Reports/M5D_CLOSURE_REPORT.md",
+        "bytes": 9414,
+        "sha256": "56bc6c08089842a96f31b13693800a9694fa00f853e4e1b7f76a8907828747a6"
+      },
+      {
+        "archivePath": "05_Development-History/M5/Verification/M5-D/closure-evidence.json",
+        "bytes": 12795,
+        "sha256": "dffe0387262fbcf925407f99dc33abfe9324c6ce1ab4a2857aa763e459e88943"
+      }
+    ],
+    "archiveManifest": {
+      "archivePath": "05_Development-History/M5/Archive-Integrity-M5D-2026-11-25.json",
+      "sha256": "54398d53c165aeb3eb86b55a86d8bb823136804ca492d2d00e771e62b70e5736",
+      "modified": false
+    },
+    "recordingMethod": "Repository-only report addendum and additive ownerAcceptance field; archive remains the original closure candidate",
+    "doesNotAuthorize": [
+      "Public release or evaluator access",
+      "Final licensing/distribution clearance",
+      "Repository visibility or original-code license changes",
+      "Inference activation or provider configuration",
+      "Deployment/redeployment or Git push",
+      "Final product-quality acceptance or fellowship submission",
+      "M6 implementation"
+    ],
+    "remainingConditionsRetained": true,
+    "comprehensiveTestsRepeated": false,
+    "localCheckpoint": {
+      "approvedFiles": [
+        "docs/M5D_CLOSURE_REPORT.md",
+        "docs/evidence/m5d/closure-evidence.json"
+      ],
+      "message": "docs: record M5-D protected deployment verification and archival",
+      "pushAuthorized": false
+    }
+  }
+}
