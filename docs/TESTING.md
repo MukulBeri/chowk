@@ -1,5 +1,11 @@
 # Verification and evidence
 
+## Chowk M6-B/C integration
+
+The dedicated studio route moves from `/` to `/create`. Exactly 26 direct studio navigations in 12 existing test files were mechanically migrated; original behavioral assertions, native fidelity thresholds and all 147 accepted cases remain. `test-route-migration.json` records before/after hashes. `tests/chowk-frontend.spec.ts` adds 13 focused tests for route/branding/metadata, private handoff and unavailable/invalid session data, Explore filtering, actual three-taste/four-format downloads, focus/revision/export identity, supported manual controls, pending/error/reduced-motion animation, mobile keyboard/menu and runnable HTML readiness. No live evaluation config is executed.
+
+All evidence uses fresh `test-results/m6bc-20261125-01` subdirectories. Final executed commands/results, genuine desktop/mobile gallery, actual native downloads, failures and the updated runtime fingerprint are in [M6BC_REPORT.md](M6BC_REPORT.md). Earlier accepted reports/evidence are not overwritten. Optional Projects is omitted, so no restoration or cloud capability is claimed. Physical-device coverage and formal accessibility certification remain unestablished.
+
 ## Targeted M6-A correction verification
 
 The correction uses a fresh `test-results/m6a-correction-20261125-01` directory and preserves the bounded live diagnostic unchanged. `tests/m6a-corrections.spec.ts` adds 12 generalizable interpretation/CTA/control/replay cases; `tests/m6a-correction-artwork.spec.ts` adds five actual four-format browser/export cases. The exact synthetic retained plan is pinned in `tests/fixtures/m6a-retained-provider.json`; `evaluation/m6a-correction-corpus.ts` stays outside production rules. Existing 130 regression cases and their source assertions are retained. Full commands, results and any retained intermediate failures are in [M6A_CORRECTION_REPORT.md](M6A_CORRECTION_REPORT.md).

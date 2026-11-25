@@ -70,7 +70,7 @@ test("notices and low-risk security headers are delivered without changing font/
   for(const file of ['docs/licenses/NOTICES.txt','docs/licenses/NOTICE_SUPPLEMENT.txt','docs/licenses/Tabler-MIT.txt','public/fonts/OFL-anton.txt','public/fonts/OFL-inter.txt','public/fonts/OFL-fredoka.txt'])expect(text).toContain(readFileSync(file,'utf8'));
   for(const [header,value] of Object.entries({"x-content-type-options":"nosniff","x-frame-options":"DENY","referrer-policy":"strict-origin-when-cross-origin"}))expect(response.headers()[header]).toBe(value);
   expect(response.headers()['content-security-policy']).toContain("frame-ancestors 'none'");
-  await page.goto('/');await expect(page.getByRole('link',{name:'Licenses and notices'})).toBeVisible();
+  await page.goto('/create');await expect(page.getByRole('link',{name:'Licenses and notices'})).toBeVisible();
   await page.getByLabel('What are we creating for?').fill('Campus poetry circle.');await page.getByRole('button',{name:'Generate campaign'}).click();await expect(page.getByRole('status')).toContainText('Server-side AI is disabled; no provider request.');await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
   await page.screenshot({path:info.outputPath('actual-disabled-studio.png'),fullPage:true});writeFileSync(info.outputPath('notice-response.txt'),text);
 });
@@ -80,7 +80,7 @@ for(const taste of TASTES)test(`HTTP HTML ${taste}: canonical artwork, native ex
   expect(result.sizes).toEqual(FORMATS);expect(result.rendering.measuredOnServer).toBe(false);expect(result.rendering.state).toBe('requires-browser-verification');expect(result.metadata.attempts).toEqual([]);expect(designSchema.safeParse(result.spec).success).toBe(true);
   const html=info.outputPath(`${taste}.html`);writeFileSync(html,result.html);writeFileSync(info.outputPath(`${taste}-spec.json`),JSON.stringify(result.spec,null,2));
   const consumer=await context.newPage();let external=0;const errors:string[]=[];consumer.on('pageerror',e=>errors.push(e.message));await consumer.route(/https?:\/\//,r=>{external++;return r.abort();});await consumer.goto(pathToFileURL(html).href);const measured=await quality(consumer);expect(measured.state).toBe('ready');expect(measured.formats).toHaveLength(4);expect(external).toBe(0);expect(errors).toEqual([]);
-  await page.goto('/');await page.getByLabel('What are we creating for?').fill(robotics.topic);await page.getByLabel('Optional details').fill(robotics.details);await page.getByRole('radio',{name:PRESETS[taste].name,exact:true}).check();await page.getByRole('button',{name:'Use local planner'}).click();await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
+  await page.goto('/create');await page.getByLabel('What are we creating for?').fill(robotics.topic);await page.getByLabel('Optional details').fill(robotics.details);await page.getByRole('radio',{name:PRESETS[taste].name,exact:true}).check();await page.getByRole('button',{name:'Use local planner'}).click();await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
   const baselineRoot='test-results/m4-artwork-source-final-04';const baseline=readdirSync(baselineRoot).find(dir=>dir.startsWith('m4-artwork-robotics-')&&readFileSync(`${baselineRoot}/${dir}/evidence.json`,'utf8').includes(`"taste": "${taste}"`))!;
   const outputs=[];await consumer.setViewportSize({width:2000,height:1450});
   for(const format of FORMATS){
@@ -113,7 +113,7 @@ for(const item of [
   if(item.id==='environment'){expect(await page.locator('[data-poster]').first().innerText()).not.toContain('No supplied');expect(result.interpretation.missingInformation).toContain('No supplied statistics, organization name or event date.');}
   if(item.id==='impossible'){for(const format of measured.formats){expect(format.exportReady).toBe(false);expect(format.issues).toContain('TEXT_OVERFLOW');}expect(await page.locator('[data-poster] h2').first().textContent()).toBe('W'.repeat(220));}
   if(item.id==='dense-overload'){
-    await studio.goto('/');await studio.getByLabel('What are we creating for?').fill(item.topic);await studio.getByLabel('Optional details').fill(item.details);await studio.getByRole('radio',{name:'Minimal Swiss',exact:true}).check();await studio.getByRole('button',{name:'Use local planner'}).click();await expect(studio.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
+    await studio.goto('/create');await studio.getByLabel('What are we creating for?').fill(item.topic);await studio.getByLabel('Optional details').fill(item.details);await studio.getByRole('radio',{name:'Minimal Swiss',exact:true}).check();await studio.getByRole('button',{name:'Use local planner'}).click();await expect(studio.locator('[data-poster][data-ready="true"]')).toHaveCount(4);
     for(const format of measured.formats){const canonical=studio.locator(`[data-poster="${format.id}"]`);expect(JSON.parse(await canonical.getAttribute('data-quality')??'[]')).toEqual(format.issues);for(const negative of ['No certificates.','Registration is not open yet.','Materials will not be supplied.'])expect(await page.locator(`[data-poster="${format.id}"]`).textContent()).toContain(negative);}
   }
   if(item.id==='camera')expect(await page.locator('details').last().locator('pre').textContent()).toBe(readFileSync('docs/licenses/Tabler-MIT.txt','utf8'));

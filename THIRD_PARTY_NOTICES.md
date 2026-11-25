@@ -1,5 +1,9 @@
 # Third-party software, assets and notices
 
+## Chowk M6-B/C interface assets
+
+The original owner-approved refined Chowk mark and primary/reversed wordmark come from the retained branding checkpoint, not a newly acquired third-party asset service. The wordmark is outlined from the existing OFL Anton font, as recorded in the original branding guidance. Existing Anton/Inter/Fredoka files, copyright notices and OFL texts remain unchanged and available through `/api/notices`; no new font is installed. The symbol-only SVG is byte-identical to the approved favicon source. The ICO and social metadata card are derived locally from these approved assets. Gallery WebP previews are proportionally resized, actual local-planner PNG outputs; no prototype illustrations or external imagery are presented as autonomous campaign results. Exact source/derived hashes and conversion method are recorded in the M6-B/C evidence and report. This does not establish trademark/domain or final target-distribution clearance. No repository license is changed.
+
 ## M5-B distribution review — 25 November 2026
 
 Browser recipients can open /api/notices from the studio. It serves the original complete [notice collection](docs/licenses/NOTICES.txt), new [exact-version supplement](docs/licenses/NOTICE_SUPPLEMENT.txt), pinned Tabler MIT and all three approved OFL texts. No original notice/font/camera record was modified. New API HTML embeds its required OFL and conditional camera notice; tests inspect their exact displayed text.

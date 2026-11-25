@@ -79,7 +79,7 @@ test("replay saved pre-correction inputs separately from historical measured evi
 
 test("actual corrected local API, studio and four native exports preserve facts and warn about missing input", async ({ page }, testInfo) => {
   const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
-  await page.goto("/"); await page.getByLabel("What are we creating for?").fill(input.topic);
+  await page.goto("/create"); await page.getByLabel("What are we creating for?").fill(input.topic);
   await page.getByLabel("Optional details").fill(input.details); await page.getByRole("radio", { name: /Minimal Swiss/ }).click();
   const responseEvent = page.waitForResponse((response) => response.url().endsWith("/api/generate"));
   await page.getByRole("button", { name: "Use local planner" }).click();

@@ -1,5 +1,13 @@
 # AI and API disclosure
 
+## Chowk M6-B/C frontend candidate
+
+This integration makes zero live provider calls and keeps local inference disabled. The six curated gallery campaigns and their optimized previews come from actual retained local-planner exports, with no provider replay presented as fresh art. Actual new studio generation/export checks are local; held-response/error animation checks are explicitly mocked and do not measure provider performance. The historical M6-A experiment remains four actual calls, three HTTP503s, one rejected plan and zero accepted fresh plans; subsequent corrected replay does not alter that history.
+
+Claude contributed the approved original branding, prototype direction and handoff research; the prototype's simulated generation/export/persistence/provider states were not adopted as working logic. The mark/wordmark preserve original geometry (wordmark outlined from the existing OFL Anton font). ChatGPT contributed research/architecture/review/coordination; Codex implemented and verified the frontend. Runtime Gemini planning, authored procedural art, deterministic local results and retained-response replay retain their own provenance.
+
+Brief handoff is one-shot same-origin session storage or transient browser memory, never URL parameters or analytics. No accounts, cloud projects or social publishing are activated. The expanded product roadmap includes these and additional models/generated assets, but service activation, inference budgets, dependencies, billing and subsequent implementation need separate approval. No paid service is authorized. Public deployment/access, final distribution clearance and metadata/domain qualification remain release gates.
+
 ## Subsequent M6-A diagnostic and targeted correction — 25 November 2026
 
 The bounded experiment used exactly four actual `gemini-3.5-flash-lite` requests: three HTTP 503 responses and one structurally valid plan rejected semantically, zero accepted fresh plans. No repair reached the provider. The successful HTTP response reported 1,935 input / 638 output / 2,573 total tokens; thinking usage, the other responses' usage and whole-experiment cost remain unknown. Free tier/key-project association were privately owner-confirmed. Original journals, rejected plan and artwork remain unchanged under `test-results/m6a-live-evaluation-20261125-01`.

@@ -82,7 +82,7 @@ test("measured sibling collisions and obstructing art are rejected despite z-ind
 
 for(const taste of TASTES)test(`approved camera/${taste}: actual native four-format and portable notice`,async({page},info)=>{
   expect(createHash("sha256").update(readFileSync("docs/licenses/Tabler-MIT.txt")).digest("hex")).toBe(tabler.license.sha256);
-  await page.goto("/");await page.getByLabel("What are we creating for?").fill("Photography workshop for students.");await page.getByLabel("Optional details").fill("No supplied date, venue or fee.");await page.getByRole("radio",{name:new RegExp(PRESETS[taste].name)}).click();
+  await page.goto("/create");await page.getByLabel("What are we creating for?").fill("Photography workshop for students.");await page.getByLabel("Optional details").fill("No supplied date, venue or fee.");await page.getByRole("radio",{name:new RegExp(PRESETS[taste].name)}).click();
   const response=page.waitForResponse(r=>r.url().endsWith("/api/generate"));await page.getByRole("button",{name:"Use local planner"}).click();const result=await(await response).json();expect(result.metadata.attempts).toEqual([]);expect(result.spec.artDirection.visual).toBe("camera");
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);await expect(page.locator('[data-asset="tabler-camera"]')).toHaveCount(4);
   for(const f of FORMATS){const event=page.waitForEvent("download");await page.getByRole("button",{name:`Export ${f.name} PNG`,exact:true}).click();const file=info.outputPath(`camera-${taste}-${f.id}.png`);await(await event).saveAs(file);const b=readFileSync(file);expect([b.readUInt32BE(16),b.readUInt32BE(20)]).toEqual([f.width,f.height]);}
@@ -92,7 +92,7 @@ for(const taste of TASTES)test(`approved camera/${taste}: actual native four-for
 });
 
 test("whole-word headline fitting keeps expressive intact and refuses an impossible unbroken token",async({page},info)=>{
-  await page.goto("/");await page.getByLabel("What are we creating for?").fill("Premium perfume campaign with a refined, understated mood.");await page.getByRole("radio",{name:"Minimal Swiss",exact:true}).check();await page.getByRole("button",{name:"Use local planner"}).click();
+  await page.goto("/create");await page.getByLabel("What are we creating for?").fill("Premium perfume campaign with a refined, understated mood.");await page.getByRole("radio",{name:"Minimal Swiss",exact:true}).check();await page.getByRole("button",{name:"Use local planner"}).click();
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   const words=await page.locator('[data-poster] h2').evaluateAll(nodes=>nodes.map(node=>{const text=node.firstChild!;const index=text.textContent!.indexOf("expressive");const range=document.createRange();range.setStart(text,index);range.setEnd(text,index+"expressive".length);return{font:parseFloat(getComputedStyle(node).fontSize),wordFragments:range.getClientRects().length};}));
   expect(words.every(w=>w.wordFragments===1)).toBe(true);writeFileSync(info.outputPath("whole-word-fitting.json"),JSON.stringify({kind:"Actual local measured headline geometry",words},null,2));

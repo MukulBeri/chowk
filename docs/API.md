@@ -1,5 +1,9 @@
 # Campaign APIs
 
+## Chowk application routes
+
+The current product identity is Chowk; `/` is the homepage and `/create` hosts the working studio. `/explore` and `/docs` are frontend routes. Existing `/api/generate`, `/api/render`, `/api/design-spec`, `/api/notices`, schema/provenance values, environment names and HTML `window.yarcCampaignReady` remain unchanged. No MCP tool, account/cloud API or publishing API is introduced. Frontend homepage entry explicitly requests creative-led only after the user chooses generation; default HTTP requests and direct studio Standard behavior are preserved. Current product/API guidance is also available at `/docs#api`.
+
 ## Opt-in creative-led requests (M6-A candidate)
 
 Existing requests retain their default M5 behavior. Explicitly add `"treatment":"creative-led"` to the existing /api/generate or /api/render request to use fact-led planning and the four recipe registry. No new endpoint exists. /api/design-spec remains the unchanged v1 utility and does not accept this option. Example body:

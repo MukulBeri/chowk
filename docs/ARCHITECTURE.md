@@ -1,5 +1,15 @@
 # Architecture
 
+## Chowk M6-B/C frontend integration
+
+The route boundary is `/` (marketing/start), `/create` (existing Studio), `/explore` (curated real local outputs) and `/docs` (product/API/transparency). Shared header/footer, original brand assets and scoped site tokens change the interface, not the canonical creative engine. Marketing uses existing Anton/Inter assets; native artwork keeps its accepted inline font/palette/geometry styles. The four API routes, schema versions, environment names, native dimensions and `window.yarcCampaignReady` remain unchanged.
+
+`studio-handoff.ts` validates a versioned, one-shot browser-session draft with a transient-memory fallback for same-client navigation. Only topic/details/taste/treatment transfer; no input is put in URLs or server logs and nothing auto-generates. Invalid entries are discarded. This is not saved projects, cloud storage or a new persistence service. Conditional local Projects is deliberately omitted rather than exposing an incomplete save flow. Future editor/account/cloud workstreams are explicit in ROADMAP.md; no speculative adapters or backend stubs are introduced.
+
+The studio retains committed specification/revision, editable draft, unapplied copy, stale-response cancellation and export lock. Supported manual controls update the same validated DesignSpec, including required legacy illustration compatibility fields when a visual changes. Focused view moves inactive *existing* artboards off-screen with nonzero measurable width, `aria-hidden` and `inert`; it does not mount duplicate renderers, register extra callbacks or replace native export refs. All four roots remain inside the sole revision-tagged export region. The existing inert enlargement snapshot is retained.
+
+The loading mark uses the exact approved four-square geometry, with CSS activation red → ink → dashed → yellow in 400 ms phases over 1.6 s. Its text/wordmark stay stationary. It mounts for actual generation/export/measurement or route suspense only, stops on completion/failure and becomes static under reduced motion. No artificial delays, progress percentages or claimed invisible AI stages exist. Curated gallery WebP files are proportionally resized actual accepted local PNGs, not research-prototype output or fresh AI art. See M6BC_REPORT.md for evidence and remaining release qualifications.
+
 ## Targeted M6-A correction
 
 The correction retains the same v3 ledger, schemas, renderer, fitter and export functions. Input-field plurals and bounded style instructions stay metadata; named appositions provide concise titles while their complete source clauses remain immutable facts. Generic title-cased CTA actions are distinguished from names only in the CTA field; a separate safe semantic diagnostic rejects unsupported or contradicted registration actions. No fact guard, repair budget or renderer compatibility gate is removed.

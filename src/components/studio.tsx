@@ -1,14 +1,17 @@
 "use client";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
-import Link from "next/link";
+import Image from "next/image";
 import { createDesign, designSchema, FORMATS, PRESETS, SAMPLE_TOPIC, type Taste, type Format, type DesignSpec } from "@/lib/design";
-import { ENGINE_TASTES, PALETTES, type ArtDirection } from "@/lib/design-engine/registry";
+import { ENGINE_TASTES, PALETTES, VISUALS, relevantVisual, type ArtDirection } from "@/lib/design-engine/registry";
 import { generationRequestSchema, generationResultSchema, incompleteBriefResponseSchema, type GenerationResult } from "@/lib/generation/contracts";
 import { exportHtml, exportPng, saveFile } from "@/lib/export";
 import { TastePicker } from "./taste-picker";
 import { StudioArtboard } from "./studio-artboard";
 import { StudioDialog, ArtworkSnapshot } from "./studio-dialog";
 import { compositionCandidates } from "@/lib/design-engine/candidates";
+import { receiveStudioDraft } from "@/lib/studio-handoff";
+import { ChowkLoading } from "./chowk-mark";
+import { GALLERY } from "@/lib/gallery";
 const subscribe = () => () => { };
 type Draft = {
     topic: string;
@@ -43,6 +46,7 @@ export function Studio() {
     const [campaign, setCampaign] = useState<Campaign | null>(null), committed = useRef<Campaign | null>(null);
     const [copy, setCopy] = useState<Copy>({ topic: "", headline: "", supportingText: "", cta: "" });
     const [creationOpen, setCreationOpen] = useState(true), [inspection, setInspection] = useState<Inspection | null>(null);
+    const [view, setView] = useState<"all" | Format["id"]>("all"), [exportLabel, setExportLabel] = useState("Preparing your export…");
     const [busy, setBusy] = useState(false), exportLock = useRef(false), [generating, setGenerating] = useState(false);
     const [message, setMessage] = useState(""), [error, setError] = useState<{
         kind: "generation" | "input" | "copy" | "export";
@@ -55,6 +59,7 @@ export function Studio() {
     }>({ revision: 0, formats: {} });
     const gallery = useRef<HTMLDivElement>(null), requestId = useRef(0), pending = useRef<AbortController | null>(null), lastMode = useRef<"auto" | "local">("auto");
     useEffect(() => () => { requestId.current++; pending.current?.abort(); }, []);
+    useEffect(() => receiveStudioDraft(input => { setDraft(input); setMessage("Your brief is ready. Choose Generate campaign or use the local planner."); }), []);
     const spec = campaign?.spec;
     const copyDirty = Boolean(spec && Object.entries(copy).some(([k, v]) => v !== (spec.campaign[k as keyof Copy] ?? "")));
     const draftChanged = Boolean(campaign && (draft.topic.trim() !== campaign.input.topic || draft.details.trim() !== campaign.input.details || draft.taste !== campaign.input.taste || draft.treatment !== campaign.input.treatment));
@@ -119,8 +124,8 @@ export function Studio() {
         setError({ kind: "copy", text: "Check copy lengths and required fields. Creative-led campaigns must retain all supplied public facts verbatim. No changes were applied." });
         return;
     } commit(result.data, campaign.generation, campaign.input); setMessage("Manual copy applied to all four formats. No AI used."); setError(null); }
-    function refine(change: Partial<ArtDirection>) { if (!campaign || campaign.spec.version !== 3 || exportLock.current || pending.current)
-        return; const base = campaign.spec, direction = { ...base.artDirection, ...change }; const result = designSchema.safeParse({ ...base, provenance: "manual-input", artDirection: direction, palette: PALETTES[direction.palette], rationale: `${PRESETS[base.taste].name}: ${direction.variant.replaceAll("-", " ")} with ${direction.palette.replaceAll("-", " ")} colours. Manual adjustments retain campaign copy; no new AI request.` }); if (!result.success) {
+    function refine(change: Partial<ArtDirection>, spacing?: number) { if (!campaign || campaign.spec.version !== 3 || exportLock.current || pending.current)
+        return; const base = campaign.spec, direction = { ...base.artDirection, ...change }; const result = designSchema.safeParse({ ...base, provenance: "manual-input", artDirection: direction, composition: { ...base.composition, spacing: spacing ?? base.composition.spacing }, decoration: { ...base.decoration, illustration: direction.visual === "cup" ? "cup" : direction.visual === "none" ? "none" : "abstract" }, palette: PALETTES[direction.palette], rationale: `${PRESETS[base.taste].name}: ${(direction.recipe ?? direction.variant).replaceAll("-", " ")} with ${direction.palette.replaceAll("-", " ")} colours. Manual adjustments retain campaign copy; no new AI request.` }); if (!result.success) {
         setError({ kind: "copy", text: "Choose a supported option for the displayed campaign's taste." });
         return;
     } const edits = copy; commit(result.data, campaign.generation, campaign.input); setCopy(edits); setMessage("Design adjusted locally. No AI request."); setError(null); }
@@ -128,7 +133,7 @@ export function Studio() {
         return; setRendered(p => p.revision === revision && p.formats[format] === ready ? p : { revision, formats: { ...(p.revision === revision ? p.formats : {}), [format]: ready } }); }, []);
     function nodes() { return Array.from(gallery.current?.querySelectorAll<HTMLElement>("[data-poster]") ?? []); }
     async function download(format?: Format) { if (exportLock.current || pending.current || !committed.current)
-        return; exportLock.current = true; setBusy(true); setError(null); setMessage(""); const snapshot = committed.current; try {
+        return; exportLock.current = true; setExportLabel(format ? "Preparing your image…" : "Preparing your HTML file…"); setBusy(true); setError(null); setMessage(""); const snapshot = committed.current; try {
         if (copyDirty)
             throw new Error("Apply your copy before exporting.");
         if (gallery.current?.dataset.campaignRevision !== String(snapshot.revision))
@@ -177,11 +182,11 @@ export function Studio() {
     const generation = campaign?.generation;
     const origin = !campaign ? "" : !generation ? "Example campaign · no AI" : generation.metadata.source === "gemini" ? `AI · ${generation.metadata.model}${generation.metadata.cached ? " · reused result" : ""}` : generation.metadata.fallbackReason === "requested-local" ? "Local planner · no AI request" : generation.metadata.fallbackReason === "disabled" ? "Local planner · AI disabled" : "Fallback · independent local planner";
     const provenance = spec?.provenance === "manual-input" ? "Manual edits · no new AI request" : origin;
-    const status = generating ? `Generating a campaign from your brief…${campaign ? " Previous campaign remains visible." : ""}` : busy ? "Preparing your export…" : error?.text || (campaign && !allReady ? "Measuring layouts and preparing fonts…" : message || (copyDirty ? "Unapplied copy edits. Apply them before exporting." : ""));
+    const status = generating ? `Generating a campaign from your brief…${campaign ? " Previous campaign remains visible." : ""}` : busy ? exportLabel : error?.text || (campaign && !allReady ? "Measuring layouts and preparing fonts…" : message || (copyDirty ? "Unapplied copy edits. Apply them before exporting." : ""));
+    const pendingOperation = generating || busy || Boolean(campaign && !allReady);
+    const visuals = spec?.version === 3 ? VISUALS.filter(visual => (visual === spec.artDirection.visual || relevantVisual(visual, spec.creativeContent?.subject ?? spec.campaign.topic)) && designSchema.safeParse({ ...spec, artDirection: { ...spec.artDirection, visual }, decoration: { ...spec.decoration, illustration: visual === "cup" ? "cup" : visual === "none" ? "none" : "abstract" } }).success) : [];
     return <div className="studio-shell">
-  <a className="skip-link" href="#campaign-gallery">Skip to campaign</a>
-  <header className="studio-header"><Link className="wordmark" href="/" aria-label="Create Studio home"><span className="brand-mark" aria-hidden="true">c.</span>create <span className="brand-divider">/</span> studio</Link><span className="header-caption">One idea. Four formats.</span><span className="workspace-label"><i aria-hidden="true"/><span>Campaign workspace</span></span></header>
-  <main className="studio-workspace"><aside className="creation-panel" aria-label="Campaign controls">
+  <main id="main" className="studio-workspace"><aside className="creation-panel" aria-label="Campaign controls">
    <button className="creation-toggle" aria-expanded={creationOpen} aria-controls="creation-controls" onClick={() => setCreationOpen(!creationOpen)}>Brief &amp; taste · {PRESETS[draft.taste].name}<span aria-hidden="true">{creationOpen ? "−" : "+"}</span></button>
    <div id="creation-controls" className={`creation-body ${creationOpen ? "" : "is-collapsed"}`}><div className="creation-heading"><h1>Create a campaign</h1><p>Start with an idea and choose its visual voice.</p></div>
     <label htmlFor="topic">What are we creating for?</label><textarea id="topic" maxLength={1200} rows={3} value={draft.topic} disabled={busy || !interactive} onChange={e => changeDraft({ topic: e.target.value })} placeholder="A campus poetry evening, a new café…" aria-describedby="brief-privacy"/>
@@ -199,16 +204,18 @@ export function Studio() {
      <button className="secondary-action apply-button" type="submit" disabled={busy || generating || !copyDirty}>{copyDirty ? "Apply copy to campaign ↗" : "Copy is up to date ✓"}</button></details></form>
      {spec?.version === 3 && <><label htmlFor="composition-choice">Composition</label><select id="composition-choice" value={spec.artDirection.recipe ?? spec.artDirection.variant} disabled={busy || generating} onChange={e => refine(spec.artDirection.treatment === "creative-led" ? { recipe: e.target.value as ArtDirection["recipe"] } : { variant: e.target.value as ArtDirection["variant"] })}>{spec.artDirection.treatment === "creative-led" ? compositionCandidates(spec).map(c => <option key={c.id} value={c.recipe}>{readable(c.recipe)} · local composition</option>) : ENGINE_TASTES[spec.taste].variants.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><label htmlFor="palette-choice">Artwork palette</label><select id="palette-choice" value={spec.artDirection.palette} disabled={busy || generating} onChange={e => refine({ palette: e.target.value as ArtDirection["palette"] })}>{ENGINE_TASTES[spec.taste].palettes.map(id => <option key={id} value={id}>{readable(id)}</option>)}</select><div className="palette-tokens" role="group" aria-label="Campaign colour palette">{Object.entries(spec.palette).map(([key, colour]) => <span key={key} title={`${key}: ${colour}`} style={{ background: colour }}/>)}</div></>}
     </section>}
+     {spec?.version === 3 && <details className="direction-details"><summary>More art direction</summary><label htmlFor="visual-choice">Visual treatment</label><select id="visual-choice" value={spec.artDirection.visual} disabled={busy || generating} onChange={e => refine({ visual: e.target.value as ArtDirection["visual"] })}>{visuals.map(v => <option key={v} value={v}>{readable(v)}</option>)}</select><p className="field-note">Authored conceptual graphics, not verified product images.</p><label htmlFor="information-choice">Content arrangement</label><select id="information-choice" value={spec.artDirection.information} disabled={busy || generating} onChange={e => refine({ information: e.target.value as ArtDirection["information"] })}><option value="auto">Automatic grouping</option><option value="grid">Information grid</option><option value="stack">Single column</option></select><label htmlFor="balance-choice">Artwork balance</label><select id="balance-choice" value={spec.artDirection.adaptation} disabled={busy || generating} onChange={e => refine({ adaptation: e.target.value as ArtDirection["adaptation"] })}><option value="balanced">Balanced with artwork</option><option value="type-led">Typography led</option></select><label htmlFor="emphasis-choice">Type hierarchy</label><select id="emphasis-choice" value={spec.artDirection.emphasis} disabled={busy || generating} onChange={e => refine({ emphasis: e.target.value as ArtDirection["emphasis"] })}><option value="display">Display emphasis</option><option value="editorial">Editorial emphasis</option></select><label htmlFor="spacing-choice">Spacing · {spec.composition.spacing}</label><input id="spacing-choice" type="range" min="40" max="90" step="1" value={spec.composition.spacing} disabled={busy || generating} onChange={e => refine({}, Number(e.target.value))} /><p className="field-note">Local changes; dense copy can take priority over artwork.</p></details>}
    </div></aside>
    <section id="campaign-gallery" className="campaign-stage" aria-label="Campaign outputs" tabIndex={-1}>
-    {campaign ? <><div className="gallery-heading"><div className="campaign-identity"><p>Campaign{!generation ? " · example" : ""}</p><h2>{spec!.campaign.headline.replaceAll("\n", " ")}</h2><p data-applied-taste>{PRESETS[spec!.taste].name} · 4 adaptive formats</p></div><div className="gallery-actions"><button className="stage-button" aria-label="Inspect spec" onClick={() => inspect("spec")} disabled={busy}>Design &amp; spec ↗</button><button className="stage-button stage-primary" onClick={() => download()} disabled={busy || generating || copyDirty || !allReady}>Export HTML ↓</button></div></div>
+    {campaign ? <><div className="gallery-heading"><div className="campaign-identity"><p>Campaign{!generation ? " · example" : ""}</p><h2>{spec!.campaign.headline.replaceAll("\n", " ")}</h2><p data-applied-taste>{PRESETS[spec!.taste].name} · 4 adaptive formats</p></div></div><div className="gallery-actions export-dock"><button className="stage-button" aria-label="Inspect spec" onClick={() => inspect("spec")} disabled={busy}>Design &amp; spec ↗</button><button className="stage-button stage-primary" onClick={() => download()} disabled={busy || generating || copyDirty || !allReady}>Export HTML ↓</button></div>
      {draftChanged && <p className="draft-note" role="note">Draft changed · Showing the previous {PRESETS[spec!.taste].name} campaign. Generate or use the local planner to apply your new brief and taste.</p>}
      <div className="generation-provenance"><div className="provenance-line"><strong><i aria-hidden="true"/>{provenance}</strong><span>{spec!.provenance === "manual-input" ? `Originally ${origin.toLowerCase()}. ` : ""}Review copy and facts before publishing.</span></div>{generation && <details><summary>Creative plan and generation details</summary><p>{generation.metadata.fallbackReason ? `Reason: ${generation.metadata.fallbackReason.replaceAll("-", " ")}. ` : ""}{generation.metadata.warnings.join(" ")}</p><pre tabIndex={0}>{JSON.stringify({ interpretation: generation.interpretation, metadata: generation.metadata }, null, 2)}</pre></details>}</div>
-    </> : <div className="empty-state"><div className="empty-artboards" aria-hidden="true"><i /><i /><i /><i /></div><h2>One idea. A complete campaign.</h2><p>Describe what you want to share, choose a taste and create four coordinated formats.</p><p>Start with AI, or use the independent local planner.</p><button className="stage-button" onClick={showExample} disabled={busy || generating || !interactive}>View sample campaign · no AI</button></div>}
-    <div className={`export-status ${error ? "has-error" : ""}`} role="status" aria-live="polite">{error ? <span role="alert">{status}{error.kind === "generation" && <button className="stage-link" onClick={() => generate(lastMode.current)} disabled={busy || generating}>Retry generation</button>}</span> : status}</div>
+    </> : <div className="empty-state"><div className="empty-example-wall">{GALLERY.slice(0, 3).map(e => <Image key={e.id} src={e.formats[0].src} width={e.formats[0].width} height={e.formats[0].height} alt={`Curated local-planner example: ${e.title}`} unoptimized />)}</div><p className="empty-caption">Curated examples · your campaign will appear here</p><h2>One idea. A complete campaign.</h2><p>Describe what you want to share, choose a taste and create four coordinated formats.</p><p>Start with AI when enabled, or use the independent local planner.</p><button className="stage-button" onClick={showExample} disabled={busy || generating || !interactive}>View sample campaign · no AI</button></div>}
+    <div className={`export-status ${error ? "has-error" : ""}`} role="status" aria-live="polite">{error ? <span role="alert">{status}{error.kind === "generation" && <button className="stage-link" onClick={() => generate(lastMode.current)} disabled={busy || generating}>Retry generation</button>}</span> : pendingOperation ? <ChowkLoading label={status} size="studio" /> : status}</div>
     {incomplete && <div className="incomplete-note" role="note" aria-label="Incomplete brief"><strong>Brief needs a subject · no new campaign generated</strong><p>{incomplete.interpretation.missingInformation.join(" ")}</p><details><summary>Brief interpretation</summary><pre tabIndex={0}>{JSON.stringify(incomplete.interpretation, null, 2)}</pre></details></div>}
     {copyDirty && <p className="draft-note" role="note">Unapplied copy edits · exports use applied copy only. Apply your edits before exporting.</p>}
-    <div className="poster-grid" aria-busy={generating || busy || Boolean(campaign && !allReady)} ref={gallery} data-campaign-revision={campaign?.revision}>{campaign && FORMATS.map(format => <StudioArtboard key={`${campaign.revision}-${format.id}`} campaign={campaign} format={format} disabled={busy || generating || copyDirty} onReady={onReady} onExport={() => download(format)} onInspect={kind => inspect(kind, format)}/>)}</div>
+    {campaign && <div className="studio-view-switch" role="group" aria-label="Artwork view"><button aria-pressed={view === "all"} onClick={() => setView("all")} disabled={busy}>Side by side</button>{FORMATS.map(f => <button key={f.id} aria-pressed={view === f.id} onClick={() => setView(f.id)} disabled={busy}>{f.name}</button>)}</div>}
+    <div className={`poster-grid ${view !== "all" ? "focused-grid" : ""}`} aria-busy={generating || busy || Boolean(campaign && !allReady)} ref={gallery} data-campaign-revision={campaign?.revision}>{campaign && FORMATS.map(format => <StudioArtboard key={`${campaign.revision}-${format.id}`} campaign={campaign} format={format} focused={view === "all" || view === format.id} disabled={busy || generating || copyDirty} onReady={onReady} onExport={() => download(format)} onInspect={kind => inspect(kind, format)}/>)}</div>
    </section>
   </main>
   {inspection && <StudioDialog title={inspection.kind === "spec" ? "Design & spec" : `${inspection.format!.name} ${inspection.kind === "checks" ? "layout checks" : "artwork"}`} onClose={() => setInspection(null)}><p className="inspection-note">Snapshot of the displayed campaign when opened.</p>

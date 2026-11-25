@@ -150,7 +150,7 @@ test("actual local planner endpoint renders and exports every format without ext
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
-  await page.goto("/");
+  await page.goto("/create");
   await page.getByLabel("What are we creating for?").fill("A campus poetry circle. Everyone is invited to share a poem.");
   await page.getByRole("radio", { name: /Festive Pop/ }).click();
   await page.getByRole("button", { name: "Use local planner" }).click();
@@ -171,7 +171,7 @@ test("actual local planner endpoint renders and exports every format without ext
 test("studio generation loading, neutral fallback, export, manual provenance and error preservation", async ({ page }, testInfo) => {
   const result = await new GenerationEngine(DEFAULT_CONFIG).generate(request);
   await page.route("**/api/generate", async (route) => { await new Promise((resolve) => setTimeout(resolve, 250)); await route.fulfill({ json: result }); });
-  await page.goto("/");
+  await page.goto("/create");
   await page.getByLabel("What are we creating for?").fill(request.topic);
   await page.getByRole("radio", { name: /Minimal Swiss/ }).click();
   await page.getByRole("button", { name: "Generate campaign" }).click();
@@ -198,7 +198,7 @@ test("studio generation loading, neutral fallback, export, manual provenance and
 test("late generation responses cannot overwrite a newer brief/taste", async ({ page }) => {
   const result = await new GenerationEngine(DEFAULT_CONFIG).generate(request);
   await page.route("**/api/generate", async (route) => { await new Promise((resolve) => setTimeout(resolve, 500)); await route.fulfill({ json: result }).catch(() => {}); });
-  await page.goto("/"); await page.getByLabel("What are we creating for?").fill(request.topic);
+  await page.goto("/create"); await page.getByLabel("What are we creating for?").fill(request.topic);
   await page.getByRole("button", { name: "Generate campaign" }).click();
   await page.getByLabel("What are we creating for?").fill("A newer poetry event.");
   await page.getByRole("radio", { name: /Festive Pop/ }).click();

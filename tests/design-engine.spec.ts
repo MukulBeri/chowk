@@ -18,7 +18,7 @@ async function ready(page: Page) {
   await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
 }
 async function actualLocal(page: Page, taste: Taste, topic = common.topic, details = common.details) {
-  await page.goto("/"); await page.getByLabel("What are we creating for?").fill(topic);
+  await page.goto("/create"); await page.getByLabel("What are we creating for?").fill(topic);
   await page.getByLabel("Optional details").fill(details); await page.getByRole("radio", { name: new RegExp(PRESETS[taste].name) }).click();
   const response = page.waitForResponse((item) => item.url().endsWith("/api/generate"));
   await page.getByRole("button", { name: "Use local planner" }).click();
@@ -172,7 +172,7 @@ for(const id of ["cultural-evening","technical-workshop","fact-sensitive"]) {
     const spec=designSchemaV3.parse({...original,version:3,artDirection:direction,palette:PALETTES[direction.palette],typography:{...original.typography,family:ENGINE_TASTES[original.taste as Taste].family},decoration:{...original.decoration,illustration:direction.visual==="cup"?"cup":direction.visual==="none"?"none":"abstract"}});
     expect(spec.campaign).toEqual(original.campaign);
     await page.route("**/api/generate",(route)=>route.fulfill({json:{...record.result,spec}}));
-    await page.goto("/"); await page.getByLabel("What are we creating for?").fill(record.request.topic);
+    await page.goto("/create"); await page.getByLabel("What are we creating for?").fill(record.request.topic);
     await page.getByRole("radio",{name:new RegExp(PRESETS[spec.taste].name)}).click(); await page.getByRole("button",{name:"Generate campaign"}).click(); await ready(page);
     await page.screenshot({path:info.outputPath(`replayed-m1-${id}-studio.png`),fullPage:true});
     for(const format of FORMATS) { const event=page.waitForEvent("download"); await page.getByRole("button",{name:`Export ${format.name} PNG`,exact:true}).click(); const download=await event; await download.saveAs(info.outputPath(`replayed-m1-${id}-${format.id}.png`)); const png=readFileSync(info.outputPath(`replayed-m1-${id}-${format.id}.png`)); expect([png.readUInt32BE(16),png.readUInt32BE(20)]).toEqual([format.width,format.height]); }
@@ -184,7 +184,7 @@ test("historical v2 actual AI specification still renders and exports through th
   const result=JSON.parse(readFileSync("docs/evidence/m1/live-browser.json","utf8")).result;
   expect(result.spec.version).toBe(2);
   await page.route("**/api/generate",(route)=>route.fulfill({json:result}));
-  await page.goto("/"); await page.getByLabel("What are we creating for?").fill(result.spec.campaign.topic);
+  await page.goto("/create"); await page.getByLabel("What are we creating for?").fill(result.spec.campaign.topic);
   await page.getByRole("radio",{name:new RegExp(PRESETS[result.spec.taste as Taste].name)}).click();
   await page.getByRole("button",{name:"Generate campaign"}).click(); await ready(page);
   await expect(page.locator('[data-poster][data-version="3"]')).toHaveCount(0);

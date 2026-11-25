@@ -1,0 +1,236 @@
+[
+  {
+    "id": "stationery",
+    "title": "Handmade stationery",
+    "category": "Product launch",
+    "taste": "bold-street",
+    "draft": {
+      "topic": "Introduce Fold & Field, a collection of handmade stationery.",
+      "details": "Notebooks and writing cards in green and cream. No prices have been supplied. Use a bold editorial layout.",
+      "taste": "bold-street",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/stationery-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/stationery-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/stationery-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/stationery-linkedin-landscape.webp"
+      }
+    ]
+  },
+  {
+    "id": "terra",
+    "title": "Terra Form",
+    "category": "Product editorial",
+    "taste": "minimal-swiss",
+    "draft": {
+      "topic": "Introduce Terra Form, a collection of handmade ceramic desk accessories.",
+      "details": "The collection includes pen holders and small trays in sand and charcoal colours. Aim for an understated, premium editorial aesthetic. No prices or launch dates have been supplied. Do not invent dimensions, materials beyond ceramics, manufacturing locations or sustainability certifications.",
+      "taste": "minimal-swiss",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/terra-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/terra-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/terra-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/terra-linkedin-landscape.webp"
+      }
+    ]
+  },
+  {
+    "id": "repair",
+    "title": "Repair, together",
+    "category": "Community",
+    "taste": "festive-pop",
+    "draft": {
+      "topic": "Community repair café for broken household items.",
+      "details": "",
+      "taste": "festive-pop",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/repair-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/repair-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/repair-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/repair-linkedin-landscape.webp"
+      }
+    ]
+  },
+  {
+    "id": "environment",
+    "title": "Less plastic. More possibility.",
+    "category": "A shared cause",
+    "taste": "bold-street",
+    "draft": {
+      "topic": "Campaign to reduce plastic waste.",
+      "details": "Bring a reusable bottle. No supplied statistics.",
+      "taste": "bold-street",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/environment-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/environment-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/environment-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/environment-linkedin-landscape.webp"
+      }
+    ]
+  },
+  {
+    "id": "robotics",
+    "title": "An invitation to build",
+    "category": "Learning",
+    "taste": "minimal-swiss",
+    "draft": {
+      "topic": "Campus robotics workshop for students.",
+      "details": "12 teams. 26 November 2026 at 18:30 IST. Venue: Lab A; Entry ₹150. Register at https://example.org/workshop.",
+      "taste": "minimal-swiss",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/robotics-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/robotics-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/robotics-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/robotics-linkedin-landscape.webp"
+      }
+    ]
+  },
+  {
+    "id": "theatre",
+    "title": "Take the stage",
+    "category": "Arts & culture",
+    "taste": "festive-pop",
+    "draft": {
+      "topic": "Announce theatre auditions for students.",
+      "details": "28 November 2026 at 5 PM. Venue: Black Box. No audition fee. Do not invent roles or prizes.",
+      "taste": "festive-pop",
+      "treatment": "creative-led"
+    },
+    "provenance": "Curated local-planner example",
+    "formats": [
+      {
+        "id": "instagram-portrait",
+        "width": 1080,
+        "height": 1350,
+        "src": "/examples/theatre-instagram-portrait.webp"
+      },
+      {
+        "id": "instagram-square",
+        "width": 1080,
+        "height": 1080,
+        "src": "/examples/theatre-instagram-square.webp"
+      },
+      {
+        "id": "youtube-thumbnail",
+        "width": 1280,
+        "height": 720,
+        "src": "/examples/theatre-youtube-thumbnail.webp"
+      },
+      {
+        "id": "linkedin-landscape",
+        "width": 1910,
+        "height": 1000,
+        "src": "/examples/theatre-linkedin-landscape.webp"
+      }
+    ]
+  }
+]

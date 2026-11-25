@@ -22,7 +22,7 @@ test("approved WOFF2 bytes, notices, weights and coverage remain pinned", () => 
 
 for (const taste of TASTES) test(`${taste}: actual glyph fonts, embedded offline HTML and native font appearance`, async ({page,context},info) => {
   const remote:string[]=[]; await page.route("https://**",route=>{remote.push(route.request().url());return route.abort();});
-  await page.goto("/"); await page.getByLabel("What are we creating for?").fill("Café Noël — Łódź ₹150.");
+  await page.goto("/create"); await page.getByLabel("What are we creating for?").fill("Café Noël — Łódź ₹150.");
   await page.getByLabel("Optional details").fill("0123456789. No tickets are required.");
   await page.getByRole("radio",{name:new RegExp(PRESETS[taste].name)}).click();
   await page.getByRole("button",{name:"Use local planner"}).click();
@@ -58,12 +58,12 @@ for (const taste of TASTES) test(`${taste}: actual glyph fonts, embedded offline
 
 test("font integrity failure refuses v3 exports without silent font substitution",async({page})=>{
   await page.route("**/fonts/anton-latin.woff2",route=>route.fulfill({contentType:"font/woff2",body:"invalid font bytes"}));
-  await page.goto("/");await page.getByLabel("What are we creating for?").fill("A robotics workshop.");await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(4);
+  await page.goto("/create");await page.getByLabel("What are we creating for?").fill("A robotics workshop.");await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(4);
   expect(await page.locator("[data-poster]").first().getAttribute("data-quality")).toContain("FONT_UNAVAILABLE");let downloads=0;page.on("download",()=>downloads++);await page.getByRole("button",{name:"Export YouTube thumbnail PNG",exact:true}).click();await expect(page.getByRole("status")).toContainText("font");expect(downloads).toBe(0);
 });
 
 test("unsupported-script text stays visible with an explicit system-font warning",async({page,context},info)=>{
-  await page.goto("/");await page.getByLabel("What are we creating for?").fill("Campus reading — नमस्ते 東京.");
+  await page.goto("/create");await page.getByLabel("What are we creating for?").fill("Campus reading — नमस्ते 東京.");
   await page.getByRole("radio",{name:/Minimal Swiss/}).click();await page.getByRole("button",{name:"Use local planner"}).click();
   await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.locator('[data-poster][data-overflow="true"]')).toHaveCount(0);
   await expect(page.getByRole("note").first()).toContainText("system-font fallback");

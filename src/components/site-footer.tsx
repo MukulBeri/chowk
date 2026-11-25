@@ -1,0 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
+export function SiteFooter() {
+  return <footer className="site-footer"><div><Link href="/" aria-label="Chowk home"><Image src="/brand/chowk-logo-reverse.svg" alt="Chowk" width={137} height={36} unoptimized /></Link><p>Your intention. New possibilities.<br />Your creative control.</p><small>Built for the YARC Builder Fellowship,<br />Track 01 — Create.</small></div><nav aria-label="Product links"><h2>Make something</h2><Link href="/create">Creative studio</Link><Link href="/explore">Explore the wall</Link><Link href="/#about">About Chowk</Link></nav><nav aria-label="Help and transparency"><h2>Know your tools</h2><Link href="/docs">How it works</Link><Link href="/docs#api">HTTP API</Link><Link href="/docs#ai">AI &amp; privacy</Link><a href="/api/notices">Software &amp; asset notices</a></nav><p className="footer-note">Local planning is available without an AI request. Review your copy and artwork before publishing. Cloud projects, accounts and social publishing are not available in this release.</p></footer>;
+}

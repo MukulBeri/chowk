@@ -1,8 +1,12 @@
-# Create Studio — M5-B release candidate
+# Chowk — Put your idea on the wall.
 
-The subsequent [M6-A targeted correction candidate](docs/M6A_CORRECTION_REPORT.md) addresses public-copy leakage, CTA validation, density-aware composition and actual PNG fidelity. Its local [before/after review gallery](test-results/m6a-correction-20261125-01/index.html) includes a clearly labelled quota-free replay of a retained real provider response. It is not fresh Gemini success or owner artistic acceptance; local inference remains disabled.
+Chowk turns an idea into a visual campaign: choose a creative direction, explore supported compositions, refine the details and export for multiple platforms. **YARC Create was the working project name**; YARC is the fellowship organizer and Create is the challenge track. The repository, local directory and deployment names remain unchanged. Trademark/domain clearance is not established.
 
-M6-A1/A2 is an uncommitted local review candidate. In the existing studio choose **Planning approach → Creative-led · fact-led recipes**, enter an actual brief, choose a taste and use the local planner. The Standard path and default HTTP contracts remain available. The new path separates public facts from planning directions and supports four locally selectable composition recipes through the same measured renderer and exports. [Implementation, actual evidence and limitations](docs/M6A_REPORT.md); [opt-in HTTP request](docs/API.md). This does not authorize or establish public release, live AI quality, final licensing clearance or owner artistic acceptance.
+The integrated **M6-B/C frontend is an owner-review candidate**, not a new production deployment. Open `/` for the artwork-led homepage, `/create` for the actual studio, `/explore` for six curated local examples and `/docs` for product/API guidance. Homepage and example briefs transfer privately through one-shot session storage or transient memory; generation remains an explicit action. No brief appears in a URL. There is no Projects page, account, cloud save, collaboration, freeform editor or direct social publishing in this candidate. These are active planned workstreams, with separate gates, in [the roadmap](docs/ROADMAP.md).
+
+[M6-A is owner-accepted](docs/M6A_ACCEPTANCE.md) as a bounded engineering foundation at `1972cbe`; the independent 68/100 artistic assessment is not excellence or a controlled comparison with the earlier sample. Original [implementation](docs/M6A_REPORT.md), [correction](docs/M6A_CORRECTION_REPORT.md) and [before/after evidence](test-results/m6a-correction-20261125-01/index.html) remain unchanged. The bounded live experiment produced zero accepted fresh plans; a later successful retained-response replay is quota-free. Local inference remains disabled.
+
+In the studio, **Planning approach → Creative-led · fact-led recipes** opts into the accepted engine. Standard remains the direct-entry default, and backend/API defaults are unchanged. Supported copy, palette, composition, visual, hierarchy, spacing and arrangement refinements are local. Focused and side-by-side previews use the same four canonical artboards and native exports. [M6-B/C report and review evidence](docs/M6BC_REPORT.md) document actual checks and limitations. Public/evaluator access, fresh inference reliability, production licensing and release readiness remain separate gates.
 
 [M4 acceptance](docs/M4_ACCEPTANCE.md) records formal owner acceptance, verified scope and remaining release gates. The original [focused correction](docs/M4_CORRECTION.md) and [live verification](docs/M4_LIVE_VERIFICATION.md) are preserved historical reports: three provider calls, zero accepted fresh Gemini plans and two fallback results; the subsequent correction made zero live calls. Acceptance includes this reliability limitation.
 
@@ -10,13 +14,13 @@ M6-A1/A2 is an uncommitted local review candidate. In the existing studio choose
 
 [M3 report](docs/M3_REPORT.md) contains the implemented workflows, actual artwork/screenshots, verification results and remaining review limitations.
 
-An artwork-first HTML/CSS campaign studio for the YARC Builder Fellowship Create track. **Create Studio is a working identity for the initial release.** M0–M2 are accepted and synchronized at `e6d968f`. M3 adds the approved light creation panel/dark gallery, native taste radios, distinct draft/result state, local refinements and contextual inspection while preserving the M2 engine. M3 is accepted and synchronized at `e52258f`. Formally accepted M4 adds subject-led original artwork, concise copy hierarchy, larger landscape information regions, one verified Tabler camera asset and the focused public-copy correction. Deployment and final fellowship acceptance requirements remain pending; no public release is claimed.
+Historical identity/checkpoints: M0–M2 were accepted and synchronized at `e6d968f`; the former Create Studio M3 frontend at `e52258f`; M4 subsequently added subject-led artwork and public-copy safeguards. Current Chowk styling replaces that older interface direction, while historical reports and evidence retain their original identity, outcomes and scope. No public release is claimed.
 
 Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
 
 ## Review locally
 
-The existing development server is at **http://localhost:3000**. Reuse it. If it is not running:
+The existing local server is at **http://localhost:3000**; the studio is **http://localhost:3000/create**. Reuse it. Fresh-checkout setup (not an instruction to reinstall already installed dependencies):
 
 ```powershell
 npm ci
@@ -159,6 +163,9 @@ Final submission acceptance **ENG-03** requires keeping this example in the fina
 | src/server/ | Server-only runtime, injectable Gemini REST transport and bounded orchestration |
 | src/components/poster.tsx | Adaptive HTML/SVG renderer, measured text fitting, preview scaling |
 | src/components/studio.tsx | Manual brief/copy, tastes, JSON inspector and downloads |
+| src/app/{page,create,explore,docs}/ | Chowk homepage, actual studio, curated examples and product/API guidance |
+| src/components/site-*.tsx, src/app/site.css | Shared original branding, interface tokens and responsive shell |
+| src/lib/studio-handoff.ts | Validated one-shot browser-session/memory draft transfer, not saved projects |
 | src/lib/export.ts | PNG and portable HTML export |
 | src/app/api/design-spec/route.ts | Deterministic HTTP interface |
 | src/app/api/generate/route.ts | Product generation HTTP interface |

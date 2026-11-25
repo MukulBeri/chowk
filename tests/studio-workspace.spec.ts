@@ -5,11 +5,11 @@ import {ENGINE_TASTES} from "../src/lib/design-engine/registry";
 
 const brief={topic:"A campus robotics workshop for students.",details:"12 teams. 26 November 2026 at 18:30 IST. Venue: Lab A; Entry ₹150. Register at https://example.org/workshop"};
 async function ready(page:Page){await expect(page.locator('[data-poster][data-ready="true"]')).toHaveCount(4);await expect(page.getByRole("button",{name:"Export HTML"})).toBeEnabled();}
-async function local(page:Page,taste:Taste="minimal-swiss",topic=brief.topic,details=brief.details){await page.goto("/");await page.getByLabel("What are we creating for?").fill(topic);await page.getByLabel("Optional details").fill(details);await page.getByRole("radio",{name:PRESETS[taste].name,exact:true}).check();const event=page.waitForResponse(r=>r.url().endsWith("/api/generate"));await page.getByRole("button",{name:"Use local planner"}).click();const result=await(await event).json();expect(result.metadata.attempts).toEqual([]);await ready(page);return result;}
+async function local(page:Page,taste:Taste="minimal-swiss",topic=brief.topic,details=brief.details){await page.goto("/create");await page.getByLabel("What are we creating for?").fill(topic);await page.getByLabel("Optional details").fill(details);await page.getByRole("radio",{name:PRESETS[taste].name,exact:true}).check();const event=page.waitForResponse(r=>r.url().endsWith("/api/generate"));await page.getByRole("button",{name:"Use local planner"}).click();const result=await(await event).json();expect(result.metadata.attempts).toEqual([]);await ready(page);return result;}
 async function noOverflow(page:Page){expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
 
 test("empty workspace, native radio keyboard behavior and invalid/subjectless input are honest",async({page},info)=>{
- await page.goto("/");await expect(page.locator("[data-poster]")).toHaveCount(0);await expect(page.getByRole("heading",{name:"One idea. A complete campaign."})).toBeVisible();
+ await page.goto("/create");await expect(page.locator("[data-poster]")).toHaveCount(0);await expect(page.getByRole("heading",{name:"One idea. A complete campaign."})).toBeVisible();
  const bold=page.getByRole("radio",{name:"Bold Street",exact:true});await bold.focus();await page.keyboard.press("ArrowDown");await expect(page.getByRole("radio",{name:"Minimal Swiss",exact:true})).toBeChecked();
  await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.getByRole("status").getByRole("alert")).toContainText("Enter a topic");
  await page.getByLabel("What are we creating for?").fill("Help me announce something.");await page.getByLabel("Optional details").fill("I have not supplied what, when or where yet.");await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.getByRole("note",{name:"Incomplete brief"})).toBeVisible();await expect(page.locator("[data-poster]")).toHaveCount(0);
@@ -40,7 +40,7 @@ test("pending/failed/stale requests retain the previous campaign and truthful AI
 
 test("font readiness gates downloads until actual canonical measurements settle",async({page})=>{
  let release!:()=>void;const gate=new Promise<void>(r=>{release=r;});await page.route("**/fonts/*.woff2",async route=>{if(route.request().resourceType()==="fetch")await gate;await route.continue();});
- await page.goto("/");await page.getByLabel("What are we creating for?").fill("A campus reading circle.");await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.locator("[data-poster]")).toHaveCount(4);await expect(page.getByRole("button",{name:"Export HTML"})).toBeDisabled();await expect(page.getByRole("button",{name:"Export Instagram square PNG",exact:true})).toBeDisabled();await expect(page.getByRole("status")).toContainText("Measuring layouts");release();await ready(page);
+ await page.goto("/create");await page.getByLabel("What are we creating for?").fill("A campus reading circle.");await page.getByRole("button",{name:"Use local planner"}).click();await expect(page.locator("[data-poster]")).toHaveCount(4);await expect(page.getByRole("button",{name:"Export HTML"})).toBeDisabled();await expect(page.getByRole("button",{name:"Export Instagram square PNG",exact:true})).toBeDisabled();await expect(page.getByRole("status")).toContainText("Measuring layouts");release();await ready(page);
 });
 
 test("dialog keyboard/focus and enlargement preserve canonical refs and actual PNG output",async({page},info)=>{

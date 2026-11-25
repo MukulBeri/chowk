@@ -110,7 +110,7 @@ test("studio displays retained safe validation diagnostics from a mocked fallbac
  const base=fallbackPlan(request),bad={...base,campaign:{...base.campaign,cta:"x".repeat(61)}};
  const result=await new GenerationEngine(DEFAULT_CONFIG,async()=>({raw:bad,usage,finishReason:"STOP"})).generate(request);
  let intercepted=0;await page.route("**/api/generate",route=>{intercepted++;return route.fulfill({json:result});});
- await page.goto("/");await page.getByLabel("What are we creating for?").fill(request.topic);await page.getByLabel("Optional details").fill(request.details);await page.getByRole("radio",{name:/Festive Pop/}).click();await page.getByRole("button",{name:"Generate campaign"}).click();
+ await page.goto("/create");await page.getByLabel("What are we creating for?").fill(request.topic);await page.getByLabel("Optional details").fill(request.details);await page.getByRole("radio",{name:/Festive Pop/}).click();await page.getByRole("button",{name:"Generate campaign"}).click();
  await expect(page.getByRole("status")).toContainText("Local fallback campaign ready");await page.getByText("Creative plan and generation details",{exact:true}).click();
  const details=page.locator(".generation-provenance pre");await expect(details).toContainText('"stage": "structure"');await expect(details).toContainText('"path": "campaign.cta"');await expect(details).toContainText('"limit": 60');expect(intercepted).toBe(1);
 });

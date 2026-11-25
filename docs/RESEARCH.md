@@ -1,5 +1,11 @@
 # Research, reuse and reference register
 
+## Chowk B4 frontend and original brand — M6-B/C
+
+The explicit owner frontend brief supersedes the branding archive's earlier provisional/not-approved wording for the refined four-square Chowk mark, primary/reverse Anton-outlined wordmark, favicon and B4 visual direction. `YARC_Branding_Research_Checkpoint_2.zip`, B1/B2b/B5/B6/B7 and the actual B4 prototype were inspected read-only; archive bytes remain unchanged. Relevant installed Next.js routing, client-boundary, CSS, image and metadata/icon guides were consulted. Exact reference/asset hashes and derived-preview provenance are retained in the M6-B/C evidence, not mistaken for a new licensing or trademark clearance.
+
+Adopted: original SVG assets, editorial paper/ink/vermilion/yellow direction, restrained studio chrome, route structure and accessible native UI patterns. Rejected as runtime implementation: prototype's simulated generation/copy/export/provider/persistence and old M5 capability assumptions. The real accepted engine supplies all campaign results. No new dependency, font, third-party asset or service was acquired. Optional storage libraries and authentication proposals are unintegrated research; W1–W9 in ROADMAP.md now supersede indefinite scope exclusions without authorizing activation.
+
 ## M6-A authorized adaptation — 25 November 2026
 
 Owner authorization supersedes the labs' earlier not-authorized handoff status for A1/A2 only. Both original Creative Lab ZIPs and the M5 source-review archive were inspected read-only and hashed; isolated extraction lives under ignored test-results/m6a-research. The actual checkout remains authoritative. Lab 1 contributes fact-led public-copy separation and original repair geometry; Lab 2 contributes role allocations, candidate-ranking principles, layered cup/top-view cup, robotic-arm and sky geometry. Production adaptation is original trusted JSX/TypeScript using existing measurements and exports, not copied lab document wrappers or manually authored fixture slogans. No upstream third-party implementation/dependency, remote font, photographic asset or new licensing decision is adopted.

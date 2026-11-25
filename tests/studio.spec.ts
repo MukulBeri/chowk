@@ -45,7 +45,7 @@ for (const taste of TASTES) {
   test(`${taste}: four layouts, exact PNGs, offline HTML parity, long copy`, async ({ page, context }, testInfo) => {
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
-    await page.goto("/");
+    await page.goto("/create");
     await page.getByRole("radio", { name: new RegExp(PRESETS[taste].name) }).check();
     await page.getByRole("button", { name: "View sample campaign" }).click();
     await ready(page);
@@ -140,7 +140,7 @@ for (const taste of TASTES) {
 
 test("mobile layout, manual topic, spec and text injection remain safe", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await page.goto("/create");
   await page.getByRole("button", { name: "View sample campaign" }).click();
   await ready(page);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -161,7 +161,7 @@ test("mobile layout, manual topic, spec and text injection remain safe", async (
 });
 
 test("impossible line-break copy warns and refuses PNG/HTML downloads", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/create");
   await page.getByRole("button", { name: "View sample campaign" }).click();
   await page.getByText("Edit campaign copy", { exact: true }).click();
   await page.getByLabel("Headline", { exact: false }).fill("W\n".repeat(120).trim());
