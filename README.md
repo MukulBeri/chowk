@@ -1,4 +1,4 @@
-# Create Studio — accepted M4
+# Create Studio — M5-B release candidate
 
 [M4 acceptance](docs/M4_ACCEPTANCE.md) records formal owner acceptance, verified scope and remaining release gates. The original [focused correction](docs/M4_CORRECTION.md) and [live verification](docs/M4_LIVE_VERIFICATION.md) are preserved historical reports: three provider calls, zero accepted fresh Gemini plans and two fallback results; the subsequent correction made zero live calls. Acceptance includes this reliability limitation.
 
@@ -19,15 +19,15 @@ npm ci
 npm run dev
 ```
 
-1. Configure the server-only key in ignored `.env.local` using [the placeholder example](.env.example); never use `NEXT_PUBLIC_` or commit real environment files. The default explicit model is `gemini-3.5-flash-lite`. Missing credentials still allow local fallback. Restart the existing dev server only if environment configuration changed.
-2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. The initial state is empty; the optional sample button loads an explicitly labelled v1 fixture without AI. Auto mode sends the brief to Google—avoid private information.
+1. Start with `GEMINI_ENABLED=false` as in [the placeholder example](.env.example); no key is needed for fully functional local planning. PowerShell: `$env:GEMINI_ENABLED="false"; npm run dev` (or `npm run start` after building). Restart an existing server when its environment changes. The server requires exact `GEMINI_ENABLED=true` plus valid credentials for inference; public AI use requires separate eligible-use approval. Keep keys in ignored server configuration, never `NEXT_PUBLIC_`.
+2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. The initial state is empty; the optional sample button loads an explicitly labelled v1 fixture without AI. With inference disabled, auto mode also uses the independent local planner with zero provider calls. Enabled auto mode may send the brief to Google—avoid private information.
 3. Use Design & spec for rationale, the validated JSON and download; View and Checks inspect actual artwork and measurements. Explicit local planning, automatic fallback, AI and manual provenance remain distinct. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
 4. Compare four platform previews and export each PNG. Draft taste applies to the next generation; changing it leaves the current campaign intact with a notice. Copy/composition/palette refinements apply locally to the displayed campaign and are labelled manual. Failed generation preserves the previous campaign.
 5. Export HTML/JSON. V3 HTML contains full-size inline posters, embedded approved fonts and their OFL notices, and intentionally scrolls offline. Unsupported scripts and legacy fonts can still vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
 
 The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
 
-No authentication, database, payments or image-generation dependency. The owner authorizes M4 closure through curated archival, audited staging, one commit and normal push. No further live calls, runtime/artistic changes, dependencies/assets, deployment or M5 implementation is authorized.
+No authentication, database, payments or image-generation dependency. M0–M4 are accepted at `cad6bfcc3fb1da985ffd804be00afd6fc910f34a`. Current M5-B authorization covers release corrections and quota-free local verification only; staging, commits, pushes, deployment, visibility/licensing changes, live inference and submission remain separate gates.
 
 ## Checks
 
@@ -35,26 +35,72 @@ No authentication, database, payments or image-generation dependency. The owner 
 npm run lint
 npm run typecheck
 npm run build
-npm test -- --output=test-results/m4-next-review
+npm test -- --output=test-results/m5-next-review
 ```
 
 Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).
 
-Live evaluation is separate and opt-in; it spends configured Gemini quota:
-
-```powershell
-npx --no-install playwright test --config evaluation/playwright.config.ts
-```
-
-The completed six-brief-per-model matrix and browser measurements are in [M1 evidence](docs/evidence/m1/live-models.json); do not rerun it as a routine regression check. Evaluation artifacts go to ignored `evaluation-results/` independently of normal test output.
+Historical live evaluations are not routine checks and must not be rerun without a new bounded owner authorization. The completed records remain in docs/evidence; no fresh inference was performed for M5-B.
 
 ## HTTP API
 
+The integration endpoint returns actual styled HTML, the validated DesignSpec, interpretation, provenance and all four native sizes. This command was executed successfully against the local production build in explicit no-AI mode:
+
 ```powershell
-curl.exe --fail-with-body --json "@docs/example-generation-request.json" http://localhost:3000/api/generate
+curl.exe --fail-with-body --json "@docs/example-render-request.json" http://localhost:3000/api/render --output campaign-response.json
 ```
 
-Returns a validated v2 specification, interpretation and honest AI/fallback metadata. Add `"mode":"local"` to request independent planning without Gemini. [Configuration, contract, error/status behavior and curl examples](docs/API.md#m1-product-generation-endpoint). Existing `POST /api/design-spec` remains the deterministic v1 fixture/manual utility using `docs/example-request.json`; it does not call Gemini or the product generation route.
+The response's `html` is a complete self-contained document. Save it as HTML and open it in a browser; await `window.yarcCampaignReady` before using the measured result. Server metadata explicitly says `requires-browser-verification`, never export-ready. Browser quality failures refuse the affected format. `GET /api/notices` serves applicable preserved package/font/asset notices in the running app; see [notice records](THIRD_PARTY_NOTICES.md). [Full API contract](docs/API.md). Existing JSON-only `/api/generate` and v1 `/api/design-spec` remain compatible.
+
+Native sizes: Instagram portrait **1080 × 1350**, square **1080 × 1080**, YouTube **1280 × 720**, LinkedIn **1910 × 1000**. Native canvases intentionally scroll in the portable document.
+
+## Current complete intermediate specification
+
+This is the complete validated v3 result of the actual local curl request above, with `deterministic-fallback` provenance and `requested-local` metadata, not Gemini generation. [Machine-readable source](docs/example-design-spec-m5.json).
+
+```json
+{
+  "version": 3,
+  "provenance": "deterministic-fallback",
+  "campaign": {
+    "topic": "Campus robotics workshop for students.",
+    "eyebrow": "For students · 12 teams",
+    "headline": "Campus robotics workshop",
+    "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A; Entry ₹150.\nRegister at https://example.org/workshop."
+  },
+  "taste": "minimal-swiss",
+  "palette": {
+    "background": "#dcecf0",
+    "ink": "#163438",
+    "accent": "#00616b",
+    "secondary": "#bcd9dd"
+  },
+  "typography": {
+    "family": "neutral-sans",
+    "headlineScale": 0.85,
+    "case": "sentence"
+  },
+  "composition": {
+    "layout": "swiss-grid",
+    "spacing": 80
+  },
+  "decoration": {
+    "motif": "orbit",
+    "density": 1,
+    "illustration": "abstract"
+  },
+  "rationale": "Minimal Swiss: swiss grid with swiss ice colours and robot visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+  "artDirection": {
+    "variant": "swiss-grid",
+    "palette": "swiss-ice",
+    "visual": "robot",
+    "emphasis": "display",
+    "information": "grid",
+    "adaptation": "balanced",
+    "treatment": "subject-led"
+  }
+}
+```
 
 ## Historical M1 example intermediate JSON specification
 
@@ -129,12 +175,13 @@ Final submission acceptance **ENG-03** requires keeping this example in the fina
 | [Research](docs/RESEARCH.md) | Commercial/repository/library candidates, adoption decisions and C1/C2 receipt/review status |
 | [Roadmap](docs/ROADMAP.md) | M0–M5, priorities, existing concern register, deferred ideas and archive policy |
 | [Third-party notices](THIRD_PARTY_NOTICES.md) | Actual dependencies, licenses, preserved notices and distribution review gaps |
+| [M5 candidate report](docs/M5_REPORT.md) | Current release corrections, actual verification, remaining production gates |
 | [M0 report](docs/M0_REPORT.md) | Historical delivery and changed-file inventory |
 | [M1 report](docs/M1_REPORT.md) | Current implementation, actual checks, model results and remaining limits |
 
 Runtime dependencies added: Zod for one validated/type-inferred contract and [html-to-image](https://github.com/bubkoo/html-to-image) for browser DOM rasterization. Playwright is development-only browser verification. Existing Next.js 16.4.6 / React 19.3.0 / TypeScript / custom CSS remain in place.
 
-Public deployment and broader design/frontend/quality work remain pending. Model evidence and unknown billing details are explicit in [AI/API disclosure](docs/AI_DISCLOSURE.md). Official submission deadline supplied by the user: **26 November 2026, 11:59 PM IST**; internal target **8 PM IST** the same day.
+Public deployment and broader design/frontend/quality work remain pending. Model evidence and unknown billing details are explicit in [AI/API disclosure](docs/AI_DISCLOSURE.md). Official submission deadline supplied by the user: **26 November 2026, 11:59 PM IST**; maximum internal completion deadline **25 November 2026, 3:00 PM IST**; the official deadline is contingency only.
 
 ## Current evidence and limitations
 

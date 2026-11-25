@@ -94,7 +94,7 @@ export function Studio() {
             if (data.spec.version < 2 || data.spec.taste !== parsed.data.taste || data.spec.provenance !== data.metadata.source)
                 throw new Error("invalid-response");
             commit(data.spec, data, { topic: parsed.data.topic, details: parsed.data.details, taste: parsed.data.taste });
-            setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : data.metadata.fallbackReason === "requested-local" ? "Local planner campaign ready. No AI request." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
+            setMessage(data.metadata.source === "gemini" ? "AI campaign ready. Review the copy and supplied facts before publishing." : data.metadata.fallbackReason === "requested-local" ? "Local planner campaign ready. No AI request." : data.metadata.fallbackReason === "disabled" ? "Local planner campaign ready. Server-side AI is disabled; no provider request." : "Local fallback campaign ready. No successful AI generation; supplied copy has been retained conservatively.");
         }
         catch {
             if (id === requestId.current)
@@ -171,7 +171,7 @@ export function Studio() {
         setInspection({ kind, campaign, format, node: clone, measurements });
     }
     const generation = campaign?.generation;
-    const origin = !campaign ? "" : !generation ? "Example campaign · no AI" : generation.metadata.source === "gemini" ? `AI · ${generation.metadata.model}${generation.metadata.cached ? " · reused result" : ""}` : generation.metadata.fallbackReason === "requested-local" ? "Local planner · no AI request" : "Fallback · independent local planner";
+    const origin = !campaign ? "" : !generation ? "Example campaign · no AI" : generation.metadata.source === "gemini" ? `AI · ${generation.metadata.model}${generation.metadata.cached ? " · reused result" : ""}` : generation.metadata.fallbackReason === "requested-local" ? "Local planner · no AI request" : generation.metadata.fallbackReason === "disabled" ? "Local planner · AI disabled" : "Fallback · independent local planner";
     const provenance = spec?.provenance === "manual-input" ? "Manual edits · no new AI request" : origin;
     const status = generating ? `Generating a campaign from your brief…${campaign ? " Previous campaign remains visible." : ""}` : busy ? "Preparing your export…" : error?.text || (campaign && !allReady ? "Measuring layouts and preparing fonts…" : message || (copyDirty ? "Unapplied copy edits. Apply them before exporting." : ""));
     return <div className="studio-shell">
@@ -182,7 +182,7 @@ export function Studio() {
    <div id="creation-controls" className={`creation-body ${creationOpen ? "" : "is-collapsed"}`}><div className="creation-heading"><h1>Create a campaign</h1><p>Start with an idea and choose its visual voice.</p></div>
     <label htmlFor="topic">What are we creating for?</label><textarea id="topic" maxLength={1200} rows={3} value={draft.topic} disabled={busy || !interactive} onChange={e => changeDraft({ topic: e.target.value })} placeholder="A campus poetry evening, a new café…" aria-describedby="brief-privacy"/>
     <label htmlFor="brief-details">Optional details</label><textarea id="brief-details" maxLength={1200} rows={4} value={draft.details} disabled={busy || !interactive} onChange={e => changeDraft({ details: e.target.value })} placeholder="Audience, exact facts, dates, prices or preferences"/>
-    <p id="brief-privacy" className="field-note">AI briefs are sent to Google Gemini. Avoid private information. Local planning makes no AI request.</p>
+    <p id="brief-privacy" className="field-note">AI briefs are sent to Google Gemini only when server-side inference is enabled. Avoid private information. Local planning makes no AI request. <a href="/api/notices" target="_blank" rel="noopener noreferrer">Licenses and notices</a></p>
     <TastePicker value={draft.taste} disabled={busy || !interactive} onChange={taste => changeDraft({ taste })}/>
     <button className="primary-action" disabled={busy || generating || !interactive} onClick={() => generate()}>{generating ? "Generating campaign…" : "Generate campaign ↗"}</button><button className="secondary-action local-planner-button" disabled={busy || generating || !interactive} onClick={() => generate("local")}>Use local planner · no AI request</button>
     {campaign && <section className="refinement-panel" aria-label="Refine current result"><h2>Refine current result</h2><p className="field-note">Editing {PRESETS[campaign.spec.taste].name}. Local changes make no new AI request.</p><form onSubmit={applyCopy}><details className="copy-details"><summary>Edit campaign copy</summary>

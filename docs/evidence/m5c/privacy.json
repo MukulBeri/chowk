@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-25",
+  "scope": "Current candidate source/docs plus all reachable Git blobs/commit messages and author metadata; sanitized findings only",
+  "base": "cad6bfcc3fb1da985ffd804be00afd6fc910f34a",
+  "sourceFingerprint": "e52a30ea813e2d020cee173798797458b8802011fbef7a54496fcf0dabbaefac",
+  "currentFiles": 40,
+  "currentFindings": [],
+  "expectedSecretReferenceFiles": [
+    ".env.example",
+    "AGENTS.md",
+    "README.md",
+    "docs/AI_DISCLOSURE.md",
+    "docs/API.md",
+    "docs/M5C_INSTALL_PROPOSAL.md",
+    "docs/M5_REPORT.md",
+    "src/server/configured-engine.ts",
+    "tests/m5-release.spec.ts"
+  ],
+  "historyBlobs": 274,
+  "historyFindings": [],
+  "commits": 6,
+  "commitMessageFindings": 0,
+  "authorMetadata": {
+    "uniqueEmailCount": 1,
+    "nonNoreplyEmailCount": 1,
+    "identitiesDisclosed": false,
+    "qualification": "Git author/committer identity is observable to repository recipients; private visibility retained, no history rewrite authorized"
+  },
+  "publicRepositoryScope": "Proposed inventory contains only project code/tests/docs and applicable licensing records. Bulk ignored outputs, credentials, external archive and actual environment files excluded; repository remains private; no original-code license selected",
+  "protectedOriginalReports": [
+    {
+      "file": "docs/M0_REPORT.md",
+      "sha256": "69919378e5e98467f0ec99933cb211f1db9e56f464973a7795b6d6528381ad4f"
+    },
+    {
+      "file": "docs/M1_CORRECTION.md",
+      "sha256": "f631ec9c1350fffacb40b0162d96dc8938c567d09ea6beb995492ffd67ad079c"
+    },
+    {
+      "file": "docs/M1_REPORT.md",
+      "sha256": "9ba249a94ceb177b868492d3509ff85c1a5b9e2bb6b0a04263d828cad39d8634"
+    },
+    {
+      "file": "docs/M2_REPORT.md",
+      "sha256": "9054505df722dfa9f4c24d2d1eee1f2e7ce4eac0a7ce25bf5db908c07e99fca0"
+    },
+    {
+      "file": "docs/M3_REPORT.md",
+      "sha256": "e29ee79faf169e3e9fa994bb38b6ef357c88b85e8c8be15aa24168e2eaa37643"
+    },
+    {
+      "file": "docs/M4_ACCEPTANCE.md",
+      "sha256": "df1c64fe072e82c456d931e12f4c44ec9df5c481401fb8ae058c607566c1da2a"
+    },
+    {
+      "file": "docs/M4_CORRECTION.md",
+      "sha256": "f83213726a4a3719c84b36d57ed945e0f15d2bb3cdfa4bb69a3f6801cb84bae0"
+    },
+    {
+      "file": "docs/M4_LIVE_VERIFICATION.md",
+      "sha256": "123af8e1fa753ec6424e43567e64fbe6f49fc27f3c7c25dd882ef128c363f3bd"
+    },
+    {
+      "file": "docs/M4_REPORT.md",
+      "sha256": "181f9ab42cc859e57f65a80031db2bfe2f3bd8b73f9a8d8665f40001c72a8cc7"
+    },
+    {
+      "file": "docs/evidence/m1/correction/actual-local-result.json",
+      "sha256": "1fe9e9cc9394cccce0a47762e06b1558c27c68aade92f3e0408f19c45864cd7a"
+    },
+    {
+      "file": "docs/evidence/m1/correction/after.json",
+      "sha256": "7ee5f7a83c039d8fc6d181b624cc37e62e500dec03426a6464a520f3d4c4fbf5"
+    },
+    {
+      "file": "docs/evidence/m1/correction/before.json",
+      "sha256": "adc5b036aa80627cf77e3573df67cdff21f8908c1f63613d3ba1c95bcc8e9873"
+    },
+    {
+      "file": "docs/evidence/m1/correction/candidate-files.json",
+      "sha256": "847aa4436da195ce8c61f1427823a8bb26aaa894746112b602d77688e30f5377"
+    },
+    {
+      "file": "docs/evidence/m1/correction/preserved-evidence.json",
+      "sha256": "4fdfc19085e9391760c02ab884fa85e8b26a281b807085b419db2bd43ac0c797"
+    },
+    {
+      "file": "docs/evidence/m1/correction/verification.json",
+      "sha256": "4dbe721f0cdc443557db50d59d91a5b4d2ec3797d38a5f95163b2d1698923af7"
+    },
+    {
+      "file": "docs/evidence/m1/curl-generation.json",
+      "sha256": "8213bdb8b58b8492c168ff3079e6380383f246b8605aadfeb34bca3176f8b740"
+    },
+    {
+      "file": "docs/evidence/m1/final-review.json",
+      "sha256": "7f6838a7c3652891f27c67a14688ebc69059a94f2b3f535f591982ee91e50118"
+    },
+    {
+      "file": "docs/evidence/m1/live-browser-attempts.json",
+      "sha256": "b8e0bca74fd26f42cdc3af1ded497032d60f414526036daf858b8c15b6cd7337"
+    },
+    {
+      "file": "docs/evidence/m1/live-browser.json",
+      "sha256": "3b07f27fdd718886599a2566e24e5df5257ed3548e15d7243070a03a0c5d35b9"
+    },
+    {
+      "file": "docs/evidence/m1/live-end-to-end.json",
+      "sha256": "898b48bf65b77f8bb395fdbb00923a4dfdad4eb84259618e8ab2b02f2997edb9"
+    },
+    {
+      "file": "docs/evidence/m1/live-models.json",
+      "sha256": "b7e3fa9a2e05c126090985731bc389923548b31a323d40ed296467d79bd191dd"
+    },
+    {
+      "file": "docs/evidence/m2/artifact-manifest.json",
+      "sha256": "4a7fb52666e587c573b197d5b716fb729422466cc3675b48f4d459060a259356"
+    },
+    {
+      "file": "docs/evidence/m2/deployment-review.json",
+      "sha256": "7fc6e8ca4bb45f927eb8a4f3189c7d22ba2dd252267f5ea7fcb3e6e419db7d8b"
+    },
+    {
+      "file": "docs/evidence/m2/source-research.json",
+      "sha256": "add246fa1fb4e7262c904f693e079ba8c5dbdb3a54e241d05b317b44e3cd30e3"
+    },
+    {
+      "file": "docs/evidence/m2/typography/artifact-manifest.json",
+      "sha256": "9e5154394b0dbe74e7c4ea253b6953b4c3a8dde1e299b631b94061d7e7000fd1"
+    },
+    {
+      "file": "docs/evidence/m2/typography/completion-verification.json",
+      "sha256": "1621e859ce271b0172cf697087547c280aa5d2b67f4abb17bdd28319ade669f7"
+    },
+    {
+      "file": "docs/evidence/m2/typography/font-verification.json",
+      "sha256": "041888102b12b966a21399ae952e1faa091d411d2829a3a33b22bce695be48fc"
+    },
+    {
+      "file": "docs/evidence/m2/typography/live-offline-geometry.json",
+      "sha256": "19f310f5a6fc297d7d5bb19e4ab32f6a04d4a8b99a0c5d5d053b9bc540efa412"
+    },
+    {
+      "file": "docs/evidence/m2/typography/live-verification.json",
+      "sha256": "055fbcecd3c58e01af35d22442324d3b0c3ad6a7bd8637ad8632a8ccb33c30c1"
+    },
+    {
+      "file": "docs/evidence/m2/typography/read-only-review.json",
+      "sha256": "af0a9bd69f68584f831911d75dfb3cb966d86ce25fca294a6b9883e4c07d67e2"
+    },
+    {
+      "file": "docs/evidence/m2/validation/investigation.json",
+      "sha256": "11f10478a2a52dd48e6a3af688e106d94aef6062f7afcb378bef17388fd6e6f3"
+    },
+    {
+      "file": "docs/evidence/m2/verification.json",
+      "sha256": "2e65f89a8bd7fec3b44a5ba2839731a94118d41d26d5db9a21d2d510684c0349"
+    },
+    {
+      "file": "docs/evidence/m3/artifact-manifest.json",
+      "sha256": "4fc033d2bb07bca72af9f030761affffa9119fb950d2ce193cbdba773aa4546c"
+    },
+    {
+      "file": "docs/evidence/m3/verification.json",
+      "sha256": "38a48a8a0e21e695a3aea45d2f067b55082360b9a4848741586d7ec9be881bb1"
+    },
+    {
+      "file": "docs/evidence/m4/artifact-manifest.json",
+      "sha256": "85e9b5df530648a3165a7c23e1df2afc53aec75c2caba0e3f12a07991b25f006"
+    },
+    {
+      "file": "docs/evidence/m4/asset-trial.json",
+      "sha256": "eceb10ecd0c15054ef676046c45a0fb749cddefe40372688b61350d99accabec"
+    },
+    {
+      "file": "docs/evidence/m4/closure/verification.json",
+      "sha256": "83baf6377499e118fe56ac5572cc3028324c760c333230feae62b6e42724eac0"
+    },
+    {
+      "file": "docs/evidence/m4/correction/artifact-manifest.json",
+      "sha256": "5463751bd1c97f702513ba93ed503525170da597a6bc84a7ef085fc7ac1cae98"
+    },
+    {
+      "file": "docs/evidence/m4/correction/verification.json",
+      "sha256": "65e079bc9a2a2378f182e137e39339f199f79449fdc3374e4e12895cfc0db832"
+    },
+    {
+      "file": "docs/evidence/m4/live/artifact-manifest.json",
+      "sha256": "822dd17d6ce8bc65cb246d691c2aa6fcac82a9381a7ce2bb03510fe81cb53be9"
+    },
+    {
+      "file": "docs/evidence/m4/live/journal.json",
+      "sha256": "27ffc9e3a4da2ddb5461588f8debb4d83996ce0af7c3aaa7cd4d2874432c414a"
+    },
+    {
+      "file": "docs/evidence/m4/live/verification.json",
+      "sha256": "c15a10b59eebfbce48428fea60230d70194317f9cfd582ad087d9a9234f0e2ea"
+    },
+    {
+      "file": "docs/evidence/m4/verification.json",
+      "sha256": "f596839a79d6365771a0bb0d80fabba753b5517a20f158a89079fd9debdc8b52"
+    }
+  ],
+  "protectedM5B": [
+    {
+      "file": "docs/M5_REPORT.md",
+      "sha256": "e06cc2b058355ab94963472f9f96bf6a3eccc759187c47f18f936679b27d8b1a"
+    },
+    {
+      "file": "docs/evidence/m5/artifact-manifest.json",
+      "sha256": "9ce37a2ff39989c9e9f7d3b80693e199f32460cfcd0aea1f62b7073d588ef387"
+    },
+    {
+      "file": "docs/evidence/m5/audit-baseline.json",
+      "sha256": "df2e144c994a8906303c35d85ee9bf1c513785a34ee3fa36e79799b310150490"
+    },
+    {
+      "file": "docs/evidence/m5/verification.json",
+      "sha256": "cdbac8980dbe5f2921a2f66c831207f1da889f83265a556d56f3e31dc09cef36"
+    }
+  ]
+}

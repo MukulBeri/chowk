@@ -29,6 +29,9 @@ export function embeddedCampaignFonts(): Promise<Bundle> {
 export async function prepareCampaignFonts() {
   // Explicit face loads precede measurement; loaded status is not glyph proof.
   await embeddedCampaignFonts();
+  await loadCampaignFontFaces();
+}
+export async function loadCampaignFontFaces() {
   const faces = await Promise.all([
     document.fonts.load('400 32px "YarcAnton"', "HamburgefonstivéŁ₹0123456789"),
     document.fonts.load('600 32px "YarcFredoka"', "HamburgefonstivéŁ0123456789"),

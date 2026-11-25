@@ -1,9 +1,10 @@
 export type QualityIssue = "TEXT_OVERFLOW" | "OUT_OF_BOUNDS" | "TEXT_OVERLAP" | "DECOR_OVER_TEXT" | "MIN_FONT" | "LOW_CONTRAST";
-function luminance(colour: string) {
+export function fitAndInspect(root: HTMLElement): QualityIssue[] {
+  // Self-contained: the HTTP document runs this exact fitter, not a second one.
+  function luminance(colour: string) {
   const values = (colour.match(/[\d.]+/g) ?? []).slice(0, 3).map((channel) => Number(channel) / 255).map((channel) => channel <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4);
   return values[0] * .2126 + values[1] * .7152 + values[2] * .0722;
-}
-export function fitAndInspect(root: HTMLElement): QualityIssue[] {
+  }
   const issues = new Set<QualityIssue>();
   const fields = Array.from(root.querySelectorAll<HTMLElement>("[data-fit]"));
   for (const element of fields) {

@@ -1,0 +1,2563 @@
+{
+  "date": "2026-11-25",
+  "scope": "Isolated fresh M5 local evidence; includes retained failed/intermediate runs without relabelling them passed",
+  "files": [
+    {
+      "file": "test-results/m5-build-01.json",
+      "bytes": 92,
+      "sha256": "3199656926b1d203d724717b06f748c812e6b28a5b5897ee5410de2e9a2657cd"
+    },
+    {
+      "file": "test-results/m5-build-01.log",
+      "bytes": 2349,
+      "sha256": "404cbff90a44d7d71611b3ff2d8c6bbf4d9cd4802728065f024cb8562f2e7fac"
+    },
+    {
+      "file": "test-results/m5-build-02.json",
+      "bytes": 92,
+      "sha256": "325c936e5b613dfbad18f37c19f4f8e850d48359446dfc242a36b25e7d3b0500"
+    },
+    {
+      "file": "test-results/m5-build-02.log",
+      "bytes": 891,
+      "sha256": "9549388df255eac6e5a4e9da6cc84180166b6a52b4d2f088cd59e1ed6b266db3"
+    },
+    {
+      "file": "test-results/m5-dev-final-01.json",
+      "bytes": 162,
+      "sha256": "561b66b94caa59e5b11318019ffb6498ac8a78527df0e9b4594660fe497259fd"
+    },
+    {
+      "file": "test-results/m5-dev-final-01.log",
+      "bytes": 2233,
+      "sha256": "0ed8b11307d8db48896485b8bf939f2e2e0332b613cb272aec2a1dedbc7f88dc"
+    },
+    {
+      "file": "test-results/m5-documentation-check.json",
+      "bytes": 306,
+      "sha256": "379ee45b18c9e4f62fea6dbaf6aa50952deb90020eb8cabef45764aa3fcb635f"
+    },
+    {
+      "file": "test-results/m5-focused-01.json",
+      "bytes": 161,
+      "sha256": "d6da9d9f0b68d7f2d7d52abde02b13dc688f7f0467b95f69a144aa1b3bb41fdc"
+    },
+    {
+      "file": "test-results/m5-focused-01.log",
+      "bytes": 744771,
+      "sha256": "ccdbbbf3ad18a7e2f34d054470a0b96c2b98b98ce6a7baa91e4a558bcaa38b01"
+    },
+    {
+      "file": "test-results/m5-focused-production-01.json",
+      "bytes": 171,
+      "sha256": "10746b28defb41741cdb9088d8b980eca7343ebd5adcb88c448df364b01386b4"
+    },
+    {
+      "file": "test-results/m5-focused-production-01.log",
+      "bytes": 5940,
+      "sha256": "ec0c1a264705e950849853c3cc8b7d89130bef8409177962c1eee3387012172f"
+    },
+    {
+      "file": "test-results/m5-full-production-01.json",
+      "bytes": 143,
+      "sha256": "aa4c0cdbdbd5dba636706cc99ca7fc0b34c52ec40789891539a2dd54d030ea74"
+    },
+    {
+      "file": "test-results/m5-full-production-01.log",
+      "bytes": 14117,
+      "sha256": "863d98f40362b1ec16e3b8a12767230295fdf4beff798073e0d422eeb2e216cd"
+    },
+    {
+      "file": "test-results/m5-lint-01.json",
+      "bytes": 91,
+      "sha256": "2de7812fbaec468da0d3a38de549b17b3892a0d9dbbe0c6ad51af63d2ffc4aaa"
+    },
+    {
+      "file": "test-results/m5-lint-01.log",
+      "bytes": 211,
+      "sha256": "cfbd1f976795bfcb1f13724a99d4172f5d39fb36651ec93ab195ffbaa6b8e2d1"
+    },
+    {
+      "file": "test-results/m5-lint-final.json",
+      "bytes": 91,
+      "sha256": "135954a6b9e990a0cc79cd59b3a8946dbe2573a3b224afaf1ab87520e877a4f6"
+    },
+    {
+      "file": "test-results/m5-lint-final.log",
+      "bytes": 211,
+      "sha256": "cfbd1f976795bfcb1f13724a99d4172f5d39fb36651ec93ab195ffbaa6b8e2d1"
+    },
+    {
+      "file": "test-results/m5-tools/preflight.json",
+      "bytes": 379705,
+      "sha256": "0f050aeb470c832b5fbfcca0ce406ec94e432d6195ef598fccaa82194f896f8d"
+    },
+    {
+      "file": "test-results/m5-tools/production-traces.json",
+      "bytes": 2834,
+      "sha256": "a2a92b024b9bf43c35ef54d2265c0e7153a1192cd54a3d646e4f5aae82af0778"
+    },
+    {
+      "file": "test-results/m5-typecheck-01.json",
+      "bytes": 96,
+      "sha256": "5b3b86a90c48b7a5cd73b462e2643676ed41f6ebbba4fc33647e6d1edc1473a4"
+    },
+    {
+      "file": "test-results/m5-typecheck-01.log",
+      "bytes": 47,
+      "sha256": "5b1dc058488cae645ef8edcadedfd249a82e5b6754bb7d8190d84e3636e8fb7f"
+    },
+    {
+      "file": "test-results/m5-typecheck-final.json",
+      "bytes": 96,
+      "sha256": "3f2249407666cf9096601df7c0467ff15842b7221c9f6b8e56cb21ba09deec8d"
+    },
+    {
+      "file": "test-results/m5-typecheck-final.log",
+      "bytes": 47,
+      "sha256": "5b1dc058488cae645ef8edcadedfd249a82e5b6754bb7d8190d84e3636e8fb7f"
+    },
+    {
+      "file": "test-results/m5-curl-01/campaign.html",
+      "bytes": 623141,
+      "sha256": "f968244cbaf0e56896cac0c03f2c01f7b8cb88468dc0ea1cee147d8ed3bddf93"
+    },
+    {
+      "file": "test-results/m5-curl-01/execution.json",
+      "bytes": 1672,
+      "sha256": "6b88051d18ef5d59602b0890e2855ad1f3fd9f13fd6021f0f1757f20b280f5f0"
+    },
+    {
+      "file": "test-results/m5-curl-01/headers.txt",
+      "bytes": 530,
+      "sha256": "ecea87d2a7940381200dc03ef65fa59a0da95579f4e86e929bb2897804128112"
+    },
+    {
+      "file": "test-results/m5-curl-01/response.json",
+      "bytes": 627480,
+      "sha256": "cab8bf6e49459425b07e9f3b4c87aed37a402ad320bbb81a374f8e4e2a120301"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2485,
+      "sha256": "57fd5c734894826d059e532183f9546ef32121ecb2c669ff121af5b693c34df7"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-api-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-studio-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait.png",
+      "bytes": 157556,
+      "sha256": "7353bd158cc2e39001e1a3cb276022ee06fbb890293eb33bd329e5f628080f24"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-api-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-studio-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square.png",
+      "bytes": 146481,
+      "sha256": "b40b7d689497ec5a3739620178aeac705c0d193544f6dfb1fed2f957524ecf12"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-api-dom.png",
+      "bytes": 135980,
+      "sha256": "b54e99ccdfed5a622912b8ab1903172dcb066f476d2b4222ff631703d8a03b72"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-studio-dom.png",
+      "bytes": 135964,
+      "sha256": "094f5879f343a53d2be002eaa9afda1684295b3059847762d29f0cfd728bb8b1"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape.png",
+      "bytes": 200327,
+      "sha256": "ff96c0581203b329c7f9753fbacf4f8308efb49d6c07ab002e8fce4f9a3cb691"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-mobile.png",
+      "bytes": 185036,
+      "sha256": "592ba23aeb17153335e9e57f94118696676857a5d3ce7b122446e3ad4ebc2e0e"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-spec.json",
+      "bytes": 1303,
+      "sha256": "121e34ce688e0c28f43588c1a006907767ebcb712b7e31f6f939e43db21034cf"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-studio.png",
+      "bytes": 256925,
+      "sha256": "8dd84366d234ce7fed46cb06af81b7bfa4935f8744d3eddb9d57b8258287de36"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-api-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-studio-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail.png",
+      "bytes": 119290,
+      "sha256": "1b5d21051668d5a791f2ca94346a4c9ec9f226ec875ccd61f725df4f0503d4c9"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street.html",
+      "bytes": 636318,
+      "sha256": "c9f53307ae19d1c6b055007ec39732b9b47fbfb269d6bbe18eaec3c98535dd03"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2486,
+      "sha256": "6399064c5bd1b1c2e85ce46f4b1fc30b5a59996f738653bac73fb6dd0051c131"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-api-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-studio-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait.png",
+      "bytes": 172655,
+      "sha256": "793981ad3b89d8f85f9376fba570fbebfe2e5735c692b34111d51808c106a9fa"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-api-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-studio-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square.png",
+      "bytes": 157112,
+      "sha256": "a2235bc18d96de204b3d524463492ed2cc73e189d09d6d0765ba429d52e005a1"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-api-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-studio-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape.png",
+      "bytes": 199136,
+      "sha256": "9e8bed5f454880166733938a951ef58d83782f1a51cc5ab7c0f06527d234dc1a"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-mobile.png",
+      "bytes": 196195,
+      "sha256": "da024af73b9fcea4941ae97a81e3d90a866f9dfca06593ad8a63abf9307b7a9d"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-spec.json",
+      "bytes": 1293,
+      "sha256": "0a38abe5f4e1e180d99755d44e5b01fcaa0b087fe69b96b6d34f19d9a29787a3"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-studio.png",
+      "bytes": 273169,
+      "sha256": "5b457cacff6bc9ad164b9182550928b299be9d7ea3b39658b761a1eb29459d44"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-api-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-studio-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail.png",
+      "bytes": 125470,
+      "sha256": "42a5ea6884954d6674fff3e2f316840a361cb828ed70f4d47ec423549426ca64"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop.html",
+      "bytes": 628372,
+      "sha256": "35c68091bbac496b83551588029798a062002609d1d6bd47eadd19392591b375"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2487,
+      "sha256": "29f6de8f3420a6276624347a147565460d0c40f38b2fc6a33ac2c5d560b2e0ba"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-api-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-studio-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait.png",
+      "bytes": 158784,
+      "sha256": "4175f70d94ddb29e7b117831f145acc29a31812767afbaf703954ab3f2668589"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-api-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-studio-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square.png",
+      "bytes": 141621,
+      "sha256": "51e7510e80494b25f433025e752f431153bc6f69b2e53e34845bfc9c2620368b"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-api-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-studio-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape.png",
+      "bytes": 182160,
+      "sha256": "66ae978180cc24ebb7a601a346d515d6f4b47ac7b8cdf51fcad0c674ea660151"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-mobile.png",
+      "bytes": 186813,
+      "sha256": "c355c5b8e2b45c57f7ed16ab4915bf635ca13aae605ff77e7db1e52a514ffad1"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-spec.json",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-studio.png",
+      "bytes": 258888,
+      "sha256": "63dac3ddf2b3ae6fbf17949fdfe25ca2fad985857aa49bd71d01c2be59c83a63"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-api-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-studio-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail.png",
+      "bytes": 113776,
+      "sha256": "91071cad0e9147255f4485393e3481b2ba0fb4e9698459ae8c5da0910d0c0047"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss.html",
+      "bytes": 627202,
+      "sha256": "e53ce8c44a440fc48a6b57f673059aa7acf4e7effa1db71c01b645f5f8e0cc7a"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/font-refusal.json",
+      "bytes": 836,
+      "sha256": "7db67e9cbba299e7a71e2290efae870f1eb6e1c95f4ab42e25406beb308d251b"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/original-unmeasured.html",
+      "bytes": 627202,
+      "sha256": "e53ce8c44a440fc48a6b57f673059aa7acf4e7effa1db71c01b645f5f8e0cc7a"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/tampered-missing-fonts-fixture.html",
+      "bytes": 61929,
+      "sha256": "5d4edc1897b44ec0f5131c82389d3c7b7ce68cee4a0eacd6ce1dad0ca3a2cc11"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/actual-disabled-studio.png",
+      "bytes": 192483,
+      "sha256": "59b85483a53fc5c9337974b35da317470096a3953e1f661292d3cc85f1e2482d"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/notice-response.txt",
+      "bytes": 598438,
+      "sha256": "c5d01c7bbab9117d7d46acc430fa1ba2a552f6a12bc534907f4d4ee33a01fd65"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-real-disabled-H-1e7db--malformed-oversized-inputs/actual-disabled-http.json",
+      "bytes": 1468,
+      "sha256": "8fe5128eb12df4100b02a4d21d3570e68d7e2fd4b4e87322a807e971eaca0712"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.html",
+      "bytes": 619994,
+      "sha256": "f3c3799f86c371fa8266207a50e6844f4bc5dc5acdb809e66638dc287121c776"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.png",
+      "bytes": 365936,
+      "sha256": "d7836e860bd322eff22549dcba8ab468c7177096c7db441dbd89215591053f7a"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/quality.json",
+      "bytes": 1328,
+      "sha256": "4322382f51059092631e873453a261be4fd92e6e41fccd93b4caa24cf62d98d2"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.html",
+      "bytes": 629530,
+      "sha256": "1f2a4239fd3d1379bd957d608e695b866f945b51a01fb8d87b26e263a62596ef"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.png",
+      "bytes": 443441,
+      "sha256": "3ba89e4611a7cdfdea937dc5f47cf5f675aea69ac362d0c59d9253f454c10bb6"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/quality.json",
+      "bytes": 1478,
+      "sha256": "cbbf5d8f0685e6728c02a3fa6d77e063287623ece8c5e083d2cb0e4acf122ea3"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/dense-overload.html",
+      "bytes": 637064,
+      "sha256": "69e2a8ea3429134c8c13d21d304af77523fb9330eaf97a57bce543bf0f677305"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/dense-overload.png",
+      "bytes": 460771,
+      "sha256": "d94381a6c4f9bb0d6be70c1974b71138a9b40623b3a895a08ef2133ef61190f8"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/quality.json",
+      "bytes": 1891,
+      "sha256": "a87238a9d6a0d6bf99b679065557d2720c545953ca4643b2a9ed81e2c00d4444"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.html",
+      "bytes": 630368,
+      "sha256": "eb5793cda12f8399bd3ef9ef545f6d25bc6006b1b6d9fa7e6a4cb447cb7505c8"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.png",
+      "bytes": 372975,
+      "sha256": "c83226c6035d229392b8c0a784edd6cedb47ff98bd6629360dafda39d42f5257"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/quality.json",
+      "bytes": 1427,
+      "sha256": "1007e88a0046dc8ec8b940b21bb5dbd561ae508a3d70494a995a3aad83f30a2c"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.html",
+      "bytes": 616253,
+      "sha256": "aafd29eff68d11cf6e3f9fbb6ce2b33f79d0fd01e2d8a168454d1bf7c6b570a8"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.png",
+      "bytes": 371375,
+      "sha256": "d67e704c33966364652a79855c4cec60b4b9cf35d20990886e6a971be7b5b3db"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/quality.json",
+      "bytes": 1556,
+      "sha256": "fa312f58ce3bda3290937abb820d7f7d0cc173f5e29945e4c350b78f899d0741"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.html",
+      "bytes": 620451,
+      "sha256": "4b3d341c23793f4332f4f4cc6201f8396be066c87ef0e8d3409795233556a5bb"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.png",
+      "bytes": 92826,
+      "sha256": "d7e4ce0be9f70d2e6dedf6ab76b3b3cb4809768654c108aeacd2db54690da954"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/quality.json",
+      "bytes": 2002,
+      "sha256": "bf8a7a2e02b49de1093ba5281a543aee36c4f3029a1c822c764cfc4b6340cdfb"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/quality.json",
+      "bytes": 1242,
+      "sha256": "65f58aa9bd66830508374f8acfcfeb0e34e509327a89342fd7080ed29a4627ac"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.html",
+      "bytes": 619230,
+      "sha256": "523731c37d212874982be3b0125dcbf9a9f0e2ceb72a7a59edaabd7f6a25e29c"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.png",
+      "bytes": 384847,
+      "sha256": "f7dfc4a80bce115b3d6ae5be187c159474c6f3a5217178b16eaffa9420d959f5"
+    },
+    {
+      "file": "test-results/m5-dev-final-01/m5-release-server-inferenc-36d66-t-even-construct-a-provider/disabled-and-mocked-opt-in.json",
+      "bytes": 5452,
+      "sha256": "07808f52d084f1c88dc17dcfe31ee5b5ba4d6729fd380afa19d1efba678826db"
+    },
+    {
+      "file": "test-results/m5-focused-01/.last-run.json",
+      "bytes": 390,
+      "sha256": "5903f7c958cdb456a8c29656ed1c176a649d76a3f4663df80e86221a702533ed"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-spec.json",
+      "bytes": 1303,
+      "sha256": "121e34ce688e0c28f43588c1a006907767ebcb712b7e31f6f939e43db21034cf"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street.html",
+      "bytes": 636318,
+      "sha256": "c9f53307ae19d1c6b055007ec39732b9b47fbfb269d6bbe18eaec3c98535dd03"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/error-context.md",
+      "bytes": 26657,
+      "sha256": "27833dab4575815fd1acd88fb4f0b3119cbd4496387fb7cd3d74e85b3b9084eb"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/test-failed-1.png",
+      "bytes": 60405,
+      "sha256": "ea0ad435b2a812f65ba1a4e5f060f220b74d1d0255b8a0cc9237a727b052c5a4"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/test-failed-2.png",
+      "bytes": 82388,
+      "sha256": "12d3fc13c276a6d6a86bc76cc616cc6673f61bd4a00b21859cf8bde1d2cb1953"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/trace.zip",
+      "bytes": 34663711,
+      "sha256": "a28335bc0cf300daa3966b30c7ff09b6aa64ec0ddaa262704a3304f042b50b75"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/error-context.md",
+      "bytes": 63770,
+      "sha256": "3aa85d154a16d7694ac8f40054ff24a699c6c78d15f83acfab27e766c7a46286"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-spec.json",
+      "bytes": 1293,
+      "sha256": "0a38abe5f4e1e180d99755d44e5b01fcaa0b087fe69b96b6d34f19d9a29787a3"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop.html",
+      "bytes": 628372,
+      "sha256": "35c68091bbac496b83551588029798a062002609d1d6bd47eadd19392591b375"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/test-failed-2.png",
+      "bytes": 93138,
+      "sha256": "71c116c9b5503ecfcd31d957028081e42d21445e66f6e9863d45ceca4d44b3a2"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/trace.zip",
+      "bytes": 39496997,
+      "sha256": "abd6581af5c740f85d794b01b22af2cf1159406c471181ed2f4a66218a89cc40"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/error-context.md",
+      "bytes": 23362,
+      "sha256": "ccc9583731fadbf57077fa3c5f4448492c01da6fa843ea8cacc91d4042b45e52"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-spec.json",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss.html",
+      "bytes": 627202,
+      "sha256": "e53ce8c44a440fc48a6b57f673059aa7acf4e7effa1db71c01b645f5f8e0cc7a"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/test-failed-1.png",
+      "bytes": 60405,
+      "sha256": "ea0ad435b2a812f65ba1a4e5f060f220b74d1d0255b8a0cc9237a727b052c5a4"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/test-failed-2.png",
+      "bytes": 89384,
+      "sha256": "059248723db7f690631193e4a2b2f20bbd31d858a472aad705281d38d428e9f8"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/trace.zip",
+      "bytes": 3626801,
+      "sha256": "7c66185aaf31d59c9d120a1713bb49f5c47100c43672bda059dcfe2db5d57104"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/error-context.md",
+      "bytes": 21238,
+      "sha256": "13a68d77e1bbfe4f91d647cc129f67bcde6005009cbd6de6c61c7708170469c6"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/original-unmeasured.html",
+      "bytes": 627202,
+      "sha256": "e53ce8c44a440fc48a6b57f673059aa7acf4e7effa1db71c01b645f5f8e0cc7a"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/test-failed-1.png",
+      "bytes": 89384,
+      "sha256": "059248723db7f690631193e4a2b2f20bbd31d858a472aad705281d38d428e9f8"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/trace.zip",
+      "bytes": 1505604,
+      "sha256": "2129b2f39c43a185797a749b3e005f822af93d4312c7b54e9405b6773fe118c7"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/error-context.md",
+      "bytes": 63267,
+      "sha256": "2ecab72a86fd8d27d4cbc6fd8c4be37609b59af53551f3bf5ceb531949b84129"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/test-failed-1.png",
+      "bytes": 60405,
+      "sha256": "ea0ad435b2a812f65ba1a4e5f060f220b74d1d0255b8a0cc9237a727b052c5a4"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/trace.zip",
+      "bytes": 41625321,
+      "sha256": "8bc58bc40b404e6f1392738244e04994574d14013e8bf663fe7133593712f98a"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-real-disabled-H-1e7db--malformed-oversized-inputs/actual-disabled-http.json",
+      "bytes": 1468,
+      "sha256": "3e4eac4fd0967372dbbf3540d6c02f4e9d2f9cc3b583256d550577821d113ca0"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.html",
+      "bytes": 619994,
+      "sha256": "f3c3799f86c371fa8266207a50e6844f4bc5dc5acdb809e66638dc287121c776"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/error-context.md",
+      "bytes": 642426,
+      "sha256": "516547289f04d22ab6b2084048658e1e57aee898892657e4f4053c89fb4b43e6"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/test-failed-1.png",
+      "bytes": 88320,
+      "sha256": "3f89e206ca08df253d563d76df06dd564d6649204deb7efe66396437b41dde97"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/trace.zip",
+      "bytes": 3245128,
+      "sha256": "f7feb862e05e1e4469e4627bdf658c84e9cd512ee1365fbf50d16b082e2f71cd"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.html",
+      "bytes": 637064,
+      "sha256": "69e2a8ea3429134c8c13d21d304af77523fb9330eaf97a57bce543bf0f677305"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/error-context.md",
+      "bytes": 22951,
+      "sha256": "87891cd0c4812157f52a3dc3001dbbf6524e29b40a699953adb2b6b156cb5243"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/test-failed-1.png",
+      "bytes": 90392,
+      "sha256": "dce1961eccca026c87f96fb2a9ffe8202c1dbd79d74b780986c8f6dac0e2b9b0"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/trace.zip",
+      "bytes": 1524678,
+      "sha256": "15fb8fa971a612056bc80093c86108b8dc1c38984ece29a98c89015dbc46f02d"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.html",
+      "bytes": 630368,
+      "sha256": "eb5793cda12f8399bd3ef9ef545f6d25bc6006b1b6d9fa7e6a4cb447cb7505c8"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.png",
+      "bytes": 372965,
+      "sha256": "334e3f1fa3b829c17095c94a32ad8d10cf38954ae1a8dee7a75b994195f50477"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/quality.json",
+      "bytes": 1427,
+      "sha256": "c9ff7930ae1a4d5c0eef220d45efbbc39de3fcda98366eabb7b0deb2fd5e937f"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.html",
+      "bytes": 616253,
+      "sha256": "aafd29eff68d11cf6e3f9fbb6ce2b33f79d0fd01e2d8a168454d1bf7c6b570a8"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.png",
+      "bytes": 371375,
+      "sha256": "d67e704c33966364652a79855c4cec60b4b9cf35d20990886e6a971be7b5b3db"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/quality.json",
+      "bytes": 1556,
+      "sha256": "fa312f58ce3bda3290937abb820d7f7d0cc173f5e29945e4c350b78f899d0741"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.html",
+      "bytes": 620451,
+      "sha256": "4b3d341c23793f4332f4f4cc6201f8396be066c87ef0e8d3409795233556a5bb"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.png",
+      "bytes": 92826,
+      "sha256": "d7e4ce0be9f70d2e6dedf6ab76b3b3cb4809768654c108aeacd2db54690da954"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/quality.json",
+      "bytes": 2002,
+      "sha256": "0b12e5e47f76513bae0de619b20c27b16dd87dea784936812c975ff3c4003673"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/quality.json",
+      "bytes": 1242,
+      "sha256": "8c05305bd53a5d2ceb8896af2b2894b04f1d31d4cfa646e350049e996efa5725"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.html",
+      "bytes": 619230,
+      "sha256": "523731c37d212874982be3b0125dcbf9a9f0e2ceb72a7a59edaabd7f6a25e29c"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.png",
+      "bytes": 384858,
+      "sha256": "c66c82c74320c6affd05d1bd4721a5795bf4e2416211ad9e4bf68dc2ff4b682e"
+    },
+    {
+      "file": "test-results/m5-focused-01/m5-release-server-inferenc-36d66-t-even-construct-a-provider/disabled-and-mocked-opt-in.json",
+      "bytes": 5452,
+      "sha256": "7d42943285785bc1829fa9ca420034360bf694bd9d0e34f14e89c0d6f2c111ee"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/.last-run.json",
+      "bytes": 96,
+      "sha256": "9c2da8e7d9b04735f12e8468d3074b3f1aaa2c0666c002e81e1bc656af6c8882"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2485,
+      "sha256": "c9ea9be69dfba0492adb60615430624db80b1ad172841e979165714b2bbedc50"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-api-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-studio-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait.png",
+      "bytes": 157556,
+      "sha256": "7353bd158cc2e39001e1a3cb276022ee06fbb890293eb33bd329e5f628080f24"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-api-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-studio-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square.png",
+      "bytes": 146481,
+      "sha256": "b40b7d689497ec5a3739620178aeac705c0d193544f6dfb1fed2f957524ecf12"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-api-dom.png",
+      "bytes": 135976,
+      "sha256": "0025fd67154d17083569863c7b8c1a73603a0381b017a10b52e60baefababf2f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-studio-dom.png",
+      "bytes": 135964,
+      "sha256": "094f5879f343a53d2be002eaa9afda1684295b3059847762d29f0cfd728bb8b1"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape.png",
+      "bytes": 200327,
+      "sha256": "ff96c0581203b329c7f9753fbacf4f8308efb49d6c07ab002e8fce4f9a3cb691"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-mobile.png",
+      "bytes": 185036,
+      "sha256": "592ba23aeb17153335e9e57f94118696676857a5d3ce7b122446e3ad4ebc2e0e"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-spec.json",
+      "bytes": 1303,
+      "sha256": "121e34ce688e0c28f43588c1a006907767ebcb712b7e31f6f939e43db21034cf"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-studio.png",
+      "bytes": 256925,
+      "sha256": "8dd84366d234ce7fed46cb06af81b7bfa4935f8744d3eddb9d57b8258287de36"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-api-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-studio-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail.png",
+      "bytes": 119290,
+      "sha256": "1b5d21051668d5a791f2ca94346a4c9ec9f226ec875ccd61f725df4f0503d4c9"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street.html",
+      "bytes": 632257,
+      "sha256": "58c9fd08b6b1a7c7d5739b83a5b49826c2bb98d1e6ed251bad7a95b35cd6f155"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2486,
+      "sha256": "f88527e4da216c0c838b30d4a5ae219ca00ee4a62e9706f688ad4fba75a3daba"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-api-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-studio-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait.png",
+      "bytes": 172655,
+      "sha256": "793981ad3b89d8f85f9376fba570fbebfe2e5735c692b34111d51808c106a9fa"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-api-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-studio-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square.png",
+      "bytes": 157112,
+      "sha256": "a2235bc18d96de204b3d524463492ed2cc73e189d09d6d0765ba429d52e005a1"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-api-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-studio-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape.png",
+      "bytes": 199136,
+      "sha256": "9e8bed5f454880166733938a951ef58d83782f1a51cc5ab7c0f06527d234dc1a"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-mobile.png",
+      "bytes": 196195,
+      "sha256": "da024af73b9fcea4941ae97a81e3d90a866f9dfca06593ad8a63abf9307b7a9d"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-spec.json",
+      "bytes": 1293,
+      "sha256": "0a38abe5f4e1e180d99755d44e5b01fcaa0b087fe69b96b6d34f19d9a29787a3"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-studio.png",
+      "bytes": 273169,
+      "sha256": "5b457cacff6bc9ad164b9182550928b299be9d7ea3b39658b761a1eb29459d44"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-api-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-studio-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail.png",
+      "bytes": 125470,
+      "sha256": "42a5ea6884954d6674fff3e2f316840a361cb828ed70f4d47ec423549426ca64"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop.html",
+      "bytes": 624311,
+      "sha256": "c17fe0cc4a5cd48d81322ace0a0c6b4d8c9413873ac0f14484379fa001f067a5"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2487,
+      "sha256": "29f6de8f3420a6276624347a147565460d0c40f38b2fc6a33ac2c5d560b2e0ba"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-api-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-studio-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait.png",
+      "bytes": 158784,
+      "sha256": "4175f70d94ddb29e7b117831f145acc29a31812767afbaf703954ab3f2668589"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-api-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-studio-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square.png",
+      "bytes": 141621,
+      "sha256": "51e7510e80494b25f433025e752f431153bc6f69b2e53e34845bfc9c2620368b"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-api-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-studio-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape.png",
+      "bytes": 182160,
+      "sha256": "66ae978180cc24ebb7a601a346d515d6f4b47ac7b8cdf51fcad0c674ea660151"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-mobile.png",
+      "bytes": 186813,
+      "sha256": "c355c5b8e2b45c57f7ed16ab4915bf635ca13aae605ff77e7db1e52a514ffad1"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-spec.json",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-studio.png",
+      "bytes": 258888,
+      "sha256": "63dac3ddf2b3ae6fbf17949fdfe25ca2fad985857aa49bd71d01c2be59c83a63"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-api-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-studio-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail.png",
+      "bytes": 113776,
+      "sha256": "91071cad0e9147255f4485393e3481b2ba0fb4e9698459ae8c5da0910d0c0047"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss.html",
+      "bytes": 623141,
+      "sha256": "f968244cbaf0e56896cac0c03f2c01f7b8cb88468dc0ea1cee147d8ed3bddf93"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/font-refusal.json",
+      "bytes": 836,
+      "sha256": "7db67e9cbba299e7a71e2290efae870f1eb6e1c95f4ab42e25406beb308d251b"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/original-unmeasured.html",
+      "bytes": 623141,
+      "sha256": "f968244cbaf0e56896cac0c03f2c01f7b8cb88468dc0ea1cee147d8ed3bddf93"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/tampered-missing-fonts-fixture.html",
+      "bytes": 57868,
+      "sha256": "953cad69457b2f6f86d8eec947ea82544343314e4763d36fec4d67774645024f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/actual-disabled-studio.png",
+      "bytes": 192669,
+      "sha256": "8104fc65227d3c7223ddb62cc03971688f89418795d75b08d0cd5f8279c5c2f3"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/notice-response.txt",
+      "bytes": 598438,
+      "sha256": "c5d01c7bbab9117d7d46acc430fa1ba2a552f6a12bc534907f4d4ee33a01fd65"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-real-disabled-H-1e7db--malformed-oversized-inputs/actual-disabled-http.json",
+      "bytes": 1468,
+      "sha256": "6527ba84a73a95d365bd74a91d46ca7b291da66c33b4539608789ac48a0e4d6f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.html",
+      "bytes": 615933,
+      "sha256": "8676d3c3d7c14fcef73a54e7fcc553fd66abb9d0858e7836c63e4814b268d097"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.png",
+      "bytes": 365944,
+      "sha256": "64b2f35584cb3171f73750c0899a25a8728cf8cbc02dcec4a8505fd39d650c46"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/quality.json",
+      "bytes": 1328,
+      "sha256": "4322382f51059092631e873453a261be4fd92e6e41fccd93b4caa24cf62d98d2"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.html",
+      "bytes": 633003,
+      "sha256": "2e4266c64a075f0ae0fa3c793413fb3da06f022cf82e884ca77d161fb232f0c1"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/error-context.md",
+      "bytes": 23002,
+      "sha256": "606602fa1b76bfb4ed013b38fa0645b226156adaf9055b7923b00f53342f902c"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/test-failed-1.png",
+      "bytes": 90392,
+      "sha256": "dce1961eccca026c87f96fb2a9ffe8202c1dbd79d74b780986c8f6dac0e2b9b0"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/trace.zip",
+      "bytes": 1513217,
+      "sha256": "d0a77da64dab18d56f5808d758e708319322b62ec29e9859d340b40afa1f318c"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.html",
+      "bytes": 626307,
+      "sha256": "d6a2966023facdf7ab42bdfa21c23449a544526dc3d702f142db6d7642a477bc"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.png",
+      "bytes": 372965,
+      "sha256": "334e3f1fa3b829c17095c94a32ad8d10cf38954ae1a8dee7a75b994195f50477"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/quality.json",
+      "bytes": 1427,
+      "sha256": "1007e88a0046dc8ec8b940b21bb5dbd561ae508a3d70494a995a3aad83f30a2c"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.html",
+      "bytes": 612192,
+      "sha256": "91f2aea32765cecfb908e9360e7051462f63586f4f75d0357c2ec693de1c0284"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.png",
+      "bytes": 371375,
+      "sha256": "d67e704c33966364652a79855c4cec60b4b9cf35d20990886e6a971be7b5b3db"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/quality.json",
+      "bytes": 1556,
+      "sha256": "fa312f58ce3bda3290937abb820d7f7d0cc173f5e29945e4c350b78f899d0741"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.html",
+      "bytes": 616390,
+      "sha256": "55aeb6e30d4be02ac88fa50ac0e055123868468651cda672b9c96e9318c64fe7"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.png",
+      "bytes": 92826,
+      "sha256": "d7e4ce0be9f70d2e6dedf6ab76b3b3cb4809768654c108aeacd2db54690da954"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/quality.json",
+      "bytes": 2002,
+      "sha256": "bf8a7a2e02b49de1093ba5281a543aee36c4f3029a1c822c764cfc4b6340cdfb"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/quality.json",
+      "bytes": 1242,
+      "sha256": "60f59d618263ed8306d7207def595dd9f02ebdc594eb182c0abb91a6f629f29f"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.html",
+      "bytes": 615169,
+      "sha256": "8ed73a2b7f48f58c82c12432fac22492d9758e3d535f751797f2112f6b350821"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.png",
+      "bytes": 384846,
+      "sha256": "b4a02f1e78c039121844f4c6b0b323480e1e7588d4775b32b423c9f152c4ce93"
+    },
+    {
+      "file": "test-results/m5-focused-production-01/m5-release-server-inferenc-36d66-t-even-construct-a-provider/disabled-and-mocked-opt-in.json",
+      "bytes": 5452,
+      "sha256": "e6ed0e482deb3dfd34111d8931a085ca1ae2ba0cbc5bbc16ac4f3ad8d922ca10"
+    },
+    {
+      "file": "test-results/m5-full-production-01/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-24da9-incomplete-input-without-AI/actual-local-topic-cases.json",
+      "bytes": 26123,
+      "sha256": "cc4bdf87fe30dfc8a042417fdcf43ffdcf0bbf9f02245de448d495e0f6b3120d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-portrait.png",
+      "bytes": 135043,
+      "sha256": "487d286c1b9dcecef590757f281bc8cd6ddead24e2ff974211e09a638dd2464e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-square.png",
+      "bytes": 127434,
+      "sha256": "37f0732fc5047202b419572b1cb32db36031d1d4a80cf462c3abcca81a4bcf50"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-linkedin-landscape.png",
+      "bytes": 177784,
+      "sha256": "168d3d6a72b9befbc257f169f50185ab16732001008a7cd0c5887920387b3e9a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-spec.json",
+      "bytes": 1104,
+      "sha256": "ed7bd332d50be0c04c588c60688ed8b1f042979bf9c3ac16b8dbd17a2110f228"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-studio.png",
+      "bytes": 224927,
+      "sha256": "0810b5e0f9d2c175354ff708bf87676a89a1865fa08b52bf5dc8225a151c967f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-youtube-thumbnail.png",
+      "bytes": 105881,
+      "sha256": "ed7942909f6fd40e5501fc0661e29105bb7b5f43865ba161a49c4f3f90a4bd6c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial.html",
+      "bytes": 599036,
+      "sha256": "d0c791a8f4e029cb91743c7d94cf2e4d28dbabdb3ddeb8a3da0da6b886185b4f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7a31a-mparison-and-layout-quality/evidence.json",
+      "bytes": 3247,
+      "sha256": "19fcc7451ca8e4272633359e69635d349239e66ed65ef8a4c4bc860537be0fdc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/evidence.json",
+      "bytes": 3334,
+      "sha256": "4f191067bc942ba36c19e20ee7e27345a968d60fbb97ac4bf33e08bef1079990"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-portrait.png",
+      "bytes": 179557,
+      "sha256": "c11f5ad604fe02310f96279e5c43d68a7a9bfb88731097f85f9897e734175239"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-square.png",
+      "bytes": 148342,
+      "sha256": "2d18f5f4aa802a63dadc45100dae63895317610ac92a9bf0c44e8af2f8b0859d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-linkedin-landscape.png",
+      "bytes": 195211,
+      "sha256": "30e78bcb981b6e3134bbecafa854909a011bfe398ef0160f68f101d357aa3559"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-native-dom.png",
+      "bytes": 78602,
+      "sha256": "8ac59c8174c6dc60b3b36f40bc3cb1125ca47ebff5e589dd12dc9fa9cb95a24c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-spec.json",
+      "bytes": 1086,
+      "sha256": "52da12a911c87128e2c8195e4ecf27113ae3c15a8a4369cb88165f13558ac21c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-studio.png",
+      "bytes": 266080,
+      "sha256": "5d93231ba45739305a11abe687d3634aee1d54668902d85d8f1b87b9f66e4cfa"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-youtube-thumbnail.png",
+      "bytes": 116747,
+      "sha256": "2271805e3a4bf1b5b15cc0543c77188e0e95287315568f4e10a59880a59b6891"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage.html",
+      "bytes": 596447,
+      "sha256": "cd093c73865c50a600418fb4de8ce7d742da034a3274e9a67e554073e9172c52"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-social-size.png",
+      "bytes": 203631,
+      "sha256": "a2a738eee532758cc5f6942ceef292d7c845d49ee84502f8235deca3726cbfed"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/evidence.json",
+      "bytes": 3231,
+      "sha256": "53d3867031f5d9d12a44472be88af22253c1d1fb19c7ba7256702ecb7678ee2a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-portrait.png",
+      "bytes": 148732,
+      "sha256": "edaae440b15eb2de121dc1bc944d49811cd918499527e62fdc58cc3928aa48ca"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-square.png",
+      "bytes": 140743,
+      "sha256": "f3be01edf4ad188917bb01384661f3bbd4e9b9f1b55a25ccf57f8900469ccad8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-linkedin-landscape.png",
+      "bytes": 191715,
+      "sha256": "8a5ecec444ccd4ed4d4fb7c616b38d51be19f641f6ea2d68d84687d1f5c3541d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-spec.json",
+      "bytes": 1088,
+      "sha256": "fa9978504041a7afc5a87e119db7de3cd3f0ac1135773e3abb8776a6ec399eaa"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-studio.png",
+      "bytes": 237745,
+      "sha256": "f54d4bfb31cee79c1daa939e4d80bc646f9fec009345df0eb3eff12e98c0e182"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-youtube-thumbnail.png",
+      "bytes": 116089,
+      "sha256": "6e544b6136fe118834c273092d6b4e48722aac8f9b17c0e5a40375f024a50240"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset.html",
+      "bytes": 596471,
+      "sha256": "e84254ee9813f01eaa8404ed6eb414879bb8834ccb238f5057cc9be1bcce3770"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/evidence.json",
+      "bytes": 3231,
+      "sha256": "573f3539c52b124cf6b39f457b7319308147812b51f35de5a0a7315c94f4b0e4"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-portrait.png",
+      "bytes": 137189,
+      "sha256": "8240877fff5d2e0f33c30e2c253d20a096033ba6e171bdcc2b67a78cf2062643"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-square.png",
+      "bytes": 129152,
+      "sha256": "15b50d0ce5ac993b08b45e8682c6dad1d82c044821a4d74c87bf01a7bf866fb8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-linkedin-landscape.png",
+      "bytes": 181794,
+      "sha256": "772049a28747bb30a4d267941a13fece57104b04276218843808ce35f702b81c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-spec.json",
+      "bytes": 1086,
+      "sha256": "89e30cd6ccb39696c2d70ad3c0fd8980b1258e1170e615623735f83482334713"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-studio.png",
+      "bytes": 225123,
+      "sha256": "708a0686323004b34ee4c943612d1916f764a9d60defa472b9c64ef9d6f7bbff"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-youtube-thumbnail.png",
+      "bytes": 106607,
+      "sha256": "49d11a1382742fddc19e26ead1ceccca79d21da46ce1a0a416f0455b97d0a5a9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column.html",
+      "bytes": 595980,
+      "sha256": "ec50a8aae8c820e7417e54f5c68da59b46059839bd08d1a2add64afd24191484"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/evidence.json",
+      "bytes": 3332,
+      "sha256": "304a63e69324d8489d77861d367618a92802a179e9c3569f601a8670f2801344"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-social-size.png",
+      "bytes": 189810,
+      "sha256": "70d6288e12ad4ebd6758eca8408b0559fcbf43c4abe9545f446c14b79bd1d0ac"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-portrait.png",
+      "bytes": 157799,
+      "sha256": "4df81e49219e9e6aeeb8c18393ab9760106f2eb1ae81744b2ea9a753eb584a07"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-square.png",
+      "bytes": 136739,
+      "sha256": "00efd6f1f2364e894855693b5d98cb3a24da0fc5518168fdeaa15b2f2526e487"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-linkedin-landscape.png",
+      "bytes": 181681,
+      "sha256": "4265ba6788d00fb472afb95de682b41701f9d4aa4f9acac7248855e22e110e13"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-native-dom.png",
+      "bytes": 70404,
+      "sha256": "448dd97d2b539857867f2600271abae87a34fb94209929473f292a3b680a57bc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-spec.json",
+      "bytes": 1082,
+      "sha256": "c4822db5f9be1f69d312e0e5f712a072f67b629e153075d419546fb73692ba7a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-studio.png",
+      "bytes": 248769,
+      "sha256": "98c96cf6de65f718a3f4ec471e20261a7bc03e1a48f822e7af8ae1f30ff6d167"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-youtube-thumbnail.png",
+      "bytes": 104898,
+      "sha256": "c59de58d6190004308e6f1537c798546b6c968e0858fe7553ed3efefa461a92d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid.html",
+      "bytes": 595928,
+      "sha256": "194697b1d08a603a1766abfb12c0a0bdd2834e835fb4bc0cfd96a664c04435bd"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-social-size.png",
+      "bytes": 187601,
+      "sha256": "b4e7c3254d56d721725af41b599c104713cc05403beb4481012a8bb2d0669aec"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-portrait.png",
+      "bytes": 160950,
+      "sha256": "4178d219d50e25c37a4f99226d6d65398eef276af95bb6f26d100eda87f5d2a3"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-square.png",
+      "bytes": 132226,
+      "sha256": "5555f7c47b837eb6f9216b384515fac6014215953e32d328517c8589b520db46"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-linkedin-landscape.png",
+      "bytes": 180093,
+      "sha256": "b446f442395b3d46cc74de407eea984d9f6a033c635683af69968f62186a1b28"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-native-dom.png",
+      "bytes": 68979,
+      "sha256": "449fce37cec1a113b5a19ed79f2bf9c5191cc8494ff8f0e4ade5b36a8efc1947"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-spec.json",
+      "bytes": 1096,
+      "sha256": "59ae786a0513697e26f7dd028a4aa0f2ef254c009090cc9288d9c255a475dcae"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-studio.png",
+      "bytes": 246865,
+      "sha256": "e08913cb304eeeafc5e183a9f45b991537aeb71d0380d6e5717b5f45f5299d94"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-youtube-thumbnail.png",
+      "bytes": 107720,
+      "sha256": "19e451cb949cd3d8c1237cdc06160c7f26b8e2ce07895628ffeefa103ea23cad"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack.html",
+      "bytes": 598831,
+      "sha256": "7f1e0667c4f1cf94268b1999dfa56e0cb29c668d02aad8f2ff4c13cb520be3b2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-actual-local-e3a66-mparison-and-layout-quality/evidence.json",
+      "bytes": 3347,
+      "sha256": "6327080aff4dd9419a579f419e4df09d4fca1c9d1559e83dd03f8e2762e74173"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-portrait.png",
+      "bytes": 121352,
+      "sha256": "27bbdfb711a2d79a75fa6c943a1cf819b120f6c38535406e63ca1f4c4481ff63"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-square.png",
+      "bytes": 102003,
+      "sha256": "efccc13c6b74e4c0ccf3c688676474d1c7f8da885a307544555af91c896a0bf0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-linkedin-landscape.png",
+      "bytes": 148364,
+      "sha256": "9001999e5b0baaed81d0c67dce5c066cfe369ded721676ec6d0a31bce45cc295"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-spec.json",
+      "bytes": 931,
+      "sha256": "fdcfc6566215445d9f154aee6f465214be1d2e540aadb7180c7d0cb65e348af7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-youtube-thumbnail.png",
+      "bytes": 101188,
+      "sha256": "bb5c1b8e89167af4f1214154d6aeb9c9ead3029231e42803138cd25fbf0f24e2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2.html",
+      "bytes": 16876,
+      "sha256": "81e15373a3cf2a4d7a57c935d8e5e377100b542ea50379257416512b367fa285"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2507,
+      "sha256": "e13777a9813f9761449040249c70d3d6e05a3b22409a726a5c73be350b59243e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-portrait.png",
+      "bytes": 136437,
+      "sha256": "c21dcc94135a7c62fb31aef4dcfe8c5ea4f67b7ca32c99cc055869ab918e6b54"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-square.png",
+      "bytes": 121598,
+      "sha256": "1d9fff9eb3e5f15f8e756577be734315b1c24ce55db346e854590159fe8643ee"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-linkedin-landscape.png",
+      "bytes": 165841,
+      "sha256": "872705209c100c916ab206bcba373e68cc3b98d94cd9363fb67c25827cc80be7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-studio.png",
+      "bytes": 225373,
+      "sha256": "ed6b6450a68f9d55304877a5c6d0d93c7c3944f8fe0c587a38e0dcae2a882986"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-youtube-thumbnail.png",
+      "bytes": 101189,
+      "sha256": "6e660d2b724a3505a9ac3ca8420d62d0da7be50e466f362010452cd4e79b122a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2669,
+      "sha256": "bc28baf6c582e6bc392511d117a62480dfcbc27c1643e9f88d1876784cc7d581"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-portrait.png",
+      "bytes": 165890,
+      "sha256": "fbd517d2beccf9b38244d8a8ebeb0312bda2e97afff13fb8357ef348530aea52"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-square.png",
+      "bytes": 150870,
+      "sha256": "2286231d3cc9b980c306571b6462650df1e6dfc1e8b6bec03c68f333e2a15e7f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-linkedin-landscape.png",
+      "bytes": 186233,
+      "sha256": "3f596993c771ea1489c4fcc928ace85dc0802d46f301c809738ee6099bec8c19"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-studio.png",
+      "bytes": 271444,
+      "sha256": "b38709036df19117c99556e25571c2c673cf39b41b645cac5ec32d58bbb03bd1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-youtube-thumbnail.png",
+      "bytes": 130870,
+      "sha256": "2175fcbb88436b58e1fcc9212addb57d02ea4f667b49f351a41663cd727107b0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "bytes": 2919,
+      "sha256": "6d6fc46e7e27e21d06ceefac510f58db5f9d5d0a493014c37747e72ab7335053"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-portrait.png",
+      "bytes": 156823,
+      "sha256": "3fe45ea53924f983c28e3ae7b5ba457be73e6f4c4a966332bffd2f92741eeb5f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-square.png",
+      "bytes": 150492,
+      "sha256": "7f5ccd71b3eaf67157b08c74f69b3108137a46bd716ea6c403d94450e4e02ef0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-linkedin-landscape.png",
+      "bytes": 186952,
+      "sha256": "d0cfcaf7b5d2bd0152c5d72ddea6378d919358a2836bc7786460c4ba426d26fa"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-studio.png",
+      "bytes": 260926,
+      "sha256": "4b3824e00ab9fad7ce6667385b3199cd76b762122d1b88f08f44b127d4352396"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-youtube-thumbnail.png",
+      "bytes": 138509,
+      "sha256": "2bb95f3cb6c9c23e22bc7e280d9cdb3f3e2098c64722828cc7965c3f124d2f23"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-dense-no-art-studio.png",
+      "bytes": 237179,
+      "sha256": "08b7f525da6da3478e8fa97769bc5560896bfe147e9f0d62ab8f264697931352"
+    },
+    {
+      "file": "test-results/m5-full-production-01/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-impossible-copy-refused.png",
+      "bytes": 272341,
+      "sha256": "01a80029920824cc63b5c2cb96656c4374f452ef7e3e48c3bc10a06c3594864b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/actual-local-result.json",
+      "bytes": 3547,
+      "sha256": "ede27e2cb002cf4200e05fc16955edeb9da2c4de249595a5a35526dc5f61b981"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/corrected-local-studio.png",
+      "bytes": 233698,
+      "sha256": "38cfeea4da62fc0065c4634d822f7f82ea1add9040f0d658eaa99324fd6b0ff2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-campaign.html",
+      "bytes": 594022,
+      "sha256": "ffa4216e09e4b8c50a81546cf55944207a1fc351af48fd38aaec6798828e15f5"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-portrait-1080x1350.png",
+      "bytes": 147428,
+      "sha256": "ab9253ff5dd064ea0beacc5696f7f647474ac7d61807ff501321ad2f58756605"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-square-1080x1080.png",
+      "bytes": 129109,
+      "sha256": "9d33c4504346dbd58636556d2acda98393124cb3cb0e6f054857df9a1e1787cd"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "bytes": 167067,
+      "sha256": "30a92a0324f747c8c24fc4c01a5e94ca23451724930e3591a8849e034d2fdc6c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "bytes": 109439,
+      "sha256": "738ffdf5a9661c3bd29a170b3ee57780bee00acc6df43018964ef46c1bea83f2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/fallback-correction-replay-73a6d-istorical-measured-evidence/after.json",
+      "bytes": 20275,
+      "sha256": "1e0354bb704fceb43b46d2bd25cb452be80d01e3527582086db5c90d8db499b1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/actual-local-planner-studio.png",
+      "bytes": 243022,
+      "sha256": "9e2bc7cce669a704bb606b78b9a802b83aaefdf49ad3bff54646bd27cb34278d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-campaign.html",
+      "bytes": 594263,
+      "sha256": "4f9035a0691cd93ba013a902d5bffaf0a7d9eea9ab9be64beb5ee97723a6fc41"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 165254,
+      "sha256": "c98ab86bc9c4966c9dcdf12826c173b02e69a5ab29f40860441e75bc6cd6a45f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 129381,
+      "sha256": "5197951300e639e4e9c05ad776030b7d8d58835359ad035545958732845bd067"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 176919,
+      "sha256": "33d2090bc8d11cde6ab6cc928d8b1d6bd1fb7d070fd3f20ff458b2e0a8a7aaa2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 111269,
+      "sha256": "84f316ae17f5df83ee876e9373f9d91742934664b4421a9af9e872daaddeb72b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-studio.png",
+      "bytes": 184487,
+      "sha256": "f43f22194ad41c176343bab0e779910b56136224016f6d3e7974471c4a2769ff"
+    },
+    {
+      "file": "test-results/m5-full-production-01/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-youtube.png",
+      "bytes": 88507,
+      "sha256": "02f902482633b9fca5bededa7b421e6971f02ef2cd6cfb70513a4b85ee68d7d6"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-copy-correction-bounded-820f8--without-deleting-negatives/classification-matrix.json",
+      "bytes": 5344,
+      "sha256": "f6f7ecb6f8bd5f10a3b2b6a9e39a3838131abd3ae84cc9f48ec8ce2ae4162256"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-copy-correction-exact-e-26c03-ata-rather-than-public-copy/environment-classification.json",
+      "bytes": 2399,
+      "sha256": "6892144cdf244e83cad2199e5be731474559c9b3dd011886b0ea416c199eef8f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-copy-correction-exact-r-4e881--unchanged-factual-criteria/safe-missing-fact-categories.json",
+      "bytes": 2945,
+      "sha256": "06cd892b72fd3e1aeae7c18a5efb56834547559d8677f1a1c338bdd89e523fc4"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-copy-correction-mocked--69ddb--once-or-honestly-fall-back/mocked-ai-repair-fallback.json",
+      "bytes": 8105,
+      "sha256": "e5e877fce9460557357ebba976883d47f6877c95c765dbf02e6346206075c385"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-M4-corpus-preser-b4cb6--the-shared-strict-contract/local-planning-corpus.json",
+      "bytes": 54632,
+      "sha256": "d3cb04c3d040982c3eaf4760f90864788849967f4e0df1c42047a28103f8a5bf"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-instagram-portrait.png",
+      "bytes": 142153,
+      "sha256": "71eaeab1bca7c7f7dccdce4bf66e6c3d6957d060554ed84ab3ffefa8a0e9f469"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-instagram-square.png",
+      "bytes": 107518,
+      "sha256": "b6cf5fc659bd129035abc6195110123589fddab32595ee367cfca95f11499e44"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-linkedin-landscape.png",
+      "bytes": 156073,
+      "sha256": "b5c6bd660bc9fd4cc786d1ca29bf01b008533796e08711d9bc1daffae07a56b8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-youtube-thumbnail.png",
+      "bytes": 95346,
+      "sha256": "aa446270dc6191ef19caed8c1df9564a33ea1bf027859db0b6c07c24b30b7128"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop.html",
+      "bytes": 593771,
+      "sha256": "c86558f7e12ac3dca28fa2a33d3d593e70d2e5e6c2e16168556d1a73aadcb511"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-result.json",
+      "bytes": 4582,
+      "sha256": "7646922aef63cb5bd0e20a6770a5e2c0adadd9c1f53786594774969f491ad153"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-instagram-portrait.png",
+      "bytes": 122162,
+      "sha256": "6ff8382d500a90b651efcfd127b0293443990b6ebd14495f95c930a048e4bf4a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-instagram-square.png",
+      "bytes": 98023,
+      "sha256": "97ee2d8e4b949caee4c0c98fff76309608893470c4c138947d67585a42bcad07"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-linkedin-landscape.png",
+      "bytes": 133804,
+      "sha256": "e8d8616e820fe188b033771f8dc920b74625ba23f7a6e28ded9a3d2056adb03d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-youtube-thumbnail.png",
+      "bytes": 80645,
+      "sha256": "3fe171a370615b151553f8a96cd612678b9cb52d98190f4a3e726715d7bc58ec"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street.html",
+      "bytes": 596159,
+      "sha256": "1b20e9eac078aa9b1d0af1244ecb6e262c7312ad8099c77433df457ac8ee2988"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-result.json",
+      "bytes": 4592,
+      "sha256": "514d9367fb083fd09eac154590081c726dba31bd5d218a0a0951c5f9cf009134"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-instagram-portrait.png",
+      "bytes": 122298,
+      "sha256": "cf829ff1678ce6e1ee64e7f05da387695725040823791d91aa2a868ad50afede"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-instagram-square.png",
+      "bytes": 103657,
+      "sha256": "92db31e82e69a3ab4a6d8bededdb0416f39f6e9a655b9cf0c1507d00eef52782"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-linkedin-landscape.png",
+      "bytes": 140915,
+      "sha256": "1daa6f1595d5233446af03c8a615b8dd901e16073e85c11814fcd251e45cdf27"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-youtube-thumbnail.png",
+      "bytes": 84415,
+      "sha256": "cb10e570adc7c936926ac8531d56b6840609f9f85f4306424d3d03acdf9d5bc2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss.html",
+      "bytes": 593288,
+      "sha256": "1350464fc9c8548319b356ab1b5b89fc4ad41cf146cfb673ed0f5aa1b3dee74e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-result.json",
+      "bytes": 4580,
+      "sha256": "9a2ee1f7f7fc2b286d9fccfc197c870e5e551610d91b7af3707f2a5b2420af6d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-measured-sibling-0fa23-e-z-index-or-pointer-events/geometry-fixture.json",
+      "bytes": 149,
+      "sha256": "5d462e2f8034f6f6ac7dec349c6a2849305dd3600e93b7fb7d568b8bd3f870dc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-negative-facts-a-dc516-lently-reverse-or-disappear/fact-guard-findings.json",
+      "bytes": 865,
+      "sha256": "10fef6f2588810dc5824b4478c0b880329649c15766824ed83e55664281c22d9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m4-engine-whole-word-headl-ebd2a-n-impossible-unbroken-token/whole-word-fitting.json",
+      "bytes": 300,
+      "sha256": "ddecbbd57385279f96cd9dbbb5a155ecf6ea678c2ceda77f5003912a90a98e8a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2485,
+      "sha256": "57fd5c734894826d059e532183f9546ef32121ecb2c669ff121af5b693c34df7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-api-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait-studio-dom.png",
+      "bytes": 100387,
+      "sha256": "8d632605fc871cd41ce3e853924e1a3ff9444f52f212d8bc1d474b0fab11f2dd"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-portrait.png",
+      "bytes": 157556,
+      "sha256": "7353bd158cc2e39001e1a3cb276022ee06fbb890293eb33bd329e5f628080f24"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-api-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square-studio-dom.png",
+      "bytes": 95131,
+      "sha256": "841b859bfa6af1adc1297f6dc67d38a06d3ab8912e6b502b371bd74155a27a6f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-instagram-square.png",
+      "bytes": 146481,
+      "sha256": "b40b7d689497ec5a3739620178aeac705c0d193544f6dfb1fed2f957524ecf12"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-api-dom.png",
+      "bytes": 135973,
+      "sha256": "badab9483103f4b3205f737101f0efa8d881c05fd5ddaf8d00bd529d8cb680bb"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape-studio-dom.png",
+      "bytes": 135975,
+      "sha256": "43c81e9342ed70c3b861686fae4c0616d35381e1a8e9431560adf1356c7856d9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-linkedin-landscape.png",
+      "bytes": 200424,
+      "sha256": "750718465f6fb4b7836fcf460e71598c4da7915ffd668e24a5aa80192a61861c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-mobile.png",
+      "bytes": 185036,
+      "sha256": "592ba23aeb17153335e9e57f94118696676857a5d3ce7b122446e3ad4ebc2e0e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-spec.json",
+      "bytes": 1303,
+      "sha256": "121e34ce688e0c28f43588c1a006907767ebcb712b7e31f6f939e43db21034cf"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-studio.png",
+      "bytes": 256925,
+      "sha256": "8dd84366d234ce7fed46cb06af81b7bfa4935f8744d3eddb9d57b8258287de36"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-api-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail-studio-dom.png",
+      "bytes": 77846,
+      "sha256": "c5fee8ae6544f98c19fb44acfba917f6f482b4cafccdfb5924748a939aef8fc7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street-youtube-thumbnail.png",
+      "bytes": 119290,
+      "sha256": "1b5d21051668d5a791f2ca94346a4c9ec9f226ec875ccd61f725df4f0503d4c9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-bold--7ef3a-d-accepted-M4-compatibility/bold-street.html",
+      "bytes": 632257,
+      "sha256": "58c9fd08b6b1a7c7d5739b83a5b49826c2bb98d1e6ed251bad7a95b35cd6f155"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2486,
+      "sha256": "62315a31043e646a3592999501810c853b479d9c7f0a607a9db9658c83ecd1f0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-api-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait-studio-dom.png",
+      "bytes": 115653,
+      "sha256": "17db67096981fbcff28ca5555a83479db4a864f4dee3bd9bc5325afe6bf81b99"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-portrait.png",
+      "bytes": 172655,
+      "sha256": "793981ad3b89d8f85f9376fba570fbebfe2e5735c692b34111d51808c106a9fa"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-api-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square-studio-dom.png",
+      "bytes": 106940,
+      "sha256": "559e16bf23e919f9f552b9b95fbb189ccaa7fd39b00d69de89f641b15bce38e6"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-instagram-square.png",
+      "bytes": 157112,
+      "sha256": "a2235bc18d96de204b3d524463492ed2cc73e189d09d6d0765ba429d52e005a1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-api-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape-studio-dom.png",
+      "bytes": 136512,
+      "sha256": "b1bfa20a9f5d154fd59f98fec970f92c064698ea01816ec94794b9f512035aff"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-linkedin-landscape.png",
+      "bytes": 199136,
+      "sha256": "9e8bed5f454880166733938a951ef58d83782f1a51cc5ab7c0f06527d234dc1a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-mobile.png",
+      "bytes": 196195,
+      "sha256": "da024af73b9fcea4941ae97a81e3d90a866f9dfca06593ad8a63abf9307b7a9d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-spec.json",
+      "bytes": 1293,
+      "sha256": "0a38abe5f4e1e180d99755d44e5b01fcaa0b087fe69b96b6d34f19d9a29787a3"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-studio.png",
+      "bytes": 273169,
+      "sha256": "5b457cacff6bc9ad164b9182550928b299be9d7ea3b39658b761a1eb29459d44"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-api-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail-studio-dom.png",
+      "bytes": 86124,
+      "sha256": "a03a16c3bfb9f4ab5ca80d613fdd57488531eda41e1af18c80b81e50e0abadce"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop-youtube-thumbnail.png",
+      "bytes": 125470,
+      "sha256": "42a5ea6884954d6674fff3e2f316840a361cb828ed70f4d47ec423549426ca64"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-festi-367f1-d-accepted-M4-compatibility/festive-pop.html",
+      "bytes": 624311,
+      "sha256": "c17fe0cc4a5cd48d81322ace0a0c6b4d8c9413873ac0f14484379fa001f067a5"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/actual-evidence.json",
+      "bytes": 2487,
+      "sha256": "c28590f38038fb0ec0f1f516709ee3e93d4b53c8fb443d86cf02182d34a05f51"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-api-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait-studio-dom.png",
+      "bytes": 106234,
+      "sha256": "fd3bb9fdc8f54b6df4887a4a8ae192e6c12ffdfe3d29ea5f6a32f5e309140482"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-portrait.png",
+      "bytes": 158784,
+      "sha256": "4175f70d94ddb29e7b117831f145acc29a31812767afbaf703954ab3f2668589"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-api-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square-studio-dom.png",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-instagram-square.png",
+      "bytes": 141621,
+      "sha256": "51e7510e80494b25f433025e752f431153bc6f69b2e53e34845bfc9c2620368b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-api-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape-studio-dom.png",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-linkedin-landscape.png",
+      "bytes": 182160,
+      "sha256": "66ae978180cc24ebb7a601a346d515d6f4b47ac7b8cdf51fcad0c674ea660151"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-mobile.png",
+      "bytes": 186813,
+      "sha256": "c355c5b8e2b45c57f7ed16ab4915bf635ca13aae605ff77e7db1e52a514ffad1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-spec.json",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-studio.png",
+      "bytes": 258888,
+      "sha256": "63dac3ddf2b3ae6fbf17949fdfe25ca2fad985857aa49bd71d01c2be59c83a63"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-api-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail-studio-dom.png",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss-youtube-thumbnail.png",
+      "bytes": 113776,
+      "sha256": "91071cad0e9147255f4485393e3481b2ba0fb4e9698459ae8c5da0910d0c0047"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-HTTP-HTML-minim-c7cfb-d-accepted-M4-compatibility/minimal-swiss.html",
+      "bytes": 623141,
+      "sha256": "f968244cbaf0e56896cac0c03f2c01f7b8cb88468dc0ea1cee147d8ed3bddf93"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/font-refusal.json",
+      "bytes": 836,
+      "sha256": "7db67e9cbba299e7a71e2290efae870f1eb6e1c95f4ab42e25406beb308d251b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/original-unmeasured.html",
+      "bytes": 623141,
+      "sha256": "f968244cbaf0e56896cac0c03f2c01f7b8cb88468dc0ea1cee147d8ed3bddf93"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-consumer-withou-b6e44--embedded-fonts-fail-closed/tampered-missing-fonts-fixture.html",
+      "bytes": 57868,
+      "sha256": "953cad69457b2f6f86d8eec947ea82544343314e4763d36fec4d67774645024f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/actual-disabled-studio.png",
+      "bytes": 192483,
+      "sha256": "59b85483a53fc5c9337974b35da317470096a3953e1f661292d3cc85f1e2482d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-notices-and-low-9edd6-ging-font-asset-attribution/notice-response.txt",
+      "bytes": 598438,
+      "sha256": "c5d01c7bbab9117d7d46acc430fa1ba2a552f6a12bc534907f4d4ee33a01fd65"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-real-disabled-H-1e7db--malformed-oversized-inputs/actual-disabled-http.json",
+      "bytes": 1468,
+      "sha256": "4e359eb9d3a583e2a671f2bbbec4727d0a1800e4198649e40bbe0b6220f23e6e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.html",
+      "bytes": 615933,
+      "sha256": "8676d3c3d7c14fcef73a54e7fcc553fd66abb9d0858e7836c63e4814b268d097"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/camera.png",
+      "bytes": 365964,
+      "sha256": "56de779c85aea4a02b0d874967120c442883db87583790158e5ec76a974e0496"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-c-69010-safety-and-honest-readiness/quality.json",
+      "bytes": 1328,
+      "sha256": "4322382f51059092631e873453a261be4fd92e6e41fccd93b4caa24cf62d98d2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.html",
+      "bytes": 625469,
+      "sha256": "1a0cc54e2c5e654f5b81e9dc1284bb024677f71a23a6e2be12c554192869521b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/dense.png",
+      "bytes": 443441,
+      "sha256": "3ba89e4611a7cdfdea937dc5f47cf5f675aea69ac362d0c59d9253f454c10bb6"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-9c6b8-safety-and-honest-readiness/quality.json",
+      "bytes": 1478,
+      "sha256": "cbbf5d8f0685e6728c02a3fa6d77e063287623ece8c5e083d2cb0e4acf122ea3"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/dense-overload.html",
+      "bytes": 633003,
+      "sha256": "2e4266c64a075f0ae0fa3c793413fb3da06f022cf82e884ca77d161fb232f0c1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/dense-overload.png",
+      "bytes": 460771,
+      "sha256": "d94381a6c4f9bb0d6be70c1974b71138a9b40623b3a895a08ef2133ef61190f8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-d-a1506-safety-and-honest-readiness/quality.json",
+      "bytes": 1891,
+      "sha256": "a87238a9d6a0d6bf99b679065557d2720c545953ca4643b2a9ed81e2c00d4444"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.html",
+      "bytes": 626307,
+      "sha256": "d6a2966023facdf7ab42bdfa21c23449a544526dc3d702f142db6d7642a477bc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/environment.png",
+      "bytes": 372964,
+      "sha256": "46be4c27ecb0587181f2ecd8870cdaa79e0800656c8f752e5d252acbcab32f76"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-e-7becd-safety-and-honest-readiness/quality.json",
+      "bytes": 1427,
+      "sha256": "58258b771886c76206c9589626d96de50189c6d336b56c7799ef77b7faf1d112"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.html",
+      "bytes": 612192,
+      "sha256": "91f2aea32765cecfb908e9360e7051462f63586f4f75d0357c2ec693de1c0284"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/hostile-data.png",
+      "bytes": 371375,
+      "sha256": "d67e704c33966364652a79855c4cec60b4b9cf35d20990886e6a971be7b5b3db"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-h-8dd1f-safety-and-honest-readiness/quality.json",
+      "bytes": 1556,
+      "sha256": "fa312f58ce3bda3290937abb820d7f7d0cc173f5e29945e4c350b78f899d0741"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.html",
+      "bytes": 616390,
+      "sha256": "55aeb6e30d4be02ac88fa50ac0e055123868468651cda672b9c96e9318c64fe7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/impossible.png",
+      "bytes": 92826,
+      "sha256": "d7e4ce0be9f70d2e6dedf6ab76b3b3cb4809768654c108aeacd2db54690da954"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-i-d4743-safety-and-honest-readiness/quality.json",
+      "bytes": 2002,
+      "sha256": "0b12e5e47f76513bae0de619b20c27b16dd87dea784936812c975ff3c4003673"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/quality.json",
+      "bytes": 1242,
+      "sha256": "60f59d618263ed8306d7207def595dd9f02ebdc594eb182c0abb91a6f629f29f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.html",
+      "bytes": 615169,
+      "sha256": "8ed73a2b7f48f58c82c12432fac22492d9758e3d535f751797f2112f6b350821"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-returned-HTML-s-64882-safety-and-honest-readiness/short.png",
+      "bytes": 384846,
+      "sha256": "f37bfb6b41f85d301a309b7872c06414efcfd13d758a1921577839c5b91bbf6f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/m5-release-server-inferenc-36d66-t-even-construct-a-provider/disabled-and-mocked-opt-in.json",
+      "bytes": 5451,
+      "sha256": "f3e92e7a9e0d840978f7dd8c44b00fbc2a72cecae7a506d67aa996bc81cbe0fe"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-campaign.html",
+      "bytes": 16852,
+      "sha256": "18c6aa04cb30e2d2945413c02a8194710880758f7a9b77c61450cb34c3a59cc0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-portrait-1080x1350.png",
+      "bytes": 115289,
+      "sha256": "dd9d600a7e1d0ca23d17c72f9e61232f1ef0b2fb836cb9dc8cd742cf3207b895"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-square-1080x1080.png",
+      "bytes": 102638,
+      "sha256": "e4f7165a28433e82de40980461df5eea1d7a840fa8044ce0a7008d920f569423"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-linkedin-landscape-1910x1000.png",
+      "bytes": 147393,
+      "sha256": "c024d436fda3904c30b83458616e2741fc638c05b37f6b84ec1af132c5b564f0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-long-copy.png",
+      "bytes": 427527,
+      "sha256": "85cc5622c9230e4c41a4c0f4d1778c7933ea05fccd5771920e67e957b3454526"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-studio.png",
+      "bytes": 168714,
+      "sha256": "6e5a432dc7f9dd52879648f00e03eb9735a53de254b927704c6b71dce6c83de8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-youtube-thumbnail-1280x720.png",
+      "bytes": 97448,
+      "sha256": "3dd74f3e737f4441f8bb9ea924648a3d34c2b7084945e8a72f8c54fae0e3906c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-campaign.html",
+      "bytes": 16734,
+      "sha256": "c4326d97a379a13d464baf943d452797bb1509416993acf209745a04476b4913"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-portrait-1080x1350.png",
+      "bytes": 134311,
+      "sha256": "c014a88c58d3dd8f7b54c480cbbe6bbab8ccd3b34c89cd5b091621dd2ab0363e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-square-1080x1080.png",
+      "bytes": 120435,
+      "sha256": "3489737433410d670452c4ca59512c9c1124a8cef5d445f0eb560680dd8aeed4"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-linkedin-landscape-1910x1000.png",
+      "bytes": 157623,
+      "sha256": "3e579cc164feec962dc4123f7e4a97ea9dc491089cd2441afa64ad0c0b801748"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-long-copy.png",
+      "bytes": 516387,
+      "sha256": "b39f53170fe593c26c3ea284c2e7b32be33b5a7eca85b7890231d023ee1ce4b9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-studio.png",
+      "bytes": 210952,
+      "sha256": "e7dd81b61952424ff89739af37541ef083bc6680d05bb9c6fca4c368a17e8d24"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-youtube-thumbnail-1280x720.png",
+      "bytes": 112805,
+      "sha256": "c570abc1843fee7e55ab940a9f39d0daa87a19f73c6d8ed2a328e795503fce22"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-campaign.html",
+      "bytes": 14604,
+      "sha256": "419e1a6236d8b98ddd7ea7924865bf5c78e8650b519064049fb0102f6bd2c135"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-portrait-1080x1350.png",
+      "bytes": 114534,
+      "sha256": "268d35111494da1eebfbf11da243f05b6165a7724c06baf3a9a59c56fd9ff10f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-square-1080x1080.png",
+      "bytes": 100216,
+      "sha256": "88e56466c08c9e9502a8cbb37c6c05f2effb781149c567f1cab9d7c2abda38ea"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "bytes": 144371,
+      "sha256": "20c15ee354065492032ba507a9b936ff99f5da864e76843eed0fd2f2625ff68a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-long-copy.png",
+      "bytes": 490341,
+      "sha256": "fd5d5f1327df70fc6d0b10ea67bdfde427a6aaea1bb96621afc05957afe2413f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-studio.png",
+      "bytes": 175174,
+      "sha256": "c8eb129b49d83602c23c394c7d99ec4a9fdb735f0142c9b7946b87206ffb92df"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "bytes": 95359,
+      "sha256": "4d3493fd5e9382e73956108ec5df9ddf7329da8b6eddc57e695025e9d295e5e0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-mobile-layout-manua-2cb01--text-injection-remain-safe/mobile-studio.png",
+      "bytes": 161086,
+      "sha256": "12838b5a2ba9cf8a4a68931869945edcbfa5b865e3dc1ca4cfba5aa178649da0"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+      "bytes": 377460,
+      "sha256": "37765a13c3ddf20bdf9dd04ee69adf99d02421e798f83dec53b5c77c0f634bf6"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-desktop-1440.png",
+      "bytes": 187434,
+      "sha256": "06523ec33d6224c15e43b8e8baecf5df06f6cb37112c997fc162f01558fd38b9"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-mobile-gallery-390.png",
+      "bytes": 100947,
+      "sha256": "3b7af201ecb7fb74da4de71285c4db2e6c42e1f1fc28f4713e81f68ac6bfbfc1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/actual-artwork-enlargement.png",
+      "bytes": 198646,
+      "sha256": "ddb38c74dcf5ce81b99b673a8f25bb74d41dd81c036b4994aff3d0e7ec9dc7a7"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/after-inspection.png",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/before-inspection.png",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/inspection-isolation.json",
+      "bytes": 194,
+      "sha256": "a01fa39ff151a848954c755fa2eb5552a9eab8c8c8ecfa21d276d809b33aa403"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-draft-cha-85d6b-ong-to-the-current-campaign/manually-refined-spec.json",
+      "bytes": 1111,
+      "sha256": "41860efb556f89e879ea63812a743f618f425e6d81edadc16528fb88b1e6ed58"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-empty-wor-59278-ubjectless-input-are-honest/empty-incomplete-studio.png",
+      "bytes": 71439,
+      "sha256": "af309a2eb1c329ba7b0a71c9be24bb31d512fa786f81872ea12e1b1fcebccc69"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+      "bytes": 391686,
+      "sha256": "e615db3fe26d3761e18c2ce7a6580335f60ae4435d43581b97cccc2dafac4109"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-desktop-1440.png",
+      "bytes": 230306,
+      "sha256": "0b406b710b54aa767c9053be81d73ab5fa2deb207a00fa771ff11c7fca51b8f1"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-mobile-gallery-390.png",
+      "bytes": 127924,
+      "sha256": "7d4623c2c24b6c9760332f6d7e8091ff7c5373d734fecb8321637e9fd370787e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+      "bytes": 429996,
+      "sha256": "f9e9ee12fe3fbbe71f63e991f19cbf88119cdbb8ee77168843b9ea6ce2f6cf14"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-desktop-1440.png",
+      "bytes": 258398,
+      "sha256": "bb356c1ca3b58e900fcbf33a0604a7fb3da40c623ec9ed3051ea0ec68fdce934"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-mobile-gallery-390.png",
+      "bytes": 141588,
+      "sha256": "f8cef2126550f99bd505f995f4084ed6be69d26cd9db401a262fddd72f8a6659"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-pending-f-3ae0c-I-local-fallback-provenance/mock-pending-previous-result.png",
+      "bytes": 198412,
+      "sha256": "53668e4505baa700060c77b4d87d3f12416df97a870199e701b80e8247c6c4cc"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-rapid-exp-9e077-prevent-duplicate-downloads/locked-revision-youtube.png",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/css-magnification-200-percent.png",
+      "bytes": 381408,
+      "sha256": "a38871cd6cd1cb706f78069ba1c9632298801cd434acfdbfc9a1afb21b879e66"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/mobile-creation-open-320.png",
+      "bytes": 159739,
+      "sha256": "145f0dd45c3961805e0e86cb499f1aa563976bc563bd2ca2cd259009be58cd51"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/responsive-measurements.json",
+      "bytes": 2964,
+      "sha256": "70a93d7938f179fd3ffa0a1d91246d76ed8fd7a05bf4fd8bf728158bcc9445f8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1024x768.png",
+      "bytes": 192780,
+      "sha256": "71a89f2a5358fce3bc16a9a2ee56e9942f05db07396be47ae8d5ff4fd039837e"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1280x720.png",
+      "bytes": 227182,
+      "sha256": "7f9c29104fa1a4e994d92ae45171089de7b6a9fe73fc7caa385ed69efdeb28b2"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1366x768.png",
+      "bytes": 242760,
+      "sha256": "86ba9d7e8d8cdc857bf76b44d5b35f91b6686ee3dce7cad8bc9484453860e347"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1440x900.png",
+      "bytes": 258398,
+      "sha256": "bb356c1ca3b58e900fcbf33a0604a7fb3da40c623ec9ed3051ea0ec68fdce934"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-320x844.png",
+      "bytes": 116698,
+      "sha256": "3e6367de1b7796ea4cfc690d589afe4890a484dc7b91ac3b483dcd55801e9b64"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-390x844.png",
+      "bytes": 141588,
+      "sha256": "f8cef2126550f99bd505f995f4084ed6be69d26cd9db401a262fddd72f8a6659"
+    },
+    {
+      "file": "test-results/m5-full-production-01/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-768x1024.png",
+      "bytes": 140021,
+      "sha256": "a8296dcf2eda9c05f6c8ff230bf9d8bbff178e7fc8f96b95de43be44041ce188"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-embedded-fonts.html",
+      "bytes": 592268,
+      "sha256": "3b08d40950ab76862499f86755209133ae8d2810fde00acb4506a7572b2d6ba8"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-glyphs.png",
+      "bytes": 85910,
+      "sha256": "0ea89213d9e40c1e845d9f07b53c8db54297318120f228f14936621b82d1cebe"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-native-glyphs.png",
+      "bytes": 51459,
+      "sha256": "6ea7aa4872994cd73c41d4eee7209e4f76027daa65d9c181c943d5e9486e2d8f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-offline-glyphs.png",
+      "bytes": 51466,
+      "sha256": "4c94194cbc0e90d00b83451fa6a3b4b7d534e1145bf6f3efce0076cbfe5c8c6b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-painted-before-glyph-query.png",
+      "bytes": 22960,
+      "sha256": "32a88ebac49f04a1f3f852767b05eb31b901665160df7f7ed3b6f9d7735f8396"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-bold-street-act-cd898--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 557,
+      "sha256": "701c4fd55add5c89f27d669b45137587633c48b7db778e700803275f4cf76d1b"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-embedded-fonts.html",
+      "bytes": 589505,
+      "sha256": "fe01439d6b719ee78324ff77d1127432220426e7f500d52a3af4df0fdc442f0f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-glyphs.png",
+      "bytes": 113484,
+      "sha256": "6eeab2a66c32677ead63795359fe8c30e74bf960267a328ce27c7dc7c8f3ba3d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-native-glyphs.png",
+      "bytes": 78585,
+      "sha256": "28a1e2075ff6dbb74f61ad892c8473a1496b3b63d6d4ea76a59aa92c28a2ca71"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-offline-glyphs.png",
+      "bytes": 78580,
+      "sha256": "4251bb43b3ebb0d0ab71efbaa93a0d6976a0caf6608685bae7d67d6ac0102e0a"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-painted-before-glyph-query.png",
+      "bytes": 33656,
+      "sha256": "c8a3a0aa03f7cd5ef3a26ee3a6b9e5e7de8397060fa979cd69a74f8952553dda"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-festive-pop-act-025ab--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 926,
+      "sha256": "1b0fe4498c4e84af9fbafdf24fb13d9c206e84bb00bcf2de4a406d82c0256088"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/glyph-evidence.json",
+      "bytes": 604,
+      "sha256": "cf58172e371186b2665b10d7a089400de93e3569fcfd214c65caa20cab7c7533"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-embedded-fonts.html",
+      "bytes": 589146,
+      "sha256": "0ea4e69ce429e02a1a396d0e854a5891f1eb1764a14fa40821457ea929a7662d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-glyphs.png",
+      "bytes": 108320,
+      "sha256": "8432bde652b84366e85ef3458f651fb9f0b7f2b7fefbd7f0daab9f6800013d5c"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-native-glyphs.png",
+      "bytes": 73493,
+      "sha256": "8e9a9247a8b35108e08621d51e30557945522ed9ea026b427621f865f055ba36"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-offline-glyphs.png",
+      "bytes": 73504,
+      "sha256": "fff1a44a6f053356536fd5a09778a15b323cdd33264780f2acfa1d622557f739"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-painted-before-glyph-query.png",
+      "bytes": 30330,
+      "sha256": "16ec027854d52fc28872bd3125bfea80243a3fc96cbd408ff12f3ff17e6ab902"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-unsupported-scr-1af9a-xplicit-system-font-warning/system-fallback-evidence.json",
+      "bytes": 574,
+      "sha256": "b61ef0c0a7cd15f806c7ae1d5a3c54f103fd0d952c1f4e99833ebd1639caf614"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-export.png",
+      "bytes": 96728,
+      "sha256": "361586dcfb6a76af9047f776d4fe47231ce91528aa262e9801c19e486b76259d"
+    },
+    {
+      "file": "test-results/m5-full-production-01/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-native.png",
+      "bytes": 26429,
+      "sha256": "00dc60c4af2d4c82beaa8986b220c70cab4f3b98d1abea431ca0cc27e764598f"
+    },
+    {
+      "file": "test-results/m5-full-production-01/validation-investigation-s-4a93d-tion-of-rejected-live-plans/after.json",
+      "bytes": 22954,
+      "sha256": "b2726c25b0f874dd35d8d60675cd9befb93a18818f052151dee37ca4de1e9339"
+    },
+    {
+      "file": "test-results/m5-full-production-01/validation-investigation-s-56834-cal-envelopes-remain-intact/mocked-engine-evidence.json",
+      "bytes": 12362,
+      "sha256": "0f4ade1e64eeedcc0e346d5b3f1ecd11dbbb348b24318180e333bfa9529dde0e"
+    },
+    {
+      "file": "test-results/m5-smoke-01/browser.json",
+      "bytes": 720,
+      "sha256": "d57f0f1c8ac872d15b7622501f677d8254360d9cd67f8baa8134ea092ef7d54c"
+    },
+    {
+      "file": "test-results/m5-smoke-01/browser.png",
+      "bytes": 440620,
+      "sha256": "043d58730c9c554b919b859d78fef3df83ab41d0d78ea5a2e843a7aee55e6526"
+    },
+    {
+      "file": "test-results/m5-smoke-01/campaign.html",
+      "bytes": 627202,
+      "sha256": "e53ce8c44a440fc48a6b57f673059aa7acf4e7effa1db71c01b645f5f8e0cc7a"
+    },
+    {
+      "file": "test-results/m5-smoke-01/response.json",
+      "bytes": 632369,
+      "sha256": "af6cb16926f22f20993a832ec04fc24d73cbb4b2f29f3796cc8a60bf9a22d6d3"
+    }
+  ],
+  "fileCount": 511,
+  "totalBytes": 217501163
+}

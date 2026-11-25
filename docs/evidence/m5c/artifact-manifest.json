@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-25",
+  "scope": "Actual isolated Linux preparation, retained interrupted transfers/logs, package/traces/native linkage/legal evidence; zero provider calls",
+  "files": [
+    {
+      "file": "test-results/m5c/execution.json",
+      "bytes": 535,
+      "sha256": "50b25355d621c1f6d832c1bb1eedd7e78fbc4740edfb2f19d3a5b311b96cd846"
+    },
+    {
+      "file": "test-results/m5c/linux-final-build.log",
+      "bytes": 5298,
+      "sha256": "d66d9c3acb42db6878c2cc57147b203f57f9f3b148fd06c261f1e32c6fc67642"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__next-minimal-server.js.nft.json",
+      "bytes": 9778,
+      "sha256": "3c2bb1ef11ef9ea72f479beb02cfb443f092a12f163f54d61aa5c367a18c75ec"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__next-server.js.nft.json",
+      "bytes": 91395,
+      "sha256": "2c2086561993dfb161e13400101216bfe81337e8bb0752b851d32b5203aeb871"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app___global-error__page.js.nft.json",
+      "bytes": 12788,
+      "sha256": "0ce3bc1b050d051b5aaafebcaee31b787fe4fd3ec916baa1b34b637e7f2fdd73"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app___not-found__page.js.nft.json",
+      "bytes": 13076,
+      "sha256": "ddba8b9a5dbc6b137e5758a0a09c8e57c28b883ab7a757ca849c81e75b974292"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__api__design-spec__route.js.nft.json",
+      "bytes": 12615,
+      "sha256": "3bf1f6455cde71d4df3d2266b5b1f1cb2fd506b1a68727067f9f7a3453f872c6"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__api__generate__route.js.nft.json",
+      "bytes": 12706,
+      "sha256": "d60d49b361ee7b492a26d7148ff25f63e494c07f5170f170268a1f635e24181f"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__api__notices__route.js.nft.json",
+      "bytes": 13629,
+      "sha256": "ea07eb4b453a1ad595a72a25683f334e3db5adf2b88fd0eaf7b535c8e23046f5"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__api__render__route.js.nft.json",
+      "bytes": 13726,
+      "sha256": "f60c22a1caae36e62dd8911b9b857ddf01d2d2a4cc74c43393d2936e6541a41d"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__favicon.ico__route.js.nft.json",
+      "bytes": 12139,
+      "sha256": "adf7bc63f21bc1fbecbb23ab24a778e65c1b9bee0f1bccf6d431be94066ade8d"
+    },
+    {
+      "file": "test-results/m5c/linux-final/.next__server__app__page.js.nft.json",
+      "bytes": 12881,
+      "sha256": "f5bd94b0908dc051eb6a3ee945e01fe6491a8d8b7c1e9a715ab03fd9b8535b84"
+    },
+    {
+      "file": "test-results/m5c/linux-final/GPL-3.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "test-results/m5c/linux-final/LGPL-3.txt",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "file": "test-results/m5c/linux-final/Node-SHASUMS256.txt",
+      "bytes": 3171,
+      "sha256": "06d17307d84ec057dd2783863f12cb228c9273f9424b330532e4e3699f5d47c9"
+    },
+    {
+      "file": "test-results/m5c/linux-final/RUNTIME_NOTICES.txt",
+      "bytes": 357192,
+      "sha256": "07f4f7f714299bda12b95e37ea1aa0823ed612b99ff6eb0ae34da75faf785aae"
+    },
+    {
+      "file": "test-results/m5c/linux-final/client-check.json",
+      "bytes": 266,
+      "sha256": "9c7d54e3186a4d5260d00d7f9402f3b6a0dbfa7173b3f70a462668266fb37074"
+    },
+    {
+      "file": "test-results/m5c/linux-final/distribution.json",
+      "bytes": 275275,
+      "sha256": "06418a01af9b8abb84fc86f3646abd334646cb4383b61d3d9c1daba334d33e2b"
+    },
+    {
+      "file": "test-results/m5c/linux-final/license-terms.json",
+      "bytes": 548,
+      "sha256": "4437b678062389b2737d0cc88c9eaa05bf7c2ee28ecbe16e95f6b9f32c2f2ba9"
+    },
+    {
+      "file": "test-results/m5c/linux-final/native-smoke.json",
+      "bytes": 236,
+      "sha256": "06ebf9a58116b23eb9c60aff61e93117709749be947e8ccb696db0b81a9cb69c"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@img__sharp-libvips-linux-x64__package.json",
+      "bytes": 935,
+      "sha256": "2c5f6f9abf74c1492622d5dc4e4da056ab0712fd71de61e03a687c88b8cdab4e"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@img__sharp-libvips-linux-x64__versions.json",
+      "bytes": 596,
+      "sha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@img__sharp-linux-x64__LICENSE",
+      "bytes": 10273,
+      "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@img__sharp-linux-x64__package.json",
+      "bytes": 921,
+      "sha256": "181c58413d16ac3ce035f39c94c614031e03c023d88315712a81ed210c9fa04c"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@next__env__package.json",
+      "bytes": 975,
+      "sha256": "21b69ed9b6c706fe13652d69e366d17d1a78708678dfb8d319650513fd737c54"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@next__swc-linux-x64-gnu__package.json",
+      "bytes": 450,
+      "sha256": "805341bb66c5db12e19ab2113a7d54039053db0d39685d862640ae845fb16dba"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__@unrs__resolver-binding-linux-x64-gnu__package.json",
+      "bytes": 566,
+      "sha256": "8c66b6b8d61ff8dc9bea74008adb35e711b7bb86029fbe5c2219b4388a4e7a1a"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__client-only__package.json",
+      "bytes": 467,
+      "sha256": "4d6342705767832f299b9a59c28e4275bcf02db19472732f93f67d979441df8f"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__sharp__LICENSE",
+      "bytes": 10273,
+      "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__sharp__node_modules__semver__LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__sharp__node_modules__semver__package.json",
+      "bytes": 1661,
+      "sha256": "0a3f93689bb0be4e2fcdabc585da62ae24695f1abefc6974d68968c8918af381"
+    },
+    {
+      "file": "test-results/m5c/linux-final/node_modules__sharp__package.json",
+      "bytes": 8115,
+      "sha256": "ad4a2535d72eb638053a38867b1abf43c328cd1c1dbae5cf4172d498365a8b97"
+    },
+    {
+      "file": "test-results/m5c/linux-final/runtime-notice-evidence.json",
+      "bytes": 371593,
+      "sha256": "9b9b4b74a83651d4cb2aeb21447063c94fd13e60607cdced2be9a6ef0e4eae59"
+    },
+    {
+      "file": "test-results/m5c/linux-install-build.log",
+      "bytes": 906,
+      "sha256": "c004b3d770ee05377611e339c0a479c42b6c8c385a64aa020c019095578da2f4"
+    },
+    {
+      "file": "test-results/m5c/linux-resume-build.log",
+      "bytes": 954,
+      "sha256": "12aba013dad774ed9fe1b70d356132eb92e430d319d1580742fe72cc1729bac4"
+    },
+    {
+      "file": "test-results/m5c/release-linux-hold",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "test-results/m5c/source-export.json",
+      "bytes": 13464,
+      "sha256": "b0bbeeaef94ea86dd513f50bb5df029053db222b230183011643239d5465cfda"
+    }
+  ],
+  "fileCount": 37,
+  "totalBytes": 1312969,
+  "largeToolchainOrDependencyDirectoriesCopiedIntoRepository": false
+}

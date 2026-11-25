@@ -1,0 +1,706 @@
+{
+  "date": "2026-11-25",
+  "base": "cad6bfcc3fb1da985ffd804be00afd6fc910f34a",
+  "branch": "main",
+  "kind": "Quota-free actual local production application and curl, fixtures and injected mocks; zero live provider calls",
+  "providerCalls": 0,
+  "originalRegressionCases": 77,
+  "focusedCases": 15,
+  "totalPassed": 92,
+  "checks": [
+    {
+      "record": "test-results/m5-lint-final.json",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "elapsedMs": 3446,
+      "spawnError": null
+    },
+    {
+      "record": "test-results/m5-typecheck-final.json",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "elapsedMs": 2881,
+      "spawnError": null
+    },
+    {
+      "record": "test-results/m5-build-02.json",
+      "command": "npm run build",
+      "exitCode": 0,
+      "elapsedMs": 4655,
+      "spawnError": null
+    },
+    {
+      "record": "test-results/m5-full-production-01.json",
+      "command": "npx playwright test --output=test-results/m5-full-production-01",
+      "exitCode": 0,
+      "elapsedMs": 94460,
+      "spawnError": null
+    },
+    {
+      "record": "test-results/m5-dev-final-01.json",
+      "command": "npx playwright test tests/m5-release.spec.ts --output=test-results/m5-dev-final-01",
+      "exitCode": 0,
+      "elapsedMs": 20321,
+      "spawnError": null
+    }
+  ],
+  "sourceFingerprint": "e52a30ea813e2d020cee173798797458b8802011fbef7a54496fcf0dabbaefac",
+  "sourceFiles": [
+    {
+      "file": ".env.example",
+      "sha256": "5b8793e1a401910a5a2540a35953ed0da5b32ee84fef9ebefc1a82f3335810d3"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "sha256": "8bf712af5065bf2c0797ff74e7d345514c0b437b669c00eb841072c174ad722e"
+    },
+    {
+      "file": "evaluation/live-models.spec.ts",
+      "sha256": "2b4a1cbd1878decd45d217191287e506f70616aaaf63bc9d0b9051012f88a9b0"
+    },
+    {
+      "file": "evaluation/m2-completion-live.spec.ts",
+      "sha256": "4733740df2bd248dcf5ff892fbc153b24e67c0062e039c67cba2972b5e2a2197"
+    },
+    {
+      "file": "evaluation/m2-completion.config.ts",
+      "sha256": "4951941ea83c3d009edbf46430198e2941ab34b9f65f21bce0c08dc08caf8701"
+    },
+    {
+      "file": "evaluation/m4-artwork.config.ts",
+      "sha256": "d20ce693f1fde064394402f47d51d0aaecf7b7023445ba341f2ec8c3bc45c533"
+    },
+    {
+      "file": "evaluation/m4-artwork.spec.ts",
+      "sha256": "7148fc06c44082b012a11b782d84f0745756abc6e75d7c0cd323232d05ce8599"
+    },
+    {
+      "file": "evaluation/m4-compatibility.spec.ts",
+      "sha256": "453ebac82ad08261bfa9af2789fa42e97e1e76c704fa45da29792cc48665878e"
+    },
+    {
+      "file": "evaluation/m4-corpus.ts",
+      "sha256": "2e755a46549e365349971c9e43415449e8160516a5f450a9dc883a9d0e083194"
+    },
+    {
+      "file": "evaluation/m4-correction.config.ts",
+      "sha256": "b69c52f66952f9180138a7d293432023f00b19fb92c2abb3fe740ed1e61b2f60"
+    },
+    {
+      "file": "evaluation/m4-correction.spec.ts",
+      "sha256": "0824ec4f4483ac74cc297779ce4c7690d1335050a1580e0ec18e11980372f2dc"
+    },
+    {
+      "file": "evaluation/m4-edge.config.ts",
+      "sha256": "918ca019c26ede0e854fb760852e87637bce16e3eddb49f2eab11a990cac0f47"
+    },
+    {
+      "file": "evaluation/m4-edge.spec.ts",
+      "sha256": "432f1730d8bef8dec2bc3b8541a95ccf4f4c8461719423ea0ba362cc24fedabf"
+    },
+    {
+      "file": "evaluation/m4-live-verification.config.ts",
+      "sha256": "f59cfe1fe14e7f78d3433b86d4a96643fbdd91934d441a4c1153ff18cd7aaaef"
+    },
+    {
+      "file": "evaluation/m4-live-verification.spec.ts",
+      "sha256": "8ead1cc605d89d060e5b9855d68a483a6ffe16dc7092928a854dd37304808826"
+    },
+    {
+      "file": "evaluation/m4-tabler.config.ts",
+      "sha256": "3445b8b70f81d86be1bdc3966897cc59b5885df0067f0572aa0b0805da4f47c4"
+    },
+    {
+      "file": "evaluation/m4-tabler.spec.ts",
+      "sha256": "a2235831d8747590ff509b3ac99cc86af8af0447e2727252f6c65603ed4b6eae"
+    },
+    {
+      "file": "evaluation/playwright.config.ts",
+      "sha256": "015010f17a41830a1fa83e2b79c6065346fc75fc349abdda3c6c4148b8e13bb6"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "a24f28d759d88bbe291e6cd4a3e0a2d5acad62ff631ee1c5a0a704f0319d7f10"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4380b5632d415369720e87193219bf1f6db4b3158c9272f7d1d240d3f418ad05"
+    },
+    {
+      "file": "package.json",
+      "sha256": "34192dac8cfc9bbe06e203e3b36ffaaf0e4bdba3c71c2430f86084a15c6d72b8"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "2e23f405e51a20edbc934ff3e2b9f032705f8f0d08575315306b5bbccc3dccd6"
+    },
+    {
+      "file": "public/file.svg",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+    },
+    {
+      "file": "public/fonts/OFL-anton.txt",
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "file": "public/fonts/OFL-fredoka.txt",
+      "sha256": "5c9e7eee5c6b25f4b05b8d53b2e470ea4962f9ced742d044a98f7d95d1375bab"
+    },
+    {
+      "file": "public/fonts/OFL-inter.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "file": "public/fonts/anton-latin-ext.woff2",
+      "sha256": "0d17b7880f389deeb6663a52fa4eadc6d9116bdda725f0aa1f3d404fbb7d3d59"
+    },
+    {
+      "file": "public/fonts/anton-latin.woff2",
+      "sha256": "d0fa07ff63dd60cbc0e2f58e29c802dca2a5ae0276c999f59c6111ab7bbaec3b"
+    },
+    {
+      "file": "public/fonts/fredoka-600-latin-ext.woff2",
+      "sha256": "d7d22ddf9d13a2b8db2a77c4eb14f8d5b12832451540393d6091b2e67c6189c3"
+    },
+    {
+      "file": "public/fonts/fredoka-600-latin.woff2",
+      "sha256": "b62f2898de150f019961f4884a49f83dcd2ce74375be5e0992c594ebb8f30294"
+    },
+    {
+      "file": "public/fonts/inter-variable.woff2",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    {
+      "file": "public/globe.svg",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+    },
+    {
+      "file": "public/next.svg",
+      "sha256": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc"
+    },
+    {
+      "file": "public/vercel.svg",
+      "sha256": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4"
+    },
+    {
+      "file": "public/window.svg",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+    },
+    {
+      "file": "src/app/api/design-spec/route.ts",
+      "sha256": "2df106cf84decb28f97b3b9772f738977c86382fdd197708860e31040593914e"
+    },
+    {
+      "file": "src/app/api/generate/route.ts",
+      "sha256": "b06f4a28fad0be7f507e68960e128242515d8e2bbe187c29489a4de2ed686888"
+    },
+    {
+      "file": "src/app/api/notices/route.ts",
+      "sha256": "046627fca4b2f5edd9c5cc6a6b6d7906f23a0324941d4b977c5269de3d235c88"
+    },
+    {
+      "file": "src/app/api/render/route.ts",
+      "sha256": "9effb7d8c9f25b738a2fd3448231969dec07bf54f84db390fbeac0b6b53a24ed"
+    },
+    {
+      "file": "src/app/campaign-fonts.css",
+      "sha256": "b1fd43a8bd99ae01a1e4fe2529a14a2a8992362f1f0a5eea4668abd6eadda08e"
+    },
+    {
+      "file": "src/app/favicon.ico",
+      "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "be813c46da6b69cab23a09ece2ce44451eb2f1f47cc80f485254e45b671a5865"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "6ed5ad199fac1fb20ebcf69983bf18a02466eb322a53cb1ce16026047fe63bc8"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "d58ffe9244e5ae0745f61c440f812593c087c6c3fa33323ae571347020a487e6"
+    },
+    {
+      "file": "src/components/advanced-poster-markup.tsx",
+      "sha256": "32eb5d8e7559e4f902f6ed7aa4724fa4d4bde683cbe3607bbc5161bb65c31d83"
+    },
+    {
+      "file": "src/components/advanced-poster.tsx",
+      "sha256": "f60f2ff52c905d31379e51c66a7ed30d747d13dbfb43fa659cb996a74c935562"
+    },
+    {
+      "file": "src/components/legacy-poster-markup.tsx",
+      "sha256": "fc9ae56d07e01c2e4adcc13dc0988d954147f4ab0d262569cc7b778b6a4683f4"
+    },
+    {
+      "file": "src/components/poster.tsx",
+      "sha256": "6796abc28c7ed7b0c87244fc79d93ded5cd0b382dab44aee67f7d312f6b00fc7"
+    },
+    {
+      "file": "src/components/procedural-visual.tsx",
+      "sha256": "8d5a2d9e1a54aa86bcddbccae5bf816828477bb56c321d78d445d17d4fba3f62"
+    },
+    {
+      "file": "src/components/studio-artboard.tsx",
+      "sha256": "d21b0f1267e7ca4063067ecc7485be54f0f69d9247856b1c4ab6830e423b57e8"
+    },
+    {
+      "file": "src/components/studio-dialog.tsx",
+      "sha256": "9ffd6d0f03884a945da5e95bc22f2c3b0f5e0344fa18a81c5ff28bebb6ec38ea"
+    },
+    {
+      "file": "src/components/studio.tsx",
+      "sha256": "833a97db3e77b2162026de3c26242ee9cd2f143bc8714b2c47e222ff1d3361bc"
+    },
+    {
+      "file": "src/components/subject-visual.tsx",
+      "sha256": "ac8eb1aec102f4daec08e650b4b073bbf59c60eebce44887a6b586d48719e41f"
+    },
+    {
+      "file": "src/components/tabler-camera.tsx",
+      "sha256": "afde4ecf890ba94f1cfbf0e6e2b0ec71f6a664716e0d0787267e4142a7cb6943"
+    },
+    {
+      "file": "src/components/taste-picker.tsx",
+      "sha256": "cb0ff7a47c860650f2b9f2066ea670540a0f32e944716d8875808b747bcdddde"
+    },
+    {
+      "file": "src/lib/design-engine/document-runtime.ts",
+      "sha256": "cf56d06565dc4eb7a0b2340dc957fefc3543ab43fb91ebf3d73b64286565a562"
+    },
+    {
+      "file": "src/lib/design-engine/font-assets.json",
+      "sha256": "5c2f53d5c1cca7d89a6bc9290ea34e33fa44ac0a3bdf9894e280f2f78ddc063f"
+    },
+    {
+      "file": "src/lib/design-engine/fonts.ts",
+      "sha256": "819cdaba0391ba34c6a042ea3794cf1ad8978bf9b24aea4a6fcdad650ae353ea"
+    },
+    {
+      "file": "src/lib/design-engine/layout.ts",
+      "sha256": "0f9c134efb9153ab2649e4084f24e97b257250681e7bb91c3b170d01dc9a24eb"
+    },
+    {
+      "file": "src/lib/design-engine/legacy-quality.ts",
+      "sha256": "1bbcb1d29a87c00ffca127a32b59550651f62a42659d0ff9f116ddc24f3bb929"
+    },
+    {
+      "file": "src/lib/design-engine/quality.ts",
+      "sha256": "ef4ce0a60dba93796a41162a9ad79ac8b253cf2a9a0fb79da35e255ee33a3dfc"
+    },
+    {
+      "file": "src/lib/design-engine/registry.ts",
+      "sha256": "500dd113f1779935fba514ef5f00e80a2615efd8942b0492de87eb77695c34be"
+    },
+    {
+      "file": "src/lib/design-engine/subject-layout.ts",
+      "sha256": "087d0b09f87ed8b8a202cccb50e433c0dad592cfcb4c93ed587d5ea41ba9c250"
+    },
+    {
+      "file": "src/lib/design-engine/tabler-asset.json",
+      "sha256": "ea2473449fde3df8e8128fcba12117dd78114194bcfdbc5f03d856a8b2889711"
+    },
+    {
+      "file": "src/lib/design.ts",
+      "sha256": "260e3d52a863cfbb7c45519ad23a9b3927f3d15a9d069bad429eb9a6089feb7f"
+    },
+    {
+      "file": "src/lib/export.ts",
+      "sha256": "ec222d4208f255e73a28499ddf121ae5f910632d859f6c478a6d70699fb67876"
+    },
+    {
+      "file": "src/lib/generation/brief.ts",
+      "sha256": "7f4e63774e387255af27a4140825ff17137bdb6a48ecfcd8b955487a659a15ae"
+    },
+    {
+      "file": "src/lib/generation/contracts.ts",
+      "sha256": "b8a51581c941bf74dcb50e14bfef29ced6d92f8c8d70d45fc633e3fee4f756a6"
+    },
+    {
+      "file": "src/lib/generation/diagnostics.ts",
+      "sha256": "13efc97d0e8cbc75b32a3859adf630b1ee2f0fb699be2ee6895d9ef212fbad71"
+    },
+    {
+      "file": "src/lib/generation/editorial.ts",
+      "sha256": "718409f64f4ee28b4b8c0ec8e79e34839c9ff313abc9343cfbd78d54f6d4fb15"
+    },
+    {
+      "file": "src/lib/generation/facts.ts",
+      "sha256": "953922acff87d006f7c58cf0bfa2e5dbaec448d389395c69454d78e5d7cc90db"
+    },
+    {
+      "file": "src/lib/generation/planner.ts",
+      "sha256": "ffcf7b00113e7c6c197c4da39ec4bc5ea408aa67720e4f6e9fd48a65e2a84bf5"
+    },
+    {
+      "file": "src/server/configured-engine.ts",
+      "sha256": "8ae3914975f03722de3d333764e789183f0e320db37bf5692671a289da2a1d4d"
+    },
+    {
+      "file": "src/server/engine.ts",
+      "sha256": "7404194ef6655b05fa5928182f19d19ffa6569716104af83c2f71886d2f95c5b"
+    },
+    {
+      "file": "src/server/gemini.ts",
+      "sha256": "92a93b2987ae7b16cf0fb0c0e1aca621e6166f875899c2adde4c4a3ebebd5c6c"
+    },
+    {
+      "file": "src/server/json-body.ts",
+      "sha256": "33c53d3fe74cb5b16ef1073cdecafb95b1479a8399d6a643b2ce6029a4f8738c"
+    },
+    {
+      "file": "src/server/render-document.tsx",
+      "sha256": "9060ae78b4132b38bf02cb8ed7c88995957152e3883cdb7858d977624c85965f"
+    },
+    {
+      "file": "src/server/runtime.ts",
+      "sha256": "04f4c270fda3ecfe84c94a0f27b759ed403fc119020704da37b91d5c99b75d58"
+    },
+    {
+      "file": "tests/design-engine.spec.ts",
+      "sha256": "e08deec70bedb2f141a1fb64b19c890633e227937a9a7d65b98b7f9e77b52bf5"
+    },
+    {
+      "file": "tests/fallback-correction.spec.ts",
+      "sha256": "d45cb1d73ab0b9e4ff5cd088eee2f275dc260119fa82a4ad52f1bd09cd89dbcc"
+    },
+    {
+      "file": "tests/generation.spec.ts",
+      "sha256": "8a0c013aa20c745e9f3fec7c1d77b621e0b56b282a6d1ee34c993a683d123e40"
+    },
+    {
+      "file": "tests/m4-copy-correction.spec.ts",
+      "sha256": "c607a92f6165355525326efdd2a5b3d55e5f8b6b5be3321395756d612786ab99"
+    },
+    {
+      "file": "tests/m4-engine.spec.ts",
+      "sha256": "bf986f0c8bc320503f6d049f5b7583494f47f6e02b73b2c03d33704e8d66b14c"
+    },
+    {
+      "file": "tests/m5-release.spec.ts",
+      "sha256": "2747eac6e905653125190dbeaa15ec72d0300d12c660350145e8410465388835"
+    },
+    {
+      "file": "tests/quota-free-setup.ts",
+      "sha256": "e02cb379b01966a16e9dad25a2144c87b5f7eead582f0ea0e6e4eb3fecc2aa25"
+    },
+    {
+      "file": "tests/studio-workspace.spec.ts",
+      "sha256": "4402da584cdba3a3ee967b07823e939b17b4068e7e0d69f61ef594cc8ed4fb94"
+    },
+    {
+      "file": "tests/studio.spec.ts",
+      "sha256": "da7eb3b4573186a76b1bfbca57a418c9d7f9986a810b78d10344be5452a51717"
+    },
+    {
+      "file": "tests/typography.spec.ts",
+      "sha256": "0e555cd3bcca5739beb8ddac9f457754fa02835d8c748c3a3b6e459b5cce9a05"
+    },
+    {
+      "file": "tests/validation-investigation.spec.ts",
+      "sha256": "67fee69957dff3ee4c13095ed6a7389b545837ff4aedfa4b87866f48edd99485"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+    }
+  ],
+  "protectedHistoricalFiles": 64,
+  "protectedEvidenceRecords": 967,
+  "historicalChanges": 0,
+  "evidenceChanges": 0,
+  "candidateFiles": [
+    ".env.example",
+    "AGENTS.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/AI_DISCLOSURE.md",
+    "docs/API.md",
+    "docs/ARCHITECTURE.md",
+    "docs/M5_REPORT.md",
+    "docs/REQUIREMENTS.md",
+    "docs/ROADMAP.md",
+    "docs/TESTING.md",
+    "docs/evidence/m5/artifact-manifest.json",
+    "docs/evidence/m5/audit-baseline.json",
+    "docs/evidence/m5/verification.json",
+    "docs/example-design-spec-m5.json",
+    "docs/example-render-request.json",
+    "docs/licenses/NOTICE_SUPPLEMENT.txt",
+    "docs/licenses/RELEASE_REVIEW.json",
+    "next.config.ts",
+    "playwright.config.ts",
+    "src/app/api/design-spec/route.ts",
+    "src/app/api/generate/route.ts",
+    "src/app/api/notices/route.ts",
+    "src/app/api/render/route.ts",
+    "src/components/advanced-poster-markup.tsx",
+    "src/components/advanced-poster.tsx",
+    "src/components/legacy-poster-markup.tsx",
+    "src/components/poster.tsx",
+    "src/components/studio.tsx",
+    "src/lib/design-engine/document-runtime.ts",
+    "src/lib/design-engine/fonts.ts",
+    "src/lib/design-engine/legacy-quality.ts",
+    "src/lib/design-engine/quality.ts",
+    "src/server/configured-engine.ts",
+    "src/server/json-body.ts",
+    "src/server/render-document.tsx",
+    "src/server/runtime.ts",
+    "tests/m5-release.spec.ts",
+    "tests/quota-free-setup.ts"
+  ],
+  "candidateFileCount": 39,
+  "stagedFiles": 0,
+  "security": {
+    "configuredCredentialMatches": 0,
+    "googleKeyPatterns": 0,
+    "personalMachinePathMatches": 0,
+    "privateApplicationMatches": 0,
+    "clientAssetsInspected": 12,
+    "scope": "Current candidate source/docs and production static assets; not a new all-history security audit"
+  },
+  "actualHtmlExports": [
+    {
+      "taste": "bold-street",
+      "browser": "158.0.8127.88",
+      "measured": {
+        "state": "ready",
+        "formats": [
+          {
+            "id": "instagram-portrait",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "instagram-square",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "youtube-thumbnail",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "linkedin-landscape",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          }
+        ]
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.007266803840877915,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1350
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.009083504801097394,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1080
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.010141059027777777,
+          "oldVsNew": 0,
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.011052356020942409,
+          "oldVsNew": 0,
+          "dimensions": [
+            1910,
+            1000
+          ]
+        }
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    {
+      "taste": "festive-pop",
+      "browser": "158.0.8127.88",
+      "measured": {
+        "state": "ready",
+        "formats": [
+          {
+            "id": "instagram-portrait",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "instagram-square",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "youtube-thumbnail",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "linkedin-landscape",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          }
+        ]
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.006996570644718793,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1350
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.008745713305898491,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1080
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.009759114583333334,
+          "oldVsNew": 0,
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.0008204188481675393,
+          "oldVsNew": 0,
+          "dimensions": [
+            1910,
+            1000
+          ]
+        }
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    {
+      "taste": "minimal-swiss",
+      "browser": "158.0.8127.88",
+      "measured": {
+        "state": "ready",
+        "formats": [
+          {
+            "id": "instagram-portrait",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "instagram-square",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "youtube-thumbnail",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          },
+          {
+            "id": "linkedin-landscape",
+            "issues": [],
+            "corrections": [],
+            "exportReady": true
+          }
+        ]
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.007833333333333333,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1350
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.009332990397805213,
+          "oldVsNew": 0,
+          "dimensions": [
+            1080,
+            1080
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.01010525173611111,
+          "oldVsNew": 0,
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "apiVsStudio": 0,
+          "pngVsDom": 0.0008539267015706806,
+          "oldVsNew": 0,
+          "dimensions": [
+            1910,
+            1000
+          ]
+        }
+      ],
+      "externalRequests": 0,
+      "errors": []
+    }
+  ],
+  "remainingGates": [
+    "actual Linux/Vercel target license/native distribution inspection",
+    "owner-approved deployment/configuration/reviewer access",
+    "public arbitrary-input/export verification",
+    "demonstration and Technology project submission",
+    "owner-authorized checkpoint and archive"
+  ],
+  "gitStatus": "M .env.example\n M AGENTS.md\n M README.md\n M THIRD_PARTY_NOTICES.md\n M docs/AI_DISCLOSURE.md\n M docs/API.md\n M docs/ARCHITECTURE.md\n M docs/REQUIREMENTS.md\n M docs/ROADMAP.md\n M docs/TESTING.md\n M next.config.ts\n M playwright.config.ts\n M src/app/api/design-spec/route.ts\n M src/app/api/generate/route.ts\n M src/components/advanced-poster.tsx\n M src/components/poster.tsx\n M src/components/studio.tsx\n M src/lib/design-engine/fonts.ts\n M src/lib/design-engine/quality.ts\n M src/server/runtime.ts\n?? docs/M5_REPORT.md\n?? docs/evidence/m5/\n?? docs/example-design-spec-m5.json\n?? docs/example-render-request.json\n?? docs/licenses/NOTICE_SUPPLEMENT.txt\n?? docs/licenses/RELEASE_REVIEW.json\n?? src/app/api/notices/\n?? src/app/api/render/\n?? src/components/advanced-poster-markup.tsx\n?? src/components/legacy-poster-markup.tsx\n?? src/lib/design-engine/document-runtime.ts\n?? src/lib/design-engine/legacy-quality.ts\n?? src/server/configured-engine.ts\n?? src/server/json-body.ts\n?? src/server/render-document.tsx\n?? tests/m5-release.spec.ts\n?? tests/quota-free-setup.ts"
+}

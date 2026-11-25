@@ -1,5 +1,29 @@
 # Campaign APIs
 
+## Current M5-B HTML integration
+
+`POST /api/render` accepts the same strict request as `/api/generate`: `{topic,taste,details?,mode?}`. Tastes are bold-street, minimal-swiss and festive-pop; mode is auto (default) or local. Topic/details each ≤1200 characters, combined ≤2200; JSON body ≤12288 bytes. Unknown fields, including model/configuration overrides, are rejected. It invokes the existing campaign engine once, then serializes the same pure native artwork used by the studio.
+
+Actual executed quota-free example:
+
+```powershell
+curl.exe --fail-with-body --json "@docs/example-render-request.json" http://localhost:3000/api/render --output campaign-response.json
+```
+
+On 200 the envelope is `{spec,interpretation,metadata,html,sizes,rendering}`. The first three fields retain the generation contract; current generation emits v3. `sizes` is the four-format registry: instagram-portrait 1080×1350 (4:5), instagram-square 1080×1080 (1:1), youtube-thumbnail 1280×720 (16:9), linkedin-landscape 1910×1000 (1.91:1). HTML is actual self-contained native artwork, not a loader or an external URL. It embeds approved fonts once per document, their full OFL notices and conditional camera MIT attribution.
+
+`rendering` reports `state:"requires-browser-verification", measuredOnServer:false, readinessPromise:"window.yarcCampaignReady", result:"window.yarcCampaignQuality", maximumCorrectionPasses:3, warnings:[...]`. HTML is bounded to 1,500,000 UTF-8 bytes; JSON response to 2,000,000 bytes. Oversize render responses return 413. No browser service or additional model request is introduced.
+
+Consumer: write the returned `html` to an HTML file/document and allow its authored hash-authorized script. Await `window.yarcCampaignReady`, a Promise resolving `{state:"ready"|"failed",formats:[{id,issues,corrections,exportReady}]}`. The result is also available as `window.yarcCampaignQuality`. Only per-format `exportReady:true` after font/fitting/geometry checks permits use as measured artwork. `data-ready=true` means measurement settled, including failure; it alone is insufficient. Missing scripts stay pending; missing fonts fail closed after at most ten seconds. Browser geometry is not artistic/factual certification or universal device fidelity. There are no download buttons in this integration document; use the existing studio for canonical PNG/HTML exports.
+
+All request readers now require an exact application/json media type (case-insensitive; valid parameters and UTF-8 charset accepted), fatal UTF-8 decoding, bounded streaming size and a two-second read deadline. Statuses: 400 invalid UTF-8/JSON/request schema, 408 read timeout, 413 size, 415 MIME/charset, 422 subjectless brief, 503 unavailable internal generation/render resources. They never return private rejected provider content. Legacy /api/design-spec retains its 8192-byte limit and successful v1 shape. /api/generate retains its successful JSON envelope; neither legacy endpoint has become an HTML endpoint. Responses are no-store.
+
+`X-Campaign-Inference: disabled|enabled` reports server policy on generate/render responses; it exposes no key/model secrets. Only exact server environment `GEMINI_ENABLED=true` can opt in. Unset/false/other values fail closed, even with a configured key; auto returns independent local generation, fallbackReason=disabled, model=null and attempts=[]. Request fields/headers cannot enable it. Explicit local returns requested-local. The studio labels AI-disabled operation separately from provider failure.
+
+`GET /api/notices` delivers preserved package notices plus exact local supplement, Tabler MIT and three OFL texts as UTF-8 plain text, accessible from the studio. A failed notice read returns safe 503. Low-risk response headers prohibit framing/object embedding and MIME sniffing and set strict-origin-when-cross-origin referrers; the studio CSP deliberately leaves approved inline artwork, fonts and Next hydration functional. Returned HTML has its separate restricted hash-based script CSP.
+
+Current evidence: [M5 report](M5_REPORT.md), [local request](example-render-request.json), [actual complete spec](example-design-spec-m5.json). Historical sections below retain earlier milestone scopes; current successful generation specs are v3, not the historical v2 description.
+
 M4 compatibility: endpoint/request/provenance contracts and schema version 3 remain in place. New generated plans may include optional artDirection.treatment="subject-led" and one of the registry-approved subject visuals. New visual values require that treatment; taste/variant/palette constraints remain strict. Historical v3 with no treatment retains its prior renderer path; v1/v2 remain valid. [Actual local M4 example](example-design-spec-m4.json) and M4_REPORT.md document the compatible extension. Missing facts/instructions stay in interpretation metadata; no raw failed provider content is exposed.
 
 ## M2 validation diagnostics (additive metadata)
@@ -36,7 +60,7 @@ The Windows file-based command is the example exercised during M0 verification; 
 
 ## Request
 
-Content-Type must include `application/json`. Maximum body size is 8192 bytes, including streamed bodies. Unknown fields are rejected.
+Content-Type must be `application/json` with valid optional parameters and UTF-8 encoding. Maximum body size is 8192 bytes, including streamed bodies. Unknown fields are rejected.
 
 | Field | Type / bounds | Required |
 |---|---|---|
@@ -134,7 +158,7 @@ Metadata varies with the brief/taste. The studio displays the missing subject/de
 
 ### Response and statuses
 
-200 returns `{ spec, interpretation, metadata }`. `spec` is v2; `interpretation` contains objective, proposed audience, concept, assumptions and missing information (descriptive, not additional renderer capabilities). `metadata` contains:
+200 returns `{ spec, interpretation, metadata }`. Current `spec` is v3; historical v2 remains valid; `interpretation` contains objective, proposed audience, concept, assumptions and missing information (descriptive, not additional renderer capabilities). `metadata` contains:
 
 - `source`: gemini or deterministic-fallback, matching `spec.provenance`.
 - `model`: explicit model used for an AI result (including a cached one); on fallback, null unless provider attempts occurred.

@@ -1,0 +1,907 @@
+{
+  "date": "2026-11-25",
+  "status": "Linux preparation passes; exact Vercel artifact/release clearance remains gated",
+  "acceptedFingerprint": "e52a30ea813e2d020cee173798797458b8802011fbef7a54496fcf0dabbaefac",
+  "base": "cad6bfcc3fb1da985ffd804be00afd6fc910f34a",
+  "ownerDownloadInstallApproval": "Explicit approval received for M5C_INSTALL_PROPOSAL.md in this conversation",
+  "environment": {
+    "platform": "linux",
+    "architecture": "x64",
+    "node": "v24.22.3",
+    "npm": "11.19.1",
+    "glibc": "2.43",
+    "osRelease": "PRETTY_NAME=\"Ubuntu 26.04.1 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"26.04\"\nVERSION=\"26.04.1 LTS (Resolute Raccoon)\"\nVERSION_CODENAME=resolute\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=resolute\nLOGO=ubuntu-logo\n",
+    "inference": "disabled; no real environment or credential copied"
+  },
+  "nodeArchive": {
+    "file": "node-v24.22.3-linux-x64.tar.xz",
+    "bytes": 32064292,
+    "sha256": "4f2b175a6d53a5c617a80dba2676238a0688cef28c6da4eba35c7d844e66fcfb",
+    "verification": "Matched official HTTPS SHASUMS256.txt before extraction"
+  },
+  "copy": {
+    "files": 94,
+    "hashChanges": [],
+    "credentialsCopied": false,
+    "windowsNodeModulesReused": false,
+    "gitHistoryCopied": false
+  },
+  "installedPackages": 350,
+  "traces": [
+    {
+      "file": ".next/next-server.js.nft.json",
+      "sha256": "2c2086561993dfb161e13400101216bfe81337e8bb0752b851d32b5203aeb871",
+      "files": 907,
+      "packages": [
+        "@img/colour",
+        "@img/sharp-libvips-linux-x64",
+        "@img/sharp-linux-x64",
+        "@next/env",
+        "@swc/helpers",
+        "client-only",
+        "detect-libc",
+        "next",
+        "react",
+        "react-dom",
+        "semver",
+        "sharp",
+        "styled-jsx"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/next-minimal-server.js.nft.json",
+      "sha256": "3c2bb1ef11ef9ea72f479beb02cfb443f092a12f163f54d61aa5c367a18c75ec",
+      "files": 93,
+      "packages": [
+        "client-only",
+        "next",
+        "react",
+        "styled-jsx"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/_global-error/page.js.nft.json",
+      "sha256": "0ce3bc1b050d051b5aaafebcaee31b787fe4fd3ec916baa1b34b637e7f2fdd73",
+      "files": 116,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/_not-found/page.js.nft.json",
+      "sha256": "ddba8b9a5dbc6b137e5758a0a09c8e57c28b883ab7a757ca849c81e75b974292",
+      "files": 118,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/api/design-spec/route.js.nft.json",
+      "sha256": "3bf1f6455cde71d4df3d2266b5b1f1cb2fd506b1a68727067f9f7a3453f872c6",
+      "files": 111,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/api/generate/route.js.nft.json",
+      "sha256": "d60d49b361ee7b492a26d7148ff25f63e494c07f5170f170268a1f635e24181f",
+      "files": 112,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/api/notices/route.js.nft.json",
+      "sha256": "ea07eb4b453a1ad595a72a25683f334e3db5adf2b88fd0eaf7b535c8e23046f5",
+      "files": 123,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [
+        "public/fonts/OFL-anton.txt",
+        "public/fonts/OFL-fredoka.txt",
+        "public/fonts/OFL-inter.txt",
+        "public/fonts/anton-latin-ext.woff2",
+        "public/fonts/anton-latin.woff2",
+        "public/fonts/fredoka-600-latin-ext.woff2",
+        "public/fonts/fredoka-600-latin.woff2",
+        "public/fonts/inter-variable.woff2"
+      ],
+      "noticeFiles": [
+        "docs/licenses/INVENTORY.json",
+        "docs/licenses/NOTICES.txt",
+        "docs/licenses/NOTICE_SUPPLEMENT.txt",
+        "docs/licenses/RELEASE_REVIEW.json",
+        "docs/licenses/Tabler-MIT.txt"
+      ],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/api/render/route.js.nft.json",
+      "sha256": "f60c22a1caae36e62dd8911b9b857ddf01d2d2a4cc74c43393d2936e6541a41d",
+      "files": 125,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [
+        "public/fonts/OFL-anton.txt",
+        "public/fonts/OFL-fredoka.txt",
+        "public/fonts/OFL-inter.txt",
+        "public/fonts/anton-latin-ext.woff2",
+        "public/fonts/anton-latin.woff2",
+        "public/fonts/fredoka-600-latin-ext.woff2",
+        "public/fonts/fredoka-600-latin.woff2",
+        "public/fonts/inter-variable.woff2"
+      ],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/favicon.ico/route.js.nft.json",
+      "sha256": "adf7bc63f21bc1fbecbb23ab24a778e65c1b9bee0f1bccf6d431be94066ade8d",
+      "files": 109,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    },
+    {
+      "file": ".next/server/app/page.js.nft.json",
+      "sha256": "f5bd94b0908dc051eb6a3ee945e01fe6491a8d8b7c1e9a715ab03fd9b8535b84",
+      "files": 120,
+      "packages": [
+        "@swc/helpers",
+        "next"
+      ],
+      "fonts": [],
+      "noticeFiles": [],
+      "environmentFiles": []
+    }
+  ],
+  "nativeArtifacts": [
+    {
+      "file": "node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.8.18.7",
+      "bytes": 18699288,
+      "sha256": "4aa73553408c3964071728f4a231a8e86918e39bc49f1fbae75355f7ea933ea9",
+      "linkage": "\tlinux-vdso.so.1 (0x000075a3103f8000)\n\tlibresolv.so.2 => /usr/lib/x86_64-linux-gnu/libresolv.so.2 (0x000075a30f014000)\n\tlibdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x000075a30f00f000)\n\tlibstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x000075a30ec00000)\n\tlibpthread.so.0 => /usr/lib/x86_64-linux-gnu/libpthread.so.0 (0x000075a30f00a000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x000075a30eee4000)\n\tlibgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000075a30eeb4000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x000075a30e800000)\n\t/lib64/ld-linux-x86-64.so.2 (0x000075a3103fa000)\n"
+    },
+    {
+      "file": "node_modules/@img/sharp-linux-x64/lib/sharp-linux-x64-0.35.5.node",
+      "bytes": 415112,
+      "sha256": "cf896cc1b7f3ae9c3e8eb3d7b2b198b8de2824ff7d0681d684bab5a825def335",
+      "linkage": "\tlinux-vdso.so.1 (0x0000727893184000)\n\tlibvips-cpp.so.8.18.7 => ${PREPARATION}/app/node_modules/@img/sharp-linux-x64/lib/../../sharp-libvips-linux-x64/lib/libvips-cpp.so.8.18.7 (0x0000727891d53000)\n\tlibstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x0000727891a00000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007278918da000)\n\tlibgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x0000727891d1d000)\n\tlibpthread.so.0 => /usr/lib/x86_64-linux-gnu/libpthread.so.0 (0x0000727891d18000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x0000727891600000)\n\t/lib64/ld-linux-x86-64.so.2 (0x0000727893186000)\n\tlibresolv.so.2 => /usr/lib/x86_64-linux-gnu/libresolv.so.2 (0x0000727891d05000)\n\tlibdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x0000727891d00000)\n"
+    }
+  ],
+  "focusedComponents": [
+    {
+      "name": "@img/sharp-libvips-linux-x64",
+      "version": "1.3.4",
+      "declaredLicense": "LGPL-3.0-or-later",
+      "tracedFiles": 6,
+      "legalFiles": [],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/@img/sharp-libvips-linux-x64/README.md",
+          "bytes": 4331,
+          "sha256": "b4fb1a9f5909cfd58edb4177c2028ce3033cf8651aef740a554c1dc58b3c5ee3"
+        },
+        {
+          "file": "node_modules/@img/sharp-libvips-linux-x64/package.json",
+          "bytes": 935,
+          "sha256": "2c5f6f9abf74c1492622d5dc4e4da056ab0712fd71de61e03a687c88b8cdab4e"
+        },
+        {
+          "file": "node_modules/@img/sharp-libvips-linux-x64/versions.json",
+          "bytes": 596,
+          "sha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4"
+        }
+      ]
+    },
+    {
+      "name": "@img/sharp-linux-x64",
+      "version": "0.35.5",
+      "declaredLicense": "Apache-2.0",
+      "tracedFiles": 3,
+      "legalFiles": [
+        {
+          "file": "node_modules/@img/sharp-linux-x64/LICENSE",
+          "bytes": 10273,
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/@img/sharp-linux-x64/LICENSE",
+          "bytes": 10273,
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        },
+        {
+          "file": "node_modules/@img/sharp-linux-x64/README.md",
+          "bytes": 697,
+          "sha256": "8f8f907a15368c3ab82e675dde406263c321e1d14533285f6827da72b2bb7f55"
+        },
+        {
+          "file": "node_modules/@img/sharp-linux-x64/package.json",
+          "bytes": 921,
+          "sha256": "181c58413d16ac3ce035f39c94c614031e03c023d88315712a81ed210c9fa04c"
+        }
+      ]
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "tracedFiles": 2,
+      "legalFiles": [],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/@next/env/README.md",
+          "bytes": 84,
+          "sha256": "d9749351b98624c72b1183db9b577a39d7be192f7380e1220c486b30dacdf979"
+        },
+        {
+          "file": "node_modules/@next/env/package.json",
+          "bytes": 975,
+          "sha256": "21b69ed9b6c706fe13652d69e366d17d1a78708678dfb8d319650513fd737c54"
+        }
+      ]
+    },
+    {
+      "name": "@next/swc-linux-x64-gnu",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "tracedFiles": 0,
+      "legalFiles": [],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/@next/swc-linux-x64-gnu/README.md",
+          "bytes": 93,
+          "sha256": "51237b67abf6f129819a5159e50722e3cd6e7cd172544ee31ca57ae7bc9b2eeb"
+        },
+        {
+          "file": "node_modules/@next/swc-linux-x64-gnu/package.json",
+          "bytes": 450,
+          "sha256": "805341bb66c5db12e19ab2113a7d54039053db0d39685d862640ae845fb16dba"
+        }
+      ]
+    },
+    {
+      "name": "@unrs/resolver-binding-linux-x64-gnu",
+      "version": "1.13.0",
+      "declaredLicense": "MIT",
+      "tracedFiles": 0,
+      "legalFiles": [],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/@unrs/resolver-binding-linux-x64-gnu/README.md",
+          "bytes": 119,
+          "sha256": "d3fea91d5663b2fe4f3b1c47b8ba8a7568332e5d2712fde35b65c6339f9d9b7d"
+        },
+        {
+          "file": "node_modules/@unrs/resolver-binding-linux-x64-gnu/package.json",
+          "bytes": 566,
+          "sha256": "8c66b6b8d61ff8dc9bea74008adb35e711b7bb86029fbe5c2219b4388a4e7a1a"
+        }
+      ]
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "declaredLicense": "MIT",
+      "tracedFiles": 2,
+      "legalFiles": [],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/client-only/package.json",
+          "bytes": 467,
+          "sha256": "4d6342705767832f299b9a59c28e4275bcf02db19472732f93f67d979441df8f"
+        }
+      ]
+    },
+    {
+      "name": "sharp",
+      "version": "0.35.5",
+      "declaredLicense": "Apache-2.0",
+      "tracedFiles": 77,
+      "legalFiles": [
+        {
+          "file": "node_modules/sharp/LICENSE",
+          "bytes": 10273,
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        },
+        {
+          "file": "node_modules/sharp/node_modules/semver/LICENSE",
+          "bytes": 765,
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "file": "node_modules/sharp/LICENSE",
+          "bytes": 10273,
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        },
+        {
+          "file": "node_modules/sharp/README.md",
+          "bytes": 3162,
+          "sha256": "89772961fcf195b976573874555f2902bfe04a3e57be61af261ac65ce9348735"
+        },
+        {
+          "file": "node_modules/sharp/node_modules/semver/LICENSE",
+          "bytes": 765,
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        },
+        {
+          "file": "node_modules/sharp/node_modules/semver/README.md",
+          "bytes": 25669,
+          "sha256": "f1a789dcec285150be24db2ea04dd3175031554fa9834ec92fab83fb5e025a57"
+        },
+        {
+          "file": "node_modules/sharp/node_modules/semver/package.json",
+          "bytes": 1661,
+          "sha256": "0a3f93689bb0be4e2fcdabc585da62ae24695f1abefc6974d68968c8918af381"
+        },
+        {
+          "file": "node_modules/sharp/package.json",
+          "bytes": 8115,
+          "sha256": "ad4a2535d72eb638053a38867b1abf43c328cd1c1dbae5cf4172d498365a8b97"
+        }
+      ]
+    }
+  ],
+  "historicalGaps": [
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.6",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 2,
+      "qualification": "actual framework/runtime scope; preserve applicable source/notice evidence"
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "version": "16.4.6",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "linuxTraceFiles": 0,
+      "qualification": "absent in actual Linux selection; do not assume distributed"
+    },
+    {
+      "name": "@types/json5",
+      "version": "0.0.29",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "@unrs/resolver-binding-win32-x64-msvc",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "linuxTraceFiles": 0,
+      "qualification": "absent in actual Linux selection; do not assume distributed"
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 2,
+      "qualification": "actual framework/runtime scope; preserve applicable source/notice evidence"
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "language-subtag-registry",
+      "version": "0.3.23",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "language-tags",
+      "version": "1.0.9",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    },
+    {
+      "name": "stable-hash",
+      "version": "0.0.5",
+      "linuxInstalled": true,
+      "linuxTraceFiles": 0,
+      "qualification": "installed but absent from all inspected production/runtime traces; build/development-only qualification"
+    }
+  ],
+  "formerlyAbsentLocations": [
+    {
+      "path": "node_modules/@emnapi/runtime",
+      "version": "1.11.3",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-arm64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-x64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-freebsd-wasm32",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-arm64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-x64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-ppc64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-riscv64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-s390x",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-x64",
+      "version": "1.3.4",
+      "linuxInstalled": true,
+      "tracedFiles": 6,
+      "qualification": "present in actual Linux runtime/framework trace"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-x64",
+      "version": "1.3.4",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-ppc64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-riscv64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-s390x",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-x64",
+      "version": "0.35.5",
+      "linuxInstalled": true,
+      "tracedFiles": 3,
+      "qualification": "present in actual Linux runtime/framework trace"
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-arm64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-x64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-wasm32",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-webcontainers-wasm32",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-arm64",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-ia32",
+      "version": "0.35.5",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-arm64",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-x64",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-gnu",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-musl",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-gnu",
+      "version": "16.4.6",
+      "linuxInstalled": true,
+      "tracedFiles": 0,
+      "qualification": "installed build/development or optional payload; absent from inspected runtime/framework traces"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-musl",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@next/swc-win32-arm64-msvc",
+      "version": "16.4.6",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm-eabi",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm64",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-arm64",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-x64",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-freebsd-x64",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-gnueabihf",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-musleabihf",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-musl",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-musl",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-ppc64-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-musl",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-s390x-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-gnu",
+      "version": "1.13.0",
+      "linuxInstalled": true,
+      "tracedFiles": 0,
+      "qualification": "installed build/development or optional payload; absent from inspected runtime/framework traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-musl",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-openharmony-arm64",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-arm64-msvc",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-ia32-msvc",
+      "version": "1.13.0",
+      "linuxInstalled": false,
+      "tracedFiles": 0,
+      "qualification": "not installed for this actual Linux x64 glibc selection; not a conveyed runtime package in these traces"
+    }
+  ],
+  "noticeCoverage": {
+    "discoveredLegalFiles": 143,
+    "alreadyPreservedFullNormalizedTexts": 143,
+    "excludedNextDocumentationGuides": 2,
+    "qualification": "Discovery-file coverage only; not complete libvips bundled-component copyright/source/relinking clearance"
+  },
+  "clientCheck": {
+    "kind": "Actual Linux client-output pattern check; no real credentials were transferred into Linux, including for scanning",
+    "assets": 13,
+    "keyPatterns": 0,
+    "personalPaths": 0,
+    "privateReferences": 0,
+    "environmentFilesCopied": 0,
+    "providerCalls": 0
+  },
+  "nativeSmoke": {
+    "kind": "Actual Linux Sharp/libvips linkage smoke; synthetic one-pixel in-memory image, not campaign evidence",
+    "sharp": "0.35.5",
+    "vips": "8.18.7",
+    "pngDimensions": [
+      1,
+      1
+    ],
+    "pngBytes": 91,
+    "providerCalls": 0
+  },
+  "providerCalls": 0,
+  "vercelArtifactInspected": false,
+  "sourceReferences": [
+    {
+      "url": "https://nodejs.org/dist/index.json",
+      "role": "Pinned Node release and bundled npm confirmation"
+    },
+    {
+      "url": "https://vercel.com/docs/functions/runtimes/node-js/node-js-versions",
+      "role": "24.x supported; actual build/function minor/patch can differ"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lovell/sharp-libvips/v1.3.4/README.md",
+      "role": "Exact packaging revision; Linux shared-library distribution"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lovell/sharp-libvips/v1.3.4/THIRD-PARTY-NOTICES.md",
+      "role": "Exact upstream license matrix, not complete copyright/terms"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lovell/sharp-libvips/v1.3.4/build/posix.sh",
+      "role": "Versioned dependency recipes/patches and static constituents inside shared bundle; read only, never executed"
+    },
+    {
+      "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "role": "Network interaction vs conveyance and binary-source conditions; LGPL/GPL terms also retained from existing Ubuntu common-licenses"
+    }
+  ]
+}

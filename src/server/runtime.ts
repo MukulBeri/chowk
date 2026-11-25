@@ -1,7 +1,6 @@
 import "server-only";
 import { GenerationEngine, DEFAULT_CONFIG, type EngineConfig } from "./engine";
-import { createGeminiProvider, MODELS } from "./gemini";
-import type { FallbackReason } from "../lib/generation/contracts";
+import { createConfiguredEngine } from "./configured-engine";
 
 function bounded(name: string, fallback: number, min: number, max: number) {
   const value = Number(process.env[name]);
@@ -23,9 +22,6 @@ export function runtimeConfig(): EngineConfig {
 let singleton: GenerationEngine | undefined;
 export function generationEngine() {
   if (singleton) return singleton;
-  const config = runtimeConfig(), apiKey = process.env.GEMINI_API_KEY?.trim();
-  const unavailable: FallbackReason | undefined = process.env.GEMINI_ENABLED === "false" ? "disabled"
-    : !apiKey ? "missing-credentials" : !MODELS.includes(config.model as (typeof MODELS)[number]) ? "configuration" : undefined;
-  singleton = new GenerationEngine(config, unavailable ? undefined : createGeminiProvider({ apiKey: apiKey!, model: config.model, maxOutputTokens: config.maxOutputTokens }), unavailable);
+  singleton = createConfiguredEngine(runtimeConfig(), process.env);
   return singleton;
 }

@@ -1,0 +1,1097 @@
+{
+  "date": "2026-11-25",
+  "scope": "Installed Windows candidate, framework/client traces and exact local/header/README evidence; not Linux/Vercel release clearance",
+  "noticeEndpoint": "/api/notices",
+  "originalNoticeCollectionUnmodified": true,
+  "supplementSources": [
+    {
+      "file": "node_modules/esrecurse/esrecurse.js",
+      "sha256": "aa99847033c240a621fe987f0e06b754f388f22abd11a05bdf9cdd00794b7350"
+    },
+    {
+      "file": "node_modules/imurmurhash/README.md",
+      "sha256": "4491517f7deb68d0b2a3bb590e785e276a60f12448447a9650d0bd50161a101c"
+    },
+    {
+      "file": "node_modules/language-subtag-registry/README.md",
+      "sha256": "98daea92387ea6066cff42edf7a3bd4c1a2d2b148082eaca91c85afdc1c3392f"
+    }
+  ],
+  "historicalNoticeGaps": [
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "declaredLicense": "Apache-2.0",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "resolution": "Next 16.4.6 root MIT text already retained; bundled components remain target review",
+      "frameworkServerTraceContains": true,
+      "developmentOnly": false,
+      "historicalNoticeGap": true,
+      "currentEvidence": "same-version Next monorepo grant retained; native/vendor scope conditional",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Next 16.4.6 root MIT text already retained; development tooling",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "same-version Next monorepo grant retained; native/vendor scope conditional",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.4.6",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "resolution": "Next 16.4.6 root MIT package grant; native dependencies/target compiler review remains",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": false,
+      "historicalNoticeGap": true,
+      "currentEvidence": "same-version Next monorepo grant retained; native/vendor scope conditional",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "@types/json5",
+      "version": "0.0.29",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "@unrs/resolver-binding-win32-x64-msvc",
+      "version": "1.13.0",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "declaredLicense": "MIT",
+      "scope": "transitive-runtime-or-shared",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": true,
+      "developmentOnly": false,
+      "historicalNoticeGap": true,
+      "currentEvidence": "traced package with empty installed index.js; provenance remains a target review item",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "declaredLicense": "BSD-2-Clause",
+      "scope": "transitive-development",
+      "resolution": "Complete BSD-2-Clause source header added to supplement",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "complete exact-version local text added",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete MIT README section added to supplement",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "complete exact-version local text added",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "language-subtag-registry",
+      "version": "0.3.23",
+      "declaredLicense": "CC0-1.0",
+      "scope": "transitive-development",
+      "resolution": "Explicit database CC0 statement and legal-text link added; data scope retained",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "database CC0 statement retained; legal text linked",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "language-tags",
+      "version": "1.0.9",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    },
+    {
+      "name": "stable-hash",
+      "version": "0.0.5",
+      "declaredLicense": "MIT",
+      "scope": "transitive-development",
+      "resolution": "Complete package-specific notice/source evidence remains unresolved; metadata alone is not clearance",
+      "frameworkServerTraceContains": false,
+      "developmentOnly": true,
+      "historicalNoticeGap": true,
+      "currentEvidence": "unresolved exact package-specific evidence; development-only in current Windows trace",
+      "historicalAppRouteTraceContains": false
+    }
+  ],
+  "absentLocations": [
+    {
+      "path": "node_modules/@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": null,
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Only reachable through FreeBSD/WebContainer WASM alternatives in current lock graph; not normal Linux-x64 install"
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-darwin-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-freebsd-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": null,
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-darwin-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-ppc64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-riscv64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-s390x",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linux-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-libvips-linuxmusl-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-ppc64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-riscv64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-s390x",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linux-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-linuxmusl-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@img/sharp-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": null,
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Only reachable through FreeBSD/WebContainer WASM alternatives in current lock graph; not normal Linux-x64 install"
+    },
+    {
+      "path": "node_modules/@img/sharp-webcontainers-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "optional": true,
+      "developmentOnly": false,
+      "os": null,
+      "cpu": [
+        "wasm32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@img/sharp-win32-ia32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-arm64",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@next/swc-darwin-x64",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-gnu",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-arm64-musl",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-gnu",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@next/swc-linux-x64-musl",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@next/swc-win32-arm64-msvc",
+      "version": "16.4.6",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": false,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm-eabi",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-android-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-darwin-x64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-freebsd-x64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-gnueabihf",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm-musleabihf",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-arm64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-loong64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-ppc64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-riscv64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-s390x-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-gnu",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-linux-x64-musl",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "potentialLinuxX64Install": true,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Candidate only if target OS/CPU/libc selects it; inspect actual build/runtime payload"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-openharmony-arm64",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "openharmony"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-arm64-msvc",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    },
+    {
+      "path": "node_modules/@unrs/resolver-binding-win32-ia32-msvc",
+      "version": "1.13.0",
+      "license": "MIT",
+      "optional": true,
+      "developmentOnly": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ],
+      "potentialLinuxX64Install": false,
+      "contentsInspected": false,
+      "stillAbsent": true,
+      "currentQualification": "Other-platform optional alternative; do not claim its contents inspected"
+    }
+  ],
+  "frameworkTraces": {
+    "full": ".next/next-server.js.nft.json",
+    "minimal": ".next/next-minimal-server.js.nft.json",
+    "finding": "Final Windows full/minimal framework and four app traces inspected; see currentProductionTraceEvidence. No environment files in these traces. Framework inclusion is distinct from app-route-only scope."
+  },
+  "targetReleaseGates": [
+    "Confirm Node/OS/CPU/libc and exact deployed server/client artifact graph",
+    "Inspect selected Linux Sharp/libvips package notices and applicable native/object/source obligations; do not reuse Windows clearance",
+    "Resolve client-only exact-source/notice status if its nonempty code is conveyed; installed index.js is empty, package remains traced",
+    "Inspect applicable Next/SWC/vendor notices rather than assuming parent SPDX covers every bundled component",
+    "Verify served notices, embedded OFL/MIT and HTTPS font integrity in the actual deployment"
+  ],
+  "projectLicenseSelected": false,
+  "linuxBuildExecuted": false,
+  "dependenciesChanged": false,
+  "currentProductionTraceEvidence": "test-results/m5-tools/production-traces.json"
+}

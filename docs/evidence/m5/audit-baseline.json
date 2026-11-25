@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-25",
+  "kind": "Accepted M5-A historical audit findings, preserved separately from fresh M5-B verification",
+  "authority": "Owner-accepted read-only M5-A report and owner-supplied official applicant-page Technology Create transcript, retrieved 25 November 2026",
+  "base": "cad6bfcc3fb1da985ffd804be00afd6fc910f34a",
+  "acceptedRuntimeFingerprint": "0e3afe6365b33b256af1810ded9c047486a097f75c475c85a278ea0e9521c09e",
+  "acceptedSourceHashCount": 65,
+  "findings": {
+    "httpIntegration": "Existing generation/design-spec endpoints returned JSON specifications, not styled HTML; browser-side export alone did not demonstrate the illustrative HTML HTTP integration",
+    "browserNotices": "No recipient-accessible notice endpoint in the audited baseline",
+    "inference": "Existing runtime could construct a provider with credentials unless explicitly disabled; public use needed fail-closed policy and eligible-use review",
+    "requestReader": "Legacy deterministic endpoint needed MIME/charset, streamed size, deadline, fatal UTF-8 and safe-error hardening",
+    "licensing": "14 historical notice-file gaps and 53 absent package locations; app-route-only trace exclusions did not exclude framework-level @next/env, client-only and Sharp",
+    "targetDistribution": "Actual Linux/Vercel payload and applicable native Sharp/libvips obligations uninspected; Windows build is not target clearance",
+    "securityEvidence": "Prior read-only advisory lookup returned no advisories for its 384 public package entries; scoped history/client secret scans found none. These are historical bounded checks, not a certification or newly rerun audit",
+    "liveEvidence": "M4 three calls, zero accepted fresh plans, two fallback results; subsequent public-copy correction quota-free. Historical M1/M2 live successes remain distinct",
+    "production": "No publicly verified deployed arbitrary-input prototype; mandatory working access remains pending despite optional demo form field"
+  },
+  "division": "Technology & Engineering, Track 01 — Create; separate Product and Creative deliverables do not apply",
+  "internalMaximumCompletion": "2026-11-25T15:00:00+05:30",
+  "officialContingencyDeadline": "2026-11-26T23:59:00+05:30",
+  "newProviderCalls": 0,
+  "historicalReportsRewritten": false
+}
