@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "provenance": "Owner-reported functional verification on actual physical smartphone; not independent automated interaction testing",
+  "testDate": "2026-11-25",
+  "target": {
+    "commit": "2b3c56468f764f549a3335e87d34d877a206d42a",
+    "deployment": "FDCGNNb7SMongEtGbiFnNc6LRqR8",
+    "canonicalUrl": "https://yarc-create.vercel.app/"
+  },
+  "device": {
+    "model": "Samsung Galaxy A56 5G",
+    "operatingSystem": "Android 17",
+    "operatingSystemProvenance": "owner-reported, not independently verified",
+    "browser": "Google Chrome",
+    "browserVersion": null,
+    "browserVersionStatus": "not recorded",
+    "physicalDevice": true
+  },
+  "summary": {
+    "passed": 11,
+    "total": 11
+  },
+  "checks": [
+    {
+      "name": "Homepage loads correctly",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Mobile menu opens and closes",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Create page opens",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Explore page opens",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Docs page opens",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Local-planner campaign generation works",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "All four artwork formats display",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "Copy or palette refinement works",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "PNG download works",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "JSON download works",
+      "result": "PASS",
+      "source": "Owner report"
+    },
+    {
+      "name": "No unintended horizontal scrolling observed",
+      "result": "PASS",
+      "source": "Owner report"
+    }
+  ],
+  "campaign": {
+    "topic": "After Hours — a late-night reading café for university students",
+    "details": "Open from 6 PM to midnight near the university library. Coffee ₹49 and tea ₹29. Do not invent discounts or additional services.",
+    "taste": "minimal-swiss",
+    "planningApproach": "creative-led",
+    "generationMode": "explicit local planner; no AI request"
+  },
+  "pdf": {
+    "available": true,
+    "sourceName": "Image to PDF 20261125 22.51.30.pdf",
+    "bytes": 6885265,
+    "sha256": "40536d72e3adb38f9d0f6a164daab80515fdc8f675b320909b8d7c9693376606",
+    "pdfHeader": "%PDF-1.4",
+    "pageObjects": 35,
+    "pageTreeCounts": [
+      35
+    ],
+    "imageObjects": 35,
+    "dctFilters": 35,
+    "activeContentMarkers": 0,
+    "intendedArchiveRelative": "04_Project-Evidence/Hosted-Verification/M6-B-C/Physical-Smartphone/2026-11-25_Chowk_M6BC_Physical_Smartphone_Verification.pdf",
+    "pageMapSource": "owner-provided; inspected embedded screenshots are consistent with visible route/artwork groups",
+    "pageMap": [
+      {
+        "pages": "1–11",
+        "content": "Homepage"
+      },
+      {
+        "pages": "12",
+        "content": "Expanded mobile navigation"
+      },
+      {
+        "pages": "13–15",
+        "content": "Empty creative studio"
+      },
+      {
+        "pages": "16–22",
+        "content": "Explore"
+      },
+      {
+        "pages": "23–27",
+        "content": "Docs"
+      },
+      {
+        "pages": "28–30",
+        "content": "Brief, generation and refinement controls"
+      },
+      {
+        "pages": "31–34",
+        "content": "All four generated artwork formats"
+      },
+      {
+        "pages": "35",
+        "content": "Palette-refined artwork"
+      }
+    ],
+    "corroboration": "Visible routes/artwork/palette refinement; downloads and interaction outcomes separately owner-reported",
+    "localInspection": "35 page objects and 35 JPEG images; six contact sheets visually reviewed; no authentication screenshot observed; original PDF bytes unchanged",
+    "inspectionLimits": "Not OCR or independent verification of every interaction/device/OS identity, not a full PDF security audit"
+  },
+  "notSeparatelyVerified": [
+    "Focused-view interaction",
+    "Exact downloaded mobile PNG dimensions",
+    "File reopening",
+    "JSON parsing",
+    "Physical-phone loading-animation aesthetics",
+    "iOS compatibility",
+    "Universal smartphone compatibility"
+  ],
+  "activeFindings": [
+    "Excess vertical scrolling between controls and artwork",
+    "No persistent artwork preview while editing",
+    "No persistent generation/export toolbar",
+    "Duplicate generation actions",
+    "Misleading Side by side label on mobile",
+    "Repetitive campaign copy",
+    "Generic kicker and limited subject-specific illustration quality",
+    "Weak composition and inefficient use of space"
+  ],
+  "earlierAfterHoursLeakage": {
+    "remainsOpen": true,
+    "earlierInstruction": "Create a warm, sophisticated editorial atmosphere.",
+    "notPresentInThisPhoneBrief": true,
+    "noCorrectionInferred": true
+  }
+}

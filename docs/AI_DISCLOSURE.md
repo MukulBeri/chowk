@@ -1,5 +1,11 @@
 # AI and API disclosure
 
+## Accepted protected deployment and owner-reported Meta approval
+
+Protected Chowk deployment `FDCGNNb7SMongEtGbiFnNc6LRqR8` at commit `2b3c56468f764f549a3335e87d34d877a206d42a` has owner-accepted bounded functional verification, with inference disabled and zero live provider calls in deployment/closure. Four controlled actual local UI generations plus one actual local HTTP render were separately distinguished from two test-only replay responses; owner phone use is separate. Physical-phone generation used explicit local mode. None is fresh Gemini or Meta success. Original failed provider outcomes/replay and the failed headed fidelity measurement remain unchanged. See M6BC_DEPLOYMENT_CLOSURE.md.
+
+The owner now reports **Meta API approval**, with stated image/audio/text access. This is receipt/approval context only: exact models, connectivity, account pricing, remaining balance and credential security have not been verified. The confidential approval PDF and API key are explicitly outside this closure and were not read, searched for or used. No Meta or Gemini calls, paid activation, provider/model switch or security/usage-control changes are authorized. Public repository access, evaluator credentials/prototype access, original-code/native-distribution licensing and public release remain separate owner decisions.
+
 ## Chowk M6-B/C frontend candidate
 
 This integration makes zero live provider calls and keeps local inference disabled. The six curated gallery campaigns and their optimized previews come from actual retained local-planner exports, with no provider replay presented as fresh art. Actual new studio generation/export checks are local; held-response/error animation checks are explicitly mocked and do not measure provider performance. The historical M6-A experiment remains four actual calls, three HTTP503s, one rejected plan and zero accepted fresh plans; subsequent corrected replay does not alter that history.
@@ -106,7 +112,7 @@ Owner-observed quotas: 3.5-flash-lite and 3.1-flash-lite, 15 RPM / 250K TPM / 50
 
 **Actual billed cost was not independently observed.** The owner reports free-tier access; generation responses contain token usage, not invoice amounts, and failures/timeouts may have unreported usage. Do not label unknown failures zero-cost or extrapolate a benchmark to daily cost. Current official standard pricing lists free input/output for both tested models on eligible free-tier access; paid-tier rates are separate and were not enabled here. No provider tools/grounding/image generation were requested.
 
-Alternative 3.1-flash-lite and optional advanced 4-hydrogen remain **untested** candidates. Groq/OpenRouter remain research only. Meta credits remain deferred until a meaningful repository and a concrete quality/quota/reliability need justify applying; development does not depend on them. Inform the owner if that need arises. Paid billing, another provider, extra in-product agents or mandatory image APIs require separate approval.
+Alternative 3.1-flash-lite and optional advanced 4-hydrogen remain **untested** candidates. Groq/OpenRouter remain research only. The earlier “Meta credits/apply later” status is superseded by the owner-reported approval above; models, account economics, credential security and connectivity remain unverified. Development does not depend on unverified credits or imply authorization to use them. Paid billing, another provider, extra in-product agents or mandatory image APIs require separate approval.
 
 Semantic safeguards normalize complete dates/times/currency/units/contacts/IDs and flag selected claims, missing facts, placeholders/names/taste mismatches and poor contrast. They have false positives/negatives: ambiguous dates, spelled-out numbers, novel product claims, renamed entities, negation and broader meaning are not fully solved. Proposed audience/concept are descriptive planning metadata, not verified facts. Human review remains required. Detailed copy can overflow and refuse export; system fonts, visual quality and distributed quota behavior are not universally verified.
 

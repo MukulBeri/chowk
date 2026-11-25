@@ -1,5 +1,11 @@
 # Research, reuse and reference register
 
+## Owner-provided release and Meta updates — 25 November 2026
+
+The owner reports official YARC clarification requiring public GitHub code-review access, evaluator access to the complete prototype/core features without login or with suitable credentials, and allowing repository visibility changes after review. YARC reports it currently cannot access this private repository. Record this as owner-provided official context, not an independently retrieved message. See REQUIREMENTS.md for the superseding release criteria; no visibility, access or licensing change is authorized by receiving the update.
+
+Meta API access is now **owner-reported approved**, with stated image, audio and text model access. Exact available models, connectivity, account-specific pricing, remaining balance and credential security are unverified. No approval PDF/key was accessed, sought or tested in this closure; no model integration, inference or billing activation follows. This supersedes earlier “apply later” status while preserving W2/W3 approval/security/usage gates. Advanced creative-engine, Meta and professional-workspace research is to be consolidated before separately authorized implementation; no new research sweep or raster diagnostics were performed here.
+
 ## Chowk B4 frontend and original brand — M6-B/C
 
 The explicit owner frontend brief supersedes the branding archive's earlier provisional/not-approved wording for the refined four-square Chowk mark, primary/reverse Anton-outlined wordmark, favicon and B4 visual direction. `YARC_Branding_Research_Checkpoint_2.zip`, B1/B2b/B5/B6/B7 and the actual B4 prototype were inspected read-only; archive bytes remain unchanged. Relevant installed Next.js routing, client-boundary, CSS, image and metadata/icon guides were consulted. Exact reference/asset hashes and derived-preview provenance are retained in the M6-B/C evidence, not mistaken for a new licensing or trademark clearance.

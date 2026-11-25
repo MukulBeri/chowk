@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "authority": "Owner M6-B/C protected-deployment review/closure brief and accompanying physical device details, 25 November 2026",
+  "accepted": {
+    "commit": "2b3c56468f764f549a3335e87d34d877a206d42a",
+    "deployment": "FDCGNNb7SMongEtGbiFnNc6LRqR8",
+    "canonicalUrl": "https://yarc-create.vercel.app/",
+    "fingerprint": "02fdd3559420a43bff9b5cc0ee835b1f6af280e3c614ff62b79d0e4210eabe68",
+    "sourceRecords": 149,
+    "regressions": "Accepted 160/160 reused; not rerun",
+    "hostedFunctional": "owner-accepted bounded verification",
+    "physicalPhone": "11/11 owner-reported, device/provenance/limits separately recorded"
+  },
+  "originalEvidence": {
+    "finalRecordsVerified": 120,
+    "interimRecordsVerified": 56,
+    "originalFinalVerification": {
+      "file": "test-results/m6bc-deployment-20261125-01/final-verification.json",
+      "bytes": 24742,
+      "sha256": "af2b95df84c21fc51a562d41011b186fcd139beac7fbb80b7c3ec35e3b29f3e1"
+    },
+    "originalRecordsModified": false
+  },
+  "fidelity": {
+    "original": {
+      "changed": 25221,
+      "total": 921600,
+      "percent": 2.7366536458,
+      "tolerancePercent": 1.5,
+      "status": "failed/open"
+    },
+    "retainedHtmlReproduction": "exact original discrepancy reproduced",
+    "compositorHintDiagnosticPercent": 2.6297743,
+    "headlessExceededThresholdPixels": 0,
+    "controlledHeadedScale1ExceededThresholdPixels": 0,
+    "ownerBoundedInvestigationAccepted": true,
+    "preciseOsGpuFontBackendCause": "unverified",
+    "universalFidelity": "unverified",
+    "tolerancesUnchanged": true,
+    "furtherRasterDiagnostics": "stop for this checkpoint"
+  },
+  "rollback": {
+    "performed": false,
+    "currentlyAuthorized": false,
+    "ownerDecision": "No rollback authorized or required at this stage"
+  },
+  "amendment": "provenance-amendment.json; original unchanged",
+  "phone": "owner-smartphone.json",
+  "ownerProvidedReleaseUpdates": {
+    "repositoryMustBePublic": true,
+    "privateRepositoryCurrentlyInaccessibleToYarc": true,
+    "prototypeEvaluatorAccess": "without login or suitable evaluator credentials",
+    "completePrototypeAndCoreFeaturesRequired": true,
+    "visibilityMayChangeAfterReview": true,
+    "independentlyRetrievedCorrespondence": false
+  },
+  "ownerProvidedMetaUpdate": {
+    "accessApproved": true,
+    "statedModalities": [
+      "image",
+      "audio",
+      "text"
+    ],
+    "connectivity": "unverified",
+    "exactModels": "unverified",
+    "accountPricing": "unverified",
+    "remainingBalance": "unverified",
+    "credentialSecurity": "unverified",
+    "confidentialApprovalAccessed": false,
+    "apiKeyAccessed": false,
+    "apiActivationOrCalls": false
+  },
+  "archive": {
+    "roots": [
+      "04_Project-Evidence/Hosted-Verification/M6-B-C",
+      "05_Development-History/Hosted-Verification/M6-B-C"
+    ],
+    "finalCountsAndHashes": "Authoritative final archive integrity record and closure-transfer report are produced after copying; no earlier archive manifest is modified",
+    "oneDriveCloudSync": "not independently verified or claimed"
+  },
+  "restrictions": {
+    "noApplicationChange": true,
+    "noCampaignGeneration": true,
+    "noNewTestsOrBuild": true,
+    "noProviderCalls": true,
+    "noDependencyChange": true,
+    "noGitMutation": true,
+    "noDeploymentAccessVisibilityChange": true,
+    "noRollback": true,
+    "noRename": true,
+    "noNextImplementation": true
+  },
+  "remainingGates": [
+    "Public repository authorization/privacy review",
+    "Evaluator access to complete prototype/core features",
+    "Original-code licensing decision",
+    "Actual target native-distribution qualification",
+    "Provider credential security and usage-control approval",
+    "Original default-headed fidelity remains failed/open",
+    "Active mandatory workspace/mobile/loading and creative improvements",
+    "Final public-release/submission authorization"
+  ]
+}

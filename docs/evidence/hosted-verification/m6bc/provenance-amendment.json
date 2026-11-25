@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "Owner-identified documentation error independently confirmed against retained records; amendment only",
+  "original": {
+    "file": "test-results/m6bc-deployment-20261125-01/final-verification.json",
+    "bytes": 24742,
+    "sha256": "af2b95df84c21fc51a562d41011b186fcd139beac7fbb80b7c3ec35e3b29f3e1"
+  },
+  "scope": "Exactly eight pngMatrix provenance strings; no original file, measurement, PNG/hash, generation record or Swiss row is modified",
+  "changes": [
+    {
+      "op": "replace",
+      "path": "/pngMatrix/4/provenance",
+      "taste": "bold-street",
+      "format": "instagram-portrait",
+      "file": "continuation-01/campaigns/bold-street/instagram-portrait.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Bold Street, creative-led); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/5/provenance",
+      "taste": "bold-street",
+      "format": "instagram-square",
+      "file": "continuation-01/campaigns/bold-street/instagram-square.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Bold Street, creative-led); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/6/provenance",
+      "taste": "bold-street",
+      "format": "youtube-thumbnail",
+      "file": "continuation-01/campaigns/bold-street/youtube-thumbnail.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Bold Street, creative-led); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/7/provenance",
+      "taste": "bold-street",
+      "format": "linkedin-landscape",
+      "file": "continuation-01/campaigns/bold-street/linkedin-landscape.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Bold Street, creative-led); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/8/provenance",
+      "taste": "festive-pop",
+      "format": "instagram-portrait",
+      "file": "continuation-01/campaigns/festive-pop/instagram-portrait.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Festive Pop, Standard); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/9/provenance",
+      "taste": "festive-pop",
+      "format": "instagram-square",
+      "file": "continuation-01/campaigns/festive-pop/instagram-square.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Festive Pop, Standard); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/10/provenance",
+      "taste": "festive-pop",
+      "format": "youtube-thumbnail",
+      "file": "continuation-01/campaigns/festive-pop/youtube-thumbnail.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Festive Pop, Standard); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    },
+    {
+      "op": "replace",
+      "path": "/pngMatrix/11/provenance",
+      "taste": "festive-pop",
+      "format": "linkedin-landscape",
+      "file": "continuation-01/campaigns/festive-pop/linkedin-landscape.png",
+      "originalValue": "Actual hosted local-generation native download; Swiss manual edits explicitly retained",
+      "value": "Actual hosted local-generation native download (Festive Pop, Standard); exported specification matches retained generation response.",
+      "reason": "Remove the erroneously appended Swiss-manual-edit qualification; no additional generation or manual edit is inferred."
+    }
+  ],
+  "evidence": [
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/bold-street/response.json",
+      "bytes": 3872,
+      "sha256": "5d47ed649e40375f2ee58e97d1717bcb3f774a19df6e1f95be021fab339f0a83"
+    },
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/bold-street/spec.json",
+      "bytes": 2511,
+      "sha256": "e2f18fb65a2b726d79d062b5ffd089534a555a6a0aa11c1d9e1b34c30c40834d"
+    },
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/bold-street/verification.json",
+      "bytes": 3725,
+      "sha256": "966ae77b70efee9cfd6098812b4230774a847720dfb2122e3704451fcaf099d2"
+    },
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/festive-pop/response.json",
+      "bytes": 2534,
+      "sha256": "d907b52df10bed1695e316e6a8c63234f3057c8e3e059c63b1d6c62d944bb225"
+    },
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/festive-pop/spec.json",
+      "bytes": 1291,
+      "sha256": "3308cb4ff16f5e66a1f45a9ad9983eaf4f8c7ae7f2647c328641759243d5856a"
+    },
+    {
+      "file": "test-results/m6bc-deployment-20261125-01/continuation-01/campaigns/festive-pop/verification.json",
+      "bytes": 3721,
+      "sha256": "d63b00a93cacb40a40abdea315f437e2f0baa8fdbe414b1717264a0c7a703059"
+    }
+  ],
+  "verification": {
+    "patchEntries": 8,
+    "allOtherDataUnchanged": true,
+    "exportedSpecsEqualRetainedResponses": true,
+    "retainedResponseSource": "deterministic-fallback",
+    "noAdditionalEventsInferred": true
+  },
+  "swissLinkedInPreserved": {
+    "taste": "minimal-swiss",
+    "format": "linkedin-landscape",
+    "file": "swiss-completion-01/linkedin-landscape.png",
+    "width": 1910,
+    "height": 1000,
+    "bytes": 153161,
+    "sha256": "1dd2c7d8d64a43f9153a0084c286806819bca9391e04eaeaab8831c355774d6e",
+    "provenance": "Actual hosted download after original-response replay and normal UI reapplication of exact retained manual spec; no fresh Swiss server generation"
+  },
+  "originalHashStill": "af2b95df84c21fc51a562d41011b186fcd139beac7fbb80b7c3ec35e3b29f3e1"
+}

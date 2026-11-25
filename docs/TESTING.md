@@ -1,5 +1,11 @@
 # Verification and evidence
 
+## Accepted protected deployment and physical-phone record — 25 November 2026
+
+The owner accepts the bounded functional verification of deployment `FDCGNNb7SMongEtGbiFnNc6LRqR8` at `2b3c56468f764f549a3335e87d34d877a206d42a`, with accepted 160/160 regressions reused, not rerun. The separate physical Samsung Galaxy A56 5G / Android 17 (owner-reported) / Chrome (exact version unrecorded) record is **11/11 owner-reported passes**. The 35-page smartphone PDF corroborates visible routes, artwork and palette refinement; downloads/interactions are owner-reported, not independently automated. Focused-view use, exact downloaded mobile PNG dimensions, file reopening and JSON parsing were not separately verified. No iOS/universal-device or loading-aesthetic result is inferred.
+
+Original 120 final evidence files, 56 interim records and all harness/raster failures remain unchanged. A separate amendment corrects the eight Bold/Festive pngMatrix provenance entries that wrongly appended a Swiss-manual-edit phrase; Swiss LinkedIn retains its original-response replay and normal UI-edit disclosure. Original `final-verification.json` and hash are preserved. Default-headed comparison stays **failed/open: 25,221/921,600 pixels = 2.7366536458%, tolerance 1.5%**. Retained HTML reproduces it, compositor-hint diagnostic is 2.6297743%, headless and controlled device-scale-1 comparisons are zero at their established threshold. These different paths do not retrospectively pass the original; no further raster investigation is part of this closure. See [closure and record locations](M6BC_DEPLOYMENT_CLOSURE.md).
+
 ## Chowk M6-B/C integration
 
 The dedicated studio route moves from `/` to `/create`. Exactly 26 direct studio navigations in 12 existing test files were mechanically migrated; original behavioral assertions, native fidelity thresholds and all 147 accepted cases remain. `test-route-migration.json` records before/after hashes. `tests/chowk-frontend.spec.ts` adds 13 focused tests for route/branding/metadata, private handoff and unavailable/invalid session data, Explore filtering, actual three-taste/four-format downloads, focus/revision/export identity, supported manual controls, pending/error/reduced-motion animation, mobile keyboard/menu and runnable HTML readiness. No live evaluation config is executed.
