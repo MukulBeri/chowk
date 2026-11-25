@@ -1,8 +1,12 @@
-# Create Studio — accepted M3
+# Create Studio — accepted M4
+
+[M4 acceptance](docs/M4_ACCEPTANCE.md) records formal owner acceptance, verified scope and remaining release gates. The original [focused correction](docs/M4_CORRECTION.md) and [live verification](docs/M4_LIVE_VERIFICATION.md) are preserved historical reports: three provider calls, zero accepted fresh Gemini plans and two fallback results; the subsequent correction made zero live calls. Acceptance includes this reliability limitation.
+
+[M4 report](docs/M4_REPORT.md) records actual before/after artwork, native exports, compatible v3 extensions, fact-guard findings, the selective asset trial and remaining limits. [Current actual M4 DesignSpec](docs/example-design-spec-m4.json) is a local-planner robotics fixture; earlier v1/v2/v3 examples remain valid.
 
 [M3 report](docs/M3_REPORT.md) contains the implemented workflows, actual artwork/screenshots, verification results and remaining review limitations.
 
-An artwork-first HTML/CSS campaign studio for the YARC Builder Fellowship Create track. **Create Studio is a working identity for the initial release.** M0–M2 are accepted and synchronized at `e6d968f`. M3 adds the approved light creation panel/dark gallery, native taste radios, distinct draft/result state, local refinements and contextual inspection while preserving the M2 engine. The owner formally accepted M3 on 25 November 2026. The authorized closure records final quota-free verification, curated evidence and a normal Git checkpoint; the application is not deployed.
+An artwork-first HTML/CSS campaign studio for the YARC Builder Fellowship Create track. **Create Studio is a working identity for the initial release.** M0–M2 are accepted and synchronized at `e6d968f`. M3 adds the approved light creation panel/dark gallery, native taste radios, distinct draft/result state, local refinements and contextual inspection while preserving the M2 engine. M3 is accepted and synchronized at `e52258f`. Formally accepted M4 adds subject-led original artwork, concise copy hierarchy, larger landscape information regions, one verified Tabler camera asset and the focused public-copy correction. Deployment and final fellowship acceptance requirements remain pending; no public release is claimed.
 
 Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
 
@@ -23,7 +27,7 @@ npm run dev
 
 The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
 
-No authentication, database, payments or image-generation dependency. M3 closure is authorized: curated archival, final scoped checks, explicit staging, commit and normal Git push. Deployment, additional assets/dependencies/live calls and subsequent implementation remain separately gated.
+No authentication, database, payments or image-generation dependency. The owner authorizes M4 closure through curated archival, audited staging, one commit and normal push. No further live calls, runtime/artistic changes, dependencies/assets, deployment or M5 implementation is authorized.
 
 ## Checks
 
@@ -31,7 +35,7 @@ No authentication, database, payments or image-generation dependency. M3 closure
 npm run lint
 npm run typecheck
 npm run build
-npm test -- --output=test-results/m3-next-review
+npm test -- --output=test-results/m4-next-review
 ```
 
 Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).

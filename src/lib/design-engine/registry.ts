@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { Taste } from "../design";
 
 export const VARIANTS = ["street-stack", "street-editorial", "swiss-grid", "swiss-column", "pop-stage", "pop-offset"] as const;
-export const VISUALS = ["cup", "circuit", "waves", "spark", "burst", "abstract", "none"] as const;
+export const VISUALS = ["cup", "circuit", "waves", "spark", "burst", "abstract", "none", "robot", "network", "tiles", "botanical", "aroma", "code", "camera"] as const;
 export const PALETTES = {
   "street-acid": { background: "#efed50", ink: "#171d1c", accent: "#b6301a", secondary: "#fff9de" },
   "street-cobalt": { background: "#1637bd", ink: "#fff8e9", accent: "#f7ed57", secondary: "#294ccc" },
@@ -21,20 +21,48 @@ export const artDirectionSchema = z.strictObject({
   variant: z.enum(VARIANTS), palette: z.enum(PALETTE_KEYS), visual: z.enum(VISUALS),
   emphasis: z.enum(["display", "editorial"]), information: z.enum(["auto", "stack", "grid"]),
   adaptation: z.enum(["balanced", "type-led"]),
+  // Absent on historical v3 plans: preserve their exact layout/visual path.
+  treatment: z.literal("subject-led").optional(),
+}).superRefine((direction, ctx) => {
+  if (["robot", "network", "tiles", "botanical", "aroma", "code", "camera"].includes(direction.visual) && direction.treatment !== "subject-led") ctx.addIssue({ code: "custom", path: ["treatment"], message: "Subject visuals require the implemented subject-led treatment." });
 });
 export type ArtDirection = z.infer<typeof artDirectionSchema>;
 export function compatibleDirection(taste: Taste, direction: ArtDirection) {
   const supported = ENGINE_TASTES[taste];
   return (supported.variants as readonly string[]).includes(direction.variant) && (supported.palettes as readonly string[]).includes(direction.palette);
 }
-export function localDirection(taste: Taste, publicCopy: string, preferences = ""): ArtDirection {
+export function localDirection(taste: Taste, publicCopy: string, preferences = "", subjectLed = false): ArtDirection {
   const technical = /\b(robotics|technical|coding|hackathon|workshop|engineering)\b/i.test(publicCopy);
   const music = /\b(music|dance|poetry|cultural|concert)\b/i.test(publicCopy);
   const drink = /\b(chai|tea|coffee|cafe|café)\b/i.test(publicCopy);
   const dense = publicCopy.length > 250;
   const registry = ENGINE_TASTES[taste];
   const alternative = /\b(blue|cool|midnight|cobalt)\b/i.test(preferences) || technical;
-  return { variant: registry.variants[dense || technical ? 1 : 0], palette: registry.palettes[alternative ? 1 : 0],
+  const legacy: ArtDirection = { variant: registry.variants[dense || technical ? 1 : 0], palette: registry.palettes[alternative ? 1 : 0],
     visual: dense ? "none" : drink ? "cup" : technical ? "circuit" : music ? "waves" : /\b(launch|product|opening)\b/i.test(publicCopy) ? "spark" : "none",
     emphasis: dense ? "editorial" : "display", information: dense ? "grid" : "auto", adaptation: dense ? "type-led" : "balanced" };
+  if (!subjectLed) return legacy;
+  const visual: ArtDirection["visual"] = dense ? "none" : /\brobotics?\b/i.test(publicCopy) ? "robot"
+    : /\b(photography|camera)\b/i.test(publicCopy) ? "camera"
+    : /\b(coding|programming|hackathon)\b/i.test(publicCopy) ? "code"
+    : /\b(AI|artificial intelligence)\b/.test(publicCopy) ? "network"
+    : /\b(plastic|reusable|environment|waste)\b/i.test(publicCopy) ? "botanical"
+    : /\b(perfume|fragrance)\b/i.test(publicCopy) ? "aroma"
+    : /\b(productivity|planning app|planning notebook)\b/i.test(publicCopy) ? "tiles" : legacy.visual;
+  const factual = /\b(venue|entry|teams?|\d{1,2}:\d{2})\b|https?:/i.test(publicCopy);
+  return { ...legacy, treatment: "subject-led", visual,
+    variant: registry.variants[dense || (taste === "minimal-swiss" && /\b(perfume|fragrance)\b/i.test(publicCopy)) || (taste === "festive-pop" && /\b(coding|contest)\b/i.test(publicCopy)) ? 1 : 0],
+    information: factual ? "grid" : "auto", emphasis: dense ? "editorial" : "display" };
+}
+
+export function relevantVisual(visual: ArtDirection["visual"], subject: string) {
+  const rules: Partial<Record<ArtDirection["visual"], RegExp>> = {
+    cup: /\b(chai|tea|coffee|cafe|café)\b/i, circuit: /\b(robotics|technical|coding|hackathon|workshop|engineering)\b/i,
+    waves: /\b(music|dance|poetry|cultural|concert|wave|water)\b/i, robot: /\brobotics?\b/i,
+    network: /\b(AI|artificial intelligence|computing|technology|network|workshop)\b/i,
+    code: /\b(coding|programming|hackathon|software)\b/i, tiles: /\b(productivity|planning|app|notebook|focus)\b/i,
+    botanical: /\b(plastic|reusable|environment|waste|plant|nature)\b/i, aroma: /\b(perfume|fragrance|scent)\b/i,
+    camera: /\b(photography|photographic|camera|photo)\b/i,
+  };
+  return !rules[visual] || rules[visual].test(subject);
 }

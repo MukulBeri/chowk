@@ -1,5 +1,17 @@
 # Architecture
 
+The [focused M4 correction](M4_CORRECTION.md) shares one bounded missing-field/list grammar across brief interpretation, local/automatic fallback, provider prompt data and semantic leakage rejection. Complete recognized declarations become interpretation metadata; public facts and explicit copy labels remain content. The factual validator checks that interpreted content, preventing metadata from being falsely required in artwork. It rejects a leaking model plan rather than silently editing it. Missing-token diagnostics expose only optional static categories. Schema v1/v2/v3, native renderer/export, fonts, registry, studio and runtime/repair budgets are unchanged.
+
+## M4 compatible subject-led treatment
+
+New plans remain strict DesignSpec v3 and opt into artDirection.treatment=subject-led. Absence retains historical v3 layout/visual behavior; v1/v2 endpoints/renderers are unchanged. The shared registry also validates seven subject-specific visuals (robot, network, tiles, botanical, aroma, code, camera); they require that treatment. Registry and provider JSON Schema/prompt share the actual capabilities. No renderer accepts model markup. Original native graphics are primary; only the independently vetted static Tabler camera geometry is retained with pinned MIT provenance.
+
+brief.ts recognizes explicit missing-field shorthand without deleting legitimate negative facts. editorial.ts makes conservative short-subject/audience/drink transformations and bounded conceptual headlines; unfamiliar/long/negative/explicitly labelled headlines retain supplied content. Factual token checks are retained and now also preserve selected public negative clauses and explicit venue corrections, with bounded safe repair guidance. These remain heuristics, not a truth engine.
+
+subject-layout.ts allocates taste/variant-specific regions and a full-width landscape information band. Audience/count may move to the kicker; every supplied fact remains in visible copy. Subject-led headlines fit whole words, support uses 34 px minimum (scaled upwards for LinkedIn), and all prior two-axis/bounds/contrast/collision/refusal checks remain. Copy-group sibling bounds/collision checks supplement container measurement. Bounded correction still removes artwork/reallocates support before refusing infeasible copy, never drops content.
+
+The M3 UI/state/ref/revision architecture is unchanged. export.ts adds conditional full Tabler notice text to offline HTML only when the retained camera occurs; PNG capture, readiness, dimensions, locks and font embedding are unchanged. No runtime external asset request or new dependency is introduced. See M4_REPORT.md for executed evidence and limitations.
+
 ## M3 studio presentation and state
 
 The approved two-region shell uses scoped UI tokens and Arial/Helvetica, separate from native inline artwork typography/palettes. Studio owns draft topic/details/taste, pending request identity, committed campaign/spec/revision, unapplied copy and export locks separately. A draft change never relabels existing art. Refinement is validated against the displayed result taste/version, makes no AI call and remeasures a new revision. Previous valid campaigns survive pending/error/subjectless/stale responses. Explicit examples, local mode, automatic fallback, AI and manual provenance are distinct.

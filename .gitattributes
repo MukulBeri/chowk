@@ -6,3 +6,5 @@ public/fonts/*.woff2 binary
 public/fonts/OFL-anton.txt -text whitespace=-blank-at-eol
 public/fonts/OFL-fredoka.txt -text whitespace=-blank-at-eol
 public/fonts/OFL-inter.txt -text
+# Approved Tabler MIT notice is byte-pinned; preserve LF bytes on Windows checkout.
+docs/licenses/Tabler-MIT.txt -text

@@ -29,6 +29,25 @@ export function factualTokens(text: string) {
   return [...new Set(tokens)].sort();
 }
 
+export const FACT_CATEGORIES = ["date", "time", "timezone", "currency", "quantity", "url", "contact", "identifier"] as const;
+export type FactCategory = typeof FACT_CATEGORIES[number];
+// Static categories only: never return the original token or a private value.
+// This is the same token difference used by factualIssues, not a new criterion.
+export function missingFactCategories(input: string, output: string): FactCategory[] {
+  const generated = new Set(factualTokens(output));
+  const missing = factualTokens(input).filter(token => !generated.has(token));
+  const categories = missing.map((token): FactCategory => {
+    const [kind, value] = token.split(":");
+    if (kind === "date" || kind === "numeric-date") return "date";
+    if (kind === "time" || kind === "timezone") return kind;
+    if (kind === "inr" || kind === "usd") return "currency";
+    if (kind === "contact") return /^(?:https?|www\.)/.test(value) ? "url" : "contact";
+    if (kind === "measure" || (kind === "value" && /^\d/.test(value))) return "quantity";
+    return "identifier";
+  });
+  return FACT_CATEGORIES.filter(category => categories.includes(category));
+}
+
 const claims = [
   /\b(?:free (?:entry|tickets?|admission|shipping|delivery|gifts?|chai|coffee)|for free)\b/g, /\b\d+\s*%\s*off\b/g, /\bdiscount(?:s|ed)?\b/g, /\bguaranteed?\b/g,
   /\b(?:best|cheapest|number one|no\.?\s*1)\b/g, /\b(?:limited seats|limited time|selling fast|certified|award[- ]winning|organic|clinically proven)\b/g,
@@ -50,5 +69,12 @@ export function factualIssues(input: string, output: string, requirePreservation
   // Quoted names and explicit at/venue/location labels are preserved verbatim.
   const named = [...input.matchAll(/[“"]([^”"\n]{2,80})[”"]|\b(?:venue|location|business name|product name)\s*:\s*([^\n;]{2,80})/gi)].map((m) => (m[1] || m[2]).trim());
   if (requirePreservation && named.some((value) => !copy.includes(normalized(value)))) issues.push("missing-named-fact");
+  // Numeric/name tokens alone cannot detect a reversed negation or an obsolete
+  // venue. Require these explicit public clauses verbatim (whitespace/case may
+  // change). Missing-input/planning statements are deliberately not in this set.
+  const negatives = input.match(/\bno (?:entry fee|subscription fee|certificates?|tickets?|parking|refunds?|chairs|date changes)\b[^.!?;\n]*|\b(?:the )?(?:venue|event|entry|tickets?|registration|subscription|parking)\b[^.!?;\n]*?\b(?:is|are|will|has|have) not\b[^.!?;\n]*/gi) ?? [];
+  if(requirePreservation && negatives.some(value=>!copy.includes(normalized(value))))issues.push("missing-negative-fact");
+  const corrections=input.match(/\b(?:venue|location) changed from [^.!?;\n]+? to [^.!?;\n]+/gi)??[];
+  if(requirePreservation && corrections.some(value=>!copy.includes(normalized(value))))issues.push("missing-corrected-fact");
   return [...new Set(issues)];
 }

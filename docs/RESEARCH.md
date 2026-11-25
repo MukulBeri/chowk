@@ -1,5 +1,11 @@
 # Research, reuse and reference register
 
+## M4 bounded research and adoption decision
+
+The explicit implementation approval supersedes the earlier planning-only gate for exactly five Tabler files. Inspected upstream commit: [1f4f3c94aadd87c88b32e0f65449070713c4f880](https://github.com/tabler/tabler-icons/tree/1f4f3c94aadd87c88b32e0f65449070713c4f880). All five file blobs and the MIT LICENSE blob matched the owner-reviewed IDs. Actual native-versus-trial PNGs cover three tastes × two formats × five assets. Camera is retained for a clear photography-subject improvement; music, device-laptop and recycle lost native expressiveness/specificity, and perfume suggested an unsupplied bottle. These are attributed visual judgments, not aesthetic scores. Exact paths, hashes and full notice are in src/lib/design-engine/tabler-asset.json and docs/licenses/Tabler-MIT.txt; only two static camera paths enter production. No package/runtime network asset or other icon is adopted.
+
+Snug sibling-overlap and Maket layout sources were read through the GitHub connector as advisory material. Native child-text bounds/collision checks were independently extended; their source, dependencies, severity algorithms and rendering systems were not copied. Z-index/pointer-events never excuse a text obstruction, and decorative background bleed is separated from essential text/hero regions. No artistic scoring or external layout engine is added. Older C7 pending/planning statuses below are historical to their milestones.
+
 M3 was formally owner-accepted on 25 November 2026; closure is quota-free archival and a normal Git checkpoint only. No fresh AI measurement, new asset/code adoption or M4/M5 implementation is implied.
 
 M3 reference decision (25 November 2026): the owner approved YARC_M3_Hybrid_Refinement_02.html plus desktop/mobile PNGs as the initial-release visual direction. They were read and hashed, not executed as product logic or copied as artwork/code. The application uses original CSS/type taste miniatures, existing local resources and neutral Arial/Helvetica UI typography. No Recraft font was identified/fetched, no dependency/asset/code was adopted, and no new research sweep occurred. This approval is specific to Hybrid 02, not a blanket change to earlier C1/C2/C7 statuses.

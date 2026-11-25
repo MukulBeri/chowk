@@ -1,5 +1,7 @@
 # Requirements and acceptance traceability
 
+Current authorization is the M4 quota-free candidate over accepted synchronized M3 `e52258f`; the earlier M3 closure authority below is historical. Original artwork, subject interpretation, copy/logistics hierarchy and landscape readability improve OFF-02/03/04/10/14 and ENG-01/04/05/06/07/08 within the existing requirements. The eight synthetic corpus subjects and five-file Tabler trial are internal owner-selected checks, not new official fellowship mandates. M4 is not formally accepted; no staging/commit/push/deployment or M5 implementation is authorized. OFF-15 and target-distribution clearance remain pending.
+
 M3 was owner-accepted on 25 November 2026 over accepted synchronized M2 `e6d968f`; current authority is its archival, final verification and Git checkpoint closure. The two-region studio, responsive real previews, truthful states, native-radio taste selection, local refinement, contextual inspection and isolated enlargement are internal M3 choices, not new official challenge mandates. Native dimensions, schema/API/factual/export contracts remain preserved. OFF-15 public access and production verification remain pending; M3 acceptance does not establish deployment readiness.
 
 YARC Builder Fellowship, Founding Cohort 2027; Technology & Engineering; Track 01 — Create. The challenge checklist and deadlines below are **user-supplied**, not an independently verified event-rule transcript. Official deadline: **26 November 2026, 11:59 PM IST**; internal target: **26 November 2026, 8 PM IST**.

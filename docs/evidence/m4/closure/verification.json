@@ -1,0 +1,437 @@
+{
+  "date": "2026-11-25",
+  "ownerAccepted": true,
+  "scope": "Documentation/archival/Git closure only; no release or complete distribution-license clearance",
+  "base": "e52258fcf054de89844d02c2d7cba315812f264e",
+  "branch": "main",
+  "verifiedRuntimeSourceFingerprint": "0e3afe6365b33b256af1810ded9c047486a097f75c475c85a278ea0e9521c09e",
+  "runtimeSourceChanges": [],
+  "sourceFiles": [
+    {
+      "file": "eslint.config.mjs",
+      "sha256": "8bf712af5065bf2c0797ff74e7d345514c0b437b669c00eb841072c174ad722e"
+    },
+    {
+      "file": "evaluation/live-models.spec.ts",
+      "sha256": "2b4a1cbd1878decd45d217191287e506f70616aaaf63bc9d0b9051012f88a9b0"
+    },
+    {
+      "file": "evaluation/m2-completion-live.spec.ts",
+      "sha256": "4733740df2bd248dcf5ff892fbc153b24e67c0062e039c67cba2972b5e2a2197"
+    },
+    {
+      "file": "evaluation/m2-completion.config.ts",
+      "sha256": "4951941ea83c3d009edbf46430198e2941ab34b9f65f21bce0c08dc08caf8701"
+    },
+    {
+      "file": "evaluation/m4-artwork.config.ts",
+      "sha256": "d20ce693f1fde064394402f47d51d0aaecf7b7023445ba341f2ec8c3bc45c533"
+    },
+    {
+      "file": "evaluation/m4-artwork.spec.ts",
+      "sha256": "7148fc06c44082b012a11b782d84f0745756abc6e75d7c0cd323232d05ce8599"
+    },
+    {
+      "file": "evaluation/m4-compatibility.spec.ts",
+      "sha256": "453ebac82ad08261bfa9af2789fa42e97e1e76c704fa45da29792cc48665878e"
+    },
+    {
+      "file": "evaluation/m4-corpus.ts",
+      "sha256": "2e755a46549e365349971c9e43415449e8160516a5f450a9dc883a9d0e083194"
+    },
+    {
+      "file": "evaluation/m4-correction.config.ts",
+      "sha256": "b69c52f66952f9180138a7d293432023f00b19fb92c2abb3fe740ed1e61b2f60"
+    },
+    {
+      "file": "evaluation/m4-correction.spec.ts",
+      "sha256": "0824ec4f4483ac74cc297779ce4c7690d1335050a1580e0ec18e11980372f2dc"
+    },
+    {
+      "file": "evaluation/m4-edge.config.ts",
+      "sha256": "918ca019c26ede0e854fb760852e87637bce16e3eddb49f2eab11a990cac0f47"
+    },
+    {
+      "file": "evaluation/m4-edge.spec.ts",
+      "sha256": "432f1730d8bef8dec2bc3b8541a95ccf4f4c8461719423ea0ba362cc24fedabf"
+    },
+    {
+      "file": "evaluation/m4-live-verification.config.ts",
+      "sha256": "f59cfe1fe14e7f78d3433b86d4a96643fbdd91934d441a4c1153ff18cd7aaaef"
+    },
+    {
+      "file": "evaluation/m4-live-verification.spec.ts",
+      "sha256": "8ead1cc605d89d060e5b9855d68a483a6ffe16dc7092928a854dd37304808826"
+    },
+    {
+      "file": "evaluation/m4-tabler.config.ts",
+      "sha256": "3445b8b70f81d86be1bdc3966897cc59b5885df0067f0572aa0b0805da4f47c4"
+    },
+    {
+      "file": "evaluation/m4-tabler.spec.ts",
+      "sha256": "a2235831d8747590ff509b3ac99cc86af8af0447e2727252f6c65603ed4b6eae"
+    },
+    {
+      "file": "evaluation/playwright.config.ts",
+      "sha256": "015010f17a41830a1fa83e2b79c6065346fc75fc349abdda3c6c4148b8e13bb6"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "4c22b323c4cb0e8c79476589d07bd4662cfea3a092f3f741adab037476fb6370"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4380b5632d415369720e87193219bf1f6db4b3158c9272f7d1d240d3f418ad05"
+    },
+    {
+      "file": "package.json",
+      "sha256": "34192dac8cfc9bbe06e203e3b36ffaaf0e4bdba3c71c2430f86084a15c6d72b8"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "955eb1a723b07d1057ab3f7c62b131b0d4858501931611af526b7100136f1b8c"
+    },
+    {
+      "file": "src/app/api/design-spec/route.ts",
+      "sha256": "324793b22a6a4e6032bf4ac4c8c808616e85c457332bb2aa3d3b7271593e2c32"
+    },
+    {
+      "file": "src/app/api/generate/route.ts",
+      "sha256": "da18f53c833f6210242902bf5c12d0bee817ee6bae86c0a1d88b9cc56a0d11a7"
+    },
+    {
+      "file": "src/app/campaign-fonts.css",
+      "sha256": "b1fd43a8bd99ae01a1e4fe2529a14a2a8992362f1f0a5eea4668abd6eadda08e"
+    },
+    {
+      "file": "src/app/favicon.ico",
+      "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "be813c46da6b69cab23a09ece2ce44451eb2f1f47cc80f485254e45b671a5865"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "6ed5ad199fac1fb20ebcf69983bf18a02466eb322a53cb1ce16026047fe63bc8"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "d58ffe9244e5ae0745f61c440f812593c087c6c3fa33323ae571347020a487e6"
+    },
+    {
+      "file": "src/components/advanced-poster.tsx",
+      "sha256": "7698d726837786125f03108e1d34dcd1dd23bedf8a9eb44d467d186bbeb4d7da"
+    },
+    {
+      "file": "src/components/poster.tsx",
+      "sha256": "e8a550ca04f412c05ac0b6327c551e1bd2359b170895dc527c6866e44148fa48"
+    },
+    {
+      "file": "src/components/procedural-visual.tsx",
+      "sha256": "8d5a2d9e1a54aa86bcddbccae5bf816828477bb56c321d78d445d17d4fba3f62"
+    },
+    {
+      "file": "src/components/studio-artboard.tsx",
+      "sha256": "d21b0f1267e7ca4063067ecc7485be54f0f69d9247856b1c4ab6830e423b57e8"
+    },
+    {
+      "file": "src/components/studio-dialog.tsx",
+      "sha256": "9ffd6d0f03884a945da5e95bc22f2c3b0f5e0344fa18a81c5ff28bebb6ec38ea"
+    },
+    {
+      "file": "src/components/studio.tsx",
+      "sha256": "ee6f8b87c27db437a6039c0fb45f5214d45c245e15237e26abe8cd15aaa3a991"
+    },
+    {
+      "file": "src/components/subject-visual.tsx",
+      "sha256": "ac8eb1aec102f4daec08e650b4b073bbf59c60eebce44887a6b586d48719e41f"
+    },
+    {
+      "file": "src/components/tabler-camera.tsx",
+      "sha256": "afde4ecf890ba94f1cfbf0e6e2b0ec71f6a664716e0d0787267e4142a7cb6943"
+    },
+    {
+      "file": "src/components/taste-picker.tsx",
+      "sha256": "cb0ff7a47c860650f2b9f2066ea670540a0f32e944716d8875808b747bcdddde"
+    },
+    {
+      "file": "src/lib/design-engine/font-assets.json",
+      "sha256": "5c2f53d5c1cca7d89a6bc9290ea34e33fa44ac0a3bdf9894e280f2f78ddc063f"
+    },
+    {
+      "file": "src/lib/design-engine/fonts.ts",
+      "sha256": "7b4633f619306a7ae4f37e1d3d9844bf581bb560a64b7fe780bb1516706d4b50"
+    },
+    {
+      "file": "src/lib/design-engine/layout.ts",
+      "sha256": "0f9c134efb9153ab2649e4084f24e97b257250681e7bb91c3b170d01dc9a24eb"
+    },
+    {
+      "file": "src/lib/design-engine/quality.ts",
+      "sha256": "7e89ab926d16effd5a0b21f06c5a2de188c166a938c2448962915ee8deeee7f3"
+    },
+    {
+      "file": "src/lib/design-engine/registry.ts",
+      "sha256": "500dd113f1779935fba514ef5f00e80a2615efd8942b0492de87eb77695c34be"
+    },
+    {
+      "file": "src/lib/design-engine/subject-layout.ts",
+      "sha256": "087d0b09f87ed8b8a202cccb50e433c0dad592cfcb4c93ed587d5ea41ba9c250"
+    },
+    {
+      "file": "src/lib/design-engine/tabler-asset.json",
+      "sha256": "ea2473449fde3df8e8128fcba12117dd78114194bcfdbc5f03d856a8b2889711"
+    },
+    {
+      "file": "src/lib/design.ts",
+      "sha256": "260e3d52a863cfbb7c45519ad23a9b3927f3d15a9d069bad429eb9a6089feb7f"
+    },
+    {
+      "file": "src/lib/export.ts",
+      "sha256": "ec222d4208f255e73a28499ddf121ae5f910632d859f6c478a6d70699fb67876"
+    },
+    {
+      "file": "src/lib/generation/brief.ts",
+      "sha256": "7f4e63774e387255af27a4140825ff17137bdb6a48ecfcd8b955487a659a15ae"
+    },
+    {
+      "file": "src/lib/generation/contracts.ts",
+      "sha256": "b8a51581c941bf74dcb50e14bfef29ced6d92f8c8d70d45fc633e3fee4f756a6"
+    },
+    {
+      "file": "src/lib/generation/diagnostics.ts",
+      "sha256": "13efc97d0e8cbc75b32a3859adf630b1ee2f0fb699be2ee6895d9ef212fbad71"
+    },
+    {
+      "file": "src/lib/generation/editorial.ts",
+      "sha256": "718409f64f4ee28b4b8c0ec8e79e34839c9ff313abc9343cfbd78d54f6d4fb15"
+    },
+    {
+      "file": "src/lib/generation/facts.ts",
+      "sha256": "953922acff87d006f7c58cf0bfa2e5dbaec448d389395c69454d78e5d7cc90db"
+    },
+    {
+      "file": "src/lib/generation/planner.ts",
+      "sha256": "ffcf7b00113e7c6c197c4da39ec4bc5ea408aa67720e4f6e9fd48a65e2a84bf5"
+    },
+    {
+      "file": "src/server/engine.ts",
+      "sha256": "7404194ef6655b05fa5928182f19d19ffa6569716104af83c2f71886d2f95c5b"
+    },
+    {
+      "file": "src/server/gemini.ts",
+      "sha256": "92a93b2987ae7b16cf0fb0c0e1aca621e6166f875899c2adde4c4a3ebebd5c6c"
+    },
+    {
+      "file": "src/server/runtime.ts",
+      "sha256": "02c82a0b4c3c86527c4a9bca1e2699f3e421182abf69982ada89607a36e1becc"
+    },
+    {
+      "file": "tests/design-engine.spec.ts",
+      "sha256": "e08deec70bedb2f141a1fb64b19c890633e227937a9a7d65b98b7f9e77b52bf5"
+    },
+    {
+      "file": "tests/fallback-correction.spec.ts",
+      "sha256": "d45cb1d73ab0b9e4ff5cd088eee2f275dc260119fa82a4ad52f1bd09cd89dbcc"
+    },
+    {
+      "file": "tests/generation.spec.ts",
+      "sha256": "8a0c013aa20c745e9f3fec7c1d77b621e0b56b282a6d1ee34c993a683d123e40"
+    },
+    {
+      "file": "tests/m4-copy-correction.spec.ts",
+      "sha256": "c607a92f6165355525326efdd2a5b3d55e5f8b6b5be3321395756d612786ab99"
+    },
+    {
+      "file": "tests/m4-engine.spec.ts",
+      "sha256": "bf986f0c8bc320503f6d049f5b7583494f47f6e02b73b2c03d33704e8d66b14c"
+    },
+    {
+      "file": "tests/studio-workspace.spec.ts",
+      "sha256": "4402da584cdba3a3ee967b07823e939b17b4068e7e0d69f61ef594cc8ed4fb94"
+    },
+    {
+      "file": "tests/studio.spec.ts",
+      "sha256": "da7eb3b4573186a76b1bfbca57a418c9d7f9986a810b78d10344be5452a51717"
+    },
+    {
+      "file": "tests/typography.spec.ts",
+      "sha256": "0e555cd3bcca5739beb8ddac9f457754fa02835d8c748c3a3b6e459b5cce9a05"
+    },
+    {
+      "file": "tests/validation-investigation.spec.ts",
+      "sha256": "67fee69957dff3ee4c13095ed6a7389b545837ff4aedfa4b87866f48edd99485"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+    }
+  ],
+  "originalEvidenceRecordsVerified": 565,
+  "correctionEvidenceRecordsVerified": 402,
+  "protectedHistoricalReportsAndRecords": [
+    {
+      "file": "docs/evidence/m4/artifact-manifest.json",
+      "bytes": 195790,
+      "sha256": "85e9b5df530648a3165a7c23e1df2afc53aec75c2caba0e3f12a07991b25f006"
+    },
+    {
+      "file": "docs/evidence/m4/live/artifact-manifest.json",
+      "bytes": 16536,
+      "sha256": "822dd17d6ce8bc65cb246d691c2aa6fcac82a9381a7ce2bb03510fe81cb53be9"
+    },
+    {
+      "file": "docs/evidence/m4/correction/artifact-manifest.json",
+      "bytes": 147643,
+      "sha256": "5463751bd1c97f702513ba93ed503525170da597a6bc84a7ef085fc7ac1cae98"
+    },
+    {
+      "file": "docs/evidence/m4/verification.json",
+      "bytes": 33322,
+      "sha256": "f596839a79d6365771a0bb0d80fabba753b5517a20f158a89079fd9debdc8b52"
+    },
+    {
+      "file": "docs/evidence/m4/asset-trial.json",
+      "bytes": 3957,
+      "sha256": "eceb10ecd0c15054ef676046c45a0fb749cddefe40372688b61350d99accabec"
+    },
+    {
+      "file": "docs/evidence/m4/live/journal.json",
+      "bytes": 33374,
+      "sha256": "27ffc9e3a4da2ddb5461588f8debb4d83996ce0af7c3aaa7cd4d2874432c414a"
+    },
+    {
+      "file": "docs/evidence/m4/live/verification.json",
+      "bytes": 37679,
+      "sha256": "c15a10b59eebfbce48428fea60230d70194317f9cfd582ad087d9a9234f0e2ea"
+    },
+    {
+      "file": "docs/evidence/m4/correction/verification.json",
+      "bytes": 40110,
+      "sha256": "65e079bc9a2a2378f182e137e39339f199f79449fdc3374e4e12895cfc0db832"
+    },
+    {
+      "file": "docs/M4_REPORT.md",
+      "bytes": 22520,
+      "sha256": "181f9ab42cc859e57f65a80031db2bfe2f3bd8b73f9a8d8665f40001c72a8cc7"
+    },
+    {
+      "file": "docs/M4_LIVE_VERIFICATION.md",
+      "bytes": 16676,
+      "sha256": "123af8e1fa753ec6424e43567e64fbe6f49fc27f3c7c25dd882ef128c363f3bd"
+    },
+    {
+      "file": "docs/M4_CORRECTION.md",
+      "bytes": 18072,
+      "sha256": "f83213726a4a3719c84b36d57ed945e0f15d2bb3cdfa4bb69a3f6801cb84bae0"
+    }
+  ],
+  "startingCandidateCount": 55,
+  "additionalAcceptanceRecords": [
+    "docs/M4_ACCEPTANCE.md",
+    "docs/evidence/m4/closure/verification.json"
+  ],
+  "closureEditedExisting": [
+    "AGENTS.md",
+    "README.md",
+    "docs/AI_DISCLOSURE.md",
+    "docs/ROADMAP.md",
+    "docs/TESTING.md"
+  ],
+  "modifiedTracked": 23,
+  "newFiles": 34,
+  "candidateFileCount": 57,
+  "candidateFiles": [
+    ".gitattributes",
+    "AGENTS.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/AI_DISCLOSURE.md",
+    "docs/API.md",
+    "docs/ARCHITECTURE.md",
+    "docs/M4_ACCEPTANCE.md",
+    "docs/M4_CORRECTION.md",
+    "docs/M4_LIVE_VERIFICATION.md",
+    "docs/M4_REPORT.md",
+    "docs/REQUIREMENTS.md",
+    "docs/RESEARCH.md",
+    "docs/ROADMAP.md",
+    "docs/TESTING.md",
+    "docs/evidence/m4/artifact-manifest.json",
+    "docs/evidence/m4/asset-trial.json",
+    "docs/evidence/m4/closure/verification.json",
+    "docs/evidence/m4/correction/artifact-manifest.json",
+    "docs/evidence/m4/correction/verification.json",
+    "docs/evidence/m4/live/artifact-manifest.json",
+    "docs/evidence/m4/live/journal.json",
+    "docs/evidence/m4/live/verification.json",
+    "docs/evidence/m4/verification.json",
+    "docs/example-design-spec-m4.json",
+    "docs/licenses/Tabler-MIT.txt",
+    "eslint.config.mjs",
+    "evaluation/m4-artwork.config.ts",
+    "evaluation/m4-artwork.spec.ts",
+    "evaluation/m4-compatibility.spec.ts",
+    "evaluation/m4-corpus.ts",
+    "evaluation/m4-correction.config.ts",
+    "evaluation/m4-correction.spec.ts",
+    "evaluation/m4-edge.config.ts",
+    "evaluation/m4-edge.spec.ts",
+    "evaluation/m4-live-verification.config.ts",
+    "evaluation/m4-live-verification.spec.ts",
+    "evaluation/m4-tabler.config.ts",
+    "evaluation/m4-tabler.spec.ts",
+    "playwright.config.ts",
+    "src/components/advanced-poster.tsx",
+    "src/components/subject-visual.tsx",
+    "src/components/tabler-camera.tsx",
+    "src/lib/design-engine/layout.ts",
+    "src/lib/design-engine/quality.ts",
+    "src/lib/design-engine/registry.ts",
+    "src/lib/design-engine/subject-layout.ts",
+    "src/lib/design-engine/tabler-asset.json",
+    "src/lib/export.ts",
+    "src/lib/generation/brief.ts",
+    "src/lib/generation/diagnostics.ts",
+    "src/lib/generation/editorial.ts",
+    "src/lib/generation/facts.ts",
+    "src/lib/generation/planner.ts",
+    "src/server/gemini.ts",
+    "tests/m4-copy-correction.spec.ts",
+    "tests/m4-engine.spec.ts"
+  ],
+  "stagedAtCandidateAudit": 0,
+  "checks": {
+    "inventory": true,
+    "sourceFingerprint": true,
+    "json": true,
+    "localReferences": true,
+    "whitespace": true,
+    "configuredSecretValuesCompared": 1,
+    "compiledClientFilesChecked": 11,
+    "existingProtectedFilesChecked": 44,
+    "unchangedStudioProviderBudgetsFontsDependencies": true,
+    "tablerPinnedSourceAndExactMitNotice": true,
+    "liveJournalExcludedFromNormalSuiteAndRerunGuarded": true
+  },
+  "historicalResults": {
+    "finalCorrection": "77 regressions and 2 exact-brief artwork cases; lint/typecheck/build passed on the unchanged final source",
+    "earlierCorrection": "11 corpus/compatibility and 10 edge passed before final whitespace extension; final 77 cover extension",
+    "earlierTrial": "15 isolated Tabler comparisons, before final correction; only camera retained",
+    "newRuntimeTestsExecuted": 0
+  },
+  "live": {
+    "originalCalls": 3,
+    "additionalCalls": 0,
+    "semanticRejections": 1,
+    "http503": 2,
+    "acceptedFreshPlans": 0,
+    "independentFallbackCampaigns": 2,
+    "missingRoboticsFact": "Unrecoverable",
+    "environmentCopyDefect": "Subsequently corrected quota-free",
+    "futureProductionVerification": "M5, separately authorized only"
+  },
+  "findings": [],
+  "passed": true
+}

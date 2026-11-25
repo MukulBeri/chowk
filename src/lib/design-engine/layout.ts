@@ -1,4 +1,5 @@
 import type { DesignSpecV3, Format } from "../design";
+import { resolveSubjectLayout } from "./subject-layout";
 
 export type Rect = { x: number; y: number; w: number; h: number };
 export type ResolvedLayout = { kicker: Rect; headline: Rect; support: Rect; cta: Rect; art?: Rect; align: "left" | "center" | "right"; columns: number; corrections: string[]; floors: { headline: number; support: number; kicker: number; cta: number } };
@@ -16,6 +17,7 @@ export function informationRole(text: string): "when" | "where" | "entry" | "reg
   return "message";
 }
 export function resolveLayout(spec: DesignSpecV3, format: Format, correction = 0): ResolvedLayout {
+  if (spec.artDirection.treatment === "subject-led") return resolveSubjectLayout(spec, format, correction);
   const { width: w, height: h } = format, wide = w > h, portrait = h > w;
   const margin = Math.round(Math.min(w, h) * (spec.taste === "minimal-swiss" ? .065 : .055)) + Math.round((spec.composition.spacing - 60) / 4);
   const x = margin, iw = w - margin * 2, y = margin + (wide ? 68 : 86);

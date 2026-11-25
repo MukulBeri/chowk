@@ -1,0 +1,263 @@
+{
+  "date": "2026-11-25",
+  "scope": "Fresh bounded live verification; all resulting campaign artwork is actual independent fallback. No corrected or substituted art.",
+  "count": 42,
+  "bytes": 5337214,
+  "originalM4ManifestSha256": "85e9b5df530648a3165a7c23e1df2afc53aec75c2caba0e3f12a07991b25f006",
+  "originalM4ArtifactsVerified": 523,
+  "originalM4ArtifactChanges": [],
+  "files": [
+    {
+      "file": "test-results/m4-live-verification-02/.last-run.json",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/fallback-review-sheet.png",
+      "provenance": "Review sheet composed from actual unchanged fallback PNG downloads",
+      "bytes": 348130,
+      "sha256": "fef717dd7314205060c77e3847cf0b257c65adef18b63483284f37037f41edb1"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 106192,
+      "sha256": "131e84de890c55f6c334db6428c8db1b9aaefddff89dac28683e5e6d531abf68"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 106192,
+      "sha256": "131e84de890c55f6c334db6428c8db1b9aaefddff89dac28683e5e6d531abf68"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 158784,
+      "sha256": "4175f70d94ddb29e7b117831f145acc29a31812767afbaf703954ab3f2668589"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 95289,
+      "sha256": "ff1275c15ce87837ad1b6b558c406e21e2e60894ae6cae54c0a8e36ffb5796cc"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 141621,
+      "sha256": "51e7510e80494b25f433025e752f431153bc6f69b2e53e34845bfc9c2620368b"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 123059,
+      "sha256": "47661489ecc876bfba7c49686b22f36702bf2cd2e17236a81246f9bf12de72d2"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 182160,
+      "sha256": "66ae978180cc24ebb7a601a346d515d6f4b47ac7b8cdf51fcad0c674ea660151"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-mobile.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 183074,
+      "sha256": "0298806ccef73adcc80bff2cbac0cff11b6307203a7fe623bac92821596fbd08"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-spec.json",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-studio.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 256870,
+      "sha256": "427b28416ff9aacd60da11ebda2f97704d39b04af73252053ce521bcd19464e6"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 77501,
+      "sha256": "3e6f6832b9e20b7f60b248a30667052c336006c5145ab04dabfa0eb46ee3ea0f"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 113776,
+      "sha256": "91071cad0e9147255f4485393e3481b2ba0fb4e9698459ae8c5da0910d0c0047"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics.html",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 596036,
+      "sha256": "c49ef98ddf523c31c8b2d02d5b0a88c842e2c12180ff421b785630fa9e9cd810"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 99436,
+      "sha256": "b36491456c859dec898c9f05eb83d54c1aed3f235822a524e04643b2d3076bb2"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 99436,
+      "sha256": "b36491456c859dec898c9f05eb83d54c1aed3f235822a524e04643b2d3076bb2"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 157231,
+      "sha256": "e29b1b584de8a7811c43afd340f3f6cead7f1c08bde429cf4bd9e3d8293c09d0"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 97459,
+      "sha256": "710005a2b3b87abbb9ed3d86c23621df035d64069cef5bf013f12bfd10aba324"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 97459,
+      "sha256": "710005a2b3b87abbb9ed3d86c23621df035d64069cef5bf013f12bfd10aba324"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 150000,
+      "sha256": "067c76e4095fe59bf3c8ac216201854c102d9327ea1bf5fb71aac57a683b8bca"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 135065,
+      "sha256": "ac95c96d766de3624bd3646861b70bcb0b96d0d49667e2417941b86fed554b27"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 135069,
+      "sha256": "db068170a5b5b7e355bb65d71ed6a94d12144a09a712868aff99ec0c2a3b3330"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 198784,
+      "sha256": "21d502329e08869ac9cfb2fcb38ecde966fa4a47a3efacc1e63a9e6ace7f86f1"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-mobile.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 175129,
+      "sha256": "83188c00bd49d07e54f1b1be90cec854af18db2b0a66000c46f0b345570a5f99"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-spec.json",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 1337,
+      "sha256": "091bb12621b40ad7274e2caafedeeb45918b885c11a1a6d25b154aac1fc7ae04"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-studio.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 252410,
+      "sha256": "ed9939342cb6b5465219009d0170f6959a3a79a18a36ef6eb181f84eb43d4c38"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-native-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 77932,
+      "sha256": "e6a6fe8ee58d99c3c2e85dd20ec8f88dd1f4e305844f8436e03aa0e6dc85fc8a"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-offline-dom.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 77932,
+      "sha256": "e6a6fe8ee58d99c3c2e85dd20ec8f88dd1f4e305844f8436e03aa0e6dc85fc8a"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail.png",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 120016,
+      "sha256": "e84928d9decbd16b7d31d975d2b3c396ce011d7e270c3654fb174f96819605d7"
+    },
+    {
+      "file": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment.html",
+      "provenance": "Actual browser/download evidence after fresh live attempts; final artwork is independent fallback, not Gemini-generated",
+      "bytes": 597561,
+      "sha256": "0ea2519580b911eec770404194b8dfc0cab24ad21b1773a2b13b9d47165f666b"
+    },
+    {
+      "file": "docs/evidence/m4/live/journal.json",
+      "provenance": "Original completed live execution journal, byte-preserved after collection",
+      "bytes": 33374,
+      "sha256": "27ffc9e3a4da2ddb5461588f8debb4d83996ce0af7c3aaa7cd4d2874432c414a"
+    },
+    {
+      "file": "test-results/m4-live-verification-01.log",
+      "provenance": "Zero-call pre-dispatch harness failure retained; worker output guard correction, no request sent",
+      "bytes": 4278,
+      "sha256": "4f3f0b633ff6e863b4d2fbe51b6dd8dc1a609f541b2f8a70d886e9e0006ae0be"
+    },
+    {
+      "file": "test-results/m4-live-verification-01/.last-run.json",
+      "provenance": "Zero-call pre-dispatch harness failure retained; worker output guard correction, no request sent",
+      "bytes": 96,
+      "sha256": "98c5e80cd47e2541c1952ab9b640e38962a016f722abb234e348a9528094655e"
+    },
+    {
+      "file": "test-results/m4-live-verification-02.log",
+      "provenance": "Preflight/environment or byte-preserved pre-live-documentation snapshot",
+      "bytes": 1420,
+      "sha256": "ced48cfd865ece60c6be3eabf8c0cbcf005d2f1a793fb87e87d65eaa231a0727"
+    },
+    {
+      "file": "test-results/m4-live-preflight/preflight.json",
+      "provenance": "Preflight/environment or byte-preserved pre-live-documentation snapshot",
+      "bytes": 388,
+      "sha256": "3c52a31d1703d47c4189ac4a24326129b035c8b4d1ab23238255e05e5ec21476"
+    },
+    {
+      "file": "test-results/m4-live-preflight/environment.json",
+      "provenance": "Preflight/environment or byte-preserved pre-live-documentation snapshot",
+      "bytes": 232,
+      "sha256": "dca77c71742961b17bd949faf454024d926eca433b0ceb1750c02cea326db20e"
+    },
+    {
+      "file": "test-results/m4-live-preflight/M4_REPORT.before-live-doc-update.md",
+      "provenance": "Preflight/environment or byte-preserved pre-live-documentation snapshot",
+      "bytes": 21825,
+      "sha256": "711f9204bea33a3a1339f5f3232e69c45a85e74a5be8ad9216e6410a7e8837bb"
+    },
+    {
+      "file": "test-results/m4-live-preflight/AI_DISCLOSURE.before-live-doc-update.md",
+      "provenance": "Preflight/environment or byte-preserved pre-live-documentation snapshot",
+      "bytes": 17478,
+      "sha256": "52e49a37e9e06d05292e1ae982f5c2051647ce020609c726d1edb05b3a4fec3e"
+    }
+  ]
+}

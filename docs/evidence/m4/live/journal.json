@@ -1,0 +1,813 @@
+{
+  "date": "2026-11-25",
+  "kind": "Fresh actual studio /api/generate requests with unchanged configured provider; no response mocks/replays/retries",
+  "phase": "completed; provider-call authorization closed",
+  "configuredModelFromLocalFile": "gemini-3.5-flash-lite",
+  "maximumCampaignRequests": 2,
+  "maximumProviderCalls": 4,
+  "maximumAttemptsPerCampaign": 2,
+  "callAccountingBasis": "Audited engine has at most two attempts; each attempt calls a transport with one native fetch and no retry loop. Completed uncached attempt metadata accounts for provider invocations. Unknown/interrupted requests reserve two calls and are never retried.",
+  "usageLimitation": "Application defaults absent usage counters to zero. Positive counters establish returned values; zero/missing fields are not proof of zero use/cost. Billing/cost is unavailable.",
+  "records": [
+    {
+      "id": "A-robotics",
+      "request": {
+        "id": "A-robotics",
+        "topic": "Campus robotics workshop for students.",
+        "details": "12 teams. 26 November 2026 at 18:30 IST. Venue: Lab A; Entry ₹150. Register at https://example.org/workshop.",
+        "taste": "minimal-swiss",
+        "mode": "auto"
+      },
+      "state": "Generation response and actual committed-campaign exports preserved; no manual edits or extra generation",
+      "errors": [],
+      "dispatch": "Application request dispatched once; do not retry if interrupted",
+      "httpStatus": 200,
+      "browserResponseWallMs": 4457,
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Campus robotics workshop for students.",
+            "eyebrow": "For students · 12 teams",
+            "headline": "Campus robotics workshop",
+            "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A; Entry ₹150.\nRegister at https://example.org/workshop."
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#dcecf0",
+            "ink": "#163438",
+            "accent": "#00616b",
+            "secondary": "#bcd9dd"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Minimal Swiss: swiss grid with swiss ice colours and robot visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+          "artDirection": {
+            "variant": "swiss-grid",
+            "palette": "swiss-ice",
+            "visual": "robot",
+            "emphasis": "display",
+            "information": "grid",
+            "adaptation": "balanced",
+            "treatment": "subject-led"
+          }
+        },
+        "interpretation": {
+          "objective": "Present the supplied subject without adding facts.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied subject a clear Minimal Swiss hierarchy; preserve publishable information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 4426,
+          "attempts": [
+            {
+              "outcome": "validation-failed",
+              "elapsedMs": 2489,
+              "usage": {
+                "inputTokens": 1111,
+                "outputTokens": 508,
+                "thinkingTokens": 0,
+                "totalTokens": 1619
+              },
+              "finishReason": "STOP",
+              "validation": {
+                "stage": "semantic",
+                "issues": [
+                  {
+                    "code": "missing-supplied-fact",
+                    "path": "$"
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 1933,
+              "httpStatus": 503
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        }
+      },
+      "providerCalls": 2,
+      "initialOutcome": "validation-failed",
+      "repairAttempted": true,
+      "repairOutcome": "provider-unavailable",
+      "actualModel": "gemini-3.5-flash-lite",
+      "freshProviderInvoked": true,
+      "acceptedFreshModelPlan": false,
+      "copyAssessment": {
+        "suppliedTokens": [
+          "contact:https://example.org/workshop",
+          "date:2026-11-26",
+          "inr:150",
+          "measure:12:team",
+          "time:18:30",
+          "timezone:ist"
+        ],
+        "outputTokens": [
+          "contact:https://example.org/workshop",
+          "date:2026-11-26",
+          "inr:150",
+          "measure:12:team",
+          "time:18:30",
+          "timezone:ist"
+        ],
+        "safeguardIssues": [],
+        "missingDeclarationInArtwork": false,
+        "subjectAndActionManualReviewRequired": true,
+        "modelAcceptanceDistinctFromApplicationExport": true
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 158784,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.00746639231824417,
+            "changed": 10886,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "instagram-square",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 141621,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.009332990397805213,
+            "changed": 10886,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 113776,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.01010525173611111,
+            "changed": 9313,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 182160,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.0008539267015706806,
+            "changed": 1631,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        }
+      ],
+      "readyWallMs": 4839,
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "For students · 12 teams\nCampus robotics workshop\n26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop.",
+          "visualPresent": "robot",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 150,
+              "minimum": 80,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "For students · 12 teams\nCampus robotics workshop\n26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop.",
+          "visualPresent": "robot",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 128,
+              "minimum": 76,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "For students · 12 teams\nCampus robotics workshop\n26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop.",
+          "visualPresent": "robot",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 103,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 38,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "For students · 12 teams\nCampus robotics workshop\n26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop.",
+          "visualPresent": "robot",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 156,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 60,
+              "minimum": 44,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        }
+      ],
+      "fontAndFitWarnings": [
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 150 native px · support: 45 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 128 native px · support: 45 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 103 native px · support: 38 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 156 native px · support: 60 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility."
+      ],
+      "studioScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-studio.png",
+      "portableHtml": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics.html",
+      "offlineHtml": {
+        "externalRequests": [],
+        "comparisons": [
+          {
+            "format": "instagram-portrait",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "instagram-square",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "youtube-thumbnail",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "linkedin-landscape",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          }
+        ],
+        "allFormatsPresent": true,
+        "fontsStatus": "loaded"
+      },
+      "downloadedJson": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-spec.json",
+      "mobileScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-mobile.png"
+    },
+    {
+      "id": "B-environment",
+      "request": {
+        "id": "B-environment",
+        "topic": "Campaign to reduce plastic waste.",
+        "details": "Encourage people to bring a reusable bottle. No supplied statistics, organization name or event date.",
+        "taste": "bold-street",
+        "mode": "auto"
+      },
+      "state": "Generation response and actual committed-campaign exports preserved; no manual edits or extra generation",
+      "errors": [],
+      "dispatch": "Application request dispatched once; do not retry if interrupted",
+      "httpStatus": 200,
+      "browserResponseWallMs": 1709,
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Campaign to reduce plastic waste.",
+            "eyebrow": "An idea to share",
+            "headline": "Less plastic.\nMore possibility.",
+            "supportingText": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date."
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efed50",
+            "ink": "#171d1c",
+            "accent": "#b6301a",
+            "secondary": "#fff9de"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Bold Street: street stack with street acid colours and botanical visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+          "artDirection": {
+            "variant": "street-stack",
+            "palette": "street-acid",
+            "visual": "botanical",
+            "emphasis": "display",
+            "information": "auto",
+            "adaptation": "balanced",
+            "treatment": "subject-led"
+          }
+        },
+        "interpretation": {
+          "objective": "Present the supplied subject without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied subject a clear Bold Street hierarchy; preserve publishable information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": "gemini-3.5-flash-lite",
+          "fallbackReason": "provider-unavailable",
+          "totalMs": 1682,
+          "attempts": [
+            {
+              "outcome": "provider-unavailable",
+              "elapsedMs": 1681,
+              "httpStatus": 503
+            }
+          ],
+          "cached": false,
+          "warnings": [
+            "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        }
+      },
+      "providerCalls": 1,
+      "initialOutcome": "provider-unavailable",
+      "repairAttempted": false,
+      "repairOutcome": null,
+      "actualModel": "gemini-3.5-flash-lite",
+      "freshProviderInvoked": true,
+      "acceptedFreshModelPlan": false,
+      "copyAssessment": {
+        "suppliedTokens": [],
+        "outputTokens": [],
+        "safeguardIssues": [],
+        "missingDeclarationInArtwork": true,
+        "subjectAndActionManualReviewRequired": true,
+        "modelAcceptanceDistinctFromApplicationExport": true
+      },
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 157231,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.008605624142661179,
+            "changed": 12547,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "instagram-square",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 150000,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.010757030178326474,
+            "changed": 12547,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 120016,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.012830946180555556,
+            "changed": 11825,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 198784,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.0073895287958115185,
+            "changed": 14114,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        }
+      ],
+      "readyWallMs": 1922,
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "An idea to share\nLess plastic.\nMore possibility.\nCampaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date.",
+          "visualPresent": "botanical",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 147,
+              "minimum": 80,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcAnton, YarcInter, Arial, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "An idea to share\nLess plastic.\nMore possibility.\nCampaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date.",
+          "visualPresent": "botanical",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 144,
+              "minimum": 76,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcAnton, YarcInter, Arial, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "An idea to share\nLess plastic.\nMore possibility.\nCampaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date.",
+          "visualPresent": "botanical",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 115,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcAnton, YarcInter, Arial, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 41,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "ready": "true",
+          "overflow": "false",
+          "issues": [],
+          "corrections": [],
+          "visibleCopy": "An idea to share\nLess plastic.\nMore possibility.\nCampaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date.",
+          "visualPresent": "botanical",
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            },
+            {
+              "role": "headline",
+              "pixels": 172,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcAnton, YarcInter, Arial, sans-serif"
+            },
+            {
+              "role": "support",
+              "pixels": 62,
+              "minimum": 44,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "family": "YarcInter, Arial, Helvetica, sans-serif"
+            }
+          ]
+        }
+      ],
+      "fontAndFitWarnings": [
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 147 native px · support: 45 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 144 native px · support: 45 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 115 native px · support: 41 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility.",
+        "Layout and readabilityAll supplied copy fits the checked regions.kicker: 31 native px · headline: 172 native px · support: 62 native pxGeometry and basic contrast checks do not certify visual quality or social-scale legibility."
+      ],
+      "studioScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-studio.png",
+      "portableHtml": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment.html",
+      "offlineHtml": {
+        "externalRequests": [],
+        "comparisons": [
+          {
+            "format": "instagram-portrait",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "instagram-square",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "youtube-thumbnail",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "linkedin-landscape",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          }
+        ],
+        "allFormatsPresent": true,
+        "fontsStatus": "loaded"
+      },
+      "downloadedJson": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-spec.json",
+      "mobileScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-mobile.png"
+    }
+  ],
+  "campaignRequestsDispatched": 2,
+  "completedAttemptCalls": 3,
+  "conservativeReservedMaximum": 4,
+  "unexpectedGenerationRequestsBlocked": 0,
+  "completed": true
+}

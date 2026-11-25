@@ -36,5 +36,16 @@ export function fitAndInspect(root: HTMLElement): QualityIssue[] {
     if (art && overlaps(rect, art.getBoundingClientRect())) issues.add("DECOR_OVER_TEXT");
     for (let j = i + 1; j < content.length; j++) if (overlaps(rect, content[j].getBoundingClientRect())) issues.add("TEXT_OVERLAP");
   }
+  // Check measured information siblings as well as their fitted container.
+  // Decorative background/frame bleed is intentionally outside text siblings;
+  // a hero remains obstructive regardless of z-index or pointer-events.
+  const groups=Array.from(root.querySelectorAll<HTMLElement>("[data-copy-group]"));
+  for(let i=0;i<groups.length;i++){
+    const group=groups[i], box=group.getBoundingClientRect(), parent=group.parentElement!.getBoundingClientRect();
+    if(group.scrollHeight>group.clientHeight+1||group.scrollWidth>group.clientWidth+1)issues.add("TEXT_OVERFLOW");
+    if(box.left<parent.left-1||box.right>parent.right+1||box.top<parent.top-1||box.bottom>parent.bottom+1)issues.add("OUT_OF_BOUNDS");
+    if(parseFloat(getComputedStyle(group).fontSize)<Number(group.parentElement!.dataset.min))issues.add("MIN_FONT");
+    for(let j=i+1;j<groups.length;j++)if(overlaps(box,groups[j].getBoundingClientRect()))issues.add("TEXT_OVERLAP");
+  }
   return [...issues];
 }

@@ -1,6 +1,11 @@
 import { z } from "zod";
+import { FACT_CATEGORIES, type FactCategory } from "./facts";
 
 const semanticAdvice = {
+  "planning-instruction-in-copy": "Keep recognized missing-field declarations and planning instructions only in interpretation metadata. Restore supplied public facts; honor input-side explicit copy labels.",
+  "missing-negative-fact": "Restore the supplied public negative clause verbatim; never remove or reverse its negation. Missing-input instructions remain metadata.",
+  "missing-corrected-fact": "Restore the complete supplied venue/location correction, including old and new names, rather than presenting the old venue as current.",
+  "irrelevant-subject-visual": "Choose a visual supported by the supplied public subject; use abstract or none when uncertain.",
   "wrong-taste": "Keep the user's selected taste.",
   "unsupported-taste-combination": "Use the selected taste's required family, case, legacy layout and motif from the system contract.",
   "unsupported-art-direction": "Select a variant and palette token belonging to the selected taste's registry.",
@@ -22,8 +27,8 @@ const semanticAdvice = {
 } as const;
 const semanticCodes = Object.keys(semanticAdvice) as [keyof typeof semanticAdvice, ...(keyof typeof semanticAdvice)[]];
 export const diagnosticCodeSchema = z.enum(["invalid-structure", "invalid-type", "invalid-value", "unknown-field", "too-large", "too-small", ...semanticCodes]);
-const paths = ["$", "interpretation", "interpretation.objective", "interpretation.audience", "interpretation.concept", "interpretation.assumptions", "interpretation.missingInformation", "taste", "campaign", "campaign.eyebrow", "campaign.headline", "campaign.supportingText", "campaign.cta", "palette", "palette.background", "palette.ink", "palette.accent", "palette.secondary", "typography", "typography.family", "typography.headlineScale", "typography.case", "composition", "composition.layout", "composition.spacing", "decoration", "decoration.motif", "decoration.density", "decoration.illustration", "rationale", "artDirection", "artDirection.variant", "artDirection.palette", "artDirection.visual", "artDirection.emphasis", "artDirection.information", "artDirection.adaptation"] as const;
-const issueSchema = z.strictObject({ code: diagnosticCodeSchema, path: z.enum(paths), limit: z.number().finite().min(0).max(2400).optional() });
+const paths = ["$", "interpretation", "interpretation.objective", "interpretation.audience", "interpretation.concept", "interpretation.assumptions", "interpretation.missingInformation", "taste", "campaign", "campaign.eyebrow", "campaign.headline", "campaign.supportingText", "campaign.cta", "palette", "palette.background", "palette.ink", "palette.accent", "palette.secondary", "typography", "typography.family", "typography.headlineScale", "typography.case", "composition", "composition.layout", "composition.spacing", "decoration", "decoration.motif", "decoration.density", "decoration.illustration", "rationale", "artDirection", "artDirection.variant", "artDirection.palette", "artDirection.visual", "artDirection.emphasis", "artDirection.information", "artDirection.adaptation", "artDirection.treatment"] as const;
+const issueSchema = z.strictObject({ code: diagnosticCodeSchema, path: z.enum(paths), limit: z.number().finite().min(0).max(2400).optional(), categories: z.array(z.enum(FACT_CATEGORIES)).min(1).max(8).optional() });
 export const validationDiagnosticsSchema = z.strictObject({ stage: z.enum(["structure", "semantic"]), issues: z.array(issueSchema).min(1).max(20), truncated: z.boolean() });
 export type ValidationDiagnostics = z.infer<typeof validationDiagnosticsSchema>;
 type DiagnosticIssue = z.infer<typeof issueSchema>;
@@ -42,14 +47,14 @@ export function structuralDiagnostics(issues: z.core.$ZodIssue[]): ValidationDia
   });
   return { stage: "structure", issues: safe.slice(0,20), truncated: safe.length > 20 };
 }
-export function semanticDiagnostics(codes: string[]): ValidationDiagnostics {
-  const safe = codes.map((code): DiagnosticIssue => ({ code: diagnosticCodeSchema.parse(code), path: "$" }));
+export function semanticDiagnostics(codes: string[], missingCategories: FactCategory[] = []): ValidationDiagnostics {
+  const safe = codes.map((code): DiagnosticIssue => ({ code: diagnosticCodeSchema.parse(code), path: "$", ...(code === "missing-supplied-fact" && missingCategories.length ? { categories: missingCategories } : {}) }));
   return { stage: "semantic", issues: safe.slice(0,20), truncated: safe.length > 20 };
 }
 export function repairGuidance(diagnostics: ValidationDiagnostics) {
   return diagnostics.issues.map(issue => {
     const semantic = semanticAdvice[issue.code as keyof typeof semanticAdvice];
-    if (semantic) return `${issue.code}: ${semantic}`;
+    if (semantic) return `${issue.code}: ${semantic}${issue.categories?.length ? ` Missing factual categories: ${issue.categories.join(", ")}.` : ""}`;
     const action = issue.code === "too-large" ? `Respect the field's schema maximum${issue.limit === undefined ? "" : ` (${issue.limit})`}; move essential excess CTA/headline facts to supportingText.`
       : issue.code === "too-small" ? `Respect the field's schema minimum${issue.limit === undefined ? "" : ` (${issue.limit})`}; do not invent missing facts.`
       : issue.code === "unknown-field" ? "Remove unsupported fields; return only the requested schema fields."

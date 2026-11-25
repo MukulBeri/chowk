@@ -1,0 +1,1141 @@
+{
+  "date": "2026-11-25",
+  "base": "e52258fcf054de89844d02c2d7cba315812f264e",
+  "branch": "main",
+  "status": "Uncommitted M4 candidate, owner review required",
+  "sourceFingerprint": "3b2d03c6ee7c45ae634819c4ba7875afefa00338edf34b056a3d02c195e0935d",
+  "sourceFiles": [
+    {
+      "file": "src/app/api/design-spec/route.ts",
+      "sha256": "324793b22a6a4e6032bf4ac4c8c808616e85c457332bb2aa3d3b7271593e2c32"
+    },
+    {
+      "file": "src/app/api/generate/route.ts",
+      "sha256": "da18f53c833f6210242902bf5c12d0bee817ee6bae86c0a1d88b9cc56a0d11a7"
+    },
+    {
+      "file": "src/app/campaign-fonts.css",
+      "sha256": "b1fd43a8bd99ae01a1e4fe2529a14a2a8992362f1f0a5eea4668abd6eadda08e"
+    },
+    {
+      "file": "src/app/favicon.ico",
+      "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "be813c46da6b69cab23a09ece2ce44451eb2f1f47cc80f485254e45b671a5865"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "6ed5ad199fac1fb20ebcf69983bf18a02466eb322a53cb1ce16026047fe63bc8"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "d58ffe9244e5ae0745f61c440f812593c087c6c3fa33323ae571347020a487e6"
+    },
+    {
+      "file": "src/components/advanced-poster.tsx",
+      "sha256": "7698d726837786125f03108e1d34dcd1dd23bedf8a9eb44d467d186bbeb4d7da"
+    },
+    {
+      "file": "src/components/poster.tsx",
+      "sha256": "e8a550ca04f412c05ac0b6327c551e1bd2359b170895dc527c6866e44148fa48"
+    },
+    {
+      "file": "src/components/procedural-visual.tsx",
+      "sha256": "8d5a2d9e1a54aa86bcddbccae5bf816828477bb56c321d78d445d17d4fba3f62"
+    },
+    {
+      "file": "src/components/studio-artboard.tsx",
+      "sha256": "d21b0f1267e7ca4063067ecc7485be54f0f69d9247856b1c4ab6830e423b57e8"
+    },
+    {
+      "file": "src/components/studio-dialog.tsx",
+      "sha256": "9ffd6d0f03884a945da5e95bc22f2c3b0f5e0344fa18a81c5ff28bebb6ec38ea"
+    },
+    {
+      "file": "src/components/studio.tsx",
+      "sha256": "ee6f8b87c27db437a6039c0fb45f5214d45c245e15237e26abe8cd15aaa3a991"
+    },
+    {
+      "file": "src/components/subject-visual.tsx",
+      "sha256": "ac8eb1aec102f4daec08e650b4b073bbf59c60eebce44887a6b586d48719e41f"
+    },
+    {
+      "file": "src/components/tabler-camera.tsx",
+      "sha256": "afde4ecf890ba94f1cfbf0e6e2b0ec71f6a664716e0d0787267e4142a7cb6943"
+    },
+    {
+      "file": "src/components/taste-picker.tsx",
+      "sha256": "cb0ff7a47c860650f2b9f2066ea670540a0f32e944716d8875808b747bcdddde"
+    },
+    {
+      "file": "src/lib/design-engine/font-assets.json",
+      "sha256": "5c2f53d5c1cca7d89a6bc9290ea34e33fa44ac0a3bdf9894e280f2f78ddc063f"
+    },
+    {
+      "file": "src/lib/design-engine/fonts.ts",
+      "sha256": "7b4633f619306a7ae4f37e1d3d9844bf581bb560a64b7fe780bb1516706d4b50"
+    },
+    {
+      "file": "src/lib/design-engine/layout.ts",
+      "sha256": "0f9c134efb9153ab2649e4084f24e97b257250681e7bb91c3b170d01dc9a24eb"
+    },
+    {
+      "file": "src/lib/design-engine/quality.ts",
+      "sha256": "7e89ab926d16effd5a0b21f06c5a2de188c166a938c2448962915ee8deeee7f3"
+    },
+    {
+      "file": "src/lib/design-engine/registry.ts",
+      "sha256": "500dd113f1779935fba514ef5f00e80a2615efd8942b0492de87eb77695c34be"
+    },
+    {
+      "file": "src/lib/design-engine/subject-layout.ts",
+      "sha256": "087d0b09f87ed8b8a202cccb50e433c0dad592cfcb4c93ed587d5ea41ba9c250"
+    },
+    {
+      "file": "src/lib/design-engine/tabler-asset.json",
+      "sha256": "ea2473449fde3df8e8128fcba12117dd78114194bcfdbc5f03d856a8b2889711"
+    },
+    {
+      "file": "src/lib/design.ts",
+      "sha256": "260e3d52a863cfbb7c45519ad23a9b3927f3d15a9d069bad429eb9a6089feb7f"
+    },
+    {
+      "file": "src/lib/export.ts",
+      "sha256": "ec222d4208f255e73a28499ddf121ae5f910632d859f6c478a6d70699fb67876"
+    },
+    {
+      "file": "src/lib/generation/brief.ts",
+      "sha256": "7264541d9617eaabbb5f6003855c34670425cf60af9b4eba2eede91ea56ba8f8"
+    },
+    {
+      "file": "src/lib/generation/contracts.ts",
+      "sha256": "b8a51581c941bf74dcb50e14bfef29ced6d92f8c8d70d45fc633e3fee4f756a6"
+    },
+    {
+      "file": "src/lib/generation/diagnostics.ts",
+      "sha256": "8f9ecb34a55f7afe33c152affebcb9550bc00088cfc89c71bd2c3109d82ba970"
+    },
+    {
+      "file": "src/lib/generation/editorial.ts",
+      "sha256": "718409f64f4ee28b4b8c0ec8e79e34839c9ff313abc9343cfbd78d54f6d4fb15"
+    },
+    {
+      "file": "src/lib/generation/facts.ts",
+      "sha256": "fac3704b61c4aceab440ebcda18d30f8e50c8ba828af824a9885728413bc7366"
+    },
+    {
+      "file": "src/lib/generation/planner.ts",
+      "sha256": "74d9a88d7ef5624d44ade918be4ff9ee76dea49e16b43c3df3bbce7dcf156eff"
+    },
+    {
+      "file": "src/server/engine.ts",
+      "sha256": "7404194ef6655b05fa5928182f19d19ffa6569716104af83c2f71886d2f95c5b"
+    },
+    {
+      "file": "src/server/gemini.ts",
+      "sha256": "1cb74c4d520eaa30f7a39c8eddd0afb1d673f01f30afd4aa7a2ea5a6a5b21eb1"
+    },
+    {
+      "file": "src/server/runtime.ts",
+      "sha256": "02c82a0b4c3c86527c4a9bca1e2699f3e421182abf69982ada89607a36e1becc"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "sha256": "8bf712af5065bf2c0797ff74e7d345514c0b437b669c00eb841072c174ad722e"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "955eb1a723b07d1057ab3f7c62b131b0d4858501931611af526b7100136f1b8c"
+    },
+    {
+      "file": "tests/m4-engine.spec.ts",
+      "sha256": "bf986f0c8bc320503f6d049f5b7583494f47f6e02b73b2c03d33704e8d66b14c"
+    },
+    {
+      "file": "evaluation/m4-artwork.config.ts",
+      "sha256": "d20ce693f1fde064394402f47d51d0aaecf7b7023445ba341f2ec8c3bc45c533"
+    },
+    {
+      "file": "evaluation/m4-artwork.spec.ts",
+      "sha256": "7148fc06c44082b012a11b782d84f0745756abc6e75d7c0cd323232d05ce8599"
+    },
+    {
+      "file": "evaluation/m4-compatibility.spec.ts",
+      "sha256": "453ebac82ad08261bfa9af2789fa42e97e1e76c704fa45da29792cc48665878e"
+    },
+    {
+      "file": "evaluation/m4-corpus.ts",
+      "sha256": "2e755a46549e365349971c9e43415449e8160516a5f450a9dc883a9d0e083194"
+    },
+    {
+      "file": "evaluation/m4-edge.config.ts",
+      "sha256": "918ca019c26ede0e854fb760852e87637bce16e3eddb49f2eab11a990cac0f47"
+    },
+    {
+      "file": "evaluation/m4-edge.spec.ts",
+      "sha256": "432f1730d8bef8dec2bc3b8541a95ccf4f4c8461719423ea0ba362cc24fedabf"
+    },
+    {
+      "file": "evaluation/m4-tabler.config.ts",
+      "sha256": "3445b8b70f81d86be1bdc3966897cc59b5885df0067f0572aa0b0805da4f47c4"
+    },
+    {
+      "file": "evaluation/m4-tabler.spec.ts",
+      "sha256": "a2235831d8747590ff509b3ac99cc86af8af0447e2727252f6c65603ed4b6eae"
+    }
+  ],
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exit": 0,
+      "log": "test-results/m4-accepted-source-lint.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exit": 0,
+      "log": "test-results/m4-accepted-source-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "exit": 0,
+      "log": "test-results/m4-accepted-source-build.log"
+    },
+    {
+      "command": "npx --no-install playwright test --output=test-results/m4-full-source-final-12",
+      "passed": 72,
+      "retainedAcceptedCases": 62,
+      "newM4Cases": 10,
+      "elapsed": "1.3m",
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --config=evaluation/m4-artwork.config.ts --output=test-results/m4-artwork-source-final-04",
+      "passed": 11,
+      "elapsed": "35.9s",
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --config=evaluation/m4-edge.config.ts --output=test-results/m4-edge-01",
+      "passed": 10,
+      "elapsedSeconds": 10,
+      "exit": 0
+    },
+    {
+      "command": "npx --no-install playwright test --config=evaluation/m4-tabler.config.ts --output=test-results/m4-tabler-comparison-01",
+      "passed": 15,
+      "elapsedSeconds": 25.2,
+      "scope": "Earlier isolated native/trial comparison, before camera adoption. No new AI.",
+      "exit": 0
+    }
+  ],
+  "baseline": {
+    "root": "test-results/m4-m3-baseline-01",
+    "passed": 10,
+    "elapsedSeconds": 25.3,
+    "campaigns": 10,
+    "nativePngs": 40,
+    "portableHtml": 10,
+    "downloadedJson": 10,
+    "hashRecords": 91,
+    "hashChanges": 0,
+    "headAtCapture": "e52258fcf054de89844d02c2d7cba315812f264e",
+    "kind": "Actual local M3 planning; no replay, model or mock"
+  },
+  "candidateCorpus": {
+    "root": "test-results/m4-artwork-source-final-04",
+    "campaigns": 10,
+    "nativePngs": 40,
+    "portableHtml": 10,
+    "downloadedJson": 10,
+    "refusedFormats": 0,
+    "measurements": [
+      {
+        "id": "ai-workshop",
+        "headline": "Begin with AI.",
+        "visual": "network",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "chai",
+        "headline": "Hot masala chai.",
+        "visual": "cup",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "coding",
+        "headline": "Ready. Set. Code.",
+        "visual": "code",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 43
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 43,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "culture",
+        "headline": "Music. Dance. Together.",
+        "visual": "waves",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 43,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "environment",
+        "headline": "Less plastic.\nMore possibility.",
+        "visual": "botanical",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "perfume",
+        "headline": "Quietly expressive.",
+        "visual": "aroma",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "productivity",
+        "headline": "Make room to focus.",
+        "visual": "tiles",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "robotics-bold-street",
+        "headline": "Campus robotics workshop",
+        "visual": "robot",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 38,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 35,
+            "afterSupport": 39
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 63
+          }
+        ]
+      },
+      {
+        "id": "robotics-festive-pop",
+        "headline": "Campus robotics workshop",
+        "visual": "robot",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 43,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 38,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 35,
+            "afterSupport": 38
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 35,
+            "afterSupport": 61
+          }
+        ]
+      },
+      {
+        "id": "robotics-minimal-swiss",
+        "headline": "Campus robotics workshop",
+        "visual": "robot",
+        "formats": [
+          {
+            "format": "instagram-portrait",
+            "beforeSupport": 39,
+            "afterSupport": 45
+          },
+          {
+            "format": "instagram-square",
+            "beforeSupport": 36,
+            "afterSupport": 45
+          },
+          {
+            "format": "youtube-thumbnail",
+            "beforeSupport": 38,
+            "afterSupport": 38
+          },
+          {
+            "format": "linkedin-landscape",
+            "beforeSupport": 39,
+            "afterSupport": 60
+          }
+        ]
+      }
+    ]
+  },
+  "exportMatrix": {
+    "variants": [
+      {
+        "taste": "bold-street",
+        "variant": "street-editorial",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 135043
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 127434
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 105881
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 177784
+          }
+        ]
+      },
+      {
+        "taste": "festive-pop",
+        "variant": "pop-stage",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 179519
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 148342
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 116747,
+            "actualPngVsNativeDom": {
+              "ratio": 0.008989800347222222,
+              "changed": 8285
+            }
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 195213
+          }
+        ]
+      },
+      {
+        "taste": "festive-pop",
+        "variant": "pop-offset",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 148732
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 140743
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 116089
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 191718
+          }
+        ]
+      },
+      {
+        "taste": "minimal-swiss",
+        "variant": "swiss-column",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 137189
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 129152
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 106607
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 181885
+          }
+        ]
+      },
+      {
+        "taste": "minimal-swiss",
+        "variant": "swiss-grid",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 157847
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 136739
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 104898,
+            "actualPngVsNativeDom": {
+              "ratio": 0.00937282986111111,
+              "changed": 8638
+            }
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 181637
+          }
+        ]
+      },
+      {
+        "taste": "bold-street",
+        "variant": "street-stack",
+        "outputs": [
+          {
+            "format": "instagram-portrait",
+            "width": 1080,
+            "height": 1350,
+            "bytes": 160950
+          },
+          {
+            "format": "instagram-square",
+            "width": 1080,
+            "height": 1080,
+            "bytes": 132226
+          },
+          {
+            "format": "youtube-thumbnail",
+            "width": 1280,
+            "height": 720,
+            "bytes": 107720,
+            "actualPngVsNativeDom": {
+              "ratio": 0.009436848958333334,
+              "changed": 8697
+            }
+          },
+          {
+            "format": "linkedin-landscape",
+            "width": 1910,
+            "height": 1000,
+            "bytes": 180108
+          }
+        ]
+      }
+    ],
+    "nativePngs": 24,
+    "portableHtml": 6,
+    "json": 6
+  },
+  "fidelity": {
+    "environment": "Windows headless Chrome 158.0.8127.88, deviceScaleFactor=1",
+    "actualPngVsNativeDom": {
+      "maximumChangedRatio": 0.015,
+      "anyRgbaChannelDeltaGreaterThan": 20,
+      "comparisons": [
+        {
+          "taste": "festive-pop",
+          "variant": "pop-stage",
+          "ratio": 0.008989800347222222,
+          "changed": 8285
+        },
+        {
+          "taste": "minimal-swiss",
+          "variant": "swiss-grid",
+          "ratio": 0.00937282986111111,
+          "changed": 8638
+        },
+        {
+          "taste": "bold-street",
+          "variant": "street-stack",
+          "ratio": 0.009436848958333334,
+          "changed": 8697
+        }
+      ]
+    },
+    "offlineHtml": {
+      "maximumChangedRatio": 0.001,
+      "anyRgbaChannelDeltaGreaterThan": 8
+    },
+    "legacyV3CrossRun": {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-comparisons.json",
+      "kind": "Cross-run legacy compatibility; distinct from same-revision actual PNG-vs-DOM fidelity and byte-identical inspection checks",
+      "threshold": {
+        "ratio": 0.001,
+        "channelDelta": 8
+      },
+      "comparisons": [
+        {
+          "taste": "bold-street",
+          "format": "instagram-portrait",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "bold-street",
+          "format": "instagram-square",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "bold-street",
+          "format": "youtube-thumbnail",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "bold-street",
+          "format": "linkedin-landscape",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "minimal-swiss",
+          "format": "instagram-portrait",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "minimal-swiss",
+          "format": "instagram-square",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "minimal-swiss",
+          "format": "youtube-thumbnail",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "minimal-swiss",
+          "format": "linkedin-landscape",
+          "byteIdentical": false,
+          "ratio": 0,
+          "maxDelta": 2
+        },
+        {
+          "taste": "festive-pop",
+          "format": "instagram-portrait",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "festive-pop",
+          "format": "instagram-square",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "festive-pop",
+          "format": "youtube-thumbnail",
+          "byteIdentical": true,
+          "ratio": 0,
+          "maxDelta": 0
+        },
+        {
+          "taste": "festive-pop",
+          "format": "linkedin-landscape",
+          "byteIdentical": false,
+          "ratio": 0,
+          "maxDelta": 1
+        }
+      ],
+      "scope": "Additional cross-run compatibility, not a substitute for actual downloaded-PNG/native-DOM comparisons"
+    },
+    "inspection": {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/inspection-isolation.json",
+      "kind": "Actual local generation and actual PNG downloads; not a mock",
+      "canonicalRefs": 4,
+      "rendererInstancesAdded": 0,
+      "canonicalMarkupUnchanged": true,
+      "pngBytesIdentical": true
+    }
+  },
+  "accessibility": [
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+      "violations": 0,
+      "incomplete": 0
+    }
+  ],
+  "responsive": {
+    "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/responsive-measurements.json",
+    "data": {
+      "kind": "Actual local artwork; viewport reflow plus 200% CSS magnification, not an OS/browser zoom certification",
+      "measurements": [
+        {
+          "width": 1440,
+          "height": 900,
+          "boxes": [
+            {
+              "width": 533,
+              "height": 666.25
+            },
+            {
+              "width": 533,
+              "height": 533
+            },
+            {
+              "width": 533,
+              "height": 299.8125
+            },
+            {
+              "width": 533,
+              "height": 279.046875
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 1366,
+          "height": 768,
+          "boxes": [
+            {
+              "width": 496,
+              "height": 620
+            },
+            {
+              "width": 496,
+              "height": 496
+            },
+            {
+              "width": 496,
+              "height": 279
+            },
+            {
+              "width": 496,
+              "height": 259.671875
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "boxes": [
+            {
+              "width": 453,
+              "height": 566.25
+            },
+            {
+              "width": 453,
+              "height": 453
+            },
+            {
+              "width": 453,
+              "height": 254.8125
+            },
+            {
+              "width": 453,
+              "height": 237.171875
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "boxes": [
+            {
+              "width": 353,
+              "height": 441.25
+            },
+            {
+              "width": 353,
+              "height": 353
+            },
+            {
+              "width": 353,
+              "height": 198.5625
+            },
+            {
+              "width": 353,
+              "height": 184.8125
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "boxes": [
+            {
+              "width": 355,
+              "height": 443.75
+            },
+            {
+              "width": 355,
+              "height": 355
+            },
+            {
+              "width": 355,
+              "height": 199.6875
+            },
+            {
+              "width": 355,
+              "height": 185.859375
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "boxes": [
+            {
+              "width": 358,
+              "height": 447.5
+            },
+            {
+              "width": 358,
+              "height": 358
+            },
+            {
+              "width": 358,
+              "height": 201.375
+            },
+            {
+              "width": 358,
+              "height": 187.421875
+            }
+          ],
+          "noHorizontalOverflow": true
+        },
+        {
+          "width": 320,
+          "height": 844,
+          "boxes": [
+            {
+              "width": 296,
+              "height": 370
+            },
+            {
+              "width": 296,
+              "height": 296
+            },
+            {
+              "width": 296,
+              "height": 166.5
+            },
+            {
+              "width": 296,
+              "height": 154.96875
+            }
+          ],
+          "noHorizontalOverflow": true
+        }
+      ]
+    },
+    "limits": "Windows Chrome; CSS magnification is not full browser/OS zoom or assistive-technology certification"
+  },
+  "protectedReview": {
+    "checked": 46,
+    "authorizedChanged": [
+      "src/lib/export.ts",
+      "THIRD_PARTY_NOTICES.md"
+    ],
+    "unchanged": 44,
+    "explanation": "Only export.ts conditional asset notices and THIRD_PARTY_NOTICES.md attribution change among the initial historical/UI/provider-budget/dependency/font guards. Creative-engine changes are authorized and separately inventoried."
+  },
+  "originalAcceptedTests": {
+    "count": 62,
+    "existingSourceChanges": ""
+  },
+  "findings": [
+    {
+      "run": "m4-guard-before-01",
+      "result": "One intentionally failing regression reproduced missing negative/corrected-venue preservation; raw findings retained; narrow guards then pass."
+    },
+    {
+      "run": "m4-focused-02",
+      "result": "New cross-run byte assertion failed on Swiss LinkedIn: 203 channels/pixels changed by at most 2; no pixel exceeded either existing threshold. Supplementary cross-run test uses the pre-existing 0.1%/delta>8 raster method; original 62 assertions/thresholds unchanged."
+    },
+    {
+      "run": "m4-focused-04",
+      "result": "Authored geometry harness defaulted to ES5 and incorrectly downleveled Set iteration; ES2022 harness correction passes without changing application geometry rules."
+    },
+    {
+      "run": "m4-full-final-06",
+      "result": "70 pass, one incomplete axe contrast check: preserved wrapping-space range extended beyond headline bounds."
+    },
+    {
+      "run": "m4-ui-fitting-08",
+      "result": "17 pass, three incomplete axe contrast states after an opaque-header experiment; experiment removed. Final pre-line wrapping and whole-word fitting pass original zero-violation/zero-incomplete assertions."
+    }
+  ],
+  "scope": {
+    "newLiveGeminiCalls": 0,
+    "newDependencies": 0,
+    "retainedExternalAssets": 1,
+    "rejectedTrialAssets": 4,
+    "UIRedesign": false,
+    "modelProviderBudgetsBillingChanged": false,
+    "archiveWrites": false,
+    "staged": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "M5Started": false
+  },
+  "limits": [
+    "Artistic acceptance needs owner review; geometry does not certify art, readability or factual truth.",
+    "Short-copy editorial transformations and subject matching are bounded English heuristics; unfamiliar wording retains literal supplied copy.",
+    "Selected negative/corrected-venue preservation is conservative and may reject valid paraphrases. Contradictory venue labels remain visible; the planner does not establish which is true.",
+    "Small landscape content/long URLs can remain hard to read in feed thumbnails. Dense/infeasible briefs may lose optional art or refuse export, retaining all copy.",
+    "Swiss fragrance treatment is intentionally quiet; its negative space/graphic character remains an owner judgment, not a measured quality success.",
+    "Unsupported scripts retain visible text/system-font warnings; no universal glyph/browser/device equivalence is claimed.",
+    "No new live-model validation of extended schema/repair. Original M2 live failure cause remains unknown and historical records are unchanged.",
+    "M5 public access, actual deployment environment/reliability/performance/security and target-distribution licensing remain unverified. Known 14 notice gaps/53 uninspected package locations are not claims of violations."
+  ],
+  "liveProposal": {
+    "authorized": false,
+    "campaigns": 2,
+    "maximumProviderCallsIncludingRepairs": 4,
+    "model": "Current configured model only; no configuration/billing change",
+    "suggested": [
+      "Fact-sensitive robotics with count/date/time/fee/URL/negative clause",
+      "Nontechnical environment or understated fragrance brief"
+    ],
+    "purpose": "Check meaningful supported art-direction choices, exact facts, safe diagnostics/one repair and honest fallback; not a broad benchmark"
+  },
+  "readOnlyReview": {
+    "date": "2026-11-25",
+    "scope": "Read-only implementation/client/artifact/JSON/docs/privacy review; no staging or distribution-license certification",
+    "head": "e52258fcf054de89844d02c2d7cba315812f264e",
+    "branch": "main",
+    "modifiedCount": 23,
+    "newCount": 20,
+    "candidateCount": 43,
+    "stagedCount": 0,
+    "configuredValuesCompared": 1,
+    "compiledClientFiles": 127,
+    "findings": [],
+    "protectedFilesChecked": 46,
+    "authorizedProtectedChanges": [
+      "src/lib/export.ts",
+      "THIRD_PARTY_NOTICES.md"
+    ],
+    "originalAcceptedTestsChanged": false,
+    "packageLockManifestAndFontsUnchanged": true,
+    "environmentExamplePlaceholdersOnly": true,
+    "artifactFilesVerified": 523,
+    "assetLicenseByteTransport": "docs/licenses/Tabler-MIT.txt: text: unset",
+    "whitespaceCheck": "",
+    "passed": true
+  }
+}

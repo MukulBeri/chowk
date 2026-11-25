@@ -1,0 +1,919 @@
+{
+  "date": "2026-11-25",
+  "status": "Bounded verification completed; live Gemini acceptance target not met; environmental fallback content defect remains",
+  "ownerApproval": "Quota-free implementation and artistic quality approved by owner before this verification; final M4 closure pending",
+  "base": "e52258fcf054de89844d02c2d7cba315812f264e",
+  "branch": "main",
+  "originalSourceFingerprint": "3b2d03c6ee7c45ae634819c4ba7875afefa00338edf34b056a3d02c195e0935d",
+  "originalRuntimeAndVerificationSourceChanges": [],
+  "preflight": {
+    "head": "e52258fcf054de89844d02c2d7cba315812f264e",
+    "branch": "main",
+    "modified": 23,
+    "newFiles": 20,
+    "staged": 0,
+    "sourceFingerprint": "3b2d03c6ee7c45ae634819c4ba7875afefa00338edf34b056a3d02c195e0935d",
+    "recomputedFingerprint": "3b2d03c6ee7c45ae634819c4ba7875afefa00338edf34b056a3d02c195e0935d",
+    "sourceChanges": [],
+    "artifactsChecked": 523,
+    "artifactChanges": []
+  },
+  "environment": {
+    "browser": "158.0.8127.88",
+    "platform": "win32",
+    "deviceScaleFactor": 1,
+    "headless": true,
+    "contactSheet": "Composed solely from actual downloaded fallback PNGs; no application/provider requests from this review page"
+  },
+  "accounting": {
+    "authorizedCampaignRequests": 2,
+    "actualCampaignRequests": 2,
+    "maximumAuthorizedProviderCalls": 4,
+    "actualProviderInvocations": 3,
+    "initialCalls": 2,
+    "repairCalls": 1,
+    "extraRetries": 0,
+    "discoveryWarmupHealthProbeCalls": 0,
+    "acceptedFreshGeminiPlans": 0,
+    "unusedAllowance": 1,
+    "authorizationClosed": true,
+    "furtherCallsMadeDuringResume": 0,
+    "evidenceBasis": "Audited engine has at most two attempts; each attempt calls a transport with one native fetch and no retry loop. Completed uncached attempt metadata accounts for provider invocations. Unknown/interrupted requests reserve two calls and are never retried.",
+    "completedJournalSha256": "27ffc9e3a4da2ddb5461588f8debb4d83996ce0af7c3aaa7cd4d2874432c414a",
+    "journal": "docs/evidence/m4/live/journal.json",
+    "providerResponsesObserved": "A initial parsed response with STOP and usage; A repair and B initial returned HTTP 503. First pre-dispatch harness failure made zero requests."
+  },
+  "calls": [
+    {
+      "ordinal": 1,
+      "campaign": "A-robotics",
+      "kind": "initial",
+      "outcome": "validation-failed",
+      "httpStatus": null,
+      "finishReason": "STOP",
+      "elapsedMs": 2489,
+      "validation": {
+        "stage": "semantic",
+        "issues": [
+          {
+            "code": "missing-supplied-fact",
+            "path": "$"
+          }
+        ],
+        "truncated": false
+      },
+      "applicationReportedUsage": {
+        "inputTokens": 1111,
+        "outputTokens": 508,
+        "thinkingTokens": 0,
+        "totalTokens": 1619
+      },
+      "usageAvailability": "Positive counters are available; zero counters may be application defaults and their original presence is unverified."
+    },
+    {
+      "ordinal": 2,
+      "campaign": "A-robotics",
+      "kind": "single repair",
+      "outcome": "provider-unavailable",
+      "httpStatus": 503,
+      "finishReason": null,
+      "elapsedMs": 1933,
+      "validation": null,
+      "applicationReportedUsage": null,
+      "usageAvailability": "No usage metadata exposed for the HTTP 503 response."
+    },
+    {
+      "ordinal": 3,
+      "campaign": "B-environment",
+      "kind": "initial",
+      "outcome": "provider-unavailable",
+      "httpStatus": 503,
+      "finishReason": null,
+      "elapsedMs": 1681,
+      "validation": null,
+      "applicationReportedUsage": null,
+      "usageAvailability": "No usage metadata exposed for the HTTP 503 response."
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "A-robotics",
+      "request": {
+        "id": "A-robotics",
+        "topic": "Campus robotics workshop for students.",
+        "details": "12 teams. 26 November 2026 at 18:30 IST. Venue: Lab A; Entry ₹150. Register at https://example.org/workshop.",
+        "taste": "minimal-swiss",
+        "mode": "auto"
+      },
+      "actualConfiguredModel": "gemini-3.5-flash-lite",
+      "applicationHttpStatus": 200,
+      "providerCalls": 2,
+      "initialOutcome": "validation-failed",
+      "repairAttempted": true,
+      "repairOutcome": "provider-unavailable",
+      "attempts": [
+        {
+          "outcome": "validation-failed",
+          "elapsedMs": 2489,
+          "usage": {
+            "inputTokens": 1111,
+            "outputTokens": 508,
+            "thinkingTokens": 0,
+            "totalTokens": 1619
+          },
+          "finishReason": "STOP",
+          "validation": {
+            "stage": "semantic",
+            "issues": [
+              {
+                "code": "missing-supplied-fact",
+                "path": "$"
+              }
+            ],
+            "truncated": false
+          }
+        },
+        {
+          "outcome": "provider-unavailable",
+          "elapsedMs": 1933,
+          "httpStatus": 503
+        }
+      ],
+      "latency": {
+        "browserResponseMs": 4457,
+        "engineTotalMs": 4426,
+        "browserRendererReadyMs": 4839,
+        "attempts": [
+          {
+            "outcome": "validation-failed",
+            "elapsedMs": 2489
+          },
+          {
+            "outcome": "provider-unavailable",
+            "elapsedMs": 1933
+          }
+        ],
+        "basis": "Attempt timers include transport/parsing/validation; browser ready uses the actual renderer gate, not a model inference-only measure."
+      },
+      "freshProviderInvoked": true,
+      "modelPlanAccepted": false,
+      "finalProvenance": "deterministic-fallback",
+      "finalFallbackReason": "provider-unavailable",
+      "schemaVersion": 3,
+      "artDirection": {
+        "variant": "swiss-grid",
+        "palette": "swiss-ice",
+        "visual": "robot",
+        "emphasis": "display",
+        "information": "grid",
+        "adaptation": "balanced",
+        "treatment": "subject-led"
+      },
+      "finalSpec": {
+        "version": 3,
+        "provenance": "deterministic-fallback",
+        "campaign": {
+          "topic": "Campus robotics workshop for students.",
+          "eyebrow": "For students · 12 teams",
+          "headline": "Campus robotics workshop",
+          "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A; Entry ₹150.\nRegister at https://example.org/workshop."
+        },
+        "taste": "minimal-swiss",
+        "palette": {
+          "background": "#dcecf0",
+          "ink": "#163438",
+          "accent": "#00616b",
+          "secondary": "#bcd9dd"
+        },
+        "typography": {
+          "family": "neutral-sans",
+          "headlineScale": 0.85,
+          "case": "sentence"
+        },
+        "composition": {
+          "layout": "swiss-grid",
+          "spacing": 80
+        },
+        "decoration": {
+          "motif": "orbit",
+          "density": 1,
+          "illustration": "abstract"
+        },
+        "rationale": "Minimal Swiss: swiss grid with swiss ice colours and robot visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+        "artDirection": {
+          "variant": "swiss-grid",
+          "palette": "swiss-ice",
+          "visual": "robot",
+          "emphasis": "display",
+          "information": "grid",
+          "adaptation": "balanced",
+          "treatment": "subject-led"
+        }
+      },
+      "interpretation": {
+        "objective": "Present the supplied subject without adding facts.",
+        "audience": "The campus community mentioned in the brief.",
+        "concept": "Give the supplied subject a clear Minimal Swiss hierarchy; preserve publishable information.",
+        "assumptions": [
+          "No new event, business or product facts have been inferred."
+        ],
+        "missingInformation": [
+          "Confirm any audience, logistical or action details not supplied before publication."
+        ]
+      },
+      "perFormat": [
+        {
+          "format": "instagram-portrait",
+          "checks": {
+            "roboticsSubject": true,
+            "students": true,
+            "teamCount": true,
+            "date": true,
+            "timeAndTimezone": true,
+            "venue": true,
+            "fee": true,
+            "exactRegistrationUrl": true,
+            "noUnsupportedCertificatesPrizesSponsorsEligibility": true,
+            "missingInputDeclarationAbsent": true
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "robot"
+        },
+        {
+          "format": "instagram-square",
+          "checks": {
+            "roboticsSubject": true,
+            "students": true,
+            "teamCount": true,
+            "date": true,
+            "timeAndTimezone": true,
+            "venue": true,
+            "fee": true,
+            "exactRegistrationUrl": true,
+            "noUnsupportedCertificatesPrizesSponsorsEligibility": true,
+            "missingInputDeclarationAbsent": true
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "robot"
+        },
+        {
+          "format": "youtube-thumbnail",
+          "checks": {
+            "roboticsSubject": true,
+            "students": true,
+            "teamCount": true,
+            "date": true,
+            "timeAndTimezone": true,
+            "venue": true,
+            "fee": true,
+            "exactRegistrationUrl": true,
+            "noUnsupportedCertificatesPrizesSponsorsEligibility": true,
+            "missingInputDeclarationAbsent": true
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "robot"
+        },
+        {
+          "format": "linkedin-landscape",
+          "checks": {
+            "roboticsSubject": true,
+            "students": true,
+            "teamCount": true,
+            "date": true,
+            "timeAndTimezone": true,
+            "venue": true,
+            "fee": true,
+            "exactRegistrationUrl": true,
+            "noUnsupportedCertificatesPrizesSponsorsEligibility": true,
+            "missingInputDeclarationAbsent": true
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "robot"
+        }
+      ],
+      "allRequiredContentCriteriaPass": true,
+      "geometricExportCriteriaPass": true,
+      "nativePngs": [
+        {
+          "format": "instagram-portrait",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 158784,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.00746639231824417,
+            "changed": 10886,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "instagram-square",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 141621,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.009332990397805213,
+            "changed": 10886,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 113776,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.01010525173611111,
+            "changed": 9313,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 182160,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.0008539267015706806,
+            "changed": 1631,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        }
+      ],
+      "portableHtml": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics.html",
+      "downloadedValidatedJson": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-spec.json",
+      "studioScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-studio.png",
+      "mobileScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-mobile.png",
+      "offlineHtml": {
+        "externalRequests": [],
+        "comparisons": [
+          {
+            "format": "instagram-portrait",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-portrait-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "instagram-square",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-instagram-square-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "youtube-thumbnail",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-youtube-thumbnail-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "linkedin-landscape",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/A-robotics-linkedin-landscape-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          }
+        ],
+        "allFormatsPresent": true,
+        "fontsStatus": "loaded"
+      },
+      "manualAssessment": {
+        "reviewed": "All four actual native PNGs, actual studio screenshot, validated spec and per-format visible copy",
+        "facts": "Subject, student audience, 12 teams, date, time/timezone, Lab A, ₹150 and exact registration URL preserved in every format. No additional schedule, certificates, prizes, sponsor or eligibility claim observed.",
+        "creative": "Appropriate Minimal Swiss grid/ice palette, native robotic arm, coherent logistics and genuine four-format layout. This direction/copy comes from independent local fallback, not an accepted Gemini plan.",
+        "publishReadyWithinThisBrief": true
+      }
+    },
+    {
+      "id": "B-environment",
+      "request": {
+        "id": "B-environment",
+        "topic": "Campaign to reduce plastic waste.",
+        "details": "Encourage people to bring a reusable bottle. No supplied statistics, organization name or event date.",
+        "taste": "bold-street",
+        "mode": "auto"
+      },
+      "actualConfiguredModel": "gemini-3.5-flash-lite",
+      "applicationHttpStatus": 200,
+      "providerCalls": 1,
+      "initialOutcome": "provider-unavailable",
+      "repairAttempted": false,
+      "repairOutcome": null,
+      "attempts": [
+        {
+          "outcome": "provider-unavailable",
+          "elapsedMs": 1681,
+          "httpStatus": 503
+        }
+      ],
+      "latency": {
+        "browserResponseMs": 1709,
+        "engineTotalMs": 1682,
+        "browserRendererReadyMs": 1922,
+        "attempts": [
+          {
+            "outcome": "provider-unavailable",
+            "elapsedMs": 1681
+          }
+        ],
+        "basis": "Attempt timers include transport/parsing/validation; browser ready uses the actual renderer gate, not a model inference-only measure."
+      },
+      "freshProviderInvoked": true,
+      "modelPlanAccepted": false,
+      "finalProvenance": "deterministic-fallback",
+      "finalFallbackReason": "provider-unavailable",
+      "schemaVersion": 3,
+      "artDirection": {
+        "variant": "street-stack",
+        "palette": "street-acid",
+        "visual": "botanical",
+        "emphasis": "display",
+        "information": "auto",
+        "adaptation": "balanced",
+        "treatment": "subject-led"
+      },
+      "finalSpec": {
+        "version": 3,
+        "provenance": "deterministic-fallback",
+        "campaign": {
+          "topic": "Campaign to reduce plastic waste.",
+          "eyebrow": "An idea to share",
+          "headline": "Less plastic.\nMore possibility.",
+          "supportingText": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle.\nNo supplied statistics, organization name or event date."
+        },
+        "taste": "bold-street",
+        "palette": {
+          "background": "#efed50",
+          "ink": "#171d1c",
+          "accent": "#b6301a",
+          "secondary": "#fff9de"
+        },
+        "typography": {
+          "family": "condensed-sans",
+          "headlineScale": 1.1,
+          "case": "uppercase"
+        },
+        "composition": {
+          "layout": "street-stack",
+          "spacing": 60
+        },
+        "decoration": {
+          "motif": "sticker",
+          "density": 3,
+          "illustration": "abstract"
+        },
+        "rationale": "Bold Street: street stack with street acid colours and botanical visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+        "artDirection": {
+          "variant": "street-stack",
+          "palette": "street-acid",
+          "visual": "botanical",
+          "emphasis": "display",
+          "information": "auto",
+          "adaptation": "balanced",
+          "treatment": "subject-led"
+        }
+      },
+      "interpretation": {
+        "objective": "Present the supplied subject without adding facts.",
+        "audience": "Audience unspecified; no demographic assumed.",
+        "concept": "Give the supplied subject a clear Bold Street hierarchy; preserve publishable information.",
+        "assumptions": [
+          "No new event, business or product facts have been inferred."
+        ],
+        "missingInformation": [
+          "Confirm any audience, logistical or action details not supplied before publication."
+        ]
+      },
+      "perFormat": [
+        {
+          "format": "instagram-portrait",
+          "checks": {
+            "environmentalSubject": true,
+            "reusableBottleAction": true,
+            "noNumericStatisticsOrDates": true,
+            "noInventedOrganizationOrSpecificDateObserved": true,
+            "missingInputDeclarationAbsent": false
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "botanical"
+        },
+        {
+          "format": "instagram-square",
+          "checks": {
+            "environmentalSubject": true,
+            "reusableBottleAction": true,
+            "noNumericStatisticsOrDates": true,
+            "noInventedOrganizationOrSpecificDateObserved": true,
+            "missingInputDeclarationAbsent": false
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "botanical"
+        },
+        {
+          "format": "youtube-thumbnail",
+          "checks": {
+            "environmentalSubject": true,
+            "reusableBottleAction": true,
+            "noNumericStatisticsOrDates": true,
+            "noInventedOrganizationOrSpecificDateObserved": true,
+            "missingInputDeclarationAbsent": false
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "botanical"
+        },
+        {
+          "format": "linkedin-landscape",
+          "checks": {
+            "environmentalSubject": true,
+            "reusableBottleAction": true,
+            "noNumericStatisticsOrDates": true,
+            "noInventedOrganizationOrSpecificDateObserved": true,
+            "missingInputDeclarationAbsent": false
+          },
+          "ready": true,
+          "fontStatus": "loaded",
+          "measuredIssues": [],
+          "corrections": [],
+          "allFieldsFit": true,
+          "visual": "botanical"
+        }
+      ],
+      "allRequiredContentCriteriaPass": false,
+      "geometricExportCriteriaPass": true,
+      "nativePngs": [
+        {
+          "format": "instagram-portrait",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "bytes": 157231,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.008605624142661179,
+            "changed": 12547,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "instagram-square",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "bytes": 150000,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.010757030178326474,
+            "changed": 12547,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "bytes": 120016,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.012830946180555556,
+            "changed": 11825,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "png": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "bytes": 198784,
+          "nativeDom": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-native-dom.png",
+          "actualPngVsNativeDom": {
+            "ratio": 0.0073895287958115185,
+            "changed": 14114,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20,
+            "passed": true
+          }
+        }
+      ],
+      "portableHtml": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment.html",
+      "downloadedValidatedJson": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-spec.json",
+      "studioScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-studio.png",
+      "mobileScreenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-mobile.png",
+      "offlineHtml": {
+        "externalRequests": [],
+        "comparisons": [
+          {
+            "format": "instagram-portrait",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-portrait-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "instagram-square",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-instagram-square-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "youtube-thumbnail",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-youtube-thumbnail-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          },
+          {
+            "format": "linkedin-landscape",
+            "screenshot": "test-results/m4-live-verification-02/m4-live-verification-exact-e0fc5--repeat-an-existing-journal/B-environment-linkedin-landscape-offline-dom.png",
+            "ratio": 0,
+            "changed": 0,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.001,
+            "channelDeltaGreaterThan": 8,
+            "passed": true
+          }
+        ],
+        "allFormatsPresent": true,
+        "fontsStatus": "loaded"
+      },
+      "manualAssessment": {
+        "reviewed": "All four actual native PNGs, actual studio screenshot, validated spec and per-format visible copy",
+        "facts": "Reusable-bottle action remains intact; no fabricated statistics, organizations or specific dates observed. However the exact missing-input declaration is printed in all four formats.",
+        "creative": "Concise environmental headline, relevant native bottle/leaves, expressive Bold Street type and adaptive composition remain functional. Literal supporting copy plus the planning declaration make the actual output unsuitable for publication.",
+        "publishReadyWithinThisBrief": false
+      }
+    }
+  ],
+  "usage": {
+    "knownInputTokens": 1111,
+    "knownOutputTokens": 508,
+    "knownTotalTokens": 1619,
+    "source": "A initial provider response only; application-reported metadata, not billing-console verification",
+    "thinkingTokens": "Application reports zero but presence versus default cannot be established",
+    "attemptsWithUnavailableUsage": 2,
+    "allCallTotalUsage": null,
+    "monetaryCost": null,
+    "costEstimateMade": false,
+    "billingVerified": false
+  },
+  "exports": {
+    "actualNativePngDownloads": 8,
+    "portableHtmlDownloads": 2,
+    "validatedJsonDownloads": 2,
+    "studioScreenshots": 2,
+    "mobileScreenshots": 2,
+    "allNativeDimensionsPass": true,
+    "pngVsNativeDom": {
+      "maximumChangedRatio": 0.015,
+      "anyRgbaChannelDeltaGreaterThan": 20,
+      "passed": 8,
+      "total": 8
+    },
+    "offlineHtmlRaster": {
+      "maximumChangedRatio": 0.001,
+      "anyRgbaChannelDeltaGreaterThan": 8,
+      "passed": 8,
+      "total": 8,
+      "changedPixelsAboveThreshold": 0,
+      "externalRuntimeRequests": 0
+    },
+    "meaning": "Geometry/fidelity passes; B public-copy acceptance fails. No quality criterion or factual safeguard was relaxed."
+  },
+  "findings": [
+    {
+      "id": "A-initial-semantic-rejection",
+      "supportedCause": "Semantic missing-supplied-fact at $",
+      "unknown": "Which factual token was unmatched, or whether an unretained legitimate rephrasing caused a false rejection; rejected plan was not exposed/saved. Original M2 failure cause also remains unknown.",
+      "action": "Keep strict guards. Optional future privacy-safe fact-category diagnostics could improve repair investigation, without raw values; no implementation change here."
+    },
+    {
+      "id": "provider-503",
+      "supportedCause": "HTTP 503 on A repair and B initial, classified provider-unavailable",
+      "unknown": "Underlying provider condition/body, global outage, exact billing and usage. No evidence establishing quota/authentication failure.",
+      "action": "Preserve availability failures and fallback disclosure; no extra provider calls or configuration changes."
+    },
+    {
+      "id": "B-missing-input-copy-leak",
+      "supportedCause": "Exact compound declaration contains organization name and event date, absent from the anchored suppliedField allowlist in brief.ts. The full declaration remains publishable content and fallbackPlan joins it into supportingText.",
+      "exactPublicDeclaration": "No supplied statistics, organization name or event date.",
+      "affectedFormats": [
+        "instagram-portrait",
+        "instagram-square",
+        "youtube-thumbnail",
+        "linkedin-landscape"
+      ],
+      "action": "Separately authorize a narrowly scoped missing-field interpretation correction and regression for the exact compound declaration. Preserve public negatives and explicit Public copy override; avoid broad keyword deletion. Do not edit these measured artifacts."
+    }
+  ],
+  "harness": {
+    "firstRun": "Configuration output-directory guard was re-evaluated in a worker after runner directory creation. It failed at 0 ms before journal creation or request dispatch; failed log/last-run preserved.",
+    "correction": "Skip output-directory existence check in the worker while retaining parent check, journal guard and exclusive journal creation; use fresh output directory 02.",
+    "checksBeforeCalls": [
+      "npm run typecheck passed",
+      "npx --no-install eslint evaluation/m4-live-verification.config.ts evaluation/m4-live-verification.spec.ts passed",
+      "npx --no-install playwright test --config=evaluation/m4-live-verification.config.ts --list listed one test without calls"
+    ],
+    "execution": "M4_LIVE_AUTHORIZED=two-campaigns-four-calls npx --no-install playwright test --config=evaluation/m4-live-verification.config.ts",
+    "result": "1 collection/limit test passed (14.6s), not a Gemini-acceptance pass",
+    "defaultSuiteOrBroadBenchmarkRerun": false,
+    "finalScopedChecks": [
+      "npm run typecheck passed after collection",
+      "Focused lint of the two verification harness files passed",
+      "git diff --check passed; empty staged inventory"
+    ]
+  },
+  "limitations": [
+    "Zero fresh accepted Gemini campaigns: bounded model/schema/creative integration remains unverified by success.",
+    "No rejected raw plans or provider error bodies retained; safe diagnostics identify a failure class, not the exact missing fact or a proven false rejection.",
+    "Usage for HTTP 503 calls and exact monetary/billed cost unavailable.",
+    "Windows headless Chrome evidence only; geometric fit/basic contrast and raster fidelity do not establish content safety, universal fidelity or accessibility certification.",
+    "Environmental public-copy defect is genuine and reproduced in retained real fallback artifacts; implementation deliberately unchanged within this verification-only scope.",
+    "No external archive, staging, commit/push, deployment, dependency/asset/provider/model/billing/quota change or M5 implementation."
+  ],
+  "recommendation": "Preserve the owner-approved quota-free/artistic foundation. Defer final M4 closure pending separately authorized narrow fallback interpretation correction and owner review of honest live-failure disclosure. No further live request under this completed two-campaign authorization.",
+  "inventory": {
+    "scope": "Combined M4 working tree over accepted M3, including existing 43-file candidate plus six live additions",
+    "modifiedTracked": 23,
+    "newFiles": 26,
+    "total": 49,
+    "staged": 0,
+    "allFiles": [
+      ".gitattributes",
+      "AGENTS.md",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/AI_DISCLOSURE.md",
+      "docs/API.md",
+      "docs/ARCHITECTURE.md",
+      "docs/M4_LIVE_VERIFICATION.md",
+      "docs/M4_REPORT.md",
+      "docs/REQUIREMENTS.md",
+      "docs/RESEARCH.md",
+      "docs/ROADMAP.md",
+      "docs/TESTING.md",
+      "docs/evidence/m4/artifact-manifest.json",
+      "docs/evidence/m4/asset-trial.json",
+      "docs/evidence/m4/live/artifact-manifest.json",
+      "docs/evidence/m4/live/journal.json",
+      "docs/evidence/m4/live/verification.json",
+      "docs/evidence/m4/verification.json",
+      "docs/example-design-spec-m4.json",
+      "docs/licenses/Tabler-MIT.txt",
+      "eslint.config.mjs",
+      "evaluation/m4-artwork.config.ts",
+      "evaluation/m4-artwork.spec.ts",
+      "evaluation/m4-compatibility.spec.ts",
+      "evaluation/m4-corpus.ts",
+      "evaluation/m4-edge.config.ts",
+      "evaluation/m4-edge.spec.ts",
+      "evaluation/m4-live-verification.config.ts",
+      "evaluation/m4-live-verification.spec.ts",
+      "evaluation/m4-tabler.config.ts",
+      "evaluation/m4-tabler.spec.ts",
+      "playwright.config.ts",
+      "src/components/advanced-poster.tsx",
+      "src/components/subject-visual.tsx",
+      "src/components/tabler-camera.tsx",
+      "src/lib/design-engine/layout.ts",
+      "src/lib/design-engine/quality.ts",
+      "src/lib/design-engine/registry.ts",
+      "src/lib/design-engine/subject-layout.ts",
+      "src/lib/design-engine/tabler-asset.json",
+      "src/lib/export.ts",
+      "src/lib/generation/brief.ts",
+      "src/lib/generation/diagnostics.ts",
+      "src/lib/generation/editorial.ts",
+      "src/lib/generation/facts.ts",
+      "src/lib/generation/planner.ts",
+      "src/server/gemini.ts",
+      "tests/m4-engine.spec.ts"
+    ],
+    "filesTouchedThisAssignment": [
+      "AGENTS.md",
+      "docs/AI_DISCLOSURE.md",
+      "docs/M4_LIVE_VERIFICATION.md",
+      "docs/M4_REPORT.md",
+      "docs/ROADMAP.md",
+      "docs/TESTING.md",
+      "docs/evidence/m4/live/artifact-manifest.json",
+      "docs/evidence/m4/live/journal.json",
+      "docs/evidence/m4/live/verification.json",
+      "evaluation/m4-live-verification.config.ts",
+      "evaluation/m4-live-verification.spec.ts"
+    ]
+  },
+  "completionAudit": {
+    "date": "2026-11-25",
+    "scope": "Read-only source/evidence/privacy/docs review, not a full security or release certification",
+    "candidateFiles": 49,
+    "modifiedTracked": 23,
+    "newFiles": 26,
+    "staged": 0,
+    "configuredSecretsCompared": 1,
+    "newEvidenceRecordsChecked": 42,
+    "originalEvidenceRecordsChecked": 523,
+    "originalRuntimeSourceChanges": [],
+    "findings": [],
+    "whitespace": "",
+    "passed": true
+  },
+  "requestRecordNote": "Journal request.id labels the synthetic evidence case; actual studio POST uses only topic/details/taste/mode. No additional generation or replay was used for exports."
+}

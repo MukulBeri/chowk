@@ -1,0 +1,1252 @@
+{
+  "date": "2026-11-25",
+  "scope": "Read-only candidate/code/evidence/privacy review, not a complete production security/licensing audit",
+  "head": "e52258fcf054de89844d02c2d7cba315812f264e",
+  "branch": "main",
+  "staged": 0,
+  "modifiedTracked": 23,
+  "newFiles": 32,
+  "candidateFiles": 55,
+  "correctionChangedExisting": [
+    "AGENTS.md",
+    "README.md",
+    "docs/AI_DISCLOSURE.md",
+    "docs/API.md",
+    "docs/ARCHITECTURE.md",
+    "docs/ROADMAP.md",
+    "docs/TESTING.md",
+    "src/lib/generation/brief.ts",
+    "src/lib/generation/diagnostics.ts",
+    "src/lib/generation/facts.ts",
+    "src/lib/generation/planner.ts",
+    "src/server/gemini.ts"
+  ],
+  "correctionNewFiles": [
+    "docs/M4_CORRECTION.md",
+    "docs/evidence/m4/correction/artifact-manifest.json",
+    "docs/evidence/m4/correction/verification.json",
+    "evaluation/m4-correction.config.ts",
+    "evaluation/m4-correction.spec.ts",
+    "tests/m4-copy-correction.spec.ts"
+  ],
+  "originalSourceFingerprint": "3b2d03c6ee7c45ae634819c4ba7875afefa00338edf34b056a3d02c195e0935d",
+  "sourceFingerprintAlgorithm": "SHA-256 of JSON.stringify(sorted array of {file,sha256}) over source/tests/evaluation and listed package/config files",
+  "sourceFingerprint": "0e3afe6365b33b256af1810ded9c047486a097f75c475c85a278ea0e9521c09e",
+  "sourceFiles": [
+    {
+      "file": "eslint.config.mjs",
+      "sha256": "8bf712af5065bf2c0797ff74e7d345514c0b437b669c00eb841072c174ad722e"
+    },
+    {
+      "file": "evaluation/live-models.spec.ts",
+      "sha256": "2b4a1cbd1878decd45d217191287e506f70616aaaf63bc9d0b9051012f88a9b0"
+    },
+    {
+      "file": "evaluation/m2-completion-live.spec.ts",
+      "sha256": "4733740df2bd248dcf5ff892fbc153b24e67c0062e039c67cba2972b5e2a2197"
+    },
+    {
+      "file": "evaluation/m2-completion.config.ts",
+      "sha256": "4951941ea83c3d009edbf46430198e2941ab34b9f65f21bce0c08dc08caf8701"
+    },
+    {
+      "file": "evaluation/m4-artwork.config.ts",
+      "sha256": "d20ce693f1fde064394402f47d51d0aaecf7b7023445ba341f2ec8c3bc45c533"
+    },
+    {
+      "file": "evaluation/m4-artwork.spec.ts",
+      "sha256": "7148fc06c44082b012a11b782d84f0745756abc6e75d7c0cd323232d05ce8599"
+    },
+    {
+      "file": "evaluation/m4-compatibility.spec.ts",
+      "sha256": "453ebac82ad08261bfa9af2789fa42e97e1e76c704fa45da29792cc48665878e"
+    },
+    {
+      "file": "evaluation/m4-corpus.ts",
+      "sha256": "2e755a46549e365349971c9e43415449e8160516a5f450a9dc883a9d0e083194"
+    },
+    {
+      "file": "evaluation/m4-correction.config.ts",
+      "sha256": "b69c52f66952f9180138a7d293432023f00b19fb92c2abb3fe740ed1e61b2f60"
+    },
+    {
+      "file": "evaluation/m4-correction.spec.ts",
+      "sha256": "0824ec4f4483ac74cc297779ce4c7690d1335050a1580e0ec18e11980372f2dc"
+    },
+    {
+      "file": "evaluation/m4-edge.config.ts",
+      "sha256": "918ca019c26ede0e854fb760852e87637bce16e3eddb49f2eab11a990cac0f47"
+    },
+    {
+      "file": "evaluation/m4-edge.spec.ts",
+      "sha256": "432f1730d8bef8dec2bc3b8541a95ccf4f4c8461719423ea0ba362cc24fedabf"
+    },
+    {
+      "file": "evaluation/m4-live-verification.config.ts",
+      "sha256": "f59cfe1fe14e7f78d3433b86d4a96643fbdd91934d441a4c1153ff18cd7aaaef"
+    },
+    {
+      "file": "evaluation/m4-live-verification.spec.ts",
+      "sha256": "8ead1cc605d89d060e5b9855d68a483a6ffe16dc7092928a854dd37304808826"
+    },
+    {
+      "file": "evaluation/m4-tabler.config.ts",
+      "sha256": "3445b8b70f81d86be1bdc3966897cc59b5885df0067f0572aa0b0805da4f47c4"
+    },
+    {
+      "file": "evaluation/m4-tabler.spec.ts",
+      "sha256": "a2235831d8747590ff509b3ac99cc86af8af0447e2727252f6c65603ed4b6eae"
+    },
+    {
+      "file": "evaluation/playwright.config.ts",
+      "sha256": "015010f17a41830a1fa83e2b79c6065346fc75fc349abdda3c6c4148b8e13bb6"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "4c22b323c4cb0e8c79476589d07bd4662cfea3a092f3f741adab037476fb6370"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4380b5632d415369720e87193219bf1f6db4b3158c9272f7d1d240d3f418ad05"
+    },
+    {
+      "file": "package.json",
+      "sha256": "34192dac8cfc9bbe06e203e3b36ffaaf0e4bdba3c71c2430f86084a15c6d72b8"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "955eb1a723b07d1057ab3f7c62b131b0d4858501931611af526b7100136f1b8c"
+    },
+    {
+      "file": "src/app/api/design-spec/route.ts",
+      "sha256": "324793b22a6a4e6032bf4ac4c8c808616e85c457332bb2aa3d3b7271593e2c32"
+    },
+    {
+      "file": "src/app/api/generate/route.ts",
+      "sha256": "da18f53c833f6210242902bf5c12d0bee817ee6bae86c0a1d88b9cc56a0d11a7"
+    },
+    {
+      "file": "src/app/campaign-fonts.css",
+      "sha256": "b1fd43a8bd99ae01a1e4fe2529a14a2a8992362f1f0a5eea4668abd6eadda08e"
+    },
+    {
+      "file": "src/app/favicon.ico",
+      "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "be813c46da6b69cab23a09ece2ce44451eb2f1f47cc80f485254e45b671a5865"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "6ed5ad199fac1fb20ebcf69983bf18a02466eb322a53cb1ce16026047fe63bc8"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "d58ffe9244e5ae0745f61c440f812593c087c6c3fa33323ae571347020a487e6"
+    },
+    {
+      "file": "src/components/advanced-poster.tsx",
+      "sha256": "7698d726837786125f03108e1d34dcd1dd23bedf8a9eb44d467d186bbeb4d7da"
+    },
+    {
+      "file": "src/components/poster.tsx",
+      "sha256": "e8a550ca04f412c05ac0b6327c551e1bd2359b170895dc527c6866e44148fa48"
+    },
+    {
+      "file": "src/components/procedural-visual.tsx",
+      "sha256": "8d5a2d9e1a54aa86bcddbccae5bf816828477bb56c321d78d445d17d4fba3f62"
+    },
+    {
+      "file": "src/components/studio-artboard.tsx",
+      "sha256": "d21b0f1267e7ca4063067ecc7485be54f0f69d9247856b1c4ab6830e423b57e8"
+    },
+    {
+      "file": "src/components/studio-dialog.tsx",
+      "sha256": "9ffd6d0f03884a945da5e95bc22f2c3b0f5e0344fa18a81c5ff28bebb6ec38ea"
+    },
+    {
+      "file": "src/components/studio.tsx",
+      "sha256": "ee6f8b87c27db437a6039c0fb45f5214d45c245e15237e26abe8cd15aaa3a991"
+    },
+    {
+      "file": "src/components/subject-visual.tsx",
+      "sha256": "ac8eb1aec102f4daec08e650b4b073bbf59c60eebce44887a6b586d48719e41f"
+    },
+    {
+      "file": "src/components/tabler-camera.tsx",
+      "sha256": "afde4ecf890ba94f1cfbf0e6e2b0ec71f6a664716e0d0787267e4142a7cb6943"
+    },
+    {
+      "file": "src/components/taste-picker.tsx",
+      "sha256": "cb0ff7a47c860650f2b9f2066ea670540a0f32e944716d8875808b747bcdddde"
+    },
+    {
+      "file": "src/lib/design-engine/font-assets.json",
+      "sha256": "5c2f53d5c1cca7d89a6bc9290ea34e33fa44ac0a3bdf9894e280f2f78ddc063f"
+    },
+    {
+      "file": "src/lib/design-engine/fonts.ts",
+      "sha256": "7b4633f619306a7ae4f37e1d3d9844bf581bb560a64b7fe780bb1516706d4b50"
+    },
+    {
+      "file": "src/lib/design-engine/layout.ts",
+      "sha256": "0f9c134efb9153ab2649e4084f24e97b257250681e7bb91c3b170d01dc9a24eb"
+    },
+    {
+      "file": "src/lib/design-engine/quality.ts",
+      "sha256": "7e89ab926d16effd5a0b21f06c5a2de188c166a938c2448962915ee8deeee7f3"
+    },
+    {
+      "file": "src/lib/design-engine/registry.ts",
+      "sha256": "500dd113f1779935fba514ef5f00e80a2615efd8942b0492de87eb77695c34be"
+    },
+    {
+      "file": "src/lib/design-engine/subject-layout.ts",
+      "sha256": "087d0b09f87ed8b8a202cccb50e433c0dad592cfcb4c93ed587d5ea41ba9c250"
+    },
+    {
+      "file": "src/lib/design-engine/tabler-asset.json",
+      "sha256": "ea2473449fde3df8e8128fcba12117dd78114194bcfdbc5f03d856a8b2889711"
+    },
+    {
+      "file": "src/lib/design.ts",
+      "sha256": "260e3d52a863cfbb7c45519ad23a9b3927f3d15a9d069bad429eb9a6089feb7f"
+    },
+    {
+      "file": "src/lib/export.ts",
+      "sha256": "ec222d4208f255e73a28499ddf121ae5f910632d859f6c478a6d70699fb67876"
+    },
+    {
+      "file": "src/lib/generation/brief.ts",
+      "sha256": "7f4e63774e387255af27a4140825ff17137bdb6a48ecfcd8b955487a659a15ae"
+    },
+    {
+      "file": "src/lib/generation/contracts.ts",
+      "sha256": "b8a51581c941bf74dcb50e14bfef29ced6d92f8c8d70d45fc633e3fee4f756a6"
+    },
+    {
+      "file": "src/lib/generation/diagnostics.ts",
+      "sha256": "13efc97d0e8cbc75b32a3859adf630b1ee2f0fb699be2ee6895d9ef212fbad71"
+    },
+    {
+      "file": "src/lib/generation/editorial.ts",
+      "sha256": "718409f64f4ee28b4b8c0ec8e79e34839c9ff313abc9343cfbd78d54f6d4fb15"
+    },
+    {
+      "file": "src/lib/generation/facts.ts",
+      "sha256": "953922acff87d006f7c58cf0bfa2e5dbaec448d389395c69454d78e5d7cc90db"
+    },
+    {
+      "file": "src/lib/generation/planner.ts",
+      "sha256": "ffcf7b00113e7c6c197c4da39ec4bc5ea408aa67720e4f6e9fd48a65e2a84bf5"
+    },
+    {
+      "file": "src/server/engine.ts",
+      "sha256": "7404194ef6655b05fa5928182f19d19ffa6569716104af83c2f71886d2f95c5b"
+    },
+    {
+      "file": "src/server/gemini.ts",
+      "sha256": "92a93b2987ae7b16cf0fb0c0e1aca621e6166f875899c2adde4c4a3ebebd5c6c"
+    },
+    {
+      "file": "src/server/runtime.ts",
+      "sha256": "02c82a0b4c3c86527c4a9bca1e2699f3e421182abf69982ada89607a36e1becc"
+    },
+    {
+      "file": "tests/design-engine.spec.ts",
+      "sha256": "e08deec70bedb2f141a1fb64b19c890633e227937a9a7d65b98b7f9e77b52bf5"
+    },
+    {
+      "file": "tests/fallback-correction.spec.ts",
+      "sha256": "d45cb1d73ab0b9e4ff5cd088eee2f275dc260119fa82a4ad52f1bd09cd89dbcc"
+    },
+    {
+      "file": "tests/generation.spec.ts",
+      "sha256": "8a0c013aa20c745e9f3fec7c1d77b621e0b56b282a6d1ee34c993a683d123e40"
+    },
+    {
+      "file": "tests/m4-copy-correction.spec.ts",
+      "sha256": "c607a92f6165355525326efdd2a5b3d55e5f8b6b5be3321395756d612786ab99"
+    },
+    {
+      "file": "tests/m4-engine.spec.ts",
+      "sha256": "bf986f0c8bc320503f6d049f5b7583494f47f6e02b73b2c03d33704e8d66b14c"
+    },
+    {
+      "file": "tests/studio-workspace.spec.ts",
+      "sha256": "4402da584cdba3a3ee967b07823e939b17b4068e7e0d69f61ef594cc8ed4fb94"
+    },
+    {
+      "file": "tests/studio.spec.ts",
+      "sha256": "da7eb3b4573186a76b1bfbca57a418c9d7f9986a810b78d10344be5452a51717"
+    },
+    {
+      "file": "tests/typography.spec.ts",
+      "sha256": "0e555cd3bcca5739beb8ddac9f457754fa02835d8c748c3a3b6e459b5cce9a05"
+    },
+    {
+      "file": "tests/validation-investigation.spec.ts",
+      "sha256": "67fee69957dff3ee4c13095ed6a7389b545837ff4aedfa4b87866f48edd99485"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+    }
+  ],
+  "originalSourceChanges": [
+    "src/lib/generation/brief.ts",
+    "src/lib/generation/diagnostics.ts",
+    "src/lib/generation/facts.ts",
+    "src/lib/generation/planner.ts",
+    "src/server/gemini.ts"
+  ],
+  "originalEvidenceRecordsVerified": 565,
+  "protectedReportsAndRecordsVerified": [
+    {
+      "file": "docs/M4_REPORT.md",
+      "sha256": "181f9ab42cc859e57f65a80031db2bfe2f3bd8b73f9a8d8665f40001c72a8cc7"
+    },
+    {
+      "file": "docs/M4_LIVE_VERIFICATION.md",
+      "sha256": "123af8e1fa753ec6424e43567e64fbe6f49fc27f3c7c25dd882ef128c363f3bd"
+    },
+    {
+      "file": "docs/evidence/m4/artifact-manifest.json",
+      "sha256": "85e9b5df530648a3165a7c23e1df2afc53aec75c2caba0e3f12a07991b25f006"
+    },
+    {
+      "file": "docs/evidence/m4/asset-trial.json",
+      "sha256": "eceb10ecd0c15054ef676046c45a0fb749cddefe40372688b61350d99accabec"
+    },
+    {
+      "file": "docs/evidence/m4/live/artifact-manifest.json",
+      "sha256": "822dd17d6ce8bc65cb246d691c2aa6fcac82a9381a7ce2bb03510fe81cb53be9"
+    },
+    {
+      "file": "docs/evidence/m4/live/journal.json",
+      "sha256": "27ffc9e3a4da2ddb5461588f8debb4d83996ce0af7c3aaa7cd4d2874432c414a"
+    },
+    {
+      "file": "docs/evidence/m4/live/verification.json",
+      "sha256": "c15a10b59eebfbce48428fea60230d70194317f9cfd582ad087d9a9234f0e2ea"
+    },
+    {
+      "file": "docs/evidence/m4/verification.json",
+      "sha256": "f596839a79d6365771a0bb0d80fabba753b5517a20f158a89079fd9debdc8b52"
+    }
+  ],
+  "originalProviderCalls": 3,
+  "additionalLiveProviderCalls": 0,
+  "originalLiveOutcomes": "One semantic rejection; two HTTP 503s; zero accepted fresh Gemini plans; two fallback results. Cause of exact omitted fact unrecoverable.",
+  "commands": [
+    {
+      "label": "m4-correction-full-final-02",
+      "command": "npx playwright test --output=test-results/m4-correction-full-final-02",
+      "exitCode": 0,
+      "elapsedMs": 79810,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-corpus-01",
+      "command": "npx playwright test --config=evaluation/m4-artwork.config.ts --output=test-results/m4-correction-corpus-01",
+      "exitCode": 0,
+      "elapsedMs": 33699,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-edge-01",
+      "command": "npx playwright test --config=evaluation/m4-edge.config.ts --output=test-results/m4-correction-edge-01",
+      "exitCode": 0,
+      "elapsedMs": 12066,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-artwork-final-02",
+      "command": "npx playwright test --config=evaluation/m4-correction.config.ts --output=test-results/m4-correction-artwork-final-02",
+      "exitCode": 0,
+      "elapsedMs": 11817,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-focused-03",
+      "command": "npx playwright test tests/m4-copy-correction.spec.ts --output=test-results/m4-correction-focused-03",
+      "exitCode": 0,
+      "elapsedMs": 1136,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-lint-final-02",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "elapsedMs": 5235,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-typecheck-final-03",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "elapsedMs": 2779,
+      "spawnError": null
+    },
+    {
+      "label": "m4-correction-build-final-02",
+      "command": "npm run build",
+      "exitCode": 0,
+      "elapsedMs": 4667,
+      "spawnError": null
+    }
+  ],
+  "actual": [
+    {
+      "kind": "Actual explicit local planner and browser downloads, not fresh AI or replay",
+      "request": {
+        "id": "environment",
+        "topic": "Campaign to reduce plastic waste.",
+        "details": "Encourage people to bring a reusable bottle. No supplied statistics, organization name or event date.",
+        "taste": "bold-street"
+      },
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Campaign to reduce plastic waste.",
+            "eyebrow": "An idea to share",
+            "headline": "Less plastic.\nMore possibility.",
+            "supportingText": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle."
+          },
+          "taste": "bold-street",
+          "palette": {
+            "background": "#efed50",
+            "ink": "#171d1c",
+            "accent": "#b6301a",
+            "secondary": "#fff9de"
+          },
+          "typography": {
+            "family": "condensed-sans",
+            "headlineScale": 1.1,
+            "case": "uppercase"
+          },
+          "composition": {
+            "layout": "street-stack",
+            "spacing": 60
+          },
+          "decoration": {
+            "motif": "sticker",
+            "density": 3,
+            "illustration": "abstract"
+          },
+          "rationale": "Bold Street: street stack with street acid colours and botanical visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+          "artDirection": {
+            "variant": "street-stack",
+            "palette": "street-acid",
+            "visual": "botanical",
+            "emphasis": "display",
+            "information": "auto",
+            "adaptation": "balanced",
+            "treatment": "subject-led"
+          }
+        },
+        "interpretation": {
+          "objective": "Present the supplied subject without adding facts.",
+          "audience": "Audience unspecified; no demographic assumed.",
+          "concept": "Give the supplied subject a clear Bold Street hierarchy; preserve publishable information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "No supplied statistics, organization name or event date.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": null,
+          "fallbackReason": "requested-local",
+          "totalMs": 0,
+          "attempts": [],
+          "cached": false,
+          "warnings": [
+            "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+            "No supplied statistics, organization name or event date.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        }
+      },
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "An idea to share"
+            },
+            {
+              "role": "headline",
+              "pixels": 147,
+              "minimum": 80,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Less plastic.\nMore possibility."
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle."
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "An idea to share"
+            },
+            {
+              "role": "headline",
+              "pixels": 144,
+              "minimum": 76,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Less plastic.\nMore possibility."
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle."
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "An idea to share"
+            },
+            {
+              "role": "headline",
+              "pixels": 115,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Less plastic.\nMore possibility."
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle."
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "An idea to share"
+            },
+            {
+              "role": "headline",
+              "pixels": 172,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Less plastic.\nMore possibility."
+            },
+            {
+              "role": "support",
+              "pixels": 63,
+              "minimum": 44,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campaign to reduce plastic waste.\nEncourage people to bring a reusable bottle."
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "pngComparison": {
+            "ratio": 0.005318930041152263,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "instagram-square",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "pngComparison": {
+            "ratio": 0.006648662551440329,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "pngComparison": {
+            "ratio": 0.008428819444444444,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "pngComparison": {
+            "ratio": 0.007389005235602094,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        }
+      ],
+      "html": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment.html",
+      "json": "test-results/m4-correction-artwork-final-02/m4-correction-environment--4e3c9-unchanged-export-thresholds/environment-spec.json",
+      "offlineComparisons": [
+        {
+          "format": "instagram-portrait",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "instagram-square",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "youtube-thumbnail",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "linkedin-landscape",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        }
+      ],
+      "externalRequests": 0,
+      "localRequests": 1,
+      "providerCalls": 0,
+      "browser": "158.0.8127.88",
+      "factualTokens": []
+    },
+    {
+      "kind": "Actual explicit local planner and browser downloads, not fresh AI or replay",
+      "request": {
+        "id": "robotics",
+        "topic": "Campus robotics workshop for students.",
+        "details": "12 teams. 26 November 2026 at 18:30 IST. Venue: Lab A; Entry ₹150. Register at https://example.org/workshop.",
+        "taste": "minimal-swiss"
+      },
+      "result": {
+        "spec": {
+          "version": 3,
+          "provenance": "deterministic-fallback",
+          "campaign": {
+            "topic": "Campus robotics workshop for students.",
+            "eyebrow": "For students · 12 teams",
+            "headline": "Campus robotics workshop",
+            "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A; Entry ₹150.\nRegister at https://example.org/workshop."
+          },
+          "taste": "minimal-swiss",
+          "palette": {
+            "background": "#dcecf0",
+            "ink": "#163438",
+            "accent": "#00616b",
+            "secondary": "#bcd9dd"
+          },
+          "typography": {
+            "family": "neutral-sans",
+            "headlineScale": 0.85,
+            "case": "sentence"
+          },
+          "composition": {
+            "layout": "swiss-grid",
+            "spacing": 80
+          },
+          "decoration": {
+            "motif": "orbit",
+            "density": 1,
+            "illustration": "abstract"
+          },
+          "rationale": "Minimal Swiss: swiss grid with swiss ice colours and robot visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+          "artDirection": {
+            "variant": "swiss-grid",
+            "palette": "swiss-ice",
+            "visual": "robot",
+            "emphasis": "display",
+            "information": "grid",
+            "adaptation": "balanced",
+            "treatment": "subject-led"
+          }
+        },
+        "interpretation": {
+          "objective": "Present the supplied subject without adding facts.",
+          "audience": "The campus community mentioned in the brief.",
+          "concept": "Give the supplied subject a clear Minimal Swiss hierarchy; preserve publishable information.",
+          "assumptions": [
+            "No new event, business or product facts have been inferred."
+          ],
+          "missingInformation": [
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        },
+        "metadata": {
+          "source": "deterministic-fallback",
+          "model": null,
+          "fallbackReason": "requested-local",
+          "totalMs": 0,
+          "attempts": [],
+          "cached": false,
+          "warnings": [
+            "Local planning separates recognized brief instructions from public copy. Review facts and missing details before publication.",
+            "Confirm any audience, logistical or action details not supplied before publication."
+          ]
+        }
+      },
+      "quality": [
+        {
+          "format": "instagram-portrait",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "For students · 12 teams"
+            },
+            {
+              "role": "headline",
+              "pixels": 150,
+              "minimum": 80,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campus robotics workshop"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop."
+            }
+          ]
+        },
+        {
+          "format": "instagram-square",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "For students · 12 teams"
+            },
+            {
+              "role": "headline",
+              "pixels": 128,
+              "minimum": 76,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campus robotics workshop"
+            },
+            {
+              "role": "support",
+              "pixels": 45,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop."
+            }
+          ]
+        },
+        {
+          "format": "youtube-thumbnail",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "For students · 12 teams"
+            },
+            {
+              "role": "headline",
+              "pixels": 103,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campus robotics workshop"
+            },
+            {
+              "role": "support",
+              "pixels": 38,
+              "minimum": 34,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop."
+            }
+          ]
+        },
+        {
+          "format": "linkedin-landscape",
+          "issues": [],
+          "corrections": [],
+          "fontsStatus": "loaded",
+          "fields": [
+            {
+              "role": "kicker",
+              "pixels": 31,
+              "minimum": 26,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "For students · 12 teams"
+            },
+            {
+              "role": "headline",
+              "pixels": 156,
+              "minimum": 64,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "Campus robotics workshop"
+            },
+            {
+              "role": "support",
+              "pixels": 60,
+              "minimum": 44,
+              "horizontalFit": true,
+              "verticalFit": true,
+              "text": "26 November 2026 at 18:30 IST.\nVenue: Lab A;\nEntry ₹150.\nRegister at https://example.org/workshop."
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "format": "instagram-portrait",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics-instagram-portrait.png",
+          "dimensions": [
+            1080,
+            1350
+          ],
+          "pngComparison": {
+            "ratio": 0.00746639231824417,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "instagram-square",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics-instagram-square.png",
+          "dimensions": [
+            1080,
+            1080
+          ],
+          "pngComparison": {
+            "ratio": 0.009332990397805213,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "youtube-thumbnail",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics-youtube-thumbnail.png",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "pngComparison": {
+            "ratio": 0.01010525173611111,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        },
+        {
+          "format": "linkedin-landscape",
+          "file": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics-linkedin-landscape.png",
+          "dimensions": [
+            1910,
+            1000
+          ],
+          "pngComparison": {
+            "ratio": 0.0008539267015706806,
+            "dimensionsMatch": true,
+            "maximumRatio": 0.015,
+            "channelDeltaGreaterThan": 20
+          }
+        }
+      ],
+      "html": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics.html",
+      "json": "test-results/m4-correction-artwork-final-02/m4-correction-robotics-cor-22a7f-unchanged-export-thresholds/robotics-spec.json",
+      "offlineComparisons": [
+        {
+          "format": "instagram-portrait",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "instagram-square",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "youtube-thumbnail",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        },
+        {
+          "format": "linkedin-landscape",
+          "ratio": 0,
+          "dimensionsMatch": true,
+          "maximumRatio": 0.001,
+          "channelDeltaGreaterThan": 8
+        }
+      ],
+      "externalRequests": 0,
+      "localRequests": 1,
+      "providerCalls": 0,
+      "browser": "158.0.8127.88",
+      "factualTokens": [
+        "contact:https://example.org/workshop",
+        "date:2026-11-26",
+        "inr:150",
+        "measure:12:team",
+        "time:18:30",
+        "timezone:ist"
+      ]
+    }
+  ],
+  "artifactManifest": {
+    "file": "docs/evidence/m4/correction/artifact-manifest.json",
+    "sha256": "5463751bd1c97f702513ba93ed503525170da597a6bc84a7ef085fc7ac1cae98",
+    "count": 402,
+    "bytes": 54768574
+  },
+  "inventory": [
+    {
+      "file": ".gitattributes",
+      "status": "modified"
+    },
+    {
+      "file": "AGENTS.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/AI_DISCLOSURE.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/API.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/ARCHITECTURE.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/evidence/m4/artifact-manifest.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/asset-trial.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/correction/artifact-manifest.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/correction/verification.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/live/artifact-manifest.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/live/journal.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/live/verification.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/evidence/m4/verification.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/example-design-spec-m4.json",
+      "status": "new"
+    },
+    {
+      "file": "docs/licenses/Tabler-MIT.txt",
+      "status": "new"
+    },
+    {
+      "file": "docs/M4_CORRECTION.md",
+      "status": "new"
+    },
+    {
+      "file": "docs/M4_LIVE_VERIFICATION.md",
+      "status": "new"
+    },
+    {
+      "file": "docs/M4_REPORT.md",
+      "status": "new"
+    },
+    {
+      "file": "docs/REQUIREMENTS.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/RESEARCH.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/ROADMAP.md",
+      "status": "modified"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "status": "modified"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "status": "modified"
+    },
+    {
+      "file": "evaluation/m4-artwork.config.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-artwork.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-compatibility.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-corpus.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-correction.config.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-correction.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-edge.config.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-edge.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-live-verification.config.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-live-verification.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-tabler.config.ts",
+      "status": "new"
+    },
+    {
+      "file": "evaluation/m4-tabler.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "playwright.config.ts",
+      "status": "modified"
+    },
+    {
+      "file": "README.md",
+      "status": "modified"
+    },
+    {
+      "file": "src/components/advanced-poster.tsx",
+      "status": "modified"
+    },
+    {
+      "file": "src/components/subject-visual.tsx",
+      "status": "new"
+    },
+    {
+      "file": "src/components/tabler-camera.tsx",
+      "status": "new"
+    },
+    {
+      "file": "src/lib/design-engine/layout.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/design-engine/quality.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/design-engine/registry.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/design-engine/subject-layout.ts",
+      "status": "new"
+    },
+    {
+      "file": "src/lib/design-engine/tabler-asset.json",
+      "status": "new"
+    },
+    {
+      "file": "src/lib/export.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/generation/brief.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/generation/diagnostics.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/generation/editorial.ts",
+      "status": "new"
+    },
+    {
+      "file": "src/lib/generation/facts.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/lib/generation/planner.ts",
+      "status": "modified"
+    },
+    {
+      "file": "src/server/gemini.ts",
+      "status": "modified"
+    },
+    {
+      "file": "tests/m4-copy-correction.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "tests/m4-engine.spec.ts",
+      "status": "new"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "status": "modified"
+    }
+  ],
+  "audit": {
+    "findings": [],
+    "clientFilesChecked": 11,
+    "configuredSecretsCompared": 1,
+    "whitespaceExitCode": 0,
+    "passed": true
+  },
+  "limits": [
+    "Bounded English classification and factual heuristics are not a truth engine",
+    "Fresh live acceptance/provider reliability remains unproven",
+    "Same-machine Chrome comparisons do not prove universal export fidelity",
+    "Production distribution notices/process-local quota and deployment checks remain future gated work"
+  ]
+}

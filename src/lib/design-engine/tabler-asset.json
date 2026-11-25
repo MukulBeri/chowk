@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/tabler/tabler-icons",
+  "commit": "1f4f3c94aadd87c88b32e0f65449070713c4f880",
+  "asset": {
+    "path": "icons/outline/camera.svg",
+    "blob": "79bb9025804e07adb20a419018255c77ad7a9c57",
+    "sha256": "a87eae819b9c5a98b07e635c5a52fd2aaed392000ce62bb8724cd5f5baba4bc7",
+    "sourceBytes": 541,
+    "adaptation": "Only the two vetted static path definitions retained; original native taste framing, scale, stroke and colours surround the unbranded camera symbol.",
+    "runtimeFile": "src/components/tabler-camera.tsx"
+  },
+  "license": {
+    "path": "LICENSE",
+    "blob": "3e82379dab3fe93d9ee22251949604ed63ddea39",
+    "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
+    "notice": "MIT License\n\nCopyright (c) 2020-2026 Paweł Kuna\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "trialOnlyRejected": [
+    "music.svg",
+    "device-laptop.svg",
+    "recycle.svg",
+    "perfume.svg"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-25",
+  "kind": "Five approved static assets, exact-source comparison and selective adoption; no package",
+  "repository": "https://github.com/tabler/tabler-icons",
+  "commit": "1f4f3c94aadd87c88b32e0f65449070713c4f880",
+  "integrity": [
+    {
+      "name": "music.svg",
+      "expectedBlob": "d5ace96f77fa03ea175eb654b52905a776d26c53",
+      "blob": "d5ace96f77fa03ea175eb654b52905a776d26c53",
+      "match": true,
+      "bytes": 519,
+      "sha256": "afd2fe98e580e1d4e9bf45d88165894b0e683e9141f63c312585d778b73d02c5"
+    },
+    {
+      "name": "device-laptop.svg",
+      "expectedBlob": "95806ec8ad348ef3919e25cac9152f2d7adfe391",
+      "blob": "95806ec8ad348ef3919e25cac9152f2d7adfe391",
+      "match": true,
+      "bytes": 473,
+      "sha256": "2a0fffa65ddefd1017cbd7bd71675d72b5ca0748176cc39cda17600108665ed9"
+    },
+    {
+      "name": "camera.svg",
+      "expectedBlob": "79bb9025804e07adb20a419018255c77ad7a9c57",
+      "blob": "79bb9025804e07adb20a419018255c77ad7a9c57",
+      "match": true,
+      "bytes": 541,
+      "sha256": "a87eae819b9c5a98b07e635c5a52fd2aaed392000ce62bb8724cd5f5baba4bc7"
+    },
+    {
+      "name": "recycle.svg",
+      "expectedBlob": "e0c41b842d712204954dd147da0bf7d1df00287b",
+      "blob": "e0c41b842d712204954dd147da0bf7d1df00287b",
+      "match": true,
+      "bytes": 684,
+      "sha256": "0cde16170a69b23f1737e74b7cb4588d71985243ac57cb8e6e7242d6020eb2af"
+    },
+    {
+      "name": "perfume.svg",
+      "expectedBlob": "b5f717d9e16e2dfeed538202b8dd6fa08b973d23",
+      "blob": "b5f717d9e16e2dfeed538202b8dd6fa08b973d23",
+      "match": true,
+      "bytes": 572,
+      "sha256": "35e8cd398a375e3d0b44a10b030dcf49f4209a3575618666b37967497b673e18"
+    },
+    {
+      "name": "LICENSE",
+      "expectedBlob": "3e82379dab3fe93d9ee22251949604ed63ddea39",
+      "blob": "3e82379dab3fe93d9ee22251949604ed63ddea39",
+      "match": true,
+      "bytes": 1073,
+      "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+    }
+  ],
+  "sourcePaths": [
+    "LICENSE",
+    "icons/outline/music.svg",
+    "icons/outline/device-laptop.svg",
+    "icons/outline/camera.svg",
+    "icons/outline/recycle.svg",
+    "icons/outline/perfume.svg"
+  ],
+  "noticeFile": "docs/licenses/Tabler-MIT.txt",
+  "licenseBlob": "3e82379dab3fe93d9ee22251949604ed63ddea39",
+  "licenseSha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
+  "comparison": {
+    "tests": 15,
+    "tastes": 3,
+    "formats": [
+      "instagram-square",
+      "youtube-thumbnail"
+    ],
+    "nativePngs": 30,
+    "trialPngs": 30,
+    "root": "test-results/m4-tabler-comparison-01",
+    "sheets": "test-results/m4-tabler-trial/comparison",
+    "kind": "Isolated vetted DOM geometry substitution over actual local artwork, not a generated spec"
+  },
+  "decisions": [
+    {
+      "asset": "camera.svg",
+      "retained": true,
+      "reason": "Clear photography recognition over prior generic network; native taste framing remains primary."
+    },
+    {
+      "asset": "music.svg",
+      "retained": false,
+      "reason": "Authored record/rhythm composition is more expressive than a standalone note symbol."
+    },
+    {
+      "asset": "device-laptop.svg",
+      "retained": false,
+      "reason": "Native network communicates AI/computing; a generic laptop adds little concept."
+    },
+    {
+      "asset": "recycle.svg",
+      "retained": false,
+      "reason": "Native reusable-bottle/leaf concept follows the explicit bottle action; recycling arrows are less specific."
+    },
+    {
+      "asset": "perfume.svg",
+      "retained": false,
+      "reason": "Bottle silhouette suggests an unsupplied product appearance; native scent movement avoids it."
+    }
+  ],
+  "judgment": "Subjective visual comparison, no invented aesthetic score; owner acceptance pending.",
+  "portableNotice": "Full upstream MIT text included only when the retained asset occurs; all three taste four-format native/HTML checks pass."
+}

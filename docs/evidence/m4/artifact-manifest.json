@@ -1,0 +1,3147 @@
+{
+  "date": "2026-11-25",
+  "base": "e52258fcf054de89844d02c2d7cba315812f264e",
+  "scope": "M4 candidate. Native downloads/screenshots, explicit local/mocks/replays/isolated asset trials distinguished by record/test. Raw artifacts remain ignored; no archival copy or Git staging.",
+  "count": 523,
+  "bytes": 72790422,
+  "files": [
+    {
+      "file": "test-results/m4-m3-baseline-01/.last-run.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 169070,
+      "sha256": "728e7e992d5ad80f9ec00b18527c2ae0b30cfcf64190a74157748798c1b8b0ba"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 102410,
+      "sha256": "c77b0f3917002253c196959ada0c4c4cf1bb782963e9239578c8f45a96b5c551"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 86657,
+      "sha256": "4ae9dffe4888e20384853a77936eb379f772abd09f575e600a2853b0859f661a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 115915,
+      "sha256": "aea9c311b2104f8e655fddcf1faa3547619c2c93873929cf138e8a478d218511"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 131049,
+      "sha256": "7c6872a7448f337894397c6b6c045e474eccfd7cd3d14d8502a3cc7cc40f89de"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1209,
+      "sha256": "d1989ef5662c85cab82c4cbe40902cfef3db146dca6969aab107f4652229723f"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 80399,
+      "sha256": "3d473c3a55252003df4d98d7eb8c96474ceb9d84cc290f16d8570e7fa7f4b3e7"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 595472,
+      "sha256": "3ecae9f70decad4a2b03eb4414a794913e4546122118ee8603f921de097f78a0"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-ai-workshop-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5152,
+      "sha256": "cada1ab9f466137c3216fb9a9ab29e97182f927599464d30c423f4528e926b98"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 201210,
+      "sha256": "ded7f569d36b054a79081d8acb9be0fbe0e140acfd3ec1481d530b44f8579dae"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 121019,
+      "sha256": "4825033d46eada3ecbb6c3ca46697c874957b7e259ef5e9cd627ced91d88b795"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 109833,
+      "sha256": "2ba32f8ee5137e7494a2bb9a39b75f9577df0593c818fffe6dc9b21ea1ed2d76"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 132044,
+      "sha256": "418e2a3a300d54e580a3cb1f2c114ba90a515a03cf26fba8b458e79e16176687"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 151361,
+      "sha256": "1b65bd365b1256ec23dcec6e1c8c57c90c49b91f4a1b24e222ca619f70ed069c"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1218,
+      "sha256": "061b48b76ded93dc3d8a6f1b7e320bb598ec97b1f0e52d6b61f4fb145326d81b"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 89277,
+      "sha256": "8ec45ffcebdd0d8ae865428c914a4e2d118d607fffcb24659c3ab5aa76cf3e91"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/chai.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 595433,
+      "sha256": "2a233f96403eee38af191daccba73d731b8a35da9618171798ccf30cca5d0adf"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-chai-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5150,
+      "sha256": "94e991374ce9b556a8bca87dc8099e3c26d8b704163f269fae1f8825f585f8ca"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 226362,
+      "sha256": "8b1651606d3fc78ea11add0d7b93f318df55e996d217610eac63d01d582d0230"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 134693,
+      "sha256": "e8226df9d7952d373961ea0d60ca02ed3199ed64a638c2e0d0f34d2354a49971"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 121917,
+      "sha256": "eb16aca9195c1f743ea723c1722668150043065027b16ed82601c5ac135f3181"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 171020,
+      "sha256": "33209865a884ec10df2b4592d779dec67cd3200cffeb2fc8b31db115645545e7"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 168243,
+      "sha256": "84e3504a893250df277f65d88efdc8bd6a79f22250c4374b6b35f64cb7400e31"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1236,
+      "sha256": "9fb87d1d070294d526c3b1324194f9caa1961fbe7246765b3661529469bb7e2e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 109020,
+      "sha256": "51bdd42cee9572f1f82ba45bc0978e1ba5e109eeea40f76fdad007aff4d9cf93"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/coding.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 595833,
+      "sha256": "24fe8af5e490f6d3d8bb14996620484bf08ca9d8c0a6784f02d8f46fff2c1d43"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-coding-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5302,
+      "sha256": "6f7b15bcd1266f978c9555e9f2ea60ae09b81f5a0ba8be2e80c3b6226f37ef2e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 238485,
+      "sha256": "53a236e69bfc108ee6026e518a581acd20f3cabf8930cb0fbdff72340659747c"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 153751,
+      "sha256": "219e48cb563b8200ff87f3b3b66be7eda36c5b1ba357385ea1929a13b003898d"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 131342,
+      "sha256": "81297427ca2b754ad51c87a62ff4a54cb6547206ce36155aafe32b516fa31bec"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 179378,
+      "sha256": "41ff3522c30f4d898f1edcedd582dbae8a6f7dfe9869e5de935b07af1c4cb05e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 170898,
+      "sha256": "f56cfc9b135ecdd8ebcc79b77effa6634081962222f72848a2da54b4f18653de"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1230,
+      "sha256": "8d6f54331e492f67c6d599afd997977ace3ac372be6c858e6bd6e456e3490c62"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 119283,
+      "sha256": "4c014ac58c1fef89fc7104fdf08bae99776da3accc49cda1d2d6f8510be52b5e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/culture.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 594013,
+      "sha256": "52a360ea83f85dde6a521a336db43367174d48db38acfde7db0a65fbc4f2e989"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-culture-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5260,
+      "sha256": "2bed3371253472b3021f2951291dfd898560bd6e036f2703400eafc03b5c1a8b"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 199270,
+      "sha256": "3a0dda2874ab10c6748d567115688022dc50c323c9636794da1f6b59deca99e2"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 117047,
+      "sha256": "b3030439085aad599091b73991e8aceca1e19b5af3478bc842296b5cd4ae21bf"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 102037,
+      "sha256": "1187786bd355578dd54a5758bc1fdfe7f92f00dd0470daa244e12c09207ed3f9"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 157314,
+      "sha256": "d6889c8273d7a8644bff4dfbaeb9d22954aeed199833d54fc63d39076df70ef5"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 152785,
+      "sha256": "84648642de08c1da79d511cccd0994964c72aeb12e6ca3c647e52ef4d5d99f7a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1198,
+      "sha256": "1769f7399d6a2c5b65a7e0fc84a5c97243df9c29f5edf39e423b4f067f216b1a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 95517,
+      "sha256": "38cc0cb00e7f496a0cbc959478f373ab7003b2230d10c176276fa54855a4f8f4"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/environment.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 589300,
+      "sha256": "3fff4233cf008b1844755e0a31f1a746655eaa009e26cc2f3912483d9a70255a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-environment-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5133,
+      "sha256": "781554ad6fd480aa2a9e728c0544adbccb483d666df6e66a326fdf117384dfbf"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5270,
+      "sha256": "bbd5dd1a394efe9725b72d73e8b9c2651b175f6917f1f73ef0c91cebc88b44bd"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 207644,
+      "sha256": "49f30b252ce30c7d57b96314c7ed875cf12b083322f44b0b6308c23eac97bdaa"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 117957,
+      "sha256": "abe6e2e2c65dc59579d3d778218aedbdfce7428c9d6a099c474152191162f576"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 105221,
+      "sha256": "7c06647fba4d3dd9021d75f2f0209a10ae80352a91534e7f367556ecf0f63113"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 140049,
+      "sha256": "8e3c146dfa5cf910fe4d97924ccabcb9318d343cbe34b23989a189c990bc13e1"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 156812,
+      "sha256": "5d150d2e4c2daf3d09882d222a91d403e47215fa6cdf653eff4f1bcbae2a2ef1"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1241,
+      "sha256": "a78ca78124fb4543b72b82cc060821a3ff399e7884273dcd9cd022034ec98976"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 93773,
+      "sha256": "54f712897e413a1257dfa07b7038abc83812e8f9b38f6dc7e8998c66f094ead2"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-perfume-actual-local-four-format-corpus/perfume.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 588439,
+      "sha256": "86fd3c0f6a5c0f985306880df25dfcac9d9dea4981a6025546eea868b31b4054"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5143,
+      "sha256": "61d97a3eed3d6c216dd591d67dc11241ed2b1e238baec3b036c5c4f7f0996d13"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 198336,
+      "sha256": "b519d74690519dbc6d8c4a4f985f8849031c2c4c3e0df32c59e03c52dd25911f"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 132181,
+      "sha256": "351187fd97c1c5ba3ec0181040c03fd99cc516d0b7560875295cf26106c7ec07"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 107535,
+      "sha256": "d30a5a2850bcd616ba548d6919b4e053aee909f107848bca806b56701cbd0209"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 144190,
+      "sha256": "addb6b05ff95cb35212bafc240dfebc977e1575ac2c9c55fa9a2921995c2e4d6"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 147849,
+      "sha256": "e615aeb25b5ca3d5e1af696adf05624f8498452dfc0e4cce0ecd6d8fb1a10a1e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1208,
+      "sha256": "95ee6492c5e29a08b3ad62860f263607eb7f5863e093c58fc2796d261538f938"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 89735,
+      "sha256": "38c0f76c1ac118d7b44a3e3c5a39b95ef3c1e3880b0d6d85d720955c2d69eeda"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-productivity-actual-local-four-format-corpus/productivity.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 593750,
+      "sha256": "229948fc09050f5c4ed0c16a189b1234fb8f5038360c1978f48dff1ee06eb336"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5715,
+      "sha256": "98538168791d553214dca28a91aca1bad141da1f08298e5990df169a3837cc2d"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 234460,
+      "sha256": "cec83c1d98d3fcb54951cc0c1bffcdd923833940e8402784eaa77b871a319840"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 145222,
+      "sha256": "0b7705c6f4937a7602dce0046281ed12f5bbbb3d991ae5358aa31fb37c62b78b"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 134556,
+      "sha256": "92bacf573f6f197fdb1de8eb2c5f01e2de57afbc7bc27686ba97ad5c5b8ca253"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 158787,
+      "sha256": "21876f007f70df0f26c512476a8e5c42245cac2b24c2746d4f6aa6394f65f61a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 168160,
+      "sha256": "e87602c1d60721704adf19b642133e045049974b88dd248228b8d5f34e633bf8"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1332,
+      "sha256": "9d7c11cbcdb7674a52b27fde6509c95546a4c52439f0aeffcc940e28959eb55c"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 108894,
+      "sha256": "33c24a5635ac26fc0a60624240f1704934adad684bab96b5a234c7fb79185507"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 600720,
+      "sha256": "d4253770be0b58c51ba88ebfbf5f4186b8c0ed452bfab3b3f38601b6830eb805"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5699,
+      "sha256": "6cf424f9ab6e92aa2f49feef2ae058eea959b951ac9d4540c0ccc657506cec86"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 252034,
+      "sha256": "aebb7600f29229eb7e3acbd8e855e258fd055773a276e5c36812b9736af1548e"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 167759,
+      "sha256": "53adcdb0404a3617fe5aa9d537d0613fef4eb037ab251eb3a985dd937ddeced8"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 148313,
+      "sha256": "02468de1dff9ce7812da2a3ef1d8129e4c825fdb456383ca4023a6967b191cde"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 178196,
+      "sha256": "32252d483ccd9b4a025d918c534d2312ae9a7683810db100e0e2d208d2995c0b"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 182592,
+      "sha256": "85824334d921bc97728406e2b00b641990eb19b8ee88590412e46003bd1d900d"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1316,
+      "sha256": "ab78fc8e48f28561582f80f38b560d028f143180442c1bd4d71747267e04ae35"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 119477,
+      "sha256": "13f9e065aca9ee980902202668c941c36a101b25ed52656a1af055ab4eb9b001"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 597797,
+      "sha256": "e4d8de6e1bb85ea34beb7d41b4aba23297b3c437321b9349e885e2547f958f3a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 5703,
+      "sha256": "0f3c57c068cd40999c6b62853bf4d767d3dd231a1c48d90c7ff4ff401451f460"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-desktop.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 243806,
+      "sha256": "a1759736672551cc4536c88f08bcc7bb71bde485363c98afabea1b63a0f3838a"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-instagram-portrait.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 154845,
+      "sha256": "84b1b6d7363039b511ff17301e885dc373199abe5cd9d104f146f46789d0667d"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-instagram-square.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 136540,
+      "sha256": "db27d63c07cd31deeb28ece6a049da64bf2f7ccc00f43c1fb758450f948a01e5"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-linkedin-landscape.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 179590,
+      "sha256": "701eb36408b64ca54bc8c96968e2c9b92ae612d9be046786bfff6ac8ae59e528"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-mobile.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 175709,
+      "sha256": "6e622d75159579a0540bbc29180c42fbff7cd7c2169fef395c7050b39a0293a4"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-spec.json",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 1314,
+      "sha256": "13e873f4358c0e31cb1bd704217720fcdff1c45bc0b35b6326193eead74434f5"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 112194,
+      "sha256": "ab9f806e8bebed8d39cc3e8bf94f93d7799364e3e7a8e5ba14e0e63caacb2ae9"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss.html",
+      "kind": "Actual accepted-M3 local baseline; captured before runtime edits",
+      "bytes": 596833,
+      "sha256": "2fbf7ba9ff7610d0402cb105b51ff404c251234d0c778a8984ce0cc8fdbc1bd0"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/.last-run.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 188380,
+      "sha256": "341a5462fc502bf30be8954cafae614cfdf283e9f60854e36798d68a9902d4be"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 116598,
+      "sha256": "605310cd1e7e8e670f4591e066418e6a406a1f9e3b72a78373029d0b22954fc5"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 103975,
+      "sha256": "3f40f8f0dd57fa0fde684813509cf74f92d6acac1cfd028af598c56fd45e7916"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 137723,
+      "sha256": "dd5f878c10529fa7fcf46f589d6a2367f77cdd300deea34ae59c895047b549b2"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 140689,
+      "sha256": "8273d447094297d97fc55ae0f41135fd1c0f6675bacb9732b1f7686633c10631"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1240,
+      "sha256": "009a88cf097c2bfba22429ba46a46204103ead7eeec26a8bfaff026ccf627a15"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 85098,
+      "sha256": "2f1c16bbf2a0bf6f4521c134fa18a0d2752c48e1bd725b411928b1a33ec31d67"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/ai-workshop.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 595562,
+      "sha256": "960e358316ab218e221257faacb198bf1b0c87719a3a876d20abdf16bad6f6d7"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-ai-workshop-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5200,
+      "sha256": "137372b3cd88a08ad031efba29976358b420ec0227cf25a8d49cbc3d24b1584c"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 173881,
+      "sha256": "f637eaadc992b36971260e666c019eddd519e8feab21f8a207c515309584e6bb"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 113878,
+      "sha256": "e070c7761d20a7d3392648aac0f174d3bb7f96a677bcf3a9b845a28d9c5ea643"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 92930,
+      "sha256": "21d58387bce750b92648554ad62561a389ed325752dbe7579f83784699aea680"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 121405,
+      "sha256": "ac776400fad0479aa82a9d63686828f56ce080f53e5707d0107e41580704da72"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 131561,
+      "sha256": "16f7164423d03d8c9c2e9b930d5c38e5f2430c522a4beaa9718f59f152b36220"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1210,
+      "sha256": "0d7bb34b986445a490a11f7ac84bcf33234b53ca47e7e8bff6e53e4621ab991d"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 74757,
+      "sha256": "9283fd5f4bc4f2b93e3d1c908e644cd8796b4ad0b65dea2ba4e7d239685c4a2f"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/chai.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 594887,
+      "sha256": "27c2b24ed9e7fc1de50b2794452c26dee65ffc5acc97ca3ab15ec0278b3dda1c"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-chai-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5074,
+      "sha256": "445357570a4719cef93b50f56cc04695bd008a32d49a2e71186fe46038897525"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 248828,
+      "sha256": "f0f5448cd4b9474578522f074ebe71b3ee0f1a57da63b0adf6d479d1752d7f6b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 152172,
+      "sha256": "0986e484fe342ef9233984d472874fbea3e7881ccc0d9221169d31210dbd6650"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 143162,
+      "sha256": "7053e8926b4ac437d0eb475a0ae9a09d7f537d2e23128ff0bd9ffa890d5c030b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 192569,
+      "sha256": "a881d9b151ac422e527433cc9e424686940b93824a11be6ef43865834b727143"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 179193,
+      "sha256": "e6ba24ced3c72ac8e10bb772056650d65783dab0671cb13db3813425a769bdaf"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1281,
+      "sha256": "63db133c9f3b4d65438c1e524158b2fb2f7e1d6a293a11a9c1f2c5ad4b35572c"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 123374,
+      "sha256": "0b2b838aa31427852e9a1f6592961dd6443898fa32f2814afd3d757193f6cf76"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/coding.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 595159,
+      "sha256": "78c51d5729ab0d41efd0952f66a3e6b86d480dfb2c9658078ac8e702eec84e28"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-coding-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5419,
+      "sha256": "f36a4c85350a807c21c04c4fc99029a8164646e7c4cb99ebd0285b52dcc3cbef"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 226840,
+      "sha256": "c75024c4d547eefee52a154f158c9a9c55db15e2ac5d5f1b0a0c1bf405a4aafd"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 156548,
+      "sha256": "0d15713aab2353a66e432941551ddc04c821d3d77a7c049e3755e45a5ccaeef6"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 122552,
+      "sha256": "1afa86bfe34fb72443bddd55132e0d4fd206bf1c51bb66f573fed642083e6a9f"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 167931,
+      "sha256": "565bd76b32a66c00f85d829c39c6ed33bc6440917c68a2f8c374f60194ed288f"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 165971,
+      "sha256": "92af677fce14b9dd011ac330239b2cfa497e81348f15fd72179815bb4b18d4e1"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1217,
+      "sha256": "d29a5925717fb87a45c3281f9cca5228e31a9119337eb09afe22488961d47868"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 106620,
+      "sha256": "d1407bc722706ea6e63689b6bbc51825dc01a3f88eed176bb339b4b345556647"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/culture.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 593239,
+      "sha256": "bc7c1f58c6d9c7a95d6eec240dc4c2647019e3ff092552a4e6a63a270852274e"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-culture-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5165,
+      "sha256": "e2344c29011dc77b6f12e949579c23f1482cb9428a1eba2759a8bf6c444c3535"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 221464,
+      "sha256": "920850d0d63a5e6d0bc9b2653e5a7d068bbc7fc64dc4cd3d51875ad577c016ed"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 137075,
+      "sha256": "d3036a874747bf51aefbd556c997b01efbea3904bd1e6be7c6493c64242e378e"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 123771,
+      "sha256": "cfd9dcfeecf74f4e22f9cf2b477e2bbacb217b09b19a6b7a0bd77c7d991d1fa5"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 169179,
+      "sha256": "7c6f506fbe1a080dbab0a339a338176dcdf720afb0d2dabb2d4fc7c4b85e1ace"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 164083,
+      "sha256": "725666a928849cef8e456a1bb7c965eb0bdbd8e457b019e95145e0a46e0519f2"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1253,
+      "sha256": "e6f91b62b6809428aeb0295c8b5efc3b908049ed6f4b7b38abae5fbd1f38ec10"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 100523,
+      "sha256": "6e3c1ac27b8ef11da22e07b8423e1ed51a249c27ac50900d33d66ff50ca8ce1c"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/environment.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 593642,
+      "sha256": "ed8fcf095dd3293d808f284bb8160318527997305d804808d71dea260026dd8a"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-environment-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5299,
+      "sha256": "2e9aa3a868444e059aea78bddae3425684cd84fbee5ec2f10bd0aca09b9fcf53"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5310,
+      "sha256": "861821493c48e99c0abc9d954d2d99bee082121f4258ae19e44eee16d93694a0"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 185864,
+      "sha256": "7eecc0345dd19d90d0740e0b249d0fc0152dd0644836d9fac1c7853cbfcf90e1"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 109690,
+      "sha256": "c08ae8b0f1d1b754e18648c900fda2206db1b5addce2d7afb2ed8a29802f94ce"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 102737,
+      "sha256": "78eac485289939918db5f90d03aa3a7b723328d1141cf3a6c35aac99f6a3e29b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 153833,
+      "sha256": "b2fca6c1d36a4f9f759aa21d2e897c5548a0bf2d7644706f76822e75de63c778"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 147661,
+      "sha256": "b7121a36b499af351ba13a2cd41c922e57596e0d610d944af51c8f0c38d85f2b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1260,
+      "sha256": "0a2342b18dfca04b2f711523d72f9c82ff90f693b104a2781f8fd0beca6873f7"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 96201,
+      "sha256": "f6de3d1271daa1bc2537bbbd91db51a81521756c2d2afee309307c66c7203277"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-perfume-actual-local-four-format-corpus/perfume.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 592592,
+      "sha256": "eb6ced05badc63d293713b9730a831267ac84673cd26f7f874f1aa75eaa0b06a"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5150,
+      "sha256": "b62716c72af136c303899aeafd59be4f8c31164de63577fa1d50ac23e5d81abb"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 179807,
+      "sha256": "e0fca4fd9c8f9ce0738575e2e0da42f8cff8781e76cda14644562a75c6354aee"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 120081,
+      "sha256": "b44b2466ada87b842181035ac61e3015040649553314fd75e2b7425060b69cca"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 93819,
+      "sha256": "53cb11f26e548b194191d90902c8c393b7fd86926a1b8f6fe394b0d63b5bbfbf"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 128395,
+      "sha256": "bf1ce96be0ab6d7b7b4ee7c0c6138e75ffcb9a3d64779de21ecbe2ecd9f19760"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 136437,
+      "sha256": "44fcd8a740a9f8c793ed545c13028240d563acd5fa5905acb5e77fd04541c373"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1210,
+      "sha256": "206a668db663e8798b5767b4049667a9c388f8b079b9869c9015acffbb5a22ca"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 75958,
+      "sha256": "5a08a6148e79843b6417402afa7a17eda04ffa9df58311fbdfe5e3c1ed1f84bb"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-productivity-actual-local-four-format-corpus/productivity.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 594579,
+      "sha256": "81f4c72f1912637c45bf31c0915e06fab0e89633249091d7ca1059d323a367cf"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5510,
+      "sha256": "e3ab7893d00527cde36654ceb2008229be34244eb0c618378f4024993a5a1383"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 253423,
+      "sha256": "778574269a0a0a964aeba0bd94cce749f138a3da1691f259e17e75bcb073c95c"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 157556,
+      "sha256": "7353bd158cc2e39001e1a3cb276022ee06fbb890293eb33bd329e5f628080f24"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 146481,
+      "sha256": "b40b7d689497ec5a3739620178aeac705c0d193544f6dfb1fed2f957524ecf12"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 200191,
+      "sha256": "dac0f1e5a3649f2282577428efd4ed685ea5a58f8b6f66f04ff10ab3a92afe90"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 181214,
+      "sha256": "73ffd823d7eede70b00cd4c20b5ae91eb4936820b6870c3eb40a2fb7750bc034"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1303,
+      "sha256": "121e34ce688e0c28f43588c1a006907767ebcb712b7e31f6f939e43db21034cf"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 119290,
+      "sha256": "1b5d21051668d5a791f2ca94346a4c9ec9f226ec875ccd61f725df4f0503d4c9"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-bold-s-90add-al-local-four-format-corpus/robotics-bold-street.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 598939,
+      "sha256": "d25ea2519dacac1ac228a1c31d9cd65c39b46778b4fedabef8212cba8503c955"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5500,
+      "sha256": "91b0f3fde7b138ead3502ee08e50240c999204980415a134821b48c52afea7f7"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 269770,
+      "sha256": "51c10865c5b733b2534c09b3bf5eb9ca1fd2e9071f4e81c45d9cf375bf1f974f"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 172655,
+      "sha256": "793981ad3b89d8f85f9376fba570fbebfe2e5735c692b34111d51808c106a9fa"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 157112,
+      "sha256": "a2235bc18d96de204b3d524463492ed2cc73e189d09d6d0765ba429d52e005a1"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 199136,
+      "sha256": "9e8bed5f454880166733938a951ef58d83782f1a51cc5ab7c0f06527d234dc1a"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 192401,
+      "sha256": "fda40b29bc76b23b8d06895defb0fee62b93549dfa8cc6e9ecaa676b1a9f1550"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1293,
+      "sha256": "0a38abe5f4e1e180d99755d44e5b01fcaa0b087fe69b96b6d34f19d9a29787a3"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 125470,
+      "sha256": "42a5ea6884954d6674fff3e2f316840a361cb828ed70f4d47ec423549426ca64"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-festiv-68dd0-al-local-four-format-corpus/robotics-festive-pop.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 596555,
+      "sha256": "9d626fa2f275b4e5ee0450dde7e8079160739ec0191359d2d91b132160607168"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/evidence.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 5502,
+      "sha256": "95631884a734d2de36ba71a4de1cb52f73636823d36208ffc63a375d17479eae"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-desktop.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 254999,
+      "sha256": "c47f04c80d99bbf76c316a15a0cfd01e836dcd25bf4ecc1b7f55ca1d55d7210e"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 158784,
+      "sha256": "4175f70d94ddb29e7b117831f145acc29a31812767afbaf703954ab3f2668589"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 141621,
+      "sha256": "51e7510e80494b25f433025e752f431153bc6f69b2e53e34845bfc9c2620368b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 182160,
+      "sha256": "66ae978180cc24ebb7a601a346d515d6f4b47ac7b8cdf51fcad0c674ea660151"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-mobile.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 182937,
+      "sha256": "7a36ef1b5edfbe873e8f0d113cd2d5acce0587cb6ac8dd2a230104e73541c783"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-spec.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 1289,
+      "sha256": "96df8b5a8dcd95406becf3c62c2064ad386b06c566c78d869df52521a61f058b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 113776,
+      "sha256": "91071cad0e9147255f4485393e3481b2ba0fb4e9698459ae8c5da0910d0c0047"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-artwork-robotics-minima-6f913-al-local-four-format-corpus/robotics-minimal-swiss.html",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 596036,
+      "sha256": "c49ef98ddf523c31c8b2d02d5b0a88c842e2c12180ff421b785630fa9e9cd810"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-bold-street-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 145222,
+      "sha256": "0b7705c6f4937a7602dce0046281ed12f5bbbb3d991ae5358aa31fb37c62b78b"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-bold-street-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 134556,
+      "sha256": "92bacf573f6f197fdb1de8eb2c5f01e2de57afbc7bc27686ba97ad5c5b8ca253"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-bold-street-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 158787,
+      "sha256": "21876f007f70df0f26c512476a8e5c42245cac2b24c2746d4f6aa6394f65f61a"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-bold-street-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 108894,
+      "sha256": "33c24a5635ac26fc0a60624240f1704934adad684bab96b5a234c7fb79185507"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-comparisons.json",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 2003,
+      "sha256": "553818d08ed55feb14f5ae68e2b4d4f1dc38081b1ee530838994fce0d9aa6692"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-festive-pop-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 167759,
+      "sha256": "53adcdb0404a3617fe5aa9d537d0613fef4eb037ab251eb3a985dd937ddeced8"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-festive-pop-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 148313,
+      "sha256": "02468de1dff9ce7812da2a3ef1d8129e4c825fdb456383ca4023a6967b191cde"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-festive-pop-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 178201,
+      "sha256": "c0402ee6ef465a1b3e3178ca70811bddae301d862e5073a16a4af64a53314cc7"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-festive-pop-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 119477,
+      "sha256": "13f9e065aca9ee980902202668c941c36a101b25ed52656a1af055ab4eb9b001"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-minimal-swiss-instagram-portrait.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 154845,
+      "sha256": "84b1b6d7363039b511ff17301e885dc373199abe5cd9d104f146f46789d0667d"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-minimal-swiss-instagram-square.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 136540,
+      "sha256": "db27d63c07cd31deeb28ece6a049da64bf2f7ccc00f43c1fb758450f948a01e5"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-minimal-swiss-linkedin-landscape.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 179585,
+      "sha256": "b3cce48aa25b81c55135231821c7a30767411c706fff7240b10b16c30be54fe9"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04/m4-compatibility-actual-hi-4763f-g-HTML-comparison-tolerance/legacy-v3-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Actual M4 local corpus/native exports and explicitly retained M3 spec compatibility replays",
+      "bytes": 112194,
+      "sha256": "ab9f806e8bebed8d39cc3e8bf94f93d7799364e3e7a8e5ba14e0e63caacb2ae9"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/.last-run.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-24da9-incomplete-input-without-AI/actual-local-topic-cases.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 26123,
+      "sha256": "8e465c2fb443b8f0d1277857d42559e08371d185b35d8f031b2825215efdf99f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 135043,
+      "sha256": "487d286c1b9dcecef590757f281bc8cd6ddead24e2ff974211e09a638dd2464e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 127434,
+      "sha256": "37f0732fc5047202b419572b1cb32db36031d1d4a80cf462c3abcca81a4bcf50"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 177784,
+      "sha256": "168d3d6a72b9befbc257f169f50185ab16732001008a7cd0c5887920387b3e9a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1104,
+      "sha256": "ed7bd332d50be0c04c588c60688ed8b1f042979bf9c3ac16b8dbd17a2110f228"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 222305,
+      "sha256": "e92a588a545498b4179c0f8c1b24826da6f5e1686cd25207fd55cad24032705b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 105881,
+      "sha256": "ed7942909f6fd40e5501fc0661e29105bb7b5f43865ba161a49c4f3f90a4bd6c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/bold-street-street-editorial.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 599036,
+      "sha256": "d0c791a8f4e029cb91743c7d94cf2e4d28dbabdb3ddeb8a3da0da6b886185b4f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7a31a-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3247,
+      "sha256": "19fcc7451ca8e4272633359e69635d349239e66ed65ef8a4c4bc860537be0fdc"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3334,
+      "sha256": "e217981ef1058b35fe8c824df66cb43e189c7c3ff70b722a8537d14e1da495bb"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 179519,
+      "sha256": "0321f40c60a21b06aa9fa8ce0409ea8f78631bb5ebf0abe4cd5f47ff76df6dba"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 148342,
+      "sha256": "2d18f5f4aa802a63dadc45100dae63895317610ac92a9bf0c44e8af2f8b0859d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 195213,
+      "sha256": "72bd998659c371ad5267c95e29e5a6785c8ead6cae3c7fe36145718ed17da47c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-native-dom.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 78602,
+      "sha256": "8ac59c8174c6dc60b3b36f40bc3cb1125ca47ebff5e589dd12dc9fa9cb95a24c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1086,
+      "sha256": "52da12a911c87128e2c8195e4ecf27113ae3c15a8a4369cb88165f13558ac21c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 263345,
+      "sha256": "87389292dcc720063c1460a07bc9739549f7f9d9c303711a8f6ea0e14b67f718"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 116747,
+      "sha256": "2271805e3a4bf1b5b15cc0543c77188e0e95287315568f4e10a59880a59b6891"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-pop-stage.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 596447,
+      "sha256": "cd093c73865c50a600418fb4de8ce7d742da034a3274e9a67e554073e9172c52"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-7c184-mparison-and-layout-quality/festive-pop-social-size.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 201617,
+      "sha256": "868a75b33ec540d7ec09a371e93b3606fdb4661d6c420c66669cec9c940a9988"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3231,
+      "sha256": "edae14eed92c3f63439725bc9a7a4ced16d05dd82fee9ad852263755c50de45f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 148732,
+      "sha256": "edaae440b15eb2de121dc1bc944d49811cd918499527e62fdc58cc3928aa48ca"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 140743,
+      "sha256": "f3be01edf4ad188917bb01384661f3bbd4e9b9f1b55a25ccf57f8900469ccad8"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 191718,
+      "sha256": "f6845e1e0240b74a898e50d5cdace7fd2f686f4b44cf7e0fa54bccef5d366337"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1088,
+      "sha256": "fa9978504041a7afc5a87e119db7de3cd3f0ac1135773e3abb8776a6ec399eaa"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 235220,
+      "sha256": "005a797cf7f0fcc370f9939d4496d06a0b29241c771184190be630a2d6c11a9a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 116089,
+      "sha256": "6e544b6136fe118834c273092d6b4e48722aac8f9b17c0e5a40375f024a50240"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-b24f9-mparison-and-layout-quality/festive-pop-pop-offset.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 596471,
+      "sha256": "e84254ee9813f01eaa8404ed6eb414879bb8834ccb238f5057cc9be1bcce3770"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3231,
+      "sha256": "cea0f52b79ff119475fdb2de6b1c7b083e31b7a09c3069f2b3b3bdca8ba780e7"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 137189,
+      "sha256": "8240877fff5d2e0f33c30e2c253d20a096033ba6e171bdcc2b67a78cf2062643"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 129152,
+      "sha256": "15b50d0ce5ac993b08b45e8682c6dad1d82c044821a4d74c87bf01a7bf866fb8"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 181885,
+      "sha256": "799252f899d164840ae0bb90a130888ea91282ad9d3b91aa066c664272cb264b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1086,
+      "sha256": "89e30cd6ccb39696c2d70ad3c0fd8980b1258e1170e615623735f83482334713"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 222872,
+      "sha256": "7db350c37d86b8f4bb88c9e3d08af475d3097ccf5b8ea66eb8f800f6d81875e7"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 106607,
+      "sha256": "49d11a1382742fddc19e26ead1ceccca79d21da46ce1a0a416f0455b97d0a5a9"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-c3c66-mparison-and-layout-quality/minimal-swiss-swiss-column.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 595980,
+      "sha256": "ec50a8aae8c820e7417e54f5c68da59b46059839bd08d1a2add64afd24191484"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3332,
+      "sha256": "201a2ff8b603f086b060a357df095b67df471034303a0458d4c69e4b826a5f61"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-social-size.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 187774,
+      "sha256": "92c2cb63789e33f2b0c22bb18049f72e23d62b6ebc8788be83136b9984bddde3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 157847,
+      "sha256": "3d076f0ad1b35174e2645af85930c5be05a376643b77a8444aeac2a4eeb17231"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 136739,
+      "sha256": "00efd6f1f2364e894855693b5d98cb3a24da0fc5518168fdeaa15b2f2526e487"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 181637,
+      "sha256": "d579c5acf6c653d9f2319867e546c8b33af71b4c9bd40195f0cba87f6e1d3c17"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-native-dom.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 70404,
+      "sha256": "448dd97d2b539857867f2600271abae87a34fb94209929473f292a3b680a57bc"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1082,
+      "sha256": "c4822db5f9be1f69d312e0e5f712a072f67b629e153075d419546fb73692ba7a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 246138,
+      "sha256": "8c280fa783281615e3b2b0e5277ca2777833803acbff22fe13ce64b11e7d645a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 104898,
+      "sha256": "c59de58d6190004308e6f1537c798546b6c968e0858fe7553ed3efefa461a92d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-cd756-mparison-and-layout-quality/minimal-swiss-swiss-grid.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 595928,
+      "sha256": "194697b1d08a603a1766abfb12c0a0bdd2834e835fb4bc0cfd96a664c04435bd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-social-size.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 185619,
+      "sha256": "00fd358a508b8ed80eb89260dd6f764e7530a9ee32ed28dbae750a80ab7affa7"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 160950,
+      "sha256": "4178d219d50e25c37a4f99226d6d65398eef276af95bb6f26d100eda87f5d2a3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 132226,
+      "sha256": "5555f7c47b837eb6f9216b384515fac6014215953e32d328517c8589b520db46"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 180108,
+      "sha256": "d5325969f4c13782b95660d2ab5e7d0eae8a72c7a95aac553f6058e601cd40c1"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-native-dom.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 68979,
+      "sha256": "449fce37cec1a113b5a19ed79f2bf9c5191cc8494ff8f0e4ade5b36a8efc1947"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1096,
+      "sha256": "59ae786a0513697e26f7dd028a4aa0f2ef254c009090cc9288d9c255a475dcae"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 244161,
+      "sha256": "3c0710f8f48b05434a7b6d63f597181a1f9fe95676d8f26eeb8e2f3ccea1220f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 107720,
+      "sha256": "19e451cb949cd3d8c1237cdc06160c7f26b8e2ce07895628ffeefa103ea23cad"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/bold-street-street-stack.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 598831,
+      "sha256": "7f1e0667c4f1cf94268b1999dfa56e0cb29c668d02aad8f2ff4c13cb520be3b2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-actual-local-e3a66-mparison-and-layout-quality/evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3347,
+      "sha256": "99537695265f835448a0ad700746b4412446efdf64bd37f415e8b35f0d969141"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 121313,
+      "sha256": "c865a934827b48f6e4722baa93e6a59057e9c63e6cd4434cba82b80cfc6aaadd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 102017,
+      "sha256": "4ef1c74dd5aa73928b3b11e80e3d670f758141f56de5be1ffb4ffe7e77e9dee3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 148527,
+      "sha256": "dc981563ad2c20531e5629f0688d63e36580fa24084a8c5f36748149d7218bf9"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 931,
+      "sha256": "fdcfc6566215445d9f154aee6f465214be1d2e540aadb7180c7d0cb65e348af7"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 101188,
+      "sha256": "bb5c1b8e89167af4f1214154d6aeb9c9ead3029231e42803138cd25fbf0f24e2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-historical-v-2176f-h-the-unchanged-legacy-path/legacy-v2.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 16876,
+      "sha256": "81e15373a3cf2a4d7a57c935d8e5e377100b542ea50379257416512b367fa285"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 2507,
+      "sha256": "e13777a9813f9761449040249c70d3d6e05a3b22409a726a5c73be350b59243e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 136437,
+      "sha256": "c21dcc94135a7c62fb31aef4dcfe8c5ea4f67b7ca32c99cc055869ab918e6b54"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 121598,
+      "sha256": "1d9fff9eb3e5f15f8e756577be734315b1c24ce55db346e854590159fe8643ee"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 165756,
+      "sha256": "2a2ff74ad8362b1e1d3dd67bba7d6002ee7d9f13bebd6f8c13785fc0a87d900a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 222485,
+      "sha256": "3e0590877c2c569bfd22fd3c211468173c1bcb0a49f2034ca7753f0d1e00bd84"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--38943-ted-to-v3-no-new-model-call/replayed-m1-cultural-evening-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 101189,
+      "sha256": "6e660d2b724a3505a9ac3ca8420d62d0da7be50e466f362010452cd4e79b122a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 2669,
+      "sha256": "bc28baf6c582e6bc392511d117a62480dfcbc27c1643e9f88d1876784cc7d581"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 165890,
+      "sha256": "fbd517d2beccf9b38244d8a8ebeb0312bda2e97afff13fb8357ef348530aea52"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 150870,
+      "sha256": "2286231d3cc9b980c306571b6462650df1e6dfc1e8b6bec03c68f333e2a15e7f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 186233,
+      "sha256": "3f596993c771ea1489c4fcc928ace85dc0802d46f301c809738ee6099bec8c19"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 269058,
+      "sha256": "0f399fc43f7deeb6c595998958e62fe36461ff15b1f4f4e18d8da4d23468aa35"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--4a5a2-ted-to-v3-no-new-model-call/replayed-m1-fact-sensitive-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 130870,
+      "sha256": "2175fcbb88436b58e1fcc9212addb57d02ea4f667b49f351a41663cd727107b0"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replay-provenance.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 2919,
+      "sha256": "6d6fc46e7e27e21d06ceefac510f58db5f9d5d0a493014c37747e72ab7335053"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 156823,
+      "sha256": "3fe45ea53924f983c28e3ae7b5ba457be73e6f4c4a966332bffd2f92741eeb5f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 150492,
+      "sha256": "7f5ccd71b3eaf67157b08c74f69b3108137a46bd716ea6c403d94450e4e02ef0"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 186952,
+      "sha256": "d0cfcaf7b5d2bd0152c5d72ddea6378d919358a2836bc7786460c4ba426d26fa"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 258905,
+      "sha256": "f2926d97360e8389593aa7fb3d1e56c4c782c5282954583e77c26e143893b3e6"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-retained-M1--a44b2-ted-to-v3-no-new-model-call/replayed-m1-technical-workshop-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 138509,
+      "sha256": "2bb95f3cb6c9c23e22bc7e280d9cdb3f3e2098c64722828cc7965c3f124d2f23"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-dense-no-art-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 234820,
+      "sha256": "8c6eac6980884544eb2538a660692577ae284d9a13bfb1bd643bc8aa9ed36e5b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/design-engine-v3-dense-cop-471e4-ssible-copy-refuses-exports/actual-impossible-copy-refused.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 269548,
+      "sha256": "0980d5883518326bf650c01bcbf76ea26b6a5f17e824cef946985ebe19d1ea2b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/actual-local-result.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 3547,
+      "sha256": "ede27e2cb002cf4200e05fc16955edeb9da2c4de249595a5a35526dc5f61b981"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/corrected-local-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 231255,
+      "sha256": "5b192317ff35d796a26d52658cc584f9a7f2203b0dd76e25e4615c080d52680a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-campaign.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 594022,
+      "sha256": "ffa4216e09e4b8c50a81546cf55944207a1fc351af48fd38aaec6798828e15f5"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-portrait-1080x1350.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 147428,
+      "sha256": "ab9253ff5dd064ea0beacc5696f7f647474ac7d61807ff501321ad2f58756605"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-instagram-square-1080x1080.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 129109,
+      "sha256": "9d33c4504346dbd58636556d2acda98393124cb3cb0e6f054857df9a1e1787cd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 167067,
+      "sha256": "30a92a0324f747c8c24fc4c01a5e94ca23451724930e3591a8849e034d2fdc6c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-actual-ebe04-nd-warn-about-missing-input/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 109439,
+      "sha256": "738ffdf5a9661c3bd29a170b3ee57780bee00acc6df43018964ef46c1bea83f2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/fallback-correction-replay-73a6d-istorical-measured-evidence/after.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 20275,
+      "sha256": "f0e4caadcb098009bc5dcbc34db821bc1a8df28ea12f85357b5c02478ee02dd1"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/actual-local-planner-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 240735,
+      "sha256": "f1eaec4e933bd996aa144cf54820b8038e1c8a0af6e309df6afdcd086a8385c2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-campaign.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 594263,
+      "sha256": "4f9035a0691cd93ba013a902d5bffaf0a7d9eea9ab9be64beb5ee97723a6fc41"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-portrait-1080x1350.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 165202,
+      "sha256": "3c18e6ab2c817e491b6728fcde90324362e870acd19af99c64b2b183dcf2b369"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-instagram-square-1080x1080.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 129381,
+      "sha256": "5197951300e639e4e9c05ad776030b7d8d58835359ad035545958732845bd067"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-linkedin-landscape-1910x1000.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 176930,
+      "sha256": "97b082d600b3d87ab25d66d07b86748658234c5be8196bb45e9bd4eb767140ea"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-actual-local-pl-8ec65--format-without-external-AI/festive-pop-youtube-thumbnail-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 111269,
+      "sha256": "84f316ae17f5df83ee876e9373f9d91742934664b4421a9af9e872daaddeb72b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 181956,
+      "sha256": "d002c74e8f50cdab7ca9db76d5d3db652b268188674877d2e44400299d1ccc2f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/generation-studio-generati-7bc71-ance-and-error-preservation/fallback-youtube.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 88518,
+      "sha256": "2af9d3789cfc87393d02b6ed34a7339bd39abf08a266e877e1c8bfb1360e34ec"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 142189,
+      "sha256": "643eab19101e3fa6e75551662c12430420ef730c9b958d781e7d1dddec4f6777"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 107518,
+      "sha256": "b6cf5fc659bd129035abc6195110123589fddab32595ee367cfca95f11499e44"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 156126,
+      "sha256": "99148bea4cf8b7562e50b599fa5a47f1dcbeb0e3878bcf07bffa60a7f33b0ad4"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 95346,
+      "sha256": "aa446270dc6191ef19caed8c1df9564a33ea1bf027859db0b6c07c24b30b7128"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-festive-pop.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 593771,
+      "sha256": "c86558f7e12ac3dca28fa2a33d3d593e70d2e5e6c2e16168556d1a73aadcb511"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--204d8--format-and-portable-notice/camera-result.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 4582,
+      "sha256": "7646922aef63cb5bd0e20a6770a5e2c0adadd9c1f53786594774969f491ad153"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 122179,
+      "sha256": "16c182f447610525dfcb52d9409ec01667c367ae11605c773a35fc4b0c53e379"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 98023,
+      "sha256": "97ee2d8e4b949caee4c0c98fff76309608893470c4c138947d67585a42bcad07"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 133669,
+      "sha256": "281fc1ae77da8385541bbcba8734343371d988cd220fbce3c109609454bb1217"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 80645,
+      "sha256": "3fe171a370615b151553f8a96cd612678b9cb52d98190f4a3e726715d7bc58ec"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-bold-street.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 596159,
+      "sha256": "1b20e9eac078aa9b1d0af1244ecb6e262c7312ad8099c77433df457ac8ee2988"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--9a5a5--format-and-portable-notice/camera-result.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 4592,
+      "sha256": "5db040fd83951aa1ef16b086c4b188366b2d61ec0cc0f579ca7cfae6c5cc9e18"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-instagram-portrait.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 122248,
+      "sha256": "c710ee2ddbeda7f964d4f5cc020349bf901cec8a770e27231f91d63947dbbf6f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-instagram-square.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 103657,
+      "sha256": "92db31e82e69a3ab4a6d8bededdb0416f39f6e9a655b9cf0c1507d00eef52782"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-linkedin-landscape.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 140998,
+      "sha256": "7f0b7e29b39043f9ec6329011c63b71305d3947b251ffa945aa70a9f379abbbb"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 84415,
+      "sha256": "cb10e570adc7c936926ac8531d56b6840609f9f85f4306424d3d03acdf9d5bc2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-minimal-swiss.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 593288,
+      "sha256": "1350464fc9c8548319b356ab1b5b89fc4ad41cf146cfb673ed0f5aa1b3dee74e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-approved-camera--f4dcf--format-and-portable-notice/camera-result.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 4580,
+      "sha256": "9a2ee1f7f7fc2b286d9fccfc197c870e5e551610d91b7af3707f2a5b2420af6d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-M4-corpus-preser-b4cb6--the-shared-strict-contract/local-planning-corpus.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 54632,
+      "sha256": "d3cb04c3d040982c3eaf4760f90864788849967f4e0df1c42047a28103f8a5bf"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-measured-sibling-0fa23-e-z-index-or-pointer-events/geometry-fixture.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 149,
+      "sha256": "5d462e2f8034f6f6ac7dec349c6a2849305dd3600e93b7fb7d568b8bd3f870dc"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-negative-facts-a-dc516-lently-reverse-or-disappear/fact-guard-findings.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 865,
+      "sha256": "10fef6f2588810dc5824b4478c0b880329649c15766824ed83e55664281c22d9"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/m4-engine-whole-word-headl-ebd2a-n-impossible-unbroken-token/whole-word-fitting.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 300,
+      "sha256": "ddecbbd57385279f96cd9dbbb5a155ecf6ea678c2ceda77f5003912a90a98e8a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-campaign.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 16852,
+      "sha256": "18c6aa04cb30e2d2945413c02a8194710880758f7a9b77c61450cb34c3a59cc0"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-portrait-1080x1350.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 115313,
+      "sha256": "4abd3824341dd17180fbe7dc9a7699a94c14022513ef89ddc474b2cc34715fa2"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-instagram-square-1080x1080.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 102659,
+      "sha256": "8a6e48aaf6661d84bb2b28549c7709706a1a73c381fcfc783ad7923cd7f07fe7"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-linkedin-landscape-1910x1000.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 147451,
+      "sha256": "6daae75a8fbb42369463627035d5b82f1825ccc6b9bc885008871b47069cce6a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-long-copy.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 424652,
+      "sha256": "5237cae198d2b3d882422c32ac3a4a616317e36d88fff4e06dba4162a0796b79"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 165768,
+      "sha256": "53477cf9cb9a94bd7ff5a4bbc550f99a96bfb1f9e6de0c80b53c1a39d6e87bb3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-bold-street-four-la-fc2fb-fline-HTML-parity-long-copy/bold-street-youtube-thumbnail-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 97448,
+      "sha256": "3dd74f3e737f4441f8bb9ea924648a3d34c2b7084945e8a72f8c54fae0e3906c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-campaign.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 16734,
+      "sha256": "c4326d97a379a13d464baf943d452797bb1509416993acf209745a04476b4913"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-portrait-1080x1350.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 134311,
+      "sha256": "c014a88c58d3dd8f7b54c480cbbe6bbab8ccd3b34c89cd5b091621dd2ab0363e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-instagram-square-1080x1080.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 120435,
+      "sha256": "3489737433410d670452c4ca59512c9c1124a8cef5d445f0eb560680dd8aeed4"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-linkedin-landscape-1910x1000.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 157623,
+      "sha256": "3e579cc164feec962dc4123f7e4a97ea9dc491089cd2441afa64ad0c0b801748"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-long-copy.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 513579,
+      "sha256": "cd3d084f538052141e8516d99b4ba3e8a0926fdb9d55a25187540d46048b88df"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 207821,
+      "sha256": "0464e68b97a37c0479eb13b1a36eddcc61a947708ada001c5ec6072d3d93843d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-festive-pop-four-la-f7a34-fline-HTML-parity-long-copy/festive-pop-youtube-thumbnail-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 112805,
+      "sha256": "c570abc1843fee7e55ab940a9f39d0daa87a19f73c6d8ed2a328e795503fce22"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-campaign.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 14604,
+      "sha256": "419e1a6236d8b98ddd7ea7924865bf5c78e8650b519064049fb0102f6bd2c135"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-portrait-1080x1350.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 114534,
+      "sha256": "268d35111494da1eebfbf11da243f05b6165a7724c06baf3a9a59c56fd9ff10f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-instagram-square-1080x1080.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 100216,
+      "sha256": "88e56466c08c9e9502a8cbb37c6c05f2effb781149c567f1cab9d7c2abda38ea"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-linkedin-landscape-1910x1000.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 144395,
+      "sha256": "c88189373dab1d7aa304a16116d9e7c0d9ffd42e5c0679637a81fd3c47da685d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-long-copy.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 487577,
+      "sha256": "8cf1f19300624009f6ed43455cbc4342a49e236a7900363a3698369da6aa7121"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 172130,
+      "sha256": "fa52017c195605f0c3f7d73ab6307b43650dffbf354e6b1e56e508d27c731fbd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-minimal-swiss-four--a47a9-fline-HTML-parity-long-copy/minimal-swiss-youtube-thumbnail-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 95359,
+      "sha256": "4d3493fd5e9382e73956108ec5df9ddf7329da8b6eddc57e695025e9d295e5e0"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-mobile-layout-manua-2cb01--text-injection-remain-safe/mobile-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 159001,
+      "sha256": "3da8bfae2e413cf0b8cec5d9bdcb508e3bad5cab91c4806467004b03ba3ec26a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/axe-results.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 374537,
+      "sha256": "1e6886ad38999c4187ffbd0060308e68caebad261326693216e87df8659f466d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-desktop-1440.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 185083,
+      "sha256": "0f6ac14db85927da8f52efd24e66af3696b0e45c3d92e513596a950346c6d41c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-bold-stre-b1ead-io-and-accessibility-checks/bold-street-mobile-gallery-390.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 100947,
+      "sha256": "318c6a987515ce2e84da53280e5964de5c80298796a57c2a31b5b7c6dc94decd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/actual-artwork-enlargement.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 196358,
+      "sha256": "cd395797ffbfa0a96f320887465574649106c1d3c236b5fa68cb0e0135d3a13b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/after-inspection.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/before-inspection.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-dialog-ke-842a2--refs-and-actual-PNG-output/inspection-isolation.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 194,
+      "sha256": "a01fa39ff151a848954c755fa2eb5552a9eab8c8c8ecfa21d276d809b33aa403"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-draft-cha-85d6b-ong-to-the-current-campaign/manually-refined-spec.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 1111,
+      "sha256": "41860efb556f89e879ea63812a743f618f425e6d81edadc16528fb88b1e6ed58"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-empty-wor-59278-ubjectless-input-are-honest/empty-incomplete-studio.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 69074,
+      "sha256": "21959a5c8f7c06e4b4eedff95212979f205a6e927f62b3b5276fe965fdd03550"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-festive-p-57277-io-and-accessibility-checks/axe-results.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 388995,
+      "sha256": "c293fab60cfc50345a4e0c31fccdc30bf90b1953e5a6f510751d29405fd47148"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-desktop-1440.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 227997,
+      "sha256": "025fbdac48c2789fbf42e3dd201e2e688ad245c107f21ed1687c056be055fea1"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-festive-p-57277-io-and-accessibility-checks/festive-pop-mobile-gallery-390.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 127924,
+      "sha256": "7d4623c2c24b6c9760332f6d7e8091ff7c5373d734fecb8321637e9fd370787e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/axe-results.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 427305,
+      "sha256": "d5b6b43e56253d2a2ae6f70174daccadad67b5d91eb1ce433cad2fe93ec32b85"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-desktop-1440.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 255238,
+      "sha256": "cb89742929428cfdeb973a6ee6f5c7715f8086449f0d06041d87515840154cd3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-minimal-s-a6031-io-and-accessibility-checks/minimal-swiss-mobile-gallery-390.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 141588,
+      "sha256": "f8cef2126550f99bd505f995f4084ed6be69d26cd9db401a262fddd72f8a6659"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-pending-f-3ae0c-I-local-fallback-provenance/mock-pending-previous-result.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 195362,
+      "sha256": "6fa15d757ffdefd1ebc351c4a00a40d70d1f7b7671db11f87ca93dafd4312167"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-rapid-exp-9e077-prevent-duplicate-downloads/locked-revision-youtube.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 113737,
+      "sha256": "3b16dfda8266d1fcc7bedcc551b9b2eba2f145b9c2647fdde3a152597003a71d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/css-magnification-200-percent.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 371995,
+      "sha256": "8a041a3b30279c4451fea6f86e1126c471cb788a6c8b1327fbb2252d81a03b91"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/mobile-creation-open-320.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 157591,
+      "sha256": "c92510a789484c66bed4dffd97b0e80cf8455cec389ff578f5308b6a91b6b989"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/responsive-measurements.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 2964,
+      "sha256": "70a93d7938f179fd3ffa0a1d91246d76ed8fd7a05bf4fd8bf728158bcc9445f8"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1024x768.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 189594,
+      "sha256": "61c6710dcd5981e171e7d5f2585920b282cca57856feedbd43ab7632b4455f40"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1280x720.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 224114,
+      "sha256": "6d7cf4956a4e4dd404886cf7acf909c2f0529e0c99cebc54d5cbe143b516abb9"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1366x768.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 240220,
+      "sha256": "2efd5ec81bd4a974bbe4185f7d1e2a5006f2ae53c3b1694d2109d107e8ad01cc"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-1440x900.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 255238,
+      "sha256": "cb89742929428cfdeb973a6ee6f5c7715f8086449f0d06041d87515840154cd3"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-320x844.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 116698,
+      "sha256": "3e6367de1b7796ea4cfc690d589afe4890a484dc7b91ac3b483dcd55801e9b64"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-390x844.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 141588,
+      "sha256": "f8cef2126550f99bd505f995f4084ed6be69d26cd9db401a262fddd72f8a6659"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/studio-workspace-responsiv-fea0e-llapsed-control-persistence/studio-768x1024.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 140021,
+      "sha256": "a8296dcf2eda9c05f6c8ff230bf9d8bbff178e7fc8f96b95de43be44041ce188"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-embedded-fonts.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 592268,
+      "sha256": "3b08d40950ab76862499f86755209133ae8d2810fde00acb4506a7572b2d6ba8"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 86010,
+      "sha256": "95c7efff95d798f55817688b09d20482f326179df0f9319a26baef8f10b55199"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-native-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 51460,
+      "sha256": "4bd85ddf5223db46668f1efc5b42fe69311dc0dcb5e07d50699684a0a7395016"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-offline-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 51460,
+      "sha256": "896bca68c78a893910ff53b638f73afd3dfee293ca4c8174dff09fcc67f74997"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/bold-street-painted-before-glyph-query.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 22960,
+      "sha256": "32a88ebac49f04a1f3f852767b05eb31b901665160df7f7ed3b6f9d7735f8396"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-bold-street-act-cd898--and-native-font-appearance/glyph-evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 558,
+      "sha256": "9a1ff426116b717b0979441142eff8610ee2eeae08e22aa3215f88085e8074b0"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-embedded-fonts.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 589505,
+      "sha256": "fe01439d6b719ee78324ff77d1127432220426e7f500d52a3af4df0fdc442f0f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 113464,
+      "sha256": "e80bb57026bc48deae97ad3a97ed3a562f0ed9efd246f560285a505291283575"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-native-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 78603,
+      "sha256": "f2254df784af2c92191b06b52a0e0e9f8ac3c65a1bdb5112cbb63564319ada0c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-offline-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 78597,
+      "sha256": "6c485a54cdefd75cb647966167dd3198aad651f80db2889061b8f685630cc76c"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/festive-pop-painted-before-glyph-query.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 33656,
+      "sha256": "c8a3a0aa03f7cd5ef3a26ee3a6b9e5e7de8397060fa979cd69a74f8952553dda"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-festive-pop-act-025ab--and-native-font-appearance/glyph-evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 926,
+      "sha256": "1b0fe4498c4e84af9fbafdf24fb13d9c206e84bb00bcf2de4a406d82c0256088"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/glyph-evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 604,
+      "sha256": "56d163e5cca4878571f5c71f6ff3a2ee1c7fb9f77fe077e10351a8807566730e"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-embedded-fonts.html",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 589146,
+      "sha256": "0ea4e69ce429e02a1a396d0e854a5891f1eb1764a14fa40821457ea929a7662d"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 108361,
+      "sha256": "5ee2c98fcdb7e90095fbde5d7f606633aea98e1a29a4f8fe25583e9ad2580346"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-native-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 73475,
+      "sha256": "7f7850ca85c9ba8a6c6f0a0811627865d7b71769f71089b13370fcf886b7c85b"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-offline-glyphs.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 73493,
+      "sha256": "01754d100d9ae4c10e822146015364b3fb484af3c9f8028096865256c47ad2bd"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-minimal-swiss-a-fc736--and-native-font-appearance/minimal-swiss-painted-before-glyph-query.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 30330,
+      "sha256": "16ec027854d52fc28872bd3125bfea80243a3fc96cbd408ff12f3ff17e6ab902"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-unsupported-scr-1af9a-xplicit-system-font-warning/system-fallback-evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 574,
+      "sha256": "b61ef0c0a7cd15f806c7ae1d5a3c54f103fd0d952c1f4e99833ebd1639caf614"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-export.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 96837,
+      "sha256": "b6369a431656b1ea907910adffebab557eee8105ed8b440b60663bd98bdaa89a"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/typography-unsupported-scr-1af9a-xplicit-system-font-warning/unsupported-script-native.png",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 26429,
+      "sha256": "00dc60c4af2d4c82beaa8986b220c70cab4f3b98d1abea431ca0cc27e764598f"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/validation-investigation-s-4a93d-tion-of-rejected-live-plans/after.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 22880,
+      "sha256": "7f8b641ce215aa4d88c084d1a683ce6aac2965b8ee11cd114e813806cbefc1ca"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12/validation-investigation-s-56834-cal-envelopes-remain-intact/mocked-engine-evidence.json",
+      "kind": "Quota-free regression evidence; actual local/manual exports, explicit v1 examples, retained M1 replays and mocks labelled by source test",
+      "bytes": 12362,
+      "sha256": "2700b2a709020cbc19ccdd5bac4253f54b44f6abe1582e36783c7f0b5bd3d01c"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/.last-run.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-05889--versus-vetted-static-trial/native-camera-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 105307,
+      "sha256": "877a0134974e162c206091197622f7ceae2c973ea81862654675c8ab21d7fb38"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-05889--versus-vetted-static-trial/native-camera-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 85940,
+      "sha256": "40a2579ba4a2b85613e9f97321097523c3ee86c0dffe600c02705f391cf181af"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-05889--versus-vetted-static-trial/trial-camera-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 105604,
+      "sha256": "6ab93c796679f6b23425e6097cb2655ede9687adbb04def7da1747c6eaa38cc1"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-05889--versus-vetted-static-trial/trial-camera-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 85153,
+      "sha256": "1a233dc44850a01de5a195c8158933f5a1fe6e5a7479056a99377dff72eee6a3"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-05889--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2334,
+      "sha256": "4aac43b28d5b9286668dfa6c37feaf10917e76a54e0a5f288a7c73c05d62c1e8"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-a7e48--versus-vetted-static-trial/native-camera-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 100019,
+      "sha256": "2d0c8007ef4fb4cfbbff150c78c5a990d42f135d57c8742f129f581344d39029"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-a7e48--versus-vetted-static-trial/native-camera-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 82727,
+      "sha256": "cfe5a8382f4fe5084e07f0b9b722391b1a8ae1cd77a47742bf7bb2f2a15485f0"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-a7e48--versus-vetted-static-trial/trial-camera-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 95286,
+      "sha256": "5812fbc7a8555e34fa405879dcf72a18d651aa4834f86052bb937abf016752c3"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-a7e48--versus-vetted-static-trial/trial-camera-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 77904,
+      "sha256": "a397573d999ff5c3f1d2c24090cef56d5016377a15ce9ef7e4ac2e87214bd757"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-a7e48--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2346,
+      "sha256": "5a315269114ffbc28b1b8a902be18810aba51fc5844236c33a056301597e0a15"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-d3ce9--versus-vetted-static-trial/native-camera-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 115151,
+      "sha256": "5ad2faa799c2b9cb6e999ede694a2ad9a8b54a8c5104f9a81b4db24d41f0d757"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-d3ce9--versus-vetted-static-trial/native-camera-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 101146,
+      "sha256": "5b9bfb28c627ada7e685d89dc60f41aea88915042ae625fe9a37dd00dd839e1c"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-d3ce9--versus-vetted-static-trial/trial-camera-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 101350,
+      "sha256": "dd00ce85e89b826d2876ad43e8b55109ce6a4d48fd78eb4044d8c7352ab6527f"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-d3ce9--versus-vetted-static-trial/trial-camera-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 89782,
+      "sha256": "d88da32511728477b06ea22a6552ef4fcd13628954871a3a76985a2a395313ab"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-camer-d3ce9--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2336,
+      "sha256": "c1dc60b8462d3d165b0353b6190815120dfc76780ed5b40b8568487cd32ec855"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-29c2a--versus-vetted-static-trial/native-device-laptop-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 103761,
+      "sha256": "e82068a6b04a71082c58027ece01985dc3a4c8c702b22e0f81fe9d9cc1b42b0e"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-29c2a--versus-vetted-static-trial/native-device-laptop-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 85026,
+      "sha256": "227e5fa9d12725d2105177af7081ace6f25de4e1c7362a7512e839334ce5e272"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-29c2a--versus-vetted-static-trial/trial-device-laptop-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 91282,
+      "sha256": "3c021df9c40880de722fa7b30bc02b0dafc58647c2a1cfbe80a5cfb7c4b8b249"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-29c2a--versus-vetted-static-trial/trial-device-laptop-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 74024,
+      "sha256": "1f6364aff187349c9083db7917efc6e309827583c6c18bc9057b6878efc93f46"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-29c2a--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2378,
+      "sha256": "8bc7ec1e43f8cdf4f98f1b4faff0454f2ead0966fa379b905dfef5a9acddbb3c"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d5ed2--versus-vetted-static-trial/native-device-laptop-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 104229,
+      "sha256": "4e55564242da755c969b5ee1c62ddde8ce7e3cbaedc6cae09be37c812a5af9d8"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d5ed2--versus-vetted-static-trial/native-device-laptop-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 85098,
+      "sha256": "2f1c16bbf2a0bf6f4521c134fa18a0d2752c48e1bd725b411928b1a33ec31d67"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d5ed2--versus-vetted-static-trial/trial-device-laptop-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 96612,
+      "sha256": "6a438285122b4a86f7644cccf269093b85a5e7c4a687eb7bd57db82db3790b61"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d5ed2--versus-vetted-static-trial/trial-device-laptop-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 78702,
+      "sha256": "9f0e0f55170a914b316b4bb0cfc527ed08b96d61e2e2d72f54c4684e3a909285"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d5ed2--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2366,
+      "sha256": "8e7193a78b11f6667f320d12895f27dc0dcc11f0437b01e671a3049e409adb2d"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d9982--versus-vetted-static-trial/native-device-laptop-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 127308,
+      "sha256": "f788f43c8d0636c9bed1e9f42cc1c014a2f2e8cf66465d3b724288e2a53a280a"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d9982--versus-vetted-static-trial/native-device-laptop-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 101770,
+      "sha256": "6889069d58e852361cb8e9558639a58d41cfde9878474dd15aca35978273bd70"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d9982--versus-vetted-static-trial/trial-device-laptop-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 104893,
+      "sha256": "dc71bbcd0d1e3bd2025692b18280a0a499cbb480708dd9ab3eddf53cfc503246"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d9982--versus-vetted-static-trial/trial-device-laptop-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 84830,
+      "sha256": "ba8a89be4caceed32ddfe91f239ebb89fcb5d2a6df8993875cec0943e38e0826"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-devic-d9982--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2368,
+      "sha256": "8ef1f294692158caad30853d3bac3d9ba78cf701374767cadc72b5f627a68ef7"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-06f82--versus-vetted-static-trial/native-music-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 98786,
+      "sha256": "337e2a232a0f2bd28cf2a601701a2021fe52aa9462173ce6e5b92fb671144f64"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-06f82--versus-vetted-static-trial/native-music-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 80752,
+      "sha256": "8753952f6f52e1218a79faeffbfe1c4b8a7234017a4dd890ac42c27f5f04b3cd"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-06f82--versus-vetted-static-trial/trial-music-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 76910,
+      "sha256": "bf2861484119eb20057dd111e0244c38e57abcefc96a83a9c4947f18f40231d8"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-06f82--versus-vetted-static-trial/trial-music-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 63518,
+      "sha256": "9806ee3262bf9586aea0d7c0aab8247ff918b198c4dbaac08483ecc084f02c09"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-06f82--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2328,
+      "sha256": "8618876b77f0ce3c240fd4516ea05357ef1007662e2c351f84cb5ca6a577fcf4"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-58c65--versus-vetted-static-trial/native-music-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 116451,
+      "sha256": "e5531330080ede5b210123d8070cadb5a5379b56d63ae2bee036c840ed7e3fbb"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-58c65--versus-vetted-static-trial/native-music-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 101020,
+      "sha256": "a74f0c5f3ca03e4ae57674ebb83eed51b96922b5a4119ffc58a172cf15b34562"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-58c65--versus-vetted-static-trial/trial-music-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 91992,
+      "sha256": "5df1de631c94c86f1721c21e4e6f3ddf6b5e0e184c8b0c14572188e93c66982f"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-58c65--versus-vetted-static-trial/trial-music-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 81281,
+      "sha256": "b5de8f9de53582e51b52bfb3ff0fbdd07e7854d261f6db57fd8d8a9c7599300e"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-58c65--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2316,
+      "sha256": "5aa23f386ba7c9d2c86803937ce632a3ecc2e84433134a5a77f72645be982bd7"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-cf73a--versus-vetted-static-trial/native-music-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 108920,
+      "sha256": "8263835a8b0a867ba6c36d7773c18456992709cb697561eec9c06d9f7baa544a"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-cf73a--versus-vetted-static-trial/native-music-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 87935,
+      "sha256": "729dd0e09f7afa45e804e52ea3772043238f4ff6a7e63b2aba5b7df32ed6b16b"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-cf73a--versus-vetted-static-trial/trial-music-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 94012,
+      "sha256": "ad603ae1775a7924e869c49ec1543135c7bfe31a8e453f90aed5b76f84499c59"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-cf73a--versus-vetted-static-trial/trial-music-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 75967,
+      "sha256": "1cc63ede1845f1803774fb7a4c52e7ff1665421993dbc9efec40936151811b20"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-music-cf73a--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2324,
+      "sha256": "e04014a26dbc2f0f820a2e38fea3a72d3e7e4d22664a57b86c7b0308483cc4ae"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-2a746--versus-vetted-static-trial/native-perfume-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 96457,
+      "sha256": "721d653839a11da11ee2b6fd91cd08188b62b5285d6579b31d674919a803c126"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-2a746--versus-vetted-static-trial/native-perfume-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 91263,
+      "sha256": "b2c4d0290211499fa70f48a9c5d76deb63c0b49b0e154dec29f8a5a96902e69e"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-2a746--versus-vetted-static-trial/trial-perfume-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 87824,
+      "sha256": "01186d63aa52c53ebacf4104c5b0e343eb71cdc5b9c0819713336147401604e4"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-2a746--versus-vetted-static-trial/trial-perfume-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 80375,
+      "sha256": "22c5edadc265c25b7cbbd412a829a86cc4f39edd452b27824899f2a443b95c9a"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-2a746--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2367,
+      "sha256": "7ad5766c09a294043706f27957f68647f4c8cf0046c6034be9655a35eaefe594"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-b8ea5--versus-vetted-static-trial/native-perfume-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 117437,
+      "sha256": "c99cdab85711b643f49efb9626e6b9281c45c23700344ce061f413e7f3bfae30"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-b8ea5--versus-vetted-static-trial/native-perfume-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 99297,
+      "sha256": "dcc2d57dd2b085c9472c22389a723f520abb21c527006b1439ba5564cf604a85"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-b8ea5--versus-vetted-static-trial/trial-perfume-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 97563,
+      "sha256": "9fed4c20ab1daa9178e082b011fdcdbcb6ff89a5e8da365c10b45f3e03d0bbe4"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-b8ea5--versus-vetted-static-trial/trial-perfume-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 83469,
+      "sha256": "8e988bf9b47b5290eb218490f2154ef848d4361beb60bf2c5cf4c07dc718438f"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-b8ea5--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2355,
+      "sha256": "9f3a8f72fab11fcdaef2077ec977940d7c326a18857caf872ae71ce35b876715"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-ba871--versus-vetted-static-trial/native-perfume-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 104163,
+      "sha256": "38bae5ef27369a04693653e2e591ba9d7ddc19a0cbf99cb6c266ce8be347f7ae"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-ba871--versus-vetted-static-trial/native-perfume-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 84122,
+      "sha256": "65b6f8f645da2ce3129816722133d9388fb2ddd5ff6686985a44f0b73426249e"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-ba871--versus-vetted-static-trial/trial-perfume-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 86108,
+      "sha256": "5f6b25452ce2ed8759cd1c2d74bd0f07909ad080095dda986008a3eb884a0807"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-ba871--versus-vetted-static-trial/trial-perfume-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 68850,
+      "sha256": "f7d6a51444dfa2a79c056cbbd6fb82dbd8d922323e40b2a3fd7a8d2787bfbf9e"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-perfu-ba871--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2367,
+      "sha256": "f075eb210a903fe958c9f93b9a655662d717b5f1e760d5a5df0bf1c7a50ecad7"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-0f554--versus-vetted-static-trial/native-recycle-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 123771,
+      "sha256": "cfd9dcfeecf74f4e22f9cf2b477e2bbacb217b09b19a6b7a0bd77c7d991d1fa5"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-0f554--versus-vetted-static-trial/native-recycle-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 100523,
+      "sha256": "6e3c1ac27b8ef11da22e07b8423e1ed51a249c27ac50900d33d66ff50ca8ce1c"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-0f554--versus-vetted-static-trial/trial-recycle-minimal-swiss-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 121300,
+      "sha256": "bf0f87f9c5cb8f308ebd5a45240dfd40fc33d9fc7496b70a20afaa492b563ebd"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-0f554--versus-vetted-static-trial/trial-recycle-minimal-swiss-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 97711,
+      "sha256": "38bf6c129216211a11f06f03d9516a74bac6d2415a2b6549b4202c98c18d7bad"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-0f554--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2373,
+      "sha256": "d744bbe658af75aa34747a628651b9d22d0d78249298b659e7f5d3b776fc85a7"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-26660--versus-vetted-static-trial/native-recycle-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 129798,
+      "sha256": "9b590b11ea5a4c7dc77ba0625abd5e5f7535dffcf773c82d7fdc0b9eea246f3f"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-26660--versus-vetted-static-trial/native-recycle-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 109836,
+      "sha256": "c454da207d9ac8c58953ce52d9d481464ec88e62c32597e9c763f4176840c8d3"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-26660--versus-vetted-static-trial/trial-recycle-festive-pop-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 120553,
+      "sha256": "aa56659d2253557a973409972b3e572bb5eb99311c1de0490d718c23f6742e20"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-26660--versus-vetted-static-trial/trial-recycle-festive-pop-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 102082,
+      "sha256": "a1808d32ed57000779b9bf4c62b21b6e47167f38c0e01358d84dcd05127c7c08"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-26660--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2365,
+      "sha256": "36ccd08d816c1eaa3870895931e1d24539c21b5e8c3eb5106adb573c1e0b96a8"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-e942b--versus-vetted-static-trial/native-recycle-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 118673,
+      "sha256": "c73c7b2ce31c8a45a2bf2f255e0deeff1bc7834af4ff152b1f4058299a7380b9"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-e942b--versus-vetted-static-trial/native-recycle-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 96797,
+      "sha256": "4fd4a673ae11ba63ebf63476459130044be2c387b68de35f698893687b70006d"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-e942b--versus-vetted-static-trial/trial-recycle-bold-street-instagram-square.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 110359,
+      "sha256": "d0d3068aad45f911efcf4fe52e3daf0e5a320e333b1da9b9678cf978f3f32eca"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-e942b--versus-vetted-static-trial/trial-recycle-bold-street-youtube-thumbnail.png",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 88433,
+      "sha256": "d8d8651a9bdabe976857c2ffc20dc557bffae287d5e9a86d188c062f0f263524"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01/m4-tabler-controlled-recyc-e942b--versus-vetted-static-trial/trial.json",
+      "kind": "Isolated whitelisted DOM asset trial/native comparison; not a generated product spec",
+      "bytes": 2377,
+      "sha256": "162deb98b0d76188a4f661f69fb9de37cb4be478d6b71c052f37244effdeea7d"
+    },
+    {
+      "file": "test-results/m4-edge-01/.last-run.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-contradict-59b43-y-and-honest-layout-outcome/contradictory-venues-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 244800,
+      "sha256": "535dfb5df28ee2a8a494233d9bbef0d4b130d6fd6a6b5d51365b235b4d178d12"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-contradict-59b43-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3301,
+      "sha256": "e6007183f1602273bbd8f58c9f1ef20115e962cecf73ea0834899ad22219ac2d"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-corrected--9d8bf-y-and-honest-layout-outcome/corrected-venue-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 238847,
+      "sha256": "71f8d2182f00af62ce73abde956602d4f5242d9bf08a3aafae7b84d0ac13f762"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-corrected--9d8bf-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3354,
+      "sha256": "85762c3a00f9bd345f7cd56d22578da877eae43ec795ba3a13894b092f14fc3a"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-long-dense-65bd0-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3837,
+      "sha256": "bfe4799b892fd0c1d515f3ce802257ebb94fcbe823373d9d74334644290da570"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-long-dense-65bd0-y-and-honest-layout-outcome/long-dense-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 269771,
+      "sha256": "4ca11c46d351d84082016fc6e5242dcea774c5712f75508b2b2c74485ff24f68"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-negative-f-53dac-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3397,
+      "sha256": "379713ef17ccfacc48d4f0aa151a5324de98942884b806667168c08fa7decdf2"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-negative-f-53dac-y-and-honest-layout-outcome/negative-facts-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 200665,
+      "sha256": "ed068742688feb7e62158d63a5db7544980c63b4d24b5ee5c9fffe616462e16d"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-subjectles-896a2-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 996,
+      "sha256": "71c4be8fc4385587d37e8f16e503ca69f250a545433989a02118688d7666f797"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unbroken-u-d7708-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3531,
+      "sha256": "c16ca64a18433b14fabf281f0912cd4b70402fef61823ba20076ccd77dd08d03"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unbroken-u-d7708-y-and-honest-layout-outcome/unbroken-url-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 249902,
+      "sha256": "6543932dcad82a202c4c562005d74f98d50f2c9d18954511a36dc46d9fdc32ab"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unknown-to-d8127-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3135,
+      "sha256": "587931995e3f79a1f02b8930c3bc31c3e2735907466ca827cdce9990aabd41fa"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unknown-to-d8127-y-and-honest-layout-outcome/unknown-topic-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 177268,
+      "sha256": "4e5ff25f101e165e6b9cb52bfdec14069866b16bde16fdb0f20bdcee43ad8fb7"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unsafe-as--d1f4c-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3362,
+      "sha256": "e682b07ef66dbca9c4c0e2571edf7cf6e7d125bc411a47d9ea5407f7a6aa4e6c"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unsafe-as--d1f4c-y-and-honest-layout-outcome/unsafe-as-data-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 187783,
+      "sha256": "9f3cb88b17b61f543910aba8af53bdc25e32d10ff0cc4b4b8e9fa7ae0b6ddc47"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unsupporte-36afb-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3337,
+      "sha256": "fdc5edfd3c33b3106bba3cfb98096e6597c1da5dcab49d7b81266ee615fbc250"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unsupporte-36afb-y-and-honest-layout-outcome/unsupported-script-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 153096,
+      "sha256": "e0df8efe28f40d05ca01338c8d96e6af3b381b1f3cb40ba8f64320ef027f97b2"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unusual-na-68771-y-and-honest-layout-outcome/edge.json",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 3528,
+      "sha256": "170cf9e7edf6e7d0e25cc19fa334b0f2ae8b79b7775396bdc1a9fb9e7db0e6c3"
+    },
+    {
+      "file": "test-results/m4-edge-01/m4-edge-M4-edge-unusual-na-68771-y-and-honest-layout-outcome/unusual-names-currency-url-actual-studio.png",
+      "kind": "Actual local HTTP/browser edge fixtures; no live model",
+      "bytes": 235840,
+      "sha256": "60212d1463675cba66ca73e786d78b33008013aac89dd84a583caff5f6bc12ee"
+    },
+    {
+      "file": "test-results/m4-comparisons-source-final-04/instagram-portrait.png",
+      "kind": "Before/after contact sheet composed solely from actual native PNG downloads",
+      "bytes": 366036,
+      "sha256": "e44158808399b768af6383ffdca20c2edca826e94fd92e5cea7e48ae3fbcde2d"
+    },
+    {
+      "file": "test-results/m4-comparisons-source-final-04/instagram-square.png",
+      "kind": "Before/after contact sheet composed solely from actual native PNG downloads",
+      "bytes": 319458,
+      "sha256": "693e796ab870cf341b321a9c8ec752c78e885722243108687e2fd118e3c545cf"
+    },
+    {
+      "file": "test-results/m4-comparisons-source-final-04/linkedin-landscape.png",
+      "kind": "Before/after contact sheet composed solely from actual native PNG downloads",
+      "bytes": 196848,
+      "sha256": "02f24fda240fd13f1ce2e6ef13b7c13550510fe6b95e1cca87698635fcdb84a2"
+    },
+    {
+      "file": "test-results/m4-comparisons-source-final-04/youtube-thumbnail.png",
+      "kind": "Before/after contact sheet composed solely from actual native PNG downloads",
+      "bytes": 219408,
+      "sha256": "00bbb36ac4ec40085e7c41299e71790c8b63ff97e91802f99cfd252aebba71f7"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/comparison/instagram-square.png",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 346485,
+      "sha256": "dce69e2afbdb70897d1858434b5e5939d04705fa26a5741f9508aed045128494"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/comparison/youtube-thumbnail.png",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 236561,
+      "sha256": "69fae88abac6e80ff34dff4065bb2d308f9240ec7d013eb2fe1268579f7e9ce9"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/integrity.json",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 1646,
+      "sha256": "914352ead83f929b820709ae621afaba756e4e806f818fbae5438e4b1e927e33"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/camera.svg",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 541,
+      "sha256": "a87eae819b9c5a98b07e635c5a52fd2aaed392000ce62bb8724cd5f5baba4bc7"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/device-laptop.svg",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 473,
+      "sha256": "2a0fffa65ddefd1017cbd7bd71675d72b5ca0748176cc39cda17600108665ed9"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/LICENSE",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 1073,
+      "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/music.svg",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 519,
+      "sha256": "afd2fe98e580e1d4e9bf45d88165894b0e683e9141f63c312585d778b73d02c5"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/perfume.svg",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 572,
+      "sha256": "35e8cd398a375e3d0b44a10b030dcf49f4209a3575618666b37967497b673e18"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source/recycle.svg",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 684,
+      "sha256": "0cde16170a69b23f1737e74b7cb4588d71985243ac57cb8e6e7242d6020eb2af"
+    },
+    {
+      "file": "test-results/m4-tabler-trial/source-revision.json",
+      "kind": "Exact five-file trial acquisition, complete MIT license, integrity metadata or labelled comparison sheet; only camera retained in product",
+      "bytes": 463,
+      "sha256": "59dac233bbe176edaed8932c2360cd7c87bbccd16be8cf152aa810638419b5e2"
+    },
+    {
+      "file": "test-results/m4-guard-before-01/m4-engine-negative-facts-a-dc516-lently-reverse-or-disappear/fact-guard-findings.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 724,
+      "sha256": "2326e82fbe3e06602b568e6a809a528e407a8e8a53c406fe14012b8dc51dd699"
+    },
+    {
+      "file": "test-results/m4-focused-02/legacy-pixel-investigation.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 421,
+      "sha256": "0b375cf1fadbedc5aa20473c6425aefad04980e80b81dc3e7bea2eb906d8e1e4"
+    },
+    {
+      "file": "test-results/m4-focused-02/legacy-swiss-linkedin-investigation.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 428,
+      "sha256": "f5220ef3e925cda010b979e281f0b02e8ca7805863366a5d64a90a5fe3a5c4a4"
+    },
+    {
+      "file": "test-results/m4-focused-02/m4-engine-negative-facts-a-dc516-lently-reverse-or-disappear/fact-guard-findings.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 865,
+      "sha256": "10fef6f2588810dc5824b4478c0b880329649c15766824ed83e55664281c22d9"
+    },
+    {
+      "file": "test-results/m4-axe-investigation-07/axe.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 428001,
+      "sha256": "366f4db654c59465194c062366ef19c06c1e3c7971d120f858383e3355117c77"
+    },
+    {
+      "file": "test-results/m4-axe-investigation-07/geometry.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 1026,
+      "sha256": "9b261779b669cbc39e3a4b97c179efc8bc1a76199ec55953d8d048d8e56b3324"
+    },
+    {
+      "file": "test-results/m4-axe-investigation-09/axe.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 428001,
+      "sha256": "e4c0ee695c924e7065868ca8a27399e2627a702cfab895df11ba8ba382b2ee29"
+    },
+    {
+      "file": "test-results/m4-axe-investigation-09/geometry.json",
+      "kind": "Original pre-fix/investigation findings, not final passing evidence",
+      "bytes": 3521,
+      "sha256": "c3e8e7903da2209bc00ea3609a53cdae3bf2215d0258dddb41e75453bf22fa4e"
+    },
+    {
+      "file": "test-results/m4-accepted-source-lint.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 82,
+      "sha256": "576e8bd91cd313abe9eced0de9c8e2c99b866616c406f13f659736b881ef0ae5"
+    },
+    {
+      "file": "test-results/m4-accepted-source-typecheck.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 104,
+      "sha256": "2bd5ba4309ef925924a431e0ecaeeb8a22c44155bb7149437571d82448b173f7"
+    },
+    {
+      "file": "test-results/m4-accepted-source-build.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 1714,
+      "sha256": "93060aaa40369247cc72092603698a00d503dd2f861732db70c7d87bda20afbf"
+    },
+    {
+      "file": "test-results/m4-full-source-final-12.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 23066,
+      "sha256": "43da5670d192fa6ef4df5a445d19198a5554ff3c77db51bae2987950ef53478a"
+    },
+    {
+      "file": "test-results/m4-artwork-source-final-04.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 3430,
+      "sha256": "ddfc2b8f2877c3c0e0ea1572bb8199217571e691a8a7695bd6da3af81d246ff9"
+    },
+    {
+      "file": "test-results/m4-full-candidate-11.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 23068,
+      "sha256": "9e0e0e0e7789ff630f2a0d448f7af08446eb6a83921ba26fd33ab020226a163a"
+    },
+    {
+      "file": "test-results/m4-artwork-candidate-final-03.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 3430,
+      "sha256": "f8768686e088bda017a80d6ba2805e6d0626dfb82af5fa42617171b3b66dd355"
+    },
+    {
+      "file": "test-results/m4-tabler-comparison-01.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 4702,
+      "sha256": "42fa780a83b9a2c9b6775b2926f8a8b253794bde49052969dfacceb3ac3b0982"
+    },
+    {
+      "file": "test-results/m4-edge-01.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 3586,
+      "sha256": "ffb2d71579c9269879b59f908cdadd60bc91a2843a8075eb7baa33dae1a955b7"
+    },
+    {
+      "file": "test-results/m4-m3-baseline-01.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 3124,
+      "sha256": "72884dbec074448a48c5837b85ba5bc86a5c51a6a7fbab0cf6fc2d3181db51c2"
+    },
+    {
+      "file": "test-results/m4-guard-before-01.log",
+      "kind": "Historical failed/mixed run log preserved as a finding",
+      "bytes": 4636,
+      "sha256": "00e9429ab7a95820262bdcbbf9fe956c732ee92b4708c4c11f939a488afc107a"
+    },
+    {
+      "file": "test-results/m4-focused-02.log",
+      "kind": "Historical failed/mixed run log preserved as a finding",
+      "bytes": 7526,
+      "sha256": "c8772c90ae60a8f2c8a59b80f836460cd9debb008d8e8315f07666c83c56c18c"
+    },
+    {
+      "file": "test-results/m4-focused-03.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 2528,
+      "sha256": "2c7b499742ac5673a7b300a839dc68d381755dd282b541b458e365beb4e8146e"
+    },
+    {
+      "file": "test-results/m4-focused-04.log",
+      "kind": "Historical failed/mixed run log preserved as a finding",
+      "bytes": 7932,
+      "sha256": "c322fe534345a507ce735d52bd07ea9bc3f4aa66d4f58342adebcceaabd02e61"
+    },
+    {
+      "file": "test-results/m4-geometry-05.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 1400,
+      "sha256": "f8958d8219565baa251a4ab8d4f78c3f086b12b1a9295ab8e33e82b175a2ee65"
+    },
+    {
+      "file": "test-results/m4-full-final-06.log",
+      "kind": "Historical failed/mixed run log preserved as a finding",
+      "bytes": 34596,
+      "sha256": "dbf538cf607212a855486937d8834a01141c648fbb8dafd0cfdc3fb3745d440e"
+    },
+    {
+      "file": "test-results/m4-ui-fitting-08.log",
+      "kind": "Historical failed/mixed run log preserved as a finding",
+      "bytes": 60850,
+      "sha256": "36c472a84aba786517c3380758a9820f545307edd986b5490764d737aa2d6b61"
+    },
+    {
+      "file": "test-results/m4-headline-axe-10.log",
+      "kind": "Executed quota-free command log; original PowerShell encoding retained",
+      "bytes": 2126,
+      "sha256": "d7a6aebe56be4de203e46f07e7415745236acd7318e34fc187dff3c713113476"
+    }
+  ]
+}

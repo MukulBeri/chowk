@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "provenance": "deterministic-fallback",
+  "campaign": {
+    "topic": "Campus robotics workshop for students.",
+    "eyebrow": "For students · 12 teams",
+    "headline": "Campus robotics workshop",
+    "supportingText": "26 November 2026 at 18:30 IST.\nVenue: Lab A; Entry ₹150.\nRegister at https://example.org/workshop."
+  },
+  "taste": "minimal-swiss",
+  "palette": {
+    "background": "#dcecf0",
+    "ink": "#163438",
+    "accent": "#00616b",
+    "secondary": "#bcd9dd"
+  },
+  "typography": {
+    "family": "neutral-sans",
+    "headlineScale": 0.85,
+    "case": "sentence"
+  },
+  "composition": {
+    "layout": "swiss-grid",
+    "spacing": 80
+  },
+  "decoration": {
+    "motif": "orbit",
+    "density": 1,
+    "illustration": "abstract"
+  },
+  "rationale": "Minimal Swiss: swiss grid with swiss ice colours and robot visuals, selected from subject and information density. Publishable copy retained; recognized instructions stay in metadata. Formats resolve their own text/visual regions and measured corrections preserve all supplied copy.",
+  "artDirection": {
+    "variant": "swiss-grid",
+    "palette": "swiss-ice",
+    "visual": "robot",
+    "emphasis": "display",
+    "information": "grid",
+    "adaptation": "balanced",
+    "treatment": "subject-led"
+  }
+}
