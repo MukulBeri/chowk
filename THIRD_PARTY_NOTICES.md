@@ -1,5 +1,11 @@
 # Third-party software, assets and notices
 
+## M11-B release qualification
+
+The package/root lock names change to `chowk` only; dependency versions, integrity/resolution entries and installed packages are unchanged. Historical inventory hashes describe their original lockfile bytes, not the renamed root metadata. Original project rights are separately stated in [RIGHTS.md](RIGHTS.md); no permissive original-code license is granted.
+
+[Native qualification](docs/licenses/native/QUALIFICATION.json) narrows the remaining target questions using accepted M5-C/M5-D evidence and current framework/worker boundaries. Verbatim [GPLv3](docs/licenses/native/GPL-3.0.txt) and [LGPLv3](docs/licenses/native/LGPL-3.0.txt) texts are reused from the hash-verified retained preparation, not fetched or substituted for component-specific notices/source/relinking requirements. They do not relicense this application or establish that a native binary is conveyed to browser users. Existing license snapshots, font/Tabler notices and API/HTML notice delivery remain unchanged. Final target package composition and applicable native distribution fulfillment remain open; inspect the actual deployment before claiming clearance.
+
 ## Chowk M6-B/C interface assets
 
 The original owner-approved refined Chowk mark and primary/reversed wordmark come from the retained branding checkpoint, not a newly acquired third-party asset service. The wordmark is outlined from the existing OFL Anton font, as recorded in the original branding guidance. Existing Anton/Inter/Fredoka files, copyright notices and OFL texts remain unchanged and available through `/api/notices`; no new font is installed. The symbol-only SVG is byte-identical to the approved favicon source. The ICO and social metadata card are derived locally from these approved assets. Gallery WebP previews are proportionally resized, actual local-planner PNG outputs; no prototype illustrations or external imagery are presented as autonomous campaign results. Exact source/derived hashes and conversion method are recorded in the M6-B/C evidence and report. This does not establish trademark/domain or final target-distribution clearance. No repository license is changed.

@@ -1,5 +1,19 @@
 # Campaign APIs
 
+## Release origin and inference policy
+
+Configuration A uses the real local planner with external inference disabled. The documented localhost curl remains runnable. The owner-verified production origin is `https://chowk-studio.vercel.app`; it remains protected until separately authorized evaluator access. An anonymous Vercel login redirect is not a JSON/HTML response. Metadata defaults to this origin: omit `CHOWK_PRODUCTION_ORIGIN` or use exactly this value; a stale override fails the build. The old `https://yarc-create.vercel.app` domain remains assigned, but Projects storage is separate per origin and no transfer/import is implemented. Repository links now use [MukulBeri/chowk](https://github.com/MukulBeri/chowk). Endpoint paths, schema versions and `window.yarcCampaignReady` remain compatible. These local changes are not yet deployed.
+
+After protected target verification and separately approved evaluator access, the callable production integration is:
+
+```sh
+curl --fail-with-body https://chowk-studio.vercel.app/api/render \
+  -H 'Content-Type: application/json' \
+  --data '{"topic":"A neighborhood reading circle.","details":"Bring a book. No sales.","taste":"minimal-swiss","mode":"local","treatment":"creative-led"}'
+```
+
+Do not supply owner credentials or bypass links to make a shell example work. Public access remains an explicit gate; no production request was made for this documentation change.
+
 ## M8 additive manual specification fields
 
 Manual v3 exports/project records may contain `editing: {version:1, shared:{headline:{dx:1,fontScale:0.95}}, formats:{"instagram-portrait":{headline:{dx:2}}}}`. Offsets are percentages of the native canvas; size multipliers are relative to the generated regions. Per-format properties override shared properties. All rendering still uses the canonical renderer and quality checks. Existing generated specs omit this optional field; model-plan and HTTP input contracts are unchanged. This does not add an arbitrary-spec, asset-upload, project-storage or remote editing endpoint. Projects are IndexedDB records on the browser's current origin only.

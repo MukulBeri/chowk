@@ -1,5 +1,11 @@
 # Roadmap and engineering discipline
 
+M11-C naming closure: the existing repository/project have been renamed by the owner; https://chowk-studio.vercel.app is approved and assigned, and the old production domain remains. Local origin migration and release preparation do not deploy the candidate or migrate browser-local Projects. Next gates remain explicit push/protected deployment, actual target-native qualification, evaluator/public repository access and submission; no fresh inference is needed for Configuration A. Physical folder movement stays deferred. [Current closure](M11C_RELEASE_CLOSURE.md).
+
+## Submission path and current authorization
+
+Configuration A is owner-approved: release the genuine local planner without external inference. Bounded M7-L/M8 is accepted and locally committed at `388b241`; M11-B prepares presentation, metadata, naming and offline licensing qualifications without executing service changes. Preferred infrastructure names remain conditional on verified availability. Physical folder migration is deferred. Accounts/authentication, cloud storage/synchronization, multi-user collaboration and direct publishing remain post-submission workstreams. Protect the 26 November 2026 21:00 IST internal target and 23:59 IST official deadline; do not wait for promotional-credit correspondence. No further creative/editor expansion is authorized. Earlier gate snapshots below are dated context; current acceptance does not clear artistic, provider, native-distribution or public-release limits.
+
 ## M8 active scope and submission priority
 
 The owner authorizes bounded canonical element editing and dependable browser-local Projects now. [M7-L offline closure](M7L_OFFLINE_CLOSURE.md) corrects the style-as-copy defect and completes an injected-tested durable dispatcher; original defective evidence and the PowerShell policy failure remain historical. Installed Node provides a separately gated owner-local prompt without changing Windows policy. No fresh inference is authorized or executed. [M8 report](M8_REPORT.md) records implementation, actual tests and remaining limitations.

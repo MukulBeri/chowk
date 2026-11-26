@@ -1,70 +1,87 @@
 # Chowk — Put your idea on the wall.
 
-Chowk turns an idea into a visual campaign: choose a creative direction, explore supported compositions, refine the details and export for multiple platforms. **YARC Create was the working project name**; YARC is the fellowship organizer and Create is the challenge track. The repository, local directory and deployment names remain unchanged. Trademark/domain clearance is not established.
+Chowk is an independently directed project by Mukul Beri, developed with AI-assisted implementation, research, design exploration and testing.
 
-The integrated **M6-B/C frontend is an owner-review candidate**, not a new production deployment. Open `/` for the artwork-led homepage, `/create` for the actual studio, `/explore` for six curated local examples and `/docs` for product/API guidance. Homepage and example briefs transfer privately through one-shot session storage or transient memory; generation remains an explicit action. No brief appears in a URL. There is no Projects page, account, cloud save, collaboration, freeform editor or direct social publishing in this candidate. These are active planned workstreams, with separate gates, in [the roadmap](docs/ROADMAP.md).
+Turn a topic and visual taste into a coordinated HTML campaign. Explore local concepts, refine copy and composition, adjust supported elements, save projects in this browser, and export four native formats.
 
-[M6-A is owner-accepted](docs/M6A_ACCEPTANCE.md) as a bounded engineering foundation at `1972cbe`; the independent 68/100 artistic assessment is not excellence or a controlled comparison with the earlier sample. Original [implementation](docs/M6A_REPORT.md), [correction](docs/M6A_CORRECTION_REPORT.md) and [before/after evidence](test-results/m6a-correction-20261125-01/index.html) remain unchanged. The bounded live experiment produced zero accepted fresh plans; a later successful retained-response replay is quota-free. Local inference remains disabled.
+**Submission configuration: independent local planning, external inference disabled.** Accepted M7-L/M8 functionality is a local engineering checkpoint; it has not yet replaced the older [protected production baseline](https://chowk-studio.vercel.app). The owner verified that the new production domain is assigned to the existing project; [the previous address](https://yarc-create.vercel.app) remains assigned too. The existing [GitHub repository](https://github.com/MukulBeri/chowk) has been renamed and remains private. Public evaluator access, final target verification and distribution qualifications remain separate release gates. No fresh AI reliability or unconditional artistic acceptance is claimed.
 
-In the studio, **Planning approach → Creative-led · fact-led recipes** opts into the accepted engine. Standard remains the direct-entry default, and backend/API defaults are unchanged. Supported copy, palette, composition, visual, hierarchy, spacing and arrangement refinements are local. Focused and side-by-side previews use the same four canonical artboards and native exports. [M6-B/C report and review evidence](docs/M6BC_REPORT.md) document actual checks and limitations. Public/evaluator access, fresh inference reliability, production licensing and release readiness remain separate gates.
+## Create and refine
 
-[M4 acceptance](docs/M4_ACCEPTANCE.md) records formal owner acceptance, verified scope and remaining release gates. The original [focused correction](docs/M4_CORRECTION.md) and [live verification](docs/M4_LIVE_VERIFICATION.md) are preserved historical reports: three provider calls, zero accepted fresh Gemini plans and two fallback results; the subsequent correction made zero live calls. Acceptance includes this reliability limitation.
+1. Open the homepage or `/create`, enter a topic and optional public facts/preferences, then choose a taste. Generation is explicit; no brief is placed in a URL.
+2. Choose Standard or Creative-led. Creative-led separates recognized facts from instructions and offers deterministic editorial concepts. Composition alternatives rearrange a selected concept; formats adapt the same campaign.
+3. Refine applied copy, palette, composition, typography, spacing or artwork. Edit elements supports direct selection, bounded drag/resize, shared and per-format overrides, keyboard controls, Undo/Redo and reset. Public factual text cannot be hidden or silently discarded. This is an existing-element editor, not arbitrary layer authoring.
+4. Inspect the actual DesignSpec/rationale and measured checks. Download each native PNG, four-format portable HTML and matching JSON. Impossible copy or missing resources can refuse export instead of clipping.
+5. Use Local projects to explicitly save, reopen, rename, duplicate or delete a validated campaign. Image layers and format overrides are restored. Deletion requires confirmation; quota/conflict failures preserve the last saved version.
 
-[M4 report](docs/M4_REPORT.md) records actual before/after artwork, native exports, compatible v3 extensions, fact-guard findings, the selective asset trial and remaining limits. [Current actual M4 DesignSpec](docs/example-design-spec-m4.json) is a local-planner robotics fixture; earlier v1/v2/v3 examples remain valid.
+**Projects stay on this browser, device and origin.** They are not cloud-synchronized, encrypted or automatically backed up. Unsaved changes and undo history do not survive reload. Clearing site data/private browsing can remove saves. JSON/HTML are manual artwork backups; this release does not import project JSON or migrate storage to a new hostname. Private image rights remain unverified; local editing does not authorize publication.
 
-[M3 report](docs/M3_REPORT.md) contains the implemented workflows, actual artwork/screenshots, verification results and remaining review limitations.
+## Three tastes, four formats
 
-Historical identity/checkpoints: M0–M2 were accepted and synchronized at `e6d968f`; the former Create Studio M3 frontend at `e52258f`; M4 subsequently added subject-led artwork and public-copy safeguards. Current Chowk styling replaces that older interface direction, while historical reports and evidence retain their original identity, outcomes and scope. No public release is claimed.
+| Taste | What changes |
+|---|---|
+| Bold Street | Condensed Anton, strong uppercase hierarchy, assertive colour/strips and stacked or editorial compositions |
+| Minimal Swiss | Inter, disciplined grids and axes, restrained palettes and editorial spacing |
+| Festive Pop | Rounded Fredoka, bright palettes, playful framing, offset blocks and expressive rhythm |
 
-Turn a topic, optional facts/preferences and one of three tastes into a coordinated campaign. The model proposes a bounded creative plan; validated software renders four adapted formats. Inspect the JSON/rationale, edit copy, download native-size PNGs or portable HTML. AI and fallback are visibly distinguished.
+Every taste has supported composition/palette choices. The deterministic HTML/CSS/SVG renderer resolves format-specific geometry; it does not crop one portrait to every size.
 
-## Review locally
+| Platform | Native canvas | Ratio |
+|---|---|---|
+| Instagram portrait | 1080 × 1350 | 4:5 |
+| Instagram square | 1080 × 1080 | 1:1 |
+| YouTube thumbnail | 1280 × 720 | 16:9 |
+| LinkedIn landscape | 1910 × 1000 | 1.91:1 |
 
-The existing local server is at **http://localhost:3000**; the studio is **http://localhost:3000/create**. Reuse it. Fresh-checkout setup (not an instruction to reinstall already installed dependencies):
+Desktop previews are side by side; smaller screens stack them. Preview scaling never changes native exports. HTML embeds approved fonts and applicable notices and scrolls at native size offline. Geometry checks do not certify artistic excellence, factual truth, social-size legibility or universal browser fidelity.
+
+## Run locally
+
+Use Node 24.x and the existing installed toolchain. Browser tests use installed Google Chrome. For a fresh checkout only:
 
 ```powershell
 npm ci
-npm run dev
-```
-
-1. Start with `GEMINI_ENABLED=false` as in [the placeholder example](.env.example); no key is needed for fully functional local planning. PowerShell: `$env:GEMINI_ENABLED="false"; npm run dev` (or `npm run start` after building). Restart an existing server when its environment changes. The server requires exact `GEMINI_ENABLED=true` plus valid credentials for inference; public AI use requires separate eligible-use approval. Keep keys in ignored server configuration, never `NEXT_PUBLIC_`.
-2. Enter a topic and optional audience/facts/preferences; choose Bold Street, Minimal Swiss or Festive Pop; click **Generate campaign**. The initial state is empty; the optional sample button loads an explicitly labelled v1 fixture without AI. With inference disabled, auto mode also uses the independent local planner with zero provider calls. Enabled auto mode may send the brief to Google—avoid private information.
-3. Use Design & spec for rationale, the validated JSON and download; View and Checks inspect actual artwork and measurements. Explicit local planning, automatic fallback, AI and manual provenance remain distinct. **Use local planner · no AI** demonstrates independent fallback with no provider request. Review factual copy before publishing.
-4. Compare four platform previews and export each PNG. Draft taste applies to the next generation; changing it leaves the current campaign intact with a notice. Copy/composition/palette refinements apply locally to the displayed campaign and are labelled manual. Failed generation preserves the previous campaign.
-5. Export HTML/JSON. V3 HTML contains full-size inline posters, embedded approved fonts and their OFL notices, and intentionally scrolls offline. Unsupported scripts and legacy fonts can still vary by device. Excessive copy triggers a warning and export refusal rather than clipping.
-
-The focused M1 correction keeps recognized missing-input statements and planning directions in interpretation metadata, shows missing-detail warnings, and avoids repeating the headline as support. Negative factual copy remains public. A subjectless brief returns an explicit 422 response and preserves the previous artwork. See [the correction and final audit](docs/M1_CORRECTION.md) for before/after evidence, tests, exact proposed commit contents and remaining limitations.
-
-No authentication, database, payments or image-generation dependency. M0–M4 are accepted at `cad6bfcc3fb1da985ffd804be00afd6fc910f34a`. Current M5-B authorization covers release corrections and quota-free local verification only; staging, commits, pushes, deployment, visibility/licensing changes, live inference and submission remain separate gates.
-
-## Checks
-
-```powershell
-npm run lint
-npm run typecheck
+$env:GEMINI_ENABLED="false"
+$env:NEXT_TELEMETRY_DISABLED="1"
 npm run build
-npm test -- --output=test-results/m5-next-review
+npm run start
 ```
 
-Browser tests reuse localhost:3000 and installed Google Chrome in headless mode; they do not download a browser or start a server. Choose a new output directory for each evidence-bearing run: Playwright cleans the selected directory. Test exports/screenshots are ignored under `test-results/`. See [testing evidence and limits](docs/TESTING.md).
+Open http://localhost:3000; the studio is at http://localhost:3000/create. Reuse an already-running server. [Example configuration](.env.example) contains placeholders only. No API key is needed for the local planner; never expose credentials through browser configuration. These are setup instructions, not authorization to reinstall, activate inference or deploy an existing workspace.
 
-Historical live evaluations are not routine checks and must not be rerun without a new bounded owner authorization. The completed records remain in docs/evidence; no fresh inference was performed for M5-B.
+Metadata defaults to the owner-verified `https://chowk-studio.vercel.app`. Omit `CHOWK_PRODUCTION_ORIGIN` or set it to exactly that origin; stale or different overrides fail the build instead of publishing misleading canonical URLs. The old domain remains available, but browser-local Projects are separate on each origin and cannot be automatically transferred. Keep the same localhost hostname/port to retain access to local Projects. The physical workspace has not moved.
 
-## HTTP API
+## HTTP integration
 
-The integration endpoint returns actual styled HTML, the validated DesignSpec, interpretation, provenance and all four native sizes. This command was executed successfully against the local production build in explicit no-AI mode:
+`POST /api/render` returns actual styled HTML, `sizes`, the validated `spec`, `interpretation`, `metadata` and browser-readiness information. The official `POST /generate` spelling is illustrative; this is the implemented callable contract. JSON-only `/api/generate` and deterministic v1 `/api/design-spec` remain compatible; `/api/concepts` is local-only.
+
+This quota-free curl request is runnable with the local application above:
 
 ```powershell
 curl.exe --fail-with-body --json "@docs/example-render-request.json" http://localhost:3000/api/render --output campaign-response.json
 ```
 
-The response's `html` is a complete self-contained document. Save it as HTML and open it in a browser; await `window.yarcCampaignReady` before using the measured result. Server metadata explicitly says `requires-browser-verification`, never export-ready. Browser quality failures refuse the affected format. `GET /api/notices` serves applicable preserved package/font/asset notices in the running app; see [notice records](THIRD_PARTY_NOTICES.md). [Full API contract](docs/API.md). Existing JSON-only `/api/generate` and v1 `/api/design-spec` remain compatible.
+Or supply an arbitrary brief directly:
 
-Native sizes: Instagram portrait **1080 × 1350**, square **1080 × 1080**, YouTube **1280 × 720**, LinkedIn **1910 × 1000**. Native canvases intentionally scroll in the portable document.
+```sh
+curl --fail-with-body http://localhost:3000/api/render \
+  -H 'Content-Type: application/json' \
+  --data '{"topic":"A neighborhood reading circle.","details":"Bring a book. No sales.","taste":"minimal-swiss","mode":"local","treatment":"creative-led"}'
+```
 
-## Current complete intermediate specification
+Save the response's `html` string as an HTML file and open it. Await `window.yarcCampaignReady`; readiness requires state `ready` and every format's `exportReady=true`. HTTP 200 alone is not export readiness. Keep embedded fonts/notices. The currently protected production host requires arranged access; an anonymous login redirect is not a successful API response. [Complete API contract](docs/API.md).
 
-This is the complete validated v3 result of the actual local curl request above, with `deterministic-fallback` provenance and `requested-local` metadata, not Gemini generation. [Machine-readable source](docs/example-design-spec-m5.json).
+Once separately authorized production access and the target release are verified, use the same request against `https://chowk-studio.vercel.app/api/render`. This is the intended integration URL, not a claim that anonymous curl currently works:
+
+```sh
+curl --fail-with-body https://chowk-studio.vercel.app/api/render \
+  -H 'Content-Type: application/json' \
+  --data '{"topic":"A neighborhood reading circle.","details":"Bring a book. No sales.","taste":"minimal-swiss","mode":"local","treatment":"creative-led"}'
+```
+
+## Complete inspectable example
+
+Recorded **local M5 v3** result, compatible with the current schema: deterministic fallback with requested-local provenance, not new Gemini output or a current M8 benchmark. The full [machine-readable specification](docs/example-design-spec-m5.json) is preserved; manual editing fields are optional.
 
 ```json
 {
@@ -110,94 +127,18 @@ This is the complete validated v3 result of the actual local curl request above,
 }
 ```
 
-## Historical M1 example intermediate JSON specification
+## Disclosure, rights and verification
 
-The current M2 engine also provides a [complete actual v3 example](docs/example-design-spec-v3.json): local generation with an explicitly manual composition selection. V3 adds registry-backed art direction while historical v1/v2 continue to render unchanged. The full [M2 report](docs/M2_REPORT.md) records actual screenshots/exports, limits, approved font integration and the two focused live outcomes (one accepted AI plan; one validation-failed local fallback).
+The default submission configuration makes no external inference request. Optional Gemini structured planning, disabled private Meta adapters, historical measured results, failure/fallback behavior, unknown costs and development assistance are described in [AI/API disclosure](docs/AI_DISCLOSURE.md). Development assistance is separate from runtime generation; replayed or injected responses are not fresh model acceptance.
 
-This is a **complete DesignSpec v2 from an actual live browser generation**, not a mock. The HTTP envelope separately includes interpretation and source/model/timing/usage/fallback metadata. The [machine-readable example](docs/example-design-spec.json) is validated against [designSchema](src/lib/design.ts). The [original v1 fixture example](docs/example-design-spec-v1.json) is retained for compatibility.
+Original-code rights are described in [RIGHTS.md](RIGHTS.md); no permissive open-source grant has been selected. Third-party packages, approved OFL fonts and the adopted MIT Tabler camera retain their own [licenses/notices](THIRD_PARTY_NOTICES.md), served by `GET /api/notices` and embedded where applicable. Target-native distribution and private imagery rights remain qualified, not blanket-cleared.
 
-```json
-{
-  "version": 2,
-  "provenance": "gemini",
-  "campaign": {
-    "topic": "Chai stall opening near campus.",
-    "eyebrow": "NEW NEAR CAMPUS",
-    "headline": "CHAI STALL OPENING",
-    "supportingText": "An invitation for students to grab a cup at the new campus chai stall.",
-    "cta": "VISIT US"
-  },
-  "taste": "bold-street",
-  "palette": {
-    "background": "#efe943",
-    "ink": "#20231e",
-    "accent": "#c84225",
-    "secondary": "#fff9e9"
-  },
-  "typography": {
-    "family": "condensed-sans",
-    "headlineScale": 1.1,
-    "case": "uppercase"
-  },
-  "composition": {
-    "layout": "street-stack",
-    "spacing": 60
-  },
-  "decoration": {
-    "motif": "sticker",
-    "density": 3,
-    "illustration": "cup"
-  },
-  "rationale": "Applied the bold-street taste profile with condensed uppercase typography, heavy rules, and a cup illustration to create an energetic street poster look for the campus chai stall announcement."
-}
-```
+The accepted local checkpoint passed **248/248** cases, lint, typecheck and build. Its [report](docs/M8_REPORT.md) distinguishes actual native downloads from mocks and retained private evidence. Current engine functionality reuses that evidence; release-presentation checks are reported separately. Generated `test-results/` artifacts and owner-review ZIPs are private local evidence, not files promised in a public checkout.
 
-Final submission acceptance **ENG-03** requires keeping this example in the final README and refreshing/revalidating it whenever the final schema changes; do not replace it with an abbreviated response or placeholder.
+The historical headed PNG comparison remains failed/open at **2.7366536458% against 1.5%**. Current headless comparisons do not erase it. Local interpretation and graphics remain finite; literal/repetitive copy, unused space and dense-text fitting are known limits. Human review is required.
 
-## Project map
+## Project documentation
 
-| Path | Purpose |
-|---|---|
-| src/lib/design.ts | Zod contracts, types, fixtures, presets and format registry |
-| src/lib/generation/ | Request/plan/response contracts, factual heuristics and independent planner |
-| src/server/ | Server-only runtime, injectable Gemini REST transport and bounded orchestration |
-| src/components/poster.tsx | Adaptive HTML/SVG renderer, measured text fitting, preview scaling |
-| src/components/studio.tsx | Manual brief/copy, tastes, JSON inspector and downloads |
-| src/app/{page,create,explore,docs}/ | Chowk homepage, actual studio, curated examples and product/API guidance |
-| src/components/site-*.tsx, src/app/site.css | Shared original branding, interface tokens and responsive shell |
-| src/lib/studio-handoff.ts | Validated one-shot browser-session/memory draft transfer, not saved projects |
-| src/lib/export.ts | PNG and portable HTML export |
-| src/app/api/design-spec/route.ts | Deterministic HTTP interface |
-| src/app/api/generate/route.ts | Product generation HTTP interface |
-| tests/studio.spec.ts | Schema, HTTP, browser, overflow and export checks |
-| tests/generation.spec.ts | Repeatable M1 tests, mocked transport and real no-AI endpoint |
-| evaluation/ | Explicit live-only model/browser evaluation, excluded from normal tests |
+[Architecture](docs/ARCHITECTURE.md) · [Requirements](docs/REQUIREMENTS.md) · [API](docs/API.md) · [Testing](docs/TESTING.md) · [Roadmap](docs/ROADMAP.md) · [Research](docs/RESEARCH.md) · [Release preflight](docs/M11_PREFLIGHT.md) · [Current release closure](docs/M11C_RELEASE_CLOSURE.md)
 
-## Authoritative documentation
-
-| Document | Owns |
-|---|---|
-| [AGENTS.md](AGENTS.md) | Persistent instructions, authorization boundaries and engineering discipline |
-| [Requirements](docs/REQUIREMENTS.md) | Official OFF identifiers, internal ENG criteria, coverage and evidence links |
-| [Architecture](docs/ARCHITECTURE.md) | Current pipeline, module boundaries and approved architectural direction |
-| [API](docs/API.md) | Implemented endpoint contract/curl and planned generation-route relationship |
-| [Testing](docs/TESTING.md) | Executed checks, dates, artifacts, thresholds and verification exclusions |
-| [AI/API disclosure](docs/AI_DISCLOSURE.md) | Actual no-AI runtime, provisional strategy and user-provided feasibility measurements |
-| [Research](docs/RESEARCH.md) | Commercial/repository/library candidates, adoption decisions and C1/C2 receipt/review status |
-| [Roadmap](docs/ROADMAP.md) | M0–M5, priorities, existing concern register, deferred ideas and archive policy |
-| [Third-party notices](THIRD_PARTY_NOTICES.md) | Actual dependencies, licenses, preserved notices and distribution review gaps |
-| [M5 candidate report](docs/M5_REPORT.md) | Current release corrections, actual verification, remaining production gates |
-| [M0 report](docs/M0_REPORT.md) | Historical delivery and changed-file inventory |
-| [M1 report](docs/M1_REPORT.md) | Current implementation, actual checks, model results and remaining limits |
-
-Runtime dependencies added: Zod for one validated/type-inferred contract and [html-to-image](https://github.com/bubkoo/html-to-image) for browser DOM rasterization. Playwright is development-only browser verification. Existing Next.js 16.4.6 / React 19.3.0 / TypeScript / custom CSS remain in place.
-
-Public deployment and broader design/frontend/quality work remain pending. Model evidence and unknown billing details are explicit in [AI/API disclosure](docs/AI_DISCLOSURE.md). Official submission deadline supplied by the user: **26 November 2026, 11:59 PM IST**; maximum internal completion deadline **25 November 2026, 3:00 PM IST**; the official deadline is contingency only.
-
-## Current evidence and limitations
-
-M0 regression checks are retained alongside M1 unit/API/browser checks. Actual live generation and independent local planning have both produced exported campaigns. The six-brief matrix accepted four primary-model AI outputs and fell back for two; the comparison model accepted none (timeout/unavailable). These are small-sample observations, not reliability guarantees. Historical M0 raster comparison remains same-machine app/portable-HTML screenshots. M2 separately checks actual downloaded PNGs against native DOM at the unchanged tolerance; neither establishes cross-device or production fidelity. [Precise evidence](docs/TESTING.md).
-
-The fixed cup is now restricted to relevant briefs, with neutral/no-illustration paths elsewhere. Readability, composition variety, limited semantic heuristics, in-memory quota limitations and cross-device fonts remain [roadmap concerns](docs/ROADMAP.md#existing-concern-register). Very detailed briefs may exceed a format's capacity and refuse export. Official requirements specify aspect ratios; exact pixels and local quality controls are internal choices. A build, mock or structural validator alone does not close the final checklist.
-
-Intended deployment is Vercel after separate authorization. C1's palette and C2's untested renderer remain unintegrated; subsequent advisory references do not authorize wholesale code reuse. The M0 renderer is preserved and narrowly extended for M1, not replaced by a reference application.
+Authentication/accounts, cloud storage, collaboration and direct social publishing are planned after submission. Historical reports and measured evidence retain their original outcomes and attribution. Public access, production release and final fellowship submission still require explicit approvals.

@@ -4,6 +4,8 @@ import { StartBrief } from "@/components/start-brief";
 import { GalleryCard } from "@/components/gallery-card";
 import { GALLERY } from "@/lib/gallery";
 import { FORMATS, PRESETS } from "@/lib/design";
+import {routeMetadata} from "@/lib/site-metadata";
+export const metadata=routeMetadata("/");
 export default function Home() {
   const featured = [GALLERY[0], GALLERY[1], GALLERY[2]], campaign = GALLERY[3];
   return <main id="main" className="site-page home-page"><section className="home-hero"><div className="hero-copy"><p className="site-eyebrow">A meeting point for ideas</p><h1 className="site-display">Put your idea<br /><em>on the wall.</em></h1><p className="hero-description">Turn an idea into a visual campaign. Choose your creative direction, explore different designs, refine the details and create artwork for multiple platforms.</p><StartBrief /></div><div className="hero-wall" aria-label="Three actual local-planner campaign examples">{featured.map((e, i) => <div key={e.id} className={`wall-poster wall-poster-${i + 1}`}><Image src={e.formats[0].src} width={e.formats[0].width} height={e.formats[0].height} alt={`${e.title} — actual ${PRESETS[e.taste].name} example`} unoptimized priority={i === 1} /></div>)}<p className="wall-caption">Made with the tool.<br />Actual local-planner examples.</p><span className="wall-sticker">Your next<br />idea goes<br />here. ↗</span></div></section>

@@ -1,5 +1,11 @@
 # Requirements and acceptance traceability
 
+M11-C current authority: the owner accepted M11-B local preparation and verified the renamed private repository MukulBeri/chowk and existing Vercel project chowk. Approved canonical origin: https://chowk-studio.vercel.app; the previous domain remains assigned, with separate origin-local Projects storage. The accepted local engine is not yet deployed over the protected 2b3c564 baseline. Only naming finalization, focused checks and an exact local commit are authorized; no push or public access change. Current closure: [M11-C](M11C_RELEASE_CLOSURE.md). Earlier statements retain dated scope.
+
+## Current release authority - 26 November 2026
+
+Bounded M7-L offline closure and M8 editing/Local Projects are owner-accepted and locally checkpointed at `388b2414bc7b381050a6641d5a0d076e9d3baa80`, with 248/248 retained checks. Configuration A is approved: independent local planning with external inference disabled. The older protected production source remains `2b3c564`; local acceptance does not establish deployment, artistic excellence, public access, fresh inference or target-distribution clearance. Authentication, cloud storage, collaboration and direct publishing are post-submission. M11-B authorizes scoped local presentation/release preparation only; later Git push, naming, visibility, deployment and submission require approval. Dated milestone statements below retain their historical scope.
+
 ## M7-R owner-review correction scope
 
 M7-R extends the current M7 candidate: real validated local concept exploration/selection, additive supported art-direction grammar, deliberate typography/illustration/photo allocations, generalized uncertainty handling, bounded server optimization and injected provider readiness, mobile applied-artwork context and integrated evidence. It does not establish the advisory 85/100 human target, artistic acceptance, fresh AI success or production clearance. Existing official Technology requirements, facts, native dimensions, legacy contracts and fidelity thresholds are unchanged. Details and requirement matrix: [M7-R report](M7R_REPORT.md).

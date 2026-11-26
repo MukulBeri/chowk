@@ -1,5 +1,19 @@
 # AI and API disclosure
 
+## Current application and development disclosure
+
+Configuration A is the approved submission path: **independent deterministic planning; external inference disabled**. No live calls were made for M7, M7-R, M7-L offline closure, M8 or M11-B preparation. Current local engineering acceptance is distinct from older protected hosted verification and from public release. The following dated sections preserve original outcomes; they do not authorize activation.
+
+| Component | Role and current state | Evidence and limits |
+|---|---|---|
+| Independent planner | Topic interpretation, fact ledger and bounded creative directions; renderer/export need no external provider | Explicit local, disabled-provider and fallback provenance remain distinct; finite English heuristics/visuals, not open-ended LLM creativity |
+| Google Gemini | Existing structured planning integration; configured `gemini-3.5-flash-lite`, disabled in the submission configuration | Historical successes/failures below; one repair maximum, bounded time/cache/concurrency/process-local budgets. Last bounded M6-A diagnostic had zero accepted fresh plans; replay is not fresh reliability |
+| Meta | Disabled, isolated adapters for `muse-ember-1.0`, `muse-spark-1.3`, `muse-image-1.0`; not a public runtime selector | Historical private META-0/1 evidence differs from current injected tests. Current credits/billing/eligibility, fresh qualification, activation and public image rights remain gated. The four-slot private ledger is not a public spending cap |
+
+Provider usage absent from a response remains unknown; no exact charge, remaining balance or universal free-tier guarantee is claimed. Enabled inference sends submitted briefs to its configured provider; the approved disabled path does not. Private research images must not be published automatically. Runtime rationale is inspectable planning plus controlled rendering, resilience and measured budgets, not a claim of creative supremacy.
+
+**Development assistance, separate from runtime:** Chowk is independently directed by Mukul Beri. Codex assisted implementation/testing; ChatGPT assisted architecture, research, review and coordination; Claude supplied research, design exploration and branding/prototype references reviewed before integration. Assistant versions and development-tool billing were not systematically measured. This does not attribute every line to manual authorship or erase legitimate contribution records. Original-code rights are limited in [RIGHTS.md](../RIGHTS.md); required third-party attribution remains.
+
 ## M7-L offline closure and M8
 
 The style-as-copy correction and durable qualification dispatcher are tested entirely with injected responses/synthetic credentials; the compatible installed-Node owner's launcher defaults to no dispatch and checks separate live/account/source approval before a credential prompt. Original PowerShell policy failure, prior rejected outcomes and weak artwork remain historical findings. No real key was read or requested, no provider activated and no new live request made. See [offline closure](M7L_OFFLINE_CLOSURE.md).

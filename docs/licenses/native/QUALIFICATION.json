@@ -1,0 +1,77 @@
+{
+  "status": "Offline qualification/supporting license copies only; final target conveyance and component obligations unresolved",
+  "date": "2026-11-26",
+  "scope": "Reuses accepted M5-C/M5-D evidence; no installation, binary redistribution, dependency replacement or original-code license grant",
+  "licenseCopies": [
+    {
+      "file": "docs/licenses/native/GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "docs/licenses/native/LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    }
+  ],
+  "basis": {
+    "distributionRecord": "docs/evidence/m5c/distribution.json",
+    "libvipsPackage": "@img/sharp-libvips-linux-x64@1.3.4",
+    "declaredLicense": "LGPL-3.0-or-later",
+    "sharpAndAddonVersion": "0.35.5",
+    "selectedBundleVersions": {
+      "aom": "3.15.1",
+      "archive": "3.8.9",
+      "cairo": "1.18.6",
+      "cgif": "0.5.4",
+      "exif": "0.6.26",
+      "expat": "2.8.5",
+      "ffi": "3.8.0",
+      "fontconfig": "2.18.3",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.17",
+      "glib": "2.90.0",
+      "harfbuzz": "14.5.0",
+      "heif": "1.23.5",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.2",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.63.2",
+      "tiff": "4.7.2",
+      "uhdr": "2.0.2",
+      "vips": "8.18.7",
+      "webp": "1.6.0",
+      "xml2": "2.15.4",
+      "zlib-ng": "2.3.3"
+    },
+    "versionsSha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4"
+  },
+  "offlineFindings": [
+    "Existing full license/notice snapshot and supplement remain unchanged; actual browser fonts/Tabler notices retained",
+    "Accepted Linux prep proved dynamic Sharp addon to libvips shared bundle, not replaceability of its statically included inner components",
+    "Image worker uses installed Sharp in isolated private qualification; it is not imported by the public generation/concept routes",
+    "Existing local Windows app traces exclude Sharp; full Next framework trace includes Sharp/libvips. This is not proof of final Vercel exclusion",
+    "Standard LGPL/GPL terms are now preserved verbatim here, but do not substitute for constituent copyright/notices, exact corresponding source, patches or required relinking conditions"
+  ],
+  "targetRequired": [
+    "Exact final Vercel function/server/image-optimizer package manifests and SHA-256; Node/OS/CPU/libc and package versions",
+    "Determine whether Sharp/libvips/constituents are actually conveyed to the host/other recipients in that target, not merely installed at build time",
+    "If present: applicable full notices, exact corresponding library/constituent source+patch/build references, and a verified applicable replaceability/relinking mechanism or materials. Do not invent a source offer",
+    "If absent: preserve actual final payload evidence establishing absence; full-framework vs app-route selection must be distinguished",
+    "Verify notice/resource delivery on the deployed target, including any additional texts selected by final qualification"
+  ],
+  "unchangedHistoricalGaps": {
+    "noticeFileEntries": 14,
+    "priorAbsentLocations": 53,
+    "linuxPreparedInstalledLocations": 4,
+    "linuxUnselectedLocations": 49
+  },
+  "originalCodeLicense": "No permissive grant; see RIGHTS.md. These third-party license copies do not relicense original code.",
+  "publicImageRights": "Private generated/research image publication remains unauthorized",
+  "finalClearance": false
+}
