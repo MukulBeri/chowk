@@ -11,15 +11,17 @@ export function manifestoHeadline(text: string, wide = false) {
   if (wide || text.includes("\n") || words.length < 2 || words.length > 6 || text.length > 90) return text;
   let split = 1, difference = Infinity;
   for (let i = 1; i < words.length; i++) {
+    if([words.slice(0,i),words.slice(i)].some(part=>part.every(word=>/^(a|an|the|and|or|of|to|for|in|on|at|with|by)$/i.test(word))))continue;
     const imbalance = Math.abs(words.slice(0, i).join(" ").length - words.slice(i).join(" ").length);
     if (imbalance < difference) { split = i; difference = imbalance; }
   }
-  return words.slice(0, split).join(" ") + "\n" + words.slice(split).join(" ");
+  return difference===Infinity?text:words.slice(0, split).join(" ") + "\n" + words.slice(split).join(" ");
 }
 
 // Original adaptation of the labs' role allocations. Geometry remains subject
 // to the same production fitter, floors and at most three correction passes.
 export function resolveCreativeLayout(spec: DesignSpecV3, format: Format, correction: number): ResolvedLayout {
+  if(spec.engineRevision===9)return refinedLayout(spec,format,correction);
   if(spec.artDirection.design) return resolveArtDirection(spec,format,correction);
   const { width: w, height: h } = format, wide = w > h, portrait = h > w;
   const swiss = spec.taste === "minimal-swiss", pop = spec.taste === "festive-pop";
@@ -120,4 +122,19 @@ export function resolveCreativeLayout(spec: DesignSpecV3, format: Format, correc
     columns: spec.artDirection.information === "stack" ? 1 : wide && dense && groups.length >= 8 && support.w > 1100 ? 3 : groups.length > 1 && support.w > (spec.artDirection.information === "grid" || recipe === "dossier" ? 650 : 800) ? 2 : 1,
     floors: { headline: correction > 1 ? 48 : dense ? (wide ? 56 : 64) : wide ? 64 : portrait ? 80 : 76, support: wide ? Math.max(34, Math.round(32 * scale)) : 34, kicker: 26, cta: wide ? Math.max(32, Math.round(30 * scale)) : 34 },
     corrections: correction === 0 ? [] : correction === 1 ? ["Creative artwork region released for complete readable copy."] : ["Creative hierarchy expanded for dense factual information; all public facts retained."] };
+}
+// Additive revision: historical v3 specifications retain their accepted geometry.
+function refinedLayout(spec:DesignSpecV3,format:Format,correction:number):ResolvedLayout{
+ const previous=resolveCreativeLayout({...spec,engineRevision:undefined},format,correction);
+ if(correction>0)return previous;
+ if(previous.anchor)return {...previous,columns:1};
+ const {width:w,height:h}=format,wide=w>h,m=Math.round(Math.min(w,h)*.055),gap=24,x=m,iw=w-2*m,y=m+64,bottom=h-m-(spec.campaign.cta?100:0),usable=bottom-y;
+ const dense=spec.campaign.supportingText.length>550;
+ if(spec.assetLayer&&!dense){
+  if(wide){const tw=w*.57-m;return{...previous,kicker:{x,y:m,w:tw,h:38},headline:{x,y,w:tw,h:usable*.28},support:{x,y:y+usable*.28+gap,w:tw,h:usable*.72-gap},art:{x:w*.61,y:0,w:w*.39,h},columns:1,align:'left'};}
+  const imageH=h*(h>w?.38:.32),titleH=h*(h>w?.20:.18),start=imageH+24;
+  return{...previous,art:{x:0,y:0,w,h:imageH},kicker:{x,y:start,w:iw,h:38},headline:{x,y:start+58,w:iw,h:titleH},support:{x,y:start+58+titleH+gap,w:iw,h:bottom-start-58-titleH-gap},columns:2,align:'left'};
+ }
+ if(!previous.art&&!dense&&!wide){const share=spec.taste==='festive-pop'?.55:spec.taste==='bold-street'?.57:.46;return{...previous,headline:{x,y,w:iw,h:usable*share},support:{x,y:y+usable*share+gap,w:iw,h:usable*(1-share)-gap},columns:spec.campaign.supportingText.length>170?2:1};}
+ return previous;
 }

@@ -26,17 +26,18 @@ export function creativeFallbackPlan(request: GenerationRequest) {
   const identity = subjectIdentity(subject);
   const explicitHeadline = request.topic.match(/^headline:\s*([\s\S]+)$/i)?.[1].trim();
   const contextTitle = subject.split(/\s+(?:for|on|at|with)\s+/i)[0];
-  const literal = identity.name || (factualTokens(brief.subject).length && brief.subject.length <= 240 ? brief.subject : contextTitle.length >= 8 && contextTitle.length <= 80 && !/\b(no|not|never|without|cancelled|canceled)\b/i.test(subject) ? contextTitle.charAt(0).toUpperCase() + contextTitle.slice(1) : subject.length <= 100 ? subject.charAt(0).toUpperCase() + subject.slice(1) : "A closer look");
+  const literal = identity.name || (factualTokens(brief.subject).length && brief.subject.length <= 240 ? brief.subject : contextTitle.length >= 8 && contextTitle.length <= 80 && !/\b(no|not|never|without|cancelled|canceled)\b/i.test(subject) ? contextTitle.charAt(0).toUpperCase() + contextTitle.slice(1) : subject.length <= 100 ? subject.charAt(0).toUpperCase() + subject.slice(1) : "Ideas worth sharing");
   const headline = explicitHeadline ?? (identity.name || factualTokens(subject).length ? literal : editorialCopy([subject], literal).headline);
   const descriptor = identity.name ? identity.descriptor.replace(/^collection of\s+/i, "") : "";
   const suppliedAudience=brief.subject.match(/\bfor ([\p{L} -]{3,32})[.!]?$/iu)?.[1];
-  const eyebrow = descriptor && descriptor.length <= 40 ? descriptor : suppliedAudience ? `For ${suppliedAudience}` : ({ launch: "Introducing", invite: "An invitation", awareness: "A shared responsibility", announce: "A closer look" } as const)[brief.objective];
+  const eyebrow = descriptor && descriptor.length <= 40 ? descriptor : suppliedAudience ? `For ${suppliedAudience}` : /\b(seminar|reading|research)\b/i.test(subject)?'Ideas into practice':({ launch: "Introducing", invite: "An invitation", awareness: "A shared responsibility", announce: "Discover together" } as const)[brief.objective];
   const direction = localDirection(request.taste, brief.publicText, [...brief.directions, brief.tone].join(" "), true);
   let visual = !brief.illustration ? "none" : /\b(repair|mend|broken household)\b/i.test(brief.subject) ? "repair" : /\b(astronomy|sky|stargazing)\b/i.test(brief.subject) ? "sky" : direction.visual;
   if (visual === "circuit" && !/\b(technical|robotics|coding|programming|engineering|electronics|computing)\b/i.test(brief.subject)) visual = "none";
   // Reuse the existing order/focus visual as an explicit abstract object/study
   // metaphor. Never imply a specific product appearance or use it for any workshop.
-  if (brief.illustration && /\b(desk accessories|stationery|research[ -]reading|book club|reading group)\b/i.test(brief.subject)) visual = "tiles";
+  if (brief.illustration && /\b(desk (?:accessories|pieces|organizers?|storage)|stationery|research[ -]reading|book club|reading group)\b/i.test(brief.subject)) visual = "tiles";
+  if (brief.illustration && /\b(wildlife|biodiversity|ecology)\b/i.test(brief.subject)) visual='botanical';
   if (brief.illustration && /\b(seeds?|gardening|garden|botanical)\b/i.test(brief.subject)) visual = "botanical";
   const strategy = subjectStrategy(brief, visual as typeof direction.visual);
   visual = strategy.visual;

@@ -7,7 +7,7 @@ import {fallbackPlan,planToSpec,validatePlan} from "../src/lib/generation/planne
 import {QualificationLedger} from "../src/server/qualification-ledger";
 import {runQualification,QUALIFICATION_BRIEFS,verifyQualificationPrerequisites} from "../src/server/qualification-runner";
 const request=QUALIFICATION_BRIEFS[0];
-const approved={authorization:"M7-L-four-dispatches-20261126",liveExecutionAuthorized:true,accountEligibilityConfirmed:true,regionalEligibilityConfirmed:true,currentModelsConfirmed:true,noPaidBillingSubscriptionOrTopUpConfirmed:true,secureCredentialAvailableConfirmed:true,offlineIntegrationVerified:true,promotionalBalanceUsd:.20};
+const approved={authorization:"M7-L-four-dispatches-20261126",liveExecutionAuthorized:true,accountEligibilityConfirmed:true,regionalEligibilityConfirmed:true,currentModelsConfirmed:true,secureCredentialAvailableConfirmed:true,offlineIntegrationVerified:true,fundingSource:"yarc-managed-fellowship",baselineAllocationUsd:10,remainingCreditUsd:null,remainingCreditUnknownAcknowledged:true,noPersonalBillingConfirmed:true,maximumActualRequests:4,maximumSessionRequests:2,estimatedReservationEnvelopeUsd:.20};
 const body=(session:"A"|"B")=>JSON.stringify({model:session==="A"?"muse-ember-1.0":"muse-spark-1.3",max_output_tokens:4000,store:false,stream:false});
 const url="https://api.meta.ai/v1/responses";
 

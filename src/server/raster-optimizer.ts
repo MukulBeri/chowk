@@ -19,11 +19,13 @@ const sharp=require(workerData.sharp);sharp.cache(false);sharp.concurrency(1);
  let output,info,attempts=0;
  for(const edge of [1536,1280,1024,768,576]){
   attempts++;let pipeline=sharp(input,options).rotate().toColourspace('srgb').resize({width:edge,height:edge,fit:'inside',withoutEnlargement:true}).timeout({seconds:2});
+  if(workerData.preserveXmp&&meta.xmp)pipeline=pipeline.keepXmp();
   pipeline=meta.hasAlpha?pipeline.png({compressionLevel:9}):pipeline.jpeg({quality:82,chromaSubsampling:'4:4:4'});
   const result=await pipeline.toBuffer({resolveWithObject:true});output=result.data;info=result.info;
   if(output.length<=workerData.maximumBytes)break;
  }
  if(!output||output.length>workerData.maximumBytes)throw Error('budget');
+ if(workerData.preserveXmp&&meta.xmp){const finalMeta=await sharp(output,options).metadata();if(!finalMeta.xmp||!Buffer.from(meta.xmp).equals(Buffer.from(finalMeta.xmp)))throw Error('decode');}
  parentPort.postMessage({bytes:output,width:info.width,height:info.height,mime:meta.hasAlpha?'image/png':'image/jpeg',alpha:!!meta.hasAlpha,derivative:true,attempts});
 })().catch(error=>parentPort.postMessage({error:error.message==='budget'?'budget':'decode'}));
 `;
@@ -37,7 +39,7 @@ export async function optimizeRaster(bytes:Buffer,origin:{source:"local-file"|"m
   active++;const start=performance.now();let worker:Worker|undefined;
   try{
     const prepared=await new Promise<Prepared>((resolve,reject)=>{
-      worker=new Worker(workerSource,{eval:true,workerData:{bytes,maximumBytes:MAX_RASTER_BYTES,sharp:require.resolve("sharp")},resourceLimits:{maxOldGenerationSizeMb:64,maxYoungGenerationSizeMb:16}});
+      worker=new Worker(workerSource,{eval:true,workerData:{bytes,maximumBytes:MAX_RASTER_BYTES,sharp:require.resolve("sharp"),preserveXmp:origin.source==='meta'},resourceLimits:{maxOldGenerationSizeMb:64,maxYoungGenerationSizeMb:16}});
       const abort=()=>{void worker?.terminate();reject(new RasterError("timeout"));};
       const timer=setTimeout(abort,6000);signal?.addEventListener("abort",abort,{once:true});
       const clean=()=>{clearTimeout(timer);signal?.removeEventListener("abort",abort);};

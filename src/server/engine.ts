@@ -17,7 +17,8 @@ export class GenerationEngine {
   private inflight = new Map<string, Promise<GenerationResult>>();
   constructor(private config: EngineConfig, private provider?: Provider, private unavailable?: FallbackReason, private now = Date.now) {}
 
-  async generate(request: GenerationRequest): Promise<GenerationResult> {
+  async generate(request: GenerationRequest, _context?:unknown): Promise<GenerationResult> {
+    void _context;
     const start = this.now();
     // Validate local interpretability before spending provider quota. Incomplete
     // input must not become a pretend campaign on either generation path.

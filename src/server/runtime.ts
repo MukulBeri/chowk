@@ -1,6 +1,7 @@
 import "server-only";
 import { GenerationEngine, DEFAULT_CONFIG, type EngineConfig } from "./engine";
 import { createConfiguredEngine } from "./configured-engine";
+import type {MetaGenerationEngine} from './meta-engine';
 
 function bounded(name: string, fallback: number, min: number, max: number) {
   const value = Number(process.env[name]);
@@ -19,7 +20,7 @@ export function runtimeConfig(): EngineConfig {
     concurrency: bounded("GEMINI_CONCURRENCY", 2, 1, 3),
   };
 }
-let singleton: GenerationEngine | undefined;
+let singleton: GenerationEngine | MetaGenerationEngine | undefined;
 export function generationEngine() {
   if (singleton) return singleton;
   singleton = createConfiguredEngine(runtimeConfig(), process.env);

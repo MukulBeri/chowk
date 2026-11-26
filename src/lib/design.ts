@@ -4,6 +4,7 @@ import { creativeContentSchema } from "./generation/fact-ledger";
 import { assetLayerSchema } from "./design-engine/assets";
 import { eligibleAnchorFacts } from "./design-engine/direction";
 import {editingSchema} from "./design-engine/editing";
+import {capabilitiesSchema} from './generation/capabilities';
 
 export const TASTES = ["bold-street", "minimal-swiss", "festive-pop"] as const;
 export const FORMATS = [
@@ -40,6 +41,9 @@ export const designSchemaV2 = designSchemaV1.extend({
   decoration: designSchemaV1.shape.decoration.extend({ illustration: z.enum(ILLUSTRATIONS) }),
 });
 export const designSchemaV3 = designSchemaV2.extend({
+  provenance:z.enum(['gemini','deterministic-fallback','manual-input','meta']),
+  capabilities:capabilitiesSchema.optional(),
+  engineRevision:z.literal(9).optional(),
   version: z.literal(3), artDirection: artDirectionSchema,
   creativeContent: creativeContentSchema.optional(),
   assetLayer: assetLayerSchema.optional(),

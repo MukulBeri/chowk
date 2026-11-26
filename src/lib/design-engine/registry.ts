@@ -78,8 +78,8 @@ export function relevantVisual(visual: ArtDirection["visual"], subject: string) 
     cup: /\b(chai|tea|coffee|cafe|café)\b/i, circuit: /\b(robotics|technical|coding|hackathon|workshop|engineering)\b/i,
     waves: /\b(music|dance|poetry|cultural|concert|wave|water)\b/i, robot: /\brobotics?\b/i,
     network: /\b(AI|artificial intelligence|computing|technology|network|workshop)\b/i,
-    code: /\b(coding|programming|hackathon|software)\b/i, tiles: /\b(productivity|planning|app|notebook|focus|desk accessories|stationery|research[ -]reading|book club|reading group)\b/i,
-    botanical: /\b(plastic|reusable|environment|waste|plant|nature|seeds?|gardening|garden|botanical)\b/i, aroma: /\b(perfume|fragrance|scent)\b/i,
+    code: /\b(coding|programming|hackathon|software)\b/i, tiles: /\b(productivity|planning|app|notebook|focus|desk (?:accessories|pieces|organizers?|storage)|stationery|research[ -]reading|book club|reading group)\b/i,
+    botanical: /\b(plastic|reusable|environment|waste|plant|nature|wildlife|biodiversity|ecology|seeds?|gardening|garden|botanical)\b/i, aroma: /\b(perfume|fragrance|scent)\b/i,
     camera: /\b(photography|photographic|camera|photo)\b/i,
     repair: /\b(?:appliances?|mechanical|bicycles?|bikes?|machines?|household (?:items|objects))\b/i, sky: /\b(astronomy|sky|stars|stargazing|space observation)\b/i,
   };

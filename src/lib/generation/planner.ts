@@ -56,7 +56,10 @@ export function validatePlan(raw: unknown, request: GenerationRequest): { plan?:
         if (canonical(clause) === positive && positive !== canonical(fact.text)) issues.push("reconstructed-public-fact");
       }
     }
-    plan.campaign.supportingText = [plan.campaign.supportingText, ...creative.facts.filter(f => !authored.toLowerCase().replace(/\s+/g, " ").includes(f.text.toLowerCase().replace(/\s+/g, " "))).map(f => f.text)].filter(Boolean).join("\n");
+    const seen=new Set([plan.campaign.headline.toLowerCase().replace(/\s+/g,' ').trim()]);
+    plan.campaign.supportingText=plan.campaign.supportingText.split(/\n|(?<=[.!?;])\s+/).filter(clause=>{const key=clause.toLowerCase().replace(/\s+/g,' ').trim();if(!key||seen.has(key))return false;seen.add(key);return true;}).join('\n');
+    const remaining=[plan.campaign.eyebrow,plan.campaign.headline,plan.campaign.supportingText,plan.campaign.cta].filter(Boolean).join('\n');
+    plan.campaign.supportingText = [plan.campaign.supportingText, ...creative.facts.filter(f => !remaining.toLowerCase().replace(/\s+/g, " ").includes(f.text.toLowerCase().replace(/\s+/g, " "))).map(f => f.text)].filter(Boolean).join("\n");
     if (plan.campaign.supportingText.length > 2400) issues.push("invalid-structure");
   } else if ("artDirection" in plan && plan.artDirection.treatment === "creative-led") issues.push("unsupported-art-direction");
   if (plan.taste !== request.taste) issues.push("wrong-taste");
@@ -88,14 +91,21 @@ export function validatePlan(raw: unknown, request: GenerationRequest): { plan?:
   const genericAction = /^(?:register|join|learn|discover|explore|bring|read|find|view|take|save)(?: (?:now|today|more|us|out|your|place|seat|a|the|notebook|details|workshop|collection)){0,5}$/i;
   const entityCopy = copy.replace(/\bEntry Fee(?=\s*:)/g, "entry fee");
   const entities = entityCopy.match(/\b[A-Z][a-z]+(?:[ \t]+[A-Z][a-z]+){1,3}\b|\b[A-Z][a-z]+[A-Z][A-Za-z]+\b/g) ?? [];
-  if (entities.some((entity) => !input.toLowerCase().includes(entity.toLowerCase()) && !(plan.campaign.cta?.includes(entity) && genericAction.test(entity)) && entity.toLowerCase().split(/\s+/).some((word) => !ordinary.has(word)))) issues.push("unsupported-named-entity");
+  const originClaims=copy.match(/\b(?:made|manufactured|crafted|produced)\s+in\s+[\p{L}][\p{L}'’ -]{0,60}/giu)??[];
+  if(originClaims.some(claim=>!normalized(input).includes(normalized(claim))))issues.push('unsupported-named-entity');
+  // Ordinary headline capitalization does not create an organization/product.
+  // Keep this exception bounded to a generic editorial vocabulary in the headline;
+  // entity introductions, attribution, locations and factual claims still reject.
+  const editorialWords=new Set([...ordinary,...'quiet order calm space spaces small big everyday moments made focus thoughtful desk life less more form forms shape shapes ideas matter room simple clear clarity craft time work play joy bright bold colour color rhythm fresh perspective closer look'.split(' ')]);
+  const genericHeadline=(entity:string)=>plan.campaign.headline.includes(entity)&&!/(?:\b(?:by|from|at|in|introducing|introduce|presenting|meet|called|named|brand|company|sponsor|sponsored|certified|manufactured|venue)\b)/i.test(plan.campaign.headline)&&entity.split(/\s+/).every(word=>editorialWords.has(word.toLowerCase()));
+  if (entities.some((entity) => !input.toLowerCase().includes(entity.toLowerCase()) && !(plan.campaign.cta?.includes(entity) && genericAction.test(entity)) && !genericHeadline(entity) && !(/^(?:Explore|Discover|Meet) (.+)$/.test(entity) && input.toLowerCase().includes(entity.replace(/^(?:Explore|Discover|Meet) /, "").toLowerCase())) && entity.toLowerCase().split(/\s+/).some((word) => !ordinary.has(word)))) issues.push("unsupported-named-entity");
   if (creative && /\bregister\b/i.test(plan.campaign.cta ?? "") && (!/\b(registration|register|booking|bookings)\b/i.test(input) || /\b(?:registration|booking)\s+(?:is |has |will )?(?:closed|not open|opens?\b)/i.test(input) && /\b(now|today)\b/i.test(plan.campaign.cta ?? ""))) issues.push("unsupported-action-claim");
   const unique = [...new Set(issues)];
   return { plan: unique.length ? undefined : plan, issues: unique, ...(unique.length ? { diagnostics: semanticDiagnostics(unique, missingFactCategories(input, copy)) } : {}) };
 }
 export function planToSpec(plan: CreativePlan, request: GenerationRequest, source: "gemini" | "deterministic-fallback"): DesignSpec {
   const brief = request.treatment === "creative-led" ? interpretCreativeBrief(request) : undefined;
-  if ("artDirection" in plan) return designSchemaV3.parse({ version: 3, provenance: source, campaign: { ...plan.campaign, topic: request.topic }, taste: request.taste,
+  if ("artDirection" in plan) return designSchemaV3.parse({ version: 3, provenance: source,...(brief?{engineRevision:9,...(source==='deterministic-fallback'?{capabilities:{version:1,text:{source:'local',model:null,accepted:false,fallbackReason:request.mode==='local'?'requested-local':'local-planning'},image:{source:'local',model:null,accepted:false,fallbackReason:'not-requested'},conceptualImage:false,publication:'user-review-required'}}:{})}:{}), campaign: { ...plan.campaign, topic: request.topic }, taste: request.taste,
     palette: plan.palette, typography: plan.typography, composition: plan.composition, decoration: plan.decoration, rationale: plan.rationale, artDirection: plan.artDirection,
     ...(brief ? { creativeContent: { version: 1, subject: brief.subject, objective: brief.objective, facts: brief.facts, factIds: "factIds" in plan ? plan.factIds : [] } } : {}) });
   return designSchemaV2.parse({ version: 2, provenance: source, campaign: { ...plan.campaign, topic: request.topic }, taste: request.taste,

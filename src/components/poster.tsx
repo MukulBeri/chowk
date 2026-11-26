@@ -27,11 +27,24 @@ function LegacyPoster({ spec, format, onFit }: { spec: Exclude<DesignSpec, { ver
 export function Poster(props: { spec: DesignSpec; format: Format; onFit?: (overflow: boolean) => void; onReport?: (report: LayoutReport) => void }) {
   return props.spec.version === 3 ? <AdvancedPoster key={JSON.stringify(props.spec)} {...props} spec={props.spec} /> : <LegacyPoster {...props} spec={props.spec} />;
 }
-export function PosterPreview({ spec, format,overlay }: { spec: DesignSpec; format: Format;overlay?:ReactNode }) {
+export function PosterPreview({ spec, format,overlay,fitViewport=false }: { spec: DesignSpec; format: Format;overlay?:ReactNode;fitViewport?:boolean }) {
   const container = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(0.25);
   const [overflow, setOverflow] = useState(false);
   const [report, setReport] = useState<LayoutReport | null>(null);
+  const [fittedWidth,setFittedWidth]=useState<number|null>(null);
+  useEffect(()=>{
+    const node=container.current,card=node?.closest('article'),stage=card?.parentElement;
+    if(!node||!card||!stage||!fitViewport)return;
+    const update=()=>{
+      if(!matchMedia('(min-width:1100px)').matches){setFittedWidth(null);return;}
+      const used=Array.from(card.children).filter(n=>n!==node&&getComputedStyle(n).position!=='absolute').reduce((sum,n)=>{const css=getComputedStyle(n);return sum+n.getBoundingClientRect().height+parseFloat(css.marginTop||'0')+parseFloat(css.marginBottom||'0');},0);
+      const css=getComputedStyle(card),height=stage.clientHeight-used-parseFloat(css.paddingTop||'0')-parseFloat(css.paddingBottom||'0')-parseFloat(css.borderTopWidth||'0')-parseFloat(css.borderBottomWidth||'0')-12;
+      setFittedWidth(Math.max(1,height)*format.width/format.height);
+    };
+    const observer=new ResizeObserver(update);observer.observe(stage);observer.observe(card);for(const child of card.children)if(child!==node)observer.observe(child);
+    update();window.addEventListener('resize',update);return()=>{observer.disconnect();window.removeEventListener('resize',update);};
+  },[fitViewport,format.width,format.height,report]);
   useEffect(() => {
     const node = container.current;
     if (!node) return;
@@ -39,7 +52,7 @@ export function PosterPreview({ spec, format,overlay }: { spec: DesignSpec; form
     observer.observe(node);
     return () => observer.disconnect();
   }, [format.width]);
-  return <><div ref={container} className="poster-preview" style={{ aspectRatio: `${format.width} / ${format.height}` }}>
+  return <><div ref={container} className="poster-preview" style={{ aspectRatio: `${format.width} / ${format.height}`,...(fitViewport?{maxWidth:fittedWidth??`max(180px,calc((100svh - 330px) * ${format.width/format.height}))`,marginInline:'auto'}:{}) }}>
     <div style={{ width: format.width, height: format.height, transform: `scale(${scale})`, transformOrigin: "top left" }}><Poster spec={spec} format={format} onFit={setOverflow} onReport={setReport} /></div>
     {overflow && <p className="poster-fit-warning" role="alert">{spec.version === 3 ? "This format still cannot fit all copy at readable sizes. Shorten or reorganize it before exporting." : "Copy exceeds this layout. Shorten it before exporting."}</p>}
     {overlay}

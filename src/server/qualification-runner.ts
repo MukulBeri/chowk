@@ -11,7 +11,10 @@ export const QUALIFICATION_BRIEFS:GenerationRequest[]=[
 ];
 export function verifyQualificationPrerequisites(value:unknown){
  const p=value as Record<string,unknown>|null;
- if(!p||p.authorization!=="M7-L-four-dispatches-20261126"||!["liveExecutionAuthorized","accountEligibilityConfirmed","regionalEligibilityConfirmed","currentModelsConfirmed","noPaidBillingSubscriptionOrTopUpConfirmed","secureCredentialAvailableConfirmed","offlineIntegrationVerified"].every(k=>p[k]===true)||typeof p.promotionalBalanceUsd!=="number"||p.promotionalBalanceUsd<.20)throw new QualificationStop("owner-account-or-execution-gate");
+ const fields=["authorization","liveExecutionAuthorized","accountEligibilityConfirmed","regionalEligibilityConfirmed","currentModelsConfirmed","secureCredentialAvailableConfirmed","offlineIntegrationVerified","fundingSource","baselineAllocationUsd","remainingCreditUsd","remainingCreditUnknownAcknowledged","noPersonalBillingConfirmed","maximumActualRequests","maximumSessionRequests","estimatedReservationEnvelopeUsd","expectedHead","reviewedFingerprint","note"];
+ // Fellowship allocation is not a measured balance. Unknown credit is accepted
+ // only with explicit owner acknowledgement and separately authorized limits.
+ if(!p||typeof p!=="object"||Array.isArray(p)||Object.keys(p).some(k=>!fields.includes(k))||p.authorization!=="M7-L-four-dispatches-20261126"||!["liveExecutionAuthorized","accountEligibilityConfirmed","regionalEligibilityConfirmed","currentModelsConfirmed","secureCredentialAvailableConfirmed","offlineIntegrationVerified","remainingCreditUnknownAcknowledged","noPersonalBillingConfirmed"].every(k=>p[k]===true)||p.fundingSource!=="yarc-managed-fellowship"||p.baselineAllocationUsd!==10||p.remainingCreditUsd!==null||p.maximumActualRequests!==4||p.maximumSessionRequests!==2||p.estimatedReservationEnvelopeUsd!==.20)throw new QualificationStop("owner-account-or-execution-gate");
 }
 export async function runQualification(options:{prerequisites:unknown;directory:string;getKey:()=>Promise<string>;transportFactory:()=>MetaTransport;record:(name:string,data:unknown)=>void;origin:"fresh-meta"|"injected-test"}){
  verifyQualificationPrerequisites(options.prerequisites);

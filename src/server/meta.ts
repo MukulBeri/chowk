@@ -2,7 +2,7 @@ import { z } from "zod";
 import { creativeLedPlanSchema, type GenerationRequest, type Usage } from "../lib/generation/contracts";
 import { generationPrompt } from "./gemini";
 import { validatePlan } from "../lib/generation/planner";
-import { assetLayerSchema, MAX_SOURCE_BYTES, type AssetLayer } from "../lib/design-engine/assets";
+import { assetLayerSchema, MAX_SOURCE_BYTES,MAX_RASTER_BYTES,rasterHeader, type AssetLayer } from "../lib/design-engine/assets";
 import { createHash } from "node:crypto";
 import { inspectRaster } from "./raster-validation";
 import type { ValidationDiagnostics } from "../lib/generation/diagnostics";
@@ -10,11 +10,12 @@ import { RECIPES } from "../lib/design-engine/registry";
 import { optimizeRaster, RasterError } from "./raster-optimizer";
 import { conceptEnvelopeSchema, validatedConcepts } from "../lib/generation/concepts";
 import { structuralDiagnostics } from "../lib/generation/diagnostics";
+import {compactCreativeSchema,compactCreativePrompt,expandCreativeEnvelope} from './meta-creative-contract';
 
 export type MetaCode = "disabled" | "budget" | "timeout" | "transport" | "auth" | "quota" | "provider" | "refusal" | "incomplete" | "structure" | "semantic" | "asset";
-export class MetaError extends Error { constructor(public code: MetaCode, public validation?: ValidationDiagnostics) { super(`Meta adapter: ${code}`); } }
+export class MetaError extends Error { constructor(public code: MetaCode, public validation?: ValidationDiagnostics,public httpStatus?:number) { super(`Meta adapter: ${code}`); } }
 export type MetaTransport = (url: string, init: RequestInit) => Promise<Response>;
-export const META_RUNTIME_ENABLED = false; // No environment activation or runtime wiring in M7.
+export const META_RUNTIME_ENABLED = false; // Legacy default. M9 uses its own explicit, fail-closed service gates.
 const BASE = "https://api.meta.ai/v1";
 export const META_TEXT_RESPONSE_BYTES=1_000_000;
 export const META_IMAGE_RESPONSE_BYTES=11_000_000;
@@ -45,7 +46,25 @@ function normalizeMetaPlan(value:unknown){
   else if(direction?.design&&typeof direction.design==="object"&&(direction.design as Record<string,unknown>).anchorFactId===null)delete (direction.design as Record<string,unknown>).anchorFactId;
   return plan;
 }
-type Options = { enabled?: boolean; key?: string; maximumCalls?: number; timeoutMs?: number };
+export type MetaEvidence={phase:'http'|'complete';kind:'text'|'image';httpStatus:number;elapsedMs:number;usage:Partial<Usage>|undefined;response?:unknown};
+export function measuredMetaUsage(raw:unknown):Partial<Usage>|undefined{
+ if(!raw||typeof raw!=='object'||!('usage' in raw)||!raw.usage||typeof raw.usage!=='object')return undefined;
+ const u=raw.usage as Record<string,unknown>,values:Partial<Usage>={};
+ for(const [from,to] of [['input_tokens','inputTokens'],['output_tokens','outputTokens'],['total_tokens','totalTokens']] as const)if(typeof u[from]==='number'&&Number.isFinite(u[from])&&u[from]>=0)values[to]=u[from];
+ const details=u.output_tokens_details;if(details&&typeof details==='object'&&'reasoning_tokens' in details&&typeof details.reasoning_tokens==='number'&&Number.isFinite(details.reasoning_tokens)&&details.reasoning_tokens>=0)values.thinkingTokens=details.reasoning_tokens;
+ return Object.keys(values).length?values:undefined;
+}
+type Options = { enabled?: boolean; key?: string; maximumCalls?: number; timeoutMs?: number;observe?:(evidence:MetaEvidence)=>void;retainOriginalImage?:(bytes:Buffer)=>void };
+// Preserve provider-applied PNG provenance. Without a provenance-aware encoder,
+// retain such originals verbatim or refuse a derivative rather than strip metadata.
+export function metaPngMetadata(bytes:Buffer){
+ let offset=8,metadata=false,exif=false,other=false,signedChunk=false,xmp:string|undefined;
+ while(offset+12<=bytes.length){const length=bytes.readUInt32BE(offset),kind=bytes.toString('ascii',offset+4,offset+8);if(offset+12+length>bytes.length)throw new MetaError('asset');if(!['IHDR','PLTE','IDAT','IEND','tRNS','pHYs','gAMA','cHRM','sRGB','bKGD'].includes(kind)){
+ metadata=true;const data=bytes.subarray(offset+8,offset+8+length),keyword=data.indexOf(0);
+ if(kind==='iTXt'&&data.subarray(0,keyword).toString()==='XML:com.adobe.xmp'&&data[keyword+1]===0){let start=keyword+3;for(let n=0;n<2;n++){const end=data.indexOf(0,start);if(end<0)throw new MetaError('asset');start=end+1;}if(xmp||data.length-start>16000)throw new MetaError('asset');xmp=new TextDecoder('utf-8',{fatal:true}).decode(data.subarray(start));}else other=true;
+ }if(kind==='eXIf')exif=true;if(kind==='caBX'||kind==='JUMb')signedChunk=true;offset+=12+length;if(kind==='IEND')break;}
+ return {metadata,exif,other,xmp,signed:signedChunk||!!xmp&&/c2pa|contentcredentials|<ds:Signature|<Signature\b/i.test(xmp)};
+}
 export function createMetaAdapter(options: Options = {}, transportFactory: () => MetaTransport = () => fetch) {
   // Gate before reading a key, creating transport, schema/prompt work or dispatch.
   if (!options.enabled) return undefined;
@@ -64,13 +83,16 @@ export function createMetaAdapter(options: Options = {}, transportFactory: () =>
     const deadline = new Promise<never>((_resolve,reject)=>controller.signal.addEventListener("abort",()=>reject(new MetaError("timeout")),{once:true}));
     try {
       const response = await Promise.race([transport(BASE + endpoint, { method:"POST", headers:{"Content-Type":"application/json",Authorization:`Bearer ${options.key}`},body:JSON.stringify(body),redirect:"error",signal:controller.signal }), deadline]);
-      if (!response.ok) throw new MetaError(response.status === 401 || response.status === 403 ? "auth" : response.status === 429 ? "quota" : "provider");
+      options.observe?.({phase:'http',kind:endpoint==='/responses'?'text':'image',httpStatus:response.status,elapsedMs:performance.now()-start,usage:undefined});
+      if (!response.ok) throw new MetaError(response.status === 401 || response.status === 403 ? "auth" : response.status === 429 ? "quota" : "provider",undefined,response.status);
       const reader=response.body?.getReader(); if(!reader)throw new MetaError("structure");
       let size=0;const chunks:Uint8Array[]=[];
       const maximumResponse=endpoint==="/responses"?META_TEXT_RESPONSE_BYTES:META_IMAGE_RESPONSE_BYTES;
       while(true){const chunk=await Promise.race([reader.read(),deadline]);if(chunk.done)break;size+=chunk.value.length;if(size>maximumResponse){void reader.cancel().catch(()=>{});throw new MetaError("structure");}chunks.push(chunk.value);}
-      const bytes=Buffer.concat(chunks);let raw:unknown;try{const text=new TextDecoder("utf-8",{fatal:true}).decode(bytes);if(options.key&&text.includes(options.key))throw Error();raw=JSON.parse(text);}catch{throw new MetaError("structure");}
-      return {raw,elapsedMs:performance.now()-start};
+      const bytes=Buffer.concat(chunks);let raw:unknown;try{const text=new TextDecoder("utf-8",{fatal:true}).decode(bytes);if(options.key&&text.includes(options.key))throw Error();raw=JSON.parse(text);if(options.key&&JSON.stringify(raw).includes(options.key))throw Error();}catch{throw new MetaError("structure");}
+      const elapsedMs=performance.now()-start;
+      options.observe?.({phase:'complete',kind:endpoint==='/responses'?'text':'image',httpStatus:response.status,elapsedMs,usage:measuredMetaUsage(raw),...(endpoint==='/responses'?{response:raw}:{})});
+      return {raw,elapsedMs,httpStatus:response.status};
     } catch(error) { if(error instanceof MetaError)throw error;throw new MetaError(controller.signal.aborted?"timeout":"transport"); }
     finally { clearTimeout(timer);signal?.removeEventListener("abort",abort); }
   }
@@ -96,6 +118,18 @@ export function createMetaAdapter(options: Options = {}, transportFactory: () =>
   return {
     get calls() { return calls; },
     conceptEnvelope:requestConcepts,
+    async creativeEnvelope(request:GenerationRequest,model:'muse-ember-1.0'|'muse-spark-1.3',signal?:AbortSignal,repair?:ValidationDiagnostics){
+      if(request.treatment!=='creative-led'||!['muse-ember-1.0','muse-spark-1.3'].includes(model))throw new MetaError('structure');
+      const prompt=compactCreativePrompt(request,repair),schema=compactCreativeSchema(request);
+      const result=await dispatch('/responses',{model,instructions:prompt.system,input:prompt.user,reasoning:{effort:model==='muse-spark-1.3'?'medium':'low'},max_output_tokens:4000,store:false,stream:false,text:{format:{type:'json_schema',name:'chowk_creative_decisions',strict:true,schema:strictMetaSchema(z.toJSONSchema(schema,{unrepresentable:'any'}))}}},signal);
+      const parsed=z.object({status:z.string(),output:z.array(z.object({content:z.array(z.object({type:z.string(),text:z.string().optional()})).optional()}))}).safeParse(result.raw);
+      if(!parsed.success)throw new MetaError('structure');
+      const content=parsed.data.output.flatMap(item=>item.content??[]);if(content.some(c=>c.type==='refusal'))throw new MetaError('refusal');if(parsed.data.status!=='completed')throw new MetaError('incomplete');
+      const texts=content.filter(c=>c.type==='output_text');if(texts.length!==1||!texts[0].text)throw new MetaError('structure');
+      let raw:unknown;try{raw=JSON.parse(texts[0].text);}catch{throw new MetaError('structure');}
+      const checked=schema.safeParse(raw);if(!checked.success)throw new MetaError('structure',structuralDiagnostics(checked.error.issues));
+      return {raw:expandCreativeEnvelope(checked.data,request),model,provider:'meta' as const,httpStatus:result.httpStatus,elapsedMs:result.elapsedMs,usage:measuredMetaUsage(result.raw)};
+    },
     async concepts(request:GenerationRequest,model:"muse-spark-1.3"|"muse-ember-1.0",signal?:AbortSignal){
       const result=await requestConcepts(request,model,signal);
       const concepts=validatedConcepts(result.raw.concepts.map(c=>({...c,version:1,origin:"injected-provider"})),request,"injected-provider");
@@ -136,10 +170,16 @@ export function createMetaAdapter(options: Options = {}, transportFactory: () =>
       const bytes=Buffer.from(encoded,"base64");
       if(bytes.toString("base64")!==encoded)throw new MetaError("asset");
       if(!bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])))throw new MetaError("asset");
+      try{rasterHeader(bytes,MAX_SOURCE_BYTES);}catch{throw new MetaError('asset');}
+      if(options.key&&bytes.includes(Buffer.from(options.key)))throw new MetaError('asset');
+      options.retainOriginalImage?.(bytes); // Private, bounded original retained before any derivative.
+      const provenance=metaPngMetadata(bytes);
+      if(provenance.signed||provenance.exif||provenance.other)throw new MetaError('asset');
       try{
         const prepared=await optimizeRaster(bytes,{source:"meta",previous:source,inputReferenceSha256:createHash("sha256").update(prompt).digest("hex")},signal);
         const measured=parsed.data.usage,usage:Partial<Usage>|undefined=measured?{...(measured.input_tokens!==undefined?{inputTokens:measured.input_tokens}:{}),...(measured.output_tokens!==undefined?{outputTokens:measured.output_tokens}:{}),...(measured.total_tokens!==undefined?{totalTokens:measured.total_tokens}:{})}:undefined;
-        return {...prepared,usage,provider:"meta" as const,model:"muse-image-1.0",processingMs:prepared.elapsedMs,elapsedMs:result.elapsedMs,publicationCleared:false as const};
+        const asset=assetLayerSchema.parse({...prepared.asset,...(provenance.xmp?{providerMetadata:{xmp:provenance.xmp,xmpSha256:createHash('sha256').update(provenance.xmp).digest('hex'),preserved:true}}:{})});
+        return {...prepared,asset,usage,provider:"meta" as const,model:"muse-image-1.0",processingMs:prepared.elapsedMs,elapsedMs:result.elapsedMs,publicationCleared:false as const};
       }catch(error){throw new MetaError(error instanceof RasterError&&error.code==="timeout"?"timeout":"asset");}
     },
   };

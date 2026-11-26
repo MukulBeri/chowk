@@ -1,6 +1,18 @@
 # AI and API disclosure
 
-## Current application and development disclosure
+## M9 local candidate — 26 November 2026
+
+The accepted public release remains `42ea860`; the owner reports completed anonymous access and functional verification. M9 is local, **not deployed or activated**. Production inference remains disabled. Its targeted correction restores image provenance on composition reset while preserving current text edits; historical failure evidence remains intact. The following M11/M7 sections retain their dated evidence.
+
+The completed private M7-L experiment consumed **six actual Meta requests** across its original and related runs. The first authentication rejection and subsequent semantic rejection remain failures. Later Muse Image returned a genuine image, Ember supplied two accepted concepts after one repair, and Spark remained rejected. Cumulative estimated reservation was $0.125; actual charge and remaining fellowship credit are unknown. The experimental allowance is exhausted. Owner-supplied YARC clarification establishes managed credits, a $10 baseline and no personal billing, with rotation managed after evaluation; private correspondence and applicant identifiers are not published.
+
+M9 implements separately gated `muse-ember-1.0` text planning and `muse-image-1.0` conceptual imagery through the canonical renderer. Spark is excluded from production selection. Local generation remains independent. Text rejection can retain local copy while imagery succeeds; image failure retains accepted text. Shared accounting, eligibility, a fixed budget epoch, image-policy review and separate owner activation must precede public inference. **No new provider calls were made in M9.** Injected tests and retained-response replays do not establish fresh reliability of the new public service.
+
+The retained ceramic image was prepared into a 113,491-byte, 1024 × 1024 JPEG under the unchanged 160 KB ceiling. All 385 original XMP bytes and their AI-origin signal survive. Signed or unsupported provenance is refused. Actual native PNGs carry the original XMP and capability record; portable HTML keeps the embedded source and conceptual label. This is inspected metadata preservation, not universal provenance certification or rights clearance. Private qualification originals and response bodies remain unpublished. Generated imagery is conceptual, never a verified photograph of the advertised product.
+
+AI admission requires adult/right-to-input acknowledgement and configured country agreement with Vercel geolocation. Admitted briefs go to Meta; server credentials remain private. Source identifiers are HMAC-hashed for Redis throttling; raw briefs, provider bodies and keys are not stored in budget records. Self-attestation and IP geography do not verify identity. [M9 report](M9_REPORT.md) distinguishes actual exports, mocked tests, owner-reported Redis checks, unresolved release gates and the reproduced/corrected reset-provenance defect. The owner reports pilot settings saved, but this is not inference authorization; [activation preparation](M9_ACTIVATION_PROCEDURE.md) remains separately gated. Historical headed fidelity and native-hosting qualifications remain open.
+
+## M11 application and development disclosure — historical accepted baseline
 
 The owner accepted M11-D bounded protected hosted qualification on 26 November 2026 at application source `710373b`: actual local generation for three tastes and actual HTTP HTML were verified with zero external provider calls. Export/refinement completion explicitly replayed retained hosted plans; its twelve native PNGs are not fresh model generations. [Release status](RELEASE_STATUS.md) records the scope and dated M11-D/M11-E privacy/authentication findings. That qualification did not establish anonymous evaluator access or fresh AI reliability.
 

@@ -2,16 +2,17 @@ import { generationRequestSchema } from "@/lib/generation/contracts";
 import { generationEngine } from "@/server/runtime";
 import { IncompleteBriefError } from "@/lib/generation/brief";
 import { JsonBodyError, readJsonBody } from "@/server/json-body";
+import {admissionContext} from '@/server/meta-engine';
 // Node.js is the default; an explicit runtime export is incompatible with Cache Components.
 export const maxDuration = 45;
 
 export async function POST(request: Request) {
-  const headers = { "Cache-Control": "no-store", "X-Campaign-Inference": process.env.GEMINI_ENABLED === "true" ? "enabled" : "disabled" };
+  const headers = { "Cache-Control": "no-store", "X-Campaign-Inference": process.env.CHOWK_AI_KILL_SWITCH!=='true'&&(process.env.GEMINI_ENABLED === "true"||process.env.CHOWK_AI_ENABLED==='true') ? "enabled" : "disabled" };
   try {
     const json = await readJsonBody(request, 12288);
     const parsed = generationRequestSchema.safeParse(json);
     if (!parsed.success) return Response.json({ error: "Check the topic, optional details and taste. Combined copy must be at most 2200 characters.", fields: parsed.error.issues.map((issue) => issue.path.join(".")) }, { status: 400, headers });
-    const result = await generationEngine().generate(parsed.data);
+    const result = await generationEngine().generate(parsed.data,admissionContext(request));
     return Response.json(result, { headers });
   } catch (error) {
     if (error instanceof JsonBodyError) return Response.json({ error: error.message }, { status: error.status, headers });
