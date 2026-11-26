@@ -1,5 +1,11 @@
 # Third-party software, assets and notices
 
+## Current publication boundary and artwork notice handoff
+
+Protected hosted notice delivery was verified in accepted M11-D qualification. The bounded M11-E assessment found no Sharp/libvips binaries in the checked repository/export materials; the unavailable Vercel internal-package inventory remains a separate hosting qualification, not proof of a publication violation. See [release status](docs/RELEASE_STATUS.md). Earlier dated review gates below preserve their original scope and do not constitute blanket clearance.
+
+Keep the full [Tabler camera MIT notice](docs/licenses/Tabler-MIT.txt) with distributions containing the copied SVG/code or substantial derivative camera artwork. HTML includes the notice conditionally; a bare camera-containing PNG does not automatically carry it. Supply the existing notice as accompanying distribution material; no requirement to print it across the artwork is asserted. Keep OFL notices with distributed/embedded font software. Font-rendered PNG artwork does not itself redistribute that font software. Original-code rights, upstream attribution and private-image restrictions are unchanged.
+
 ## M11-B release qualification
 
 The package/root lock names change to `chowk` only; dependency versions, integrity/resolution entries and installed packages are unchanged. Historical inventory hashes describe their original lockfile bytes, not the renamed root metadata. Original project rights are separately stated in [RIGHTS.md](RIGHTS.md); no permissive original-code license is granted.

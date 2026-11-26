@@ -2,7 +2,9 @@
 
 ## Current application and development disclosure
 
-Configuration A is the approved submission path: **independent deterministic planning; external inference disabled**. No live calls were made for M7, M7-R, M7-L offline closure, M8 or M11-B preparation. Current local engineering acceptance is distinct from older protected hosted verification and from public release. The following dated sections preserve original outcomes; they do not authorize activation.
+The owner accepted M11-D bounded protected hosted qualification on 26 November 2026 at application source `710373b`: actual local generation for three tastes and actual HTTP HTML were verified with zero external provider calls. Export/refinement completion explicitly replayed retained hosted plans; its twelve native PNGs are not fresh model generations. [Release status](RELEASE_STATUS.md) records the scope and dated M11-D/M11-E privacy/authentication findings. That qualification did not establish anonymous evaluator access or fresh AI reliability.
+
+Configuration A is the approved submission path: **independent deterministic planning; external inference disabled**. No live calls were made for M7, M7-R, M7-L offline closure, M8 or M11-B preparation. Accepted evidence now includes both local engineering checks and M11-D protected hosted functional qualification; neither establishes an anonymous evaluator-access pass, fresh provider reliability or blanket public-release clearance. The following dated sections preserve original outcomes; they do not authorize activation.
 
 | Component | Role and current state | Evidence and limits |
 |---|---|---|

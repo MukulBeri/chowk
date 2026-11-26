@@ -4,7 +4,7 @@ Chowk is an independently directed project by Mukul Beri, developed with AI-assi
 
 Turn a topic and visual taste into a coordinated HTML campaign. Explore local concepts, refine copy and composition, adjust supported elements, save projects in this browser, and export four native formats.
 
-**Submission configuration: independent local planning, external inference disabled.** Accepted M7-L/M8 functionality is a local engineering checkpoint; it has not yet replaced the older [protected production baseline](https://chowk-studio.vercel.app). The owner verified that the new production domain is assigned to the existing project; [the previous address](https://yarc-create.vercel.app) remains assigned too. The existing [GitHub repository](https://github.com/MukulBeri/chowk) has been renamed and remains private. Public evaluator access, final target verification and distribution qualifications remain separate release gates. No fresh AI reliability or unconditional artistic acceptance is claimed.
+**Submission configuration: independent local planning, external inference disabled.** Chowk at [chowk-studio.vercel.app](https://chowk-studio.vercel.app) passed owner-accepted bounded M11-D protected hosted qualification on 26 November 2026 at application source `710373b`; the [previous address](https://yarc-create.vercel.app) was also retained. At the M11-D/M11-E checks, the [GitHub repository](https://github.com/MukulBeri/chowk) was private and production required authentication. These are dated verification findings, not permanent access settings or an anonymous evaluator-access pass. [Release status](docs/RELEASE_STATUS.md) distinguishes actual hosted checks, retained-plan export replays and unresolved hosting/native-package qualification. No fresh AI reliability or unconditional artistic acceptance is claimed.
 
 ## Create and refine
 
@@ -69,7 +69,7 @@ curl --fail-with-body http://localhost:3000/api/render \
   --data '{"topic":"A neighborhood reading circle.","details":"Bring a book. No sales.","taste":"minimal-swiss","mode":"local","treatment":"creative-led"}'
 ```
 
-Save the response's `html` string as an HTML file and open it. Await `window.yarcCampaignReady`; readiness requires state `ready` and every format's `exportReady=true`. HTTP 200 alone is not export readiness. Keep embedded fonts/notices. The currently protected production host requires arranged access; an anonymous login redirect is not a successful API response. [Complete API contract](docs/API.md).
+Save the response's `html` string as an HTML file and open it. Await `window.yarcCampaignReady`; readiness requires state `ready` and every format's `exportReady=true`. HTTP 200 alone is not export readiness. Keep embedded fonts/notices. At the recorded M11-D/M11-E checks, production required arranged access; an anonymous login redirect is not a successful API response. Verify access from the evaluator context after any separately authorized change. [Complete API contract](docs/API.md).
 
 Once separately authorized production access and the target release are verified, use the same request against `https://chowk-studio.vercel.app/api/render`. This is the intended integration URL, not a claim that anonymous curl currently works:
 
@@ -131,7 +131,7 @@ Recorded **local M5 v3** result, compatible with the current schema: determinist
 
 The default submission configuration makes no external inference request. Optional Gemini structured planning, disabled private Meta adapters, historical measured results, failure/fallback behavior, unknown costs and development assistance are described in [AI/API disclosure](docs/AI_DISCLOSURE.md). Development assistance is separate from runtime generation; replayed or injected responses are not fresh model acceptance.
 
-Original-code rights are described in [RIGHTS.md](RIGHTS.md); no permissive open-source grant has been selected. Third-party packages, approved OFL fonts and the adopted MIT Tabler camera retain their own [licenses/notices](THIRD_PARTY_NOTICES.md), served by `GET /api/notices` and embedded where applicable. Target-native distribution and private imagery rights remain qualified, not blanket-cleared.
+Original-code rights are described in [RIGHTS.md](RIGHTS.md); no permissive open-source grant has been selected. Third-party packages, approved OFL fonts and the adopted MIT Tabler camera retain their own [licenses/notices](THIRD_PARTY_NOTICES.md), served by `GET /api/notices` and embedded where applicable. When distributing artwork containing the copied camera, keep its [MIT notice](docs/licenses/Tabler-MIT.txt) with the distribution materials, including for PNG; a bare PNG does not automatically carry the HTML notice. Target-native distribution and private imagery rights remain qualified, not blanket-cleared.
 
 The accepted local checkpoint passed **248/248** cases, lint, typecheck and build. Its [report](docs/M8_REPORT.md) distinguishes actual native downloads from mocks and retained private evidence. Current engine functionality reuses that evidence; release-presentation checks are reported separately. Generated `test-results/` artifacts and owner-review ZIPs are private local evidence, not files promised in a public checkout.
 
@@ -139,6 +139,6 @@ The historical headed PNG comparison remains failed/open at **2.7366536458% agai
 
 ## Project documentation
 
-[Architecture](docs/ARCHITECTURE.md) · [Requirements](docs/REQUIREMENTS.md) · [API](docs/API.md) · [Testing](docs/TESTING.md) · [Roadmap](docs/ROADMAP.md) · [Research](docs/RESEARCH.md) · [Release preflight](docs/M11_PREFLIGHT.md) · [Current release closure](docs/M11C_RELEASE_CLOSURE.md)
+[Architecture](docs/ARCHITECTURE.md) · [Requirements](docs/REQUIREMENTS.md) · [API](docs/API.md) · [Testing](docs/TESTING.md) · [Roadmap](docs/ROADMAP.md) · [Research](docs/RESEARCH.md) · [Release status](docs/RELEASE_STATUS.md)
 
-Authentication/accounts, cloud storage, collaboration and direct social publishing are planned after submission. Historical reports and measured evidence retain their original outcomes and attribution. Public access, production release and final fellowship submission still require explicit approvals.
+Authentication/accounts, cloud storage, collaboration and direct social publishing are planned after submission. Historical reports and measured evidence retain their original outcomes and attribution. Public repository/evaluator access and final fellowship submission still require explicit approvals.

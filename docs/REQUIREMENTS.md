@@ -1,8 +1,8 @@
 # Requirements and acceptance traceability
 
-M11-C current authority: the owner accepted M11-B local preparation and verified the renamed private repository MukulBeri/chowk and existing Vercel project chowk. Approved canonical origin: https://chowk-studio.vercel.app; the previous domain remains assigned, with separate origin-local Projects storage. The accepted local engine is not yet deployed over the protected 2b3c564 baseline. Only naming finalization, focused checks and an exact local commit are authorized; no push or public access change. Current closure: [M11-C](M11C_RELEASE_CLOSURE.md). Earlier statements retain dated scope.
+Accepted release baseline: M11-D protected hosted qualification and the bounded M11-E publication review are owner-accepted for application source `710373b` at https://chowk-studio.vercel.app. At those checks on 26 November 2026, the repository was private and production required authentication; this dated evidence is not an anonymous evaluator-access pass or a permanent access rule. Configuration A keeps inference disabled. Further implementation, Git/release actions, access changes and submission require explicit owner authorization. [Release status](RELEASE_STATUS.md) records actual/replayed evidence and remaining hosting/native, fidelity and access qualifications. Dated records below retain their historical scope.
 
-## Current release authority - 26 November 2026
+## Historical M11-B pre-deployment authority - 26 November 2026
 
 Bounded M7-L offline closure and M8 editing/Local Projects are owner-accepted and locally checkpointed at `388b2414bc7b381050a6641d5a0d076e9d3baa80`, with 248/248 retained checks. Configuration A is approved: independent local planning with external inference disabled. The older protected production source remains `2b3c564`; local acceptance does not establish deployment, artistic excellence, public access, fresh inference or target-distribution clearance. Authentication, cloud storage, collaboration and direct publishing are post-submission. M11-B authorizes scoped local presentation/release preparation only; later Git push, naming, visibility, deployment and submission require approval. Dated milestone statements below retain their historical scope.
 
@@ -49,8 +49,8 @@ Locally satisfied means bounded by current actual evidence in M5_REPORT.md and T
 | OFF-12 | Working documented curl usable by another track | Actual local production curl using example-render-request.json; API.md documents browser readiness and safe local mode |
 | OFF-13 | Exact AI/API disclosure, rationale, costs, measured performance/limits | AI_DISCLOSURE.md distinguishes historical M1/M2 successes, M4 failures, corrections/mocks and current zero-call local verification; no exact unknown cost or fresh success invented |
 | OFF-14 | Honest degradation when API fails | Independent local planner shares renderer; disabled/missing/provider-error/validation paths remain distinct. Existing bounded repair and safeguards retained; no new live reliability claim |
-| OFF-15 | Mandatory evaluator-accessible working arbitrary-input prototype | Protected deployment and bounded functional verification accepted; anonymous Vercel authentication remains. Public access or suitable evaluator credentials and complete-core-feature availability remain separately gated |
-| OFF-16 | Public GitHub repository for code review, per later owner-provided YARC clarification | **Blocked: repository remains private; YARC reports access failure.** Visibility change requires separate explicit authorization and applicable privacy/licensing decisions |
+| OFF-15 | Mandatory evaluator-accessible working arbitrary-input prototype | M11-D protected deployment/functionality accepted. The 26 November 2026 M11-D/M11-E checks required Vercel authentication; no anonymous evaluator pass was recorded. Later access authorization and evaluator-context verification must be recorded separately |
+| OFF-16 | Public GitHub repository for code review, per later owner-provided YARC clarification | At M11-D/M11-E verification on 26 November 2026 the repository was private; the earlier owner-provided YARC clarification reported access failure. Public visibility requires explicit authorization and subsequent confirmation; this row is not a permanent privacy setting |
 
 ## Internally selected engineering criteria
 

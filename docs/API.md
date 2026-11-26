@@ -2,9 +2,9 @@
 
 ## Release origin and inference policy
 
-Configuration A uses the real local planner with external inference disabled. The documented localhost curl remains runnable. The owner-verified production origin is `https://chowk-studio.vercel.app`; it remains protected until separately authorized evaluator access. An anonymous Vercel login redirect is not a JSON/HTML response. Metadata defaults to this origin: omit `CHOWK_PRODUCTION_ORIGIN` or use exactly this value; a stale override fails the build. The old `https://yarc-create.vercel.app` domain remains assigned, but Projects storage is separate per origin and no transfer/import is implemented. Repository links now use [MukulBeri/chowk](https://github.com/MukulBeri/chowk). Endpoint paths, schema versions and `window.yarcCampaignReady` remain compatible. These local changes are not yet deployed.
+Configuration A uses the real local planner with external inference disabled. The localhost curl remains runnable. Production at `https://chowk-studio.vercel.app` passed accepted bounded M11-D protected hosted qualification on 26 November 2026 at application source `710373b`, including actual `/api/render` and offline readiness. At the M11-D/M11-E checks, production required authentication and [MukulBeri/chowk](https://github.com/MukulBeri/chowk) was private. Those dated findings do not establish anonymous evaluator access; an authentication redirect is not a JSON/HTML response. Metadata defaults to this origin: omit `CHOWK_PRODUCTION_ORIGIN` or use exactly this value; a stale override fails the build. The old `https://yarc-create.vercel.app` domain was also assigned, but Projects storage is separate per origin and no transfer/import is implemented. Endpoint paths, schema versions and `window.yarcCampaignReady` remain compatible. See [release status](RELEASE_STATUS.md) for the evidence scope and unresolved qualifications.
 
-After protected target verification and separately approved evaluator access, the callable production integration is:
+Protected integration has been verified through an authenticated test session. After separately approved evaluator access is established, the production curl below must also be checked from that evaluator context:
 
 ```sh
 curl --fail-with-body https://chowk-studio.vercel.app/api/render \
@@ -13,6 +13,8 @@ curl --fail-with-body https://chowk-studio.vercel.app/api/render \
 ```
 
 Do not supply owner credentials or bypass links to make a shell example work. Public access remains an explicit gate; no production request was made for this documentation change.
+
+UI portable HTML embeds applicable font notices and the camera MIT notice when that asset is used; API HTML also includes the conditional camera notice. When distributing camera-containing PNG or copied artwork separately, accompany it with [Tabler-MIT.txt](licenses/Tabler-MIT.txt). Do not assume rasterization embeds or cancels the notice.
 
 ## M8 additive manual specification fields
 
