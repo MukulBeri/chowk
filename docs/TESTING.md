@@ -1,5 +1,24 @@
 # Verification and evidence
 
+## M8 integrated candidate
+
+[M7-L offline closure](M7L_OFFLINE_CLOSURE.md) and [M8 report](M8_REPORT.md) record new scoped tests and actual results in `test-results/m8-20261126-01`. Every original 229-case source assertion is retained. New tests exercise instruction classification, durable injected dispatch/reservation gates, canonical element editing/drag/resize/typography/layers, history/reset, project save/reload/rename/duplicate/delete, corrupt records, quota/stale-write/storage failures, legacy restoration, responsive dialogs and actual native PNG/HTML/JSON exports. Original failed selector, legacy-attribute and Windows-policy attempts are retained and distinguished from application defects. No live provider calls. The final machine record gives actual counts and commands; passing automation is not artistic or production acceptance. Existing raster thresholds, historical failures and private evidence restrictions remain unchanged.
+
+## M7-L offline qualification
+
+[M7-L report](M7L_REPORT.md) and `test-results/m7l-20261126-01` isolate current evidence from the sealed M7-R baseline. All 221 prior cases and their original 27 test/fixture/helper file hashes are retained. New injected tests cover strict schema, stream limits, malformed input, decoded image limits, one repair, optional usage, disabled gates and isolated timing. The opt-in `evaluation/m7l-private.config.ts` verifies retained-image optimization and exact Orbit Clay/Field Notes local baselines with actual four-format downloads. It is quota-free and distinct from any future live runner. The historical 60 KB M7-R private experiment is unchanged, not rerun against a new policy.
+
+PNG/DOM remains <=1.5% at channel delta20; HTML/DOM <=0.1% at delta8, Windows headless Chrome DPR1. Direct canonical server HTML is separately browser-verified with outbound networking blocked. A measured response-shaped serialization is not a newly tested asset-upload HTTP API. Historical failures, original headed-browser exception and current weak copy remain findings. Credential-helper syntax inspection does not establish execution: Windows execution policy blocked loading it and was not changed. Actual final commands/results and pending live gates are recorded in the report.
+
+## M7-R verification boundary
+
+[M7-R report](M7R_REPORT.md) and test-results/m7r-20261126-01 record current checks, failures and actual outputs. All 202 existing cases and original source assertions are retained. New cases exercise actual local concepts, selected native exports, uncertainty, anchors, injected qualification, bounded image decode/optimization and mobile snapshot isolation. Original M7/M6 failures remain unchanged. New Pop failures (1.7133% and 2.1363% wide PNG differences) are preserved; a missing inline box-sizing on the new orbit device was corrected without changing thresholds. Unknown-topic wrapping and selector/build harness failures are also retained, not silently erased. Final executed results are recorded separately from interim attempts.
+
+
+## M7 integrated local verification - 26 November 2026
+
+[M7 report](M7_REPORT.md), [actual visual gallery](../test-results/m7-20261126-01/REVIEW.html), [final machine record](../test-results/m7-20261126-01/verification.json) and [integrity inventory](../test-results/m7-20261126-01/artifact-manifest.json) distinguish autonomous local plans/downloads, native baseline DOM captures, original synthetic image fixtures and injected provider/held-response tests. No live calls. All original 160 behavioral cases and their source assertions remain. Earlier failed overlap/classification, missing JSON-copy control and invalid held-response fixture attempts are preserved; consult the report and final record rather than treating an earlier run as current verification. Original headed fidelity stays failed/open at 2.7366536458% against 1.5%; current DPR-1 results do not replace it. Physical phone and formal accessibility certification were not repeated.
+
 ## Accepted protected deployment and physical-phone record — 25 November 2026
 
 The owner accepts the bounded functional verification of deployment `FDCGNNb7SMongEtGbiFnNc6LRqR8` at `2b3c56468f764f549a3335e87d34d877a206d42a`, with accepted 160/160 regressions reused, not rerun. The separate physical Samsung Galaxy A56 5G / Android 17 (owner-reported) / Chrome (exact version unrecorded) record is **11/11 owner-reported passes**. The 35-page smartphone PDF corroborates visible routes, artwork and palette refinement; downloads/interactions are owner-reported, not independently automated. Focused-view use, exact downloaded mobile PNG dimensions, file reopening and JSON parsing were not separately verified. No iOS/universal-device or loading-aesthetic result is inferred.

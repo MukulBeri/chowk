@@ -1,0 +1,97 @@
+# M7 — integrated local candidate
+
+26 November 2026. **Owner-review candidate; not artistic acceptance, fresh provider qualification or release approval.** No provider calls, external asset acquisition, dependencies, Git mutations, deployment, access changes or external archival are authorized by this report.
+
+## Review entry points
+
+- [Visual review gallery](../test-results/m7-20261126-01/REVIEW.html): genuine before/after artwork, unfamiliar subjects, actual downloads and private synthetic image evidence.
+- [Final verification](../test-results/m7-20261126-01/verification.json), [source fingerprint](../test-results/m7-20261126-01/source-owner-review.json), [artifact integrity](../test-results/m7-20261126-01/artifact-manifest.json).
+- Local production application: `/create`. Inference remains disabled. Select Creative-led to use the creative recipes; Standard and legacy endpoints remain available.
+
+These ignored local artifacts are not deployed or automatically included in a public repository. Historical M0–M6 reports, assets, measurements and archive records were not rewritten.
+
+## Starting boundary and source inspection
+
+Clean `main`, empty staging, HEAD `41bdf94ccaefddaf864998e3da285c86dc4f3f34`. The accepted 149-record fingerprint matched `02fdd3559420a43bff9b5cc0ee835b1f6af280e3c614ff62b79d0e4210eabe68` before edits. Local tracking was one ahead/zero behind `origin/main`; the actual remote was not queried or changed. The accepted protected deployment remains separate from this local candidate.
+
+Read the complete owner specification, repository instructions, current architecture/requirements/roadmap/research/testing/disclosure and relevant M6 reports/acceptances/closure. Inspected the actual brief/ledger/planner/provider contracts, engine limits/cache, registry/recipes/candidates, canonical markup, measured fitter, export/ref/revision state and route/UI. Consulted installed Next 16.4.6 client-boundary guidance. Older authorization statements in AGENTS and historical reports are superseded only within the owner's explicit M7 scope.
+
+Before implementation, captured actual unchanged local `/api/render` output for the exact Chai Junction brief in three tastes/four formats under `before/`. Its PNGs are native DOM captures, **not downloaded PNG exports**. New candidate PNGs are actual studio downloads. This new reproducible baseline does not replace retained historical measurements.
+
+## M7-A: interpretation and creative contracts
+
+- Shared bounded style grammar recognizes the reproduced atmosphere instruction in creative-led and Standard planning. Pure style clauses end in a design-role noun. The earlier mixed statement “Use bold typography for product XR-210” remains public, preserving the original regression assertion. Public-copy labels retain their intentional override.
+- Existing application-owned immutable fact IDs and exact clause binding remain authoritative. New creative validation rejects unrequested Chowk identity, competition/prize/certificate/hands-on/bring-builds claims. A preserved quota-free probe also demonstrated that a correct appended ledger could coexist with an extra false venue label or affirmative certificate promise; these now receive the existing reconstructed-public-fact diagnostic. Explicit supplied clauses remain accepted. Existing entity-price, negative-condition, date/time/venue/URL, named-fact, taste, registry and contrast guards remain. No numerical safeguard or repair limit was removed.
+- Creative local planning reuses the established conservative editorial transformations for eligible unnamed subjects, retains supplied names, avoids the old `In focus` headline fallback, and extends botanical relevance to seed/garden subjects. Complete supplied facts remain bound separately; no showcase slogans or fixture IDs were shipped as rules.
+- A versioned strict concept envelope validates copy, fact references and actual supported art direction, filters unsafe/duplicate proposals and caps inspection at three. It is preparation for genuine provider concepts, **not a new multi-concept production endpoint**. The studio still honestly offers local composition alternatives from one plan. No fabricated independent concepts/history or variation thumbnails.
+- Gemini cache identity explicitly includes provider, configured model and treatment. Same local input remains deterministic and is disclosed. Existing timeout, concurrency, process budgets, cache and one-repair policy remain.
+
+These are English/factual heuristics, not general semantic proof. Unfamiliar subjects may still produce literal headlines, a generic category line or intentionally no illustration. Contradictory venue declarations remain visible and flagged rather than silently resolved. The 40-clause bound remains actionable.
+
+## M7-B: one renderer, asset-aware composition and disabled adapters
+
+All work extends `AdvancedPosterMarkup`, `resolveCreativeLayout`, the existing fitter, canonical native roots and PNG/HTML export. There is no competing renderer or v4 path. V1/v2/default v3 remain supported. An optional `assetLayer.version=1` is accepted only with explicit creative-led v3 treatment; historical specs without it require no migration.
+
+Taste changes actual geometry: Swiss editorial portrait/square uses an asymmetric type/image opening and bottom-anchored factual columns; Pop signboard uses a centred visual stage and distinct information band; Street keeps its expressive split/signboard/manifesto structures. Manifesto, signboard, editorial and dossier remain the supported families. No-art/dense corrections still release image regions before refusing impossible copy. No density score is used as artistic certification.
+
+The private raster layer has an ID, real MIME/header dimensions/bytes, SHA-256, source/provider/model, timestamp, revision/edit/parent lineage, unverified rights/private scope, shared focal/zoom/contain-or-cover parameters and per-format crop overrides. Real controls add/replace/remove/reset and edit these fields without a provider call. Default contain protects the whole image; cover/zoom can crop edges and is an explicit manual choice. Image framing supports the original panel and an edge-to-edge image region with a **disjoint solid-colour HTML text safe zone**. This is not automatic object segmentation, a universal subject-bounds guarantee or arbitrary text over photographs.
+
+Static PNG source import is bounded to 8 MB, 2048 pixels per axis and four million pixels, non-interlaced 8-bit supported colour modes. Stored layers remain at most 60,000 bytes. Larger sources are optimized locally to opaque JPEG at quality parameter 0.82, with at most three aspect-preserving size attempts (1024, 768, 576 pixel maximum edges); an image that still exceeds the bound is refused. Original input bytes are not changed. Derivative metadata records original hash/size/dimensions and the opaque lossy transformation. Animated PNGs and compressed ancillary metadata/profiles are unsupported. Browser decode and SHA checks gate readiness. Server PNG inspection checks chunk lengths/CRC, bounded decompression, dimensions and row filters; JPEG has header/dimension/hash checks and still requires actual browser decode. Rendering rechecks SHA. Arbitrary URLs/SVG/markup and asserted public-use rights are refused. Provider plans cannot inject an asset field. There is no upload/storage service or trusted public-rights assertion from browser metadata.
+
+Canonical PNG roots retain inline image styles. Portable HTML shares a raster payload once, with original font/notice handling preserved; the 1.5 MB HTML and 2 MB HTTP response bounds remain. Actual edited-image PNG/HTML/JSON tests verify crop persistence and native dimensions. The original synthetic test raster is authored in the test harness, private and explicitly labelled. No retained Meta image or uncleared generated derivative was copied into public assets. A separately labelled private experiment imported the exact retained I01 PNG through the real application: 3,088,102 original bytes became a 48,391-byte 576 x 576 JPEG. Original SHA-256 remains unchanged. Same-browser JPEG-vs-downsampled-original RMSE was 3.8977 and PSNR 36.3146 dB; these are compression measurements, not artistic scores. All four actual exports matched native DOM and portable HTML exactly in that controlled proof. The derivative does not retain embedded source metadata/signatures; keep the original and matching JSON lineage, and do not publish without clearance.
+
+`src/server/meta.ts` prepares disabled native-REST adapters for Spark 1.3, Ember 1.0 and Muse Image 1.0. There is **no runtime selection, environment activation, credential configuration or provider cascade**. Disabled creation returns before key access/transport construction. Enabled injected tests cover fixed endpoints, Bearer headers, strict completed/refusal/incomplete handling, safe structural/semantic diagnostics, missing usage, bounded streamed responses/timeouts, invalid budgets, reservation-before-dispatch and no retry. The production-compatible strict text schema normalizes an empty transport CTA into the existing optional field. Image generation/edit uses one image, base64 PNG, JSON `images[].image_url`, and disabled search/web/shell, matching inspected retained request contracts.
+
+The adapter is not fresh Meta success. It rejects oversized/invalid images; typical multi-megabyte original research images exceed this conservative layer cap. Browser-side bounded optimization is implemented. Server optimization/transport of large fresh provider images and broader input-format ingestion remain **incomplete**, not bypassed. No original research image rights were elevated. Provider schema acceptance, cost/credit eligibility and autonomous quality require separately authorized qualification.
+
+## M7-C: professional workspace
+
+Desktop has independently scrolling controls/stage, a reserved generation row, persistent export actions and no permanently occupied third pane. Brief/Look/Copy/Layout filters and an All view preserve real state; Look distinguishes draft taste from applied campaign palette/visuals. Copy has Apply/Discard. Layout retains existing recipe/arrangement/emphasis/spacing controls plus real private image editing. The disabled-inference studio has one generation action, visibly “Generate locally”; explicit local/auto HTTP contracts are unchanged.
+
+Mobile provides accessible Edit/Preview navigation, honestly labels the stacked overview “All formats”, preserves controls/format/draft and reveals Preview after successful generation. It uses ordinary scrolling and existing canonical artboards, not duplicate renderers. A contextual native dialog exposes actual rationale/checks/spec and real JSON copy/download. Existing snapshot enlargement remains isolated from refs, IDs and callbacks. Reject-all guidance leads to real brief/taste/layout changes and discloses deterministic regeneration.
+
+The signature loader is unchanged: vermilion/ink/dashed/yellow, 1.6-second cycle, 400 ms phases, stationary identity and reduced-motion handling. Feedback is visible at the initiating action and stage; export buttons identify the actual pending PNG/HTML operation. No fake delay/progress/provider stage was added. Test-only held responses record two cycles and completion/failure separately.
+
+Navigation already had correct `aria-current`; retained it rather than inventing a defect. Removed the redundant studio header CTA. Explore adds actual title search/reset/empty recovery with catalog-derived counts. Docs now leads with a self-contained arbitrary-input curl request. Branding/fonts/native typography remain unchanged. This is not a freeform editor, durable Local Projects, authentication or cloud storage implementation.
+
+## Verification and preserved failures
+
+| Final check | Executed command / evidence | Result |
+|---|---|---|
+| Lint | `npm run lint`, `lint-owner-review.log` | Passed; one pre-existing unused `path` import warning in unchanged M5 tests |
+| TypeScript | `npm run typecheck`, `typecheck-owner-review.log` | Passed |
+| Production build | `npm run build`, `build-owner-review.log` | Passed; 13/13 static generation; existing metadataBase warning retained |
+| Complete regression | `npx playwright test --output=test-results/m7-20261126-01/owner-review-full` | **202/202 passed**, including all 160 original cases and 42 added cases |
+| Native M7 artwork | Fifteen briefs, original synthetic asset fixture, private retained-image experiment | **68 actual PNG downloads**, all required dimensions; matching JSON/portable HTML and zero external offline requests |
+| Export fidelity | Actual downloaded PNG vs native DOM; separately portable HTML vs DOM | Maximum PNG difference **0.0012002743%**; maximum portable difference **0%**, under unchanged thresholds |
+| Actual integration | Installed `curl.exe --json @test-results/m7-20261126-01/curl-request.json ... /api/render` | Actual styled HTML/four native sizes, disabled inference, null model and zero provider attempts |
+
+Final results and exact commands are recorded in `verification.json` and the review gallery; all old test assertions remain byte-identical. The first integrated full run was **196/198**: all 160 original cases passed; two new M7 workspace cases failed. The missing JSON-copy control was corrected. The held-response fixture had an unaccepted `id` HTTP field and mismatched selected taste; the application correctly rejected it. The fixture now uses an accepted request and matching inputs/taste. These failures/traces remain preserved.
+
+Earlier focused runs also retain the action-strip/section-navigation overlap findings and the overly broad initial style classifier. The controls now occupy reserved rows, and the classifier retains the original mixed factual statement. No axe assertion or original factual assertion was weakened.
+
+Final verification includes lint, explicit TypeScript, production build, the complete old suite plus focused M7 cases, actual corpus downloads, native/portable comparisons, offline request blocking, JSON equality, HTTP readiness, responsive routes and controlled animation evidence. The final verification command uses the isolated `owner-review-full` directory; consult the machine record for its actual totals and maxima; do not interpret the first full run as verification of later changes.
+
+The visual corpus fixes fifteen synthetic/public briefs before inspecting output: exact three-taste Chai Junction, detailed After Hours, dense robotics, perfume, culture, Second Stitch, seed exchange, night sky and five unfamiliar subjects. Original assertions also retain long/dense/impossible copy, hostile input, negative facts, legacy parsing, stale responses, export locks/refusal and modal isolation. New focused evidence adds private image cap/decode refusal and per-format crop/bleed exports.
+
+Native dimensions remain 1080×1350, 1080×1080, 1280×720 and 1910×1000. Unchanged tolerances: PNG fraction ≤0.015 at channel delta >20; HTML fraction ≤0.001 at delta >8. Current comparisons are same-machine headless Chrome at DPR 1. **The original M6BC headed 2.7366536458% failure remains failed/open**, and was not reinvestigated or relabelled. No universal device, physical-phone, screen-reader or artistic certification follows.
+
+## Read-only release qualification and remaining decisions
+
+Reachable local history scan: 536 objects, 401 blobs, 6,402,865 bytes; no configured credential-pattern or personal-home-path matches. This is not a complete security/privacy guarantee. Existing non-noreply Git identity remains an owner-awareness item; its value is not printed. No confidential approval PDF or key was inspected. Notices/fonts, package manifests and lockfile remain unchanged; no new external implementation or asset was integrated.
+
+Public policy pages were read without inference. Meta's [November 9 geographic policy](https://dev.meta.ai/legal/geographic-use-policy) does not list India among its restrictions; access and integrated-user eligibility are still conditional. [Meta terms](https://dev.meta.ai/legal/terms-of-service) retain adult/end-user obligations, credit expiry and exclusions from the stated indemnity for promotional-credit use. [Gemini terms](https://aistudio.google.com/docs/terms) retain adult/client restrictions, unpaid-service data handling and region-dependent paid-service conditions. None establishes this project's funding, end-user, asset/publication or public-inference eligibility. Keep providers disabled until those and server-enforced access/abuse/cost controls are approved; process-local quotas are not global enforcement.
+
+M5C/D target evidence remains valid within its measured scope: Linux/build traces are not final Vercel function-package inspection. Sharp/libvips source/relinking/notice qualifications, original-code licence choice, public GitHub/evaluator application access, metadataBase/domain qualification and final submission remain open. No public repository/access, deployment, rename, archive or submission action occurred. A working local-only provider-independent release remains available.
+
+## Incomplete scope and artistic limitations
+
+- The strict concept envelope is not a production multi-concept explorer. Current alternatives are local arrangements, not independent AI ideation.
+- Image handling is a bounded private static-PNG/JPEG-derivative experiment. Broader source MIME support, server-side fresh-provider image optimization, explicit detected object bounds and unrestricted full-canvas photographic grading are not implemented. Edge bleed uses protected text regions, not automatic contrast inference.
+- Local copy is still a finite conservative planner. Unknown subjects may be literal or receive no art; generic category copy, repetition, rectangular framing and sparse/dense imbalance can remain. The gallery includes unfamiliar/weak examples, not only favourable campaigns. The clothing-repair case still receives a generic repair-tool metaphor; the finite library is not a semantic illustration generator.
+- Mobile uses fast Edit/Preview scroll navigation with preserved state, rather than a permanently pinned miniature artwork; physical-device usability review remains open. Full raster provenance stays in the matching JSON sidecar; portable HTML preserves the separate visual layer/crop but not all source metadata.
+- No fresh Gemini/Meta inference, live reliability, new production deployment, physical-phone test, public-release clearance or numerical artistic score is claimed. The proposed 85/100 target requires independent review.
+
+These items remain active; none is silently cancelled. The next owner decision is artistic/technical review of this candidate, including whether to complete remaining image/concept work before release. Provider activation/live qualification and release actions need their own bounded approvals. M8 editor/Local Projects, M9 authentication/cloud storage, M10 sharing/collaboration/publishing, M11 naming migration and wider model/asset research remain active with the established dependencies. Paid services remain unauthorized. Protect 26 November 21:00 IST internal target and 23:59 IST official deadline.
+
+Exact file inventory, final fingerprint, test results and Git state are in the verification record. The 157-record final source fingerprint is `47b336481bf82ba2959f54446a044fcd444fb47e0ae2eceb9aa0d96b71468110`. Nothing is staged or committed; stop at owner review.

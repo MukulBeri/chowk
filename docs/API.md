@@ -1,5 +1,26 @@
 # Campaign APIs
 
+## M8 additive manual specification fields
+
+Manual v3 exports/project records may contain `editing: {version:1, shared:{headline:{dx:1,fontScale:0.95}}, formats:{"instagram-portrait":{headline:{dx:2}}}}`. Offsets are percentages of the native canvas; size multipliers are relative to the generated regions. Per-format properties override shared properties. All rendering still uses the canonical renderer and quality checks. Existing generated specs omit this optional field; model-plan and HTTP input contracts are unchanged. This does not add an arbitrary-spec, asset-upload, project-storage or remote editing endpoint. Projects are IndexedDB records on the browser's current origin only.
+
+## M7-R local concept exploration
+
+POST /api/concepts accepts the existing topic/details/taste/mode/treatment request with treatment creative-led. It is always local, even if mode auto is supplied; X-Campaign-Inference is disabled and no runtime provider is reachable from this handler. Response: version 1, source local, concepts with id/label/angle/validated v3 spec and warnings. Up to three genuinely different bounded editorial framings; fewer when unsafe or unsupported. Standard/unknown fields return 400, incomplete briefs 422. This additive route does not change /api/generate, /api/render or legacy endpoints.
+
+Example (replace localhost with an authorized accessible host):
+
+```sh
+curl -X POST http://localhost:3000/api/concepts -H 'Content-Type: application/json' --data '{"topic":"A neighborhood print exchange.","details":"Bring one print. No sales.","taste":"minimal-swiss","mode":"local","treatment":"creative-led"}'
+```
+
+ArtDirection.design version 1 is an additive creative-led field; historical v1/v2/v3 specifications require no migration. It contains implemented bounded imageRole/typeMode/device and an optional eligible anchorFactId. Clients should retain the complete returned spec and its fact ledger. No arbitrary asset URL/HTML/CSS/script is accepted. No production Meta activation or new hosted route is claimed before release approval.
+
+
+## M7 compatibility note
+
+No endpoint or default request/response meaning changes. POST /api/render still returns styled HTML, four native sizes and explicit browser readiness. Creative-led v3 may contain a versioned private raster layer after browser-local editing; current HTTP input does not accept uploaded assets, external image URLs or arbitrary specifications. Manual crop/image changes are exported from the current canonical browser revision with matching JSON. Disabled Meta adapters are not a callable public integration or newly enabled provider. See [M7 report](M7_REPORT.md).
+
 ## Chowk application routes
 
 The current product identity is Chowk; `/` is the homepage and `/create` hosts the working studio. `/explore` and `/docs` are frontend routes. Existing `/api/generate`, `/api/render`, `/api/design-spec`, `/api/notices`, schema/provenance values, environment names and HTML `window.yarcCampaignReady` remain unchanged. No MCP tool, account/cloud API or publishing API is introduced. Frontend homepage entry explicitly requests creative-led only after the user chooses generation; default HTTP requests and direct studio Standard behavior are preserved. Current product/API guidance is also available at `/docs#api`.

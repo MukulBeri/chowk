@@ -1,5 +1,34 @@
 # Architecture
 
+## M8 editing and device-local projects
+
+Optional `DesignSpecV3.editing.version=1` contains shared element adjustments plus per-format overrides. Existing specs without it resolve identically; v1/v2 remain unchanged. Fixed roles are kicker, headline, support, CTA, illustration and eligible anchor. The same layout resolver applies bounded offsets/sizes before canonical markup; typography overrides change measured ceilings/spacing, never readability floors. Text cannot be hidden. Existing fit, contrast, bounds and overlap checks still refuse unsafe exports. Selection/resize handles are siblings outside the native export root, with no second Poster instance or measurement registration. One committed specification/revision feeds manual controls, history and every export.
+
+Undo/redo retains up to 30 applied snapshots within the current campaign, resetting for generation/project restoration; generated composition can be restored while retaining applied public copy. History is session memory, not persisted undo history. Project records version1 store validated spec, generated reset base, input, truthful generation metadata, optional native-derived thumbnail and timestamps. IndexedDB was selected over synchronous localStorage for transactional image-bearing records. Writes resolve only on transaction completion, compare saved revision to prevent stale overwrites, and never silently evict projects on quota failure. Current bounds: 50 projects, 1.2 MB serialized record, bounded JPEG preview. Corrupt/unknown records are ignored and preserved; unsupported database/storage access reports an error. No authentication, cloud synchronization or automatic backup. See [M8 report](M8_REPORT.md).
+
+## M7-L bounded qualification changes
+
+The image endpoint alone has an 11,000,000-byte streamed JSON cap; `/responses` remains 1,000,000. Strict UTF-8/JSON, canonical base64, decoded-original 8,000,000-byte and 2048-axis/four-million-pixel checks precede the existing bounded worker. Server-prepared layers may be 160,000 bytes; browser local imports retain their 60,000-byte optimization target. Source/derivative hashes, private-only rights metadata, one worker, six-second parent/native two-second operation limits and existing HTML/HTTP ceilings remain. The 90-second session option is explicit qualification configuration; no production timeout/provider activation changed.
+
+Meta strict transport lists every object property as required and represents known optional fields as nullable; only canonical `design`/`anchorFactId` nulls are removed before unchanged validation. A structurally checked concept envelope can reach the existing bounded one-repair orchestrator; the regular adapter still fact-validates accepted concepts. Injected tests are not live protocol acceptance. No alternate renderer or uploaded-spec endpoint was added. [M7-L report](M7L_REPORT.md) supersedes only the historical resource values below.
+
+## M7-R additive creative architecture
+
+ArtDirection.design version 1 is optional on explicit creative-led v3 only. It describes bounded image role, type mode, taste device and eligible intact fact anchor. New plans compile through resolveArtDirection into the same ResolvedLayout roles, AdvancedPosterMarkup, measured fitter and export roots; absent design retains historical geometry. No competing renderer or v4 schema. Actual UI concept selection, local HTTP exploration and disabled injected qualification orchestration share the existing immutable ledger and validation. See [M7-R report](M7R_REPORT.md).
+
+/api/concepts is local-only, returns up to three validated deterministic editorial concepts and cannot construct a provider. It separates distinct copy/angles from compositionCandidates (same plan) and platform formats (same campaign). Copy/palette/layout-only duplicates and unsafe proposals are filtered. Studio keeps the last valid revision, blocks selection for dirty copy/exports/pending work and remeasures a selected specification. Mobile refinement uses a collapsible inert measured DOM snapshot outside the canonical export gallery; all IDs and canonical attributes are removed. It is not a second renderer.
+
+Server raster optimization uses the already installed Sharp 0.35.5 in an isolated worker: 8 MB compressed source, four million pixels, actual decode, orientation, alpha-preserving PNG or opaque quality-82 JPEG, 60 KB derivative, source/derivative hashes and private lineage. One concurrent worker, six-second parent deadline, native operation timeouts and bounded JS heap. These are bounded buffers/processing safeguards, not an OS-level native-memory guarantee. Existing Meta body 1 MB / HTML 1.5 MB / HTTP 2 MB bounds remain. Large fresh Meta originals are still refused at transport until separate approval. No new package or public asset.
+
+
+## M7 additive local architecture
+
+Creative-led requests still use the immutable application ledger, shared validated planner, v3 registry/layout, canonical markup, measured fitter and native export refs. Standard and legacy v1/v2/v3 paths remain. A strict version-1 concept envelope filters supplied candidates; production still exposes local composition alternatives from one plan, not a new multi-concept endpoint.
+
+Optional v3 assetLayer.version=1 is restricted to explicit creative-led treatment. Local static-PNG/JPEG-derivative metadata is bounded, rights-unverified and private; browser decode/hash and server bounded PNG inspection protect relevant boundaries. Framed/edge-to-edge regions keep HTML text separate. Shared portable resources avoid repeated data payloads. No arbitrary SVG/URL/markup or server upload/storage route is introduced.
+
+Meta adapters are independent injected server modules with default-disabled creation and no runtime wiring. Workspace sections, mobile navigation, manual crop/copy edits and readiness revisions feed the existing four native roots. No provider requests arise from local refinement. See [M7 report](M7_REPORT.md) for exact capability/compatibility and remaining qualification.
+
 ## Chowk M6-B/C frontend integration
 
 The route boundary is `/` (marketing/start), `/create` (existing Studio), `/explore` (curated real local outputs) and `/docs` (product/API/transparency). Shared header/footer, original brand assets and scoped site tokens change the interface, not the canonical creative engine. Marketing uses existing Anton/Inter assets; native artwork keeps its accepted inline font/palette/geometry styles. The four API routes, schema versions, environment names, native dimensions and `window.yarcCampaignReady` remain unchanged.

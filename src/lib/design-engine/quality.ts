@@ -9,7 +9,8 @@ export function fitAndInspect(root: HTMLElement): QualityIssue[] {
   const fields = Array.from(root.querySelectorAll<HTMLElement>("[data-fit]"));
   for (const element of fields) {
     let low = Number(element.dataset.min), high = Number(element.dataset.max);
-    const fits = () => element.scrollHeight <= element.clientHeight + 1 && element.scrollWidth <= element.clientWidth + 1;
+    const fits = () => element.scrollHeight <= element.clientHeight + 1 && element.scrollWidth <= element.clientWidth + 1
+      && (!root.dataset.designVersion || Array.from(element.querySelectorAll<HTMLElement>("[data-copy-group]")).every(group=>group.scrollWidth<=group.clientWidth+1&&group.scrollHeight<=group.clientHeight+1));
     element.style.fontSize = `${low}px`;
     if (!fits()) { issues.add("TEXT_OVERFLOW"); continue; }
     for (let step = 0; step < 12 && high - low > .5; step++) {

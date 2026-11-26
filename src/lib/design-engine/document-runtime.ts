@@ -18,12 +18,21 @@ export function measureCampaignDocument(
   host.yarcCampaignReady = (async () => {
     let timer: ReturnType<typeof setTimeout> | undefined;
     try {
-      await Promise.race([load(), new Promise<never>((_resolve, reject) => { timer = setTimeout(() => reject(new Error("font-timeout")), 10000); })]);
+      const resources = async () => {
+        await load();
+        await Promise.all(Array.from(document.querySelectorAll<HTMLElement>("[data-raster-layer]")).map(async layer => {
+          const url=getComputedStyle(layer).backgroundImage.slice(4,-1).replace(/^["']|["']$/g,"");
+          if(!/^data:image\/(?:png|jpeg);base64,[A-Za-z0-9+/=]+$/.test(url))throw Error("Untrusted raster resource");
+          const image=new Image();image.src=url;await image.decode();
+        }));
+      };
+      await Promise.race([resources(), new Promise<never>((_resolve, reject) => { timer = setTimeout(() => reject(new Error("resource-timeout")), 10000); })]);
     } catch {
+      const issue=document.querySelector("[data-raster-layer]")?"RESOURCE_UNAVAILABLE":"FONT_UNAVAILABLE";
       return finish(sections.map(section => {
         const root = section.querySelector<HTMLElement>("[data-poster]")!;
-        root.dataset.ready = "true"; root.dataset.overflow = "true"; root.dataset.exportReady = "false"; root.dataset.quality = '["FONT_UNAVAILABLE"]';
-        return { id: section.dataset.format!, issues: ["FONT_UNAVAILABLE"], corrections: [], exportReady: false };
+        root.dataset.ready = "true"; root.dataset.overflow = "true"; root.dataset.exportReady = "false"; root.dataset.quality = JSON.stringify([issue]);
+        return { id: section.dataset.format!, issues: [issue], corrections: [], exportReady: false };
       }));
     } finally { if (timer) clearTimeout(timer); }
     return finish(sections.map(section => {

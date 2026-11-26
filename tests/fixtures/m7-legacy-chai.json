@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "provenance": "deterministic-fallback",
+  "campaign": {
+    "topic": "Launch campaign for a new campus chai stall called Chai Junction.",
+    "eyebrow": "new campus chai stall",
+    "headline": "Chai Junction",
+    "supportingText": "Masala chai ₹15.\nOpening on 28 November 2026 at 4 PM near the IET entrance."
+  },
+  "taste": "bold-street",
+  "palette": {
+    "background": "#efed50",
+    "ink": "#171d1c",
+    "accent": "#b6301a",
+    "secondary": "#fff9de"
+  },
+  "typography": {
+    "family": "condensed-sans",
+    "headlineScale": 1.1,
+    "case": "uppercase"
+  },
+  "composition": {
+    "layout": "street-stack",
+    "spacing": 60
+  },
+  "decoration": {
+    "motif": "sticker",
+    "density": 3,
+    "illustration": "cup"
+  },
+  "rationale": "Bold Street: signboard composition selected from subject, factual density and visual relevance. Public facts are bound from the application ledger; audience, tone and constraints remain metadata. Local editorial planning, not a live AI result.",
+  "artDirection": {
+    "variant": "street-stack",
+    "palette": "street-acid",
+    "visual": "cup",
+    "emphasis": "display",
+    "information": "auto",
+    "adaptation": "balanced",
+    "treatment": "creative-led",
+    "recipe": "signboard"
+  },
+  "creativeContent": {
+    "version": 1,
+    "subject": "new campus chai stall called Chai Junction",
+    "objective": "launch",
+    "facts": [
+      {
+        "id": "f-topic-0",
+        "text": "new campus chai stall",
+        "source": {
+          "field": "topic",
+          "start": 0,
+          "end": 51
+        }
+      },
+      {
+        "id": "f-topic-51",
+        "text": "Chai Junction",
+        "source": {
+          "field": "topic",
+          "start": 51,
+          "end": 64
+        }
+      },
+      {
+        "id": "f-details-0",
+        "text": "Masala chai ₹15.",
+        "source": {
+          "field": "details",
+          "start": 0,
+          "end": 16
+        }
+      },
+      {
+        "id": "f-details-17",
+        "text": "Opening on 28 November 2026 at 4 PM near the IET entrance.",
+        "source": {
+          "field": "details",
+          "start": 17,
+          "end": 75
+        }
+      }
+    ],
+    "factIds": [
+      "f-topic-0",
+      "f-topic-51",
+      "f-details-0",
+      "f-details-17"
+    ]
+  }
+}

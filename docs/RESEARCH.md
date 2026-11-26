@@ -1,5 +1,18 @@
 # Research, reuse and reference register
 
+## M7-R art-direction adoption
+
+Inspected current M7 artwork and C3_Chowk_Art_Direction_Rules.md / C3_Composition_Lab.html read-only. C3 is manually authored research, not autonomous engine proof. Adopted original bounded image-role/type/anchor/device interpretation in the shared renderer; no copied third-party implementation, remote asset, new font or package. Reject unrestricted type bleed over facts, unverified photographic text contrast and a parallel v4 renderer. Unknown subjects use deliberate typography instead of an inappropriate broad-category icon. This remains a finite local interpreter, not open-world image intelligence.
+
+The already installed Sharp 0.35.5 is used for private server optimization with bounded workers. Existing native-distribution/Sharp-libvips licensing and target-trace qualifications stay open; this does not clear a new deployment payload. Retained Batch A I01 bytes stay external/unchanged; only private derivative evidence is generated locally. Native exports and compression measurements are distinct from artistic acceptance. See [M7-R report](M7R_REPORT.md).
+
+
+## M7 targeted integration decisions - 26 November 2026
+
+Read the owner consolidated M7 specification, actual C2 consolidated workspace reference, hash-matching Creative Lab 1/2 ZIPs and relevant original source contracts, retained Batch A sanitized request/response shapes and isolated composition README/provenance. These are read-only references, not autonomous production acceptance. M7 extends existing recipes and canonical markup; it does not copy a second lab renderer, showcase answers or research image into public code/assets.
+
+Adopted: bounded concept/fact separation, asymmetric role allocation, real local image/crop controls, disjoint image/text bleed regions, persistent workspace actions and truthful pending feedback. Existing approved fonts/Tabler geometry and notices remain unchanged. No external candidate repository/package/asset integration or new dependency was approved or performed. The disabled adapter uses the verified request fields, not the research plan schema as a production DesignSpec. [M7 report](M7_REPORT.md) discloses limitations, private-only image scope, incomplete derivative/concept capabilities and separately gated live/release qualification.
+
 ## Owner-provided release and Meta updates — 25 November 2026
 
 The owner reports official YARC clarification requiring public GitHub code-review access, evaluator access to the complete prototype/core features without login or with suitable credentials, and allowing repository visibility changes after review. YARC reports it currently cannot access this private repository. Record this as owner-provided official context, not an independently retrieved message. See REQUIREMENTS.md for the superseding release criteria; no visibility, access or licensing change is authorized by receiving the update.

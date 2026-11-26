@@ -20,6 +20,14 @@ const suppliedMissing = new RegExp(`^No supplied ${fields}[.!?]?$`, "i");
 const planningDirection = /^(?:please\s+)?(?:do not (?:invent|assume|make up) (?:(?:any|new|the|missing|event|business|product)\s+)*(?:logistics|facts|details|names?|dates?|times?|prices?|locations?|venues?)(?:\s+(?:and|or)\s+(?:facts|details|names?|dates?|times?|prices?|locations?|venues?))*|(?:use|keep) (?:bold|large|small|minimal|simple|expressive) (?:typography|type|fonts?|colou?rs?|layout|composition))[.!?]?$/i;
 const emptyRequest = /^(?:(?:please\s+)?(?:help me |I (?:need|want) to )?announce (?:something|an? (?:event|announcement))|(?:please\s+)?(?:create|make|design)(?: me)? (?:a |an? )?(?:poster|campaign|announcement)|I (?:need|want) (?:a |an? )?(?:poster|campaign|announcement))[.!?]?$/i;
 const normalizedClause = (text: string) => text.replace(/\s+/g, " ").trim();
+// A complete design-role phrase can be an instruction without an imperative.
+// Restrict that shorthand to descriptive words plus a design-role noun: product
+// colours, event restrictions, quantities and named facts are not deleted.
+const styleWords = "(?:understated|editorial|premium|quiet|restrained|bold|street|playful|warm|cool|youthful|minimal|swiss|professional|neutral|expressive|energetic|elegant|friendly|serious|welcoming|luxurious|refined|clean|modern|classic|bright|muted|soft|calm|compact|large|small|condensed|rounded|serif|sans-serif|high-contrast|monochrome|balanced|asymmetric)";
+const styleRole = "(?:art direction|creative direction|editorial direction|design direction|aesthetic|style|tone|mood|typography|fonts?|palette|layout|composition|illustrations?|graphics)";
+const shorthandStyle = new RegExp(`^(?:an?\\s+)?${styleWords}(?:(?:\\s*[,/]\\s*|\\s+(?:and\\s+)?)${styleWords})*\\s+${styleRole}[.!?;]?$`, "i");
+export const isStyleDirection = (text: string) => shorthandStyle.test(text.trim()) || /^(?:art direction|creative direction|design direction|typography|palette|layout|composition)\s*:/i.test(text) || /^(?:please\s+)?(?:aim for|use|prefer|keep|avoid|make it|create|design|give it)\b[^.!?]*\b(?:aesthetic|style|tone|mood|atmosphere|typography|fonts?|palette|layout|composition|illustrations?|graphics)\b[.!?;]?$/i.test(text);
+const isPlanningDirection = (text: string) => planningDirection.test(text) || isStyleDirection(text);
 const isMissing = (text: string) => missingDeclaration.test(normalizedClause(text)) || suppliedMissing.test(normalizedClause(text));
 
 export function interpretBrief(request: GenerationRequest) {
@@ -32,14 +40,14 @@ export function interpretBrief(request: GenerationRequest) {
       if (labelled) { content.push(labelled[1]); explicitCopy.push(labelled[1]); continue; }
       // Split mixed brief declarations from facts without broadly deleting words.
       const clauses = raw.split(/;\s*/);
-      if (clauses.length > 1 && clauses.some((part) => isMissing(part) || planningDirection.test(part))) {
+      if (clauses.length > 1 && clauses.some((part) => isMissing(part) || isPlanningDirection(part))) {
         for (const clause of clauses) classify(clause);
       } else classify(raw);
     }
   }
   function classify(raw: string) {
     if (isMissing(raw)) missing.push(raw);
-    else if (planningDirection.test(raw) || emptyRequest.test(raw)) directions.push(raw);
+    else if (isPlanningDirection(raw) || emptyRequest.test(raw)) directions.push(raw);
     else {
       const subject = raw.replace(/^(?:(?:please\s+)?(?:create|make|design) (?:a |an? )?(?:poster|campaign|announcement) (?:for|about)|(?:please\s+)?(?:help me )?announce)\s+/i, "");
       content.push(subject);
@@ -55,7 +63,7 @@ export function hasPlanningCopy(request: GenerationRequest, copy: string) {
   const explicit = new Set(interpretBrief(request).explicitCopy.flatMap(text => text.split(/;\s*/)).map(text => text.toLowerCase().replace(/\s+/g, " ").trim()));
   return copy.split(/(?<=[.!?])\s+|;\s*/).flatMap(part => [part, ...part.split(/\n/)]).some(part => {
     const clause = normalizedClause(part).replace(/^(?:headline|supporting (?:copy|text)|public copy):\s*/i, "");
-    return (isMissing(clause) || planningDirection.test(clause) || emptyRequest.test(clause))
+    return (isMissing(clause) || isPlanningDirection(clause) || emptyRequest.test(clause))
       && !explicit.has(clause.toLowerCase().replace(/\s+/g, " ").trim());
   });
 }

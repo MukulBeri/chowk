@@ -1,9 +1,10 @@
 import type { DesignSpecV3, Format } from "../design";
 import { resolveSubjectLayout } from "./subject-layout";
 import { resolveCreativeLayout } from "./creative-layout";
+import {applyEditing} from "./editing";
 
 export type Rect = { x: number; y: number; w: number; h: number };
-export type ResolvedLayout = { kicker: Rect; headline: Rect; support: Rect; cta: Rect; art?: Rect; align: "left" | "center" | "right"; columns: number; corrections: string[]; floors: { headline: number; support: number; kicker: number; cta: number } };
+export type ResolvedLayout = { kicker: Rect; headline: Rect; support: Rect; cta: Rect; art?: Rect; anchor?: Rect; align: "left" | "center" | "right"; columns: number; corrections: string[]; floors: { headline: number; support: number; kicker: number; cta: number } };
 export function copyGroups(text: string) {
   // Keep every character-bearing clause, including punctuation and negative facts.
   // Only whitespace is rearranged. A URL is never shortened or made executable.
@@ -18,6 +19,9 @@ export function informationRole(text: string): "when" | "where" | "entry" | "reg
   return "message";
 }
 export function resolveLayout(spec: DesignSpecV3, format: Format, correction = 0): ResolvedLayout {
+ return applyEditing(resolveGeneratedLayout(spec,format,correction),spec,format);
+}
+export function resolveGeneratedLayout(spec: DesignSpecV3, format: Format, correction = 0): ResolvedLayout {
   if (spec.artDirection.treatment === "creative-led") return resolveCreativeLayout(spec, format, correction);
   if (spec.artDirection.treatment === "subject-led") return resolveSubjectLayout(spec, format, correction);
   const { width: w, height: h } = format, wide = w > h, portrait = h > w;

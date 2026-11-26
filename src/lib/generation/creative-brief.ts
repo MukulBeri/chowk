@@ -1,6 +1,6 @@
 import type { GenerationRequest } from "./contracts";
 import { publicFactSchema, type PublicFact } from "./fact-ledger";
-import { interpretBrief } from "./brief";
+import { interpretBrief, isStyleDirection } from "./brief";
 
 export type CreativeBrief = ReturnType<typeof interpretCreativeBrief>;
 const tidy = (s: string) => s.replace(/\s+/g, " ").trim();
@@ -13,7 +13,6 @@ const missing = new RegExp(`^(?:No (?:specific )?${fields} (?:has|have) been (?:
 const instruction = /^(?:please\s+)?(?:do not|don't|never) (?:invent|assume|make up|generate)\b|^(?:please\s+)?(?:do not|don't|never) (?:add|include|mention|claim) (?:any |new |additional |unsupported )?(?:offers?|discounts?|sponsors?|statistics|logistics|claims?|facts?|dates?|prices?)\b|^(?:target audience|audience|tone|style|aesthetic|visual preference|creative direction)\s*:/i;
 // A style action requires a design-role noun, not merely an adjective such as
 // premium. "Use a premium pen holder" and "Do not include nuts" stay public.
-const styleDirection = /^(?:please\s+)?(?:aim for|use|prefer|keep|avoid|make it)\b[^.!?]*\b(?:aesthetic|style|tone|mood|typography|fonts?|palette|layout|composition|illustrations?|graphics)\b[^.!?]*[.!?]?$/i;
 const toneOnly = /^(?:(?:warm|youthful|affordable|premium|refined|understated|playful|energetic|bold|minimal|restrained|professional|elegant|friendly|serious|welcoming|luxurious)(?:\s*[,/]\s*|\s+and\s+|\s+|[.!]?))+$/i;
 const noArt = /^(?:please )?(?:no (?:art|illustration|illustrations|graphics)(?: (?:please|requested))?|(?:without|do not use|don't use|avoid) (?:any )?(?:art|illustrations?|graphics)|(?:use )?(?:only )?(?:typography|type|text)[- ]only(?: design)?|use (?:only )?(?:typography|text))(?: please)?[.!]?$/i;
 const unsafe = /<\/?(?:script|iframe|style)\b|javascript:|\b(?:ignore previous instructions|system prompt)\b/i;
@@ -44,7 +43,7 @@ export function interpretCreativeBrief(request: GenerationRequest) {
         const existing = interpretBrief({ ...request, topic: clause, details: "" });
         if (missing.test(clause) || existing.missing.length) { missingInformation.push(clause); continue; }
         if (noArt.test(clause)) { illustration = false; directions.push(clause); continue; }
-        if (instruction.test(clause) || styleDirection.test(clause) || toneOnly.test(clause) || existing.directions.length || unsafe.test(clause) || subjectless.test(clause)) {
+        if (instruction.test(clause) || isStyleDirection(clause) || toneOnly.test(clause) || existing.directions.length || unsafe.test(clause) || subjectless.test(clause)) {
           directions.push(clause);
           if (/^(?:target audience|audience):/i.test(clause)) audience = clause.replace(/^[^:]+:\s*/, "").replace(/[.!]$/, "");
           if (/^(?:tone|style|aesthetic|creative direction):|^(?:aim for|use|prefer|keep)\b/i.test(clause) || toneOnly.test(clause)) tone = clause.replace(/^[^:]+:\s*/, "");

@@ -12,6 +12,8 @@ import { fitAndInspect } from "@/lib/design-engine/quality";
 import { fitLegacyText } from "@/lib/design-engine/legacy-quality";
 import { loadCampaignFontFaces, fontFallbackWarnings } from "@/lib/design-engine/fonts";
 import { measureCampaignDocument } from "@/lib/design-engine/document-runtime";
+import { shareRasterResources } from "@/lib/design-engine/assets";
+import { inspectRaster } from "./raster-validation";
 
 let fontBundle: Promise<{ css: string; notices: string }> | undefined;
 async function verifiedFile(asset: { path: string; sha256: string }) {
@@ -28,6 +30,8 @@ function fonts() {
 }
 export async function renderCampaignDocument(input: DesignSpec) {
   const spec = designSchema.parse(input);
+  if (spec.version === 3 && spec.assetLayer && createHash("sha256").update(Buffer.from(spec.assetLayer.dataUrl.split(",")[1], "base64")).digest("hex") !== spec.assetLayer.sha256) throw new Error("Raster integrity failure");
+  if (spec.version === 3 && spec.assetLayer) inspectRaster(Buffer.from(spec.assetLayer.dataUrl.split(",")[1], "base64"));
   const bundle = spec.version === 3 ? await fonts() : { css: "", notices: "" };
   const warnings = spec.version === 3 ? fontFallbackWarnings([spec.campaign.headline, spec.campaign.supportingText, spec.campaign.cta].join("\n")) : ["Historical specifications retain system fonts; device equivalence is unverified."];
   const markup = renderToStaticMarkup(<>
@@ -42,10 +46,12 @@ export async function renderCampaignDocument(input: DesignSpec) {
     {bundle.notices && <details><summary>Embedded font licenses and copyright notices</summary><pre>{bundle.notices}</pre></details>}
     {spec.version === 3 && spec.artDirection.visual === "camera" && <details><summary>Artwork asset license and copyright notice</summary><pre>{tabler.license.notice}</pre></details>}
   </>);
+  const shared = shareRasterResources(markup);
   const load = spec.version === 3 ? loadCampaignFontFaces.toString() : "async function(){await document.fonts.ready}";
   const script = `(${measureCampaignDocument.toString()})(${fitAndInspect.toString()},${load},${fitLegacyText.toString()});`;
   const digest = createHash("sha256").update(script).digest("base64");
   const html = `<!doctype html><html lang="en" data-render-state="pending"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src data:; script-src 'sha256-${digest}'; base-uri 'none'; form-action 'none'"><title>Campaign · verified browser rendering</title><style>${bundle.css}html,body{margin:0;padding:0;background:#e6e4dc}section{margin:24px;width:max-content}*{box-sizing:border-box}body>p,body>noscript,details{margin:24px;font:14px Arial}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style></head><body>${markup}<script>${script}</script></body></html>`;
-  if (Buffer.byteLength(html, "utf8") > 1500000) throw new Error("Rendered document exceeds its resource bound");
-  return { html, sizes: FORMATS, rendering: { state: "requires-browser-verification" as const, measuredOnServer: false, readinessPromise: "window.yarcCampaignReady", result: "window.yarcCampaignQuality", maximumCorrectionPasses: 3, warnings } };
+  const portable = html.replace(markup, shared.html).replace("<style>", `<style>${shared.css}`);
+  if (Buffer.byteLength(portable, "utf8") > 1500000) throw new Error("Rendered document exceeds its resource bound");
+  return { html: portable, sizes: FORMATS, rendering: { state: "requires-browser-verification" as const, measuredOnServer: false, readinessPromise: "window.yarcCampaignReady", result: "window.yarcCampaignQuality", maximumCorrectionPasses: 3, warnings } };
 }

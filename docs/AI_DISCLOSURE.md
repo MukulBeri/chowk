@@ -1,5 +1,32 @@
 # AI and API disclosure
 
+## M7-L offline closure and M8
+
+The style-as-copy correction and durable qualification dispatcher are tested entirely with injected responses/synthetic credentials; the compatible installed-Node owner's launcher defaults to no dispatch and checks separate live/account/source approval before a credential prompt. Original PowerShell policy failure, prior rejected outcomes and weak artwork remain historical findings. No real key was read or requested, no provider activated and no new live request made. See [offline closure](M7L_OFFLINE_CLOSURE.md).
+
+M8 moves/resizes existing canonical elements, applies local typography/image adjustments and saves validated browser-local projects. These are manual operations, not AI generation or cloud services. Imported model provenance is not relabelled Gemini or deterministic success. Actual local generation, manual edited exports and retained private imagery remain distinct in [M8 report](M8_REPORT.md). Current account credits/billing, fresh provider qualification, private-image rights and artistic/release gates remain open.
+
+## M7-L offline qualification - 26 November 2026
+
+The owner authorized conditional Meta qualification, then explicitly held dispatch pending current promotional-credit and billing confirmation. **Zero live inference requests and zero credential reads** occurred in M7-L. Historical seven-call access is not current account verification. Model usage, live latency, account balance and billed cost remain unavailable. The $0.20 envelope is an estimated local reservation, not a provider-enforced cap.
+
+Image-only streamed transport now supports 11 MB, server-prepared private layers 160 KB, and an explicit isolated qualification window up to 90 seconds. Text remains 1 MB; original images 8 MB / four million pixels; browser import optimization 60 KB; normal runtime remains disabled. Strict Meta schema nullability and injected repair propagation were corrected offline. Actual local Orbit Clay/Field Notes exports and a retained private historical image are **not fresh Meta results**. [M7-L report](M7L_REPORT.md) records evidence, public documentation, unresolved copy quality and the remaining account/launcher gates. Earlier reports and failed outcomes retain their original meaning.
+
+## M7-R correction evidence - 26 November 2026
+
+Zero new live inference, credential access, provider activation or paid billing. Local concept exploration uses bounded deterministic editorial framings; it is not fresh AI creativity. Actual autonomous local generation, injected Gemini/Meta concept/session transports, original synthetic images and retained private Meta I01 replay/optimization are labelled separately. Rejected historical responses remain rejected; no new acceptance, usage/cost or reliability is inferred.
+
+The existing Gemini integration remains disabled. Meta adapters remain fail-closed and absent from runtime selection. Offline qualification can validate concepts, select one, prepare one private asset and reuse the canonical renderer across formats, with one repair, explicit dispatch accounting, timeout and honest fallback. That seam is not deployed multi-provider support. [Live qualification proposal](M7R_LIVE_QUALIFICATION_PROPOSAL.md) requests no current execution and identifies the unchanged one-megabyte Meta transport gate. Missing Meta usage is omitted, not zero. Legacy Gemini missing-usage defaults remain historical limitations; no exact cost or account balance is claimed.
+
+
+## M7 local candidate - disabled provider preparation
+
+M7 makes **zero live provider calls**. Gemini remains disabled; automatic and explicit local endpoint semantics remain supported. The studio shows Generate locally when inference is disabled. Existing original live failures and later retained-response replay remain unchanged.
+
+The new Meta REST adapters are disabled, isolated from runtime configuration/UI and exercised only with injected transport. They prepare Spark 1.3, Ember 1.0 and Muse Image 1.0, strict validated plans and one-image JSON generation/edit contracts; they are not fresh Meta inference or proof of account/credit/release eligibility. Unknown usage stays absent. No key or confidential approval document was inspected or configured. [M7 report](M7_REPORT.md) records inspected retained Batch A evidence separately from current mocks and the remaining activation gates.
+
+Local raster layers are private, rights-unverified input, never flattened replacement text artwork. Actual image evidence uses an original synthetic test raster. No uncleared generated asset enters tracked public assets. Research galleries are authored demonstrations, not autonomous quality measurements. Artwork still needs independent human review; automated geometry checks do not assign an artistic score.
+
 ## Accepted protected deployment and owner-reported Meta approval
 
 Protected Chowk deployment `FDCGNNb7SMongEtGbiFnNc6LRqR8` at commit `2b3c56468f764f549a3335e87d34d877a206d42a` has owner-accepted bounded functional verification, with inference disabled and zero live provider calls in deployment/closure. Four controlled actual local UI generations plus one actual local HTTP render were separately distinguished from two test-only replay responses; owner phone use is separate. Physical-phone generation used explicit local mode. None is fresh Gemini or Meta success. Original failed provider outcomes/replay and the failed headed fidelity measurement remain unchanged. See M6BC_DEPLOYMENT_CLOSURE.md.

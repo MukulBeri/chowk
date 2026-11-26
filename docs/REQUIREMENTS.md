@@ -1,5 +1,14 @@
 # Requirements and acceptance traceability
 
+## M7-R owner-review correction scope
+
+M7-R extends the current M7 candidate: real validated local concept exploration/selection, additive supported art-direction grammar, deliberate typography/illustration/photo allocations, generalized uncertainty handling, bounded server optimization and injected provider readiness, mobile applied-artwork context and integrated evidence. It does not establish the advisory 85/100 human target, artistic acceptance, fresh AI success or production clearance. Existing official Technology requirements, facts, native dimensions, legacy contracts and fidelity thresholds are unchanged. Details and requirement matrix: [M7-R report](M7R_REPORT.md).
+
+
+## M7 local candidate - 26 November 2026
+
+The owner authorized integrated creative/factual, private asset, disabled Meta-adapter and workspace work. [M7 report](M7_REPORT.md) records actual scope, remaining image/concept work and verification. Existing official Technology requirements and all release gates below remain. The optional asset layer is a private creative-led v3 extension, not public rights clearance or a new renderer; legacy contracts remain. No provider, access, deployment, licensing or submission approval follows.
+
 Current authority (25 November 2026): M6-B/C is accepted, committed and synchronized at `2b3c56468f764f549a3335e87d34d877a206d42a`; protected Production deployment `FDCGNNb7SMongEtGbiFnNc6LRqR8` has owner-accepted bounded functional verification and 11/11 owner-reported physical-phone passes. Original default-headed fidelity remains failed/open; public release and licensing are not cleared. See [protected deployment closure](M6BC_DEPLOYMENT_CLOSURE.md). Earlier milestone reports and the 25 November 15:00 IST internal M5 target are historical, not claims of deadline achievement. Official **26 November 2026 at 23:59 IST** remains the fellowship deadline.
 
 ## Authoritative official source and division scope

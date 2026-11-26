@@ -30,7 +30,7 @@ export class GenerationEngine {
     };
     if (request.mode === "local") return local("requested-local");
     if (!this.provider || this.unavailable) return local(this.unavailable ?? "missing-credentials");
-    const key = createHash("sha256").update(JSON.stringify([this.config.model, request.topic, request.details, request.taste, request.treatment ?? null])).digest("hex");
+    const key = createHash("sha256").update(JSON.stringify(["gemini", this.config.model, request.topic, request.details, request.taste, request.treatment ?? null])).digest("hex");
     for (const [id, item] of this.cache) if (start - item.time >= this.config.cacheTtlMs) this.cache.delete(id);
     const cached = this.cache.get(key);
     if (cached) return { ...cached.result, metadata: { ...cached.result.metadata, cached: true, totalMs: this.now() - start, attempts: [] } };

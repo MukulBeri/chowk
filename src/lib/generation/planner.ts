@@ -7,6 +7,7 @@ import { factualIssues, factualTokens, missingFactCategories, normalized } from 
 import { boundedNotes, hasPlanningCopy, IncompleteBriefError, interpretBrief } from "./brief";
 import { structuralDiagnostics, semanticDiagnostics, type ValidationDiagnostics } from "./diagnostics";
 import { editorialCopy } from "./editorial";
+import { eligibleAnchorFacts } from "../design-engine/direction";
 
 export function contrast(a: string, b: string) {
   const luminance = (hex: string) => {
@@ -32,8 +33,21 @@ export function validatePlan(raw: unknown, request: GenerationRequest): { plan?:
     if (!("artDirection" in plan) || plan.artDirection.treatment !== "creative-led") issues.push("unsupported-art-direction");
     const authored = [plan.campaign.eyebrow, plan.campaign.headline, plan.campaign.supportingText, plan.campaign.cta].filter(Boolean).join("\n");
     if (creativeCopyLeaks(request, authored)) issues.push("planning-instruction-in-copy");
+    // Product chrome is never an implicit campaign sponsor. This also catches
+    // upper-case names that the title-case entity heuristic cannot recognize.
+    if (/\bchowk\b/i.test(authored) && !/\bchowk\b/i.test(creative.publicText)) issues.push("unsupported-named-entity");
+    if (/\b(?:competition|contest|prizes?|certificates?|hands-on|bring (?:your )?builds)\b/i.test(authored)) {
+      const claims = authored.match(/\b(?:competition|contest|prizes?|certificates?|hands-on|bring (?:your )?builds)\b/gi) ?? [];
+      if (claims.some(claim => !creative.publicText.toLowerCase().includes(claim.toLowerCase()))) issues.push("unsupported-action-claim");
+    }
     const canonical = (s: string) => normalized(s).replace(/[.!;]+$/, "");
     for (const clause of authored.split(/\n|(?<=[.!?;])\s+/).filter(Boolean)) {
+      const suppliedClause=creative.facts.some(f=>canonical(f.text)===canonical(clause));
+      // Binding a correct ledger later must not legitimise an extra incorrect
+      // location/price label or an affirmative certificate promise alongside it.
+      if(!suppliedClause && /^(?:venue|location|address|date|time|entry|price|fee|capacity)\s*:/i.test(clause)) issues.push("reconstructed-public-fact");
+      const noCertificates=creative.facts.some(f=>/^no certificates[.!?]?$|^no certificates\s+(?:(?:will|shall) be |are |were |have been )?(?:issued|provided|awarded|offered|available|included)\b/i.test(f.text));
+      if(!suppliedClause && noCertificates && !/\b(?:no|not|never|without)\b/i.test(clause) && /\bcertificates?\b.*\b(?:included|available|issued|provided|awarded|offered)\b|\b(?:receive|get|earn|includes?)\b.*\bcertificates?\b/i.test(clause)) issues.push("reconstructed-public-fact");
       // A token set cannot detect swapped prices or reversed relationships.
       // New numeric factual clauses must be an exact supplied ledger clause.
       if (factualTokens(clause).length && !creative.facts.some(f => canonical(f.text) === canonical(clause))) issues.push("reconstructed-public-fact");
@@ -50,6 +64,8 @@ export function validatePlan(raw: unknown, request: GenerationRequest): { plan?:
   if (plan.typography.family !== family || plan.typography.case !== preset.typography.case || plan.composition.layout !== preset.composition.layout || plan.decoration.motif !== preset.decoration.motif) issues.push("unsupported-taste-combination");
   if ("artDirection" in plan) {
     if (!compatibleDirection(request.taste, plan.artDirection)) issues.push("unsupported-art-direction");
+    const design=plan.artDirection.design;
+    if(design?.anchorFactId && (!creative || !eligibleAnchorFacts(creative.subject,creative.facts).some(f=>f.id===design.anchorFactId)))issues.push("unsupported-art-direction");
     if (Object.entries(PALETTES[plan.artDirection.palette]).some(([key, value]) => plan.palette[key as keyof typeof plan.palette] !== value)) issues.push("palette-token-mismatch");
     const visual = plan.artDirection.visual;
     if (plan.decoration.illustration !== (visual === "cup" ? "cup" : visual === "none" ? "none" : "abstract")) issues.push("inconsistent-visual-fields");
