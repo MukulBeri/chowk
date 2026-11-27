@@ -3,6 +3,7 @@ import { designSchema, designSchemaV1, ILLUSTRATIONS, TASTES } from "../design";
 import { artDirectionSchema } from "../design-engine/registry";
 import { validationDiagnosticsSchema, type ValidationDiagnostics } from "./diagnostics";
 import {capabilitiesSchema} from './capabilities';
+import {pipelineDiagnosticSchema,type PipelineDiagnostic} from './pipeline-diagnostics';
 
 export const generationRequestSchema = z.strictObject({
   topic: z.string().trim().min(1, "Enter a topic.").max(1200),
@@ -50,10 +51,12 @@ export const FALLBACK_REASONS = [
 ] as const;
 export type FallbackReason = (typeof FALLBACK_REASONS)[number];
 export type Usage = { inputTokens: number; outputTokens: number; thinkingTokens: number; totalTokens: number };
-export type Attempt = { outcome: "accepted" | FallbackReason; elapsedMs: number; dispatched?:boolean; usage?: Partial<Usage>; finishReason?: string; httpStatus?: number; validation?: ValidationDiagnostics };
+export type Attempt = { outcome: "accepted" | FallbackReason; elapsedMs: number; dispatched?:boolean; usage?: Partial<Usage>; finishReason?: string; httpStatus?: number; validation?: ValidationDiagnostics; diagnostic?:PipelineDiagnostic };
+const interpretationSourcesSchema=z.strictObject({brief:z.literal('application'),creative:z.strictObject({source:z.literal('meta'),model:z.literal('muse-ember-1.0'),interpretation:interpretationSchema,rationale:z.string().trim().min(1).max(600)}).optional()});
 export type GenerationResult = {
   spec: z.infer<typeof designSchema>;
   interpretation: z.infer<typeof interpretationSchema>;
+  interpretationSources?:z.infer<typeof interpretationSourcesSchema>;
   metadata: {
     source: "gemini" | "deterministic-fallback" | "meta";
     capabilities?:z.infer<typeof capabilitiesSchema>;
@@ -69,12 +72,13 @@ export type GenerationResult = {
 export const generationResultSchema = z.object({
   spec: designSchema,
   interpretation: interpretationSchema,
+  interpretationSources:interpretationSourcesSchema.optional(),
   metadata: z.object({
     source: z.enum(["gemini", "deterministic-fallback","meta"]), model: z.string().nullable(),capabilities:capabilitiesSchema.optional(),
     fallbackReason: z.enum(FALLBACK_REASONS).nullable(), totalMs: z.number().nonnegative(),
     attempts: z.array(z.object({ outcome: z.enum(["accepted", ...FALLBACK_REASONS]), elapsedMs: z.number(), dispatched:z.boolean().optional(), usage: z.object({
       inputTokens: z.number().optional(), outputTokens: z.number().optional(), thinkingTokens: z.number().optional(), totalTokens: z.number().optional(),
-    }).optional(), finishReason: z.string().optional(), httpStatus: z.number().int().min(100).max(599).optional(), validation: validationDiagnosticsSchema.optional() })).max(3),
+    }).optional(), finishReason: z.string().optional(), httpStatus: z.number().int().min(100).max(599).optional(), validation: validationDiagnosticsSchema.optional(),diagnostic:pipelineDiagnosticSchema.optional() })).max(3),
     cached: z.boolean(), warnings: z.array(z.string()),
   }),
 });

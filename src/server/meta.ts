@@ -2,7 +2,7 @@ import { z } from "zod";
 import { creativeLedPlanSchema, type GenerationRequest, type Usage } from "../lib/generation/contracts";
 import { generationPrompt } from "./gemini";
 import { validatePlan } from "../lib/generation/planner";
-import { assetLayerSchema, MAX_SOURCE_BYTES,MAX_RASTER_BYTES,rasterHeader, type AssetLayer } from "../lib/design-engine/assets";
+import { assetLayerSchema, MAX_SOURCE_BYTES,rasterHeader, type AssetLayer } from "../lib/design-engine/assets";
 import { createHash } from "node:crypto";
 import { inspectRaster } from "./raster-validation";
 import type { ValidationDiagnostics } from "../lib/generation/diagnostics";
@@ -11,9 +11,11 @@ import { optimizeRaster, RasterError } from "./raster-optimizer";
 import { conceptEnvelopeSchema, validatedConcepts } from "../lib/generation/concepts";
 import { structuralDiagnostics } from "../lib/generation/diagnostics";
 import {compactCreativeSchema,compactCreativePrompt,expandCreativeEnvelope} from './meta-creative-contract';
+import {pipelineDiagnostic,type PipelineDiagnostic} from '../lib/generation/pipeline-diagnostics';
 
 export type MetaCode = "disabled" | "budget" | "timeout" | "transport" | "auth" | "quota" | "provider" | "refusal" | "incomplete" | "structure" | "semantic" | "asset";
-export class MetaError extends Error { constructor(public code: MetaCode, public validation?: ValidationDiagnostics,public httpStatus?:number) { super(`Meta adapter: ${code}`); } }
+export class MetaError extends Error { constructor(public code: MetaCode, public validation?: ValidationDiagnostics,public httpStatus?:number,public diagnostic?:PipelineDiagnostic) { super(`Meta adapter: ${code}`); } }
+const assetFailure=(stage:PipelineDiagnostic['stage'],code:PipelineDiagnostic['code'],measurements:Pick<PipelineDiagnostic,'sourceBytes'|'outputBytes'|'width'|'height'|'elapsedMs'>={})=>new MetaError('asset',undefined,undefined,pipelineDiagnostic({stage,code,...measurements}));
 export type MetaTransport = (url: string, init: RequestInit) => Promise<Response>;
 export const META_RUNTIME_ENABLED = false; // Legacy default. M9 uses its own explicit, fail-closed service gates.
 const BASE = "https://api.meta.ai/v1";
@@ -59,9 +61,9 @@ type Options = { enabled?: boolean; key?: string; maximumCalls?: number; timeout
 // retain such originals verbatim or refuse a derivative rather than strip metadata.
 export function metaPngMetadata(bytes:Buffer){
  let offset=8,metadata=false,exif=false,other=false,signedChunk=false,xmp:string|undefined;
- while(offset+12<=bytes.length){const length=bytes.readUInt32BE(offset),kind=bytes.toString('ascii',offset+4,offset+8);if(offset+12+length>bytes.length)throw new MetaError('asset');if(!['IHDR','PLTE','IDAT','IEND','tRNS','pHYs','gAMA','cHRM','sRGB','bKGD'].includes(kind)){
+ while(offset+12<=bytes.length){const length=bytes.readUInt32BE(offset),kind=bytes.toString('ascii',offset+4,offset+8);if(offset+12+length>bytes.length)throw assetFailure('metadata-policy','metadata-refused');if(!['IHDR','PLTE','IDAT','IEND','tRNS','pHYs','gAMA','cHRM','sRGB','bKGD'].includes(kind)){
  metadata=true;const data=bytes.subarray(offset+8,offset+8+length),keyword=data.indexOf(0);
- if(kind==='iTXt'&&data.subarray(0,keyword).toString()==='XML:com.adobe.xmp'&&data[keyword+1]===0){let start=keyword+3;for(let n=0;n<2;n++){const end=data.indexOf(0,start);if(end<0)throw new MetaError('asset');start=end+1;}if(xmp||data.length-start>16000)throw new MetaError('asset');xmp=new TextDecoder('utf-8',{fatal:true}).decode(data.subarray(start));}else other=true;
+ if(kind==='iTXt'&&data.subarray(0,keyword).toString()==='XML:com.adobe.xmp'&&data[keyword+1]===0){let start=keyword+3;for(let n=0;n<2;n++){const end=data.indexOf(0,start);if(end<0)throw assetFailure('metadata-policy','metadata-refused');start=end+1;}if(xmp||data.length-start>16000)throw assetFailure('metadata-policy','metadata-refused');try{xmp=new TextDecoder('utf-8',{fatal:true}).decode(data.subarray(start));}catch{throw assetFailure('metadata-policy','metadata-refused');}}else other=true;
  }if(kind==='eXIf')exif=true;if(kind==='caBX'||kind==='JUMb')signedChunk=true;offset+=12+length;if(kind==='IEND')break;}
  return {metadata,exif,other,xmp,signed:signedChunk||!!xmp&&/c2pa|contentcredentials|<ds:Signature|<Signature\b/i.test(xmp)};
 }
@@ -85,11 +87,11 @@ export function createMetaAdapter(options: Options = {}, transportFactory: () =>
       const response = await Promise.race([transport(BASE + endpoint, { method:"POST", headers:{"Content-Type":"application/json",Authorization:`Bearer ${options.key}`},body:JSON.stringify(body),redirect:"error",signal:controller.signal }), deadline]);
       options.observe?.({phase:'http',kind:endpoint==='/responses'?'text':'image',httpStatus:response.status,elapsedMs:performance.now()-start,usage:undefined});
       if (!response.ok) throw new MetaError(response.status === 401 || response.status === 403 ? "auth" : response.status === 429 ? "quota" : "provider",undefined,response.status);
-      const reader=response.body?.getReader(); if(!reader)throw new MetaError("structure");
+      const reader=response.body?.getReader(); if(!reader)throw new MetaError("structure",undefined,undefined,{stage:'response-contract',code:'invalid-response'});
       let size=0;const chunks:Uint8Array[]=[];
       const maximumResponse=endpoint==="/responses"?META_TEXT_RESPONSE_BYTES:META_IMAGE_RESPONSE_BYTES;
-      while(true){const chunk=await Promise.race([reader.read(),deadline]);if(chunk.done)break;size+=chunk.value.length;if(size>maximumResponse){void reader.cancel().catch(()=>{});throw new MetaError("structure");}chunks.push(chunk.value);}
-      const bytes=Buffer.concat(chunks);let raw:unknown;try{const text=new TextDecoder("utf-8",{fatal:true}).decode(bytes);if(options.key&&text.includes(options.key))throw Error();raw=JSON.parse(text);if(options.key&&JSON.stringify(raw).includes(options.key))throw Error();}catch{throw new MetaError("structure");}
+      while(true){const chunk=await Promise.race([reader.read(),deadline]);if(chunk.done)break;size+=chunk.value.length;if(size>maximumResponse){void reader.cancel().catch(()=>{});throw new MetaError("structure",undefined,undefined,{stage:'response-contract',code:'response-too-large'});}chunks.push(chunk.value);}
+      const bytes=Buffer.concat(chunks);let raw:unknown;try{const text=new TextDecoder("utf-8",{fatal:true}).decode(bytes);if(options.key&&text.includes(options.key))throw Error();raw=JSON.parse(text);if(options.key&&JSON.stringify(raw).includes(options.key))throw Error();}catch{throw new MetaError("structure",undefined,undefined,{stage:'response-contract',code:'invalid-response'});}
       const elapsedMs=performance.now()-start;
       options.observe?.({phase:'complete',kind:endpoint==='/responses'?'text':'image',httpStatus:response.status,elapsedMs,usage:measuredMetaUsage(raw),...(endpoint==='/responses'?{response:raw}:{})});
       return {raw,elapsedMs,httpStatus:response.status};
@@ -157,30 +159,33 @@ export function createMetaAdapter(options: Options = {}, transportFactory: () =>
     },
     async image(prompt: string, source?: AssetLayer, signal?: AbortSignal) {
       // Trusted caller provides a text-free subject/style prompt, never an
-      // arbitrary endpoint. This is not called from any production UI/runtime.
-      if(!prompt.trim()||prompt.length>600||/<|https?:|\b(?:person|face|celebrity)\b/i.test(prompt))throw new MetaError("asset");
+      // arbitrary endpoint. M9 production admission wraps each actual dispatch.
+      if(!prompt.trim()||prompt.length>600||/<|https?:|\b(?:person|face|celebrity)\b/i.test(prompt))throw assetFailure('response-contract','invalid-response');
       if(source){const parsed=assetLayerSchema.safeParse(source);if(!parsed.success||parsed.data.mime!=="image/png")throw new MetaError("asset");const bytes=Buffer.from(parsed.data.dataUrl.split(",")[1],"base64");try{inspectRaster(bytes);}catch{throw new MetaError("asset");}if(createHash("sha256").update(bytes).digest("hex")!==parsed.data.sha256)throw new MetaError("asset");}
       const body={model:"muse-image-1.0",prompt:`${prompt}\nOriginal text-free visual asset. No lettering, numbers, logos, watermarks or people.`,n:1,size:"1024x1024",response_format:"b64_json",reasoning_strength:"high",stream:false,tool_enablement:{enable_image_search:false,enable_web_search:false,enable_shell:false},...(source?{images:[{image_url:source.dataUrl}]}:{}),output_format:"png"};
       const result=await dispatch(source?"/images/edits":"/images/generations",body,signal);
       // M7-L approval is image-specific; text remains at its existing 1 MB cap.
       const parsed=z.object({data:z.array(z.object({b64_json:z.string().max(4*Math.ceil(MAX_SOURCE_BYTES/3)).regex(/^[A-Za-z0-9+/]+={0,2}$/)})).length(1),usage:z.object({input_tokens:z.number().nonnegative().optional(),output_tokens:z.number().nonnegative().optional(),total_tokens:z.number().nonnegative().optional()}).optional()}).safeParse(result.raw);
-      if(!parsed.success)throw new MetaError("asset");
+      if(!parsed.success)throw assetFailure('response-contract','invalid-response');
       const encoded=parsed.data.data[0].b64_json,padding=encoded.endsWith("==")?2:encoded.endsWith("=")?1:0;
-      if(encoded.length%4||encoded.length/4*3-padding>MAX_SOURCE_BYTES)throw new MetaError("asset");
+      if(encoded.length%4||encoded.length/4*3-padding>MAX_SOURCE_BYTES)throw assetFailure('base64','invalid-encoding');
       const bytes=Buffer.from(encoded,"base64");
-      if(bytes.toString("base64")!==encoded)throw new MetaError("asset");
-      if(!bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])))throw new MetaError("asset");
-      try{rasterHeader(bytes,MAX_SOURCE_BYTES);}catch{throw new MetaError('asset');}
-      if(options.key&&bytes.includes(Buffer.from(options.key)))throw new MetaError('asset');
+      if(bytes.toString("base64")!==encoded)throw assetFailure('base64','invalid-encoding');
+      if(!bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])))throw assetFailure('png-header','invalid-png',{sourceBytes:bytes.length});
+      let header:ReturnType<typeof rasterHeader>;
+      try{header=rasterHeader(bytes,MAX_SOURCE_BYTES);}catch{throw assetFailure('png-header','invalid-png',{sourceBytes:bytes.length});}
+      if(options.key&&bytes.includes(Buffer.from(options.key)))throw assetFailure('metadata-policy','metadata-refused');
       options.retainOriginalImage?.(bytes); // Private, bounded original retained before any derivative.
       const provenance=metaPngMetadata(bytes);
-      if(provenance.signed||provenance.exif||provenance.other)throw new MetaError('asset');
+      if(provenance.signed||provenance.exif||provenance.other)throw assetFailure('metadata-policy','metadata-refused',{sourceBytes:bytes.length,width:header.width,height:header.height});
       try{
         const prepared=await optimizeRaster(bytes,{source:"meta",previous:source,inputReferenceSha256:createHash("sha256").update(prompt).digest("hex")},signal);
         const measured=parsed.data.usage,usage:Partial<Usage>|undefined=measured?{...(measured.input_tokens!==undefined?{inputTokens:measured.input_tokens}:{}),...(measured.output_tokens!==undefined?{outputTokens:measured.output_tokens}:{}),...(measured.total_tokens!==undefined?{totalTokens:measured.total_tokens}:{})}:undefined;
-        const asset=assetLayerSchema.parse({...prepared.asset,...(provenance.xmp?{providerMetadata:{xmp:provenance.xmp,xmpSha256:createHash('sha256').update(provenance.xmp).digest('hex'),preserved:true}}:{})});
+        const checkedAsset=assetLayerSchema.safeParse({...prepared.asset,...(provenance.xmp?{providerMetadata:{xmp:provenance.xmp,xmpSha256:createHash('sha256').update(provenance.xmp).digest('hex'),preserved:true}}:{})});
+        if(!checkedAsset.success)throw assetFailure('asset-schema','schema-rejected');
+        const asset=checkedAsset.data;
         return {...prepared,asset,usage,provider:"meta" as const,model:"muse-image-1.0",processingMs:prepared.elapsedMs,elapsedMs:result.elapsedMs,publicationCleared:false as const};
-      }catch(error){throw new MetaError(error instanceof RasterError&&error.code==="timeout"?"timeout":"asset");}
+      }catch(error){if(error instanceof MetaError)throw error;throw new MetaError(error instanceof RasterError&&error.code==="timeout"?"timeout":"asset",undefined,undefined,error instanceof RasterError?error.diagnostic:undefined);}
     },
   };
 }

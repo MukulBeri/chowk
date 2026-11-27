@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
     ] }];
   },
   outputFileTracingIncludes: {
+    // Native createRequire resolution inside the image worker is intentionally
+    // outside bundler module IDs. Trace Sharp and installed platform binaries.
+    "/api/generate": ["./node_modules/sharp/**/*", "./node_modules/@img/sharp-*/**/*"],
     "/api/render": ["./public/fonts/**/*"],
     "/api/notices": ["./docs/licenses/NOTICES.txt", "./docs/licenses/NOTICE_SUPPLEMENT.txt", "./docs/licenses/Tabler-MIT.txt", "./public/fonts/OFL-*.txt"],
   },

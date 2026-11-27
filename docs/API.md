@@ -1,5 +1,15 @@
 # Campaign APIs
 
+## M9-R additive diagnostics and interpretation provenance — local review candidate
+
+M9-R preserves requests, v1/v2/v3 specifications, factual validation and independent capabilities. It has not been deployed or live-qualified. Optional `metadata.attempts[].diagnostic` contains only closed `stage`/`code` enums and bounded numeric `sourceBytes`, `outputBytes`, `width`, `height`, `elapsedMs` when known. Stages cover response contract, base64, PNG header, metadata policy, worker bootstrap/runtime, native decode, image fitting, XMP preservation, asset schema and campaign schema. No arbitrary exception messages, paths, prompts, provider bodies, image base64 or headers are included. `src/lib/generation/pipeline-diagnostics.ts` owns the exact schema. Missing measurements remain absent. An image `invalid-output` can reflect application preparation failure; inspect its stage before attributing it to the provider.
+
+Existing top-level `interpretation` remains application-owned. Optional `interpretationSources: {brief:"application", creative?:{source:"meta", model:"muse-ember-1.0", interpretation, rationale}}` identifies actual accepted, validated model interpretation/rationale separately. The creative entry is absent when unavailable; no model rationale is manufactured. The studio displays the same distinction. Legacy responses without these additive fields remain valid.
+
+Shared-held fallback remains HTTP 200 with zero provider dispatch: text capability `shared-disabled`, summary `disabled`. Shared budget/source/duplicate denial summarizes as `local-budget`; unavailable storage as `provider-unavailable`; shared configuration or eligibility failure as `configuration`. Genuine semantic failure stays `validation-failed`. Detailed capability reasons remain available. No budget, repair, timeout, factual or export safeguard is relaxed.
+
+Image-only operation already uses the ordinary contract: `mode:"auto"`, `treatment:"creative-led"`, `ai:{text:false,image:true,adult:true,country:"IN",consent:"meta-2026-11"}`. Local text plus one image operation still requires every server gate; `mode:"local"` deliberately makes no provider request. This is not execution approval. A global hold release on a public deployment is not owner-exclusive qualification; separately reviewed isolation/admission and live authorization are required.
+
 ## M9 additive AI contract — local candidate, not activated
 
 The owner reports public evaluator access at accepted release `42ea860`; the earlier protected findings below remain dated history. M9 adds optional `ai: {text:true, image:true, adult:true, country:"IN", consent:"meta-2026-11"}` to `/api/generate` and `/api/render` creative-led requests. These are capability requests, never permission to bypass server gates. `mode:"local"` remains independent and spends no provider allowance. Existing endpoint defaults and v1/v2/v3 specifications remain supported.
